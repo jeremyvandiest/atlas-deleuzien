@@ -1,0 +1,6 @@
+ATLAS DELEUZIEN — V4 STRUCTURE
+
+Remplacer les fichiers du dépôt GitHub par ceux de ce dossier, à la racine.
+Puis tester : https://jeremyvandiest.github.io/atlas-deleuzien/?v=4
+
+Nouveautés : registre central des pages, audit structurel caché (#/audit ou recherche « audit »), concepts dérivés automatiquement des dossiers auteurs/œuvres, navigation Précédent/Suivant, progression de lecture et cache PWA V4.
