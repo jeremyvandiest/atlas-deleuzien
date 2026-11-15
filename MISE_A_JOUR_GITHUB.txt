@@ -1,6 +1,8 @@
-ATLAS DELEUZIEN — V4 STRUCTURE
-
-Remplacer les fichiers du dépôt GitHub par ceux de ce dossier, à la racine.
-Puis tester : https://jeremyvandiest.github.io/atlas-deleuzien/?v=4
-
-Nouveautés : registre central des pages, audit structurel caché (#/audit ou recherche « audit »), concepts dérivés automatiquement des dossiers auteurs/œuvres, navigation Précédent/Suivant, progression de lecture et cache PWA V4.
+ATLAS — V10.14 (publication manuelle sans connexion IA, 15/11/2026)
+Source : Atlas_APP_v10_14_30_Oeuvres.zip du 24/08/2026.
+Atlas 1 : corpus V8 conservé ; Foucault enrichi avec restaurations ciblées.
+Atlas 2 : 30 œuvres, 10 transformations, 7 Routes.
+Atelier / ŒUVRE : fonctionnement manuel conservé.
+Interface IA : retirée, modules et backend externes non déployés.
+Cache PWA : rafraîchi.
+Voir README_MIGRATION_GITHUB.md pour la procédure et les précautions.
