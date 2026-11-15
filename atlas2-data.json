@@ -1,0 +1,3143 @@
+{
+  "patch_version": "1.0.7",
+  "scope": "atlas2-canonical-core",
+  "navigation": [
+    "ŒUVRES",
+    "CONFIGURATIONS",
+    "TRANSFORMATIONS",
+    "FORMES & MOTIFS",
+    "PROBLÈMES",
+    "OPTIQUES",
+    "ROUTES"
+  ],
+  "works": [
+    {
+      "id": "work-kafka-metamorphose",
+      "order": 1,
+      "author": "Franz Kafka",
+      "title": "La Métamorphose",
+      "card": "Une transformation corporelle locale reconfigure progressivement les fonctions, les dépendances et la place de Gregor dans le système familial.",
+      "principle": {
+        "type": "problem",
+        "global_problem_id": "problem-continuite-transformation",
+        "title": "Continuité sous transformation"
+      },
+      "machine": [
+        "transformation corporelle",
+        "perte de capacités et de fonction productive",
+        "maintien provisoire des anciennes relations",
+        "adaptations familiales",
+        "redistribution fonctionnelle",
+        "diminution de la dépendance envers Gregor",
+        "réversion de position et de dépendance",
+        "exclusion",
+        "recomposition familiale"
+      ],
+      "optics": [
+        "CORPS",
+        "ESPACE",
+        "RESSOURCES",
+        "TRANSFORMATION"
+      ],
+      "primary_connections": [
+        "transformation-transformation",
+        "transformation-trace",
+        "transformation-reversion",
+        "config-compensatoire",
+        "form-corps-marque",
+        "problem-continuite-transformation"
+      ],
+      "local_concepts": [
+        "désynchronisation",
+        "redistribution fonctionnelle",
+        "trajectoire de la chambre"
+      ],
+      "aliases": [
+        "Kafka Métamorphose",
+        "Gregor Samsa"
+      ]
+    },
+    {
+      "id": "work-flaubert-madame-bovary",
+      "order": 2,
+      "author": "Gustave Flaubert",
+      "title": "Madame Bovary",
+      "card": "La recherche répétée d’une vie exceptionnelle use chaque différence obtenue, tandis que les moyens employés pour la renouveler accumulent des contraintes jusqu’à fermer les possibilités.",
+      "principle": {
+        "type": "problem",
+        "global_problem_id": "problem-maintenir-difference",
+        "title": "Maintenir une différence"
+      },
+      "machine": [
+        "imaginaires reçus",
+        "attente",
+        "différence",
+        "intensité",
+        "répétition",
+        "usure",
+        "nouvelle différence",
+        "crédit",
+        "inscriptions",
+        "dette",
+        "seuil",
+        "fermeture"
+      ],
+      "optics": [
+        "TEMPS",
+        "RESSOURCES",
+        "STYLE",
+        "CONFIGURATION"
+      ],
+      "optic_couplings": [
+        "TEMPS × RESSOURCES × STYLE"
+      ],
+      "primary_connections": [
+        "transformation-repetition",
+        "transformation-trace",
+        "transformation-reversion",
+        "form-ressource-argent-credit",
+        "config-auto-transformatrice",
+        "problem-maintenir-difference"
+      ],
+      "local_concepts": [
+        "usure",
+        "saturation",
+        "requalification évaluative"
+      ],
+      "aliases": [
+        "Flaubert Bovary",
+        "Emma Bovary"
+      ]
+    },
+    {
+      "id": "work-stevenson-jekyll-hyde",
+      "order": 3,
+      "author": "Robert Louis Stevenson",
+      "title": "Dr Jekyll & Mr Hyde",
+      "card": "Jekyll produit une différence pour contrôler certaines possibilités d’action ; sa répétition renforce cette différence jusqu’à inverser progressivement la relation de contrôle.",
+      "principle": {
+        "type": "problem",
+        "global_problem_id": "problem-controler-active",
+        "title": "Contrôler ce que l’on active"
+      },
+      "machine": [
+        "différence produite",
+        "répétition",
+        "renforcement",
+        "Hyde spontané",
+        "autonomisation",
+        "réversion de dépendance",
+        "ressource nécessaire au retour",
+        "fermeture de la réversibilité"
+      ],
+      "optics": [
+        "TRANSFORMATION",
+        "CORPS",
+        "RESSOURCES",
+        "SAVOIR",
+        "ÉNONCIATION"
+      ],
+      "primary_connections": [
+        "transformation-repetition",
+        "transformation-seuil",
+        "transformation-reversion",
+        "form-ressource-argent-credit",
+        "config-double-regime",
+        "problem-controler-active"
+      ],
+      "local_concepts": [
+        "autonomisation",
+        "causalité rétrospective",
+        "trace dispositionnelle"
+      ],
+      "aliases": [
+        "Jekyll Hyde",
+        "Stevenson Jekyll"
+      ]
+    },
+    {
+      "id": "work-perrault-barbe-bleue",
+      "order": 4,
+      "author": "Charles Perrault",
+      "title": "Barbe-Bleue",
+      "card": "Un franchissement transforme une asymétrie de savoir en menace : ce qui devait rester caché devient connaissable, puis détectable par une trace impossible à effacer.",
+      "principle": {
+        "type": "problem",
+        "global_problem_id": "problem-asymetrie-savoir",
+        "title": "Asymétrie du savoir"
+      },
+      "machine": [
+        "interdiction",
+        "accès",
+        "franchissement",
+        "savoir",
+        "trace",
+        "détection",
+        "menace",
+        "délai",
+        "intervention extérieure",
+        "réversion"
+      ],
+      "optics": [
+        "ESPACE",
+        "SAVOIR",
+        "TEMPS",
+        "TRANSFORMATION"
+      ],
+      "primary_connections": [
+        "transformation-seuil",
+        "transformation-trace",
+        "transformation-reversion",
+        "form-porte-acces",
+        "config-double-regime",
+        "problem-asymetrie-savoir"
+      ],
+      "local_concepts": [
+        "délai convergent",
+        "mesure par répétition",
+        "retour spatial ≠ retour configurationnel"
+      ],
+      "aliases": [
+        "Perrault Barbe Bleue",
+        "Barbe Bleue"
+      ]
+    },
+    {
+      "id": "work-beckett-godot",
+      "order": 5,
+      "author": "Samuel Beckett",
+      "title": "En attendant Godot",
+      "card": "Deux hommes multiplient paroles, gestes, décisions et rencontres tandis qu’une condition future toujours reportée reconduit la configuration qui organise leur attente.",
+      "principle": {
+        "type": "problem",
+        "global_problem_id": "problem-futur-anticipe",
+        "title": "Agir sous un futur anticipé"
+      },
+      "machine": [
+        "attente",
+        "activité locale",
+        "événement / distraction",
+        "décision possible",
+        "non-actualisation",
+        "annonce future",
+        "reconduction"
+      ],
+      "optics": [
+        "TEMPS",
+        "ÉNONCIATION",
+        "CONFIGURATION",
+        "TRANSFORMATION",
+        "STYLE"
+      ],
+      "optic_couplings": [
+        "TEMPS × ÉNONCIATION × RÉPÉTITION"
+      ],
+      "primary_connections": [
+        "transformation-repetition",
+        "transformation-transformation",
+        "transformation-seuil",
+        "problem-futur-anticipe"
+      ],
+      "local_concepts": [
+        "configuration suspendue",
+        "absence active",
+        "seuil virtuel",
+        "activité locale / stase globale"
+      ],
+      "aliases": [
+        "Beckett Godot",
+        "Godot"
+      ]
+    },
+    {
+      "id": "work-borges-pierre-menard",
+      "order": 6,
+      "author": "Jorge Luis Borges",
+      "title": "Pierre Ménard, auteur du Quichotte",
+      "card": "Une même surface verbale acquiert une fonction différente lorsqu’elle est attribuée à une autre histoire, une autre position d’auteur et une autre configuration de lecture.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment une forme peut-elle changer de fonction sans changer localement de structure ?"
+      },
+      "machine": [
+        "surface identique",
+        "autre attribution",
+        "autre trajectoire",
+        "autre configuration historique",
+        "autre lecture",
+        "requalification"
+      ],
+      "optics": [
+        "STYLE",
+        "ÉNONCIATION",
+        "SAVOIR",
+        "TEMPS",
+        "CONFIGURATION"
+      ],
+      "optic_couplings": [
+        "STYLE × CONFIGURATION DE LECTURE × ÉNONCIATION"
+      ],
+      "primary_connections": [
+        "config-lecture",
+        "transformation-transformation",
+        "transformation-repetition",
+        "transformation-trace",
+        "transformation-condensation"
+      ],
+      "local_concepts": [
+        "identité verbale ≠ identité configurationnelle",
+        "trace de trajectoire",
+        "équifinalité locale"
+      ],
+      "aliases": [
+        "Borges Pierre Menard",
+        "Pierre Ménard"
+      ]
+    },
+    {
+      "id": "work-faulkner-bruit-fureur",
+      "order": 7,
+      "author": "William Faulkner",
+      "title": "Le Bruit et la Fureur",
+      "card": "Plusieurs régimes de présentation distribuent différemment le temps, l’information et la perception ; le lecteur reconstruit progressivement une configuration qu’aucune perspective ne contient à elle seule.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment rendre accessible une configuration qu’aucune perspective locale ne peut contenir à elle seule ?",
+        "related_problem_id": "problem-asymetrie-savoir"
+      },
+      "machine": [
+        "perspectives partielles",
+        "régimes temporels locaux",
+        "informations distribuées",
+        "reprises",
+        "recoupements",
+        "requalifications",
+        "configuration de lecture enrichie"
+      ],
+      "optics": [
+        "TEMPS",
+        "SAVOIR",
+        "ÉNONCIATION",
+        "STYLE"
+      ],
+      "optic_couplings": [
+        "TEMPS × SAVOIR × ÉNONCIATION × STYLE"
+      ],
+      "primary_connections": [
+        "config-lecture",
+        "transformation-repetition",
+        "transformation-trace",
+        "transformation-transformation",
+        "transformation-condensation"
+      ],
+      "local_concepts": [
+        "savoir distribué",
+        "savoir par recoupement",
+        "centre indirect",
+        "reprise textuelle",
+        "trace distribuée"
+      ],
+      "aliases": [
+        "Faulkner Bruit Fureur",
+        "The Sound and the Fury"
+      ]
+    },
+    {
+      "id": "work-perec-vie-mode-emploi",
+      "order": 8,
+      "author": "Georges Perec",
+      "title": "La Vie mode d’emploi",
+      "card": "Une règle de parcours traverse un immeuble, ouvre une multiplicité d’histoires et produit l’unité de l’œuvre sans les subordonner à une intrigue centrale unique.",
+      "principle": {
+        "type": "composition",
+        "title": "Produire une unité à partir d’une multiplicité de lieux et de trajectoires en organisant leur parcours sans les réduire à une causalité centrale."
+      },
+      "machine": [
+        "immeuble",
+        "unités spatiales",
+        "règle de parcours",
+        "description",
+        "objets / habitants",
+        "ouverture de trajectoires",
+        "connexions",
+        "réseau",
+        "unité distribuée"
+      ],
+      "optics": [
+        "ESPACE",
+        "STYLE",
+        "TEMPS",
+        "CONFIGURATION",
+        "TRANSFORMATION"
+      ],
+      "optic_couplings": [
+        "ESPACE × TEMPS × TRACE",
+        "STYLE × COMPOSITION"
+      ],
+      "primary_connections": [
+        "form-chambre-espace-interieur",
+        "transformation-trace",
+        "transformation-repetition",
+        "transformation-condensation",
+        "config-lecture"
+      ],
+      "local_concepts": [
+        "unité distribuée",
+        "champ configurationnel",
+        "règle de parcours",
+        "contrainte productive",
+        "programme / processus",
+        "archive distribuée",
+        "contrôle distribué",
+        "clinamen"
+      ],
+      "aliases": [
+        "Perec Vie mode emploi",
+        "La Vie mode d emploi"
+      ]
+    },
+    {
+      "id": "work-sophocle-oedipe-roi",
+      "order": 9,
+      "author": "Sophocle",
+      "title": "Œdipe roi",
+      "card": "Une enquête destinée à identifier la cause d’une crise requalifie progressivement l’enquêteur lui-même jusqu’à faire de sa propre position l’objet qu’il cherchait à isoler.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment résoudre une crise lorsque l’enquêteur découvre qu’il en est lui-même une condition ?",
+        "related_problem_id": "problem-asymetrie-savoir"
+      },
+      "machine": [
+        "crise",
+        "enquête",
+        "informations partielles",
+        "recoupements",
+        "réduction des hypothèses",
+        "convergence",
+        "reconnaissance",
+        "auto-inclusion",
+        "réversion de position",
+        "recomposition"
+      ],
+      "optics": [
+        "SAVOIR",
+        "TRANSFORMATION",
+        "ÉNONCIATION",
+        "TEMPS",
+        "CONFIGURATION"
+      ],
+      "optic_couplings": [
+        "SAVOIR × CONFIGURATION × ÉNONCIATION × TEMPS"
+      ],
+      "primary_connections": [
+        "transformation-transformation",
+        "transformation-seuil",
+        "transformation-reversion",
+        "problem-asymetrie-savoir",
+        "config-lecture",
+        "transformation-trace"
+      ],
+      "local_concepts": [
+        "enquête transformatrice",
+        "convergence épistémique",
+        "savoir-fermeture",
+        "seuil de reconnaissance",
+        "auto-inclusion",
+        "enquête récursive"
+      ],
+      "aliases": [
+        "Sophocle Oedipe",
+        "Œdipe roi",
+        "Oedipe roi"
+      ]
+    },
+    {
+      "id": "work-wilde-dorian-gray",
+      "order": 10,
+      "author": "Oscar Wilde",
+      "title": "Le Portrait de Dorian Gray",
+      "card": "Dorian conserve une apparence jeune et stable tandis qu’un portrait caché reçoit les marques du temps, de ses actes et de leurs motivations ; la séparation entre surface publique et trace privée tient jusqu’à l’effondrement terminal du dispositif.",
+      "principle": {
+        "type": "problem",
+        "global_problem_id": "problem-compenser-sans-transformer",
+        "title": "Compenser sans se transformer"
+      },
+      "machine": [
+        "influence de Lord Henry et conscience de la finitude",
+        "vœu de substitution",
+        "stabilité du corps / transformation du portrait",
+        "première trace de cruauté",
+        "dissimulation du portrait",
+        "double régime public / privé",
+        "répétition des expériences et accumulation des marques",
+        "portrait comme trace, conscience et preuve",
+        "tentative de réforme requalifiée en hypocrisie",
+        "destruction visée de la trace",
+        "réversion terminale : portrait restauré / corps chargé de l’histoire"
+      ],
+      "optics": [
+        "CORPS",
+        "TEMPS",
+        "SAVOIR",
+        "ESPACE",
+        "TRANSFORMATION"
+      ],
+      "optic_couplings": [
+        "CORPS × SAVOIR × ESPACE"
+      ],
+      "primary_connections": [
+        "transformation-trace",
+        "transformation-reversion",
+        "transformation-condensation",
+        "config-double-regime",
+        "form-corps-marque",
+        "problem-compenser-sans-transformer"
+      ],
+      "local_concepts": [
+        "substitution transformationnelle"
+      ],
+      "aliases": [
+        "Wilde Dorian Gray",
+        "Dorian Gray",
+        "Portrait de Dorian Gray",
+        "Oscar Wilde Dorian"
+      ]
+    },
+    {
+      "id": "work-sartre-huis-clos",
+      "order": 11,
+      "author": "Jean-Paul Sartre",
+      "title": "Huis clos",
+      "card": "Trois morts enfermés ensemble deviennent chacun une condition du jugement, du désir ou de la reconnaissance dont un autre dépend ; l’enfermement devient relationnel au point que l’ouverture réelle de la porte ne suffit plus à produire une sortie.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment sortir d’une configuration lorsque ce qui nous y retient n’est plus l’espace mais la relation aux autres ?"
+      },
+      "machine": [
+        "trois morts réunis dans un espace fermé",
+        "absence de torture physique",
+        "échec du silence et de l’isolement",
+        "révélation et requalification des passés",
+        "chacun devient juge, miroir ou objet de désir pour un autre",
+        "circuit de dépendances croisées",
+        "tentatives de validation et d’alliance",
+        "ouverture réelle de la porte",
+        "Garcin reste pour convaincre Inès",
+        "ouverture spatiale sans sortie configurationnelle",
+        "reconduction : continuons"
+      ],
+      "optics": [
+        "CONFIGURATION",
+        "ESPACE",
+        "ÉNONCIATION",
+        "SAVOIR",
+        "TEMPS"
+      ],
+      "optic_couplings": [
+        "CONFIGURATION × ESPACE × ÉNONCIATION"
+      ],
+      "primary_connections": [
+        "config-dependance-asymetrique",
+        "transformation-seuil",
+        "transformation-repetition",
+        "form-porte-acces",
+        "form-chambre-espace-interieur",
+        "transformation-transformation"
+      ],
+      "local_concepts": [
+        "circuit de dépendances croisées",
+        "ouverture spatiale ≠ sortie configurationnelle"
+      ],
+      "aliases": [
+        "Sartre Huis clos",
+        "Jean-Paul Sartre Huis clos",
+        "Huis clos Sartre"
+      ]
+    },
+    {
+      "id": "work-coen-serious-man",
+      "order": 12,
+      "medium": "film",
+      "display_number": false,
+      "author": "Joel & Ethan Coen",
+      "title": "A Serious Man",
+      "card": "Une configuration familiale, professionnelle et communautaire apparemment stable est traversée par des perturbations indépendantes ; Larry cherche une explication commune, mais chaque dispositif d’interprétation ajoute du sens sans permettre de fermer l’incertitude.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment agir lorsque plusieurs événements semblent devoir signifier quelque chose sans qu’aucun critère permette de décider ce qu’ils signifient ensemble ?"
+      },
+      "machine": [
+        "configuration apparemment stable",
+        "perturbations familiales, professionnelles et communautaires",
+        "recherche d’une explication commune",
+        "consultations rabbiniques sans clôture",
+        "indices et inscriptions ambigus",
+        "recomposition provisoire",
+        "modification de la note de Clive",
+        "nouvelle ouverture de l’incertitude"
+      ],
+      "optics": [
+        "SAVOIR",
+        "CONFIGURATION",
+        "TEMPS",
+        "RESSOURCES",
+        "ÉNONCIATION"
+      ],
+      "optic_couplings": [
+        "SAVOIR × ÉNONCIATION"
+      ],
+      "primary_connections": [
+        "transformation-repetition",
+        "transformation-condensation",
+        "transformation-trace",
+        "form-document-inscription",
+        "config-conditionnellement-stable",
+        "config-lecture"
+      ],
+      "local_concepts": [
+        "indécidabilité",
+        "recomposition provisoire",
+        "trace ≠ preuve univoque"
+      ],
+      "aliases": [
+        "A Serious Man",
+        "Coen A Serious Man",
+        "Joel Ethan Coen Serious Man",
+        "Larry Gopnik",
+        "indécidabilité Coen"
+      ]
+    },
+    {
+      "id": "work-herzog-fitzcarraldo",
+      "order": 13,
+      "medium": "film",
+      "display_number": false,
+      "author": "Werner Herzog",
+      "title": "Fitzcarraldo",
+      "card": "Le désir de faire venir l’opéra dans la jungle devient un problème économique puis géographique ; la contrainte qui devait bloquer le projet engendre une solution matérielle démesurée, avant que l’échec économique ne force une autre manière d’accomplir le désir initial.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment une contrainte apparemment prohibitive peut-elle produire la forme même par laquelle un projet devient réalisable ?"
+      },
+      "machine": [
+        "désir d’opéra",
+        "besoin de financement",
+        "concession de caoutchouc difficilement accessible",
+        "contrainte géographique entre deux fleuves",
+        "déplacement du bateau par-dessus la montagne",
+        "coopération à finalités divergentes",
+        "libération du bateau dans les rapides",
+        "échec du projet économique",
+        "recomposition du désir artistique"
+      ],
+      "optics": [
+        "RESSOURCES",
+        "ESPACE",
+        "CONFIGURATION",
+        "TRANSFORMATION",
+        "TEMPS"
+      ],
+      "optic_couplings": [
+        "RESSOURCES × ESPACE × TRANSFORMATION"
+      ],
+      "primary_connections": [
+        "config-contrainte-generatrice",
+        "transformation-recomposition",
+        "transformation-condensation",
+        "transformation-reversion",
+        "form-ressource-argent-credit",
+        "transformation-transformation"
+      ],
+      "local_concepts": [
+        "coopération à finalités divergentes",
+        "désir recomposé"
+      ],
+      "aliases": [
+        "Fitzcarraldo",
+        "Herzog Fitzcarraldo",
+        "Werner Herzog Fitzcarraldo",
+        "bateau montagne"
+      ]
+    },
+    {
+      "id": "work-herzog-aguirre",
+      "order": 14,
+      "medium": "film",
+      "display_number": false,
+      "author": "Werner Herzog",
+      "title": "Aguirre, la colère de Dieu",
+      "card": "Une expédition perd progressivement les conditions matérielles de son objectif tandis que son projet politique survit, change de fonction et s’autonomise jusqu’à produire un monde de souveraineté proclamée au moment même où toute capacité réelle d’agir se dissout.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Que devient un projet lorsque les conditions qui le rendaient praticable disparaissent mais que l’autorité qui le porte refuse de l’abandonner ?"
+      },
+      "machine": [
+        "quête d’El Dorado",
+        "difficultés matérielles de l’expédition",
+        "détachement avancé",
+        "mutinerie et rupture avec l’autorité initiale",
+        "projet de conquête réorienté autour d’Aguirre",
+        "pertes, faim et maladie",
+        "disparition progressive des capacités matérielles",
+        "souveraineté imaginaire renforcée",
+        "radeau final comme puissance proclamée sans prise réelle"
+      ],
+      "optics": [
+        "CONFIGURATION",
+        "RESSOURCES",
+        "ESPACE",
+        "TRANSFORMATION",
+        "ÉNONCIATION"
+      ],
+      "optic_couplings": [
+        "CONFIGURATION × RESSOURCES × ÉNONCIATION"
+      ],
+      "primary_connections": [
+        "config-contrainte-generatrice",
+        "transformation-reversion",
+        "transformation-condensation",
+        "transformation-repetition",
+        "transformation-transformation"
+      ],
+      "local_concepts": [
+        "autonomisation du projet",
+        "mutation de fonction du projet",
+        "puissance proclamée / capacité matérielle"
+      ],
+      "aliases": [
+        "Aguirre",
+        "Aguirre la colère de Dieu",
+        "Herzog Aguirre",
+        "Werner Herzog Aguirre",
+        "autonomisation du projet"
+      ]
+    },
+    {
+      "id": "work-cassavetes-woman-influence",
+      "order": 15,
+      "medium": "film",
+      "display_number": false,
+      "author": "John Cassavetes",
+      "title": "Une femme sous influence",
+      "card": "Une famille qui tient réellement ensemble ne cesse de réajuster ses gestes, attentes et réactions ; les tentatives de restaurer une normalité deviennent elles-mêmes des forces de perturbation, jusqu’à une recomposition suffisante pour continuer sans résoudre ce qui demeure instable.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment une configuration peut-elle persister alors qu’elle ne cesse de modifier les relations qui la font tenir ?"
+      },
+      "machine": [
+        "configuration familiale tenue par ajustements",
+        "débordements de comportement et d’attente",
+        "tentatives de normalisation",
+        "réactions qui modifient la situation",
+        "accumulation d’ajustements contradictoires",
+        "rupture et internement",
+        "retour six mois plus tard",
+        "tentative de restauration de la normalité",
+        "nouvel excès de situation",
+        "recomposition provisoire permettant la continuation"
+      ],
+      "optics": [
+        "CONFIGURATION",
+        "ÉNONCIATION",
+        "TEMPS",
+        "CORPS",
+        "TRANSFORMATION"
+      ],
+      "optic_couplings": [
+        "CONFIGURATION × ÉNONCIATION × CORPS"
+      ],
+      "primary_connections": [
+        "config-metastable",
+        "transformation-recomposition",
+        "transformation-variation",
+        "transformation-repetition",
+        "transformation-transformation"
+      ],
+      "local_concepts": [
+        "excédent de situation",
+        "recomposition provisoire",
+        "normalisation comme intervention"
+      ],
+      "aliases": [
+        "A Woman Under the Influence",
+        "Une femme sous influence",
+        "Cassavetes femme sous influence",
+        "John Cassavetes Woman Under Influence",
+        "excédent de situation"
+      ]
+    },
+    {
+      "id": "work-antonioni-blow-up",
+      "order": 16,
+      "medium": "film",
+      "display_number": false,
+      "author": "Michelangelo Antonioni",
+      "title": "Blow-Up",
+      "card": "Une photographie prise sans intention d’enquête devient une trace ; l’agrandissement et le rapprochement des images construisent une hypothèse de meurtre, mais la disparition successive des preuves empêche de stabiliser durablement l’événement dans un système probatoire fermé.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment une trace peut-elle augmenter le savoir tout en restant insuffisante pour fermer l’événement qu’elle semble révéler ?"
+      },
+      "machine": [
+        "prise de vue sans enquête préalable",
+        "détail remarqué dans les photographies",
+        "agrandissements successifs",
+        "mise en relation des images",
+        "hypothèse de meurtre",
+        "confirmation partielle par la découverte du corps",
+        "disparition des photographies",
+        "disparition du corps",
+        "impossibilité de stabiliser la preuve",
+        "déplacement final du rapport entre visible, absent et réel"
+      ],
+      "optics": [
+        "SAVOIR",
+        "STYLE",
+        "CONFIGURATION",
+        "ESPACE",
+        "TRANSFORMATION"
+      ],
+      "optic_couplings": [
+        "SAVOIR × CONFIGURATION DE LECTURE × STYLE"
+      ],
+      "primary_connections": [
+        "config-lecture",
+        "transformation-trace",
+        "transformation-condensation",
+        "form-document-inscription",
+        "transformation-transformation"
+      ],
+      "local_concepts": [
+        "incomplétude probatoire",
+        "indécidabilité",
+        "agrandissement : information / dégradation"
+      ],
+      "aliases": [
+        "Blow-Up",
+        "Blow Up",
+        "Antonioni Blow-Up",
+        "Michelangelo Antonioni Blow Up",
+        "incomplétude probatoire"
+      ]
+    },
+    {
+      "id": "work-jodorowsky-holy-mountain",
+      "order": 17,
+      "medium": "film",
+      "display_number": false,
+      "author": "Alejandro Jodorowsky",
+      "title": "La Montagne sacrée",
+      "card": "Le film soumet corps, objets, argent et identités à une série d’opérations rituelles censées produire une transformation, puis détruit finalement le statut de son propre dispositif initiatique en révélant l’appareil cinématographique qui le rend possible.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Que produit un dispositif de transformation lorsqu’il finit par transformer le statut même de la croyance qui le soutenait ?"
+      },
+      "machine": [
+        "identités prises dans des objets et des statuts",
+        "opérations de dépouillement et de substitution",
+        "constitution d’un groupe initiatique",
+        "gestes et épreuves rituelles",
+        "progression vers une promesse d’immortalité",
+        "arrivée au sommet",
+        "immortels révélés comme mannequins",
+        "destruction du dispositif initiatique",
+        "révélation de l’appareil cinématographique",
+        "retour forcé vers une réalité extérieure au dispositif"
+      ],
+      "optics": [
+        "TRANSFORMATION",
+        "STYLE",
+        "CORPS",
+        "RESSOURCES",
+        "CONFIGURATION"
+      ],
+      "optic_couplings": [
+        "TRANSFORMATION × STYLE × CONFIGURATION"
+      ],
+      "primary_connections": [
+        "transformation-seuil",
+        "transformation-reversion",
+        "transformation-condensation",
+        "transformation-transformation",
+        "config-lecture"
+      ],
+      "local_concepts": [
+        "acte transformationnel",
+        "symbole-acte",
+        "dispositif de croyance auto-détruit"
+      ],
+      "aliases": [
+        "La Montagne sacrée",
+        "The Holy Mountain",
+        "Jodorowsky Holy Mountain",
+        "Alejandro Jodorowsky Montagne sacrée",
+        "acte transformationnel"
+      ]
+    },
+    {
+      "id": "work-forman-cuckoos-nest",
+      "order": 18,
+      "medium": "film",
+      "display_number": false,
+      "author": "Miloš Forman",
+      "title": "Vol au-dessus d’un nid de coucou",
+      "card": "Une institution maintient ses routines par la règle, la sanction et des dépendances intériorisées ; McMurphy introduit des variations qui font apparaître d’autres possibilités d’action, provoquent un durcissement du contrôle et laissent finalement une trace active chez Chief.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment une contrainte institutionnelle produit-elle à la fois obéissance, détours, résistance et transformation des capacités d’agir ?"
+      },
+      "machine": [
+        "routine institutionnelle",
+        "arrivée de McMurphy",
+        "variations introduites dans les règles et les usages",
+        "participation croissante des patients",
+        "découverte des dépendances juridiques et intériorisées",
+        "durcissement des sanctions",
+        "ruptures collectives de la routine",
+        "suicide de Billy et attaque contre Ratched",
+        "lobotomie de McMurphy",
+        "persistance de sa transformation chez Chief",
+        "sortie de Chief"
+      ],
+      "optics": [
+        "CONFIGURATION",
+        "ÉNONCIATION",
+        "CORPS",
+        "TRANSFORMATION",
+        "ESPACE"
+      ],
+      "optic_couplings": [
+        "CONFIGURATION × TRANSFORMATION × ESPACE"
+      ],
+      "primary_connections": [
+        "config-contrainte-generatrice",
+        "config-dependance-asymetrique",
+        "transformation-repetition",
+        "transformation-variation",
+        "transformation-trace",
+        "transformation-recomposition"
+      ],
+      "local_concepts": [
+        "porte disponible ≠ capacité de sortir",
+        "contrainte intériorisée",
+        "transformation persistante après disparition de l’agent"
+      ],
+      "aliases": [
+        "One Flew Over the Cuckoo’s Nest",
+        "One Flew Over the Cuckoos Nest",
+        "Vol au-dessus d’un nid de coucou",
+        "Forman nid de coucou",
+        "Miloš Forman Cuckoo Nest"
+      ]
+    },
+    {
+      "id": "work-akerman-jeanne-dielman",
+      "order": 19,
+      "medium": "film",
+      "display_number": false,
+      "author": "Chantal Akerman",
+      "title": "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+      "card": "Une routine extrêmement réglée construit sa propre mesure ; lorsque des micro-écarts apparaissent, ils deviennent perceptibles parce que la répétition a produit un invariant, puis se propagent jusqu’à rendre impossible la restauration exacte du régime initial.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "Comment une différence presque imperceptible devient-elle opératoire lorsqu’un dispositif de répétition a appris au spectateur la forme qu’elle dérègle ?"
+      },
+      "machine": [
+        "programme quotidien rigoureusement répété",
+        "apprentissage de l’invariant par le spectateur",
+        "apparition de micro-écarts",
+        "décalage temporel des tâches",
+        "propagation des variations",
+        "difficulté croissante à restaurer le rythme",
+        "troisième journée",
+        "meurtre",
+        "stase finale après rupture du programme"
+      ],
+      "optics": [
+        "TEMPS",
+        "STYLE",
+        "CONFIGURATION",
+        "CORPS",
+        "TRANSFORMATION"
+      ],
+      "optic_couplings": [
+        "TEMPS × STYLE × VARIATION"
+      ],
+      "primary_connections": [
+        "config-metastable",
+        "config-contrainte-generatrice",
+        "transformation-repetition",
+        "transformation-variation",
+        "transformation-seuil",
+        "transformation-condensation"
+      ],
+      "local_concepts": [
+        "micro-écart opératoire",
+        "excédent de situation",
+        "programme comme mesure perceptive"
+      ],
+      "aliases": [
+        "Jeanne Dielman",
+        "Akerman Jeanne Dielman",
+        "Chantal Akerman 23 quai du Commerce",
+        "Jeanne Dielman 23 quai du Commerce 1080 Bruxelles",
+        "micro-écart opératoire"
+      ]
+    },
+    {
+      "id": "work-otomo-akira",
+      "order": 20,
+      "medium": "film",
+      "display_number": false,
+      "author": "Katsuhiro Ōtomo",
+      "title": "Akira",
+      "card": "Une transformation d’abord localisée dans le corps de Tetsuo modifie sa relation à Kaneda, attire successivement laboratoire, armée, mouvements collectifs et croyances, puis déborde le support corporel jusqu’à rendre la ville entière pertinente pour comprendre ce qui est en train de se produire.",
+      "principle": {
+        "type": "problem",
+        "local": true,
+        "title": "À quel moment une transformation oblige-t-elle à changer l’échelle à laquelle la configuration pertinente doit être définie ?"
+      },
+      "machine": [
+        "relation asymétrique entre Tetsuo et Kaneda",
+        "accident et capture par l’appareil militaire",
+        "activation et amplification des capacités psychiques",
+        "inversion progressive de la relation Kaneda / Tetsuo",
+        "mobilisation du laboratoire et de l’armée",
+        "agrégation de croyances et de forces politiques",
+        "perte de contrôle du support corporel",
+        "débordement de la transformation à l’échelle urbaine",
+        "intervention d’Akira et des autres sujets psychiques",
+        "reconfiguration après catastrophe"
+      ],
+      "optics": [
+        "CORPS",
+        "TRANSFORMATION",
+        "CONFIGURATION",
+        "ESPACE",
+        "SAVOIR"
+      ],
+      "optic_couplings": [
+        "CORPS × TRANSFORMATION × CONFIGURATION"
+      ],
+      "primary_connections": [
+        "transformation-transformation",
+        "transformation-seuil",
+        "transformation-reversion",
+        "transformation-condensation",
+        "transformation-recomposition",
+        "form-corps-marque"
+      ],
+      "local_concepts": [
+        "expansion d’échelle",
+        "transformation débordant son support",
+        "relation Kaneda / Tetsuo requalifiée"
+      ],
+      "aliases": [
+        "Akira",
+        "Otomo Akira",
+        "Ōtomo Akira",
+        "Katsuhiro Otomo Akira",
+        "Katsuhiro Ōtomo Akira",
+        "expansion d’échelle"
+      ]
+    }
+  ],
+  "transformations": [
+    {
+      "id": "transformation-trace",
+      "order": 1,
+      "title": "TRACE",
+      "definition": "Une transformation passée continue d’organiser le présent en modifiant encore les actions, les savoirs, les contraintes ou les possibilités.",
+      "variants": [
+        "INDICIELLE",
+        "INCORPORÉE",
+        "DOCUMENTAIRE",
+        "DISPOSITIONNELLE",
+        "DE TRAJECTOIRE",
+        "DISTRIBUÉE"
+      ],
+      "axes": [
+        "support",
+        "accessibilité",
+        "effet",
+        "effaçabilité",
+        "portée"
+      ],
+      "cases": {
+        "primary": [
+          "Perrault — détecter",
+          "Kafka — contraindre",
+          "Flaubert — obliger",
+          "Stevenson — disposer",
+          {
+            "ref_id": "work-antonioni-blow-up",
+            "label": "Antonioni — Blow-Up — construire une preuve à partir de traces"
+          }
+        ],
+        "secondary": [
+          "Borges — requalifier",
+          "Faulkner — réactiver",
+          "Perec — ouvrir",
+          "Sophocle — conditionner",
+          "Beckett — persistance ≠ mémoire disponible",
+          {
+            "ref_id": "work-forman-cuckoos-nest",
+            "label": "Forman — Vol au-dessus d’un nid de coucou — faire persister une transformation après son initiateur"
+          }
+        ]
+      },
+      "structural_connections": [
+        "transformation-transformation",
+        "transformation-repetition",
+        "transformation-condensation",
+        "form-document-inscription",
+        "form-corps-marque"
+      ]
+    },
+    {
+      "id": "transformation-repetition",
+      "order": 2,
+      "title": "RÉPÉTITION",
+      "definition": "Réactivation d’une forme, d’une action, d’une relation ou d’une opération dans une configuration déjà modifiée par les occurrences précédentes ou par d’autres transformations.",
+      "functions": [
+        "MAINTIEN",
+        "USURE",
+        "RENFORCEMENT",
+        "MESURE",
+        "RECONDUCTION",
+        "RECONTEXTUALISATION",
+        "REFOCALISATION",
+        "PROGRAMMATION"
+      ],
+      "axes": [
+        "invariant",
+        "variation",
+        "effet",
+        "échelle",
+        "conscience",
+        "finitude",
+        "localisation"
+      ],
+      "cases": {
+        "primary": [
+          "Kafka — maintenir",
+          "Flaubert — user",
+          "Stevenson — renforcer",
+          "Perrault — mesurer",
+          "Beckett — reconduire",
+          "Borges — recontextualiser",
+          "Faulkner — refocaliser",
+          "Perec — programmer",
+          {
+            "ref_id": "work-akerman-jeanne-dielman",
+            "label": "Akerman — Jeanne Dielman — construire l’invariant qui rend l’écart perceptible"
+          }
+        ],
+        "laboratory": [
+          "Queneau — varier"
+        ],
+        "limit": [
+          "Sophocle — répétition non directrice"
+        ],
+        "secondary": [
+          {
+            "ref_id": "work-coen-serious-man",
+            "label": "Coen — A Serious Man — répéter la demande d’explication sans fermer l’interprétation"
+          }
+        ]
+      },
+      "structural_connections": [
+        "transformation-transformation",
+        "transformation-trace",
+        "transformation-seuil",
+        "transformation-variation"
+      ]
+    },
+    {
+      "id": "transformation-variation",
+      "order": 3,
+      "title": "VARIATION",
+      "definition": "Production d’un écart fonctionnel dans une forme, une opération ou une structure suffisamment maintenue pour que cet écart puisse être perçu et produire ses propres conséquences.",
+      "axes": [
+        "invariant",
+        "écart",
+        "amplitude",
+        "rythme",
+        "fonction",
+        "conséquence",
+        "perceptibilité"
+      ],
+      "mechanisms": [
+        "déplacement",
+        "modulation",
+        "micro-écart",
+        "refocalisation",
+        "changement de fonction"
+      ],
+      "cases": {
+        "primary": [
+          "Queneau — produire des écarts à partir d’un même matériau",
+          {
+            "label": "Chantal Akerman — Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles — rendre le micro-écart opératoire",
+            "ref_id": "work-akerman-jeanne-dielman"
+          },
+          {
+            "label": "Miloš Forman — Vol au-dessus d’un nid de coucou — faire varier les routines institutionnelles",
+            "ref_id": "work-forman-cuckoos-nest"
+          }
+        ],
+        "secondary": [
+          "Flaubert — renouveler une différence usée",
+          "Faulkner — refocaliser une matière reprise"
+        ]
+      },
+      "structural_connections": [
+        "transformation-repetition",
+        "transformation-transformation",
+        "transformation-seuil",
+        "config-contrainte-generatrice"
+      ],
+      "guardrails": [
+        "VARIATION ≠ SIMPLE DIFFÉRENCE : l’écart doit être lisible relativement à une forme, une opération ou une structure maintenue."
+      ]
+    },
+    {
+      "id": "transformation-transformation",
+      "order": 4,
+      "title": "TRANSFORMATION",
+      "definition": "Modification d’un élément, d’une fonction ou d’une relation qui redistribue les possibilités, les fonctions ou les rapports d’une configuration.",
+      "targets": [
+        "ÉLÉMENT",
+        "FONCTION",
+        "RELATION"
+      ],
+      "planes": [
+        "MONDE",
+        "COMPOSITION",
+        "LECTURE"
+      ],
+      "axes": [
+        "échelle",
+        "rythme",
+        "propagation",
+        "synchronisation",
+        "réversibilité"
+      ],
+      "mechanisms": [
+        "redistribution fonctionnelle",
+        "propagation",
+        "requalification",
+        "désynchronisation"
+      ],
+      "cases": {
+        "primary": [
+          "Kafka — propager",
+          "Stevenson — modifier les conditions des transformations suivantes",
+          "Borges — requalifier sans changer la surface",
+          "Sophocle — repositionner par transformation relationnelle"
+        ],
+        "secondary": [
+          "Flaubert — accumulation",
+          "Perrault — bascule locale",
+          "Beckett — transformation locale / stase globale",
+          "Faulkner — transformation de lecture",
+          "Perec — transformations distribuées"
+        ]
+      },
+      "structural_connections": [
+        "transformation-trace",
+        "transformation-seuil",
+        "transformation-reversion",
+        "problem-continuite-transformation",
+        "config-auto-transformatrice",
+        "transformation-variation",
+        "transformation-recomposition"
+      ]
+    },
+    {
+      "id": "transformation-seuil",
+      "order": 5,
+      "title": "SEUIL",
+      "definition": "Point, intervalle ou condition à partir duquel un écart, une accumulation, un franchissement ou une convergence produit un changement de régime dans une configuration.",
+      "variants": [
+        "SPATIAL",
+        "FONCTIONNEL",
+        "RECONNAISSANCE",
+        "TOLÉRANCE",
+        "VIRTUEL",
+        "DISTRIBUÉ"
+      ],
+      "production_modes": [
+        "franchissement",
+        "accumulation / saturation",
+        "répétition",
+        "convergence",
+        "épuisement",
+        "dépassement"
+      ],
+      "axes": [
+        "actualisation",
+        "réversibilité",
+        "asymétrie",
+        "portée",
+        "perception"
+      ],
+      "cases": {
+        "primary": [
+          "Perrault — franchir",
+          "Flaubert — saturer",
+          "Stevenson — basculer",
+          "Sophocle — reconnaître"
+        ],
+        "secondary": [
+          "Beckett — seuil virtuel",
+          "Kafka — seuil de tolérance",
+          {
+            "ref_id": "work-forman-cuckoos-nest",
+            "label": "Forman — Vol au-dessus d’un nid de coucou — distinguer ouverture possible et capacité effective de sortir"
+          }
+        ]
+      },
+      "structural_connections": [
+        "transformation-transformation",
+        "transformation-repetition",
+        "transformation-reversion",
+        "form-ressource-argent-credit",
+        "config-double-regime",
+        "config-conditionnellement-stable",
+        "form-porte-acces"
+      ]
+    },
+    {
+      "id": "transformation-reversion",
+      "order": 6,
+      "title": "RÉVERSION",
+      "definition": "Transformation par laquelle une relation, une fonction ou un effet change de direction sans restaurer la configuration antérieure.",
+      "variants": [
+        "FONCTIONNELLE",
+        "DÉPENDANCE",
+        "POSITION",
+        "EFFET",
+        "RESSOURCE"
+      ],
+      "axes": [
+        "direction initiale",
+        "médiation",
+        "rythme",
+        "symétrie",
+        "portée",
+        "réversibilité",
+        "restauration"
+      ],
+      "cases": {
+        "primary": [
+          "Kafka — inverser la dépendance",
+          "Flaubert — fermer ce qui ouvrait",
+          "Stevenson — retourner la fonction",
+          "Sophocle — retourner la position"
+        ],
+        "secondary": [
+          "Perrault — redistribution terminale de la puissance",
+          {
+            "ref_id": "work-herzog-aguirre",
+            "label": "Herzog — Aguirre — puissance proclamée maximale / capacité matérielle minimale"
+          },
+          {
+            "ref_id": "work-otomo-akira",
+            "label": "Ōtomo — Akira — inverser la relation Kaneda / Tetsuo avant son débordement"
+          }
+        ]
+      },
+      "structural_connections": [
+        "transformation-transformation",
+        "transformation-seuil",
+        "config-auto-transformatrice",
+        "form-ressource-argent-credit",
+        "problem-controler-active"
+      ],
+      "guardrails": [
+        "RÉVERSION ≠ RETOUR"
+      ]
+    },
+    {
+      "id": "transformation-recomposition",
+      "order": 7,
+      "title": "RECOMPOSITION",
+      "definition": "Formation d’une nouvelle configuration à partir d’éléments, de relations ou de fonctions transformés, sans impliquer ni retour à l’état antérieur ni résolution du problème.",
+      "variants": [
+        "PROVISOIRE",
+        "TERMINALE",
+        "LOCALE",
+        "DISTRIBUÉE"
+      ],
+      "axes": [
+        "éléments conservés",
+        "relations nouvelles",
+        "stabilité obtenue",
+        "résolution",
+        "échelle",
+        "réversibilité"
+      ],
+      "cases": {
+        "primary": [
+          "Kafka — recomposer la famille après Gregor",
+          {
+            "label": "Werner Herzog — Fitzcarraldo — accomplir autrement le désir d’opéra",
+            "ref_id": "work-herzog-fitzcarraldo"
+          },
+          {
+            "label": "John Cassavetes — Une femme sous influence — continuer sans résoudre",
+            "ref_id": "work-cassavetes-woman-influence"
+          },
+          {
+            "label": "Miloš Forman — Vol au-dessus d’un nid de coucou — faire persister une transformation chez Chief",
+            "ref_id": "work-forman-cuckoos-nest"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "Katsuhiro Ōtomo — Akira — réorganiser la configuration après la catastrophe",
+            "ref_id": "work-otomo-akira"
+          }
+        ]
+      },
+      "structural_connections": [
+        "transformation-transformation",
+        "transformation-reversion",
+        "transformation-seuil",
+        "transformation-condensation",
+        "config-metastable"
+      ],
+      "guardrails": [
+        "RECOMPOSITION ≠ RETOUR",
+        "RECOMPOSITION ≠ RÉSOLUTION"
+      ]
+    },
+    {
+      "id": "transformation-condensation",
+      "order": 8,
+      "title": "CONDENSATION",
+      "definition": "Convergence locale de plusieurs lignes fonctionnelles, relationnelles, temporelles ou formelles dans un même objet, une même scène, un même événement ou un même dispositif.",
+      "variants": [
+        "CENTRALISÉE",
+        "DISTRIBUÉE",
+        "SCÉNIQUE",
+        "DYNAMIQUE",
+        "RELATIONNELLE"
+      ],
+      "axes": [
+        "support",
+        "nature des lignes",
+        "centralisation",
+        "temporalité",
+        "densité",
+        "centralité",
+        "mutation fonctionnelle"
+      ],
+      "cases": {
+        "primary": [
+          "Perrault — concentrer",
+          "Kafka — distribuer",
+          "Stevenson — faire muter le condensateur",
+          "Borges — condenser par relations",
+          {
+            "ref_id": "work-herzog-fitzcarraldo",
+            "label": "Herzog — Fitzcarraldo — le bateau sur la montagne condense désir, économie, espace et contrainte"
+          }
+        ],
+        "secondary": [
+          "Flaubert — condensations successives",
+          "Faulkner — centralité indirecte / distribuée",
+          "Perec — condensateurs forts sans totalité centrale",
+          "Sophocle — convergence épistémique",
+          "Beckett — condensation de reconduction",
+          {
+            "ref_id": "work-coen-serious-man",
+            "label": "Coen — A Serious Man — téléphone et tornade concentrent l’incertitude sans l’expliquer"
+          },
+          {
+            "ref_id": "work-jodorowsky-holy-mountain",
+            "label": "Jodorowsky — La Montagne sacrée — le zoom final condense transformation et destruction du dispositif"
+          }
+        ]
+      },
+      "structural_connections": [
+        "transformation-trace",
+        "transformation-recomposition"
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "id": "config-dependance-asymetrique",
+      "title": "DÉPENDANCE ASYMÉTRIQUE",
+      "plane": "MONDE",
+      "kind": "CONFIGURATION",
+      "definition": "Une relation distribue de manière inégale ressources, fonctions ou capacités : la modification d’un terme peut donc reconfigurer tout le système.",
+      "conditions": [
+        "au moins deux positions fonctionnellement liées",
+        "distribution inégale d’une ressource, d’une capacité ou d’une fonction",
+        "la modification d’un terme affecte les possibilités de l’autre"
+      ],
+      "dynamics": [
+        "renforcement de la dépendance",
+        "redistribution fonctionnelle",
+        "réversion possible de la position dominante ou indispensable"
+      ],
+      "contrasts": [
+        "ASYMÉTRIE DU SAVOIR décrit un problème d’accès ou d’organisation de l’information ; DÉPENDANCE ASYMÉTRIQUE décrit une relation de fonctionnement."
+      ],
+      "cases": [
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "label": "Kafka — La Métamorphose",
+          "note": "La famille dépend d’abord du travail de Gregor ; l’adaptation redistribue ensuite les fonctions et inverse progressivement la dépendance."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "label": "Stevenson — Dr Jekyll & Mr Hyde",
+          "note": "Un dispositif initialement contrôlé devient progressivement condition du retour et renverse la dépendance."
+        },
+        {
+          "ref_id": "work-sartre-huis-clos",
+          "label": "Sartre — Huis clos",
+          "note": "Les dépendances se croisent : chacun attend d’un autre une validation, un désir ou un jugement qu’il ne maîtrise pas."
+        }
+      ],
+      "structural_connections": [
+        "transformation-reversion",
+        "transformation-recomposition",
+        "problem-controler-active"
+      ]
+    },
+    {
+      "id": "config-compensatoire",
+      "title": "CONFIGURATION COMPENSATOIRE",
+      "plane": "MONDE",
+      "kind": "CONFIGURATION",
+      "definition": "Le système absorbe une transformation en redistribuant localement fonctions, charges ou effets ; la compensation peut toutefois transformer les conditions futures.",
+      "conditions": [
+        "une perturbation menace une fonction ou une continuité",
+        "une autre partie du système peut reprendre, déplacer ou absorber cette fonction",
+        "la compensation ne restaure pas nécessairement l’état initial"
+      ],
+      "dynamics": [
+        "substitution",
+        "redistribution des charges",
+        "accumulation de coûts secondaires",
+        "possible transformation de la compensation en nouvelle contrainte"
+      ],
+      "contrasts": [
+        "COMPENSER n’est pas ANNULER : la perturbation peut continuer d’agir sous une autre distribution."
+      ],
+      "cases": [
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "label": "Kafka — La Métamorphose",
+          "note": "La famille reprend progressivement les fonctions économiques et domestiques que Gregor ne peut plus assurer."
+        },
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "label": "Flaubert — Madame Bovary",
+          "note": "De nouvelles dépenses compensent l’usure d’une différence tout en augmentant la contrainte future."
+        },
+        {
+          "ref_id": "work-wilde-dorian-gray",
+          "label": "Wilde — Le Portrait de Dorian Gray",
+          "note": "Le portrait porte les transformations que le corps de Dorian ne porte plus publiquement."
+        }
+      ],
+      "structural_connections": [
+        "transformation-trace",
+        "transformation-recomposition",
+        "problem-compenser-sans-transformer"
+      ]
+    },
+    {
+      "id": "config-double-regime",
+      "title": "DOUBLE RÉGIME",
+      "plane": "MONDE",
+      "kind": "CONFIGURATION",
+      "definition": "Deux régimes de fonctionnement coexistent et communiquent par une interface, une règle ou une condition de passage.",
+      "conditions": [
+        "deux régimes distinguables",
+        "une interface ou condition de passage",
+        "des effets différents selon le régime actif ou accessible"
+      ],
+      "dynamics": [
+        "franchissement",
+        "dissimulation",
+        "alternance",
+        "transfert d’un effet d’un régime à l’autre"
+      ],
+      "contrasts": [
+        "DOUBLE RÉGIME ≠ simple opposition thématique : les deux régimes doivent avoir des fonctions et des conditions d’accès distinctes."
+      ],
+      "cases": [
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "label": "Perrault — Barbe-Bleue",
+          "note": "L’espace autorisé et l’espace interdit sont séparés par une porte dont le franchissement transforme le savoir."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "label": "Stevenson — Dr Jekyll & Mr Hyde",
+          "note": "Deux régimes corporels et sociaux alternent jusqu’à ce que leur relation de contrôle se renverse."
+        },
+        {
+          "ref_id": "work-wilde-dorian-gray",
+          "label": "Wilde — Le Portrait de Dorian Gray",
+          "note": "Une surface publique stable coexiste avec une trace privée où s’accumulent les transformations."
+        }
+      ],
+      "structural_connections": [
+        "transformation-seuil",
+        "transformation-trace",
+        "form-porte-acces"
+      ]
+    },
+    {
+      "id": "config-auto-transformatrice",
+      "title": "CONFIGURATION AUTO-TRANSFORMATRICE",
+      "plane": "MONDE",
+      "kind": "CONFIGURATION",
+      "definition": "Le fonctionnement normal du système produit progressivement une modification de ses propres conditions de fonctionnement.",
+      "conditions": [
+        "une opération peut être répétée",
+        "chaque occurrence laisse un effet sur la configuration",
+        "ces effets modifient les conditions des occurrences suivantes"
+      ],
+      "dynamics": [
+        "accumulation",
+        "renforcement",
+        "usure",
+        "réversion",
+        "fermeture progressive de possibilités"
+      ],
+      "contrasts": [
+        "Une transformation extérieure modifie le système ; une configuration AUTO-TRANSFORMATRICE se modifie par son propre fonctionnement."
+      ],
+      "cases": [
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "label": "Flaubert — Madame Bovary",
+          "note": "Les moyens employés pour renouveler l’intensité accumulent dettes et inscriptions qui ferment ensuite les possibilités."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "label": "Stevenson — Dr Jekyll & Mr Hyde",
+          "note": "Chaque activation de Hyde modifie les conditions futures du contrôle et du retour."
+        },
+        {
+          "ref_id": "work-wilde-dorian-gray",
+          "label": "Wilde — Le Portrait de Dorian Gray",
+          "note": "Chaque nouvelle marque du portrait augmente l’écart entre surface publique et histoire accumulée, modifiant les contraintes de dissimulation et de preuve."
+        }
+      ],
+      "structural_connections": [
+        "transformation-repetition",
+        "transformation-reversion",
+        "transformation-recomposition"
+      ]
+    },
+    {
+      "id": "config-conditionnellement-stable",
+      "title": "CONFIGURATION CONDITIONNELLEMENT STABLE",
+      "plane": "MONDE",
+      "kind": "CONFIGURATION",
+      "definition": "La configuration tient tant qu’une ou plusieurs conditions restent satisfaites ; leur disparition ou leur franchissement produit un changement de régime.",
+      "conditions": [
+        "une stabilité observable",
+        "une condition identifiable de maintien",
+        "la rupture de cette condition modifie les règles ou possibilités de la configuration"
+      ],
+      "dynamics": [
+        "maintien",
+        "tolérance",
+        "franchissement",
+        "bascule"
+      ],
+      "contrasts": [
+        "CONDITIONNELLEMENT STABLE : elle tient tant qu’une condition demeure. MÉTASTABLE : elle tient en réajustant continuellement ses relations."
+      ],
+      "cases": [
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "label": "Perrault — Barbe-Bleue",
+          "note": "La configuration tient tant que l’interdiction n’est pas franchie et que la trace du franchissement n’est pas détectée."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "label": "Stevenson — Dr Jekyll & Mr Hyde",
+          "note": "La réversibilité dépend de conditions matérielles qui cessent progressivement d’être garanties."
+        },
+        {
+          "ref_id": "work-sartre-huis-clos",
+          "label": "Sartre — Huis clos",
+          "note": "L’ouverture de la porte teste une condition supposée de l’enfermement et révèle que la dépendance relationnelle demeure active."
+        }
+      ],
+      "structural_connections": [
+        "transformation-seuil",
+        "transformation-reversion",
+        "config-metastable"
+      ]
+    },
+    {
+      "id": "config-metastable",
+      "title": "CONFIGURATION MÉTASTABLE",
+      "plane": "MONDE",
+      "kind": "CONFIGURATION",
+      "definition": "Configuration qui persiste non parce que ses relations restent identiques, mais parce qu’elle absorbe continuellement des variations par réajustements.",
+      "conditions": [
+        "les relations sont susceptibles de varier sans destruction immédiate",
+        "des réajustements maintiennent une continuité suffisante",
+        "la stabilité obtenue reste révisable"
+      ],
+      "dynamics": [
+        "absorption de variations",
+        "réajustement",
+        "recomposition provisoire",
+        "bascule lorsque les capacités d’ajustement sont dépassées"
+      ],
+      "contrasts": [
+        "MÉTASTABLE ≠ instable : elle possède une capacité réelle de tenue. MÉTASTABLE ≠ conditionnellement stable : sa continuité dépend du réajustement, pas seulement du maintien d’une condition."
+      ],
+      "cases": [
+        {
+          "label": "John Cassavetes — Une femme sous influence",
+          "note": "La famille tient par ajustements successifs et ne retrouve jamais un état initial simplement restauré.",
+          "ref_id": "work-cassavetes-woman-influence"
+        },
+        {
+          "label": "Chantal Akerman — Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+          "note": "La stabilité apparente exige la reproduction active d’un programme dont les micro-écarts deviennent progressivement opératoires.",
+          "ref_id": "work-akerman-jeanne-dielman"
+        },
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "label": "Kafka — La Métamorphose",
+          "note": "La famille maintient une continuité en réajustant successivement travail, espace domestique et répartition des fonctions autour de Gregor."
+        }
+      ],
+      "structural_connections": [
+        "transformation-variation",
+        "transformation-recomposition",
+        "transformation-seuil"
+      ]
+    },
+    {
+      "id": "config-contrainte-generatrice",
+      "title": "CONTRAINTE GÉNÉRATRICE",
+      "plane": "COMPOSITION",
+      "kind": "OPÉRATEUR DE CONFIGURATION",
+      "definition": "Règle, limite ou condition qui réduit le champ des possibles et, précisément par cette réduction, produit une série de formes, d’actions ou de conséquences.",
+      "conditions": [
+        "un espace de possibilités est réellement réduit",
+        "les solutions restantes sont reconfigurées par cette réduction",
+        "des conséquences ou formes apparaissent parce que la contrainte existe"
+      ],
+      "dynamics": [
+        "sélection",
+        "détour",
+        "variation sous règle",
+        "production de conséquences",
+        "réorganisation des ressources"
+      ],
+      "contrasts": [
+        "CONTRAINTE GÉNÉRATRICE produit un espace de possibles ; SEUIL fait changer de régime. Une contrainte peut être diégétique ou formelle."
+      ],
+      "cases": [
+        {
+          "ref_id": "work-perec-vie-mode-emploi",
+          "label": "Perec — La Vie mode d’emploi",
+          "note": "La règle de parcours réduit les choix locaux et produit la distribution du livre."
+        },
+        {
+          "ref_id": "lab-style-queneau",
+          "label": "Queneau — Exercices de style",
+          "note": "Le maintien d’un matériau et l’imposition d’opérations produisent la série des variations."
+        },
+        {
+          "label": "Werner Herzog — Fitzcarraldo",
+          "note": "La géographie et l’économie rendent certaines solutions impossibles et produisent le passage du bateau sur la montagne.",
+          "ref_id": "work-herzog-fitzcarraldo"
+        },
+        {
+          "label": "Chantal Akerman — Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+          "note": "Le programme de gestes et la rigueur de mise en scène produisent la perceptibilité des micro-écarts.",
+          "ref_id": "work-akerman-jeanne-dielman"
+        }
+      ],
+      "structural_connections": [
+        "transformation-variation",
+        "transformation-recomposition",
+        "transformation-seuil"
+      ]
+    },
+    {
+      "id": "config-lecture",
+      "title": "CONFIGURATION DE LECTURE",
+      "plane": "LECTURE",
+      "kind": "CONFIGURATION",
+      "definition": "L’ordre de présentation, l’attribution et la distribution de l’information transforment progressivement ce que le lecteur ou spectateur peut organiser et comprendre.",
+      "conditions": [
+        "l’information est distribuée dans le temps ou entre plusieurs supports ou positions",
+        "l’ordre d’accès modifie l’intelligibilité",
+        "la relecture ou le recoupement peut requalifier ce qui était déjà disponible"
+      ],
+      "dynamics": [
+        "retard",
+        "requalification",
+        "recoupement",
+        "refocalisation",
+        "auto-inclusion"
+      ],
+      "contrasts": [
+        "La CONFIGURATION DE LECTURE appartient au plan LECTURE : elle ne décrit pas directement l’organisation du monde représenté."
+      ],
+      "cases": [
+        {
+          "ref_id": "work-borges-pierre-menard",
+          "label": "Borges — Pierre Ménard, auteur du Quichotte",
+          "note": "Une surface verbalement identique change de fonction par attribution et trajectoire historique."
+        },
+        {
+          "ref_id": "work-faulkner-bruit-fureur",
+          "label": "Faulkner — Le Bruit et la Fureur",
+          "note": "Les perspectives partielles obligent au recoupement et à la requalification."
+        },
+        {
+          "ref_id": "work-sophocle-oedipe-roi",
+          "label": "Sophocle — Œdipe roi",
+          "note": "L’enquêteur finit par entrer dans l’objet même de son enquête."
+        },
+        {
+          "label": "Michelangelo Antonioni — Blow-Up",
+          "note": "L’agrandissement et le rapprochement des images produisent une configuration probatoire qui reste incomplète.",
+          "ref_id": "work-antonioni-blow-up"
+        }
+      ],
+      "structural_connections": [
+        "transformation-trace",
+        "transformation-repetition",
+        "transformation-variation",
+        "problem-asymetrie-savoir"
+      ]
+    }
+  ],
+  "forms": [
+    {
+      "id": "form-porte-acces",
+      "title": "PORTE / ACCÈS",
+      "definition": "Interface qui règle passage, visibilité, autorisation ou séparation. Sa fonction dépend toujours de la configuration dans laquelle elle intervient.",
+      "functions": [
+        "INTERDIRE",
+        "AUTORISER",
+        "FILTRER",
+        "SÉPARER",
+        "RÉVÉLER",
+        "TESTER"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "label": "Perrault — Barbe-Bleue",
+          "operation": "FRANCHIR",
+          "note": "Le passage transforme l’accès au savoir et produit une trace détectable."
+        },
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "label": "Kafka — La Métamorphose",
+          "operation": "MODULER",
+          "note": "La porte règle les rapports entre Gregor, la famille et l’espace domestique."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "label": "Stevenson — Dr Jekyll & Mr Hyde",
+          "operation": "DÉDOUBLER",
+          "note": "Les accès matérialisent la séparation et la communication entre régimes."
+        },
+        {
+          "ref_id": "work-sartre-huis-clos",
+          "label": "Sartre — Huis clos",
+          "operation": "TESTER",
+          "note": "La porte ouverte révèle que la captivité peut survivre à la disparition de l’obstacle spatial."
+        }
+      ],
+      "guardrails": [
+        "MÊME PORTE ≠ MÊME FONCTION.",
+        "Une interface spatiale n’est pas automatiquement un seuil de changement de régime."
+      ],
+      "structural_connections": [
+        "transformation-seuil",
+        "config-double-regime",
+        "config-conditionnellement-stable"
+      ]
+    },
+    {
+      "id": "form-chambre-espace-interieur",
+      "title": "CHAMBRE / ESPACE INTÉRIEUR",
+      "definition": "Espace intérieur dont la fonction peut évoluer : habitation, adaptation, confinement, archive, dissimulation ou champ de coexistence.",
+      "functions": [
+        "HABITER",
+        "ADAPTER",
+        "CONFINER",
+        "DISSIMULER",
+        "ARCHIVER",
+        "FAIRE COEXISTER"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "label": "Kafka — La Métamorphose",
+          "operation": "TRANSFORMER LA FONCTION",
+          "note": "La chambre passe d’habitation à adaptation, confinement, relégation puis stockage."
+        },
+        {
+          "ref_id": "work-perec-vie-mode-emploi",
+          "label": "Perec — La Vie mode d’emploi",
+          "operation": "DISTRIBUER",
+          "note": "Les pièces deviennent unités d’un champ de coexistence parcouru par une règle."
+        },
+        {
+          "ref_id": "work-wilde-dorian-gray",
+          "label": "Wilde — Le Portrait de Dorian Gray",
+          "operation": "DISSIMULER",
+          "note": "La pièce reculée maintient l’inaccessibilité pratique de la trace."
+        },
+        {
+          "ref_id": "work-sartre-huis-clos",
+          "label": "Sartre — Huis clos",
+          "operation": "ENFERMER / TESTER",
+          "note": "Le salon cesse d’expliquer à lui seul l’enfermement lorsque la porte s’ouvre."
+        }
+      ],
+      "guardrails": [
+        "ESPACE INTÉRIEUR ≠ PRISON PAR DÉFAUT.",
+        "Décrire le lieu ne suffit pas : il faut suivre ses changements de fonction."
+      ],
+      "structural_connections": [
+        "transformation-transformation",
+        "config-conditionnellement-stable",
+        "config-metastable"
+      ]
+    },
+    {
+      "id": "form-document-inscription",
+      "title": "DOCUMENT / INSCRIPTION",
+      "definition": "Support qui conserve, déplace ou redistribue un effet dans le temps : dette, lettre, testament, preuve, archive, note ou inscription.",
+      "functions": [
+        "ENREGISTRER",
+        "OBLIGER",
+        "RETARDER",
+        "RÉVÉLER",
+        "REQUALIFIER",
+        "PROUVER"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "label": "Flaubert — Madame Bovary",
+          "operation": "OBLIGER",
+          "note": "Les achats deviennent inscriptions et dettes qui continuent d’agir sur le présent."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "label": "Stevenson — Dr Jekyll & Mr Hyde",
+          "operation": "RETARDER / RÉVÉLER",
+          "note": "Lettres et confession règlent l’ordre d’accès à la causalité."
+        },
+        {
+          "ref_id": "work-wilde-dorian-gray",
+          "label": "Wilde — Le Portrait de Dorian Gray",
+          "operation": "ARCHIVER / REQUALIFIER",
+          "note": "Le portrait conserve les transformations et finit par juger les motivations."
+        },
+        {
+          "label": "Michelangelo Antonioni — Blow-Up",
+          "operation": "PROUVER SANS FERMER",
+          "note": "Les photographies produisent une trace et une enquête sans garantir la clôture probatoire.",
+          "ref_id": "work-antonioni-blow-up"
+        }
+      ],
+      "guardrails": [
+        "TRACE ≠ PREUVE UNIVOQUE.",
+        "Une inscription n’a pas une fonction fixe : elle peut obliger, retarder, révéler ou requalifier."
+      ],
+      "structural_connections": [
+        "transformation-trace",
+        "config-lecture",
+        "problem-asymetrie-savoir"
+      ]
+    },
+    {
+      "id": "form-corps-marque",
+      "title": "CORPS / MARQUE",
+      "definition": "Le corps devient support d’une transformation, d’une contrainte ou d’une trace dont les effets persistent dans la configuration.",
+      "functions": [
+        "PORTER",
+        "LIMITER",
+        "RÉVÉLER",
+        "DISSIMULER",
+        "INSCRIRE",
+        "CONDENSER"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "label": "Kafka — La Métamorphose",
+          "operation": "TRANSFORMER",
+          "note": "La transformation corporelle redistribue capacités et fonctions familiales."
+        },
+        {
+          "ref_id": "work-sophocle-oedipe-roi",
+          "label": "Sophocle — Œdipe roi",
+          "operation": "INSCRIRE",
+          "note": "L’auto-aveuglement inscrit corporellement les conséquences d’une reconnaissance déjà accomplie."
+        },
+        {
+          "ref_id": "work-wilde-dorian-gray",
+          "label": "Wilde — Le Portrait de Dorian Gray",
+          "operation": "DÉPLACER",
+          "note": "Le corps public reste stable parce qu’un autre support porte les marques."
+        },
+        {
+          "label": "Katsuhiro Ōtomo — Akira",
+          "operation": "DÉBORDER",
+          "note": "La transformation cesse de pouvoir être contenue par le support corporel et change d’échelle.",
+          "ref_id": "work-otomo-akira"
+        }
+      ],
+      "guardrails": [
+        "CORPS / MARQUE ne signifie pas que toute transformation corporelle est une TRACE.",
+        "Une marque peut être cause, effet, support ou conséquence : il faut préciser sa fonction."
+      ],
+      "structural_connections": [
+        "transformation-trace",
+        "transformation-transformation",
+        "transformation-condensation"
+      ]
+    },
+    {
+      "id": "form-ressource-argent-credit",
+      "title": "RESSOURCE / ARGENT / CRÉDIT",
+      "definition": "Capacité disponible qui ouvre ou conditionne l’action ; son usage, son épuisement ou sa dépendance peuvent changer de fonction.",
+      "functions": [
+        "OUVRIR",
+        "FINANCER",
+        "CONDITIONNER",
+        "OBLIGER",
+        "S’ÉPUISER",
+        "SE RETOURNER"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "label": "Flaubert — Madame Bovary",
+          "operation": "OUVRIR → OBLIGER",
+          "note": "Le crédit ouvre des possibilités avant de devenir dette et fermeture."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "label": "Stevenson — Dr Jekyll & Mr Hyde",
+          "operation": "CONDITIONNER LE RETOUR",
+          "note": "La ressource matérielle nécessaire à la potion devient condition de réversibilité."
+        },
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "label": "Kafka — La Métamorphose",
+          "operation": "REDISTRIBUER",
+          "note": "La perte de la fonction productive de Gregor oblige la famille à redistribuer travail et ressources."
+        },
+        {
+          "label": "Werner Herzog — Fitzcarraldo",
+          "operation": "GÉNÉRER UNE CONTRAINTE",
+          "note": "Le financement de l’opéra produit le détour économique et géographique qui structure le projet.",
+          "ref_id": "work-herzog-fitzcarraldo"
+        }
+      ],
+      "guardrails": [
+        "RESSOURCE ≠ ARGENT : une ressource peut être matérielle, sociale, technique ou temporelle.",
+        "Ce qui ouvre une possibilité peut devenir ensuite ce qui la conditionne ou la ferme."
+      ],
+      "structural_connections": [
+        "transformation-reversion",
+        "config-contrainte-generatrice",
+        "config-dependance-asymetrique"
+      ]
+    }
+  ],
+  "problems": [
+    {
+      "id": "problem-continuite-transformation",
+      "title": "CONTINUITÉ SOUS TRANSFORMATION",
+      "question": "Comment maintenir une configuration lorsqu’un élément transformé ne peut plus occuper sa fonction antérieure ?",
+      "tension": "continuer sans pouvoir simplement restaurer l’ancienne distribution des fonctions",
+      "responses": [
+        "compenser",
+        "redistribuer",
+        "exclure",
+        "recomposer"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "label": "Kafka — La Métamorphose",
+          "note": "La famille maintient puis transforme son organisation autour d’un Gregor devenu incompatible avec sa fonction antérieure."
+        },
+        {
+          "ref_id": "work-wilde-dorian-gray",
+          "label": "Wilde — Le Portrait de Dorian Gray",
+          "note": "La continuité apparente du corps repose sur un déplacement des transformations vers le portrait."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "label": "Stevenson — Dr Jekyll & Mr Hyde",
+          "note": "Jekyll tente de préserver la continuité de sa position sociale en séparant et en réversibilisant un régime corporel devenu progressivement moins contrôlable."
+        }
+      ],
+      "neighbors": [
+        "COMPENSER SANS SE TRANSFORMER porte sur le coût de la compensation ; CONTINUITÉ SOUS TRANSFORMATION porte sur la possibilité même de continuer après modification."
+      ]
+    },
+    {
+      "id": "problem-maintenir-difference",
+      "title": "MAINTENIR UNE DIFFÉRENCE",
+      "question": "Comment une différence peut-elle rester active lorsqu’elle tend à devenir habitude, usure ou norme ?",
+      "tension": "produire ou préserver un écart sans que sa répétition n’en neutralise la fonction",
+      "responses": [
+        "renouveler",
+        "varier",
+        "intensifier",
+        "changer d’échelle ou de support"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "label": "Flaubert — Madame Bovary",
+          "note": "L’exception répétée s’use et exige de nouvelles différences qui augmentent les contraintes."
+        },
+        {
+          "ref_id": "lab-style-queneau",
+          "label": "Queneau — Exercices de style",
+          "note": "La variation produit des différences à partir d’un matériau maintenu."
+        },
+        {
+          "label": "Chantal Akerman — Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+          "note": "Le programme répété rend la micro-variation perceptible et fonctionnelle.",
+          "ref_id": "work-akerman-jeanne-dielman"
+        }
+      ],
+      "neighbors": [
+        "RÉPÉTITION décrit le retour ; VARIATION décrit l’écart opératoire dans ce qui revient."
+      ]
+    },
+    {
+      "id": "problem-controler-active",
+      "title": "CONTRÔLER CE QUE L’ON ACTIVE",
+      "question": "Comment garder le contrôle d’un dispositif lorsque son activation modifie progressivement les conditions mêmes du contrôle ?",
+      "tension": "ouvrir des possibilités sans devenir dépendant du moyen employé pour les ouvrir",
+      "responses": [
+        "limiter l’activation",
+        "maintenir une ressource de retour",
+        "déléguer",
+        "fermer la réversibilité"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "label": "Stevenson — Dr Jekyll & Mr Hyde",
+          "note": "La répétition de l’activation renforce Hyde jusqu’à retourner la relation de contrôle."
+        },
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "label": "Flaubert — Madame Bovary",
+          "note": "Les moyens qui rouvrent une différence deviennent progressivement les contraintes qui ferment l’action."
+        },
+        {
+          "ref_id": "work-wilde-dorian-gray",
+          "label": "Wilde — Le Portrait de Dorian Gray",
+          "note": "Le vœu ouvre une substitution que Dorian exploite d’abord comme protection ; l’accumulation de la trace transforme ensuite ce dispositif en conscience, preuve et menace."
+        }
+      ],
+      "neighbors": [
+        "CONFIGURATION AUTO-TRANSFORMATRICE décrit la machine ; CONTRÔLER CE QUE L’ON ACTIVE formule le problème qu’elle peut poser."
+      ]
+    },
+    {
+      "id": "problem-asymetrie-savoir",
+      "title": "ASYMÉTRIE DU SAVOIR",
+      "question": "Que produit une configuration où les acteurs n’ont ni le même accès à l’information ni la même capacité à organiser ce qu’ils savent ?",
+      "tension": "agir et juger avec des distributions inégales d’information",
+      "responses": [
+        "dissimuler",
+        "recouper",
+        "anticiper",
+        "retarder la révélation",
+        "s’auto-inclure dans l’enquête"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "label": "Perrault — Barbe-Bleue",
+          "note": "L’interdiction organise une asymétrie qui se transforme lorsque la porte est franchie et la trace produite."
+        },
+        {
+          "ref_id": "work-faulkner-bruit-fureur",
+          "label": "Faulkner — Le Bruit et la Fureur",
+          "note": "Aucune perspective locale ne contient seule la configuration ; le savoir se construit par recoupement."
+        },
+        {
+          "ref_id": "work-sophocle-oedipe-roi",
+          "label": "Sophocle — Œdipe roi",
+          "note": "Le savoir distribué converge jusqu’à inclure l’enquêteur dans l’objet recherché."
+        }
+      ],
+      "neighbors": [
+        "DÉPENDANCE ASYMÉTRIQUE porte sur le fonctionnement des positions ; ASYMÉTRIE DU SAVOIR porte sur leur accès et leur pouvoir d’organisation de l’information."
+      ]
+    },
+    {
+      "id": "problem-compenser-sans-transformer",
+      "title": "COMPENSER SANS SE TRANSFORMER",
+      "question": "Peut-on absorber une perturbation sans que les mécanismes de compensation ne transforment eux-mêmes le système ?",
+      "tension": "maintenir une surface ou une fonction tout en déplaçant le coût de la transformation",
+      "responses": [
+        "substituer",
+        "redistribuer",
+        "externaliser localement",
+        "accumuler une dette ou une trace"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "label": "Kafka — La Métamorphose",
+          "note": "Les compensations familiales maintiennent provisoirement le système tout en redistribuant ses dépendances."
+        },
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "label": "Flaubert — Madame Bovary",
+          "note": "Chaque compensation de l’usure augmente les obligations futures."
+        },
+        {
+          "ref_id": "work-wilde-dorian-gray",
+          "label": "Wilde — Le Portrait de Dorian Gray",
+          "note": "La transformation est déplacée vers le portrait afin de conserver une surface corporelle stable."
+        }
+      ],
+      "neighbors": [
+        "CONFIGURATION COMPENSATOIRE décrit une forme d’organisation ; COMPENSER SANS SE TRANSFORMER interroge son coût et sa possibilité."
+      ]
+    },
+    {
+      "id": "problem-futur-anticipe",
+      "title": "AGIR SOUS UN FUTUR ANTICIPÉ",
+      "question": "Comment agit-on lorsqu’un futur possible organise déjà le présent sans être encore actualisé ?",
+      "tension": "un événement non advenu règle déjà les choix, attentes ou contraintes du présent",
+      "responses": [
+        "attendre",
+        "préparer",
+        "différer",
+        "reconduire",
+        "agir sous menace ou promesse"
+      ],
+      "cases": [
+        {
+          "ref_id": "work-beckett-godot",
+          "label": "Beckett — En attendant Godot",
+          "note": "La venue possible de Godot organise les activités présentes sans s’actualiser."
+        },
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "label": "Perrault — Barbe-Bleue",
+          "note": "Le délai vers le retour de Barbe-Bleue et l’arrivée possible des secours organise les actions présentes."
+        },
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "label": "Flaubert — Madame Bovary",
+          "note": "Des futurs imaginés requalifient le présent et déclenchent des engagements qui le transforment."
+        }
+      ],
+      "neighbors": [
+        "SEUIL concerne un changement de régime ; FUTUR ANTICIPÉ concerne un possible qui agit avant son actualisation."
+      ]
+    }
+  ],
+  "optics": [
+    {
+      "id": "optic-configuration",
+      "title": "CONFIGURATION",
+      "definition": "Observer la distribution des positions, fonctions, dépendances et possibilités à un moment donné.",
+      "questions": [
+        "Quelles positions sont disponibles ?",
+        "De quoi chaque terme dépend-il ?",
+        "Qu’est-ce qui changerait si une relation était modifiée ?"
+      ],
+      "blindspots": [
+        "Peut sous-estimer le rythme du changement si elle est isolée de TRANSFORMATION ou TEMPS."
+      ],
+      "couplings": [
+        "TRANSFORMATION",
+        "RESSOURCES",
+        "SAVOIR"
+      ],
+      "cases": [
+        "Kafka — redistribution familiale",
+        "Huis clos — circuit de dépendances croisées",
+        "Perec — champ de coexistence"
+      ]
+    },
+    {
+      "id": "optic-transformation",
+      "title": "TRANSFORMATION",
+      "definition": "Suivre ce qui se modifie et la manière dont cette modification se propage, reste locale ou change d’échelle.",
+      "questions": [
+        "Qu’est-ce qui change ?",
+        "Quelle cible est modifiée : élément, fonction ou relation ?",
+        "Comment les conséquences se propagent-elles ?"
+      ],
+      "blindspots": [
+        "Peut confondre changement ponctuel et nouvelle organisation si elle n’est pas couplée à CONFIGURATION ou RECOMPOSITION."
+      ],
+      "couplings": [
+        "CONFIGURATION",
+        "TEMPS",
+        "CORPS"
+      ],
+      "cases": [
+        "Kafka — transformation corporelle et redistribution",
+        "Borges — transformation relationnelle sans changement de surface",
+        {
+          "label": "Katsuhiro Ōtomo — Akira — débordement d’échelle",
+          "ref_id": "work-otomo-akira"
+        }
+      ]
+    },
+    {
+      "id": "optic-temps",
+      "title": "TEMPS",
+      "definition": "Comparer ordre, rythme, accumulation, répétition, variation, attente, mémoire et après-coup.",
+      "questions": [
+        "Qu’est-ce qui revient ?",
+        "Qu’est-ce qui s’accumule ?",
+        "Quel futur agit déjà sur le présent ?"
+      ],
+      "blindspots": [
+        "Le temps seul ne dit pas quelle relation ou fonction est affectée."
+      ],
+      "couplings": [
+        "TRANSFORMATION",
+        "ÉNONCIATION",
+        "RESSOURCES"
+      ],
+      "cases": [
+        "Flaubert — usure et accumulation",
+        "Beckett — reconduction",
+        {
+          "label": "Chantal Akerman — Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles — répétition et micro-variation",
+          "ref_id": "work-akerman-jeanne-dielman"
+        }
+      ]
+    },
+    {
+      "id": "optic-espace",
+      "title": "ESPACE",
+      "definition": "Suivre accès, séparation, proximité, parcours et changement de fonction des lieux.",
+      "questions": [
+        "Qui peut accéder à quoi ?",
+        "Quel espace sépare ou relie des régimes ?",
+        "La fonction d’un lieu reste-t-elle stable ?"
+      ],
+      "blindspots": [
+        "Un lieu n’explique pas à lui seul la configuration ; Huis clos montre qu’une captivité peut survivre à l’ouverture de la porte."
+      ],
+      "couplings": [
+        "CONFIGURATION",
+        "SAVOIR",
+        "CORPS"
+      ],
+      "cases": [
+        "Perrault — porte interdite",
+        "Kafka — trajectoire de la chambre",
+        "Huis clos — ouverture spatiale sans sortie configurationnelle"
+      ]
+    },
+    {
+      "id": "optic-corps",
+      "title": "CORPS",
+      "definition": "Observer capacités, marques, contraintes, dispositions et transformations incorporées.",
+      "questions": [
+        "Que peut encore faire le corps ?",
+        "Que porte-t-il comme trace ?",
+        "La transformation reste-t-elle contenue par son support ?"
+      ],
+      "blindspots": [
+        "Ne pas réduire toute modification de la configuration à une psychologie ou une identité du personnage."
+      ],
+      "couplings": [
+        "TRANSFORMATION",
+        "ESPACE",
+        "SAVOIR"
+      ],
+      "cases": [
+        "Kafka — capacités redistribuées",
+        "Wilde — surface stable / trace déplacée",
+        "Akira — transformation débordant le corps"
+      ]
+    },
+    {
+      "id": "optic-ressources",
+      "title": "RESSOURCES",
+      "definition": "Suivre ce qui rend une action possible, coûteuse, conditionnelle ou dépendante.",
+      "questions": [
+        "Qu’est-ce qui ouvre l’action ?",
+        "Qu’est-ce qui s’épuise ?",
+        "Une ressource devient-elle une obligation ou une dépendance ?"
+      ],
+      "blindspots": [
+        "Ne pas réduire RESSOURCES à l’argent : temps, matériaux, accès, énergie ou crédibilité peuvent fonctionner comme ressources."
+      ],
+      "couplings": [
+        "CONFIGURATION",
+        "TEMPS",
+        "TRANSFORMATION"
+      ],
+      "cases": [
+        "Flaubert — crédit devenu dette",
+        "Stevenson — ressource conditionnant le retour",
+        {
+          "label": "Werner Herzog — Fitzcarraldo — financement et géographie du projet",
+          "ref_id": "work-herzog-fitzcarraldo"
+        }
+      ]
+    },
+    {
+      "id": "optic-savoir",
+      "title": "SAVOIR",
+      "definition": "Comparer disponibilité de l’information, intelligibilité, asymétries, recoupements et critères de décision.",
+      "questions": [
+        "Qui sait quoi ?",
+        "Comment une information devient-elle intelligible ?",
+        "Le système de preuves permet-il de fermer l’interprétation ?"
+      ],
+      "blindspots": [
+        "Information disponible ≠ vérité organisée ; une trace peut exister sans produire une preuve univoque."
+      ],
+      "couplings": [
+        "ÉNONCIATION",
+        "CONFIGURATION",
+        "TEMPS"
+      ],
+      "cases": [
+        "Sophocle — convergence par recoupement",
+        "Faulkner — savoir distribué",
+        {
+          "label": "Michelangelo Antonioni — Blow-Up — système probatoire incomplet",
+          "ref_id": "work-antonioni-blow-up"
+        },
+        {
+          "label": "Joel & Ethan Coen — A Serious Man — arbitrage impossible entre interprétations",
+          "ref_id": "work-coen-serious-man"
+        }
+      ]
+    },
+    {
+      "id": "optic-enonciation",
+      "title": "ÉNONCIATION",
+      "definition": "Observer qui parle, depuis quelle position et comment cette position règle l’accès au monde ou agit sur la configuration.",
+      "questions": [
+        "Qui peut formuler le problème ?",
+        "Quelle position autorise ou discrédite une parole ?",
+        "Parler décrit-il ou transforme-t-il la situation ?"
+      ],
+      "blindspots": [
+        "Ne pas confondre parole du personnage, organisation de l’œuvre et interprétation du lecteur."
+      ],
+      "couplings": [
+        "SAVOIR",
+        "STYLE",
+        "CONFIGURATION"
+      ],
+      "cases": [
+        "Faulkner — distribution des perspectives",
+        "Stevenson — confession retardée",
+        "Huis clos — énonciation comme action"
+      ]
+    },
+    {
+      "id": "optic-style",
+      "title": "STYLE",
+      "definition": "Traiter la forme comme opération : matière → opérations → surface × configuration d’insertion → effet.",
+      "questions": [
+        "Qu’est-ce qui reste invariant ?",
+        "Quelle opération produit la surface ?",
+        "Que change cette opération dans l’insertion ou l’effet ?"
+      ],
+      "blindspots": [
+        "STYLE ≠ catalogue de procédés ; une surface identique peut avoir des fonctions différentes selon sa configuration."
+      ],
+      "couplings": [
+        "ÉNONCIATION",
+        "TEMPS",
+        "TRANSFORMATION"
+      ],
+      "cases": [
+        "Queneau — variation du même matériau",
+        "Borges — identité verbale / différence configurationnelle",
+        "Flaubert — style et requalification"
+      ]
+    }
+  ],
+  "laboratories": [
+    {
+      "id": "lab-style-queneau",
+      "title": "Exercices de style",
+      "author": "Raymond Queneau",
+      "section": "STYLE",
+      "status": "LABORATOIRE"
+    }
+  ],
+  "local_concepts": [
+    "absence active",
+    "activité locale / stase globale",
+    "archive distribuée",
+    "auto-inclusion",
+    "autonomisation",
+    "causalité rétrospective",
+    "centre indirect",
+    "champ configurationnel",
+    "circuit de dépendances croisées",
+    "clinamen",
+    "configuration suspendue",
+    "contrainte productive",
+    "contrôle distribué",
+    "convergence épistémique",
+    "délai convergent",
+    "désynchronisation",
+    "enquête récursive",
+    "enquête transformatrice",
+    "identité verbale ≠ identité configurationnelle",
+    "mesure par répétition",
+    "ouverture spatiale ≠ sortie configurationnelle",
+    "programme / processus",
+    "redistribution fonctionnelle",
+    "reprise textuelle",
+    "requalification évaluative",
+    "retour spatial ≠ retour configurationnel",
+    "règle de parcours",
+    "saturation",
+    "savoir distribué",
+    "savoir par recoupement",
+    "savoir-fermeture",
+    "seuil de reconnaissance",
+    "seuil virtuel",
+    "substitution transformationnelle",
+    "trace de trajectoire",
+    "trace dispositionnelle",
+    "trace distribuée",
+    "trajectoire de la chambre",
+    "unité distribuée",
+    "usure",
+    "équifinalité locale"
+  ],
+  "migrations": [
+    {
+      "term": "TRACE CONTRACTUELLE",
+      "action": "FUSIONNER",
+      "target": "TRACE DOCUMENTAIRE"
+    },
+    {
+      "term": "TRACE RAMIFIÉE",
+      "action": "FUSIONNER",
+      "target": "TRACE DISTRIBUÉE"
+    },
+    {
+      "term": "TRACE SPATIALE",
+      "action": "DÉPLACER_EN_AXE",
+      "target": "TRACE.support=espace"
+    },
+    {
+      "term": "TRACE CORPORELLE",
+      "action": "DÉPLACER_EN_AXE",
+      "target": "TRACE.support=corps"
+    },
+    {
+      "term": "TRACE DÉTECTABLE",
+      "action": "DÉPLACER_EN_AXE",
+      "target": "TRACE.accessibilité=détectable"
+    },
+    {
+      "term": "TRACE NÉGATIVE",
+      "action": "SUPPRIMER",
+      "target": null
+    },
+    {
+      "term": "RÉPÉTITION PRODUCTIVE",
+      "action": "SUPPRIMER",
+      "target": null
+    },
+    {
+      "term": "FACILITATION PAR RÉPÉTITION",
+      "action": "RENOMMER",
+      "target": "RENFORCEMENT"
+    },
+    {
+      "term": "RÉPÉTITION SÉRIELLE",
+      "action": "DÉPLACER_EN_FONCTION",
+      "target": "PROGRAMMATION"
+    },
+    {
+      "term": "REPRISE TEXTUELLE",
+      "action": "DÉPLACER_EN_LOCAL",
+      "target": "RÉPÉTITION.localisation=COMPOSITION"
+    },
+    {
+      "term": "TRANSFORMATION ÉVALUATIVE",
+      "action": "FUSIONNER",
+      "target": "TRANSFORMATION RELATIONNELLE"
+    },
+    {
+      "term": "TRANSFORMATION IDENTITAIRE",
+      "action": "FUSIONNER_SI_RELATIONNELLE",
+      "target": "TRANSFORMATION RELATIONNELLE"
+    },
+    {
+      "term": "DÉSYNCHRONISATION",
+      "action": "DÉPLACER_EN_LOCAL",
+      "target": "relation entre transformations"
+    },
+    {
+      "term": "REDISTRIBUTION FONCTIONNELLE",
+      "action": "DÉPLACER_EN_LOCAL",
+      "target": "mécanisme"
+    },
+    {
+      "term": "SEUIL CUMULATIF",
+      "action": "FUSIONNER",
+      "target": "accumulation / saturation"
+    },
+    {
+      "term": "SEUIL DE RESSOURCE",
+      "action": "DÉPLACER_EN_CONDITION",
+      "target": "SEUIL.condition=ressource"
+    },
+    {
+      "term": "SEUIL ÉPISTÉMIQUE",
+      "action": "FUSIONNER_SI_PERTINENT",
+      "target": "SEUIL DE RECONNAISSANCE"
+    },
+    {
+      "term": "CASCADE DE SEUILS",
+      "action": "DÉPLACER_EN_LOCAL",
+      "target": "relation entre seuils"
+    },
+    {
+      "term": "INVERSION FONCTIONNELLE",
+      "action": "RENOMMER",
+      "target": "RÉVERSION FONCTIONNELLE"
+    },
+    {
+      "term": "RENVERSEMENT",
+      "action": "ALIAS_DE_PROSE",
+      "target": "RÉVERSION"
+    },
+    {
+      "term": "INVERSION",
+      "action": "ALIAS_DE_PROSE",
+      "target": "RÉVERSION"
+    },
+    {
+      "term": "RÉVERSION ÉPISTÉMIQUE",
+      "action": "SUPPRIMER_COMME_VARIANTE",
+      "target": null
+    },
+    {
+      "term": "AUTONOMISATION",
+      "action": "DÉPLACER_EN_LOCAL",
+      "target": "mécanisme"
+    },
+    {
+      "term": "CONDENSATION TERMINALE",
+      "action": "DÉPLACER_EN_AXE",
+      "target": "temporalité=terminale"
+    },
+    {
+      "term": "CONDENSATION FORMELLE",
+      "action": "DÉPLACER_EN_AXE",
+      "target": "lignes=formelles"
+    },
+    {
+      "term": "CONDENSATION ÉPISTÉMIQUE",
+      "action": "DÉPLACER_EN_AXE",
+      "target": "lignes=savoir"
+    },
+    {
+      "term": "DENSITÉ RELATIONNELLE",
+      "action": "DÉPLACER_EN_AXE",
+      "target": "densité=relationnelle"
+    },
+    {
+      "term": "VARIATION (fonction interne de RÉPÉTITION)",
+      "status": "PROMU",
+      "target": "transformation-variation",
+      "rule": "La variation devient un opérateur global distinct : RÉPÉTITION = retour ; VARIATION = écart opératoire dans ce qui revient."
+    },
+    {
+      "term": "QUALITATIVE_CASE_AUDIT_V10_5",
+      "status": "AUDIT",
+      "note": "Retrait de cas faibles ou mal typés : A Serious Man n’est plus cas d’ASYMÉTRIE DU SAVOIR ; Huis clos est retiré de CONTINUITÉ SOUS TRANSFORMATION ; Perec est retiré de CONFIGURATION AUTO-TRANSFORMATRICE ; Flaubert est retiré de CONFIGURATION MÉTASTABLE. Les cas films non intégrés portent désormais le statut STRESS_TEST."
+    }
+  ],
+  "search_aliases": {
+    "audit": "__AUDIT__",
+    "audit atlas 2": "__AUDIT__",
+    "audit recherche": "__AUDIT_SEARCH__",
+    "audit raccords": "__AUDIT_CONNECTIONS__",
+    "audit œuvres": "__AUDIT_WORKS__",
+    "audit oeuvres": "__AUDIT_WORKS__",
+    "audit technique": "__AUDIT_TECH__",
+    "inversion fonctionnelle": "transformation-reversion",
+    "trace contractuelle": "transformation-trace",
+    "centre indirect": "work-faulkner-bruit-fureur",
+    "clinamen": "work-perec-vie-mode-emploi",
+    "auto-inclusion": "work-sophocle-oedipe-roi",
+    "queneau": "lab-style-queneau",
+    "pierre ménard": "work-borges-pierre-menard",
+    "pierre menard": "work-borges-pierre-menard",
+    "ce que répéter produit": "route-001",
+    "comment le passé reste actif": "route-002",
+    "du contrôle à la dépendance": "route-003",
+    "portes et régimes d’accès": "route-004",
+    "comment une configuration cesse de tenir": "route-005",
+    "comment faire sentir le changement": "route-006",
+    "savoir — de l’anticipation à l’auto-inclusion": "route-007",
+    "routes atlas 2": "__ATLAS2_ROUTES__",
+    "route atlas 2": "__ATLAS2_ROUTES__",
+    "dorian gray": "work-wilde-dorian-gray",
+    "portrait de dorian gray": "work-wilde-dorian-gray",
+    "oscar wilde": "work-wilde-dorian-gray",
+    "substitution transformationnelle": "work-wilde-dorian-gray",
+    "huis clos": "work-sartre-huis-clos",
+    "sartre huis clos": "work-sartre-huis-clos",
+    "jean-paul sartre huis clos": "work-sartre-huis-clos",
+    "circuit de dépendances croisées": "work-sartre-huis-clos",
+    "ouverture spatiale ≠ sortie configurationnelle": "work-sartre-huis-clos",
+    "variation": "transformation-variation",
+    "recomposition": "transformation-recomposition",
+    "configuration métastable": "config-metastable",
+    "configuration metastable": "config-metastable",
+    "contrainte génératrice": "config-contrainte-generatrice",
+    "contrainte generatrice": "config-contrainte-generatrice",
+    "porte accès": "form-porte-acces",
+    "document inscription": "form-document-inscription",
+    "continuité sous transformation": "problem-continuite-transformation",
+    "asymétrie du savoir": "problem-asymetrie-savoir",
+    "optique savoir": "optic-savoir",
+    "optique style": "optic-style",
+    "a serious man": "work-coen-serious-man",
+    "joel & ethan coen a serious man": "work-coen-serious-man",
+    "coen a serious man": "work-coen-serious-man",
+    "joel ethan coen serious man": "work-coen-serious-man",
+    "larry gopnik": "work-coen-serious-man",
+    "indécidabilité coen": "work-coen-serious-man",
+    "indécidabilité": "work-antonioni-blow-up",
+    "recomposition provisoire": "work-cassavetes-woman-influence",
+    "trace ≠ preuve univoque": "work-coen-serious-man",
+    "fitzcarraldo": "work-herzog-fitzcarraldo",
+    "werner herzog fitzcarraldo": "work-herzog-fitzcarraldo",
+    "herzog fitzcarraldo": "work-herzog-fitzcarraldo",
+    "bateau montagne": "work-herzog-fitzcarraldo",
+    "coopération à finalités divergentes": "work-herzog-fitzcarraldo",
+    "désir recomposé": "work-herzog-fitzcarraldo",
+    "aguirre, la colère de dieu": "work-herzog-aguirre",
+    "werner herzog aguirre, la colère de dieu": "work-herzog-aguirre",
+    "aguirre": "work-herzog-aguirre",
+    "aguirre la colère de dieu": "work-herzog-aguirre",
+    "herzog aguirre": "work-herzog-aguirre",
+    "werner herzog aguirre": "work-herzog-aguirre",
+    "autonomisation du projet": "work-herzog-aguirre",
+    "mutation de fonction du projet": "work-herzog-aguirre",
+    "puissance proclamée / capacité matérielle": "work-herzog-aguirre",
+    "une femme sous influence": "work-cassavetes-woman-influence",
+    "john cassavetes une femme sous influence": "work-cassavetes-woman-influence",
+    "a woman under the influence": "work-cassavetes-woman-influence",
+    "cassavetes femme sous influence": "work-cassavetes-woman-influence",
+    "john cassavetes woman under influence": "work-cassavetes-woman-influence",
+    "excédent de situation": "work-akerman-jeanne-dielman",
+    "normalisation comme intervention": "work-cassavetes-woman-influence",
+    "blow-up": "work-antonioni-blow-up",
+    "michelangelo antonioni blow-up": "work-antonioni-blow-up",
+    "blow up": "work-antonioni-blow-up",
+    "antonioni blow-up": "work-antonioni-blow-up",
+    "michelangelo antonioni blow up": "work-antonioni-blow-up",
+    "incomplétude probatoire": "work-antonioni-blow-up",
+    "agrandissement : information / dégradation": "work-antonioni-blow-up",
+    "la montagne sacrée": "work-jodorowsky-holy-mountain",
+    "alejandro jodorowsky la montagne sacrée": "work-jodorowsky-holy-mountain",
+    "the holy mountain": "work-jodorowsky-holy-mountain",
+    "jodorowsky holy mountain": "work-jodorowsky-holy-mountain",
+    "alejandro jodorowsky montagne sacrée": "work-jodorowsky-holy-mountain",
+    "acte transformationnel": "work-jodorowsky-holy-mountain",
+    "symbole-acte": "work-jodorowsky-holy-mountain",
+    "dispositif de croyance auto-détruit": "work-jodorowsky-holy-mountain",
+    "vol au-dessus d’un nid de coucou": "work-forman-cuckoos-nest",
+    "miloš forman vol au-dessus d’un nid de coucou": "work-forman-cuckoos-nest",
+    "one flew over the cuckoo’s nest": "work-forman-cuckoos-nest",
+    "one flew over the cuckoos nest": "work-forman-cuckoos-nest",
+    "forman nid de coucou": "work-forman-cuckoos-nest",
+    "miloš forman cuckoo nest": "work-forman-cuckoos-nest",
+    "porte disponible ≠ capacité de sortir": "work-forman-cuckoos-nest",
+    "contrainte intériorisée": "work-forman-cuckoos-nest",
+    "transformation persistante après disparition de l’agent": "work-forman-cuckoos-nest",
+    "jeanne dielman, 23 quai du commerce, 1080 bruxelles": "work-akerman-jeanne-dielman",
+    "chantal akerman jeanne dielman, 23 quai du commerce, 1080 bruxelles": "work-akerman-jeanne-dielman",
+    "jeanne dielman": "work-akerman-jeanne-dielman",
+    "akerman jeanne dielman": "work-akerman-jeanne-dielman",
+    "chantal akerman 23 quai du commerce": "work-akerman-jeanne-dielman",
+    "jeanne dielman 23 quai du commerce 1080 bruxelles": "work-akerman-jeanne-dielman",
+    "micro-écart opératoire": "work-akerman-jeanne-dielman",
+    "programme comme mesure perceptive": "work-akerman-jeanne-dielman",
+    "akira": "work-otomo-akira",
+    "katsuhiro ōtomo akira": "work-otomo-akira",
+    "otomo akira": "work-otomo-akira",
+    "ōtomo akira": "work-otomo-akira",
+    "katsuhiro otomo akira": "work-otomo-akira",
+    "expansion d’échelle": "work-otomo-akira",
+    "transformation débordant son support": "work-otomo-akira",
+    "relation kaneda / tetsuo requalifiée": "work-otomo-akira"
+  },
+  "audit_policy": {
+    "max_primary_connections": 6,
+    "recommended_min_primary_connections": 4,
+    "max_strong_optics": 5,
+    "required_work_count": 20,
+    "required_transformation_count": 8,
+    "required_configuration_count": 8,
+    "required_form_count": 5,
+    "required_problem_count": 6,
+    "required_optic_count": 9,
+    "required_route_count_full_app": 7,
+    "queneau_must_not_be_work": true,
+    "release_requires_zero_errors": true,
+    "route_content_pending_allowed": false,
+    "route_min_stations": 3,
+    "route_max_stations": 6,
+    "route_new_works_auto_add": false,
+    "route_extensions_are_noncanonical": true,
+    "min_configuration_cases": 3,
+    "min_form_cases": 3,
+    "min_problem_cases": 3,
+    "min_optic_cases": 3,
+    "min_configuration_conditions": 2,
+    "min_form_functions": 3,
+    "min_problem_responses": 2,
+    "min_optic_questions": 2,
+    "case_provenance_required": true,
+    "film_visible_numbering": false,
+    "semantic_case_exclusions": {
+      "config-auto-transformatrice": [
+        "Perec — La Vie mode d’emploi"
+      ],
+      "config-metastable": [
+        "Flaubert — Madame Bovary"
+      ],
+      "problem-continuite-transformation": [
+        "Sartre — Huis clos"
+      ],
+      "problem-asymetrie-savoir": [
+        "A Serious Man"
+      ],
+      "problem-controler-active": [
+        "Aguirre, la colère de Dieu"
+      ]
+    },
+    "contextualization_rule_lock": true,
+    "min_context_chars": 120,
+    "visual_chain_context_required": true
+  },
+  "routes": [
+    {
+      "id": "route-001",
+      "order": 1,
+      "title": "Ce que répéter produit",
+      "status": "CANONICAL",
+      "question": "Comment une même opération change-t-elle de fonction lorsqu’elle revient dans une configuration déjà modifiée ?",
+      "focus": [
+        "RÉPÉTITION"
+      ],
+      "steps": [
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "kind": "work",
+          "operation": "MAINTENIR",
+          "note": "Le retour des habitudes et obligations anciennes maintient provisoirement un ordre devenu incompatible avec la transformation de Gregor."
+        },
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "kind": "work",
+          "operation": "USER",
+          "note": "L’exception répétée devient habitude : ce qui devait produire une différence perd progressivement sa force."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "kind": "work",
+          "operation": "RENFORCER",
+          "note": "La répétition de l’activation consolide Hyde jusqu’à modifier les conditions mêmes du contrôle."
+        },
+        {
+          "ref_id": "lab-style-queneau",
+          "kind": "laboratory",
+          "operation": "VARIER",
+          "note": "Le même matériau narratif devient un laboratoire où la répétition sert à produire des écarts de surface et d’opération."
+        },
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "kind": "work",
+          "operation": "MESURER",
+          "note": "La répétition de l’attente et des appels mesure un délai qui rapproche simultanément menace et secours."
+        }
+      ],
+      "extensions": []
+    },
+    {
+      "id": "route-002",
+      "order": 2,
+      "title": "Comment le passé reste actif",
+      "status": "CANONICAL",
+      "question": "Sous quelles formes une transformation passée continue-t-elle d’agir dans le présent sans se réduire au souvenir ?",
+      "focus": [
+        "TRACE"
+      ],
+      "steps": [
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "kind": "work",
+          "operation": "DÉTECTER",
+          "note": "La clé conserve une trace indicielle du franchissement et rend le savoir nouvellement acquis détectable par Barbe-Bleue."
+        },
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "kind": "work",
+          "operation": "CONTRAINDRE",
+          "note": "La pomme incorporée transforme une violence passée en contrainte corporelle durable."
+        },
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "kind": "work",
+          "operation": "OBLIGER",
+          "note": "Les achats et crédits deviennent inscriptions et dettes : des actes passés continuent d’obliger le présent."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "kind": "work",
+          "operation": "DISPOSER",
+          "note": "Les activations répétées laissent une disposition qui rend Hyde de moins en moins dépendant de l’acte volontaire initial."
+        }
+      ],
+      "extensions": []
+    },
+    {
+      "id": "route-003",
+      "order": 3,
+      "title": "Du contrôle à la dépendance",
+      "status": "CANONICAL",
+      "question": "Comment un moyen introduit pour ouvrir ou contrôler des possibilités finit-il par imposer ses propres contraintes ?",
+      "focus": [
+        "RÉVERSION",
+        "RESSOURCES",
+        "CONFIGURATION AUTO-TRANSFORMATRICE"
+      ],
+      "steps": [
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "kind": "work",
+          "operation": "ACTIVER",
+          "note": "Jekyll introduit un dispositif qu’il croit maîtriser ; la répétition déplace progressivement le contrôle vers ce qu’il a activé."
+        },
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "kind": "work",
+          "operation": "S’ENGAGER",
+          "note": "Le crédit ouvre d’abord des possibilités présentes en déplaçant leur coût ; l’accumulation des obligations transforme ensuite l’ouverture en fermeture."
+        },
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "kind": "work",
+          "operation": "INVERSER LA DÉPENDANCE",
+          "note": "La famille dépend d’abord du revenu de Gregor ; en compensant sa perte de fonction, elle devient autonome tandis que Gregor dépend de sa tolérance et de ses soins."
+        }
+      ],
+      "extensions": []
+    },
+    {
+      "id": "route-004",
+      "order": 4,
+      "title": "Portes et régimes d’accès",
+      "status": "CANONICAL",
+      "question": "Comment une interface spatiale règle-t-elle simultanément l’accès, le savoir, la visibilité et la séparation ?",
+      "focus": [
+        "PORTE / ACCÈS",
+        "SEUIL",
+        "DOUBLE RÉGIME"
+      ],
+      "steps": [
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "kind": "work",
+          "operation": "FRANCHIR",
+          "note": "La porte interdite matérialise un seuil : revenir dans l’espace précédent n’annule pas le savoir acquis par le franchissement."
+        },
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "kind": "work",
+          "operation": "MODULER",
+          "note": "Les portes de la chambre règlent continuellement visibilité, exposition, confinement et degré d’appartenance de Gregor à la famille."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "kind": "work",
+          "operation": "DÉDOUBLER",
+          "note": "La porte arrière et l’articulation maison/laboratoire distribuent deux régimes d’existence dans un même dispositif spatial."
+        }
+      ],
+      "extensions": []
+    },
+    {
+      "id": "route-005",
+      "order": 5,
+      "title": "Comment une configuration cesse de tenir",
+      "status": "CANONICAL",
+      "question": "Par quels mécanismes une configuration qui semblait stable cesse-t-elle d’absorber les variations et change-t-elle de régime ?",
+      "focus": [
+        "SEUIL",
+        "CONFIGURATION CONDITIONNELLEMENT STABLE",
+        "TRANSFORMATION"
+      ],
+      "steps": [
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "kind": "work",
+          "operation": "ROMPRE UNE CONDITION",
+          "note": "La maison tient sous une règle d’accès ; le franchissement détruit l’asymétrie de savoir qui rendait cette stabilité possible."
+        },
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "kind": "work",
+          "operation": "COMPENSER",
+          "note": "Le système familial absorbe d’abord la transformation par des adaptations successives ; ces compensations finissent pourtant par rendre l’ancien rôle de Gregor inutile."
+        },
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "kind": "work",
+          "operation": "SATURER",
+          "note": "La répétition des ouvertures par le crédit accumule assez de contraintes pour que le régime de possibilité bascule vers la fermeture."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "kind": "work",
+          "operation": "BASCULER",
+          "note": "Le double régime reste contrôlable jusqu’au seuil où Hyde apparaît spontanément et où la ressource nécessaire au retour devient critique."
+        }
+      ],
+      "extensions": []
+    },
+    {
+      "id": "route-006",
+      "order": 6,
+      "title": "Comment faire sentir le changement",
+      "status": "CANONICAL",
+      "question": "Comment une œuvre rend-elle une transformation perceptible autrement qu’en la déclarant explicitement ?",
+      "focus": [
+        "TRANSFORMATION",
+        "STYLE",
+        "ESPACE",
+        "ÉNONCIATION"
+      ],
+      "steps": [
+        {
+          "ref_id": "work-kafka-metamorphose",
+          "kind": "work",
+          "operation": "MATÉRIALISER",
+          "note": "Le changement se lit dans le corps, la mobilité, les portes et la trajectoire fonctionnelle de la chambre."
+        },
+        {
+          "ref_id": "work-flaubert-madame-bovary",
+          "kind": "work",
+          "operation": "USER",
+          "note": "Le changement devient sensible par répétition, variation de l’intensité, banalisation et accumulation matérielle des conséquences."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "kind": "work",
+          "operation": "RECONSTRUIRE",
+          "note": "La transformation est d’abord perçue par ses effets puis requalifiée par le montage documentaire et l’explication retardée des causes."
+        },
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "kind": "work",
+          "operation": "CONDENSER",
+          "note": "Une clé, une porte et une trace suffisent à faire converger changement spatial, changement de savoir et changement de menace."
+        }
+      ],
+      "extensions": []
+    },
+    {
+      "id": "route-007",
+      "order": 7,
+      "title": "Savoir — de l’anticipation à l’auto-inclusion",
+      "status": "CANONICAL",
+      "question": "Comment une œuvre transforme-t-elle la position de savoir, de l’asymétrie initiale jusqu’au moment où l’enquêteur lui-même entre dans ce qu’il cherche ?",
+      "focus": [
+        "SAVOIR",
+        "CONFIGURATION DE LECTURE",
+        "ASYMÉTRIE DU SAVOIR"
+      ],
+      "steps": [
+        {
+          "ref_id": "work-perrault-barbe-bleue",
+          "kind": "work",
+          "operation": "ANTICIPER",
+          "note": "L’interdiction organise une asymétrie de savoir avant même le franchissement."
+        },
+        {
+          "ref_id": "work-stevenson-jekyll-hyde",
+          "kind": "work",
+          "operation": "RECONSTRUIRE",
+          "note": "Les documents et récits retardés réordonnent après coup les causes à partir de leurs effets."
+        },
+        {
+          "ref_id": "work-borges-pierre-menard",
+          "kind": "work",
+          "operation": "REQUALIFIER",
+          "note": "Une même surface verbale change de fonction lorsque son attribution, son histoire et sa configuration de lecture changent."
+        },
+        {
+          "ref_id": "work-faulkner-bruit-fureur",
+          "kind": "work",
+          "operation": "RECOUPER",
+          "note": "Le lecteur construit un savoir distribué en recoupant plusieurs régimes temporels et perspectifs partiels."
+        },
+        {
+          "ref_id": "work-sophocle-oedipe-roi",
+          "kind": "work",
+          "operation": "S’AUTO-INCLURE",
+          "note": "L’enquêteur découvre que sa propre position appartient à l’objet de l’enquête et doit être requalifiée avec lui."
+        }
+      ],
+      "extensions": []
+    }
+  ]
+}
