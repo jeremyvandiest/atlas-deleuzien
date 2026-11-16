@@ -1,0 +1,35 @@
+/* Atlas 10.15 : trois domaines réellement séparés. */
+.atlas-hub{max-width:850px;margin:0 auto;padding:14px 0 28px}
+.atlas-hub-head{text-align:center;padding:31px 9px 27px}
+.atlas-hub-eyebrow{font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.18em;color:#d3ad65;text-transform:uppercase}
+.atlas-hub-head h2{font:500 clamp(42px,7vw,66px)/1.08 Georgia,serif;letter-spacing:.035em;margin:8px 0 9px;color:#fff9eb}
+.atlas-hub-head p{font:14px/1.7 system-ui,sans-serif;color:#d7cfbb;max-width:470px;margin:0 auto}
+.atlas-hub-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.atlas-hub-card{display:flex;flex-direction:column;min-height:293px;text-align:left;padding:21px 18px 19px;border-radius:18px;border:1px solid rgba(215,180,116,.43);background:linear-gradient(150deg,#1f3942,#132832);color:#f7f0e0;cursor:pointer;transition:transform .15s,border-color .15s,background .15s}
+.atlas-hub-card:hover,.atlas-hub-card:focus-visible{transform:translateY(-2px);border-color:#e1bd79;outline:0;background:linear-gradient(150deg,#25434a,#142e39)}
+.atlas-hub-num{font:500 35px/1 Georgia,serif;color:#d5b072;margin-bottom:26px}
+.atlas-hub-card h3{margin:0 0 10px;font:500 23px/1.18 Georgia,serif;color:#fff5df}
+.atlas-hub-card p{font:12.5px/1.58 system-ui,sans-serif;color:#d9d3c7;margin:0 0 17px}
+.atlas-hub-card .atlas-hub-visit{margin-top:auto;border-top:1px solid rgba(211,179,115,.25);padding-top:11px;font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.07em;color:#e1bc78}
+.atlas-hub-foot{padding:23px 5px 0;font:12px/1.6 system-ui,sans-serif;color:#afa99c;text-align:center}
+.atlas3-page{max-width:850px;margin:auto}
+.atlas3-kicker{font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#986f35}
+.atlas3-hero{padding:21px 6px 25px;border-bottom:1px solid var(--line)}
+.atlas3-hero h2{font:500 clamp(31px,5vw,45px)/1.15 Georgia,serif;margin:9px 0 13px;color:#273c41}
+.atlas3-hero p{font:15px/1.7 Georgia,serif;color:#515a5b;max-width:750px;margin:0}
+.atlas3-idea{margin:19px 0 25px;border-left:3px solid #b28743;padding:13px 18px;background:#efe5d5;border-radius:0 12px 12px 0}
+.atlas3-idea blockquote{margin:0;font:italic 21px/1.5 Georgia,serif;color:#35444a}
+.atlas3-idea p{margin:7px 0 0;font:12px/1.5 system-ui,sans-serif;color:#777067}
+.atlas3-section-title{font:500 24px Georgia,serif;margin:28px 0 13px;color:#263b42}
+.atlas3-territories{display:grid;gap:10px}
+.atlas3-territory{border:1px solid #d7ccba;border-radius:14px;padding:17px 19px;background:#fbf8f1}
+.atlas3-territory .kicker{font:700 10px system-ui,sans-serif;letter-spacing:.12em;color:#98713d}
+.atlas3-territory h3{font:500 20px Georgia,serif;color:#283d43;margin:5px 0}
+.atlas3-territory p{font:13px/1.62 system-ui,sans-serif;color:#62696a;margin:0}
+.atlas3-note{padding:18px 20px;border-radius:12px;background:#f0e8db;border:1px solid #dccdb8;margin:25px 0}
+.atlas3-note h3{font:500 20px Georgia,serif;margin:0 0 10px;color:#273f45}
+.atlas3-note p{font:13px/1.7 system-ui,sans-serif;margin:0;color:#57605f}
+.drawer-section-label{padding:17px 20px 5px;letter-spacing:.12em;text-transform:uppercase;font:700 10px/1.4 system-ui,sans-serif;color:#c6a874}
+.drawer-subitem{padding-left:35px!important;font-size:.92em;opacity:.86}
+.drawer-divider{height:1px;margin:12px 16px 0;background:rgba(190,166,120,.27)}
+@media(max-width:680px){.atlas-hub-grid{grid-template-columns:1fr;gap:10px}.atlas-hub-head{padding:19px 0 25px}.atlas-hub-card{min-height:150px;padding:18px 18px}.atlas-hub-num{font-size:26px;margin-bottom:11px}.atlas-hub-card h3{font-size:22px}.atlas-hub-card p{margin-bottom:12px}.atlas3-hero{padding-top:10px}}
