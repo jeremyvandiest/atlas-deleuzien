@@ -6,10 +6,10 @@
 <meta name="theme-color" content="#0d1a22" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="apple-mobile-web-app-title" content="Atlas deleuzien" />
+<meta name="apple-mobile-web-app-title" content="Atlas" />
 <meta name="mobile-web-app-capable" content="yes" />
 <link rel="manifest" href="./manifest.webmanifest" />
-<link rel="apple-touch-icon" sizes="180x180" href="./icon-180.png?v=10.14.1" />
+<link rel="apple-touch-icon" sizes="180x180" href="./icon-180.png?v=10.15" />
 <title>Atlas deleuzien</title>
 <style>
 :root{
@@ -437,17 +437,15 @@ body.nav-hidden .topbar{transform:translateY(calc(-100% - env(safe-area-inset-to
 </style>
 <link rel="stylesheet" href="./atelier.css" />
 <link rel="stylesheet" href="./atlas2.css" />
+<link rel="stylesheet" href="./atlas-hub.css" />
 </head>
 <body>
-<div id="root"><main style="max-width:820px;margin:0 auto;padding:44px 22px 80px;font-family:Georgia,serif;color:#20282c">
-<section style="padding:34px 28px;border:1px solid #d7ccba;border-radius:18px;background:#fbf8f1"><div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8a6a34">Atlas · Rhizome · Généalogies</div><h1 style="font-weight:500;margin:10px 0 8px">Atlas deleuzien</h1><p style="font-size:18px;line-height:1.55;margin:0">Cartographier les pensées. Traverser les concepts.</p></section>
-<section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:16px">
-<a href="#/authors" style="text-decoration:none;color:inherit;border:1px solid #d7ccba;border-radius:14px;padding:18px;background:#fff"><b>Auteurs</b><br><span style="color:#6c7272">Les penseurs et les problèmes que Deleuze leur fait porter.</span></a>
-<a href="#/works" style="text-decoration:none;color:inherit;border:1px solid #d7ccba;border-radius:14px;padding:18px;background:#fff"><b>Œuvres</b><br><span style="color:#6c7272">Les machines textuelles de Deleuze, de Hume à Critique et clinique.</span></a>
-<a href="#/concepts" style="text-decoration:none;color:inherit;border:1px solid #d7ccba;border-radius:14px;padding:18px;background:#fff"><b>Concepts</b><br><span style="color:#6c7272">Fonctionnement et transformations des notions.</span></a>
-<a href="#/glossary" style="text-decoration:none;color:inherit;border:1px solid #d7ccba;border-radius:14px;padding:18px;background:#fff"><b>Glossaire</b><br><span style="color:#6c7272">Termes, usages, raccords et garde-fous.</span></a>
-<a href="#/routes" style="text-decoration:none;color:inherit;border:1px solid #d7ccba;border-radius:14px;padding:18px;background:#fff"><b>Routes</b><br><span style="color:#6c7272">Transformation des problèmes à travers auteurs et œuvres.</span></a>
-<a href="#/interludes" style="text-decoration:none;color:inherit;border:1px solid #d7ccba;border-radius:14px;padding:18px;background:#fff"><b>Interludes</b><br><span style="color:#6c7272">Milieux intellectuels et bifurcations.</span></a>
+<div id="root"><main style="max-width:820px;margin:auto;padding:30px 22px 80px;font-family:Georgia,serif;color:#20282c">
+<h1 style="font-weight:500">Atlas</h1><p>Trois territoires autonomes de recherche et d’exploration.</p>
+<section style="display:grid;gap:12px;margin-top:24px">
+<a href="#/atlas1" style="color:inherit;border:1px solid #d7ccba;padding:20px;border-radius:14px">I — Atlas deleuzien · Histoire de la philosophie vue par Deleuze</a>
+<a href="#/atlas2" style="color:inherit;border:1px solid #d7ccba;padding:20px;border-radius:14px">II — Récits et formes · Œuvres, configurations et transformations</a>
+<a href="#/atlas3" style="color:inherit;border:1px solid #d7ccba;padding:20px;border-radius:14px">III — Théâtre du sentir · Sensibilité, jeu et relation</a>
 </section></main></div>
 <div id="drawerWrap" class="drawer-wrap" onclick="if(event.target===this) closeDrawer()"><aside class="drawer"><div class="drawer-head"><div><div class="drawer-brand">Atlas deleuzien</div><div class="drawer-kicker">Navigation</div></div><button class="icon-btn" onclick="closeDrawer()">×</button></div><div class="drawer-nav" id="drawerNav"></div></aside></div>
 <div id="sheetWrap" class="sheet-wrap" onclick="if(event.target===this) closeSheet()"><div class="sheet"><div class="sheet-handle"></div><div id="sheetContent"></div></div></div>
@@ -6525,5 +6523,6 @@ if('serviceWorker' in navigator && (location.protocol==='https:'||location.hostn
 <script src="./atlas2-audit.js"></script>
 <script src="./atlas2.js"></script>
 <script src="./oeuvre.js"></script>
+<script src="./atlas-hub.js"></script>
 </body>
 </html>
