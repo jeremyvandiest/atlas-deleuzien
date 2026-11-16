@@ -1,4 +1,4 @@
-const CACHE_NAME='atlas-2026-11-15-v10-11-atlas1-operative-v10-14-manuel-v8-preserved';
+const CACHE_NAME='atlas-v10-14-1-prose-nouvelle-icone';
 const CORE=['./','./index.html','./manifest.webmanifest','./icon-180.png','./icon-192.png','./icon-512.png','./atelier.css','./atlas1-operative.js','./atelier.js','./oeuvre.js','./atlas2.css','./atlas2-data.js','./atlas2-content.js','./atlas2-audit.js','./atlas2.js'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
