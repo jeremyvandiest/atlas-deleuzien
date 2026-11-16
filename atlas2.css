@@ -31,3 +31,32 @@
 .a2-catalogue-empty{font:14px/1.5 system-ui,sans-serif;color:#616666}
 .a2-catalogue-call{margin:14px 0 16px}
 @media(max-width:640px){.a2-catalogue-controls{grid-template-columns:1fr;gap:12px;padding:13px}}
+
+
+/* V10.16 — Liens documentés : l'œuvre reste lisible sans graphes ni diagrammes de concepts. */
+.a2-section-lead h3{margin-bottom:7px}
+.a2-section-lead p{max-width:840px;color:#637073;font:14px/1.65 system-ui,sans-serif;margin:0 0 19px}
+.a2-relation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.a2-relation-node,.a2-comparison-card,.a2-route-connection{border:1px solid #ded5c8;background:#fbf8f2;border-radius:14px;padding:17px}
+.a2-relation-overline{font:750 10px/1.5 system-ui,sans-serif;letter-spacing:.11em;text-transform:uppercase;color:#8b6d39}
+.a2-relation-node h4,.a2-comparison-card h4,.a2-route-connection h4{font-size:16px;line-height:1.38;margin:8px 0 11px;color:var(--a2-ink)}
+.a2-relation-node p,.a2-comparison-card p,.a2-route-connection p{font-size:14px;line-height:1.68;color:#475559;margin:0 0 11px}
+.a2-relation-node p:last-child,.a2-comparison-card p:last-child{margin-bottom:0}
+.a2-inline-link{border:0;border-bottom:1px solid #b59865;background:transparent;padding:3px 0;color:#755723;cursor:pointer;font:750 12px/1.35 system-ui,sans-serif;text-align:left}
+.a2-inline-link:hover{color:#34270f;border-color:#34270f}
+.a2-cmp-subtitle{margin:-3px 0 10px;color:#737b7d;font:600 12px/1.5 system-ui,sans-serif}
+.a2-cmp-sources{display:grid;gap:4px;border-top:1px solid #e0d8cb;padding-top:10px;margin:12px 0 8px;color:#657075;font:12px/1.5 system-ui,sans-serif}
+.a2-cmp-sources strong{color:#435052;font-weight:750}
+.a2-cmp-sources span{display:block}
+.a2-cmp-actions{display:flex;flex-wrap:wrap;gap:15px;margin-top:11px}
+.a2-relation-stack{display:grid;gap:12px}
+.a2-subheading{font-size:15px;letter-spacing:.01em;margin:20px 0 12px}
+.a2-network-explore{margin-top:19px}
+.a2-network-intro{margin:16px 0;padding:16px 20px;border-left:3px solid var(--a2-gold);background:#fbf8f2;border-radius:0 12px 12px 0}
+.a2-network-intro p{font:14px/1.8 system-ui,sans-serif;color:#435053;margin:0 0 8px}
+.a2-network-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.a2-network-filters{grid-template-columns:2fr 1fr}
+.a2-network-home{margin:15px 0 16px}
+.a2-section[id^="a2s-"]{scroll-margin-top:70px}
+@media(max-width:900px){.a2-relation-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.a2-relation-grid,.a2-network-grid{grid-template-columns:1fr}.a2-network-filters{grid-template-columns:1fr}.a2-relation-node,.a2-comparison-card,.a2-route-connection{padding:15px}.a2-section-lead p{font-size:13px}}
