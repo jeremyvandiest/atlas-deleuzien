@@ -57,3 +57,29 @@
 .a3r-door{border:1px solid #d8cbb5;background:#fffdf9;border-radius:12px;padding:18px}
 .a3r-door h2{font:500 23px/1.25 Georgia,serif;min-height:50px;color:#2c4449}
 @media(max-width:690px){.a3r-part-grid,.a3r-door-grid{grid-template-columns:1fr}.a3r-wrap{padding:5px 0 30px}.a3r-part{padding:16px}.a3r-hero{padding:13px 4px}.a3r-hero p{font-size:15px}.a3r-section>summary{font-size:18px;padding:15px 12px}.a3r-section>.a3r-prose{padding:15px 14px}.a3r-prose{font-size:15px}.a3r-bridge-text{padding:3px}.a3r-link{font-size:12px}}
+
+/* Atlas V10.18 — Le Salon avant les chapitres, sans transformer les scènes en tests */
+.a3r-practice-first,.a3r-theory-after,.a3r-transversal-after{margin:20px 0 30px;padding:19px 4px 0;border-top:1px solid #d6c8b0}
+.a3r-practice-first{border-top:3px solid #a98754}
+.a3r-practice-first h2,.a3r-theory-after h2,.a3r-transversal-after h2{font:500 clamp(29px,4vw,36px)/1.2 Georgia,serif;color:#2a4045;margin:7px 0 13px}
+.a3r-entry-intro{font:16px/1.72 Georgia,serif;max-width:750px;color:#506065;margin:0 0 17px}
+.a3r-practice-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));list-style:none;gap:0 18px;margin:16px 0 15px;padding:0}
+.a3r-practice-list li{min-width:0}
+.a3r-practice-door{display:grid;grid-template-columns:30px minmax(0,1fr);align-items:start;gap:10px;border:0;border-bottom:1px solid #ded4c4;background:transparent;text-align:left;width:100%;cursor:pointer;padding:13px 4px 15px 0;color:#243e45}
+.a3r-practice-door:hover,.a3r-practice-door:focus-visible{outline:1px solid #c6b18a;outline-offset:-1px;background:#f7f0e5}
+.a3r-practice-door-num{font:700 11px/1.65 system-ui,sans-serif;color:#927142;padding-top:3px}
+.a3r-practice-door-copy{display:flex;flex-direction:column;gap:4px}
+.a3r-practice-door-copy strong{font:500 19px/1.32 Georgia,serif;color:#263e44}
+.a3r-practice-door-copy span{font:13px/1.6 Georgia,serif;color:#657173}
+.a3r-theory-after{padding-top:24px}
+.a3r-theory-after .a3r-part-grid{margin-top:19px}
+.a3r-part h3{font:500 25px/1.25 Georgia,serif;margin:5px 0 10px;color:#2c4448}
+.a3r-transversal-after{margin-top:29px}
+@media(max-width:690px){
+ .a3r-practice-first,.a3r-theory-after,.a3r-transversal-after{padding-top:18px}
+ .a3r-entry-intro{font-size:15px}
+ .a3r-practice-list{grid-template-columns:1fr;gap:0}
+ .a3r-practice-door{grid-template-columns:28px 1fr;gap:8px;padding:13px 4px 15px 0}
+ .a3r-practice-door-copy strong{font-size:20px}
+ .a3r-part h3{font-size:23px}
+}

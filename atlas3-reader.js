@@ -19,15 +19,24 @@
   const note = `<p class="a3r-publication">${e(data.status)}. Les sources et leurs limites sont disponibles dans chaque chapitre.</p>`;
   const C = name => data.chapters.find(c => c.id === name);
   function index(){
-    const parts = data.parts.map(part => {
-      const links=part.chapters.map(id => {
+    const doors=data.salon.doors.map(d=>{
+      const first=(d.html.match(/^<p><em>([\s\S]*?)<\/em><\/p>/)||[])[1]||'Une proposition sensible, libre et facultative.';
+      const desc=first.replace(/<[^>]*>/g,'');
+      return `<li><button type="button" class="a3r-practice-door" onclick="go('${doorPath(d.id)}')"><span class="a3r-practice-door-num">${String(d.number).padStart(2,'0')}</span><span class="a3r-practice-door-copy"><strong>${e(d.title)}</strong><span>${e(desc)}</span></span></button></li>`;
+    }).join('');
+    const parts=data.parts.map(part=>{
+      const links=part.chapters.map(id=>{
         const c=chapterMap[id];
         return `<li>${btn(chapterPath(id),String(c.number).padStart(2,'0')+' · '+c.title,'a3r-chapter-link')}</li>`;
       }).join('');
-      return `<section class="a3r-part"><div class="a3r-eyebrow">Partie ${e(part.id)}</div><h2>${e(part.title)}</h2><p>${e(part.introduction)}</p><ul>${links}</ul></section>`;
+      return `<section class="a3r-part"><div class="a3r-eyebrow">Partie ${e(part.id)}</div><h3>${e(part.title)}</h3><p>${e(part.introduction)}</p><ul>${links}</ul></section>`;
     }).join('');
-    const body = `<div class="a3r-wrap">${crumb()}<header class="a3r-hero"><div class="a3r-eyebrow">ATLAS 3 · LE THÉÂTRE DU SENTIR</div><h1>Lire les quinze chapitres</h1><p>${e(data.introduction)}</p></header>${note}<div class="a3r-part-grid">${parts}</div>${section('Entrer dans une scène',`<p>Les sept portes du Salon sont indépendantes : elles proposent des situations, des voix et des formes à explorer, sans parcours imposé.</p>${btn('atlas3/salon','Explorer les sept portes','a3r-action')}`)}${section('Chemins transversaux',`<p>Deux détours facultatifs permettent de revenir à un chapitre avec une question déplacée. Ils ne remplacent aucune lecture.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div>`)}</div>`;
-    return shell(body,{title:'Atlas 3 · Théâtre du sentir',sub:'Cinq parties · Quinze chapitres'});
+    const body=`<div class="a3r-wrap">${crumb()}<header class="a3r-hero"><div class="a3r-eyebrow">ATLAS 3 · LE THÉÂTRE DU SENTIR</div><h1>Le Théâtre du sentir</h1><p>Commencer par une situation à éprouver, puis, si l’on souhaite, suivre les questions que cette expérience ouvre dans les quinze chapitres.</p></header>${note}
+      <section class="a3r-practice-first" aria-labelledby="a3r-practice-heading"><div class="a3r-eyebrow">01 · COMMENCER PAR L’EXPÉRIENCE</div><h2 id="a3r-practice-heading">Le Salon des possibles</h2><p class="a3r-entry-intro">Sept portes : des gestes, des voix et des scènes à explorer seul ou à plusieurs. Aucun parcours obligatoire, aucune technique à réussir.</p><ol class="a3r-practice-list">${doors}</ol>${btn('atlas3/salon','Découvrir le Salon des possibles')}</section>
+      <section class="a3r-theory-after" aria-labelledby="a3r-theory-heading"><div class="a3r-eyebrow">02 · POUR APPROFONDIR</div><h2 id="a3r-theory-heading">Les quinze chapitres</h2><p class="a3r-entry-intro">Une lecture peut prolonger une expérience, la contredire ou simplement ouvrir un autre problème. Les chapitres restent accessibles indépendamment du Salon.</p><div class="a3r-part-grid">${parts}</div></section>
+      <section class="a3r-transversal-after"><div class="a3r-eyebrow">03 · CHEMINS TRANSVERSAUX</div><h2>Circuler entre les Atlas</h2><p class="a3r-entry-intro">Deux détours facultatifs permettent de revenir à une question autrement. Ils ne remplacent ni les œuvres ni les chapitres.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div></section>
+    </div>`;
+    return shell(body,{title:'Atlas 3 · Théâtre du sentir',sub:'Le Salon · Les chapitres · Les chemins'});
   }
   function chapter(id){
     const c=chapterMap[id];if(!c)return missing();
