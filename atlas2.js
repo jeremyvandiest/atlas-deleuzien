@@ -22,10 +22,31 @@ const detailTags=(title,items)=>A(items).length?`<section class="a2-section"><h3
 const textList=(title,items)=>A(items).length?`<section class="a2-section"><h3>${E(title)}</h3><div class="a2-stack">${A(items).map(x=>`<p>→ ${E(x)}</p>`).join('')}</div></section>`:'';
 
 
-function a2Nav(){return `<nav class="a2-nav" aria-label="Sommaire secondaire de l'Atlas 2"><span class="a2-nav-label">Explorer aussi</span><div class="a2-nav-links">${[
- ['atlas2-works','Œuvres & filtres'],['atlas2-network','Connexions'],['atlas2-configurations','Configurations'],['atlas2-transformations','Transformations'],['atlas2-forms','Formes & motifs'],['atlas2-problems','Problèmes'],['atlas2-optics','Optiques'],['atlas2-routes','Routes']
-].map(([p,t])=>`<button type="button" onclick="go('${p}')">${t}</button>`).join('')}</div></nav>`}
-function page(content,title='Atlas 2',sub='Récits et formes'){return shell(`<div class="a2-page">${content}</div>`,{title,sub})}
+function a2Nav(){
+  const groups=[
+    ['Lire et circuler',[
+      ['atlas2-works','Œuvres','Ouvrir un dossier précis et étudier comment il fonctionne.'],
+      ['atlas2-routes','Routes','Suivre une question à travers quelques œuvres choisies.']]],
+    ['Comprendre les mécanismes',[
+      ['atlas2-transformations','Transformations','Nommer ce qui persiste, varie ou se recompose.'],
+      ['atlas2-configurations','Configurations','Observer les relations qui font tenir un monde ou une situation.'],
+      ['atlas2-forms','Formes & motifs','Distinguer les fonctions d’un même élément selon les œuvres.']]],
+    ['Approfondir ou comparer',[
+      ['atlas2-network','Connexions','Comparer deux œuvres sur des passages argumentés.'],
+      ['atlas2-problems','Problèmes','Retrouver une question examinée dans plusieurs œuvres.'],
+      ['atlas2-optics','Optiques','Choisir un angle de lecture et en reconnaître les limites.']]]
+  ];
+  return `<nav class="a2-nav" aria-label="Orientation dans l'Atlas 2">
+    ${current()!=='atlas2'?'<button class="a2-nav-home" type="button" onclick="go(\'atlas2\')">← Revenir à l’accueil d’Atlas 2</button>':''}
+    <details class="a2-nav-details"><summary><span>Explorer les autres rubriques</span><small>Leur utilité, sans obligation de tout parcourir</small></summary>
+    <div class="a2-nav-sections">${groups.map(([heading,items])=>`<section><h3>${heading}</h3><ul>${items.map(([path,label,desc])=>`<li><button type="button" onclick="go('${path}')"><strong>${label}</strong><span>${desc}</span></button></li>`).join('')}</ul></section>`).join('')}</div></details>
+    </nav>`;
+}
+function page(content,title='Atlas 2',sub='Récits et formes'){
+ const isHome=current()==='atlas2';
+ const where=isHome?'':`<div class="a2-where" aria-label="Vous êtes dans Atlas 2"><button type="button" onclick="go('atlas2')">Atlas 2 · Accueil</button><span> / ${E(title.replace(/^Atlas 2 · /,''))}</span></div>`;
+ return shell(`<div class="a2-page">${where}${content}</div>`,{title,sub})
+}
 function hero(k,t,p){return `<section class="a2-hero"><div class="a2-kicker">${E(k)}</div><h2>${E(t)}</h2><p>${p}</p></section>`}
 function machine(items){return `<div class="a2-machine">${A(items).map((x,i)=>`${i?'<b>→</b>':''}<span>${E(x)}</span>`).join('')}</div>`}
 function contextBlock(title,text){return text?`<div class="a2-context"><strong>${E(title)}</strong><p>${E(text)}</p></div>`:''}
@@ -58,20 +79,29 @@ function a2HomeWorkList(){
   return `<div class="a2-home-work-list">${all.map(w=>`<button type="button" class="a2-home-work-row" onclick="go('atlas2-work/${w.id}')"><span class="a2-home-work-number">${String(w.order??'').padStart(2,'0')}</span><span class="a2-home-work-copy"><span class="a2-home-work-title">${E(w.title)}</span><span class="a2-home-work-credit">${E(w.author)} · ${E(atlas2MediumLabel(w))}${w.status==='PROVISIONAL'?' · Dossier provisoire':''}</span><span class="a2-home-work-description">${E(w.card)}</span></span></button>`).join('')}</div>`;
 }
 function atlas2Home(){
-  const transformations=A(D.transformations).slice().sort((a,b)=>a.order-b.order);
-  const tNames=transformations.map(t=>E(t.title.toLocaleLowerCase('fr'))).join(' · ');
-  return page(`${hero('ATLAS 2','Atlas des récits et des formes','Partir des œuvres, comprendre comment leurs éléments agissent, puis suivre les transformations qui permettent de rapprocher des fonctionnements sans les confondre.')}
-  <div class="a2-home-intro">
-    <section class="a2-home-intro-works"><div class="a2-kicker">LE CORPUS</div><h3>${A(D.works).length} œuvres à lire</h3><p>Toutes les œuvres sont accessibles ici, dans leur ordre d’origine. Chacune conserve son analyse singulière ; les comparaisons viennent ensuite.</p><button type="button" class="a2-text-link" onclick="go('atlas2-works')">Filtrer par médium, problème ou auteur</button></section>
-    <section class="a2-home-intro-backbone"><div class="a2-kicker">COLONNE VERTÉBRALE · BACKBONE</div><h3>${transformations.length} transformations</h3><p>Les transformations nomment des opérations repérées dans les œuvres : ce qui persiste, se répète, varie, change de fonction ou compose une nouvelle situation. Elles sont des outils de lecture, non des schémas imposés.</p><p class="a2-home-backbone-terms">${tNames}.</p><button type="button" class="a2-text-link" onclick="go('atlas2-transformations')">Comprendre les dix transformations</button></section>
-  </div>
+  const workCount=A(D.works).length, transformations=A(D.transformations).length;
+  return page(`${hero('ATLAS 2','Atlas des récits et des formes','Découvrir ce que font les œuvres : comment un geste, une forme ou une durée modifient le récit, les relations et notre lecture.')}
+  <section class="a2-home-guidance" aria-labelledby="a2-guidance-title">
+    <div class="a2-kicker">VOTRE POINT DE DÉPART</div><h3 id="a2-guidance-title">Par où commencer ?</h3>
+    <p>Il n’est pas nécessaire de connaître la cartographie avant de lire. Deux portes suffisent ; les autres notions deviennent utiles au fil des œuvres.</p>
+    <div class="a2-entry-options">
+      <button type="button" class="a2-entry-choice" onclick="document.getElementById('a2-work-catalogue').scrollIntoView({behavior:'smooth',block:'start'})"><span class="a2-entry-index">01 · SI UNE ŒUVRE VOUS ATTIRE</span><strong>Entrer par une œuvre</strong><span>Lire ce qui se passe, puis découvrir comment ses éléments agissent.</span><span class="a2-entry-cta">Voir les ${workCount} œuvres</span></button>
+      <button type="button" class="a2-entry-choice" onclick="go('atlas2-routes')"><span class="a2-entry-index">02 · SI VOUS NE SAVEZ PAS QUOI CHOISIR</span><strong>Suivre une Route</strong><span>Une question, quelques œuvres et un chemin de lecture déjà composé.</span><span class="a2-entry-cta">Choisir parmi les 7 Routes</span></button>
+    </div>
+  </section>
+  <section class="a2-home-backbone" aria-labelledby="a2-backbone-title">
+    <div class="a2-kicker">POUR COMPRENDRE · COLONNE VERTÉBRALE</div><h3 id="a2-backbone-title">À quoi servent les ${transformations} transformations ?</h3>
+    <p>Ce sont des outils pour décrire <em>ce qui agit</em> dans une œuvre, pas une liste de thèmes à y retrouver à tout prix.</p>
+    <p class="a2-backbone-example"><strong>Un exemple :</strong> dans <em>Jeanne Dielman</em>, la répétition des tâches apprend au spectateur un rythme. Un petit retard ou un geste déplacé devient alors perceptible : c’est la <em>variation</em> rendue sensible par la <em>répétition</em>. Leur fonction dépend du film lui-même.</p>
+    <button type="button" class="a2-text-link" onclick="go('atlas2-transformations')">Comprendre la colonne vertébrale de l’Atlas</button>
+  </section>
   ${a2Nav()}
-  <section class="a2-home-corpus" id="a2-work-catalogue"><div class="a2-home-corpus-head"><div><div class="a2-kicker">LES ŒUVRES</div><h3>Le catalogue complet</h3><p>Les trente œuvres sont présentes directement sur cette page, sans sélection cachée après Pierre Ménard.</p></div><button type="button" class="a2-text-link" onclick="go('atlas2-works')">Tous les filtres</button></div>
-    <div class="a2-search"><input aria-label="Rechercher dans Atlas 2" placeholder="Rechercher une œuvre ou une notion…" onkeydown="if(event.key==='Enter')atlas2SearchNavigate(this.value)"><button type="button" class="a2-link" onclick="atlas2SearchNavigate(this.previousElementSibling.value)">Chercher</button></div>
+  <section class="a2-home-corpus" id="a2-work-catalogue"><div class="a2-home-corpus-head"><div><div class="a2-kicker">ENTRER DANS LE CORPUS</div><h3>Les ${workCount} œuvres</h3><p>Tous les titres sont ici, sans devoir les lire dans l’ordre. Ouvrir une œuvre suffit pour commencer.</p></div><button type="button" class="a2-text-link" onclick="go('atlas2-works')">Filtrer</button></div>
+    <div class="a2-search"><input aria-label="Rechercher dans Atlas 2" placeholder="Chercher une œuvre ou une notion…" onkeydown="if(event.key==='Enter')atlas2SearchNavigate(this.value)"><button type="button" class="a2-link" onclick="atlas2SearchNavigate(this.previousElementSibling.value)">Chercher</button></div>
     ${a2HomeWorkList()}
   </section>
-  <section class="a2-home-after"><div class="a2-kicker">POUR POURSUIVRE</div><h3>D’autres manières de lire</h3><p>Les connexions entre œuvres se construisent à partir de leurs analyses. Le laboratoire Queneau reste un espace distinct pour expérimenter les opérations de style.</p><div class="a2-home-after-links"><button type="button" class="a2-text-link" onclick="go('atlas2-network')">Parcourir les connexions argumentées</button><button type="button" class="a2-text-link" onclick="go('atlas2-lab/lab-style-queneau')">Ouvrir le laboratoire Queneau</button></div></section>
-  <p class="a2-footer-note">Principe éditorial : les œuvres d’abord. Même motif ne signifie pas même fonction ; une transformation ne remplace jamais une lecture.</p>`);
+  <section class="a2-home-after"><div class="a2-kicker">ALLER PLUS LOIN</div><h3>Quand une question apparaît</h3><p>Les connexions et les outils de lecture sont disponibles dans le sommaire « Explorer les autres rubriques ». Ils n’ont pas à précéder la rencontre avec une œuvre.</p><div class="a2-home-after-links"><button type="button" class="a2-text-link" onclick="go('atlas2-network')">Comparer des œuvres</button><button type="button" class="a2-text-link" onclick="go('atlas2-lab/lab-style-queneau')">Laboratoire Queneau</button></div></section>
+  <p class="a2-footer-note">Règle de lecture : les œuvres d’abord. Même motif ≠ même fonction. Les catégories ne remplacent pas l’analyse.</p>`);
 }
 function atlas2Works(){const filtered=atlas2FilteredWorks();return page(`${hero('ATLAS 2 · ŒUVRES','Œuvres','Chaque œuvre est présentée comme une machine singulière. Les filtres portent sur le médium et le problème étudié, sans modifier les analyses.')}${a2Nav()}${atlas2CatalogueFilters()}<div class="a2-grid">${filtered.length?workCards(filtered):'<p class="a2-catalogue-empty">Aucune œuvre ne répond à cette combinaison de filtres.</p>'}</div>`,'Atlas 2 · Œuvres','Machines narratives et formelles')}
 // V10.16 — Chaque connexion est reliée à une rubrique du dossier ou à une Route éditoriale.
@@ -134,7 +164,32 @@ function atlas2Network(){
  const intro=`<div class="a2-network-intro"><p><strong>Les œuvres demeurent premières.</strong> Chaque comparaison ci-dessous s’appuie sur deux rubriques précises des dossiers et met en évidence un écart, pas une équivalence automatique. Ces lectures éditoriales sont proposées à la discussion ; les sept Routes constituent un ensemble distinct, déjà organisé et verrouillé.</p><button class="a2-inline-link" onclick="go('atlas2-routes')">Lire les sept Routes canoniques</button></div>`;
  return page(`${hero('ATLAS 2 · CARTOGRAPHIE','Connexions entre œuvres','Comparer des mécanismes précis, localiser les passages qui fondent le rapprochement et respecter les différences de fonction.')}${a2Nav()}${intro}<div class="a2-catalogue-controls a2-network-filters"><label>Partir d’une œuvre${select('work',options)}</label><label>Nature de la proposition${select('kind',[['tous','Tous les rapprochements'],['editorial','Comparaisons argumentées'],['exploratoire','Pistes provisoires']])}</label><p class="a2-catalogue-count">${list.length} comparaison${list.length>1?'s':''} affichée${list.length>1?'s':''} ; 26 propositions éditoriales, dont deux pistes provisoires.</p></div><div class="a2-network-grid">${list.map(x=>a2ComparisonCard(x)).join('')||'<p>Aucune comparaison dans cette sélection.</p>'}</div>`,'Atlas 2 · Connexions','Cartographie comparée des œuvres');
 }
-function atlas2Work(){const id=arg(),w=work(id),c=WC[id];if(!w)return page(hero('ERREUR','Œuvre introuvable','Cet identifiant n’existe pas dans Atlas 2.'));const toc=A(c?.sections).map((s,i)=>`<button onclick="document.getElementById('a2s-${i}').scrollIntoView({behavior:'smooth',block:'start'})">${E(s[0])}</button>`).join('');return page(`<button class="a2-back" onclick="go('atlas2-works')">← Œuvres</button>${hero(workHeroKicker(w),w.title,E(w.card))}<div class="a2-toc"><button onclick="document.getElementById('a2-machine').scrollIntoView({behavior:'smooth'})">EN BREF</button><button onclick="document.getElementById('a2-cartography').scrollIntoView({behavior:'smooth'})">ARTICULATIONS</button><button onclick="document.getElementById('a2-traversee').scrollIntoView({behavior:'smooth'})">TRAVERSÉE</button>${toc}<button onclick="document.getElementById('a2-crosscartography').scrollIntoView({behavior:'smooth'})">COMPARAISONS</button><button onclick="document.getElementById('a2-raccords').scrollIntoView({behavior:'smooth'})">RACCORDS</button></div><section class="a2-section a2-work-summary" id="a2-machine"><h3>EN QUELQUES MOTS</h3><p class="a2-summary-text">${E(c?.machine_context||w.card)}</p></section>${a2InternalCartography(w,c)}<section class="a2-section a2-traversee" id="a2-traversee"><h3>TRAVERSÉE DE L’ŒUVRE</h3>${splitParas(c?.traversee||w.card)}</section>${A(c?.sections).map((s,i)=>`<section class="a2-section" id="a2s-${i}"><h3>${E(s[0])}</h3><p>${E(s[1])}</p></section>`).join('')}${A(c?.special).map(s=>`<section class="a2-section"><h3>${E(s[0])}</h3><p>${E(s[1])}</p></section>`).join('')}<section class="a2-section"><h3>OPTIQUES</h3>${tags(w.optics,'optic')}${contextBlock('POURQUOI CES OPTIQUES',c?.optics_context)}${A(w.optic_couplings).length?`<div class="a2-callout"><strong>Couplage</strong>${E(w.optic_couplings.join(' · '))}</div>`:''}</section>${A(w.local_concepts).length?`<section class="a2-section"><h3>NOTIONS LOCALES</h3><p>Indexées par la recherche, sans page globale autonome.</p>${tags(w.local_concepts,'local')}${contextBlock('CONTEXTE DES NOTIONS LOCALES',c?.locals_context)}</section>`:''}${a2CrossCartography(w)}<section class="a2-section" id="a2-raccords"><h3>RACCORDS PRINCIPAUX</h3>${connectionButtons(w.primary_connections)}${contextBlock('POURQUOI CES RACCORDS',c?.connections_context)}</section>`,'Atlas 2 · '+w.title,w.author)}
+function atlas2Work(){
+ const id=arg(),w=work(id),c=WC[id];
+ if(!w)return page(hero('ERREUR','Œuvre introuvable','Cet identifiant n’existe pas dans Atlas 2.'));
+ const jump=(target,label)=>`<button type="button" onclick="document.getElementById('${target}').scrollIntoView({behavior:'smooth',block:'start'})">${label}</button>`;
+ const sectionJump=A(c?.sections).map((row,i)=>jump('a2s-'+i,E(row[0]))).join('');
+ const hasArticulations=A(REL.internal?.[w.id]).length>0 && A(c?.sections).length>0;
+ const toc=`<details class="a2-dossier-map"><summary>Aller directement à une partie du dossier</summary><div class="a2-dossier-map-items">${jump('a2-machine','En quelques mots')}${jump('a2-traversee','Traversée de l’œuvre')}${hasArticulations?jump('a2-cartography','Articulations'):''}${sectionJump}${jump('a2-crosscartography','Comparaisons')}${jump('a2-raccords','Raccords')}</div></details>`;
+ return page(`
+ ${hero(workHeroKicker(w),w.title,E(w.card))}
+ <section class="a2-dossier-guide" aria-label="Comment lire cette analyse">
+  <div class="a2-kicker">VOTRE CHEMIN DE LECTURE</div>
+  <h3>Lire cette œuvre sans se perdre</h3>
+  <p><strong>Pour commencer :</strong> « En quelques mots » présente le fonctionnement essentiel, puis la « Traversée » suit ce qui arrive dans l’œuvre. Les analyses détaillées viennent ensuite. Les comparaisons sont facultatives : elles n'ont de sens qu'après la lecture singulière.</p>
+  ${toc}
+ </section>
+ <section class="a2-section a2-work-summary" id="a2-machine"><h3>EN QUELQUES MOTS</h3><p class="a2-summary-text">${E(c?.machine_context||w.card)}</p></section>
+ <section class="a2-section a2-traversee" id="a2-traversee"><h3>TRAVERSÉE DE L’ŒUVRE</h3>${splitParas(c?.traversee||w.card)}</section>
+ ${a2InternalCartography(w,c)}
+ ${A(c?.sections).map((row,i)=>`<section class="a2-section" id="a2s-${i}"><h3>${E(row[0])}</h3><p>${E(row[1])}</p></section>`).join('')}
+ ${A(c?.special).map(row=>`<section class="a2-section"><h3>${E(row[0])}</h3><p>${E(row[1])}</p></section>`).join('')}
+ <section class="a2-section"><h3>OPTIQUES</h3>${tags(w.optics,'optic')}${contextBlock('POURQUOI CES OPTIQUES',c?.optics_context)}${A(w.optic_couplings).length?`<div class="a2-callout"><strong>Couplage</strong>${E(w.optic_couplings.join(' · '))}</div>`:''}</section>
+ ${A(w.local_concepts).length?`<section class="a2-section"><h3>NOTIONS LOCALES</h3><p>Indexées par la recherche, sans page globale autonome.</p>${tags(w.local_concepts,'local')}${contextBlock('CONTEXTE DES NOTIONS LOCALES',c?.locals_context)}</section>`:''}
+ ${a2CrossCartography(w)}
+ <section class="a2-section" id="a2-raccords"><h3>RACCORDS PRINCIPAUX</h3>${connectionButtons(w.primary_connections)}${contextBlock('POURQUOI CES RACCORDS',c?.connections_context)}</section>
+ <div class="a2-dossier-end"><p>Vous pouvez vous arrêter ici. Chaque œuvre se suffit à elle-même ; les autres rubriques permettent de prolonger une question, pas de compléter une lecture « obligatoire ».</p><button class="a2-text-link" type="button" onclick="go('atlas2')">Retour aux œuvres et aux Routes</button></div>`,'Atlas 2 · '+w.title,w.author);
+}
 
 function atlas2Transformations(){return page(`${hero('ATLAS 2 · TRANSFORMATIONS','Transformations','Dix opérateurs transversaux. VARIATION et RECOMPOSITION sont désormais distinctes de RÉPÉTITION et TRANSFORMATION ; les variantes restent des axes internes.')}${a2Nav()}<div class="a2-grid">${A(D.transformations).sort((a,b)=>a.order-b.order).map(t=>`<button class="a2-card" onclick="go('atlas2-transformation/${t.id}')"><div class="num">TRANSFORMATION ${String(t.order).padStart(3,'0')}</div><h3>${E(t.title)}</h3><p>${E(t.definition)}</p></button>`).join('')}</div>`,'Atlas 2 · Transformations','Backbone transversal')}
 function atlas2Transformation(){const t=A(D.transformations).find(x=>x.id===arg());if(!t)return atlas2Transformations();const fields=[['VARIANTES',t.variants],['FONCTIONS',t.functions],['CIBLES',t.targets],['PLANS',t.planes],['MODES DE PRODUCTION',t.production_modes],['MÉCANISMES',t.mechanisms],['AXES',t.axes]];return page(`<button class="a2-back" onclick="go('atlas2-transformations')">← Transformations</button>${hero('TRANSFORMATION '+String(t.order).padStart(3,'0'),t.title,E(t.definition))}<section class="a2-section"><h3>QUESTION FONCTIONNELLE</h3><p>${E({TRACE:'Qu’est-ce qui continue d’agir après ?',RÉPÉTITION:'Que produit une nouvelle occurrence ?',VARIATION:'Quel écart devient opératoire dans ce qui revient ?',TRANSFORMATION:'Qu’est-ce qui est redistribué ?',SEUIL:'Quand les règles changent-elles ?',RÉVERSION:'Quelle relation change de direction ?',RECOMPOSITION:'Quelle nouvelle organisation se forme après les changements ?',CONDENSATION:'Où plusieurs lignes convergent-elles ?'}[t.title]||'')}</p></section>${fields.filter(x=>A(x[1]).length).map(x=>`<section class="a2-section"><h3>${x[0]}</h3>${tags(x[1])}</section>`).join('')}<section class="a2-section"><h3>CAS PRINCIPAUX</h3>${caseTags(t.cases?.primary||[])}${stressCaseNote(t.cases?.primary||[])}${A(t.cases?.secondary).length?`<div class="a2-divider"></div><div class="a2-kicker">AUTRES CAS</div>${caseTags(t.cases.secondary)}${stressCaseNote(t.cases.secondary)}`:''}${A(t.cases?.laboratory).length?`<div class="a2-divider"></div><div class="a2-kicker">LABORATOIRE</div>${caseTags(t.cases.laboratory)}`:''}</section>${A(t.guardrails).map(g=>`<div class="a2-callout"><strong>Garde-fou</strong>${E(g)}</div>`).join('')}<section class="a2-section"><h3>RACCORDS STRUCTURELS</h3>${connectionButtons(t.structural_connections)}</section>`,'Atlas 2 · '+t.title,'Transformation transversale')}

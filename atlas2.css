@@ -106,3 +106,65 @@
  .a2-home-work-title{font-size:22px}
  .a2-home-work-description{font-size:14px}
 }
+
+/* Atlas V10.19 — deux portes d'entrée et navigation progressive */
+.a2-home-guidance{margin:6px 0 22px;padding:4px 0 6px}
+.a2-home-guidance h3,.a2-home-backbone h3{font:500 clamp(25px,3.5vw,32px)/1.18 Georgia,serif;color:var(--a2-ink);margin:7px 0 10px}
+.a2-home-guidance>p,.a2-home-backbone>p{font:15px/1.67 Georgia,serif;max-width:770px;color:#556365;margin:0 0 15px}
+.a2-entry-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.a2-entry-choice{display:flex;flex-direction:column;align-items:flex-start;gap:7px;border:1px solid #d5cbbd;border-radius:12px;padding:18px 19px;background:#fffdf8;text-align:left;cursor:pointer;color:var(--a2-ink);width:100%;min-width:0}
+.a2-entry-choice:hover,.a2-entry-choice:focus-visible{border-color:#97764d;background:#fbf6eb;outline-offset:2px}
+.a2-entry-choice strong{font:500 24px/1.22 Georgia,serif;color:#213840}
+.a2-entry-choice>span:not(.a2-entry-index):not(.a2-entry-cta){font:14px/1.55 Georgia,serif;color:#5e6a6c}
+.a2-entry-index{font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.09em;color:#90723f}
+.a2-entry-cta{margin-top:auto;padding-top:9px;font:650 12px/1.5 system-ui,sans-serif;color:#305760;border-bottom:1px solid #9aaeb0}
+.a2-home-backbone{margin:12px 0 23px;padding:20px 0 18px;border-top:2px solid #977645;border-bottom:1px solid #d8cebd}
+.a2-home-backbone .a2-backbone-example{padding:11px 15px;margin:12px 0 13px;border-left:2px solid #a88c5c;background:#f8f3ea;font:14px/1.7 Georgia,serif;color:#4b5659}
+.a2-nav{border-top:1px solid #d9d0c3;border-bottom:1px solid #d9d0c3;margin:14px 0 22px;padding:5px 0}
+.a2-nav-home{border:0;background:transparent;color:#52636a;font:600 12px/1.4 system-ui,sans-serif;cursor:pointer;padding:8px 0;text-align:left}
+.a2-nav-home:hover,.a2-nav-home:focus-visible{color:#866330}
+.a2-nav-details{margin:0}
+.a2-nav-details summary{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:11px 0;cursor:pointer;list-style:none;font:650 13px/1.5 system-ui,sans-serif;color:#45565c}
+.a2-nav-details summary::-webkit-details-marker{display:none}
+.a2-nav-details summary:after{content:'+';margin-left:5px;font:21px/1 system-ui,sans-serif;color:#9a7a46}
+.a2-nav-details[open] summary:after{content:'−'}
+.a2-nav-details summary small{font:11px/1.5 system-ui,sans-serif;color:#7d8585}
+.a2-nav-sections{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;border-top:1px solid #e3dacc;padding:15px 0}
+.a2-nav-sections h3{font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.06em;color:#8b6c3e;margin:0 0 10px}
+.a2-nav-sections ul{list-style:none;padding:0;margin:0}
+.a2-nav-sections li{margin:0 0 6px}
+.a2-nav-sections li button{display:flex;flex-direction:column;align-items:flex-start;gap:3px;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid #e8dfd1;padding:8px 0;cursor:pointer;color:#354b52}
+.a2-nav-sections li button strong{font:650 13px/1.35 system-ui,sans-serif}
+.a2-nav-sections li button span{font:12px/1.5 Georgia,serif;color:#6d7778}
+.a2-nav-sections li button:hover strong,.a2-nav-sections li button:focus-visible strong{color:#91672c}
+.a2-home-corpus{scroll-margin-top:90px}
+.a2-dossier-guide{border-top:2px solid #a18a66;border-bottom:1px solid #ded4c6;margin:16px 0 19px;padding:17px 0 14px}
+.a2-dossier-guide h3{font:500 23px/1.25 Georgia,serif;color:#24383e;margin:7px 0 8px}
+.a2-dossier-guide p,.a2-dossier-end p{font:14px/1.7 Georgia,serif;color:#506065;margin:0 0 10px}
+.a2-dossier-map{margin-top:9px}
+.a2-dossier-map summary{cursor:pointer;font:650 12px/1.5 system-ui,sans-serif;color:#365c64;padding:7px 0;text-decoration:underline;text-underline-offset:3px}
+.a2-dossier-map-items{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:11px 0 6px}
+.a2-dossier-map-items button{border:1px solid #d6cbbc;border-radius:6px;background:#fffdf8;padding:7px 9px;font:600 11px/1.4 system-ui,sans-serif;color:#435258;cursor:pointer}
+.a2-dossier-map-items button:hover{border-color:#967d56}
+.a2-dossier-end{border-top:1px solid #ded4c6;margin-top:26px;padding:18px 0}
+@media(max-width:680px){
+.a2-entry-options{grid-template-columns:1fr;gap:9px}
+.a2-entry-choice{padding:15px 16px}
+.a2-entry-choice strong{font-size:23px}
+.a2-entry-choice>span:not(.a2-entry-index):not(.a2-entry-cta){font-size:13px}
+.a2-home-backbone{margin:9px 0 16px;padding:16px 0 13px}
+.a2-home-backbone h3{font-size:26px}
+.a2-home-guidance{margin:5px 0 13px}
+.a2-nav-sections{grid-template-columns:1fr;gap:10px}
+.a2-nav-details summary{align-items:center}
+.a2-nav-details summary small{display:none}
+.a2-dossier-guide{padding:14px 0 10px}
+.a2-dossier-guide h3{font-size:22px}
+.a2-home-work-description{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
+}
+
+/* Repère de position permanent dans les pages secondaires */
+.a2-where{display:flex;flex-wrap:wrap;align-items:baseline;gap:5px;padding:8px 0 2px;border-bottom:1px solid #e4dccf;color:#7a8080;font:12px/1.5 system-ui,sans-serif}
+.a2-where button{padding:0 0 5px;border:0;background:transparent;cursor:pointer;color:#315862;font:650 12px/1.5 system-ui,sans-serif;text-decoration:underline;text-underline-offset:3px}
+.a2-where span{color:#6c7576}
+@media(max-width:680px){.a2-where{font-size:11px}.a2-where span{font-size:11px}}
