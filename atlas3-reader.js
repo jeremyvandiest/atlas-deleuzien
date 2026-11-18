@@ -348,13 +348,13 @@
     editionScript.async=true;
     editionScript.onload=()=>{
       if(!edition15())return;
-      data.status='Édition V1.6 — pédagogie des expériences, formes et approches ; sources en cours de contrôle';
+      data.status='Édition '+edition15().version+' — expériences, formes, approches et sources critiques';
       if(typeof current==='function' && String(current()).split('/')[0]==='atlas3' && typeof render==='function')render();
     };
     editionScript.onerror=()=>console.warn('Atlas 3 V1.6 : supplément indisponible, édition V1.4.1 maintenue.');
     document.head.appendChild(editionScript);
   }else if(edition15()){
-    data.status='Édition V1.6 — pédagogie des expériences, formes et approches ; sources en cours de contrôle';
+    data.status='Édition '+edition15().version+' — expériences, formes, approches et sources critiques';
   }
   // atlas-hub.js a déjà fait son premier rendu : actualiser uniquement si Atlas 3 est affiché.
   if(typeof current==='function' && current().split('/')[0]==='atlas3' && typeof render==='function')render();
