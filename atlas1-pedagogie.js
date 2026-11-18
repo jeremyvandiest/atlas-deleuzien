@@ -53,6 +53,17 @@
       '<h2>Découvrir · '+safe(question)+'</h2>'+
       '<p>'+safe(discovery)+'</p>'+
       '</section>');
+    if(!supplement)return edited;
+    // Situer d'abord l'auteur ou l'œuvre : le titre et le contexte précèdent la question.
+    const afterMain=edited.indexOf(mainMarker)+mainMarker.length;
+    const firstSection=edited.indexOf('<section',afterMain);
+    if(firstSection>=0 && firstSection-afterMain<350){
+      const firstClose=edited.indexOf('</section>',firstSection);
+      if(firstClose>=0 && firstClose-firstSection<3500){
+        const at=firstClose+'</section>'.length;
+        return edited.slice(0,at)+supplement+edited.slice(at);
+      }
+    }
     return edited.replace(mainMarker,mainMarker+supplement);
   };
   let wrapped=0,manuallyWritten=0,contextualized=0;
