@@ -1,5 +1,5 @@
-const CACHE_NAME='atlas-v10-20-dossiers-v43';
-const CORE=['./','./index.html','./manifest.webmanifest','./icon-180.png','./icon-192.png','./icon-512.png','./atelier.css','./atlas1-operative.js','./atelier.js','./oeuvre.js','./atlas2.css','./atlas2-data.js','./atlas2-content.js','./atlas2-audit.js','./atlas2-relations.js','./atlas2.js','./atlas2-lecteur-v43.html','./atlas-hub.js','./atlas-hub.css','./atlas3.css','./atlas3-content.js','./atlas3-reader.js'];
+const CACHE_NAME='atlas-v10-21-dossiers-integres';
+const CORE=['./','./index.html','./manifest.webmanifest','./icon-180.png','./icon-192.png','./icon-512.png','./atelier.css','./atlas1-operative.js','./atelier.js','./oeuvre.js','./atlas2.css','./atlas2-data.js','./atlas2-content.js','./atlas2-audit.js','./atlas2-relations.js','./atlas2.js','./atlas2-v43-data.js','./atlas-hub.js','./atlas-hub.css','./atlas3.css','./atlas3-content.js','./atlas3-reader.js'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',event=>{

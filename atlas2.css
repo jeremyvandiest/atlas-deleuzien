@@ -168,3 +168,30 @@
 .a2-where button{padding:0 0 5px;border:0;background:transparent;cursor:pointer;color:#315862;font:650 12px/1.5 system-ui,sans-serif;text-decoration:underline;text-underline-offset:3px}
 .a2-where span{color:#6c7576}
 @media(max-width:680px){.a2-where{font-size:11px}.a2-where span{font-size:11px}}
+
+/* Atlas 2 · V10.21 — dossiers V4.3 intégrés aux pages Œuvre */
+.a2-v43-intro{border:1px solid var(--a2-line);background:var(--a2-paper);border-radius:16px;padding:22px 24px;margin:12px 0 18px}
+.a2-v43-intro p{font:15px/1.75 system-ui,sans-serif;color:#3d494d;max-width:780px}
+.a2-v43-warning{font-weight:650!important;color:#84521f!important}
+.a2-v43-map{border-top:1px solid var(--a2-line);padding-top:13px;margin-top:15px}
+.a2-v43-map summary{font:700 13px system-ui,sans-serif;cursor:pointer;color:var(--a2-gold)}
+.a2-v43-map-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.a2-v43-map-list button{border:1px solid var(--a2-line);background:#fff;border-radius:8px;padding:8px 10px;text-align:left;font:12px/1.4 system-ui,sans-serif;color:var(--a2-ink);cursor:pointer}
+.a2-v43-prose{border:1px solid var(--a2-line);background:var(--a2-paper);border-radius:16px;padding:22px clamp(16px,4vw,43px);font:16px/1.78 Georgia,serif;color:var(--a2-ink);max-width:100%;overflow-wrap:anywhere}
+.a2-v43-prose h2,.a2-v43-prose h3{font-family:system-ui,sans-serif;line-height:1.34;color:var(--a2-ink);scroll-margin-top:22px}
+.a2-v43-prose h2{font-size:21px;margin:38px 0 15px;padding-top:23px;border-top:1px solid var(--a2-line)}
+.a2-v43-prose h3{font-size:18px;margin:27px 0 13px}
+.a2-v43-prose p{margin:0 0 17px}.a2-v43-prose ul,.a2-v43-prose ol{padding-left:24px}
+.a2-v43-term{display:inline-block;vertical-align:middle;margin:7px 0 7px 12px;border:1px solid #bdcec5;background:#e8f1eb;color:#1e5d48;border-radius:8px;padding:5px 8px;font:650 11px system-ui,sans-serif;cursor:pointer}
+.a2-v43-inline-term{display:inline;padding:0 2px;background:transparent;color:#145c51;border:0;border-bottom:1px dashed #145c51;font:inherit;cursor:pointer}
+.a2-v43-term:hover,.a2-v43-inline-term:hover,.a2-v43-chip:hover{background:#d8e8de}
+.a2-v43-concepts h3,.a2-v43-route h3{letter-spacing:.05em;font-size:16px}
+.a2-v43-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.a2-v43-chip{border:1px solid #bfcfc6;border-radius:10px;background:#edf3ee;color:#164a41;padding:9px 11px;cursor:pointer;font:600 12px/1.4 system-ui,sans-serif;text-align:left;max-width:100%}
+.a2-v43-overlay[hidden]{display:none!important}
+.a2-v43-overlay{position:fixed;z-index:20000;inset:0;background:rgba(12,20,21,.72);display:flex;align-items:center;justify-content:center;padding:18px}
+.a2-v43-dialog{background:#fffdf8;border:1px solid #cdd8cf;border-radius:18px;width:min(600px,100%);max-height:90dvh;overflow-y:auto;box-shadow:0 25px 70px rgba(0,0,0,.2);padding:26px;position:relative;color:#162724}
+.a2-v43-dialog h3{font:750 23px/1.3 system-ui,sans-serif;max-width:510px;margin:12px 28px 16px 0}
+.a2-v43-dialog p{font:16px/1.8 Georgia,serif;white-space:pre-wrap}
+.a2-v43-close{position:absolute;right:15px;top:13px;background:none;border:0;cursor:pointer;font-size:18px}
+@media(max-width:620px){.a2-v43-intro{padding:17px}.a2-v43-prose{font-size:15px;line-height:1.78;padding:18px 16px}.a2-v43-prose h2{font-size:18px}.a2-v43-prose h3{font-size:16px}.a2-v43-term{display:block;margin:9px 0}.a2-v43-dialog{padding:22px 18px}}

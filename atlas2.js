@@ -81,7 +81,7 @@ function a2HomeWorkList(){
 function atlas2Home(){
   const workCount=A(D.works).length, transformations=A(D.transformations).length;
   return page(`${hero('ATLAS 2','Atlas des récits et des formes','Découvrir ce que font les œuvres : comment un geste, une forme ou une durée modifient le récit, les relations et notre lecture.')}
-  <section class="a2-section" aria-label="Lectures approfondies V4.3"><div class="a2-kicker">NOUVELLE ÉDITION · 28 DOSSIERS</div><h3>Lire les œuvres en profondeur</h3><p>Les 28 dossiers approfondis se parcourent dans un lecteur dédié, avec notions contextualisées cliquables et routes. Kafka et Jeanne Dielman conservent leurs dossiers pilotes dans l’Atlas.</p><p><a class="a2-link" style="display:inline-block;text-decoration:none" href="./atlas2-lecteur-v43.html">Explorer les 28 dossiers V4.3</a></p></section>
+  <section class="a2-section" aria-label="Lectures approfondies V4.3"><div class="a2-kicker">NOUVELLE ÉDITION · 28 DOSSIERS</div><h3>Lire les œuvres en profondeur</h3><p>Les 28 dossiers approfondis sont désormais consultables directement dans les fiches Œuvres d’Atlas 2, avec notions cliquables et routes. Kafka et Jeanne Dielman conservent leurs dossiers pilotes dans l’Atlas.</p><p><button type="button" class="a2-link" onclick="go('atlas2-works')">Parcourir les dossiers dans Atlas 2</button></p></section>
   <section class="a2-home-guidance" aria-labelledby="a2-guidance-title">
     <div class="a2-kicker">VOTRE POINT DE DÉPART</div><h3 id="a2-guidance-title">Par où commencer ?</h3>
     <p>Il n’est pas nécessaire de connaître la cartographie avant de lire. Deux portes suffisent ; les autres notions deviennent utiles au fil des œuvres.</p>
@@ -165,10 +165,125 @@ function atlas2Network(){
  const intro=`<div class="a2-network-intro"><p><strong>Les œuvres demeurent premières.</strong> Chaque comparaison ci-dessous s’appuie sur deux rubriques précises des dossiers et met en évidence un écart, pas une équivalence automatique. Ces lectures éditoriales sont proposées à la discussion ; les sept Routes constituent un ensemble distinct, déjà organisé et verrouillé.</p><button class="a2-inline-link" onclick="go('atlas2-routes')">Lire les sept Routes canoniques</button></div>`;
  return page(`${hero('ATLAS 2 · CARTOGRAPHIE','Connexions entre œuvres','Comparer des mécanismes précis, localiser les passages qui fondent le rapprochement et respecter les différences de fonction.')}${a2Nav()}${intro}<div class="a2-catalogue-controls a2-network-filters"><label>Partir d’une œuvre${select('work',options)}</label><label>Nature de la proposition${select('kind',[['tous','Tous les rapprochements'],['editorial','Comparaisons argumentées'],['exploratoire','Pistes provisoires']])}</label><p class="a2-catalogue-count">${list.length} comparaison${list.length>1?'s':''} affichée${list.length>1?'s':''} ; 26 propositions éditoriales, dont deux pistes provisoires.</p></div><div class="a2-network-grid">${list.map(x=>a2ComparisonCard(x)).join('')||'<p>Aucune comparaison dans cette sélection.</p>'}</div>`,'Atlas 2 · Connexions','Cartographie comparée des œuvres');
 }
+let a2V43State='idle',a2V43Active=null,a2V43ReturnFocus=null;
+function a2V43Ensure(){
+ if(Array.isArray(window.__ATLAS2_V43_BOOKS__)&&window.__ATLAS2_V43_BOOKS__.length===28)return true;
+ if(a2V43State!=='idle')return false;
+ a2V43State='loading';
+ const script=document.createElement('script');
+ script.src='./atlas2-v43-data.js';
+ script.onload=()=>{
+  a2V43State=Array.isArray(window.__ATLAS2_V43_BOOKS__)&&window.__ATLAS2_V43_BOOKS__.length===28?'ready':'error';
+  if(current().startsWith('atlas2-work/'))render();
+ };
+ script.onerror=()=>{a2V43State='error';if(current().startsWith('atlas2-work/'))render();};
+ document.head.appendChild(script);
+ return false;
+}
+function a2V43Retry(){a2V43State='idle';a2V43Ensure();}
+function a2V43LoadingBlock(){
+ return `<section class="a2-section"><h3>Lecture approfondie V4.3</h3><p>${a2V43State==='error'?'Le module approfondi ne s’est pas chargé. Le dossier d’origine reste accessible.':'Chargement de la lecture approfondie directement dans Atlas 2…'}</p>${a2V43State==='error'?'<button type="button" class="a2-link" onclick="a2V43Retry()">Réessayer</button>':''}</section>`;
+}
+function a2V43RenderText(b){
+ const root=document.createElement('div');
+ root.innerHTML=b.html;
+ root.querySelector('h1')?.remove();
+ const toc=[];let serial=0;
+ for(const h of root.querySelectorAll('h2,h3')){
+  const heading=h.textContent.trim();
+  const idx=Array.isArray(b.concepts)?b.concepts.findIndex(c=>N(c.anchor_heading)===N(heading)):-1;
+  h.id='a2-v43-section-'+serial++;
+  if(h.tagName==='H2')toc.push({id:h.id,title:heading});
+  if(idx!==-1){
+   const btn=document.createElement('button');btn.type='button';btn.className='a2-v43-term';
+   btn.textContent='Comprendre cette notion';btn.setAttribute('onclick','a2V43OpenConcept('+idx+')');
+   h.appendChild(btn);
+  }
+ }
+ const used=new Set(),terms=A(D.transformations).filter(t=>t.title&&t.title.length>=4).sort((a,b)=>b.title.length-a.title.length);
+ for(const p of root.querySelectorAll('p')){
+  const walker=document.createTreeWalker(p,NodeFilter.SHOW_TEXT),nodes=[];
+  while(walker.nextNode())nodes.push(walker.currentNode);
+  for(const node of nodes){
+   if(!node.parentElement||node.parentElement.closest('a,button,code,pre'))continue;
+   const raw=node.nodeValue,low=raw.toLocaleLowerCase('fr');
+   for(const term of terms){
+    if(used.has(term.id))continue;
+    const target=term.title.toLocaleLowerCase('fr');let pos=low.indexOf(target);
+    while(pos>=0){
+     const before=raw[pos-1]||'',after=raw[pos+target.length]||'';
+     if(!/[\p{L}\p{N}]/u.test(before)&&!/[\p{L}\p{N}]/u.test(after))break;
+     pos=low.indexOf(target,pos+1);
+    }
+    if(pos<0)continue;
+    const frag=document.createDocumentFragment(),btn=document.createElement('button');
+    btn.type='button';btn.className='a2-v43-inline-term';btn.textContent=raw.slice(pos,pos+target.length);
+    btn.setAttribute('onclick',"a2V43OpenGlobal('"+term.id+"')");
+    frag.append(document.createTextNode(raw.slice(0,pos)),btn,document.createTextNode(raw.slice(pos+target.length)));
+    node.replaceWith(frag);used.add(term.id);break;
+   }
+  }
+ }
+ return {html:root.innerHTML,toc};
+}
+function a2V43WorkPage(w,b){
+ a2V43Active=b;
+ const prepared=a2V43RenderText(b);
+ const target=A(D.works).find(x=>x.order===Number(b.route?.id?.slice(0,2)));
+ const toc=prepared.toc.map(t=>`<button type="button" onclick="document.getElementById('${t.id}')?.scrollIntoView({behavior:'smooth',block:'start'})">${E(t.title)}</button>`).join('');
+ const warning=w.status==='PROVISIONAL'?'<p class="a2-v43-warning">Lecture provisoire : la confrontation directe au film complet reste nécessaire.</p>':'';
+ return page(`
+  ${hero(workHeroKicker(w),w.title,E(w.card))}
+  ${a2Nav()}
+  <section class="a2-v43-intro">
+   <div class="a2-kicker">DOSSIER APPROFONDI · V4.3</div>
+   <p>Commencez par la traversée de l’œuvre. Les notions soulignées et les boutons « Comprendre » ouvrent des explications sans quitter cette page.</p>
+   ${warning}
+   <details class="a2-v43-map"><summary>Sommaire détaillé du dossier</summary><div class="a2-v43-map-list">${toc}</div></details>
+  </section>
+  <article class="a2-v43-prose" id="a2-v43-prose">${prepared.html}</article>
+  <section class="a2-section a2-v43-concepts">
+   <h3>NOTIONS À EXPLORER DANS CETTE ŒUVRE</h3>
+   <p>Leur signification dépend des scènes et de leur fonction dans la construction de l’œuvre.</p>
+   <div class="a2-v43-chips">${A(b.concepts).map((c,i)=>`<button type="button" class="a2-v43-chip" onclick="a2V43OpenConcept(${i})">${E(c.title)}</button>`).join('')}</div>
+  </section>
+  ${target?`<section class="a2-section a2-v43-route"><h3>POURSUIVRE PAR UNE ROUTE</h3><p>${E(b.route.note)}</p><button type="button" class="a2-link" onclick="go('atlas2-work/${target.id}')">Découvrir ${E(target.title)} dans Atlas 2</button></section>`:''}
+  <p class="a2-footer-note">La documentation et les réserves de lecture figurent dans chaque dossier.</p>
+  <div id="a2-v43-overlay" class="a2-v43-overlay" hidden onclick="if(event.target===this)a2V43Close()"></div>
+ `,'Atlas 2 · '+w.title,'Œuvre et construction formelle');
+}
+function a2V43Modal(title,description,detailPage){
+ const el=document.getElementById('a2-v43-overlay');if(!el)return;
+ a2V43ReturnFocus=document.activeElement;
+ el.innerHTML=`<div class="a2-v43-dialog" role="dialog" aria-modal="true" aria-labelledby="a2-v43-dialog-title">
+  <button type="button" class="a2-v43-close" onclick="a2V43Close()" aria-label="Fermer cette explication">✕</button>
+  <div class="a2-kicker">NOTION EXPLIQUÉE · ${E(a2V43Active?.title||'ATLAS 2')}</div>
+  <h3 id="a2-v43-dialog-title">${E(title)}</h3><p>${E(description)}</p>
+  ${detailPage?`<button type="button" class="a2-link" onclick="a2V43Visit('${detailPage}')">Approfondir dans Atlas 2</button>`:''}
+ </div>`;
+ el.hidden=false;el.querySelector('.a2-v43-close')?.focus();
+}
+function a2V43OpenConcept(i){
+ const c=A(a2V43Active?.concepts)[Number(i)];
+ if(c)a2V43Modal(c.title,c.text);
+}
+function a2V43OpenGlobal(id){
+ const c=byId(id);if(!c)return;
+ a2V43Modal(c.title,c.definition||c.question||c.explanation||'Notion transversale : consulter son dossier pour ses usages et limites.',connectionPage(id));
+}
+function a2V43Close(){
+ const el=document.getElementById('a2-v43-overlay');
+ if(el){el.hidden=true;el.innerHTML='';}
+ if(a2V43ReturnFocus?.isConnected)a2V43ReturnFocus.focus();
+}
+function a2V43Visit(path){a2V43Close();go(path);}
+window.a2V43Retry=a2V43Retry;window.a2V43OpenConcept=a2V43OpenConcept;window.a2V43OpenGlobal=a2V43OpenGlobal;window.a2V43Close=a2V43Close;window.a2V43Visit=a2V43Visit;window.addEventListener('keydown',function(e){const o=document.getElementById('a2-v43-overlay');if(e.key==='Escape'&&o&&!o.hidden)a2V43Close();});
+
 function atlas2Work(){
  const id=arg(),w=work(id),c=WC[id];
  if(!w)return page(hero('ERREUR','Œuvre introuvable','Cet identifiant n’existe pas dans Atlas 2.'));
- const v43Entry=(w.id==='work-kafka-metamorphose'||w.id==='work-akerman-jeanne-dielman')?'':`<section class="a2-section" aria-label="Édition approfondie V4.3"><div class="a2-kicker">DOSSIER ÉDITORIAL APPROFONDI · V4.3</div><h3>Continuer la lecture de cette œuvre</h3><p>Retrouvez la traversée complète, les analyses de scènes et de formes, les notions expliquées et une route discrète vers une autre œuvre.</p><p><a class="a2-link" style="display:inline-block;text-decoration:none" href="./atlas2-lecteur-v43.html#${String(w.order).padStart(2,'0')}">Ouvrir le dossier V4.3</a></p>${w.status==='PROVISIONAL'?'<p class="a2-footer-note">Dossier documentaire provisoire : vérification directe du film complet encore nécessaire.</p>':''}</section>`;
+ if(w.order!==1&&w.order!==19&&a2V43Ensure()){const b=window.__ATLAS2_V43_BOOKS__.find(x=>Number(x.id.slice(0,2))===Number(w.order));if(b)return a2V43WorkPage(w,b);}
+ const v43Entry=(w.order===1||w.order===19)?'':a2V43LoadingBlock();
  const jump=(target,label)=>`<button type="button" onclick="document.getElementById('${target}').scrollIntoView({behavior:'smooth',block:'start'})">${label}</button>`;
  const sectionJump=A(c?.sections).map((row,i)=>jump('a2s-'+i,E(row[0]))).join('');
  const hasArticulations=A(REL.internal?.[w.id]).length>0 && A(c?.sections).length>0;
