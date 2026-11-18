@@ -1,4 +1,4 @@
-/* ATLAS 1 — progression pédagogique V1, non destructive. */
+/* ATLAS 1 — progression pédagogique V3 : rédaction et lecture extractive. */
 (function(){
   'use strict';
   if(typeof PAGE_HANDLERS==='undefined'||typeof AUTHORS==='undefined'||typeof WORKS==='undefined')return;
@@ -16,6 +16,8 @@
   const block=(page,meta,body)=>{
     const hasGuide=!!guides[page];
     const guide=guides[page];
+    const written=hasGuide&&!guide.provenance;
+    const extracted=hasGuide&&!!guide.provenance;
     const original=body;
     const mainMarker='<main class="main">';
     if(!original.includes(mainMarker))return original;
@@ -49,16 +51,16 @@
       '<div class="a1ped-kicker">ATLAS 1 · ENTRER DANS LA LECTURE</div>'+
       '<h2>'+safe(title)+' : découvrir, comprendre, approfondir</h2>'+
       '<p class="a1ped-intro">L’enjeu n’est pas une histoire neutre de la philosophie, mais ce que Deleuze découvre, déplace ou transforme dans cette pensée. Les analyses originales suivent intégralement.</p>'+
-      intro('1 · Découvrir : '+safe(question),discovery)+
+      intro((extracted?'1 · Entrer dans le problème : ':'1 · Découvrir : ')+safe(question),discovery)+
       '<details class="a1ped-depth" open><summary>2 · Comprendre ce qui se transforme</summary><p>'+safe(mechanism)+'</p></details>'+
       '<details class="a1ped-depth"><summary>3 · Approfondir sans perdre les nuances</summary><p>'+safe(deep)+'</p><p class="a1ped-limit"><strong>À distinguer :</strong> '+safe(limits)+'</p>'+
       (links?'<div class="a1ped-links">'+links+'</div>':'')+'</details>'+
       (toc?'<details class="a1ped-depth"><summary>Sommaire de la carte détaillée</summary><ol class="a1ped-toc">'+toc+'</ol></details>':'')+
-      '<p class="a1ped-disclaimer">'+(hasGuide?'Introduction éditoriale rédigée pour cette entrée.':'Orientation guidée à partir du contenu existant ; approfondissement éditorial individuel encore nécessaire.')+'</p>'+
+      '<p class="a1ped-disclaimer">'+(written?'Introduction individualisée et rédigée pour cette entrée.':extracted?'Lecture issue du dossier original : extraits restructurés, non collationnés individuellement contre les éditions primaires.':'Orientation guidée depuis le contenu existant ; approfondissement encore nécessaire.')+'</p>'+
       '</section>';
     return edited.replace(mainMarker,mainMarker+supplement);
   };
-  let wrapped=0,manuallyWritten=0;
+  let wrapped=0,manuallyWritten=0,contextualized=0;
   for(const meta of all){
     const original=PAGE_HANDLERS[meta.page];
     if(typeof original!=='function'||original.__a1ped)continue;
@@ -66,7 +68,8 @@
     PAGE_HANDLERS[route]=function(){return block(route,meta,original.apply(this,arguments));};
     PAGE_HANDLERS[route].__a1ped=true;
     wrapped++;
-    if(guides[route])manuallyWritten++;
+    if(guides[route]&&!guides[route].provenance)manuallyWritten++;
+    if(guides[route]?.provenance)contextualized++;
   }
   const homeOriginal=PAGE_HANDLERS.atlas1;
   if(typeof homeOriginal==='function'&&!homeOriginal.__a1ped){
@@ -80,7 +83,7 @@
     };
     PAGE_HANDLERS.atlas1.__a1ped=true;
   }
-  window.ATLAS1_PEDAGOGY_STATUS={version:'V1',wrapped,manuallyWritten,otherEntries:wrapped-manuallyWritten};
+  window.ATLAS1_PEDAGOGY_STATUS={version:'V3',wrapped,manuallyWritten,contextualized,withoutGuide:wrapped-manuallyWritten-contextualized};
   if(typeof current==='function'&&typeof render==='function'){
     const p=String(current()).split('/')[0];
     if(p==='atlas1'||pageSet.has(p))render();
