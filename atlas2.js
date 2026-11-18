@@ -23,6 +23,7 @@ const textList=(title,items)=>A(items).length?`<section class="a2-section"><h3>$
 
 
 function a2Nav(){
+ if(current()!=='atlas2')return `<nav class="a2-nav a2-nav-compact" aria-label="Retour à Atlas 2"><button type="button" class="a2-nav-home" onclick="go('atlas2')">← Accueil d’Atlas 2</button></nav>`;
  const rubrics=[
   ['atlas2-transformations','Transformations','Suivre les changements qui produisent des conséquences : répétition, variation, seuil, réversion.'],
   ['atlas2-configurations','Configurations','Comprendre comment les personnages, les espaces et les forces tiennent ensemble dans une œuvre.'],
