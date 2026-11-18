@@ -231,3 +231,24 @@
 .a3r-wrap .a3r-link{min-height:40px}
 .a3r-wrap .a3r-link:focus-visible{outline:2px solid #346875;outline-offset:2px}
 @media(max-width:690px){.a3r-wrap .a3r-link{min-height:44px}}
+
+/* Atlas V10.39 — accueil du Théâtre du sentir : ordre de lecture et accès sans doublons. */
+.a3r-approaches-index{margin:19px 0 29px;padding:18px 20px 21px;border:1px solid #d7cbbc;border-radius:13px;background:#fffdf8}
+.a3r-approaches-index h2,.a3r-salon-portal h2,.a3r-transversal-after h2{font:500 clamp(23px,3.3vw,29px)/1.24 Georgia,serif;color:#294149;margin:0 0 9px}
+.a3r-approaches-index>p,.a3r-salon-portal>p,.a3r-transversal-after>p{font:15px/1.72 Georgia,serif;color:#4f5e61;margin:0 0 13px}
+.a3r-approaches-index .a3r-v15-form-grid{margin-top:14px;gap:9px}
+.a3r-approaches-index .a3r-v15-form-card{padding:13px 15px;background:#faf8f3;border:1px solid #dfd5c5;border-radius:9px}
+.a3r-approaches-index .a3r-v15-form-card strong{font-size:16px}
+.a3r-approaches-index .a3r-v15-form-card p{margin:8px 0 10px;font-size:13px}
+.a3r-approaches-index .a3r-link{margin-top:auto}
+.a3r-theory-after h2{font:500 clamp(23px,3.4vw,29px)/1.24 Georgia,serif;color:#294149;margin:0 0 9px}
+.a3r-salon-portal{padding:21px 0;margin:24px 0;border-top:1px solid #d7cbbc;border-bottom:1px solid #d7cbbc}
+.a3r-pathways>summary{font-size:16px}
+.a3r-pathway-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;border-top:1px solid #e1d7c8;padding-top:14px}
+.a3r-pathway-groups section{min-width:0}
+.a3r-pathway-groups h3{font:600 14px/1.42 Georgia,serif;color:#29464c;margin:0 0 10px}
+.a3r-pathway-groups ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.a3r-pathway-groups .a3r-link{text-align:left;width:100%;min-height:40px}
+.a3r-transversal-after{padding:19px 20px;margin:22px 0;border:1px solid #d7cbbc;background:#faf7f0;border-radius:11px}
+.a3r-transversal-after .a3r-mini-links{gap:9px}
+@media(max-width:690px){.a3r-approaches-index{padding:15px 14px}.a3r-approaches-index .a3r-v15-form-grid{grid-template-columns:1fr}.a3r-pathway-groups{grid-template-columns:1fr}.a3r-transversal-after{padding:15px}}
