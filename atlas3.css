@@ -134,3 +134,19 @@
 .a3r-source-internal{display:inline;text-align:left;background:transparent;border:0;border-bottom:1px dashed #466c71;color:#28565d;font:inherit;padding:0 1px;cursor:pointer;overflow-wrap:anywhere}
 .a3r-source-unpublished{display:inline;color:#766d63;overflow-wrap:anywhere}
 .a3r-source-unpublished small{font:11px/1.45 system-ui,sans-serif;color:#807769}
+
+/* Atlas 3 V1.4 — sept pièces et statut des sources */
+.a3r-scene{background:#fffefa;border:1px solid #d6c8b6;border-radius:15px;padding:clamp(17px,4vw,29px);margin:22px 0}
+.a3r-scene h2{font:500 clamp(23px,4vw,30px)/1.3 Georgia,serif;margin:9px 0;color:#29454b}
+.a3r-scene-cast{font:12px/1.5 system-ui,sans-serif;color:#6e6961}
+.a3r-scene-part{border-top:1px solid #e6decf;padding:15px 0}
+.a3r-scene-part p{font:16px/1.85 Georgia,serif;margin:0;color:#2e4145}
+.a3r-original-scene,.a3r-scene-interpretation{border:1px solid #dcd1c1;border-radius:10px;padding:13px 17px;margin:15px 0;background:#faf7f1}
+.a3r-original-scene summary,.a3r-scene-interpretation summary{font:600 13px/1.5 system-ui,sans-serif;color:#37605a;cursor:pointer}
+.a3r-scene-interpretation p{font:14px/1.7 Georgia,serif;color:#3e5255}
+.a3r-evidence{border:1px solid #cbd8cd;padding:17px;border-radius:12px;background:#f6faf7;margin:16px 0}
+.a3r-evidence h3{font:650 14px/1.5 system-ui,sans-serif;margin:0 0 12px;color:#30574d}
+.a3r-evidence p{font:13px/1.7 Georgia,serif;margin:0 0 11px}
+.a3r-evidence small{font:11px/1.55 system-ui,sans-serif;color:#6e685c}
+.a3r-evidence a{color:#296058}
+@media(max-width:690px){.a3r-scene{padding:18px 15px}.a3r-scene-part p{font-size:15px}}
