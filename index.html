@@ -1866,16 +1866,20 @@ function searchGlobal(v){v=(v||'').toLowerCase();if(v.includes('théâtre et son
 
 let authorTierFilter='all';
 let authorSearchFilter='';
+let authorSortFilter='chrono';
+const AUTHOR_BIRTH_YEARS={"hume":1711,"kant":1724,"nietzsche":1844,"bergson":1859,"proust":1871,"kafka":1883,"bacon":1909,"hitchcock":1899,"eisenstein":1898,"welles":1915,"resnais":1922,"godard":1930,"vertov":1896,"foucault":1926,"baudrillard":1929,"leibniz":1646,"hegel":1770,"schopenhauer":1788,"heidegger":1889,"mallarme":1842,"masoch":1836,"sade":1740,"freud":1856,"stoiciens":-300,"carroll":1832,"lucrece":-99,"husserl":1859,"sartre":1905,"tournier":1924,"zola":1840,"platon":-427,"aristote":-384,"scot":1266,"descartes":1596,"tarde":1843,"maimon":1753,"lautman":1908,"marx":1818,"spinoza-author":1632,"clastres":1934,"hjelmslev":1899,"guattari":1930,"artaud":1896,"simondon":1924,"whitehead":1861,"peirce":1839,"klossowski":1905,"lacan":1901,"chomsky":1928,"saussure":1857,"benveniste":1902,"labov":1927,"riemann":1826,"boulez":1925,"uexkull":1864,"geoffroy":1772,"blanchot":1907,"melville":1819,"whitman":1819,"beckett":1906,"bachofen":1815,"bateson":1904,"bazin":1918,"bousquet":1897,"brisset":1837,"brod":1884,"cassavetes":1929,"cezanne":1839,"dhlawrence":1885,"dumezil":1898,"epicure":-341,"fanon":1925,"fitzgerald":1896,"goethe":1749,"heraclite":-535,"holderlin":1770,"joyce":1882,"kandinsky":1866,"kierkegaard":1813,"klein":1882,"laing":1927,"leroi":1911,"levi-strauss":1908,"lowry":1909,"maldiney":1912,"mauss":1872,"meinong":1853,"messiaen":1908,"michelangelo":1475,"newton":1642,"ozu":1903,"pasolini":1922,"peguy":1873,"pollock":1912,"presocratiques":-620,"reich":1897,"reik":1888,"riegl":1858,"rossellini":1906,"roussel":1877,"russell":1872,"stirner":1806,"tarkovski":1932,"telawrence":1888,"virilio":1932,"wolfson":1931,"worringer":1881};
+const authorSurname=name=>normalizeAtlasSearch(String(name||'').trim().split(/\s+/).at(-1));
+window.changeAuthorSort=function(value){authorSortFilter=value==='alpha'?'alpha':'chrono';const list=document.getElementById('authorList');if(list)list.innerHTML=authorCards(authorTierFilter,authorSearchFilter)};
 function authors(){
-  authorTierFilter='all'; authorSearchFilter='';
+  authorTierFilter='all'; authorSearchFilter='';authorSortFilter='chrono';
   return shell(`<div class="page-intro"><h2>Auteurs</h2><p>Chaque carte ouvre le dossier consacré au rôle que ce penseur joue dans la lecture de Deleuze. Tous les dossiers issus des audits sont visibles ici.</p></div>
   <div class="author-search"><div class="search">⌕<input id="authorSearchInput" placeholder="Rechercher un auteur…" oninput="filterAuthorSearch(this.value)"></div></div>
-  <div class="filter-row"><button class="chip active" onclick="filterAuthors('all',this)">Tous</button><button class="chip" onclick="filterAuthors('essential',this)">Essentiels</button><button class="chip" onclick="filterAuthors('major',this)">Majeurs</button><button class="chip" onclick="filterAuthors('secondary',this)">Secondaires</button></div>
+  <div class="filter-row"><button class="chip active" onclick="filterAuthors('all',this)">Tous</button><button class="chip" onclick="filterAuthors('essential',this)">Essentiels</button><button class="chip" onclick="filterAuthors('major',this)">Majeurs</button><button class="chip" onclick="filterAuthors('secondary',this)">Secondaires</button></div><div class="author-sort"><label for="authorSort">Classer</label><select id="authorSort" onchange="changeAuthorSort(this.value)"><option value="chrono">Chronologie</option><option value="alpha">Alphabétique (noms)</option></select></div>
   <div id="authorList" class="list-cards">${authorCards('all','')}</div>`,{title:'Auteurs',sub:'Entrer par les penseurs'})
 }
 function authorCards(tier='all',query=''){
   const q=normalizeAtlasSearch(query);
-  const rows=AUTHORS.filter(a=>(tier==='all'||a.tier===tier) && (!q||normalizeAtlasSearch(a.name+' '+a.desc).includes(q)));
+  const rows=AUTHORS.filter(a=>(tier==='all'||a.tier===tier) && (!q||normalizeAtlasSearch(a.name+' '+a.desc).includes(q))).sort((a,b)=>authorSortFilter==='alpha'?authorSurname(a.name).localeCompare(authorSurname(b.name),'fr')||a.name.localeCompare(b.name,'fr'):(AUTHOR_BIRTH_YEARS[a.id]-AUTHOR_BIRTH_YEARS[b.id])||authorSurname(a.name).localeCompare(authorSurname(b.name),'fr'));
   if(!rows.length)return `<div class="empty-filter">Aucun auteur ne correspond à cette recherche.</div>`;
   return rows.map(a=>`<button class="entity-card" onclick="go('${a.page}')"><div class="category">${tierLabel(a.tier)}</div><h3>${esc(a.name)}</h3><p>${esc(a.desc)}</p></button>`).join('')
 }
