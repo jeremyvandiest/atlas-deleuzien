@@ -25,9 +25,10 @@
     const edited=original.replace(/<h3\b([^>]*)>([\s\S]*?)<\/h3>/gi,(whole,attrs,inner)=>{
       const title=strip(inner);
       if(!title||headings.length>=35)return whole;
-      const id='a1ped-'+slug+'-'+serial++;
+      const existing=attrs.match(/\bid\s*=\s*["']([^"']+)["']/i);
+      const id=existing?existing[1]:'a1ped-'+slug+'-'+serial++;
       headings.push({title,id});
-      return '<h3'+attrs+' id="'+id+'">'+inner+'</h3>';
+      return existing?whole:'<h3'+attrs+' id="'+id+'">'+inner+'</h3>';
     });
     let firstParagraph='';
     const mainText=edited.slice(edited.indexOf(mainMarker)+mainMarker.length);
@@ -35,8 +36,8 @@
     firstParagraph=(candidates[0]||'').slice(0,650);
     const metaDescription=String(meta.desc||'').trim();
     const title=meta.name||meta.title||'';
-    const secondParagraph=(candidates.find(x=>x!==firstParagraph)||'').slice(0,800);
-    const thirdParagraph=(candidates.find(x=>x!==firstParagraph&&x!==secondParagraph)||'').slice(0,800);
+    const secondParagraph=(candidates[1]||'').slice(0,800);
+    const thirdParagraph=(candidates[2]||'').slice(0,800);
     const discovery=hasGuide?guide.scene:(metaDescription||firstParagraph);
     const question=hasGuide?guide.lead:(meta.type==='work'?'Quel problème ce livre construit-il, et comment Deleuze en fait-il avancer la réponse ?':meta.type==='route'?'Comment ce même problème change-t-il lorsqu’il passe d’une pensée à une autre ?':meta.type==='interlude'?'En quoi ce milieu intellectuel éclaire-t-il les transformations opérées par Deleuze ?':'Quel problème ce penseur permet-il à Deleuze de reformuler ?');
     const mechanism=hasGuide?guide.mechanism:(firstParagraph||metaDescription||'Commencer par le premier mouvement du dossier : déterminer le problème philosophique avant d’étudier les notions.');
