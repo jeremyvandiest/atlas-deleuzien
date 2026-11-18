@@ -82,7 +82,7 @@ function atlas2Home(){
  return page(`${hero('ATLAS 2','Atlas des récits et des formes','Découvrir une œuvre, comprendre en profondeur ce qu’elle raconte et apprendre à voir ce qui rend sa construction singulière. Les formes, les gestes, les durées et les relations font partie de son récit.')}
   ${a2Nav()}
   <section class="a2-home-corpus" id="a2-work-catalogue"><div class="a2-home-corpus-head"><div><h3>Explorer les ${n} œuvres</h3><p>Choisissez un titre pour entrer dans son dossier complet. Classez les œuvres par titre, auteur, médium ou question étudiée.</p></div></div>
-  ${a2CatalogueFilters()}
+  ${atlas2CatalogueFilters()}
   <div id="a2-home-work-list">${a2HomeWorkList()}</div>
   </section>
   <section class="a2-home-after"><h3>Prolonger la lecture</h3><p>Ces deux chemins servent à passer de la lecture d’une œuvre à l’examen d’un procédé ou d’un écart entre œuvres.</p>
