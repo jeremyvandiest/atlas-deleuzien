@@ -47,17 +47,12 @@
     const limits=hasGuide?guide.limit:'Ce guide est une orientation éditoriale à partir du dossier existant, pas une lecture critique supplémentaire de ses sources. Distinguer la philosophie de l’auteur de ce que Deleuze en retient.';
     const links=hasGuide?buttons(guide.links):'';
     const toc=headings.slice(0,12).map(h=>'<li><button type="button" onclick="document.getElementById(\''+h.id+'\')?.scrollIntoView({behavior:\'smooth\',block:\'start\'})">'+safe(h.title)+'</button></li>').join('');
-    const supplement='<section class="a1ped" aria-label="Parcours de lecture pédagogique">'+
-      '<div class="a1ped-kicker">ATLAS 1 · ENTRER DANS LA LECTURE</div>'+
-      '<h2>'+safe(title)+' : découvrir, comprendre, approfondir</h2>'+
-      '<p class="a1ped-intro">L’enjeu n’est pas une histoire neutre de la philosophie, mais ce que Deleuze découvre, déplace ou transforme dans cette pensée. Les analyses originales suivent intégralement.</p>'+
-      intro((extracted?'1 · Entrer dans le problème : ':'1 · Découvrir : ')+safe(question),discovery)+
-      '<details class="a1ped-depth" open><summary>2 · Comprendre ce qui se transforme</summary><p>'+safe(mechanism)+'</p></details>'+
-      '<details class="a1ped-depth"><summary>3 · Approfondir sans perdre les nuances</summary><p>'+safe(deep)+'</p><p class="a1ped-limit"><strong>À distinguer :</strong> '+safe(limits)+'</p>'+
-      (links?'<div class="a1ped-links">'+links+'</div>':'')+'</details>'+
-      (toc?'<details class="a1ped-depth"><summary>Sommaire de la carte détaillée</summary><ol class="a1ped-toc">'+toc+'</ol></details>':'')+
-      '<p class="a1ped-disclaimer">'+(written?'Introduction individualisée et rédigée pour cette entrée.':extracted?'Lecture issue du dossier original : extraits restructurés, non collationnés individuellement contre les éditions primaires.':'Orientation guidée depuis le contenu existant ; approfondissement encore nécessaire.')+'</p>'+
-      '</section>';
+    // Le corps original de la carte apporte l'explication : une seule amorce pour orienter le lecteur.
+    // Les développements du guide demeurent dans les données éditoriales, sans les dupliquer à l'écran.
+    const supplement=(meta.type==='route'?'':'<section class="a1ped a1ped-compact" aria-label="Question pour découvrir">'+
+      '<h2>Découvrir · '+safe(question)+'</h2>'+
+      '<p>'+safe(discovery)+'</p>'+
+      '</section>');
     return edited.replace(mainMarker,mainMarker+supplement);
   };
   let wrapped=0,manuallyWritten=0,contextualized=0;
@@ -70,18 +65,6 @@
     wrapped++;
     if(guides[route]&&!guides[route].provenance)manuallyWritten++;
     if(guides[route]?.provenance)contextualized++;
-  }
-  const homeOriginal=PAGE_HANDLERS.atlas1;
-  if(typeof homeOriginal==='function'&&!homeOriginal.__a1ped){
-    PAGE_HANDLERS.atlas1=function(){
-      const html=homeOriginal();
-      const marker='<main class="main">';
-      const guide='<section class="a1ped-home"><div class="a1ped-kicker">ATLAS 1 · PREMIERS REPÈRES</div><h2>Commencer sans connaître Deleuze</h2>'+
-        '<p>Trois lectures pour rencontrer le problème d’un sujet qui se forme, celui des conditions de la pensée, puis celui de la différence. Les cartes complètes et les routes restent indépendantes.</p>'+
-        '<div class="a1ped-links">'+buttons(['author-hume','author-kant','route-difference'])+'</div></section>';
-      return html.includes(marker)?html.replace(marker,marker+guide):html;
-    };
-    PAGE_HANDLERS.atlas1.__a1ped=true;
   }
   window.ATLAS1_PEDAGOGY_STATUS={version:'V4',wrapped,manuallyWritten,contextualized,withoutGuide:wrapped-manuallyWritten-contextualized};
   if(typeof current==='function'&&typeof render==='function'){
