@@ -277,7 +277,17 @@ function a2V43Close(){
  if(a2V43ReturnFocus?.isConnected)a2V43ReturnFocus.focus();
 }
 function a2V43Visit(path){a2V43Close();go(path);}
-window.a2V43Retry=a2V43Retry;window.a2V43OpenConcept=a2V43OpenConcept;window.a2V43OpenGlobal=a2V43OpenGlobal;window.a2V43Close=a2V43Close;window.a2V43Visit=a2V43Visit;window.addEventListener('keydown',function(e){const o=document.getElementById('a2-v43-overlay');if(e.key==='Escape'&&o&&!o.hidden)a2V43Close();});
+window.a2V43Retry=a2V43Retry;window.a2V43OpenConcept=a2V43OpenConcept;window.a2V43OpenGlobal=a2V43OpenGlobal;window.a2V43Close=a2V43Close;window.a2V43Visit=a2V43Visit;window.addEventListener('keydown',function(e){
+ const o=document.getElementById('a2-v43-overlay');if(!o||o.hidden)return;
+ if(e.key==='Escape'){a2V43Close();return;}
+ if(e.key!=='Tab')return;
+ const controls=[...o.querySelectorAll('button:not([disabled]),a[href]')].filter(el=>el.getClientRects().length>0);
+ if(!controls.length)return;
+ const first=controls[0],last=controls[controls.length-1];
+ if(!o.contains(document.activeElement)){e.preventDefault();(e.shiftKey?last:first).focus();}
+ else if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+ else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+});
 
 function atlas2Work(){
  const id=arg(),w=work(id),c=WC[id];
