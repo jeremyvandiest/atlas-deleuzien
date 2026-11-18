@@ -34,4 +34,21 @@ NAV.splice(0,NAV.length,...groupedNav);
 const navButton=(path,title,desc,mark,cls='')=>`<button class="drawer-link ${cls}" onclick="closeDrawer();go('${path}')"><b>${mark}&nbsp; ${title}</b><span>${desc}</span></button>`;
 renderDrawer=function(){const drawer=document.getElementById('drawerNav');if(!drawer)return;drawer.innerHTML=`<div class="drawer-section-label">Explorer</div>${groupedNav.map(([path,title,desc,mark])=>navButton(path,title,desc,mark)).join('')}<div class="drawer-divider"></div><div class="drawer-section-label">Atelier de création</div>${navButton('atelier','Atelier','Projets, sessions, tests et décisions.','◆')}${navButton('oeuvre','ŒUVRE','Les décisions retenues et leurs conséquences.','✦','drawer-subitem')}`};
 renderDrawer();render();
+// Pédagogie Atlas 1 : chargement progressif, sans modifier le corpus intégré à index.html.
+(function(){
+  const sheet=document.createElement('link');
+  sheet.rel='stylesheet';
+  sheet.href='./atlas1-pedagogie.css';
+  document.head.appendChild(sheet);
+  const data=document.createElement('script');
+  data.src='./atlas1-pedagogie-data.js';
+  data.onload=()=>{
+    const renderer=document.createElement('script');
+    renderer.src='./atlas1-pedagogie.js';
+    renderer.onerror=()=>console.warn('Atlas 1 : couche pédagogique indisponible, corpus de base conservé.');
+    document.head.appendChild(renderer);
+  };
+  data.onerror=()=>console.warn('Atlas 1 : guides indisponibles, corpus de base conservé.');
+  document.head.appendChild(data);
+})();
 })();
