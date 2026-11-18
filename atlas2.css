@@ -218,3 +218,11 @@
 .a2-home-deep-link span{font:13px/1.65 system-ui,sans-serif;color:#526164}
 .a2-home-deep-link:hover,.a2-home-deep-link:focus-visible{border-color:#a28a60;outline:2px solid #346875;outline-offset:2px}
 @media(max-width:660px){.a2-nav-pair{grid-template-columns:1fr;gap:9px}.a2-nav-pair .a2-nav-simple{max-height:60vh}.a2-home-deep-link{flex-basis:100%}}
+
+/* V10.39 — exemples de dossiers accessibles depuis les mécanismes. */
+.a2-tag-link{cursor:pointer;color:#24474f!important;background:#f6f0e4!important;border-color:#c7b595!important}
+.a2-tag-link:hover,.a2-tag-link:focus-visible{outline:2px solid #346875;outline-offset:2px;border-color:#997d50!important}
+.a2-advanced-fields{border-top:1px solid #ddd2c2;border-bottom:1px solid #ddd2c2;padding:11px 0;margin:16px 0 23px}
+.a2-advanced-fields>summary{cursor:pointer;font:600 13px/1.5 system-ui,sans-serif;color:#33565c;padding:5px 0}
+.a2-advanced-row{padding:11px 0}
+.a2-advanced-row h3{font:600 13px/1.4 system-ui,sans-serif;color:#496168;margin:0 0 8px}
