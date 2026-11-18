@@ -195,3 +195,8 @@
 .a2-v43-dialog p{font:16px/1.8 Georgia,serif;white-space:pre-wrap}
 .a2-v43-close{position:absolute;right:15px;top:13px;background:none;border:0;cursor:pointer;font-size:18px}
 @media(max-width:620px){.a2-v43-intro{padding:17px}.a2-v43-prose{font-size:15px;line-height:1.78;padding:18px 16px}.a2-v43-prose h2{font-size:18px}.a2-v43-prose h3{font-size:16px}.a2-v43-term{display:block;margin:9px 0}.a2-v43-dialog{padding:22px 18px}}
+
+/* Harmonisation utilitaire V10.37 — mêmes repères de navigation, sans toucher aux dossiers. */
+.a2-page .a2-link{border-radius:8px;background:#f9f6f0;border-color:#d8c9ae;color:#2c555e;font-size:13px;min-height:40px}
+.a2-page button:focus-visible,.a2-page a:focus-visible,.a2-page select:focus-visible{outline:2px solid #346875;outline-offset:2px}
+@media(max-width:690px){.a2-page .a2-link{min-height:44px}}
