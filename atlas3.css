@@ -217,3 +217,12 @@
 .a3r-v15-form-card small{font:11px/1.5 system-ui,sans-serif;color:#6d7773;margin-top:5px}
 .a3r-v15-depth summary:focus-visible,.a3r-v15-term summary:focus-visible{outline:2px solid #316874;outline-offset:3px}
 @media(max-width:690px){.a3r-v15-depth{padding:11px 12px}.a3r-v15-term-list{grid-template-columns:1fr}}
+
+
+/* Atlas 3 V1.6.2 — notions et chemins cliquables dans le texte */
+.a3r-inline-notion{display:inline;background:transparent;border:0;border-bottom:1px dashed currentColor;color:#2b626c;font:inherit;line-height:inherit;cursor:pointer;padding:0 1px;text-align:left;vertical-align:baseline}
+.a3r-inline-notion:hover{color:#1e464f;border-bottom-style:solid}
+.a3r-inline-notion:focus-visible{outline:2px solid #376e79;outline-offset:2px;border-radius:2px}
+.a3r-notion-related{margin-top:15px;border-top:1px solid #e4d8ca;padding-top:13px;display:flex;gap:8px;flex-wrap:wrap}
+.a3r-notion-related strong{font:650 12px/1.6 system-ui,sans-serif;flex-basis:100%;color:#385b61}
+.a3r-notion-related .a3r-link{font-size:12px}
