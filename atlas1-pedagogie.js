@@ -83,7 +83,7 @@
     };
     PAGE_HANDLERS.atlas1.__a1ped=true;
   }
-  window.ATLAS1_PEDAGOGY_STATUS={version:'V3',wrapped,manuallyWritten,contextualized,withoutGuide:wrapped-manuallyWritten-contextualized};
+  window.ATLAS1_PEDAGOGY_STATUS={version:'V4',wrapped,manuallyWritten,contextualized,withoutGuide:wrapped-manuallyWritten-contextualized};
   if(typeof current==='function'&&typeof render==='function'){
     const p=String(current()).split('/')[0];
     if(p==='atlas1'||pageSet.has(p))render();
