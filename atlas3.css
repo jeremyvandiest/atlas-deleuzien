@@ -129,3 +129,8 @@
 .a3r-critical .a3r-critical-limit{border-top:1px solid #e4dbcc;padding-top:12px;margin-top:16px}
 .a3r-critical-limit strong{font:700 12px system-ui,sans-serif}
 @media(max-width:690px){.a3r-critical{padding:19px 16px}.a3r-critical h2{font-size:22px}.a3r-critical p{font-size:15px}}
+
+/* Atlas 3 V1.3.1 — références internes véridiques, sans URL fictive */
+.a3r-source-internal{display:inline;text-align:left;background:transparent;border:0;border-bottom:1px dashed #466c71;color:#28565d;font:inherit;padding:0 1px;cursor:pointer;overflow-wrap:anywhere}
+.a3r-source-unpublished{display:inline;color:#766d63;overflow-wrap:anywhere}
+.a3r-source-unpublished small{font:11px/1.45 system-ui,sans-serif;color:#807769}

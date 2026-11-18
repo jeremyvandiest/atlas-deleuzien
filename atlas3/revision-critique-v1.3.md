@@ -31,3 +31,9 @@ La bibliographie de chaque chapitre demeure consultable dans l'application, avec
 ## Limite de validation
 
 Un audit documentaire complet, chapitre par chapitre et source par source, reste nécessaire avant la validation académique du corpus. Les contre-épreuves constituent une consolidation éditoriale, pas une certification documentaire.
+
+## Correction des renvois bibliographiques (V1.3.1)
+
+L'audit des quinze bibliographies a identifié 23 hyperliens factices de forme `http://Atlas3_...md` : ce sont des noms de fichiers de travail, pas des adresses publiques. Le lecteur convertit désormais les mentions de chapitres et du Salon en navigation interne réelle. Les autres sont signalées comme archives de travail non accessibles depuis l'app, sans masquer leur intitulé ni inventer une source en ligne.
+
+Quatre vérifications ponctuelles supplémentaires : la fiche « Psychology of Habit » de Wood et Rünger est présente sur Annual Reviews ; la description originale du modèle IFS est accessible sur le site de l'institut ; la notice de Martin Buber se trouve à la Stanford Encyclopedia of Philosophy ; le site historique de Mary Overlie décrit le système SSTEMS. Elles ne remplacent pas la lecture exhaustive des ouvrages.
