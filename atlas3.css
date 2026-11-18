@@ -83,3 +83,40 @@
  .a3r-practice-door-copy strong{font-size:20px}
  .a3r-part h3{font-size:23px}
 }
+
+/* Atlas 3 V1.2 — parcours du vécu, notions situées et boussoles de lecture */
+.a3r-atlas-aim{border:1px solid #d8c9b7;border-radius:12px;background:#fffdf8;padding:13px 18px;margin:16px 4px 24px}
+.a3r-atlas-aim summary{font:700 13px/1.5 system-ui,sans-serif;color:#355b5e;cursor:pointer}
+.a3r-atlas-aim p{font:15px/1.72 Georgia,serif;color:#34484a;margin:14px 0 0}
+.a3r-atlas-aim .a3r-aim-limit{color:#715c4c}
+.a3r-courses{margin:24px 0 34px;border-top:1px solid #d6c8b0;padding:22px 4px 0}
+.a3r-courses h2{font:500 clamp(28px,4vw,36px)/1.2 Georgia,serif;color:#2a4045;margin:7px 0 13px}
+.a3r-course-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.a3r-course-card{display:flex;flex-direction:column;gap:10px;text-align:left;background:#fffdf8;border:1px solid #dbcbb8;border-radius:13px;padding:18px 19px;cursor:pointer;color:#294347}
+.a3r-course-card:hover,.a3r-course-card:focus-visible{border-color:#8b754e;background:#f9f2e8;outline-offset:2px}
+.a3r-course-card strong{font:500 21px/1.25 Georgia,serif}.a3r-course-card>span:not(.a3r-eyebrow){font:14px/1.6 Georgia,serif}.a3r-course-card small{font:11px/1.5 system-ui,sans-serif;color:#716652}
+.a3r-compass{background:#fffdf9;border:1px solid #dacbb5;border-radius:15px;padding:20px 24px;margin:16px 0 24px}
+.a3r-compass-scene{font:15px/1.7 Georgia,serif;margin:10px 0 13px!important;color:#4c5c5e}
+.a3r-compass h2{font:500 23px/1.4 Georgia,serif;color:#263e43;margin:0 0 11px}
+.a3r-compass>p{font:14px/1.65 Georgia,serif;color:#455659}
+.a3r-term-collection{margin-top:16px;border-top:1px solid #dfd5c4;padding-top:12px}
+.a3r-term-collection summary{font:650 13px/1.4 system-ui,sans-serif;color:#32615b;cursor:pointer}
+.a3r-term-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.a3r-term-chip{font:600 12px/1.45 system-ui,sans-serif;color:#24554d;background:#ebf1ed;border:1px solid #c1d0c5;padding:9px 11px;border-radius:9px;cursor:pointer}
+.a3r-term-chip:hover{background:#dae8df}
+.a3r-course-rel{padding:16px 18px;margin:18px 0;background:#f8f3eb;border-radius:12px}
+.a3r-course-rel p{font:14px/1.6 Georgia,serif;color:#516263;margin:8px 0}
+.a3r-course-intro p{font:16px/1.8 Georgia,serif;margin:10px 0;color:#344b50}
+.a3r-course-steps{margin:23px 0 36px;padding:0;list-style:none}
+.a3r-course-step{display:grid;grid-template-columns:46px 1fr;gap:15px;border-bottom:1px solid #d7caba;padding:21px 0}
+.a3r-course-step-index{display:grid;place-items:center;width:40px;height:40px;border:1px solid #c2ae92;border-radius:100%;font:700 12px system-ui,sans-serif;color:#8d693c}
+.a3r-course-step h3{font:500 23px/1.3 Georgia,serif;margin:0 0 9px;color:#2b4247}
+.a3r-course-step p{font:15px/1.6 Georgia,serif;margin:0 0 12px}
+.a3r-modal[hidden]{display:none!important}
+.a3r-modal{z-index:30000;position:fixed;inset:0;background:rgba(18,29,29,.7);display:flex;justify-content:center;align-items:center;padding:18px}
+.a3r-notion-dialog{background:#fffdf8;border:1px solid #c7d2cb;border-radius:17px;width:min(630px,100%);max-height:88dvh;overflow-y:auto;position:relative;padding:27px 25px;box-shadow:0 20px 65px rgba(0,0,0,.18)}
+.a3r-notion-dialog h2{font:500 27px/1.3 Georgia,serif;margin:10px 32px 14px 0;color:#28464b}
+.a3r-notion-dialog p{font:16px/1.75 Georgia,serif;margin:0 0 18px;color:#324e50}
+.a3r-notion-close{position:absolute;top:12px;right:15px;border:0;background:transparent;font-size:18px;cursor:pointer}
+.a3r-section{scroll-margin-top:18px}
+@media(max-width:690px){.a3r-course-grid{grid-template-columns:1fr}.a3r-compass{padding:17px 16px}.a3r-compass h2{font-size:21px}.a3r-notion-dialog{padding:23px 18px}.a3r-course-step{gap:10px;grid-template-columns:38px 1fr}.a3r-course-step h3{font-size:20px}}

@@ -9,10 +9,12 @@
     return;
   }
   const chapterMap = Object.fromEntries(data.chapters.map(c => [c.id, c]));
+  const guide = window.ATLAS3_GUIDE_V12 || {chapters:{},routes:[],thesis:'',limitations:'',difference:''};
   const doorMap = Object.fromEntries(data.salon.doors.map(d => [d.id, d]));
   const e = value => String(value == null ? '' : value).replace(/[&<>"']/g, ch => ({'&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'}[ch]));
   const chapterPath = id => 'atlas3/' + id;
   const doorPath = id => 'atlas3/salon/' + id;
+  const parcoursPath = id => 'atlas3/parcours/' + id;
   const section = (title, body, cls='') => `<section class="a3r-block ${cls}"><h2>${e(title)}</h2>${body}</section>`;
   const btn = (path, label, cls='') => `<button type="button" class="a3r-link ${cls}" onclick="go('${path}')">${e(label)}</button>`;
   const crumb = (extra='') => `<nav class="a3r-crumb" aria-label="Navigation Atlas 3">${btn('atlas3','Atlas 3 — Sommaire')}${btn('atlas3/salon','Salon des possibles')}${extra ? `<span>${e(extra)}</span>` : ''}</nav>`;
@@ -31,24 +33,38 @@
       }).join('');
       return `<section class="a3r-part"><div class="a3r-eyebrow">Partie ${e(part.id)}</div><h3>${e(part.title)}</h3><p>${e(part.introduction)}</p><ul>${links}</ul></section>`;
     }).join('');
-    const body=`<div class="a3r-wrap">${crumb()}<header class="a3r-hero"><div class="a3r-eyebrow">ATLAS 3 · LE THÉÂTRE DU SENTIR</div><h1>Le Théâtre du sentir</h1><p>Commencer par une situation à éprouver, puis, si l’on souhaite, suivre les questions que cette expérience ouvre dans les quinze chapitres.</p></header>${note}
+    const courseCards=guide.routes.map((r,i)=>`<button type="button" class="a3r-course-card" onclick="go('${parcoursPath(r.id)}')"><span class="a3r-eyebrow">PARCOURS ${String(i+1).padStart(2,'0')} · FACULTATIF</span><strong>${e(r.title)}</strong><span>${e(r.question)}</span><small>${r.stops.length} étapes · situations et chapitres</small></button>`).join('');
+    const body=`<div class="a3r-wrap">${crumb()}<header class="a3r-hero"><div class="a3r-eyebrow">ATLAS 3 · LE THÉÂTRE DU SENTIR</div><h1>Le Théâtre du sentir</h1><p>Explorer ce que nos sensations, habitudes, souvenirs, gestes et rencontres font à notre manière d'habiter une situation. Les scènes précèdent les explications ; aucune transformation n'est obligatoire.</p></header>${note}<details class="a3r-atlas-aim"><summary>Quel est l'objet propre de cet Atlas ?</summary><p>${e(guide.thesis)}</p><p>${e(guide.difference)}</p><p class="a3r-aim-limit">${e(guide.limitations)}</p></details>
       <section class="a3r-practice-first" aria-labelledby="a3r-practice-heading"><div class="a3r-eyebrow">01 · COMMENCER PAR L’EXPÉRIENCE</div><h2 id="a3r-practice-heading">Le Salon des possibles</h2><p class="a3r-entry-intro">Sept portes : des gestes, des voix et des scènes à explorer seul ou à plusieurs. Aucun parcours obligatoire, aucune technique à réussir.</p><ol class="a3r-practice-list">${doors}</ol>${btn('atlas3/salon','Découvrir le Salon des possibles')}</section>
-      <section class="a3r-theory-after" aria-labelledby="a3r-theory-heading"><div class="a3r-eyebrow">02 · POUR APPROFONDIR</div><h2 id="a3r-theory-heading">Les quinze chapitres</h2><p class="a3r-entry-intro">Une lecture peut prolonger une expérience, la contredire ou simplement ouvrir un autre problème. Les chapitres restent accessibles indépendamment du Salon.</p><div class="a3r-part-grid">${parts}</div></section>
-      <section class="a3r-transversal-after"><div class="a3r-eyebrow">03 · CHEMINS TRANSVERSAUX</div><h2>Circuler entre les Atlas</h2><p class="a3r-entry-intro">Deux détours facultatifs permettent de revenir à une question autrement. Ils ne remplacent ni les œuvres ni les chapitres.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div></section>
+      <section class="a3r-courses" aria-labelledby="a3r-courses-heading"><div class="a3r-eyebrow">02 · SUIVRE UNE QUESTION</div><h2 id="a3r-courses-heading">Quatre parcours d'expérience</h2><p class="a3r-entry-intro">Chaque parcours part d'une situation ou d'une scène, puis change la question. Ils ne sont pas des programmes à réussir et aucun n'est nécessaire pour lire un chapitre.</p><div class="a3r-course-grid">${courseCards}</div></section>
+      <section class="a3r-theory-after" aria-labelledby="a3r-theory-heading"><div class="a3r-eyebrow">03 · POUR APPROFONDIR</div><h2 id="a3r-theory-heading">Les quinze chapitres</h2><p class="a3r-entry-intro">Une lecture peut prolonger une expérience, la contredire ou simplement ouvrir un autre problème. Les chapitres restent accessibles indépendamment du Salon.</p><div class="a3r-part-grid">${parts}</div></section>
+      <section class="a3r-transversal-after"><div class="a3r-eyebrow">04 · CHEMINS TRANSVERSAUX</div><h2>Circuler entre les Atlas</h2><p class="a3r-entry-intro">Deux détours facultatifs permettent de revenir à une question autrement. Ils ne remplacent ni les œuvres ni les chapitres.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div></section>
     </div>`;
     return shell(body,{title:'Atlas 3 · Théâtre du sentir',sub:'Le Salon · Les chapitres · Les chemins'});
   }
   function chapter(id){
     const c=chapterMap[id];if(!c)return missing();
     const part=data.parts.find(p=>p.id===c.part_id);
+    const g=guide.chapters[id];
     const pos=data.chapters.findIndex(x=>x.id===id);
     const prev=data.chapters[pos-1], next=data.chapters[pos+1];
     const sections=c.sections.map((s,i)=>`<details class="a3r-section" id="${e(s.id)}"${i===0?' open':''}><summary><span class="a3r-section-count">${String(i+1).padStart(2,'0')}</span><span>${e(s.title)}</span></summary><div class="a3r-prose">${s.html}</div></details>`).join('');
+    const terms=g?.terms?.map((t,i)=>`<button type="button" class="a3r-term-chip" onclick="Atlas3Reader.openNotion('${e(c.id)}',${i})">${e(t.title)}</button>`).join('')||'';
+    const readingCompass=g?`<aside class="a3r-compass" aria-label="Boussole du chapitre"><div class="a3r-eyebrow">REPÈRES DE LECTURE · SITUATION VÉCUE</div><p class="a3r-compass-scene">${e(g.scene)}</p><h2>${e(g.question)}</h2><p><strong>Attention :</strong> ${e(g.limit)}</p><details class="a3r-term-collection"><summary>Deux notions à approfondir dans ce chapitre</summary><div class="a3r-term-list">${terms}</div></details></aside>`:'';
+    const courses=guide.routes.filter(r=>r.stops.some(s=>s.path===chapterPath(id))).map(r=>btn(parcoursPath(r.id),r.title)).join('');
+    const relatedCourses=courses?`<aside class="a3r-course-rel"><div class="a3r-eyebrow">CHEMINS DE LECTURE · FACULTATIFS</div><p>Cette question traverse également un parcours de situations. Vous pouvez y entrer ou poursuivre ce chapitre seul.</p><div class="a3r-mini-links">${courses}</div></aside>`:'';
     const doors=(c.salon_portes||[]).map(d=>doorMap[d]?btn(doorPath(d),doorMap[d].title):'').join('');
     const bridge=data.passerelles.filter(p=>p.chapter_id===c.id).map(p=>`<aside class="a3r-bridge-card"><div class="a3r-eyebrow">CHEMIN TRANSVERSAL · FACULTATIF</div><h2>${e(p.title)}</h2><p>Un détour vers un autre Atlas pour transformer une question de ce chapitre sans en remplacer la lecture.</p>${btn('atlas3/passerelle/'+p.id,'Emprunter la passerelle','a3r-action')}</aside>`).join('');
     const footerLinks=[prev?btn(chapterPath(prev.id),'Chapitre '+String(prev.number).padStart(2,'0')+' · '+prev.title):'',next?btn(chapterPath(next.id),'Chapitre '+String(next.number).padStart(2,'0')+' · '+next.title):''].filter(Boolean).join('');
-    const body=`<div class="a3r-wrap">${crumb('Chapitre '+String(c.number).padStart(2,'0'))}<header class="a3r-hero"><div class="a3r-eyebrow">PARTIE ${e(c.part_id)} · ${e(part?.title || '')} · CHAPITRE ${String(c.number).padStart(2,'0')}</div><h1>${e(c.title)}</h1><div class="a3r-prose a3r-intro">${c.introduction_html}</div></header>${note}${bridge}<div class="a3r-reader-controls"><span>${c.sections.length} sections · lecture libre</span><button type="button" onclick="window.Atlas3Reader.toggleSections(true)">Tout ouvrir</button><button type="button" onclick="window.Atlas3Reader.toggleSections(false)">Tout refermer</button></div><div class="a3r-sections">${sections}</div>${c.pour_poursuivre_html?section('Poursuivre la lecture',`<div class="a3r-prose">${c.pour_poursuivre_html}</div>`):''}${doors?section('Explorer les scènes associées',`<div class="a3r-mini-links">${doors}</div>`):''}<details class="a3r-sources"><summary>Sources, lectures et limites</summary><div class="a3r-prose">${c.sources_html}</div></details><div class="a3r-prevnext">${footerLinks}</div>${btn('atlas3','Revenir aux quinze chapitres')}</div>`;
+    const body=`<div class="a3r-wrap">${crumb('Chapitre '+String(c.number).padStart(2,'0'))}<header class="a3r-hero"><div class="a3r-eyebrow">PARTIE ${e(c.part_id)} · ${e(part?.title || '')} · CHAPITRE ${String(c.number).padStart(2,'0')}</div><h1>${e(c.title)}</h1><div class="a3r-prose a3r-intro">${c.introduction_html}</div></header>${note}${readingCompass}${bridge}<div class="a3r-reader-controls"><span>${c.sections.length} sections · lecture libre</span><button type="button" onclick="window.Atlas3Reader.toggleSections(true)">Tout ouvrir</button><button type="button" onclick="window.Atlas3Reader.toggleSections(false)">Tout refermer</button></div><div class="a3r-sections">${sections}</div>${c.pour_poursuivre_html?section('Poursuivre la lecture',`<div class="a3r-prose">${c.pour_poursuivre_html}</div>`):''}${doors?section('Explorer les scènes associées',`<div class="a3r-mini-links">${doors}</div>`):''}${relatedCourses}<details class="a3r-sources"><summary>Sources, lectures et limites</summary><div class="a3r-prose">${c.sources_html}</div></details><div class="a3r-prevnext">${footerLinks}</div>${btn('atlas3','Revenir aux quinze chapitres')}<div id="a3r-notion-modal" class="a3r-modal" hidden onclick="if(event.target===this)Atlas3Reader.closeNotion()"></div></div>`;
     return shell(body,{title:'Atlas 3 · '+c.title,sub:'Partie '+c.part_id});
+  }
+  function parcours(id){
+    const r=guide.routes.find(x=>x.id===id);
+    if(!r)return missing();
+    const steps=r.stops.map((s,i)=>`<li class="a3r-course-step"><div class="a3r-course-step-index">${String(i+1).padStart(2,'0')}</div><div><h3>${e(s.label)}</h3><p>${e(s.note)}</p>${btn(s.path,'Entrer dans cette étape','a3r-action')}</div></li>`).join('');
+    const body=`<div class="a3r-wrap">${crumb('Parcours facultatif')}<header class="a3r-hero"><div class="a3r-eyebrow">PARCOURS D'EXPÉRIENCE · ${r.stops.length} ÉTAPES</div><h1>${e(r.title)}</h1><p>${e(r.question)}</p></header><div class="a3r-course-intro"><p>${e(r.introduction)}</p><p>Aucune étape n'est obligatoire. Il ne s'agit ni d'un test ni d'un programme de transformation.</p></div><ol class="a3r-course-steps">${steps}</ol>${btn('atlas3','Revenir au Théâtre du sentir')}</div>`;
+    return shell(body,{title:'Atlas 3 · '+r.title,sub:'Parcours libre'});
   }
   function salon(){
     const cards=data.salon.doors.map(d=>`<article class="a3r-door"><div class="a3r-eyebrow">PORTE ${String(d.number).padStart(2,'0')}</div><h2>${e(d.title)}</h2>${btn(doorPath(d.id),'Entrer dans cette scène','a3r-action')}</article>`).join('');
@@ -77,13 +93,36 @@
     const path=typeof current==='function'?current(): 'atlas3';
     const tail=String(path).replace(/^atlas3\/?/,'');
     if(!tail)return index();
+    if(tail.startsWith('parcours/'))return parcours(tail.slice(9));
     if(tail==='salon')return salon();
     if(tail.startsWith('salon/'))return door(tail.slice(6));
     if(tail.startsWith('passerelle/'))return passerelle(tail.slice(11));
     if(tail.startsWith('chapitre-'))return chapter(tail);
     return missing();
   }
+  let termSource=null,termFocus=null;
+  function closeNotion(){
+    const modal=document.getElementById('a3r-notion-modal');if(!modal)return;
+    modal.hidden=true;modal.innerHTML='';
+    if(termFocus?.isConnected)termFocus.focus();
+  }
+  function openNotion(chapterId,index){
+    const g=guide.chapters[chapterId],t=g?.terms?.[index];
+    const modal=document.getElementById('a3r-notion-modal');
+    if(!modal||!t)return;
+    termSource=t.section_id;
+    termFocus=document.activeElement;
+    modal.innerHTML=`<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title"><button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button><div class="a3r-eyebrow">NOTION SITUÉE · ${e(g.title)}</div><h2 id="a3r-notion-title">${e(t.title)}</h2><p>${e(t.text)}</p><button class="a3r-link" type="button" onclick="Atlas3Reader.goToNotionSource()">Lire le passage dans le chapitre</button></div>`;
+    modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();
+  }
+  function goToNotionSource(){
+    const id=termSource;closeNotion();
+    const d=document.getElementById(id);
+    if(d){d.open=true;d.scrollIntoView({behavior:'smooth',block:'start'});d.querySelector('summary')?.focus();}
+  }
+  window.addEventListener('keydown',event=>{if(event.key==='Escape'&&document.getElementById('a3r-notion-modal')?.hidden===false)closeNotion();});
   window.Atlas3Reader={
+    closeNotion,openNotion,goToNotionSource,
     toggleSections(open){
       if(!document || !document.querySelectorAll)return;
       document.querySelectorAll('.a3r-sections .a3r-section').forEach(x => {x.open=!!open;});
