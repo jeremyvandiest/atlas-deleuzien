@@ -61,7 +61,7 @@
       '<details class="a3r-v15-partition"'+(i===0?' open':'')+'><summary><span class="a3r-section-count">'+String(i+1).padStart(2,'0')+'</span>'+e(p.title)+'</summary>'+
       '<p>'+e(p.instruction)+'</p><p class="a3r-v15-watch"><strong>À regarder :</strong> '+e(p.regarder)+'</p></details>'
     ).join('');
-    return '<section class="a3r-v15-field a3r-v15-salon" aria-label="Partitions facultatives"><div class="a3r-eyebrow">ÉDITION V1.5 · TROIS PARTITIONS</div>'+
+    return '<section class="a3r-v15-field a3r-v15-salon" aria-label="Partitions facultatives"><div class="a3r-eyebrow">ÉDITION '+e(ed.version)+' · TROIS PARTITIONS</div>'+
       '<h2>Agir, réagir, composer</h2><p class="a3r-v15-lead">'+e(x.question)+'</p>'+acts+
       '<p class="a3r-v15-guard"><strong>Limite :</strong> '+e(x.guard)+'</p><p class="a3r-v15-lead">Chaque partition est une création d’Atlas 3, non la reproduction d’un exercice canonique. On peut simplement lire la pièce.</p></section>';
   }
@@ -144,7 +144,7 @@
     const rows=route.steps.map((step,i)=>
       '<li class="a3r-course-step"><div class="a3r-course-step-index">'+String(i+1).padStart(2,'0')+'</div><div><h3>'+e(step[1])+'</h3><p>'+e(step[2])+'</p>'+btn(step[0],'Ouvrir cette étape','a3r-action')+'</div></li>'
     ).join('');
-    const body='<div class="a3r-wrap">'+crumb('Enquête sur les formes')+'<header class="a3r-hero"><div class="a3r-eyebrow">ENQUÊTE TRANSVERSALE · ÉDITION V1.5</div>'+
+    const body='<div class="a3r-wrap">'+crumb('Enquête sur les formes')+'<header class="a3r-hero"><div class="a3r-eyebrow">ENQUÊTE TRANSVERSALE · ÉDITION '+e(ed.version)+'</div>'+
       '<h1>'+e(route.title)+'</h1><p>'+e(route.question)+'</p></header><p class="a3r-v15-lead">'+e(route.intro)+'</p>'+
       '<ol class="a3r-course-steps">'+rows+'</ol><p class="a3r-v15-guard"><strong>À ne pas confondre :</strong> '+e(route.limit)+'</p>'+
       btn('atlas3','Revenir à Atlas 3')+'</div>';
