@@ -60,7 +60,7 @@
     return '<section class="a3r-v15-field" aria-label="Enquête située du chapitre"><div class="a3r-eyebrow">ÉDITION V1.5 · LE SENTIR À L’ÉPREUVE DES FORMES</div>'+
       '<h2>'+e(x.title)+'</h2><p class="a3r-v15-lead">Une enquête à lire, ou à explorer librement. Aucune émotion n’est demandée ; la situation précède l’interprétation.</p>'+
       '<div class="a3r-v15-steps">'+blocks+'</div>'+
-      '<details class="a3r-v15-sources"><summary>Repères et limites documentaires</summary><ul>'+sourceLinks+'</ul><p>Ces rapprochements sont éditoriaux. Ils ne constituent pas une validation expérimentale ni une attribution d’exercices originaux aux auteurs.</p></details></section>';
+      '<details class="a3r-v15-sources"><summary>Repères et limites documentaires</summary><ul>'+sourceLinks+'</ul><p>Ces rapprochements sont éditoriaux. Ils ne constituent pas une validation expérimentale ni une attribution d’exercices originaux aux auteurs.</p></details>'+formsForChapter(id)+'</section>';
   }
   function doorSupplement(id){
     const ed=edition15(),x=ed&&ed.scenes&&ed.scenes[id];if(!x)return '';
@@ -79,6 +79,42 @@
       '<h2>Trois enquêtes sur les formes</h2><p>'+e(ed.principle)+'</p><ul>'+links+'</ul>'+
       '<details><summary>Ce que cette édition n’affirme pas</summary><p>'+ed.limits.map(e).join('</p><p>')+'</p></details></section>';
   }
+
+  function formsIndex(){
+    const ed=edition15();if(!ed||!Array.isArray(ed.forms))return '';
+    const cards=ed.forms.map(x=>'<div class="a3r-v15-form-card"><strong>'+e(x.title)+'</strong><p>'+e(x.problem)+'</p>'+
+      btn('atlas3/forme/'+x.id,'Lire ce dossier')+'</div>').join('');
+    return '<details class="a3r-v15-library"><summary>Bibliothèque des formes · '+ed.forms.length+' dossiers de lecture</summary>'+
+      '<p>Une tradition n’est pas un mode d’emploi universel. Chaque dossier distingue son problème, ce qu’elle fait travailler et ses limites.</p>'+
+      '<div class="a3r-v15-form-grid">'+cards+'</div></details>';
+  }
+  function formsForChapter(id){
+    const ed=edition15();if(!ed||!ed.forms)return '';
+    const forms=ed.forms.filter(x=>x.related.includes(id));if(!forms.length)return '';
+    return '<nav class="a3r-v15-form-links" aria-label="Formes associées à cette question"><strong>Formes pour approfondir</strong><div>'+
+      forms.map(x=>btn('atlas3/forme/'+x.id,x.title)).join('')+'</div></nav>';
+  }
+  function formPage(id){
+    const ed=edition15(),x=ed&&ed.forms&&ed.forms.find(z=>z.id===id);
+    if(!x)return missing();
+    const ref=ed.bibliography.find(b=>b.id===x.source);
+    const panels=[['Le problème de départ',x.problem],['Ce que cette approche fait travailler',x.operation],
+      ['Situation originale pour éprouver la différence',x.scene],['Le contrepoint avec les autres formes',x.contrast],
+      ['Ce qu’il serait abusif de conclure',x.limit]]
+      .map(t=>'<section class="a3r-v15-step"><h3>'+e(t[0])+'</h3><p>'+e(t[1])+'</p></section>').join('');
+    const related=x.related.map(id=>ed.chapters[id]?
+      btn('atlas3/'+id,'Chapitre '+id.slice(-2)+' · '+ed.chapters[id].title):'').join('');
+    const scenes=x.salon.map(id=>data.salon.doors.find(z=>z.id===id)?btn('atlas3/salon/'+id,data.salon.doors.find(z=>z.id===id).title):'').join('');
+    const source=ref?'<details class="a3r-v15-sources"><summary>Repère bibliographique et statut</summary><a href="'+e(ref.url)+'" target="_blank" rel="noopener noreferrer">'+e(ref.title)+'</a>'+
+      '<p>'+e(ref.detail)+'</p><p>'+e(ref.status)+'</p></details>':'';
+    const body='<div class="a3r-wrap">'+crumb('Forme théâtrale')+
+      '<header class="a3r-hero"><div class="a3r-eyebrow">BIBLIOTHÈQUE DES FORMES · V1.5</div><h1>'+e(x.title)+'</h1><p>'+e(x.work)+'</p></header>'+
+      '<article class="a3r-v15-field">'+panels+source+'</article>'+
+      '<section class="a3r-v15-related"><h2>Revenir à l’expérience</h2><p>La pratique et l’œuvre restent distinctes de ce dossier de lecture.</p><div class="a3r-mini-links">'+related+scenes+'</div></section>'+
+      btn('atlas3','Revenir au Théâtre du sentir')+'</div>';
+    return shell(body,{title:'Atlas 3 · '+x.title,sub:'Bibliothèque des formes'});
+  }
+
   function enquiry(id){
     const ed=edition15(),route=ed&&ed.enquiries.find(x=>x.id===id);if(!route)return missing();
     const rows=route.steps.map((step,i)=>
@@ -107,7 +143,7 @@
     const courseCards=guide.routes.map((r,i)=>`<button type="button" class="a3r-course-card" onclick="go('${parcoursPath(r.id)}')"><span class="a3r-eyebrow">PARCOURS ${String(i+1).padStart(2,'0')} · FACULTATIF</span><strong>${e(r.title)}</strong><span>${e(r.question)}</span><small>${r.stops.length} étapes · situations et chapitres</small></button>`).join('');
     const body=`<div class="a3r-wrap">${crumb()}<header class="a3r-hero"><div class="a3r-eyebrow">ATLAS 3 · LE THÉÂTRE DU SENTIR</div><h1>Le Théâtre du sentir</h1><p>Explorer ce que nos sensations, habitudes, souvenirs, gestes et rencontres font à notre manière d'habiter une situation. Les scènes précèdent les explications ; aucune transformation n'est obligatoire.</p></header>${note}<details class="a3r-atlas-aim"><summary>Quel est l'objet propre de cet Atlas ?</summary><p>${e(guide.thesis)}</p><p>${e(guide.difference)}</p><p class="a3r-aim-limit">${e(guide.limitations)}</p></details>
       <section class="a3r-practice-first" aria-labelledby="a3r-practice-heading"><div class="a3r-eyebrow">01 · COMMENCER PAR L’EXPÉRIENCE</div><h2 id="a3r-practice-heading">Le Salon des possibles</h2><p class="a3r-entry-intro">Sept micro-scènes à découvrir ; leur lecture suffit et le jeu demeure facultatif.</p><ol class="a3r-practice-list">${doors}</ol>${btn('atlas3/salon','Découvrir le Salon des possibles')}</section>
-      <section class="a3r-courses" aria-labelledby="a3r-courses-heading"><div class="a3r-eyebrow">02 · SUIVRE UNE QUESTION</div><h2 id="a3r-courses-heading">Quatre parcours d'expérience</h2><p class="a3r-entry-intro">Chaque parcours part d'une situation ou d'une scène, puis change la question. Ils ne sont pas des programmes à réussir et aucun n'est nécessaire pour lire un chapitre.</p><div class="a3r-course-grid">${courseCards}</div></section>${enquiriesIndex()}
+      <section class="a3r-courses" aria-labelledby="a3r-courses-heading"><div class="a3r-eyebrow">02 · SUIVRE UNE QUESTION</div><h2 id="a3r-courses-heading">Quatre parcours d'expérience</h2><p class="a3r-entry-intro">Chaque parcours part d'une situation ou d'une scène, puis change la question. Ils ne sont pas des programmes à réussir et aucun n'est nécessaire pour lire un chapitre.</p><div class="a3r-course-grid">${courseCards}</div></section>${enquiriesIndex()}${formsIndex()}
       <section class="a3r-theory-after" aria-labelledby="a3r-theory-heading"><div class="a3r-eyebrow">03 · POUR APPROFONDIR</div><h2 id="a3r-theory-heading">Les quinze chapitres</h2><p class="a3r-entry-intro">Une lecture peut prolonger une expérience, la contredire ou simplement ouvrir un autre problème. Les chapitres restent accessibles indépendamment du Salon.</p><div class="a3r-part-grid">${parts}</div></section>
       <section class="a3r-transversal-after"><div class="a3r-eyebrow">04 · CHEMINS TRANSVERSAUX</div><h2>Circuler entre les Atlas</h2><p class="a3r-entry-intro">Deux détours facultatifs permettent de revenir à une question autrement. Ils ne remplacent ni les œuvres ni les chapitres.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div></section>
     </div>`;
@@ -173,6 +209,7 @@
     if(!tail)return index();
     if(tail.startsWith('parcours/'))return parcours(tail.slice(9));
     if(tail.startsWith('enquete/'))return enquiry(tail.slice(8));
+    if(tail.startsWith('forme/'))return formPage(tail.slice(6));
     if(tail==='salon')return salon();
     if(tail.startsWith('salon/'))return door(tail.slice(6));
     if(tail.startsWith('passerelle/'))return passerelle(tail.slice(11));
