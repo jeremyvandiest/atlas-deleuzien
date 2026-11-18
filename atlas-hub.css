@@ -64,3 +64,6 @@
 .entity-pager button:focus-visible{outline:2px solid #b78b48;outline-offset:2px}
 .guardrail{display:none!important}
 @media(max-width:620px){.entity-pager{gap:5px}.entity-pager button{padding:10px 7px;min-width:0}.entity-pager b{font-size:11px}.author-sort{flex-wrap:wrap}}
+
+/* Encarts de contrôle éditorial réservés au corpus source. */
+.atlas-internal-note{display:none!important}
