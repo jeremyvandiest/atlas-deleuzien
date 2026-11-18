@@ -28,14 +28,13 @@ function a2Nav(){
   ['atlas2-configurations','Configurations','Comprendre comment les personnages, les espaces et les forces tiennent ensemble dans une œuvre.'],
   ['atlas2-forms','Formes et motifs','Observer comment une forme concrète remplit des fonctions différentes selon les œuvres.'],
   ['atlas2-problems','Problèmes','Retrouver une question commune et les réponses singulières que lui donnent plusieurs œuvres.'],
-  ['atlas2-optics','Angles de lecture','Examiner le temps, le corps, l’espace ou le style depuis un angle précis.'],
-  ['atlas2-network','Comparer les œuvres','Mettre en regard deux constructions à partir de passages précis de leurs dossiers.']
+  ['atlas2-optics','Angles de lecture','Examiner le temps, le corps, l’espace ou le style depuis un angle précis.']
  ];
  const routes=A(D.routes).slice().sort((a,b)=>a.order-b.order);
  return `<nav class="a2-nav" aria-label="Explorer Atlas 2">
   ${current()!=='atlas2'?'<button class="a2-nav-home" type="button" onclick="go(\'atlas2\')">← Retour à Atlas 2</button>':''}
   <div class="a2-nav-pair">
-   <details class="a2-nav-details"><summary><span>Explorer les rubriques</span><small>Six outils de lecture, chacun pour une question précise</small></summary>
+   <details class="a2-nav-details"><summary><span>Explorer les rubriques</span><small>Cinq outils pour comprendre ce que produit une œuvre</small></summary>
     <div class="a2-nav-sections a2-nav-simple"><ul>${rubrics.map(([path,label,desc])=>`<li><button type="button" onclick="go('${path}')"><strong>${label}</strong><span>${desc}</span></button></li>`).join('')}</ul></div></details>
    <details class="a2-nav-details"><summary><span>Suivre une route</span><small>Sept progressions qui relient quelques œuvres autour d’une question</small></summary>
     <div class="a2-nav-sections a2-nav-simple"><ul>${routes.map(r=>`<li><button type="button" onclick="go('atlas2-route/${r.id}')"><strong>${E(r.title)}</strong><span>${E(r.question||'')}</span></button></li>`).join('')}</ul></div></details>
