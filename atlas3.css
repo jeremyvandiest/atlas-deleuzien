@@ -197,3 +197,23 @@
 .a3r-v15-related p{font:14px/1.65 Georgia,serif;color:#53605e}
 .a3r-v15-library summary:focus-visible{outline:2px solid #28616c;outline-offset:4px}
 @media(max-width:690px){.a3r-v15-library{padding:15px}.a3r-v15-form-grid{grid-template-columns:1fr}.a3r-v15-form-card{padding:13px}}
+
+
+/* Atlas 3 V1.6 — découvrir, comprendre, approfondir */
+.a3r-levels{background:#fcfbf8}
+.a3r-discovery{background:#f5f2ea;border-left:3px solid #7b968e;padding:14px 15px;margin:12px 0}
+.a3r-discovery h3{font:700 13px/1.55 system-ui,sans-serif;color:#2b5056}
+.a3r-discovery p{font:15.5px/1.75 Georgia,serif;color:#3a4e50;margin:8px 0}
+.a3r-v15-watch{font:14px/1.65 Georgia,serif;color:#45615e}
+.a3r-v15-depth{margin:12px 0;border:1px solid #e2d8ca;border-radius:9px;background:#fffefa;padding:12px 15px}
+.a3r-v15-depth>summary{font:700 14px/1.6 system-ui,sans-serif;color:#2d5359;cursor:pointer}
+.a3r-v15-depth>p{font:15px/1.72 Georgia,serif;margin:12px 0;color:#374e50}
+.a3r-v15-depth h3{font:650 13px/1.5 system-ui,sans-serif;color:#355c60}
+.a3r-v15-depth .a3r-v15-sources{padding-top:13px}
+.a3r-v15-term-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}
+.a3r-v15-term{border:1px solid #dbd4c8;padding:10px 12px;border-radius:8px;background:#f7f7f3}
+.a3r-v15-term summary{cursor:pointer;font:650 13px/1.5 system-ui,sans-serif;color:#2b5a61}
+.a3r-v15-term p{font:14px/1.65 Georgia,serif;margin:9px 0;color:#34484b}
+.a3r-v15-form-card small{font:11px/1.5 system-ui,sans-serif;color:#6d7773;margin-top:5px}
+.a3r-v15-depth summary:focus-visible,.a3r-v15-term summary:focus-visible{outline:2px solid #316874;outline-offset:3px}
+@media(max-width:690px){.a3r-v15-depth{padding:11px 12px}.a3r-v15-term-list{grid-template-columns:1fr}}
