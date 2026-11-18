@@ -1,0 +1,21 @@
+/* Atlas 1 — entrées progressives, sans changer les cartes originales */
+.a1ped,.a1ped-home{max-width:940px;margin:0 auto 22px;border-bottom:1px solid #d9cebd;padding:18px clamp(14px,3vw,26px) 23px;color:#2b3d42}
+.a1ped{border:1px solid #ded5c8;border-radius:12px;background:#fffdf9}
+.a1ped-kicker{font:700 10px/1.6 system-ui,sans-serif;letter-spacing:.1em;color:#866c4d}
+.a1ped h2,.a1ped-home h2{font:500 clamp(21px,3.5vw,28px)/1.25 Georgia,serif;margin:6px 0 12px;color:#2a4248}
+.a1ped-intro,.a1ped-home>p{font:14px/1.7 Georgia,serif;color:#4d5b5e;max-width:760px}
+.a1ped-level{padding:13px 0;border-top:1px solid #e5ded3}
+.a1ped-level-title{font:700 13px/1.5 system-ui,sans-serif;color:#34565d}
+.a1ped-level p,.a1ped-depth p{font:15.5px/1.75 Georgia,serif;color:#354a4e;margin:8px 0}
+.a1ped-depth{padding:11px 0;border-top:1px solid #e5ded3}
+.a1ped-depth>summary{font:700 13.5px/1.6 system-ui,sans-serif;color:#2e5157;cursor:pointer}
+.a1ped-depth>summary:focus-visible,.a1ped-toc button:focus-visible{outline:2px solid #346875;outline-offset:3px}
+.a1ped-limit{font-size:13.5px!important;color:#5a615d!important}
+.a1ped-links{display:flex;flex-wrap:wrap;gap:8px;padding:10px 0}
+.a1ped-link{border:1px solid #d6c9b7;border-radius:8px;background:#f7f4ed;color:#30555c;cursor:pointer;font:600 12px/1.5 system-ui,sans-serif;padding:9px 11px}
+.a1ped-link:hover,.a1ped-link:focus-visible{background:#ece7dc}
+.a1ped-toc{display:grid;gap:8px;list-style:decimal;padding:12px 0 7px 22px;margin:0}
+.a1ped-toc button{border:0;background:transparent;color:#355b60;padding:0;cursor:pointer;text-align:left;text-decoration:underline;text-underline-offset:2px;font:14px/1.5 Georgia,serif}
+.a1ped-disclaimer{font:11px/1.5 system-ui,sans-serif;color:#787067;margin:14px 0 0}
+.a1ped-home{border:1px solid #dfd4c2;border-radius:12px;background:#fdfbf7}
+@media(max-width:690px){.a1ped,.a1ped-home{padding:16px 13px}.a1ped-level p,.a1ped-depth p{font-size:15px}}
