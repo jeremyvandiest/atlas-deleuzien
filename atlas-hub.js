@@ -4,13 +4,13 @@
 const originalAtlas1Home=home;
 PAGE_HANDLERS.atlas1=originalAtlas1Home;
 const territories=[
-  ['01','Atlas deleuzien','L’histoire de la philosophie vue par Deleuze. Auteurs, œuvres, concepts, routes et interludes.','atlas1'],
-  ['02','Récits et formes','La singularité des œuvres, leurs configurations, leurs transformations et leurs relations.','atlas2'],
-  ['03','Théâtre du sentir','Sensibilité, mémoire, intériorité, jeu, expression et rencontre.','atlas3']
+  ['01','Atlas deleuzien','Découvrir l’histoire de la philosophie à travers les lectures de Deleuze. Chaque auteur entre par un problème précis ; les œuvres et les routes montrent comment ses concepts sont repris, déplacés et transformés.','atlas1'],
+  ['02','Récits et formes','Entrer dans les œuvres de littérature, de théâtre et de cinéma. Comprendre ce qu’elles racontent, puis voir comment leur construction — gestes, temps, espace, motifs et rapports — produit une expérience singulière.','atlas2'],
+  ['03','Théâtre du sentir','Explorer comment une sensation, une image, une habitude, une action jouée ou une rencontre modifie notre expérience. Les chapitres, les scènes et les traditions théâtrales relient compréhension et pratique sensible.','atlas3']
 ];
 PAGE_HANDLERS.home=function(){
-  const cards=territories.map(([num,title,desc,path])=>`<button class="atlas-hub-card" onclick="go('${path}')"><span class="atlas-hub-num">${num}</span><h3>${title}</h3><p>${desc}</p><span class="atlas-hub-visit">ENTRER DANS L’ATLAS ›</span></button>`).join('');
-  return shell(`<div class="atlas-hub"><div class="atlas-hub-head"><div class="atlas-hub-eyebrow">Trois territoires autonomes</div><h2>ATLAS</h2><p>Parcourir les pensées, explorer les œuvres et approfondir l’expérience vécue.</p></div><div class="atlas-hub-grid">${cards}</div><div class="atlas-hub-foot">Chaque Atlas garde son objet, ses sources et sa méthode. Leurs rapprochements ne remplacent pas les analyses.</div></div>`,{home:true,dark:true,title:'Atlas',sub:'Explorer trois territoires'});
+  const cards=territories.map(([num,title,desc,path])=>`<button type="button" class="atlas-hub-card" onclick="go('${path}')"><span class="atlas-hub-card-title"><span class="atlas-hub-num">${num}</span><span class="atlas-hub-name">${title}</span></span><span class="atlas-hub-description">${desc}</span></button>`).join('');
+  return shell(`<div class="atlas-hub"><div class="atlas-hub-head"><img class="atlas-hub-symbol" src="./icon-192.png" width="76" height="76" alt="Emblème d’Atlas"><h2>ATLAS</h2><p>Philosophie, œuvres et expérience vécue : trois domaines, trois manières d’apprendre à voir.</p></div><div class="atlas-hub-grid">${cards}</div></div>`,{home:true,dark:true,title:'Atlas',sub:'Philosophie · Œuvres · Sentir'});
 };
 const territories3=[
  ['01','Vie sensible et corporelle','Attention aux sensations, présence physique, émotions, atmosphères et dimension éprouvée de l’existence.'],
