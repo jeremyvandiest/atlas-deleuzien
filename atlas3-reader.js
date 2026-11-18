@@ -20,7 +20,7 @@
   const parcoursPath = id => 'atlas3/parcours/' + id;
   const section = (title, body, cls='') => `<section class="a3r-block ${cls}"><h2>${e(title)}</h2>${body}</section>`;
   const btn = (path, label, cls='') => `<button type="button" class="a3r-link ${cls}" onclick="go('${path}')">${e(label)}</button>`;
-  const crumb = (extra='') => `<nav class="a3r-crumb" aria-label="Navigation Atlas 3">${btn('atlas3','Atlas 3 — Sommaire')}${btn('atlas3/salon','Salon des possibles')}${extra ? `<span>${e(extra)}</span>` : ''}</nav>`;
+  const crumb = (extra='') => `<nav class="a3r-crumb" aria-label="Navigation Atlas 3">${btn('atlas3','Accueil d’Atlas 3')}${extra ? `<span>${e(extra)}</span>` : ''}</nav>`;
   const note = `<p class="a3r-publication">${e(data.status)}. Les sources et leurs limites sont disponibles dans chaque chapitre.</p>`;
   const C = name => data.chapters.find(c => c.id === name);
 
@@ -67,26 +67,27 @@
   }
   function enquiriesIndex(){
     const ed=edition15();if(!ed)return '';
-    const links=ed.enquiries.map(x=>'<li>'+btn('atlas3/enquete/'+x.id,x.title)+'</li>').join('');
-    return '<section class="a3r-v15-enquiries"><div class="a3r-eyebrow">POUR PROLONGER · PARCOURS LIBRES V1.6</div>'+
-      '<h2>'+ed.enquiries.length+' enquêtes pour circuler</h2><p>'+e(ed.principle)+'</p><ul>'+links+'</ul>'+
-      '<details><summary>Ce que cette édition n’affirme pas</summary><p>'+ed.limits.map(e).join('</p><p>')+'</p></details></section>';
+    const parcours=guide.routes.map(r=>'<li>'+btn(parcoursPath(r.id),r.title)+'</li>').join('');
+    const enquete=ed.enquiries.map(x=>'<li>'+btn('atlas3/enquete/'+x.id,x.title)+'</li>').join('');
+    return '<details class="a3r-v15-library a3r-pathways"><summary>Explorer par une question · parcours et enquêtes</summary>'+
+      '<p>Les parcours relient une scène à plusieurs chapitres autour d’une expérience. Les enquêtes comparent des traditions et des formes théâtrales autour d’un problème de jeu.</p>'+
+      '<div class="a3r-pathway-groups"><section><h3>Quatre parcours de situations</h3><ul>'+parcours+'</ul></section>'+
+      '<section><h3>Quatre enquêtes sur les formes</h3><ul>'+enquete+'</ul></section></div></details>';
   }
-
 
   function approachesForChapter(id){
     const ed=edition15();if(!ed?.approaches)return '';
     const relevant=ed.approaches.filter(x=>(x.related||[]).includes(id));
     if(!relevant.length)return '';
-    return '<nav class="a3r-v15-form-links" aria-label="Approches sensibles, philosophiques et cliniques"><strong>Approches en regard · sans les confondre</strong><div>'+
+    return '<nav class="a3r-v15-form-links" aria-label="Approches sensibles, philosophiques et cliniques"><strong>Approches complémentaires</strong><div>'+
       relevant.map(x=>btn('atlas3/approche/'+x.id,x.title)).join('')+'</div></nav>';
   }
   function approachesIndex(){
     const ed=edition15();if(!ed?.approaches)return '';
     const cards=ed.approaches.map(x=>'<div class="a3r-v15-form-card"><strong>'+e(x.title)+'</strong>'+
-      '<small>'+e(x.domain)+'</small><p>'+e(x.intro)+'</p>'+btn('atlas3/approche/'+x.id,'Découvrir cette approche')+'</div>').join('');
-    return '<details class="a3r-v15-library"><summary>Approches du sentir · '+ed.approaches.length+' dossiers critiques</summary>'+
-      '<p>'+e(ed.pedagogy.selection)+'</p><div class="a3r-v15-form-grid">'+cards+'</div></details>';
+      '<small>'+e(x.domain)+'</small><p>'+e(x.question)+'</p>'+btn('atlas3/approche/'+x.id,'Lire l’approche')+'</div>').join('');
+    return '<section class="a3r-approaches-index"><h2>Approches du sentir</h2><p>Cinq penseurs et traditions pour étudier l’attention, les images intérieures, la relation et les questions existentielles. Chaque dossier présente un apport, une situation et ses limites.</p>'+ 
+      '<div class="a3r-v15-form-grid">'+cards+'</div></section>';
   }
   function approachPage(id){
     const ed=edition15(),x=ed?.approaches?.find(z=>z.id===id);if(!x)return missing();
@@ -111,8 +112,8 @@
     const ed=edition15();if(!ed||!Array.isArray(ed.forms))return '';
     const cards=ed.forms.map(x=>'<div class="a3r-v15-form-card"><strong>'+e(x.title)+'</strong><p>'+e(x.problem)+'</p>'+
       btn('atlas3/forme/'+x.id,'Lire ce dossier')+'</div>').join('');
-    return '<details class="a3r-v15-library"><summary>Bibliothèque des formes · '+ed.forms.length+' dossiers de lecture</summary>'+
-      '<p>Une tradition n’est pas un mode d’emploi universel. Chaque dossier distingue son problème, ce qu’elle fait travailler et ses limites.</p>'+
+    return '<details class="a3r-v15-library"><summary>Écoles et formes de théâtre · '+ed.forms.length+' dossiers</summary>'+ 
+      '<p>Découvrir le problème propre à chaque tradition, ses moyens de jeu, une situation concrète et les textes qui la documentent.</p>'+ 
       '<div class="a3r-v15-form-grid">'+cards+'</div></details>';
   }
   function formsForChapter(id){
@@ -152,26 +153,19 @@
   }
 
   function index(){
-    const doors=data.salon.doors.map(d=>{
-      const first=(d.html.match(/^<p><em>([\s\S]*?)<\/em><\/p>/)||[])[1]||'Une proposition sensible, libre et facultative.';
-      const desc=first.replace(/<[^>]*>/g,'');
-      return `<li><button type="button" class="a3r-practice-door" onclick="go('${doorPath(d.id)}')"><span class="a3r-practice-door-num">${String(d.number).padStart(2,'0')}</span><span class="a3r-practice-door-copy"><strong>${e(d.title)}</strong><span>${e(desc)}</span></span></button></li>`;
-    }).join('');
     const parts=data.parts.map(part=>{
-      const links=part.chapters.map(id=>{
-        const c=chapterMap[id];
-        return `<li>${btn(chapterPath(id),String(c.number).padStart(2,'0')+' · '+c.title,'a3r-chapter-link')}</li>`;
-      }).join('');
-      return `<section class="a3r-part"><div class="a3r-eyebrow">Partie ${e(part.id)}</div><h3>${e(part.title)}</h3><p>${e(part.introduction)}</p><ul>${links}</ul></section>`;
+      const links=part.chapters.map(id=>{const c=chapterMap[id];return '<li>'+btn(chapterPath(id),String(c.number).padStart(2,'0')+' · '+c.title,'a3r-chapter-link')+'</li>';}).join('');
+      return '<section class="a3r-part"><div class="a3r-eyebrow">Partie '+e(part.id)+'</div><h3>'+e(part.title)+'</h3><p>'+e(part.introduction)+'</p><ul>'+links+'</ul></section>';
     }).join('');
-    const courseCards=guide.routes.map((r,i)=>`<button type="button" class="a3r-course-card" onclick="go('${parcoursPath(r.id)}')"><span class="a3r-eyebrow">PARCOURS ${String(i+1).padStart(2,'0')} · FACULTATIF</span><strong>${e(r.title)}</strong><span>${e(r.question)}</span><small>${r.stops.length} étapes · situations et chapitres</small></button>`).join('');
-    const body=`<div class="a3r-wrap">${crumb()}<header class="a3r-hero"><div class="a3r-eyebrow">ATLAS 3 · LE THÉÂTRE DU SENTIR</div><h1>Le Théâtre du sentir</h1><p>Explorer ce que nos sensations, habitudes, souvenirs, gestes et rencontres font à notre manière d'habiter une situation. Les scènes précèdent les explications ; aucune transformation n'est obligatoire.</p></header>${note}<details class="a3r-atlas-aim"><summary>Quel est l'objet propre de cet Atlas ?</summary><p>${e(guide.thesis)}</p><p>${e(guide.difference)}</p><p class="a3r-aim-limit">${e(guide.limitations)}</p></details>
-      <section class="a3r-practice-first" aria-labelledby="a3r-practice-heading"><div class="a3r-eyebrow">01 · COMMENCER PAR L’EXPÉRIENCE</div><h2 id="a3r-practice-heading">Le Salon des possibles</h2><p class="a3r-entry-intro">Sept micro-scènes à découvrir ; leur lecture suffit et le jeu demeure facultatif.</p><ol class="a3r-practice-list">${doors}</ol>${btn('atlas3/salon','Découvrir le Salon des possibles')}</section>
-      <section class="a3r-courses" aria-labelledby="a3r-courses-heading"><div class="a3r-eyebrow">02 · SUIVRE UNE QUESTION</div><h2 id="a3r-courses-heading">Quatre parcours d'expérience</h2><p class="a3r-entry-intro">Chaque parcours part d'une situation ou d'une scène, puis change la question. Ils ne sont pas des programmes à réussir et aucun n'est nécessaire pour lire un chapitre.</p><div class="a3r-course-grid">${courseCards}</div></section>${enquiriesIndex()}${formsIndex()}${approachesIndex()}
-      <section class="a3r-theory-after" aria-labelledby="a3r-theory-heading"><div class="a3r-eyebrow">03 · POUR APPROFONDIR</div><h2 id="a3r-theory-heading">Les quinze chapitres</h2><p class="a3r-entry-intro">Une lecture peut prolonger une expérience, la contredire ou simplement ouvrir un autre problème. Les chapitres restent accessibles indépendamment du Salon.</p><div class="a3r-part-grid">${parts}</div></section>
-      <section class="a3r-transversal-after"><div class="a3r-eyebrow">04 · CHEMINS TRANSVERSAUX</div><h2>Circuler entre les Atlas</h2><p class="a3r-entry-intro">Deux détours facultatifs permettent de revenir à une question autrement. Ils ne remplacent ni les œuvres ni les chapitres.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div></section>
+    const body=`<div class="a3r-wrap"><header class="a3r-hero"><h1>Le Théâtre du sentir</h1><p>Découvrir comment les sensations, la mémoire, l’imaginaire, le corps et les rencontres participent à notre manière de vivre et de jouer une situation. Les scènes et les traditions artistiques donnent des façons concrètes d’explorer ces questions.</p></header>
+      ${approachesIndex()}
+      <section class="a3r-theory-after" aria-labelledby="a3r-theory-heading"><h2 id="a3r-theory-heading">Sentir, imaginer, jouer, rencontrer</h2><p class="a3r-entry-intro">Quinze chapitres répartis en cinq parties. Chacun part d’une situation, construit une question et l’approfondit à travers des textes, des exemples et des formes artistiques.</p><div class="a3r-part-grid">${parts}</div></section>
+      <section class="a3r-salon-portal"><h2>Le Salon des possibles</h2><p>Sept scènes originales à lire, observer ou interpréter. Les personnages, les gestes et les variations de jeu deviennent la matière d’une exploration sensible.</p>${btn('atlas3/salon','Explorer les sept scènes','a3r-action')}</section>
+      ${enquiriesIndex()}
+      ${formsIndex()}
+      <section class="a3r-transversal-after"><h2>Passerelles entre les trois Atlas</h2><p>Retrouver une question du sentir sous un autre regard : la création de concepts dans Atlas 1, la construction singulière des œuvres dans Atlas 2.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div></section>
     </div>`;
-    return shell(body,{title:'Atlas 3 · Théâtre du sentir',sub:'Le Salon · Les chapitres · Les chemins'});
+    return shell(body,{title:'Atlas 3 · Théâtre du sentir',sub:'Sentir · Imaginer · Jouer · Rencontrer'});
   }
 
   // V1.6.2 : notions dans le texte, pas seulement dans la boussole.
