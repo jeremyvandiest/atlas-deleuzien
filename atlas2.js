@@ -23,24 +23,23 @@ const textList=(title,items)=>A(items).length?`<section class="a2-section"><h3>$
 
 
 function a2Nav(){
-  const groups=[
-    ['Lire et circuler',[
-      ['atlas2-works','Œuvres','Ouvrir un dossier précis et étudier comment il fonctionne.'],
-      ['atlas2-routes','Routes','Suivre une question à travers quelques œuvres choisies.']]],
-    ['Comprendre les mécanismes',[
-      ['atlas2-transformations','Transformations','Nommer ce qui persiste, varie ou se recompose.'],
-      ['atlas2-configurations','Configurations','Observer les relations qui font tenir un monde ou une situation.'],
-      ['atlas2-forms','Formes & motifs','Distinguer les fonctions d’un même élément selon les œuvres.']]],
-    ['Approfondir ou comparer',[
-      ['atlas2-network','Connexions','Comparer deux œuvres sur des passages argumentés.'],
-      ['atlas2-problems','Problèmes','Retrouver une question examinée dans plusieurs œuvres.'],
-      ['atlas2-optics','Optiques','Choisir un angle de lecture et en reconnaître les limites.']]]
-  ];
-  return `<nav class="a2-nav" aria-label="Orientation dans l'Atlas 2">
-    ${current()!=='atlas2'?'<button class="a2-nav-home" type="button" onclick="go(\'atlas2\')">← Revenir à l’accueil d’Atlas 2</button>':''}
-    <details class="a2-nav-details"><summary><span>Explorer les autres rubriques</span><small>Leur utilité, sans obligation de tout parcourir</small></summary>
-    <div class="a2-nav-sections">${groups.map(([heading,items])=>`<section><h3>${heading}</h3><ul>${items.map(([path,label,desc])=>`<li><button type="button" onclick="go('${path}')"><strong>${label}</strong><span>${desc}</span></button></li>`).join('')}</ul></section>`).join('')}</div></details>
-    </nav>`;
+ const rubrics=[
+  ['atlas2-transformations','Transformations','Suivre les changements qui produisent des conséquences : répétition, variation, seuil, réversion.'],
+  ['atlas2-configurations','Configurations','Comprendre comment les personnages, les espaces et les forces tiennent ensemble dans une œuvre.'],
+  ['atlas2-forms','Formes et motifs','Observer comment une forme concrète remplit des fonctions différentes selon les œuvres.'],
+  ['atlas2-problems','Problèmes','Retrouver une question commune et les réponses singulières que lui donnent plusieurs œuvres.'],
+  ['atlas2-optics','Angles de lecture','Examiner le temps, le corps, l’espace ou le style depuis un angle précis.'],
+  ['atlas2-network','Comparer les œuvres','Mettre en regard deux constructions à partir de passages précis de leurs dossiers.']
+ ];
+ const routes=A(D.routes).slice().sort((a,b)=>a.order-b.order);
+ return `<nav class="a2-nav" aria-label="Explorer Atlas 2">
+  ${current()!=='atlas2'?'<button class="a2-nav-home" type="button" onclick="go(\'atlas2\')">← Retour à Atlas 2</button>':''}
+  <div class="a2-nav-pair">
+   <details class="a2-nav-details"><summary><span>Explorer les rubriques</span><small>Six outils de lecture, chacun pour une question précise</small></summary>
+    <div class="a2-nav-sections a2-nav-simple"><ul>${rubrics.map(([path,label,desc])=>`<li><button type="button" onclick="go('${path}')"><strong>${label}</strong><span>${desc}</span></button></li>`).join('')}</ul></div></details>
+   <details class="a2-nav-details"><summary><span>Suivre une route</span><small>Sept progressions qui relient quelques œuvres autour d’une question</small></summary>
+    <div class="a2-nav-sections a2-nav-simple"><ul>${routes.map(r=>`<li><button type="button" onclick="go('atlas2-route/${r.id}')"><strong>${E(r.title)}</strong><span>${E(r.question||'')}</span></button></li>`).join('')}</ul></div></details>
+  </div></nav>`;
 }
 function page(content,title='Atlas 2',sub='Récits et formes'){
  const isHome=current()==='atlas2';
@@ -68,41 +67,30 @@ const ATLAS2_THEATRE_IDS=new Set(['work-beckett-godot','work-sophocle-oedipe-roi
 function atlas2WorkMedium(w){return w?.medium==='film'?'cinema':ATLAS2_THEATRE_IDS.has(w.id)?'theatre':'litterature'}
 function atlas2MediumLabel(w){return ({cinema:'Cinéma',theatre:'Théâtre',litterature:'Littérature'})[atlas2WorkMedium(w)]}
 const atlas2CatalogueState={medium:'tous',sort:'order',problem:'tous'};
-window.atlas2ChangeCatalogue=function(field,value){if(!['medium','sort','problem'].includes(field))return;atlas2CatalogueState[field]=String(value);render()};
+window.atlas2ChangeCatalogue=function(field,value){if(!['medium','sort','problem'].includes(field))return;atlas2CatalogueState[field]=String(value);if(current()==='atlas2'){const holder=document.getElementById('a2-home-work-list');if(holder)holder.innerHTML=a2HomeWorkList();const count=document.querySelector('.a2-catalogue-count');if(count){const n=atlas2FilteredWorks().length;count.textContent=n+' œuvre'+(n>1?'s':'')+' sur '+A(D.works).length;}return;}render()};
 function atlas2FilteredWorks(){let works=A(D.works).slice();if(atlas2CatalogueState.medium!=='tous')works=works.filter(w=>atlas2WorkMedium(w)===atlas2CatalogueState.medium);if(atlas2CatalogueState.problem!=='tous')works=works.filter(w=>w.principle?.global_problem_id===atlas2CatalogueState.problem||A(w.primary_connections).includes(atlas2CatalogueState.problem));const collate=(a,b)=>String(a).localeCompare(String(b),'fr',{sensitivity:'base'});if(atlas2CatalogueState.sort==='title')works.sort((a,b)=>collate(a.title,b.title));else if(atlas2CatalogueState.sort==='author')works.sort((a,b)=>collate(a.author,b.author)||collate(a.title,b.title));else works.sort((a,b)=>(a.order??9999)-(b.order??9999));return works;}
 function atlas2Select(field,choices){return `<select aria-label="${field==='medium'?'Filtrer par médium':field==='sort'?'Trier les œuvres':'Filtrer par problème'}" onchange="atlas2ChangeCatalogue('${field}',this.value)">${choices.map(([value,label])=>`<option value="${E(value)}" ${atlas2CatalogueState[field]===value?'selected':''}>${E(label)}</option>`).join('')}</select>`}
 function atlas2CatalogueFilters(){const n=atlas2FilteredWorks().length;return `<div class="a2-catalogue-controls" role="group" aria-label="Filtres du catalogue"><label>Médium${atlas2Select('medium',[['tous','Tous les médiums'],['cinema','Cinéma'],['theatre','Théâtre'],['litterature','Littérature']])}</label><label>Problème${atlas2Select('problem',[['tous','Tous les problèmes'],...A(D.problems).map(p=>[p.id,p.title])])}</label><label>Ordre${atlas2Select('sort',[['order','Parcours d’origine'],['title','Titre A–Z'],['author','Auteur A–Z']])}</label><p class="a2-catalogue-count">${n} œuvre${n>1?'s':''} sur ${A(D.works).length}</p></div>`}
 function workCards(works=A(D.works)){return A(works).map(w=>`<button class="a2-card" onclick="go('atlas2-work/${w.id}')">${visibleWorkNumber(w)?`<div class="num">${E(workNumberLabel(w))}</div>`:''}${w?.status==='PROVISIONAL'?`<div class="num">PROVISOIRE · À CONFIRMER</div>`:''}<h3>${E(w.title)}</h3><p>${E(w.card)}</p><div class="meta">${E(w.author)} · ${E(atlas2MediumLabel(w))}</div></button>`).join('')}
 
 function a2HomeWorkList(){
-  const all=A(D.works).slice().sort((a,b)=>(a.order??9999)-(b.order??9999));
-  return `<div class="a2-home-work-list">${all.map(w=>`<button type="button" class="a2-home-work-row" onclick="go('atlas2-work/${w.id}')"><span class="a2-home-work-number">${String(w.order??'').padStart(2,'0')}</span><span class="a2-home-work-copy"><span class="a2-home-work-title">${E(w.title)}</span><span class="a2-home-work-credit">${E(w.author)} · ${E(atlas2MediumLabel(w))}${w.status==='PROVISIONAL'?' · Dossier provisoire':''}</span><span class="a2-home-work-description">${E(w.card)}</span></span></button>`).join('')}</div>`;
+ const all=atlas2FilteredWorks();
+ return `<div class="a2-home-work-list">${all.map(w=>`<button type="button" class="a2-home-work-row" onclick="go('atlas2-work/${w.id}')"><span class="a2-home-work-number">${String(w.order??'').padStart(2,'0')}</span><span class="a2-home-work-copy"><span class="a2-home-work-title">${E(w.title)}</span><span class="a2-home-work-credit">${E(w.author)} · ${E(atlas2MediumLabel(w))}${w.status==='PROVISIONAL'?' · Dossier provisoire':''}</span><span class="a2-home-work-description">${E(w.card)}</span></span></button>`).join('')||'<p>Aucune œuvre ne correspond à ce choix.</p>'}</div>`;
 }
 function atlas2Home(){
-  const workCount=A(D.works).length, transformations=A(D.transformations).length;
-  return page(`${hero('ATLAS 2','Atlas des récits et des formes','Découvrir ce que font les œuvres : comment un geste, une forme ou une durée modifient le récit, les relations et notre lecture.')}
-  <section class="a2-section" aria-label="Lectures approfondies V4.3"><div class="a2-kicker">NOUVELLE ÉDITION · 30 DOSSIERS</div><h3>Lire les œuvres en profondeur</h3><p>Les 30 œuvres sont consultables directement dans les fiches Œuvres d’Atlas 2, avec notions cliquables et routes : les deux pilotes et les 28 dossiers V4.3. Kafka et Jeanne Dielman conservent leurs dossiers pilotes dans l’Atlas.</p><p><button type="button" class="a2-link" onclick="go('atlas2-works')">Parcourir les dossiers dans Atlas 2</button></p></section>
-  <section class="a2-home-guidance" aria-labelledby="a2-guidance-title">
-    <div class="a2-kicker">VOTRE POINT DE DÉPART</div><h3 id="a2-guidance-title">Par où commencer ?</h3>
-    <p>Il n’est pas nécessaire de connaître la cartographie avant de lire. Deux portes suffisent ; les autres notions deviennent utiles au fil des œuvres.</p>
-    <div class="a2-entry-options">
-      <button type="button" class="a2-entry-choice" onclick="document.getElementById('a2-work-catalogue').scrollIntoView({behavior:'smooth',block:'start'})"><span class="a2-entry-index">01 · SI UNE ŒUVRE VOUS ATTIRE</span><strong>Entrer par une œuvre</strong><span>Lire ce qui se passe, puis découvrir comment ses éléments agissent.</span><span class="a2-entry-cta">Voir les ${workCount} œuvres</span></button>
-      <button type="button" class="a2-entry-choice" onclick="go('atlas2-routes')"><span class="a2-entry-index">02 · SI VOUS NE SAVEZ PAS QUOI CHOISIR</span><strong>Suivre une Route</strong><span>Une question, quelques œuvres et un chemin de lecture déjà composé.</span><span class="a2-entry-cta">Choisir parmi les 7 Routes</span></button>
-    </div>
-  </section>
-  <section class="a2-home-backbone" aria-labelledby="a2-backbone-title">
-    <div class="a2-kicker">POUR COMPRENDRE · COLONNE VERTÉBRALE</div><h3 id="a2-backbone-title">À quoi servent les ${transformations} transformations ?</h3>
-    <p>Ce sont des outils pour décrire <em>ce qui agit</em> dans une œuvre, pas une liste de thèmes à y retrouver à tout prix.</p>
-    <p class="a2-backbone-example"><strong>Un exemple :</strong> dans <em>Jeanne Dielman</em>, la répétition des tâches apprend au spectateur un rythme. Un petit retard ou un geste déplacé devient alors perceptible : c’est la <em>variation</em> rendue sensible par la <em>répétition</em>. Leur fonction dépend du film lui-même.</p>
-    <button type="button" class="a2-text-link" onclick="go('atlas2-transformations')">Comprendre la colonne vertébrale de l’Atlas</button>
-  </section>
+ const n=A(D.works).length;
+ return page(`${hero('ATLAS 2','Atlas des récits et des formes','Découvrir une œuvre, comprendre en profondeur ce qu’elle raconte et apprendre à voir ce qui rend sa construction singulière. Les formes, les gestes, les durées et les relations font partie de son récit.')}
   ${a2Nav()}
-  <section class="a2-home-corpus" id="a2-work-catalogue"><div class="a2-home-corpus-head"><div><div class="a2-kicker">ENTRER DANS LE CORPUS</div><h3>Les ${workCount} œuvres</h3><p>Tous les titres sont ici, sans devoir les lire dans l’ordre. Ouvrir une œuvre suffit pour commencer.</p></div><button type="button" class="a2-text-link" onclick="go('atlas2-works')">Filtrer</button></div>
-    <div class="a2-search"><input aria-label="Rechercher dans Atlas 2" placeholder="Chercher une œuvre ou une notion…" onkeydown="if(event.key==='Enter')atlas2SearchNavigate(this.value)"><button type="button" class="a2-link" onclick="atlas2SearchNavigate(this.previousElementSibling.value)">Chercher</button></div>
-    ${a2HomeWorkList()}
+  <section class="a2-home-corpus" id="a2-work-catalogue"><div class="a2-home-corpus-head"><div><h3>Explorer les ${n} œuvres</h3><p>Choisissez un titre pour entrer dans son dossier complet. Classez les œuvres par titre, auteur, médium ou question étudiée.</p></div></div>
+  ${a2CatalogueFilters()}
+  <div id="a2-home-work-list">${a2HomeWorkList()}</div>
   </section>
-  <section class="a2-home-after"><div class="a2-kicker">ALLER PLUS LOIN</div><h3>Quand une question apparaît</h3><p>Les connexions et les outils de lecture sont disponibles dans le sommaire « Explorer les autres rubriques ». Ils n’ont pas à précéder la rencontre avec une œuvre.</p><div class="a2-home-after-links"><button type="button" class="a2-text-link" onclick="go('atlas2-network')">Comparer des œuvres</button><button type="button" class="a2-text-link" onclick="go('atlas2-lab/lab-style-queneau')">Laboratoire Queneau</button></div></section>
-  <p class="a2-footer-note">Règle de lecture : les œuvres d’abord. Même motif ≠ même fonction. Les catégories ne remplacent pas l’analyse.</p>`);
+  <section class="a2-home-after"><h3>Prolonger la lecture</h3><p>Ces deux chemins servent à passer de la lecture d’une œuvre à l’examen d’un procédé ou d’un écart entre œuvres.</p>
+   <div class="a2-home-after-links">
+    <button type="button" class="a2-home-deep-link" onclick="go('atlas2-network')"><strong>Comparer des œuvres</strong><span>Deux dossiers, deux passages précis : comprendre comment un même élément produit des effets différents.</span></button>
+    <button type="button" class="a2-home-deep-link" onclick="go('atlas2-lab/lab-style-queneau')"><strong>Laboratoire Queneau</strong><span>Comparer des variations d’écriture pour observer comment le style transforme l’expérience d’un même événement.</span></button>
+   </div>
+  </section>`);
 }
 function atlas2Works(){const filtered=atlas2FilteredWorks();return page(`${hero('ATLAS 2 · ŒUVRES','Œuvres','Chaque œuvre est présentée comme une machine singulière. Les filtres portent sur le médium et le problème étudié, sans modifier les analyses.')}${a2Nav()}${atlas2CatalogueFilters()}<div class="a2-grid">${filtered.length?workCards(filtered):'<p class="a2-catalogue-empty">Aucune œuvre ne répond à cette combinaison de filtres.</p>'}</div>`,'Atlas 2 · Œuvres','Machines narratives et formelles')}
 // V10.16 — Chaque connexion est reliée à une rubrique du dossier ou à une Route éditoriale.
