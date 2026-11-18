@@ -173,6 +173,70 @@
     </div>`;
     return shell(body,{title:'Atlas 3 · Théâtre du sentir',sub:'Le Salon · Les chapitres · Les chemins'});
   }
+
+  // V1.6.2 : notions dans le texte, pas seulement dans la boussole.
+  // Conserver la structure HTML : pas de remplacements dans les balises ou les liens.
+  const situatedAliases={
+    'chapitre-01':[['sensation','représentation'],['impression']],
+    'chapitre-02':[['attention divisée'],['surveillance de soi']],
+    'chapitre-03':[['réception'],['transformation vécue']],
+    'chapitre-04':[['moi sociaux','moi social'],['présentation de soi']],
+    'chapitre-05':[['habitude'],['parties','personnages']],
+    'chapitre-06':[['finitude'],['responsabilité']],
+    'chapitre-07':[['mémoire involontaire'],['mémoire-habitude','souvenir-habitude']],
+    'chapitre-08':[['reconstruction narrative'],['témoignage','fiction']],
+    'chapitre-09':[['monde possible'],['empathie','appropriation']],
+    'chapitre-10':[['action dramatique'],['si imaginaire']],
+    'chapitre-11':[['acte de parole'],['silence']],
+    'chapitre-12':[['proposition de jeu'],['partition ouverte']],
+    'chapitre-13':[['considération intérieure'],['Je–Tu','Je–Cela']],
+    'chapitre-14':[['écoute'],['refus']],
+    'chapitre-15':[['invention commune'],['désaccord']]
+  };
+  function linkSituatedNotions(fragment,chapterId){
+    const g=guide.chapters[chapterId],doc=typeof document==='object'?document:null;
+    if(!g?.terms?.length||!doc?.createElement||!doc?.createTreeWalker||typeof NodeFilter==='undefined')return fragment;
+    const tpl=doc.createElement('template');
+    tpl.innerHTML=String(fragment||'');
+    const terms=g.terms.flatMap((t,i)=>{
+      const choices=[t.title,...(situatedAliases[chapterId]?.[i]||[])];
+      return [...new Set(choices)].filter(s=>s.length>=4).map(s=>({i,needle:s.toLocaleLowerCase('fr')}));
+    }).sort((a,b)=>b.needle.length-a.needle.length);
+    const counts=[0,0],textNodes=[];
+    const walker=doc.createTreeWalker(tpl.content,NodeFilter.SHOW_TEXT);
+    while(walker.nextNode()){
+      const node=walker.currentNode,parent=node.parentElement;
+      if(!parent||!node.nodeValue.trim()||parent.closest('button,a,h1,h2,h3,summary,code,pre,script,style'))continue;
+      textNodes.push(node);
+    }
+    for(const node of textNodes){
+      const raw=node.nodeValue,lower=raw.toLocaleLowerCase('fr');
+      let best=null;
+      for(const term of terms){
+        if(counts[term.i]>=3)continue;
+        const pos=lower.indexOf(term.needle);
+        if(pos<0)continue;
+        const a=pos===0?'':raw[pos-1],b=raw[pos+term.needle.length]||'';
+        if((a&&/[\p{L}\p{N}]/u.test(a))||(b&&/[\p{L}\p{N}]/u.test(b)))continue;
+        if(!best||pos<best.pos||(pos===best.pos&&term.needle.length>best.term.needle.length))best={pos,term};
+      }
+      if(!best)continue;
+      const frag=doc.createDocumentFragment();
+      const label=raw.slice(best.pos,best.pos+best.term.needle.length);
+      frag.appendChild(doc.createTextNode(raw.slice(0,best.pos)));
+      const button=doc.createElement('button');
+      button.type='button';
+      button.className='a3r-inline-notion';
+      button.textContent=label;
+      button.setAttribute('onclick',"Atlas3Reader.openNotion('"+chapterId+"',"+best.term.i+")");
+      button.setAttribute('aria-label','Comprendre la notion : '+g.terms[best.term.i].title);
+      frag.appendChild(button);
+      frag.appendChild(doc.createTextNode(raw.slice(best.pos+best.term.needle.length)));
+      node.replaceWith(frag);counts[best.term.i]++;
+    }
+    return tpl.innerHTML;
+  }
+
   function chapter(id){
     const c=chapterMap[id];if(!c)return missing();
     const evidence=sourceAudit.chapters[id];
@@ -181,7 +245,7 @@
     const k=critical.chapters[id];
     const pos=data.chapters.findIndex(x=>x.id===id);
     const prev=data.chapters[pos-1], next=data.chapters[pos+1];
-    const sections=c.sections.map((s,i)=>`<details class="a3r-section" id="${e(s.id)}"${i===0?' open':''}><summary><span class="a3r-section-count">${String(i+1).padStart(2,'0')}</span><span>${e(s.title)}</span></summary><div class="a3r-prose">${s.html}</div></details>`).join('');
+    const sections=c.sections.map((s,i)=>`<details class="a3r-section" id="${e(s.id)}"${i===0?' open':''}><summary><span class="a3r-section-count">${String(i+1).padStart(2,'0')}</span><span>${e(s.title)}</span></summary><div class="a3r-prose">${linkSituatedNotions(s.html,id)}</div></details>`).join('');
     const terms=g?.terms?.map((t,i)=>`<button type="button" class="a3r-term-chip" onclick="Atlas3Reader.openNotion('${e(c.id)}',${i})">${e(t.title)}</button>`).join('')||'';
     const readingCompass=g?`<aside class="a3r-compass" aria-label="Boussole du chapitre"><div class="a3r-eyebrow">REPÈRES DE LECTURE · SITUATION VÉCUE</div><p class="a3r-compass-scene">${e(g.scene)}</p><h2>${e(g.question)}</h2><p><strong>Attention :</strong> ${e(g.limit)}</p><details class="a3r-term-collection"><summary>Deux notions à approfondir dans ce chapitre</summary><div class="a3r-term-list">${terms}</div></details></aside>`:'';
     const courses=guide.routes.filter(r=>r.stops.some(s=>s.path===chapterPath(id))).map(r=>btn(parcoursPath(r.id),r.title)).join('');
@@ -249,11 +313,12 @@
   }
   function openNotion(chapterId,index){
     const g=guide.chapters[chapterId],t=g?.terms?.[index];
+    const routes=guide.routes.filter(r=>r.stops.some(s=>s.path===chapterPath(chapterId))).slice(0,2);
     const modal=document.getElementById('a3r-notion-modal');
     if(!modal||!t)return;
     termSource=t.section_id;
     termFocus=document.activeElement;
-    modal.innerHTML=`<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title"><button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button><div class="a3r-eyebrow">NOTION SITUÉE · ${e(g.title)}</div><h2 id="a3r-notion-title">${e(t.title)}</h2><p>${e(t.text)}</p><button class="a3r-link" type="button" onclick="Atlas3Reader.goToNotionSource()">Lire le passage dans le chapitre</button></div>`;
+    modal.innerHTML=`<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title"><button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button><div class="a3r-eyebrow">NOTION SITUÉE · ${e(g.title)}</div><h2 id="a3r-notion-title">${e(t.title)}</h2><p>${e(t.text)}</p><button class="a3r-link" type="button" onclick="Atlas3Reader.goToNotionSource()">Lire le passage dans le chapitre</button>${routes.length?`<div class="a3r-notion-related"><strong>Chemins pour prolonger :</strong>${routes.map(r=>btn(parcoursPath(r.id),r.title)).join("")}</div>`:""}</div>`;
     modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();
   }
   function goToNotionSource(){
