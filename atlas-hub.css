@@ -46,3 +46,21 @@
 .atlas-hub-card-title .atlas-hub-name{font:500 22px/1.23 Georgia,serif;color:#fff5df}
 .atlas-hub-card .atlas-hub-description{font:14px/1.66 system-ui,sans-serif;color:#e1dbcf}
 @media(max-width:680px){.atlas-hub-card{min-height:0;padding:19px}.atlas-hub-card-title{margin-bottom:11px}.atlas-hub-card-title .atlas-hub-num{font-size:23px}.atlas-hub-card-title .atlas-hub-name{font-size:22px}.atlas-hub-head{padding-top:13px}}
+
+/* V10.39 — ergonomie du corpus deleuzien, sans altérer les boutons de filtrage. */
+.author-search .search{background:#fffdf8;border:1px solid #c6b89f;color:#24363c}
+.author-search .search input{color:#24363c!important;-webkit-text-fill-color:#24363c;caret-color:#24363c}
+.author-search .search input::placeholder{color:#666e6f;opacity:1}
+.author-sort{display:flex;align-items:center;justify-content:flex-start;gap:12px;margin:0 0 14px}
+.author-sort label{font:600 12px/1.5 system-ui,sans-serif;color:#435458}
+.author-sort select{border:1px solid #c8b995;border-radius:9px;background:#fbf8f1;color:#25383e;padding:7px 11px;font:13px/1.4 system-ui,sans-serif;max-width:100%}
+.author-sort select:focus-visible{outline:2px solid #346875;outline-offset:2px}
+.entity-pager button{background:#f7f0e5!important;color:#223841!important;border-color:#c9b99c!important}
+.entity-pager button small{color:#506268;opacity:1}
+.entity-pager button b{color:#223841}
+.dark-page .entity-pager button{background:#17313b!important;color:#fff7e9!important;border-color:#bfa676!important}
+.dark-page .entity-pager button b{color:#fff7e9}
+.dark-page .entity-pager button small{color:#d7bd86}
+.entity-pager button:focus-visible{outline:2px solid #b78b48;outline-offset:2px}
+.guardrail{display:none!important}
+@media(max-width:620px){.entity-pager{gap:5px}.entity-pager button{padding:10px 7px;min-width:0}.entity-pager b{font-size:11px}.author-sort{flex-wrap:wrap}}
