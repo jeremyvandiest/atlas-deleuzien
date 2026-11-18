@@ -252,3 +252,12 @@
 .a3r-transversal-after{padding:19px 20px;margin:22px 0;border:1px solid #d7cbbc;background:#faf7f0;border-radius:11px}
 .a3r-transversal-after .a3r-mini-links{gap:9px}
 @media(max-width:690px){.a3r-approaches-index{padding:15px 14px}.a3r-approaches-index .a3r-v15-form-grid{grid-template-columns:1fr}.a3r-pathway-groups{grid-template-columns:1fr}.a3r-transversal-after{padding:15px}}
+
+/* Atlas V10.40 — cinq approches, cinq surfaces cliquables, sans boutons enchâssés. */
+.a3r-approaches-index .a3r-approach-choice{display:flex;flex-direction:column;align-items:stretch;gap:6px;padding:15px 16px;text-align:left;border:1px solid #dfd5c5;border-radius:9px;background:#faf8f3;color:#294449;cursor:pointer;width:100%;min-height:100%}
+.a3r-approach-choice strong{font:600 17px/1.42 Georgia,serif;color:#294449}
+.a3r-approach-choice small{font:11px/1.45 system-ui,sans-serif;color:#65706e}
+.a3r-approach-choice span{font:14px/1.6 Georgia,serif;color:#45595d}
+.a3r-approach-choice:hover{border-color:#9e8a6c;background:#f5f0e5}
+.a3r-approach-choice:focus-visible{outline:2px solid #346875;outline-offset:2px}
+@media(max-width:690px){.a3r-approaches-index .a3r-approach-choice{padding:13px 14px;min-height:44px}}
