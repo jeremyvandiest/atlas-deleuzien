@@ -178,22 +178,22 @@
   // Conserver la structure HTML : pas de remplacements dans les balises ou les liens.
   const situatedAliases={
     'chapitre-01':[['sensation','représentation'],['impression']],
-    'chapitre-02':[['attention divisée'],['surveillance de soi']],
+    'chapitre-02':[['attention divisée','division de l’attention'],['surveillance de soi']],
     'chapitre-03':[['réception'],['transformation vécue']],
     'chapitre-04':[['moi sociaux','moi social'],['présentation de soi']],
     'chapitre-05':[['habitude'],['parties','personnages']],
     'chapitre-06':[['finitude'],['responsabilité']],
     'chapitre-07':[['mémoire involontaire'],['mémoire-habitude','souvenir-habitude']],
     'chapitre-08':[['reconstruction narrative'],['témoignage','fiction']],
-    'chapitre-09':[['monde possible'],['empathie','appropriation']],
+    'chapitre-09':[['monde possible','faire comme si'],['empathie','appropriation']],
     'chapitre-10':[['action dramatique'],['si imaginaire']],
-    'chapitre-11':[['acte de parole'],['silence']],
-    'chapitre-12':[['proposition de jeu'],['partition ouverte']],
+    'chapitre-11':[['acte de parole','actes de parole'],['silence']],
+    'chapitre-12':[['proposition de jeu','offre'],['partition ouverte']],
     'chapitre-13':[['considération intérieure'],['Je–Tu','Je–Cela']],
     'chapitre-14':[['écoute'],['refus']],
     'chapitre-15':[['invention commune'],['désaccord']]
   };
-  function linkSituatedNotions(fragment,chapterId){
+  function linkSituatedNotions(fragment,chapterId,sharedCounts){
     const g=guide.chapters[chapterId],doc=typeof document==='object'?document:null;
     if(!g?.terms?.length||!doc?.createElement||!doc?.createTreeWalker||typeof NodeFilter==='undefined')return fragment;
     const tpl=doc.createElement('template');
@@ -202,7 +202,7 @@
       const choices=[t.title,...(situatedAliases[chapterId]?.[i]||[])];
       return [...new Set(choices)].filter(s=>s.length>=4).map(s=>({i,needle:s.toLocaleLowerCase('fr')}));
     }).sort((a,b)=>b.needle.length-a.needle.length);
-    const counts=[0,0],textNodes=[];
+    const counts=sharedCounts||[0,0],textNodes=[];
     const walker=doc.createTreeWalker(tpl.content,NodeFilter.SHOW_TEXT);
     while(walker.nextNode()){
       const node=walker.currentNode,parent=node.parentElement;
@@ -245,7 +245,8 @@
     const k=critical.chapters[id];
     const pos=data.chapters.findIndex(x=>x.id===id);
     const prev=data.chapters[pos-1], next=data.chapters[pos+1];
-    const sections=c.sections.map((s,i)=>`<details class="a3r-section" id="${e(s.id)}"${i===0?' open':''}><summary><span class="a3r-section-count">${String(i+1).padStart(2,'0')}</span><span>${e(s.title)}</span></summary><div class="a3r-prose">${linkSituatedNotions(s.html,id)}</div></details>`).join('');
+    const notionCounts=[0,0];
+    const sections=c.sections.map((s,i)=>`<details class="a3r-section" id="${e(s.id)}"${i===0?' open':''}><summary><span class="a3r-section-count">${String(i+1).padStart(2,'0')}</span><span>${e(s.title)}</span></summary><div class="a3r-prose">${linkSituatedNotions(s.html,id,notionCounts)}</div></details>`).join('');
     const terms=g?.terms?.map((t,i)=>`<button type="button" class="a3r-term-chip" onclick="Atlas3Reader.openNotion('${e(c.id)}',${i})">${e(t.title)}</button>`).join('')||'';
     const readingCompass=g?`<aside class="a3r-compass" aria-label="Boussole du chapitre"><div class="a3r-eyebrow">REPÈRES DE LECTURE · SITUATION VÉCUE</div><p class="a3r-compass-scene">${e(g.scene)}</p><h2>${e(g.question)}</h2><p><strong>Attention :</strong> ${e(g.limit)}</p><details class="a3r-term-collection"><summary>Deux notions à approfondir dans ce chapitre</summary><div class="a3r-term-list">${terms}</div></details></aside>`:'';
     const courses=guide.routes.filter(r=>r.stops.some(s=>s.path===chapterPath(id))).map(r=>btn(parcoursPath(r.id),r.title)).join('');
@@ -326,7 +327,18 @@
     const d=document.getElementById(id);
     if(d){d.open=true;d.scrollIntoView({behavior:'smooth',block:'start'});d.querySelector('summary')?.focus();}
   }
-  window.addEventListener('keydown',event=>{if(event.key==='Escape'&&document.getElementById('a3r-notion-modal')?.hidden===false)closeNotion();});
+  window.addEventListener('keydown',event=>{
+    const modal=document.getElementById('a3r-notion-modal');
+    if(!modal||modal.hidden)return;
+    if(event.key==='Escape'){closeNotion();return;}
+    if(event.key!=='Tab')return;
+    const controls=[...modal.querySelectorAll('button:not([disabled]),a[href]')].filter(el=>el.getClientRects().length>0);
+    if(!controls.length)return;
+    const first=controls[0],last=controls[controls.length-1];
+    if(!modal.contains(document.activeElement)){event.preventDefault();(event.shiftKey?last:first).focus();}
+    else if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+    else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+  });
   function jumpToSection(id){
     const x=document.getElementById(id);if(!x)return;
     x.open=true;x.scrollIntoView({behavior:'smooth',block:'start'});x.querySelector('summary')?.focus();
