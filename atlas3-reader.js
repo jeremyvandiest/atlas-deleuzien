@@ -84,8 +84,8 @@
   }
   function approachesIndex(){
     const ed=edition15();if(!ed?.approaches)return '';
-    const cards=ed.approaches.map(x=>'<div class="a3r-v15-form-card"><strong>'+e(x.title)+'</strong>'+
-      '<small>'+e(x.domain)+'</small><p>'+e(x.question)+'</p>'+btn('atlas3/approche/'+x.id,'Lire l’approche')+'</div>').join('');
+    const cards=ed.approaches.map(x=>'<button type="button" class="a3r-approach-choice" onclick="go(\'atlas3/approche/'+x.id+'\')"><strong>'+e(x.title)+'</strong>'+
+      '<small>'+e(x.domain)+'</small><span>'+e(x.question)+'</span></button>').join('');
     return '<section class="a3r-approaches-index"><h2>Approches du sentir</h2><p>Cinq penseurs et traditions pour étudier l’attention, les images intérieures, la relation et les questions existentielles. Chaque dossier présente un apport, une situation et ses limites.</p>'+ 
       '<div class="a3r-v15-form-grid">'+cards+'</div></section>';
   }
@@ -160,10 +160,10 @@
     const body=`<div class="a3r-wrap"><header class="a3r-hero"><h1>Le Théâtre du sentir</h1><p>Découvrir comment les sensations, la mémoire, l’imaginaire, le corps et les rencontres participent à notre manière de vivre et de jouer une situation. Les scènes et les traditions artistiques donnent des façons concrètes d’explorer ces questions.</p></header>
       ${approachesIndex()}
       <section class="a3r-theory-after" aria-labelledby="a3r-theory-heading"><h2 id="a3r-theory-heading">Sentir, imaginer, jouer, rencontrer</h2><p class="a3r-entry-intro">Quinze chapitres répartis en cinq parties. Chacun part d’une situation, construit une question et l’approfondit à travers des textes, des exemples et des formes artistiques.</p><div class="a3r-part-grid">${parts}</div></section>
+      <section class="a3r-transversal-after"><h2>Passerelles entre les trois Atlas</h2><p>Aborder une question du sentir par la création de concepts dans Atlas 1 ou par la construction des œuvres dans Atlas 2.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div></section>
       <section class="a3r-salon-portal"><h2>Le Salon des possibles</h2><p>Sept scènes originales à lire, observer ou interpréter. Les personnages, les gestes et les variations de jeu deviennent la matière d’une exploration sensible.</p>${btn('atlas3/salon','Explorer les sept scènes','a3r-action')}</section>
       ${enquiriesIndex()}
       ${formsIndex()}
-      <section class="a3r-transversal-after"><h2>Passerelles entre les trois Atlas</h2><p>Retrouver une question du sentir sous un autre regard : la création de concepts dans Atlas 1, la construction singulière des œuvres dans Atlas 2.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div></section>
     </div>`;
     return shell(body,{title:'Atlas 3 · Théâtre du sentir',sub:'Sentir · Imaginer · Jouer · Rencontrer'});
   }
