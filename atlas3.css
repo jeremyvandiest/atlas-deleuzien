@@ -226,3 +226,8 @@
 .a3r-notion-related{margin-top:15px;border-top:1px solid #e4d8ca;padding-top:13px;display:flex;gap:8px;flex-wrap:wrap}
 .a3r-notion-related strong{font:650 12px/1.6 system-ui,sans-serif;flex-basis:100%;color:#385b61}
 .a3r-notion-related .a3r-link{font-size:12px}
+
+/* Harmonisation utilitaire V10.37 — clavier et cibles tactiles lisibles. */
+.a3r-wrap .a3r-link{min-height:40px}
+.a3r-wrap .a3r-link:focus-visible{outline:2px solid #346875;outline-offset:2px}
+@media(max-width:690px){.a3r-wrap .a3r-link{min-height:44px}}
