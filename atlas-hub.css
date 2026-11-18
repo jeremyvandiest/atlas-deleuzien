@@ -36,3 +36,13 @@
 
 /* Harmonisation utilitaire V10.37 — focus visible sur les trois portes de l'accueil. */
 .atlas-hub-card:focus-visible{outline:2px solid #e1bd79;outline-offset:3px}
+
+/* Atlas V10.39 — trois accès autonomes, sans faux appels à l'action. */
+.atlas-hub-head{padding:17px 8px 24px}
+.atlas-hub-symbol{width:76px;height:76px;object-fit:contain;margin:0 auto 12px;display:block;border-radius:16px}
+.atlas-hub-card{min-height:248px;padding:23px 20px}
+.atlas-hub-card-title{display:flex;align-items:baseline;gap:12px;margin:0 0 17px}
+.atlas-hub-card-title .atlas-hub-num{font:500 24px/1 Georgia,serif;color:#d5b072;margin:0;flex:0 0 auto}
+.atlas-hub-card-title .atlas-hub-name{font:500 22px/1.23 Georgia,serif;color:#fff5df}
+.atlas-hub-card .atlas-hub-description{font:14px/1.66 system-ui,sans-serif;color:#e1dbcf}
+@media(max-width:680px){.atlas-hub-card{min-height:0;padding:19px}.atlas-hub-card-title{margin-bottom:11px}.atlas-hub-card-title .atlas-hub-num{font-size:23px}.atlas-hub-card-title .atlas-hub-name{font-size:22px}.atlas-hub-head{padding-top:13px}}
