@@ -23,3 +23,10 @@
 .a1ped-link{background:#f9f6f0;border-color:#d8c9ae;color:#2c555e;font-size:13px;min-height:40px}
 .a1ped-link:focus-visible{outline:2px solid #346875;outline-offset:2px}
 @media(max-width:690px){.a1ped-link{min-height:44px}}
+
+/* V10.39 — une question de découverte intégrée au fil du dossier. */
+.a1ped.a1ped-compact{border:0;border-bottom:1px solid #d9cebd;border-radius:0;background:transparent;box-shadow:none;margin:6px auto 19px;padding:9px 4px 16px}
+.a1ped-compact h2{font:500 clamp(17px,2.6vw,22px)/1.36 Georgia,serif;color:#243d43;margin:0 0 9px}
+.a1ped-compact p{font:15px/1.72 Georgia,serif;color:#4a5658;max-width:790px;margin:0}
+.dark-page .a1ped-compact h2{color:#f5ead6}
+.dark-page .a1ped-compact p{color:#d6d1c6}
