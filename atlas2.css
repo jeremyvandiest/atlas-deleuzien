@@ -200,3 +200,21 @@
 .a2-page .a2-link{border-radius:8px;background:#f9f6f0;border-color:#d8c9ae;color:#2c555e;font-size:13px;min-height:40px}
 .a2-page button:focus-visible,.a2-page a:focus-visible,.a2-page select:focus-visible{outline:2px solid #346875;outline-offset:2px}
 @media(max-width:690px){.a2-page .a2-link{min-height:44px}}
+
+/* Atlas V10.39 — choix de navigation lisibles : rubriques, routes, puis catalogue. */
+.a2-nav-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.a2-nav-pair>.a2-nav-details{min-width:0;border:1px solid #d7cbbc;background:#faf7f1;border-radius:10px;padding:0 13px;align-self:start}
+.a2-nav-pair>.a2-nav-details summary{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:7px;padding:12px 0}
+.a2-nav-pair>.a2-nav-details summary span{grid-column:1;font:650 15px/1.4 system-ui,sans-serif;color:#25414a}
+.a2-nav-pair>.a2-nav-details summary small{grid-column:1;grid-row:2;font:12px/1.48 system-ui,sans-serif;color:#566a6d}
+.a2-nav-pair>.a2-nav-details summary:after{grid-column:2;grid-row:1 / span 2}
+.a2-nav-pair .a2-nav-simple{display:block;max-height:57vh;overflow-y:auto;padding:5px 0 13px}
+.a2-nav-pair .a2-nav-simple li button{padding:11px 2px}
+.a2-nav-pair .a2-nav-simple li button strong{font-size:13px}
+.a2-home-corpus{padding-top:4px}
+.a2-home-corpus-head h3{font-size:27px}
+.a2-home-deep-link{display:flex;flex-direction:column;gap:6px;flex:1 1 230px;min-width:0;text-align:left;background:#f9f6f0;border:1px solid #d7cbbc;border-radius:11px;padding:15px 16px;cursor:pointer}
+.a2-home-deep-link strong{font:600 17px/1.4 Georgia,serif;color:#28464d}
+.a2-home-deep-link span{font:13px/1.65 system-ui,sans-serif;color:#526164}
+.a2-home-deep-link:hover,.a2-home-deep-link:focus-visible{border-color:#a28a60;outline:2px solid #346875;outline-offset:2px}
+@media(max-width:660px){.a2-nav-pair{grid-template-columns:1fr;gap:9px}.a2-nav-pair .a2-nav-simple{max-height:60vh}.a2-home-deep-link{flex-basis:100%}}
