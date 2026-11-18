@@ -19,3 +19,7 @@
 .a1ped-disclaimer{font:11px/1.5 system-ui,sans-serif;color:#787067;margin:14px 0 0}
 .a1ped-home{border:1px solid #dfd4c2;border-radius:12px;background:#fdfbf7}
 @media(max-width:690px){.a1ped,.a1ped-home{padding:16px 13px}.a1ped-level p,.a1ped-depth p{font-size:15px}}
+/* Harmonisation utilitaire V10.37 — liens de lecture, focus et usage tactile. */
+.a1ped-link{background:#f9f6f0;border-color:#d8c9ae;color:#2c555e;font-size:13px;min-height:40px}
+.a1ped-link:focus-visible{outline:2px solid #346875;outline-offset:2px}
+@media(max-width:690px){.a1ped-link{min-height:44px}}
