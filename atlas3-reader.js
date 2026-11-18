@@ -47,7 +47,7 @@
     const sources=(x.sources||[]).map(id=>ed.bibliography.find(b=>b.id===id)).filter(Boolean).map(s=>
       '<li><a href="'+e(s.url)+'" target="_blank" rel="noopener noreferrer">'+e(s.title)+'</a><p>'+e(s.detail)+'</p><small>'+e(s.status)+'</small></li>'
     ).join('');
-    return '<section class="a3r-v15-field a3r-levels" aria-label="Entrer progressivement dans ce chapitre"><div class="a3r-eyebrow">ÉDITION '+e(ed.version)+' · TROIS PROFONDEURS</div>'+
+    return '<section class="a3r-v15-field a3r-levels" aria-label="Entrer progressivement dans ce chapitre"><div class="a3r-eyebrow">REPÈRES POUR LA LECTURE</div>'+
       '<h2>'+e(x.title)+'</h2>'+
       '<div class="a3r-v15-step a3r-discovery"><h3>1 · Découvrir : une situation concrète</h3><p>'+e(x.situation)+'</p><p class="a3r-v15-watch"><strong>La question :</strong> '+e(x.question)+'</p></div>'+
       '<details class="a3r-v15-depth" open><summary>2 · Comprendre ce qui change</summary><p>'+e(x.variation)+'</p><p><strong>Revenir à la scène :</strong> '+e(x.retour)+'</p></details>'+
@@ -61,9 +61,9 @@
       '<details class="a3r-v15-partition"'+(i===0?' open':'')+'><summary><span class="a3r-section-count">'+String(i+1).padStart(2,'0')+'</span>'+e(p.title)+'</summary>'+
       '<p>'+e(p.instruction)+'</p><p class="a3r-v15-watch"><strong>À regarder :</strong> '+e(p.regarder)+'</p></details>'
     ).join('');
-    return '<section class="a3r-v15-field a3r-v15-salon" aria-label="Partitions facultatives"><div class="a3r-eyebrow">ÉDITION '+e(ed.version)+' · TROIS PARTITIONS</div>'+
+    return '<section class="a3r-v15-field a3r-v15-salon" aria-label="Partitions facultatives"><div class="a3r-eyebrow">TROIS VARIATIONS DE JEU</div>'+
       '<h2>Agir, réagir, composer</h2><p class="a3r-v15-lead">'+e(x.question)+'</p>'+acts+
-      '<p class="a3r-v15-guard"><strong>Limite :</strong> '+e(x.guard)+'</p><p class="a3r-v15-lead">Chaque partition est une création d’Atlas 3, non la reproduction d’un exercice canonique. On peut simplement lire la pièce.</p></section>';
+      '<p class="a3r-v15-guard"><strong>Limite :</strong> '+e(x.guard)+'</p><p class="a3r-v15-lead">Ces trois partitions sont des créations pédagogiques d’Atlas 3. Elles offrent plusieurs façons de lire, d’observer ou de jouer cette scène.</p></section>';
   }
   function enquiriesIndex(){
     const ed=edition15();if(!ed)return '';
@@ -97,7 +97,7 @@
       btn('atlas3/'+id,'Chapitre '+id.slice(-2)+' · '+ed.chapters[id].title):'').join('');
     const scenes=(x.scenes||[]).map(id=>doorMap[id]?btn('atlas3/salon/'+id,doorMap[id].title):'').join('');
     const content='<div class="a3r-wrap">'+crumb('Approche du sentir')+
-      '<header class="a3r-hero"><div class="a3r-eyebrow">APPROCHE CRITIQUE · '+e(ed.version)+'</div><h1>'+e(x.title)+'</h1><p>'+e(x.domain)+'</p></header>'+
+      '<header class="a3r-hero"><div class="a3r-eyebrow">APPROCHES DU SENTIR</div><h1>'+e(x.title)+'</h1><p>'+e(x.domain)+'</p></header>'+
       '<article class="a3r-v15-field a3r-levels"><div class="a3r-v15-step a3r-discovery"><h3>1 · Découvrir</h3><p>'+e(x.intro)+'</p><p><strong>Question :</strong> '+e(x.question)+'</p></div>'+
       '<details class="a3r-v15-depth" open><summary>2 · Comprendre l’apport de cette approche</summary><p>'+e(x.principle)+'</p><h3>Une situation pour en éprouver la portée</h3><p>'+e(x.example)+'</p></details>'+
       '<details class="a3r-v15-depth"><summary>3 · Approfondir : concepts, contradictions et limites</summary><p>'+e(x.counter)+'</p><p><strong>Limite :</strong> '+e(x.boundary)+'</p>'+
@@ -130,12 +130,12 @@
     const reference=ref?'<div class="a3r-v15-sources"><h3>Document et statut de vérification</h3><a href="'+e(ref.url)+'" target="_blank" rel="noopener noreferrer">'+e(ref.title)+'</a>'+
       '<p>'+e(ref.detail)+'</p><small>'+e(ref.status)+'</small></div>':'';
     const body='<div class="a3r-wrap">'+crumb('Forme théâtrale')+
-      '<header class="a3r-hero"><div class="a3r-eyebrow">BIBLIOTHÈQUE DES FORMES · '+e(ed.version)+'</div><h1>'+e(x.title)+'</h1><p>'+e(x.work)+'</p></header>'+
+      '<header class="a3r-hero"><div class="a3r-eyebrow">ÉCOLES ET FORMES DE THÉÂTRE</div><h1>'+e(x.title)+'</h1><p>'+e(x.work)+'</p></header>'+
       '<article class="a3r-v15-field a3r-levels">'+
       '<div class="a3r-v15-step a3r-discovery"><h3>1 · Découvrir : quel problème cette tradition rencontre-t-elle ?</h3><p>'+e(x.problem)+'</p></div>'+
       '<details class="a3r-v15-depth" open><summary>2 · Comprendre ce que cette école fait travailler</summary><p>'+e(x.operation)+'</p><h3>Une situation de découverte</h3><p>'+e(x.scene)+'</p></details>'+
       '<details class="a3r-v15-depth"><summary>3 · Approfondir : singularité, contrepoint et limite</summary><p>'+e(x.contrast)+'</p><p><strong>Ce qu’il ne faut pas conclure :</strong> '+e(x.limit)+'</p>'+reference+'</details></article>'+
-      '<section class="a3r-v15-related"><h2>Revenir à l’expérience</h2><p>La situation originale n’est pas un exercice authentifié de cette école ; la lecture de l’œuvre et l’essai personnel demeurent facultatifs.</p><div class="a3r-mini-links">'+related+scenes+'</div></section>'+
+      '<section class="a3r-v15-related"><h2>Revenir à l’expérience</h2><p>La situation présentée est une création pédagogique d’Atlas 3. Les textes de chaque école permettent d’en approfondir les méthodes historiques.</p><div class="a3r-mini-links">'+related+scenes+'</div></section>'+
       btn('atlas3','Revenir au Théâtre du sentir')+'</div>';
     return shell(body,{title:'Atlas 3 · '+x.title,sub:'Bibliothèque des formes'});
   }
@@ -145,9 +145,9 @@
     const rows=route.steps.map((step,i)=>
       '<li class="a3r-course-step"><div class="a3r-course-step-index">'+String(i+1).padStart(2,'0')+'</div><div><h3>'+e(step[1])+'</h3><p>'+e(step[2])+'</p>'+btn(step[0],'Ouvrir cette étape','a3r-action')+'</div></li>'
     ).join('');
-    const body='<div class="a3r-wrap">'+crumb('Enquête sur les formes')+'<header class="a3r-hero"><div class="a3r-eyebrow">ENQUÊTE TRANSVERSALE · ÉDITION '+e(ed.version)+'</div>'+
+    const body='<div class="a3r-wrap">'+crumb('Enquête sur les formes')+'<header class="a3r-hero"><div class="a3r-eyebrow">ENQUÊTE SUR LES FORMES</div>'+
       '<h1>'+e(route.title)+'</h1><p>'+e(route.question)+'</p></header><p class="a3r-v15-lead">'+e(route.intro)+'</p>'+
-      '<ol class="a3r-course-steps">'+rows+'</ol><p class="a3r-v15-guard"><strong>À ne pas confondre :</strong> '+e(route.limit)+'</p>'+
+      '<ol class="a3r-course-steps">'+rows+'</ol><p class="a3r-v15-guard"><strong>Pour préciser :</strong> '+e(route.limit)+'</p>'+
       btn('atlas3','Revenir à Atlas 3')+'</div>';
     return shell(body,{title:'Atlas 3 · '+route.title,sub:'Enquête sur les formes'});
   }
@@ -244,7 +244,7 @@
     const terms=g?.terms?.map((t,i)=>`<button type="button" class="a3r-term-chip" onclick="Atlas3Reader.openNotion('${e(c.id)}',${i})">${e(t.title)}</button>`).join('')||'';
     const readingCompass=g?`<aside class="a3r-compass" aria-label="Boussole du chapitre"><div class="a3r-eyebrow">REPÈRES DE LECTURE · SITUATION VÉCUE</div><p class="a3r-compass-scene">${e(g.scene)}</p><h2>${e(g.question)}</h2><p><strong>Attention :</strong> ${e(g.limit)}</p><details class="a3r-term-collection"><summary>Deux notions à approfondir dans ce chapitre</summary><div class="a3r-term-list">${terms}</div></details></aside>`:'';
     const courses=guide.routes.filter(r=>r.stops.some(s=>s.path===chapterPath(id))).map(r=>btn(parcoursPath(r.id),r.title)).join('');
-    const criticalBlock=k?`<aside class="a3r-critical"><div class="a3r-eyebrow">CONTRE-ÉPREUVE · LECTURE CRITIQUE V1.3</div><h2>${e(k.title)}</h2><p class="a3r-critical-intro">Une situation pour mettre à l'épreuve la lecture sans en faire un diagnostic ni une vérité de l'expérience.</p>${k.paragraphs.map(p=>`<p>${e(p)}</p>`).join('')}<p class="a3r-critical-limit"><strong>À distinguer :</strong> ${e(k.limit)}</p><button type="button" class="a3r-link" onclick="Atlas3Reader.jumpToSection('${e(k.source)}')">Revenir au passage source</button></aside>`:'';
+    const criticalBlock=k?`<aside class="a3r-critical"><div class="a3r-eyebrow">ÉPROUVER LA QUESTION</div><h2>${e(k.title)}</h2><p class="a3r-critical-intro">Une seconde situation permet de distinguer ce que l’on observe, ce que l’on interprète et les conséquences que l’on en tire.</p>${k.paragraphs.map(p=>`<p>${e(p)}</p>`).join('')}<p class="a3r-critical-limit"><strong>À distinguer :</strong> ${e(k.limit)}</p><button type="button" class="a3r-link" onclick="Atlas3Reader.jumpToSection('${e(k.source)}')">Revenir au passage source</button></aside>`:'';
     const relatedCourses=courses?`<aside class="a3r-course-rel"><div class="a3r-eyebrow">CHEMINS DE LECTURE · FACULTATIFS</div><p>Cette question traverse également un parcours de situations. Vous pouvez y entrer ou poursuivre ce chapitre seul.</p><div class="a3r-mini-links">${courses}</div></aside>`:'';
     const doors=(c.salon_portes||[]).map(d=>doorMap[d]?btn(doorPath(d),doorMap[d].title):'').join('');
     const evidenceHtml=evidence?`<div class="a3r-evidence"><h3>Vérification documentaire ciblée · ${e(evidence.degree)}</h3><p><b>Énoncé :</b> ${e(evidence.claim)}</p><p>${e(evidence.evidence)}</p><p><b>Réserve :</b> ${e(evidence.limit)}</p>${evidence.url?`<p><a href="${e(evidence.url)}" target="_blank" rel="noopener noreferrer">Consulter la source contrôlée</a></p>`:''}<small>Ce contrôle ne certifie pas l'ensemble du chapitre ni des pratiques décrites.</small></div>`:'';
