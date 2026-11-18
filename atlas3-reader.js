@@ -122,22 +122,19 @@
       forms.map(x=>btn('atlas3/forme/'+x.id,x.title)).join('')+'</div></nav>';
   }
   function formPage(id){
-    const ed=edition15(),x=ed&&ed.forms&&ed.forms.find(z=>z.id===id);
-    if(!x)return missing();
-    const ref=ed.bibliography.find(b=>b.id===x.source);
-    const panels=[['Le problème de départ',x.problem],['Ce que cette approche fait travailler',x.operation],
-      ['Situation originale pour éprouver la différence',x.scene],['Le contrepoint avec les autres formes',x.contrast],
-      ['Ce qu’il serait abusif de conclure',x.limit]]
-      .map(t=>'<section class="a3r-v15-step"><h3>'+e(t[0])+'</h3><p>'+e(t[1])+'</p></section>').join('');
-    const related=x.related.map(id=>ed.chapters[id]?
-      btn('atlas3/'+id,'Chapitre '+id.slice(-2)+' · '+ed.chapters[id].title):'').join('');
-    const scenes=x.salon.map(id=>data.salon.doors.find(z=>z.id===id)?btn('atlas3/salon/'+id,data.salon.doors.find(z=>z.id===id).title):'').join('');
-    const source=ref?'<details class="a3r-v15-sources"><summary>Repère bibliographique et statut</summary><a href="'+e(ref.url)+'" target="_blank" rel="noopener noreferrer">'+e(ref.title)+'</a>'+
-      '<p>'+e(ref.detail)+'</p><p>'+e(ref.status)+'</p></details>':'';
+    const ed=edition15(),x=ed?.forms?.find(z=>z.id===id);if(!x)return missing();
+    const ref=ed.bibliography.find(z=>z.id===x.source);
+    const related=x.related.map(id=>ed.chapters[id]?btn('atlas3/'+id,'Chapitre '+id.slice(-2)+' · '+ed.chapters[id].title):'').join('');
+    const scenes=x.salon.map(id=>doorMap[id]?btn('atlas3/salon/'+id,doorMap[id].title):'').join('');
+    const reference=ref?'<div class="a3r-v15-sources"><h3>Document et statut de vérification</h3><a href="'+e(ref.url)+'" target="_blank" rel="noopener noreferrer">'+e(ref.title)+'</a>'+
+      '<p>'+e(ref.detail)+'</p><small>'+e(ref.status)+'</small></div>':'';
     const body='<div class="a3r-wrap">'+crumb('Forme théâtrale')+
-      '<header class="a3r-hero"><div class="a3r-eyebrow">BIBLIOTHÈQUE DES FORMES · V1.6</div><h1>'+e(x.title)+'</h1><p>'+e(x.work)+'</p></header>'+
-      '<article class="a3r-v15-field">'+panels+source+'</article>'+
-      '<section class="a3r-v15-related"><h2>Revenir à l’expérience</h2><p>La pratique et l’œuvre restent distinctes de ce dossier de lecture.</p><div class="a3r-mini-links">'+related+scenes+'</div></section>'+
+      '<header class="a3r-hero"><div class="a3r-eyebrow">BIBLIOTHÈQUE DES FORMES · '+e(ed.version)+'</div><h1>'+e(x.title)+'</h1><p>'+e(x.work)+'</p></header>'+
+      '<article class="a3r-v15-field a3r-levels">'+
+      '<div class="a3r-v15-step a3r-discovery"><h3>1 · Découvrir : quel problème cette tradition rencontre-t-elle ?</h3><p>'+e(x.problem)+'</p></div>'+
+      '<details class="a3r-v15-depth" open><summary>2 · Comprendre ce que cette école fait travailler</summary><p>'+e(x.operation)+'</p><h3>Une situation de découverte</h3><p>'+e(x.scene)+'</p></details>'+
+      '<details class="a3r-v15-depth"><summary>3 · Approfondir : singularité, contrepoint et limite</summary><p>'+e(x.contrast)+'</p><p><strong>Ce qu’il ne faut pas conclure :</strong> '+e(x.limit)+'</p>'+reference+'</details></article>'+
+      '<section class="a3r-v15-related"><h2>Revenir à l’expérience</h2><p>La situation originale n’est pas un exercice authentifié de cette école ; la lecture de l’œuvre et l’essai personnel demeurent facultatifs.</p><div class="a3r-mini-links">'+related+scenes+'</div></section>'+
       btn('atlas3','Revenir au Théâtre du sentir')+'</div>';
     return shell(body,{title:'Atlas 3 · '+x.title,sub:'Bibliothèque des formes'});
   }
