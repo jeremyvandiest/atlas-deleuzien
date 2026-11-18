@@ -35,10 +35,12 @@
     firstParagraph=(candidates[0]||'').slice(0,650);
     const metaDescription=String(meta.desc||'').trim();
     const title=meta.name||meta.title||'';
-    const discovery=hasGuide?guide.scene:(firstParagraph||metaDescription);
+    const secondParagraph=(candidates.find(x=>x!==firstParagraph)||'').slice(0,800);
+    const thirdParagraph=(candidates.find(x=>x!==firstParagraph&&x!==secondParagraph)||'').slice(0,800);
+    const discovery=hasGuide?guide.scene:(metaDescription||firstParagraph);
     const question=hasGuide?guide.lead:(meta.type==='work'?'Quel problème ce livre construit-il, et comment Deleuze en fait-il avancer la réponse ?':meta.type==='route'?'Comment ce même problème change-t-il lorsqu’il passe d’une pensée à une autre ?':meta.type==='interlude'?'En quoi ce milieu intellectuel éclaire-t-il les transformations opérées par Deleuze ?':'Quel problème ce penseur permet-il à Deleuze de reformuler ?');
     const mechanism=hasGuide?guide.mechanism:(firstParagraph||metaDescription||'Commencer par le premier mouvement du dossier : déterminer le problème philosophique avant d’étudier les notions.');
-    const deep=hasGuide?guide.deeper:'Continuer la lecture intégrale : ne pas isoler un concept de ses arguments, de ses objections et de ses sources.';
+    const deep=hasGuide?guide.deeper:(secondParagraph||thirdParagraph||'Continuer la lecture intégrale : ne pas isoler un concept de ses arguments, de ses objections et de ses sources.');
     const limits=hasGuide?guide.limit:'Ce guide est une orientation éditoriale à partir du dossier existant, pas une lecture critique supplémentaire de ses sources. Distinguer la philosophie de l’auteur de ce que Deleuze en retient.';
     const links=hasGuide?buttons(guide.links):'';
     const toc=headings.slice(0,12).map(h=>'<li><button type="button" onclick="document.getElementById(\''+h.id+'\')?.scrollIntoView({behavior:\'smooth\',block:\'start\'})">'+safe(h.title)+'</button></li>').join('');
