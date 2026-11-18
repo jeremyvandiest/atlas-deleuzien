@@ -81,7 +81,7 @@ function a2HomeWorkList(){
 function atlas2Home(){
   const workCount=A(D.works).length, transformations=A(D.transformations).length;
   return page(`${hero('ATLAS 2','Atlas des récits et des formes','Découvrir ce que font les œuvres : comment un geste, une forme ou une durée modifient le récit, les relations et notre lecture.')}
-  <section class="a2-section" aria-label="Lectures approfondies V4.3"><div class="a2-kicker">NOUVELLE ÉDITION · 28 DOSSIERS</div><h3>Lire les œuvres en profondeur</h3><p>Les 28 dossiers approfondis sont désormais consultables directement dans les fiches Œuvres d’Atlas 2, avec notions cliquables et routes. Kafka et Jeanne Dielman conservent leurs dossiers pilotes dans l’Atlas.</p><p><button type="button" class="a2-link" onclick="go('atlas2-works')">Parcourir les dossiers dans Atlas 2</button></p></section>
+  <section class="a2-section" aria-label="Lectures approfondies V4.3"><div class="a2-kicker">NOUVELLE ÉDITION · 30 DOSSIERS</div><h3>Lire les œuvres en profondeur</h3><p>Les 30 œuvres sont consultables directement dans les fiches Œuvres d’Atlas 2, avec notions cliquables et routes : les deux pilotes et les 28 dossiers V4.3. Kafka et Jeanne Dielman conservent leurs dossiers pilotes dans l’Atlas.</p><p><button type="button" class="a2-link" onclick="go('atlas2-works')">Parcourir les dossiers dans Atlas 2</button></p></section>
   <section class="a2-home-guidance" aria-labelledby="a2-guidance-title">
     <div class="a2-kicker">VOTRE POINT DE DÉPART</div><h3 id="a2-guidance-title">Par où commencer ?</h3>
     <p>Il n’est pas nécessaire de connaître la cartographie avant de lire. Deux portes suffisent ; les autres notions deviennent utiles au fil des œuvres.</p>
@@ -167,13 +167,13 @@ function atlas2Network(){
 }
 let a2V43State='idle',a2V43Active=null,a2V43ReturnFocus=null;
 function a2V43Ensure(){
- if(Array.isArray(window.__ATLAS2_V43_BOOKS__)&&window.__ATLAS2_V43_BOOKS__.length===28)return true;
+ if(Array.isArray(window.__ATLAS2_V43_BOOKS__)&&window.__ATLAS2_V43_BOOKS__.length===30)return true;
  if(a2V43State!=='idle')return false;
  a2V43State='loading';
  const script=document.createElement('script');
- script.src='./atlas2-v43-data.js';
+ script.src='./atlas2-v43-data.js?v=10.22';
  script.onload=()=>{
-  a2V43State=Array.isArray(window.__ATLAS2_V43_BOOKS__)&&window.__ATLAS2_V43_BOOKS__.length===28?'ready':'error';
+  a2V43State=Array.isArray(window.__ATLAS2_V43_BOOKS__)&&window.__ATLAS2_V43_BOOKS__.length===30?'ready':'error';
   if(current().startsWith('atlas2-work/'))render();
  };
  script.onerror=()=>{a2V43State='error';if(current().startsWith('atlas2-work/'))render();};
@@ -236,7 +236,7 @@ function a2V43WorkPage(w,b){
   ${hero(workHeroKicker(w),w.title,E(w.card))}
   ${a2Nav()}
   <section class="a2-v43-intro">
-   <div class="a2-kicker">DOSSIER APPROFONDI · V4.3</div>
+   <div class="a2-kicker">${b.pilot?'DOSSIER PILOTE · '+E(b.pilot):'DOSSIER APPROFONDI · V4.3'}</div>
    <p>Commencez par la traversée de l’œuvre. Les notions soulignées et les boutons « Comprendre » ouvrent des explications sans quitter cette page.</p>
    ${warning}
    <details class="a2-v43-map"><summary>Sommaire détaillé du dossier</summary><div class="a2-v43-map-list">${toc}</div></details>
@@ -282,8 +282,8 @@ window.a2V43Retry=a2V43Retry;window.a2V43OpenConcept=a2V43OpenConcept;window.a2V
 function atlas2Work(){
  const id=arg(),w=work(id),c=WC[id];
  if(!w)return page(hero('ERREUR','Œuvre introuvable','Cet identifiant n’existe pas dans Atlas 2.'));
- if(w.order!==1&&w.order!==19&&a2V43Ensure()){const b=window.__ATLAS2_V43_BOOKS__.find(x=>Number(x.id.slice(0,2))===Number(w.order));if(b)return a2V43WorkPage(w,b);}
- const v43Entry=(w.order===1||w.order===19)?'':a2V43LoadingBlock();
+ if(a2V43Ensure()){const b=window.__ATLAS2_V43_BOOKS__.find(x=>Number(x.id.slice(0,2))===Number(w.order));if(b)return a2V43WorkPage(w,b);}
+ const v43Entry=a2V43LoadingBlock();
  const jump=(target,label)=>`<button type="button" onclick="document.getElementById('${target}').scrollIntoView({behavior:'smooth',block:'start'})">${label}</button>`;
  const sectionJump=A(c?.sections).map((row,i)=>jump('a2s-'+i,E(row[0]))).join('');
  const hasArticulations=A(REL.internal?.[w.id]).length>0 && A(c?.sections).length>0;
