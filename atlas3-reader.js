@@ -69,7 +69,7 @@
     const ed=edition15();if(!ed)return '';
     const links=ed.enquiries.map(x=>'<li>'+btn('atlas3/enquete/'+x.id,x.title)+'</li>').join('');
     return '<section class="a3r-v15-enquiries"><div class="a3r-eyebrow">POUR PROLONGER · PARCOURS LIBRES V1.6</div>'+
-      '<h2>${ed.enquiries.length} enquêtes pour circuler</h2><p>'+e(ed.principle)+'</p><ul>'+links+'</ul>'+
+      '<h2>'+ed.enquiries.length+' enquêtes pour circuler</h2><p>'+e(ed.principle)+'</p><ul>'+links+'</ul>'+
       '<details><summary>Ce que cette édition n’affirme pas</summary><p>'+ed.limits.map(e).join('</p><p>')+'</p></details></section>';
   }
 
