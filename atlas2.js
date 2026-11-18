@@ -81,6 +81,7 @@ function a2HomeWorkList(){
 function atlas2Home(){
   const workCount=A(D.works).length, transformations=A(D.transformations).length;
   return page(`${hero('ATLAS 2','Atlas des récits et des formes','Découvrir ce que font les œuvres : comment un geste, une forme ou une durée modifient le récit, les relations et notre lecture.')}
+  <section class="a2-section" aria-label="Lectures approfondies V4.3"><div class="a2-kicker">NOUVELLE ÉDITION · 28 DOSSIERS</div><h3>Lire les œuvres en profondeur</h3><p>Les 28 dossiers approfondis se parcourent dans un lecteur dédié, avec notions contextualisées cliquables et routes. Kafka et Jeanne Dielman conservent leurs dossiers pilotes dans l’Atlas.</p><p><a class="a2-link" style="display:inline-block;text-decoration:none" href="./atlas2-lecteur-v43.html">Explorer les 28 dossiers V4.3</a></p></section>
   <section class="a2-home-guidance" aria-labelledby="a2-guidance-title">
     <div class="a2-kicker">VOTRE POINT DE DÉPART</div><h3 id="a2-guidance-title">Par où commencer ?</h3>
     <p>Il n’est pas nécessaire de connaître la cartographie avant de lire. Deux portes suffisent ; les autres notions deviennent utiles au fil des œuvres.</p>
@@ -167,12 +168,14 @@ function atlas2Network(){
 function atlas2Work(){
  const id=arg(),w=work(id),c=WC[id];
  if(!w)return page(hero('ERREUR','Œuvre introuvable','Cet identifiant n’existe pas dans Atlas 2.'));
+ const v43Entry=(w.id==='work-kafka-metamorphose'||w.id==='work-akerman-jeanne-dielman')?'':`<section class="a2-section" aria-label="Édition approfondie V4.3"><div class="a2-kicker">DOSSIER ÉDITORIAL APPROFONDI · V4.3</div><h3>Continuer la lecture de cette œuvre</h3><p>Retrouvez la traversée complète, les analyses de scènes et de formes, les notions expliquées et une route discrète vers une autre œuvre.</p><p><a class="a2-link" style="display:inline-block;text-decoration:none" href="./atlas2-lecteur-v43.html#${String(w.order).padStart(2,'0')}">Ouvrir le dossier V4.3</a></p>${w.status==='PROVISIONAL'?'<p class="a2-footer-note">Dossier documentaire provisoire : vérification directe du film complet encore nécessaire.</p>':''}</section>`;
  const jump=(target,label)=>`<button type="button" onclick="document.getElementById('${target}').scrollIntoView({behavior:'smooth',block:'start'})">${label}</button>`;
  const sectionJump=A(c?.sections).map((row,i)=>jump('a2s-'+i,E(row[0]))).join('');
  const hasArticulations=A(REL.internal?.[w.id]).length>0 && A(c?.sections).length>0;
  const toc=`<details class="a2-dossier-map"><summary>Aller directement à une partie du dossier</summary><div class="a2-dossier-map-items">${jump('a2-machine','En quelques mots')}${jump('a2-traversee','Traversée de l’œuvre')}${hasArticulations?jump('a2-cartography','Articulations'):''}${sectionJump}${jump('a2-crosscartography','Comparaisons')}${jump('a2-raccords','Raccords')}</div></details>`;
  return page(`
  ${hero(workHeroKicker(w),w.title,E(w.card))}
+ ${v43Entry}
  <section class="a2-dossier-guide" aria-label="Comment lire cette analyse">
   <div class="a2-kicker">VOTRE CHEMIN DE LECTURE</div>
   <h3>Lire cette œuvre sans se perdre</h3>
