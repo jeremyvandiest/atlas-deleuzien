@@ -21,7 +21,7 @@
   const section = (title, body, cls='') => `<section class="a3r-block ${cls}"><h2>${e(title)}</h2>${body}</section>`;
   const btn = (path, label, cls='') => `<button type="button" class="a3r-link ${cls}" onclick="go('${path}')">${e(label)}</button>`;
   const crumb = (extra='') => `<nav class="a3r-crumb" aria-label="Navigation Atlas 3">${btn('atlas3','Accueil d’Atlas 3')}${extra ? `<span>${e(extra)}</span>` : ''}</nav>`;
-  const note = `<p class="a3r-publication">${e(data.status)}. Les sources et leurs limites sont disponibles dans chaque chapitre.</p>`;
+  const note = ''; // Les numéros de version et mentions internes restent hors du lecteur.
   const C = name => data.chapters.find(c => c.id === name);
 
   // Les noms de notes internes dans les bibliographies ne sont pas des URL publiques.
@@ -42,6 +42,112 @@
   /* V1.5 : supplément de situations et de formes ; aucun changement au corpus source. */
   function edition15(){return window.ATLAS3_V15||null;}
 
+  /* Exercices originaux : expérience située, regard critique et transposition dans la vie ordinaire.
+     Aucun exercice ne constitue une méthode clinique ni une consigne de performance. */
+  const lifePractices={
+  "chapitre-01": {
+    "title": "Distinguer une sensation d'une interprétation",
+    "essai": "En arrivant dans un lieu familier ou nouveau, prenez quelques instants pour relever trois faits perceptibles : une lumière, un bruit, un appui, une température. Formulez séparément l'impression générale qui vous vient. Si c'est possible, modifiez un seul élément matériel, par exemple votre place.",
+    "observer": "Qu'avez-vous réellement perçu ? Qu'aviez-vous déjà supposé ? L'impression a-t-elle changé après ce petit déplacement ?",
+    "transposer": "Utile lorsque vous prenez rapidement un endroit, une ambiance ou une personne pour « accueillant » ou « hostile ». Il ne s'agit pas de mépriser une intuition, mais d'en distinguer les indices."
+  },
+  "chapitre-02": {
+    "title": "Écouter au lieu de vérifier sa propre présence",
+    "essai": "Dans une conversation sans enjeu particulier, essayez pendant un échange de porter l'attention sur la dernière phrase de votre interlocuteur plutôt que sur votre posture, votre répartie ou l'image que vous donnez. Répondez à ce que vous avez entendu, sans chercher une réponse parfaite.",
+    "observer": "Quelle information nouvelle avez-vous réellement reçue ? Qu'est-ce qui vous a échappé lorsque vous contrôliez votre manière d'être ?",
+    "transposer": "À explorer dans une discussion ordinaire, une répétition ou un travail collectif. Être attentif n'oblige ni à fixer l'autre ni à être disponible à tout moment."
+  },
+  "chapitre-03": {
+    "title": "Laisser une expérience rester ordinaire",
+    "essai": "Pendant une minute, remarquez un détail banal : un reflet sur une table, une variation de température, un bruit au loin. N'essayez ni de prolonger l'impression ni d'en tirer une révélation. Reprenez ensuite votre activité.",
+    "observer": "Quelque chose a-t-il simplement été remarqué ? Ou rien de notable n'est-il arrivé ? Les deux réponses sont possibles.",
+    "transposer": "Cette expérience aide à sortir de l'idée qu'un moment de présence doit nécessairement être intense, apaisant ou transformateur."
+  },
+  "chapitre-04": {
+    "title": "Observer ses rôles sans chercher un « vrai moi »",
+    "essai": "Choisissez une information banale que vous pourriez communiquer à un ami, à un collègue ou à un inconnu. Imaginez ou formulez deux manières de la dire selon le destinataire, sans changer les faits.",
+    "observer": "Quels mots, gestes ou niveaux de précision se déplacent avec la relation ? Qu'est-ce qui reste constant ?",
+    "transposer": "Dans la vie quotidienne, changer de registre ne signifie pas forcément se trahir. La question est plutôt de comprendre ce que chaque situation demande et ce qu'elle vous permet."
+  },
+  "chapitre-05": {
+    "title": "Rendre visible un automatisme",
+    "essai": "Choisissez une habitude sans conséquence importante — votre place à table, l'ordre d'une petite tâche, votre chemin dans une pièce — et faites-la autrement une seule fois. Ne cherchez pas à transformer toute votre routine.",
+    "observer": "À quel moment êtes-vous revenu spontanément vers l'ancienne façon de faire ? Était-ce une commodité, une contrainte réelle ou une préférence ?",
+    "transposer": "Quand une réaction paraît « être vous », observer ses circonstances permet parfois de distinguer une habitude utile d'une possibilité de choix."
+  },
+  "chapitre-06": {
+    "title": "Choisir lorsque le temps est limité",
+    "essai": "Devant un créneau réellement court et trois tâches possibles, décidez laquelle mérite ce temps et lesquelles peuvent attendre. Prenez votre décision sans chercher ensuite à justifier chacune des options écartées.",
+    "observer": "Qu'est-ce que la limite a rendu plus clair ? A-t-elle changé l'importance de la tâche ou seulement l'urgence ressentie ?",
+    "transposer": "La conscience d'une limite peut éclairer des priorités personnelles ; elle ne commande pas d'optimiser chaque minute."
+  },
+  "chapitre-07": {
+    "title": "Accueillir un souvenir qui vient de lui-même",
+    "essai": "Si une odeur, une musique ou un lieu fait surgir spontanément un souvenir ordinaire, remarquez quel détail du présent l'a appelé. Vous pouvez le noter en quelques mots, puis revenir à ce que vous faisiez. Inutile de chercher volontairement un souvenir.",
+    "observer": "Qu'est-ce qui appartient à la sensation présente, et qu'est-ce que la mémoire ajoute ? Le souvenir s'est-il imposé ou n'est-il pas venu ?",
+    "transposer": "Permet d'observer les liens entre expérience et mémoire sans faire de la reviviscence émotionnelle un exercice ni une obligation."
+  },
+  "chapitre-08": {
+    "title": "Distinguer les faits du récit que l'on en fait",
+    "essai": "Reprenez un événement mineur de la journée : une attente, un objet égaré, un retard. Écrivez une phrase décrivant ce qui s'est passé, puis une phrase décrivant ce que cela a signifié pour vous. Imaginez enfin ce qu'un autre participant aurait pu remarquer.",
+    "observer": "Quels éléments sont communs aux versions, et quels éléments dépendent du point de vue ? Avez-vous confondu une hypothèse sur l'autre avec son expérience réelle ?",
+    "transposer": "À utiliser pour relire un malentendu léger sans prétendre connaître à l'avance les intentions d'autrui."
+  },
+  "chapitre-09": {
+    "title": "Donner une forme concrète à l'imaginaire",
+    "essai": "Prenez un objet ordinaire et imaginez, le temps d'un geste, qu'il est particulièrement fragile ou lourd, sans modifier l'objet lui-même. Portez-le de deux manières et observez les choix de mouvement, de rythme et de distance.",
+    "observer": "Qu'est-ce qui a changé dans l'action grâce à cette hypothèse ? Qu'est-ce qui n'a pas changé dans la réalité de l'objet ?",
+    "transposer": "L'imagination peut élargir les manières d'agir ou de créer sans que l'on doive attribuer un sens psychologique caché à chaque geste."
+  },
+  "chapitre-10": {
+    "title": "Partir d'une action plutôt que fabriquer un état",
+    "essai": "Dans une situation simple, formulez ce que vous voulez faire concrètement : demander une précision, transmettre une information, proposer un horaire. Distinguez cette action d'un état que vous aimeriez ressentir, comme « être à l'aise » ou « avoir confiance ».",
+    "observer": "Que s'est-il passé lorsque vous avez agi ? La réponse de l'autre a-t-elle déplacé votre objectif ? L'émotion a-t-elle changé ou non ?",
+    "transposer": "Dans les interactions, comme sur scène, les actes peuvent être travaillés directement ; le sentiment qui les accompagne ne se commande pas."
+  },
+  "chapitre-11": {
+    "title": "Entendre ce que la formulation transforme",
+    "essai": "Prononcez à voix basse « On a encore le temps » en marquant d'abord une pause après « encore », puis en laissant la phrase couler. Imaginez dans quel contexte l'une ou l'autre version pourrait retenir, rassurer ou reporter une décision.",
+    "observer": "Qu'est-ce qui change avec l'accent, la durée et l'adresse ? Quels effets restent seulement supposés tant qu'un autre n'a pas répondu ?",
+    "transposer": "Avant une conversation délicate, explorer plusieurs formulations peut aider à choisir une parole plus juste sans prétendre contrôler son effet."
+  },
+  "chapitre-12": {
+    "title": "Inventer à partir d'une contrainte réelle",
+    "essai": "Choisissez un petit problème quotidien qui admet plusieurs solutions : une activité à organiser avec peu de temps ou un espace limité. Fixez les contraintes effectives, puis imaginez deux façons de procéder sans supprimer ces contraintes.",
+    "observer": "Quelle possibilité n'apparaissait pas tant que vous cherchiez une solution idéale ? Quel obstacle reste réel ?",
+    "transposer": "L'improvisation ne signifie pas agir au hasard : elle consiste à répondre avec les moyens et les partenaires présents."
+  },
+  "chapitre-13": {
+    "title": "Faire place à une réponse inattendue",
+    "essai": "Dans une conversation ordinaire, posez une question ouverte dont vous n'avez pas décidé la réponse à l'avance. Écoutez sans ramener immédiatement ce qui est dit à votre propre exemple ; laissez à l'autre le choix de ne pas développer.",
+    "observer": "Qu'avez-vous appris que vous ne pouviez pas prévoir ? À quel moment vouliez-vous reprendre la direction de l'échange ?",
+    "transposer": "La rencontre suppose une différence irréductible entre deux personnes ; elle n'exige ni dévoilement intime ni accord."
+  },
+  "chapitre-14": {
+    "title": "Écouter et poser une limite",
+    "essai": "Représentez-vous une demande quotidienne à laquelle vous ne pouvez pas répondre favorablement. Formulez un refus bref et courtois, puis une alternative éventuelle si vous souhaitez réellement en proposer une. Il peut s'agir d'une répétition solitaire.",
+    "observer": "Le refus devient-il moins clair lorsque vous cherchez à vous justifier longuement ? Qui supporte le coût du refus dans la situation envisagée ?",
+    "transposer": "Comprendre une demande ne crée pas l'obligation d'y consentir. Le rapport d'autorité et les conséquences concrètes comptent dans la manière de répondre."
+  },
+  "chapitre-15": {
+    "title": "Construire quelque chose sans effacer l'autre",
+    "essai": "Dans une petite décision partagée — organiser un repas, une sortie ou une activité — partez d'une proposition d'autrui et ajoutez une contribution qui la transforme sans l'annuler. Si l'idée ne vous convient pas, dites clairement où se situe le désaccord.",
+    "observer": "Qu'est-ce qui a véritablement été inventé ensemble ? Quels choix appartiennent encore à chacun ?",
+    "transposer": "Créer à plusieurs n'oblige pas à fusionner les intentions. Un accord vivant peut aussi conserver des écarts."
+  }
+};
+  function lifePracticeForChapter(id){
+    const x=lifePractices[id];if(!x)return '';
+    return '<section class="a3r-v16-practice" aria-label="Expérimenter dans la vie quotidienne">'+
+      '<div class="a3r-eyebrow">4 · ESSAYER DANS SA VIE</div><h3>'+e(x.title)+'</h3>'+
+      '<p class="a3r-v16-practice-step"><strong>Une expérience possible</strong>'+e(x.essai)+'</p>'+
+      '<p class="a3r-v16-practice-step"><strong>À observer</strong>'+e(x.observer)+'</p>'+
+      '<p class="a3r-v16-practice-step"><strong>Ce que cela peut éclairer</strong>'+e(x.transposer)+'</p>'+
+      '<p class="a3r-v16-practice-foot">Proposition facultative : observer ce qui arrive suffit ; aucun résultat n’est attendu.</p>'+
+      '</section>';
+  }
+
+
   function chapterSupplement(id){
     const ed=edition15(),x=ed&&ed.chapters&&ed.chapters[id];if(!x)return '';
     const sources=(x.sources||[]).map(id=>ed.bibliography.find(b=>b.id===id)).filter(Boolean).map(s=>
@@ -53,7 +159,7 @@
       '<details class="a3r-v15-depth" open><summary>2 · Comprendre ce qui change</summary><p>'+e(x.variation)+'</p><p><strong>Revenir à la scène :</strong> '+e(x.retour)+'</p></details>'+
       '<details class="a3r-v15-depth"><summary>3 · Approfondir la forme et les limites</summary><p>'+e(x.forme)+'</p><p><strong>Contre-épreuve :</strong> '+e(x.contrepreuve)+'</p>'+
       '<div class="a3r-v15-sources"><strong>Repères documentaires (statuts distincts)</strong><ul>'+sources+'</ul></div></details>'+
-      formsForChapter(id)+approachesForChapter(id)+'</section>';
+      lifePracticeForChapter(id)+formsForChapter(id)+approachesForChapter(id)+'</section>';
   }
   function doorSupplement(id){
     const ed=edition15(),x=ed&&ed.scenes&&ed.scenes[id];if(!x)return '';
@@ -86,7 +192,7 @@
     const ed=edition15();if(!ed?.approaches)return '';
     const cards=ed.approaches.map(x=>'<button type="button" class="a3r-approach-choice" onclick="go(\'atlas3/approche/'+x.id+'\')"><strong>'+e(x.title)+'</strong>'+
       '<small>'+e(x.domain)+'</small><span>'+e(x.question)+'</span></button>').join('');
-    return '<section class="a3r-approaches-index"><h2>Approches du sentir</h2><p>Cinq penseurs et traditions pour étudier l’attention, les images intérieures, la relation et les questions existentielles. Chaque dossier présente un apport, une situation et ses limites.</p>'+ 
+    return '<section class="a3r-approaches-index"><h2>Cinq approches pour approfondir</h2><p>Les propositions de Luis Ansa, de l’IFS, de Jung, de Buber et de Yalom ouvrent des regards différents sur la sensation, l’imaginaire et la relation. Ces dossiers permettent d’aller plus loin après les questions de vie quotidienne ; ils conservent leurs différences et leurs limites.</p>'+ 
       '<div class="a3r-v15-form-grid">'+cards+'</div></section>';
   }
   function approachPage(id){
@@ -157,15 +263,15 @@
       const links=part.chapters.map(id=>{const c=chapterMap[id];return '<li>'+btn(chapterPath(id),String(c.number).padStart(2,'0')+' · '+c.title,'a3r-chapter-link')+'</li>';}).join('');
       return '<section class="a3r-part"><div class="a3r-eyebrow">Partie '+e(part.id)+'</div><h3>'+e(part.title)+'</h3><p>'+e(part.introduction)+'</p><ul>'+links+'</ul></section>';
     }).join('');
-    const body=`<div class="a3r-wrap"><header class="a3r-hero"><h1>Le Théâtre du sentir</h1><p>Découvrir comment les sensations, la mémoire, l’imaginaire, le corps et les rencontres participent à notre manière de vivre et de jouer une situation. Les scènes et les traditions artistiques donnent des façons concrètes d’explorer ces questions.</p></header>
+    const body=`<div class="a3r-wrap"><header class="a3r-hero"><h1>Le Théâtre du sentir</h1><p>Se connaître, s’exprimer et rencontrer : explorer ses sensations, ses habitudes, ses façons d’imaginer, d’agir et d’entrer en relation. Le théâtre ouvre des possibilités d’expérience, mais aucune pratique artistique préalable n’est nécessaire.</p></header>
+      <section class="a3r-theory-after" aria-labelledby="a3r-theory-heading"><h2 id="a3r-theory-heading">Explorer sa propre expérience</h2><p class="a3r-entry-intro">Quinze chapitres répartis en cinq parties : partir d’une situation concrète, comprendre ce qu’elle révèle, approfondir les idées, puis essayer une variation dans sa vie quotidienne. Choisissez la question qui vous concerne ; aucun ordre n’est imposé.</p><div class="a3r-part-grid">${parts}</div></section>
       ${approachesIndex()}
-      <section class="a3r-theory-after" aria-labelledby="a3r-theory-heading"><h2 id="a3r-theory-heading">Sentir, imaginer, jouer, rencontrer</h2><p class="a3r-entry-intro">Quinze chapitres répartis en cinq parties. Chacun part d’une situation, construit une question et l’approfondit à travers des textes, des exemples et des formes artistiques.</p><div class="a3r-part-grid">${parts}</div></section>
       <section class="a3r-transversal-after"><h2>Passerelles entre les trois Atlas</h2><p>Aborder une question du sentir par la création de concepts dans Atlas 1 ou par la construction des œuvres dans Atlas 2.</p><div class="a3r-mini-links">${data.passerelles.map(p=>btn('atlas3/passerelle/'+p.id,p.title)).join('')}</div></section>
       <section class="a3r-salon-portal"><h2>Le Salon des possibles</h2><p>Sept scènes originales à lire, observer ou interpréter. Les personnages, les gestes et les variations de jeu deviennent la matière d’une exploration sensible.</p>${btn('atlas3/salon','Explorer les sept scènes','a3r-action')}</section>
       ${enquiriesIndex()}
       ${formsIndex()}
     </div>`;
-    return shell(body,{title:'Atlas 3 · Théâtre du sentir',sub:'Sentir · Imaginer · Jouer · Rencontrer'});
+    return shell(body,{title:'Atlas 3 · Théâtre du sentir',sub:'Se connaître · S’exprimer · Rencontrer'});
   }
 
   // V1.6.2 : notions dans le texte, pas seulement dans la boussole.
