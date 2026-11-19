@@ -226,3 +226,54 @@
 .a2-advanced-fields>summary{cursor:pointer;font:600 13px/1.5 system-ui,sans-serif;color:#33565c;padding:5px 0}
 .a2-advanced-row{padding:11px 0}
 .a2-advanced-row h3{font:600 13px/1.4 system-ui,sans-serif;color:#496168;margin:0 0 8px}
+
+/* Lecteur mobile : sommaires déroulés naturellement et filtres discrets */
+.a2-nav-pair{display:block}
+.a2-nav-pair>.a2-nav-details{border:0;border-bottom:1px solid #d8cebf;border-radius:0;background:transparent;padding:0;margin:0;min-width:0}
+.a2-nav-pair>.a2-nav-details summary{padding:15px 0;grid-template-columns:1fr auto;cursor:pointer}
+.a2-nav-pair>.a2-nav-details summary span{font:500 22px/1.3 Georgia,serif;color:#21383e}
+.a2-nav-pair>.a2-nav-details summary small{display:block;font:12px/1.5 system-ui,sans-serif;color:#667174;margin-top:2px}
+.a2-nav-pair>.a2-nav-details summary:after{font:400 22px/1.1 system-ui,sans-serif;color:#8e7347}
+.a2-nav-pair .a2-nav-simple{display:block;max-height:none;overflow:visible;padding:3px 0 15px}
+.a2-nav-pair .a2-nav-simple ul,.a2-nav-pair .a2-nav-simple ol{list-style:none;margin:0;padding:0}
+.a2-nav-pair .a2-nav-simple li{margin:0}
+.a2-nav-pair .a2-nav-simple li button{border-bottom:1px solid #e2d9cb;padding:13px 1px}
+.a2-nav-pair .a2-nav-simple li:last-child button{border-bottom:0}
+.a2-nav-pair .a2-nav-simple li button strong{font:650 14px/1.45 system-ui,sans-serif;color:#2a4650}
+.a2-nav-pair .a2-nav-simple li button span{font:14px/1.55 Georgia,serif;color:#5e686b}
+.a2-nav-pair .a2-route-index li button{display:flex;flex-direction:row;gap:15px;align-items:baseline}
+.a2-nav-pair .a2-route-index .a2-route-index-number{flex:0 0 24px;font:650 11px/1.4 system-ui,sans-serif;letter-spacing:.11em;color:#987943}
+.a2-nav-pair .a2-route-index .a2-route-index-copy{flex:1;display:flex;flex-direction:column;gap:4px;min-width:0}
+.a2-nav-pair .a2-route-index .a2-route-index-copy strong{display:block}
+.a2-nav-pair .a2-route-index .a2-route-index-copy>span{display:block}
+.a2-catalogue-controls{display:block;padding:12px 0 13px;margin:17px 0 16px;border:0;border-top:1px solid #d8cebf;border-bottom:1px solid #d8cebf;border-radius:0;background:transparent}
+.a2-filter-heading{display:block;margin:1px 0 9px;font:650 12px/1.3 system-ui,sans-serif;color:#566166}
+.a2-medium-options{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.a2-medium-choice{border:1px solid #d2c7b7;border-radius:999px;background:transparent;min-height:38px;padding:7px 13px;font:600 13px/1.35 system-ui,sans-serif;color:#415057;cursor:pointer}
+.a2-medium-choice.is-active{background:#203a42;border-color:#203a42;color:#fffdf7}
+.a2-medium-choice:focus-visible{outline:2px solid #346875;outline-offset:2px}
+.a2-select-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.a2-catalogue-controls .a2-select-filters label{display:flex;flex-direction:column;gap:5px;font:650 12px/1.3 system-ui,sans-serif;color:#566166;min-width:0}
+.a2-catalogue-controls select{width:100%;min-width:0;min-height:39px;border:1px solid #cec4b5;border-radius:7px;background:#faf7f0;padding:7px 9px;font:13px/1.4 system-ui,sans-serif;color:#293d42}
+.a2-catalogue-controls .a2-catalogue-count{margin:10px 0 0;font:12px/1.35 system-ui,sans-serif;color:#667073}
+.a2-lab-demo{margin:20px 0 24px}
+.a2-lab-demo>h3{font:500 27px/1.2 Georgia,serif;color:#21383e;margin:0 0 11px}
+.a2-lab-demo>p{max-width:770px;color:#5f686a;line-height:1.7;margin:0 0 18px}
+.a2-lab-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.a2-lab-variation{min-width:0;padding:20px 19px;border:1px solid #d8cfc1;background:#fbf9f5;border-radius:10px}
+.a2-lab-index{font:650 11px/1.2 system-ui,sans-serif;letter-spacing:.09em;color:#8e733d}
+.a2-lab-variation h3{font:500 21px/1.25 Georgia,serif;color:#233b43;margin:10px 0 13px}
+.a2-lab-variation>p{font:16px/1.72 Georgia,serif;color:#33434a;min-height:145px}
+.a2-lab-effect{border-top:1px solid #ded4c6;padding-top:12px;margin-top:17px}
+.a2-lab-effect strong{font:650 12px/1.3 system-ui,sans-serif;color:#8a6d39}
+.a2-lab-effect p{font:13px/1.6 system-ui,sans-serif;color:#5a686b;margin:6px 0 0}
+@media(max-width:680px){
+ .a2-nav-pair{display:block}
+ .a2-nav-pair .a2-nav-simple{max-height:none;overflow:visible}
+ .a2-nav-pair>.a2-nav-details summary span{font-size:21px}
+ .a2-nav-pair>.a2-nav-details summary small{font-size:11px}
+ .a2-medium-choice{padding:7px 11px;font-size:12px}
+ .a2-lab-grid{grid-template-columns:1fr}
+ .a2-lab-variation>p{min-height:0}
+}
+@media(max-width:370px){.a2-select-filters{grid-template-columns:1fr}}
