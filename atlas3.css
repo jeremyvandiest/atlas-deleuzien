@@ -261,3 +261,11 @@
 .a3r-approach-choice:hover{border-color:#9e8a6c;background:#f5f0e5}
 .a3r-approach-choice:focus-visible{outline:2px solid #346875;outline-offset:2px}
 @media(max-width:690px){.a3r-approaches-index .a3r-approach-choice{padding:13px 14px;min-height:44px}}
+
+/* Atlas 3 : quatrième étape dans chaque chapitre, sans formulaire ni obligation de résultat. */
+.a3r-v16-practice{margin:19px 0 6px;padding:19px 2px 3px;border-top:1px solid #d6cbb9}
+.a3r-v16-practice h3{margin:6px 0 14px;font:500 clamp(21px,3.6vw,25px)/1.28 Georgia,serif;color:#253e45}
+.a3r-v16-practice-step{font:15px/1.76 Georgia,serif;color:#384b4d;margin:0 0 12px}
+.a3r-v16-practice-step strong{display:block;margin:0 0 4px;font:650 12px/1.5 system-ui,sans-serif;color:#476366}
+.a3r-v16-practice-foot{font:12px/1.65 system-ui,sans-serif;color:#77716a;margin:16px 0 0}
+@media(max-width:690px){.a3r-v16-practice{padding-top:16px}.a3r-v16-practice-step{font-size:15px}}
