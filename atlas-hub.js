@@ -5,8 +5,8 @@ const originalAtlas1Home=home;
 PAGE_HANDLERS.atlas1=originalAtlas1Home;
 const territories=[
   ['01','Atlas deleuzien','Découvrir l’histoire de la philosophie à travers les lectures de Deleuze. Chaque auteur entre par un problème précis ; les œuvres et les routes montrent comment ses concepts sont repris, déplacés et transformés.','atlas1'],
-  ['02','Récits et formes','Entrer dans les œuvres de littérature, de théâtre et de cinéma. Comprendre ce qu’elles racontent, puis voir comment leur construction — gestes, temps, espace, motifs et rapports — produit une expérience singulière.','atlas2'],
-  ['03','Théâtre du sentir','Explorer comment une sensation, une image, une habitude, une action jouée ou une rencontre modifie notre expérience. Les chapitres, les scènes et les traditions théâtrales relient compréhension et pratique sensible.','atlas3']
+  ['02','Les œuvres de l’intérieur','Entrer dans les œuvres de littérature, de théâtre et de cinéma. Comprendre ce qu’elles racontent, puis voir comment leur construction — gestes, temps, espace, motifs et rapports — produit une expérience singulière.','atlas2'],
+  ['03','Le Théâtre du sentir','Se connaître, s’exprimer et rencontrer à travers les sensations, les habitudes, la mémoire, l’imagination et la relation. Quinze chapitres associent compréhension de soi, expériences quotidiennes et traditions du jeu.','atlas3']
 ];
 PAGE_HANDLERS.home=function(){
   const cards=territories.map(([num,title,desc,path])=>`<button type="button" class="atlas-hub-card" onclick="go('${path}')"><span class="atlas-hub-card-title"><span class="atlas-hub-num">${num}</span><span class="atlas-hub-name">${title}</span></span><span class="atlas-hub-description">${desc}</span></button>`).join('');
@@ -26,8 +26,8 @@ PAGE_HANDLERS.atlas3=function(){
 const groupedNav=[
  ['home','Accueil','Choisir un territoire.','⌂'],
  ['atlas1','Atlas 1 · Deleuze','Histoire de la philosophie vue par Deleuze.','Ⅰ'],
- ['atlas2','Atlas 2 · Récits et formes','Œuvres, configurations, transformations.','Ⅱ'],
- ['atlas3','Atlas 3 · Théâtre du sentir','Expériences, mémoire, jeu, relation.','Ⅲ']
+ ['atlas2','Atlas 2 · Les œuvres de l’intérieur','Lire, comprendre, comparer les constructions.','Ⅱ'],
+ ['atlas3','Atlas 3 · Théâtre du sentir','Se connaître, s’exprimer et rencontrer.','Ⅲ']
 ];
 NAV.splice(0,NAV.length,...groupedNav);
 // Single entry for Atelier: ŒUVRE is placed INSIDE it as a subordinate navigation link.
