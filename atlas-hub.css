@@ -67,3 +67,6 @@
 
 /* Encarts de contrôle éditorial réservés au corpus source. */
 .atlas-internal-note{display:none!important}
+
+/* Atlas V10.44 : emblème indépendant du fond de la page d'accueil. */
+.atlas-hub-head .atlas-hub-symbol{display:block;width:76px;height:76px;max-width:76px;max-height:76px;object-fit:contain;margin:0 auto 12px;border-radius:0;background:transparent;box-shadow:none}

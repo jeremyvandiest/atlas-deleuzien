@@ -10,7 +10,7 @@ const territories=[
 ];
 PAGE_HANDLERS.home=function(){
   const cards=territories.map(([num,title,desc,path])=>`<button type="button" class="atlas-hub-card" onclick="go('${path}')"><span class="atlas-hub-card-title"><span class="atlas-hub-num">${num}</span><span class="atlas-hub-name">${title}</span></span><span class="atlas-hub-description">${desc}</span></button>`).join('');
-  return shell(`<div class="atlas-hub"><div class="atlas-hub-head"><img class="atlas-hub-symbol" src="./icon-192.png" width="76" height="76" alt="Emblème d’Atlas"><h2>ATLAS</h2><p>Philosophie, œuvres et expérience vécue : trois domaines, trois manières d’apprendre à voir.</p></div><div class="atlas-hub-grid">${cards}</div></div>`,{home:true,dark:true,title:'Atlas',sub:'Philosophie · Œuvres · Sentir'});
+  return shell(`<div class="atlas-hub"><div class="atlas-hub-head"><img class="atlas-hub-symbol" src="./atlas-bull.svg?v=10.44" width="76" height="76" alt="Emblème d’Atlas"><h2>ATLAS</h2><p>Philosophie, œuvres et expérience vécue : trois domaines, trois manières d’apprendre à voir.</p></div><div class="atlas-hub-grid">${cards}</div></div>`,{home:true,dark:true,title:'Atlas',sub:'Philosophie · Œuvres · Sentir'});
 };
 const territories3=[
  ['01','Vie sensible et corporelle','Attention aux sensations, présence physique, émotions, atmosphères et dimension éprouvée de l’existence.'],
