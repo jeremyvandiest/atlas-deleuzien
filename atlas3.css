@@ -269,3 +269,21 @@
 .a3r-v16-practice-step strong{display:block;margin:0 0 4px;font:650 12px/1.5 system-ui,sans-serif;color:#476366}
 .a3r-v16-practice-foot{font:12px/1.65 system-ui,sans-serif;color:#77716a;margin:16px 0 0}
 @media(max-width:690px){.a3r-v16-practice{padding-top:16px}.a3r-v16-practice-step{font-size:15px}}
+
+
+/* Atlas 3 — dossiers fondateurs V1.6.3 : lecture intégrale dans les fiches existantes. */
+.a3r-editorial-full{margin:24px 0 30px}
+.a3r-editorial-details{border-color:#d8cbb6}
+.a3r-editorial-details>summary{font-size:clamp(18px,3vw,23px);line-height:1.35}
+.a3r-editorial-prose{padding:18px 23px 23px;max-width:100%;overflow-wrap:anywhere}
+.a3r-editorial-prose h2{margin-top:1.9em}
+.a3r-editorial-prose h3{margin-top:1.4em}
+.a3r-editorial-prose p{margin-bottom:1.12em}
+.a3r-editorial-prose hr{border:0;border-top:1px solid #d9cebd;margin:23px 0}
+.a3r-editorial-terms{margin:21px 0;padding:0 7px}
+.a3r-editorial-terms h2{font:500 23px/1.3 Georgia,serif;color:#293f43;margin:0 0 13px}
+.a3r-long-table{overflow-x:auto;margin:16px 0}
+.a3r-long-table table{width:100%;border-collapse:collapse;font:14px/1.55 system-ui,sans-serif}
+.a3r-long-table th,.a3r-long-table td{padding:9px 12px;border:1px solid #d6ccbd;text-align:left;vertical-align:top;min-width:125px}
+.a3r-editorial-prose .a3r-inline-notion{font:inherit}
+@media(max-width:690px){.a3r-editorial-prose{padding:15px 13px 20px}.a3r-editorial-terms{padding:0 3px}}
