@@ -294,7 +294,8 @@
     const rows=route.steps.map((step,i)=>
       '<li class="a3r-course-step"><div class="a3r-course-step-index">'+String(i+1).padStart(2,'0')+'</div><div><h3>'+e(step[1])+'</h3><p>'+e(step[2])+'</p>'+btn(step[0],'Ouvrir cette étape','a3r-action')+'</div></li>'
     ).join('');
-    const body='<div class="a3r-wrap">'+crumb('Enquête sur les formes')+'<header class="a3r-hero"><div class="a3r-eyebrow">ENQUÊTE SUR LES FORMES</div>'+
+    const kind=id==='e01'?'ENQUÊTE · SENTIR ET JOUER':'ENQUÊTE SUR LES FORMES';
+    const body='<div class="a3r-wrap">'+crumb(id==='e01'?'Enquête transversale':'Enquête sur les formes')+'<header class="a3r-hero"><div class="a3r-eyebrow">'+kind+'</div>'+
       '<h1>'+e(route.title)+'</h1><p>'+e(route.question)+'</p></header><p class="a3r-v15-lead">'+e(route.intro)+'</p>'+
       '<ol class="a3r-course-steps">'+rows+'</ol>'+editorialExpansion(id)+'<p class="a3r-v15-guard"><strong>Pour préciser :</strong> '+e(route.limit)+'</p>'+
       btn('atlas3','Revenir à Atlas 3')+'</div>';
