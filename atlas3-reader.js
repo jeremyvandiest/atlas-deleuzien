@@ -176,9 +176,9 @@
     const parcours=guide.routes.map(r=>'<li>'+btn(parcoursPath(r.id),r.title)+'</li>').join('');
     const enquete=ed.enquiries.map(x=>'<li>'+btn('atlas3/enquete/'+x.id,x.title)+'</li>').join('');
     return '<details class="a3r-v15-library a3r-pathways"><summary>Explorer par une question · parcours et enquêtes</summary>'+
-      '<p>Les parcours relient une scène à plusieurs chapitres autour d’une expérience. Les enquêtes comparent des traditions et des formes théâtrales autour d’un problème de jeu.</p>'+
+      '<p>Les parcours relient une scène à plusieurs chapitres. Les enquêtes interrogent des problèmes de jeu et la circulation entre expérience vécue et création, sans fusionner les traditions.</p>'+
       '<div class="a3r-pathway-groups"><section><h3>Quatre parcours de situations</h3><ul>'+parcours+'</ul></section>'+
-      '<section><h3>Quatre enquêtes sur les formes</h3><ul>'+enquete+'</ul></section></div></details>';
+      '<section><h3>'+ed.enquiries.length+' enquêtes pour approfondir</h3><ul>'+enquete+'</ul></section></div></details>';
   }
 
   function approachesForChapter(id){
@@ -192,7 +192,7 @@
     const ed=edition15();if(!ed?.approaches)return '';
     const cards=ed.approaches.map(x=>'<button type="button" class="a3r-approach-choice" onclick="go(\'atlas3/approche/'+x.id+'\')"><strong>'+e(x.title)+'</strong>'+
       '<small>'+e(x.domain)+'</small><span>'+e(x.question)+'</span></button>').join('');
-    return '<section class="a3r-approaches-index"><h2>Cinq approches pour approfondir</h2><p>Les propositions de Luis Ansa, de l’IFS, de Jung, de Buber et de Yalom ouvrent des regards différents sur la sensation, l’imaginaire et la relation. Ces dossiers permettent d’aller plus loin après les questions de vie quotidienne ; ils conservent leurs différences et leurs limites.</p>'+ 
+    return '<section class="a3r-approaches-index"><h2>'+ed.approaches.length+' approches pour approfondir</h2><p>Ansa, Gendlin, Winnicott, Jung, l’IFS, Buber et Yalom abordent des problèmes distincts du sentir, du jeu, de la création et de la relation. Chaque fiche conserve sa méthode, ses sources et ses limites.</p>'+ 
       '<div class="a3r-v15-form-grid">'+cards+'</div></section>';
   }
   function approachPage(id){
@@ -228,6 +228,49 @@
     return '<nav class="a3r-v15-form-links" aria-label="Formes associées à cette question"><strong>Formes pour approfondir</strong><div>'+
       forms.map(x=>btn('atlas3/forme/'+x.id,x.title)).join('')+'</div></nav>';
   }
+
+  // Dossiers longs et notions cliquables : greffe documentaire sans nouveau menu.
+  function editorialExpansion(id){
+    const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
+    const terms=(d.terms||[]).map((t,i)=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>').join('');
+    return '<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>Lire le dossier fondateur intégral</summary>'+
+      '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html,id)+'</div></details>'+
+      '<div class="a3r-editorial-terms"><h2>Notions à explorer</h2><div class="a3r-mini-links">'+terms+'</div></div>'+
+      '<p class="a3r-quiet">'+e(d.edition)+' · '+e(d.source)+'</p>'+
+      '<div id="a3r-notion-modal" class="a3r-modal" hidden onclick="if(event.target===this)Atlas3Reader.closeNotion()"></div></section>';
+  }
+  function editorialNotions(html,id){
+    const d=window.ATLAS3_FONDATIONS?.docs?.[id],doc=typeof document==='object'?document:null;
+    if(!doc?.createTreeWalker||!d?.terms?.length||typeof NodeFilter==='undefined')return html;
+    const tpl=doc.createElement('template');tpl.innerHTML=String(html||'');
+    const terms=d.terms.map((t,i)=>({i,word:t.term.toLocaleLowerCase('fr')})).sort((a,b)=>b.word.length-a.word.length);
+    const counts={},nodes=[],walk=doc.createTreeWalker(tpl.content,NodeFilter.SHOW_TEXT);
+    while(walk.nextNode()){
+      const node=walk.currentNode,parent=node.parentElement;
+      if(parent&&node.nodeValue.trim()&&!parent.closest('button,a,h1,h2,h3,h4,summary,code,pre,script,style,table'))nodes.push(node);
+    }
+    for(const node of nodes){
+      const raw=node.nodeValue,lower=raw.toLocaleLowerCase('fr');
+      let best=null;
+      for(const t of terms){
+        if((counts[t.i]||0)>=2)continue;
+        const at=lower.indexOf(t.word);if(at<0)continue;
+        const before=at?raw[at-1]:'',after=raw[at+t.word.length]||'';
+        if((before&&/[\p{L}\p{N}]/u.test(before))||(after&&/[\p{L}\p{N}]/u.test(after)))continue;
+        if(!best||at<best.at)best={t,at};
+      }
+      if(!best)continue;
+      const f=doc.createDocumentFragment();f.appendChild(doc.createTextNode(raw.slice(0,best.at)));
+      const btn=doc.createElement('button');btn.type='button';btn.className='a3r-inline-notion';
+      btn.textContent=raw.slice(best.at,best.at+best.t.word.length);
+      btn.setAttribute('onclick',"Atlas3Reader.openEditorialTerm('"+id+"',"+best.t.i+")");
+      btn.setAttribute('aria-label','Comprendre : '+d.terms[best.t.i].term);
+      f.appendChild(btn);f.appendChild(doc.createTextNode(raw.slice(best.at+best.t.word.length)));
+      node.replaceWith(f);counts[best.t.i]=(counts[best.t.i]||0)+1;
+    }
+    return tpl.innerHTML;
+  }
+
   function formPage(id){
     const ed=edition15(),x=ed?.forms?.find(z=>z.id===id);if(!x)return missing();
     const ref=ed.bibliography.find(z=>z.id===x.source);
@@ -240,7 +283,7 @@
       '<article class="a3r-v15-field a3r-levels">'+
       '<div class="a3r-v15-step a3r-discovery"><h3>1 · Découvrir : quel problème cette tradition rencontre-t-elle ?</h3><p>'+e(x.problem)+'</p></div>'+
       '<details class="a3r-v15-depth" open><summary>2 · Comprendre ce que cette école fait travailler</summary><p>'+e(x.operation)+'</p><h3>Une situation de découverte</h3><p>'+e(x.scene)+'</p></details>'+
-      '<details class="a3r-v15-depth"><summary>3 · Approfondir : singularité, contrepoint et limite</summary><p>'+e(x.contrast)+'</p><p><strong>Ce qu’il ne faut pas conclure :</strong> '+e(x.limit)+'</p>'+reference+'</details></article>'+
+      '<details class="a3r-v15-depth"><summary>3 · Approfondir : singularité, contrepoint et limite</summary><p>'+e(x.contrast)+'</p><p><strong>Ce qu’il ne faut pas conclure :</strong> '+e(x.limit)+'</p>'+reference+'</details></article>'+editorialExpansion(id)+
       '<section class="a3r-v15-related"><h2>Revenir à l’expérience</h2><p>La situation présentée est une création pédagogique d’Atlas 3. Les textes de chaque école permettent d’en approfondir les méthodes historiques.</p><div class="a3r-mini-links">'+related+scenes+'</div></section>'+
       btn('atlas3','Revenir au Théâtre du sentir')+'</div>';
     return shell(body,{title:'Atlas 3 · '+x.title,sub:'Bibliothèque des formes'});
@@ -253,7 +296,7 @@
     ).join('');
     const body='<div class="a3r-wrap">'+crumb('Enquête sur les formes')+'<header class="a3r-hero"><div class="a3r-eyebrow">ENQUÊTE SUR LES FORMES</div>'+
       '<h1>'+e(route.title)+'</h1><p>'+e(route.question)+'</p></header><p class="a3r-v15-lead">'+e(route.intro)+'</p>'+
-      '<ol class="a3r-course-steps">'+rows+'</ol><p class="a3r-v15-guard"><strong>Pour préciser :</strong> '+e(route.limit)+'</p>'+
+      '<ol class="a3r-course-steps">'+rows+'</ol>'+editorialExpansion(id)+'<p class="a3r-v15-guard"><strong>Pour préciser :</strong> '+e(route.limit)+'</p>'+
       btn('atlas3','Revenir à Atlas 3')+'</div>';
     return shell(body,{title:'Atlas 3 · '+route.title,sub:'Enquête sur les formes'});
   }
@@ -412,6 +455,18 @@
     modal.hidden=true;modal.innerHTML='';
     if(termFocus?.isConnected)termFocus.focus();
   }
+
+  function openEditorialTerm(id,index){
+    const d=window.ATLAS3_FONDATIONS?.docs?.[id],t=d?.terms?.[index],modal=document.getElementById('a3r-notion-modal');
+    if(!modal||!t)return;
+    termSource=null;termFocus=document.activeElement;
+    modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
+      '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
+      '<div class="a3r-eyebrow">NOTION SITUÉE</div><h2 id="a3r-notion-title">'+e(t.term)+'</h2><p>'+e(t.definition)+'</p>'+
+      '<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
+    modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();
+  }
+
   function openNotion(chapterId,index){
     const g=guide.chapters[chapterId],t=g?.terms?.[index];
     const routes=guide.routes.filter(r=>r.stops.some(s=>s.path===chapterPath(chapterId))).slice(0,2);
@@ -444,7 +499,7 @@
     x.open=true;x.scrollIntoView({behavior:'smooth',block:'start'});x.querySelector('summary')?.focus();
   }
   window.Atlas3Reader={
-    closeNotion,openNotion,goToNotionSource,jumpToSection,
+    closeNotion,openNotion,openEditorialTerm,goToNotionSource,jumpToSection,
     toggleSections(open){
       if(!document || !document.querySelectorAll)return;
       document.querySelectorAll('.a3r-sections .a3r-section').forEach(x => {x.open=!!open;});
@@ -452,6 +507,18 @@
     render:renderAtlas3
   };
   PAGE_HANDLERS.atlas3=renderAtlas3;
+
+  // Lecture complète : les fiches existantes restent utilisables hors connexion.
+  if(typeof document!=='undefined'&&!window.ATLAS3_FONDATIONS){
+    const fullScript=document.createElement('script');
+    fullScript.src='./atlas3-fondations.js';fullScript.async=true;
+    fullScript.onload=()=>{
+      if(typeof current==='function'&&current().split('/')[0]==='atlas3'&&typeof render==='function')render();
+    };
+    fullScript.onerror=()=>console.warn('Atlas 3 : dossiers intégraux indisponibles ; fiches courtes conservées.');
+    document.head.appendChild(fullScript);
+  }
+
   // Charger la nouvelle édition indépendamment du grand index historique.
   // Le premier affichage reste possible si le fichier n'est pas disponible.
   if(!edition15() && typeof document!=='undefined' && document.head){
