@@ -207,9 +207,10 @@
       '<article class="a3r-v15-field a3r-levels"><div class="a3r-v15-step a3r-discovery"><h3>1 · Découvrir</h3><p>'+e(x.intro)+'</p><p><strong>Question :</strong> '+e(x.question)+'</p></div>'+
       '<details class="a3r-v15-depth" open><summary>2 · Comprendre l’apport de cette approche</summary><p>'+e(x.principle)+'</p><h3>Une situation pour en éprouver la portée</h3><p>'+e(x.example)+'</p></details>'+
       '<details class="a3r-v15-depth"><summary>3 · Approfondir : concepts, contradictions et limites</summary><p>'+e(x.counter)+'</p><p><strong>Limite :</strong> '+e(x.boundary)+'</p>'+
-      (terms?'<h3>Notions à déplier</h3><div class="a3r-v15-term-list">'+terms+'</div>':'')+
+      (terms&&!window.ATLAS3_FONDATIONS?.docs?.[id]?'<h3>Notions à déplier</h3><div class="a3r-v15-term-list">'+terms+'</div>':'')+
       '<div class="a3r-v15-sources"><h3>Sources et statuts</h3><p>'+e(x.source)+'</p><ul>'+sources+'</ul></div></details></article>'+
-      '<section class="a3r-v15-related"><h2>Revenir à des situations, pas à des étiquettes</h2><div class="a3r-mini-links">'+passages+scenes+'</div></section>'+
+      editorialExpansion(id)+
+      '<section class="a3r-v15-related"><h2>Revenir à des situations, pas à des étiquettes</h2><div class="a3r-mini-links">'+passages+scenes+(['gendlin','winnicott'].includes(id)?btn('atlas3/enquete/e01','Enquête E01 · Sentir, jouer, créer'):'')+'</div></section>'+
       btn('atlas3','Revenir au Théâtre du sentir')+'</div>';
     return shell(content,{title:'Atlas 3 · '+x.title,sub:'Dossier critique'});
   }
@@ -233,7 +234,7 @@
   function editorialExpansion(id){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
     const terms=(d.terms||[]).map((t,i)=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>').join('');
-    return '<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>Lire le dossier fondateur intégral</summary>'+
+    return '<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(['gendlin','winnicott'].includes(id)?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur intégral')+'</summary>'+
       '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html,id)+'</div></details>'+
       '<div class="a3r-editorial-terms"><h2>Notions à explorer</h2><div class="a3r-mini-links">'+terms+'</div></div>'+
       '<p class="a3r-quiet">'+e(d.edition)+' · '+e(d.source)+'</p>'+
