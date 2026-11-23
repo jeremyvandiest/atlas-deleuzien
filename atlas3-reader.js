@@ -234,7 +234,7 @@
   function editorialExpansion(id){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
     const terms=(d.terms||[]).map((t,i)=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>').join('');
-    return '<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(['gendlin','winnicott','ansa'].includes(id)?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur intégral')+'</summary>'+
+    return '<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur intégral')+'</summary>'+
       '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html,id)+'</div></details>'+
       '<div class="a3r-editorial-terms"><h2>Notions à explorer</h2><div class="a3r-mini-links">'+terms+'</div></div>'+
       '<p class="a3r-quiet">'+e(d.edition)+' · '+e(d.source)+'</p>'+
