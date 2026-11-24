@@ -361,7 +361,7 @@
       const choices=[t.title,...(situatedAliases[chapterId]?.[i]||[])];
       return [...new Set(choices)].filter(s=>s.length>=4).map(s=>({i,needle:s.toLocaleLowerCase('fr')}));
     }).sort((a,b)=>b.needle.length-a.needle.length);
-    const counts=sharedCounts||[0,0],textNodes=[];
+    const counts=sharedCounts||Array(g.terms.length).fill(0),textNodes=[];
     const walker=doc.createTreeWalker(tpl.content,NodeFilter.SHOW_TEXT);
     while(walker.nextNode()){
       const node=walker.currentNode,parent=node.parentElement;
@@ -404,10 +404,10 @@
     const k=critical.chapters[id];
     const pos=data.chapters.findIndex(x=>x.id===id);
     const prev=data.chapters[pos-1], next=data.chapters[pos+1];
-    const notionCounts=[0,0];
+    const notionCounts=Array(g?.terms?.length||0).fill(0);
     const sections=c.sections.map((s,i)=>`<details class="a3r-section" id="${e(s.id)}"${i===0?' open':''}><summary><span class="a3r-section-count">${String(i+1).padStart(2,'0')}</span><span>${e(s.title)}</span></summary><div class="a3r-prose">${linkSituatedNotions(s.html,id,notionCounts)}</div></details>`).join('');
     const terms=g?.terms?.map((t,i)=>`<button type="button" class="a3r-term-chip" onclick="Atlas3Reader.openNotion('${e(c.id)}',${i})">${e(t.title)}</button>`).join('')||'';
-    const readingCompass=g?`<aside class="a3r-compass" aria-label="Boussole du chapitre"><div class="a3r-eyebrow">REPÈRES DE LECTURE · SITUATION VÉCUE</div><p class="a3r-compass-scene">${e(g.scene)}</p><h2>${e(g.question)}</h2><p><strong>Attention :</strong> ${e(g.limit)}</p><details class="a3r-term-collection"><summary>Deux notions à approfondir dans ce chapitre</summary><div class="a3r-term-list">${terms}</div></details></aside>`:'';
+    const readingCompass=g?`<aside class="a3r-compass" aria-label="Boussole du chapitre"><div class="a3r-eyebrow">REPÈRES DE LECTURE · SITUATION VÉCUE</div><p class="a3r-compass-scene">${e(g.scene)}</p><h2>${e(g.question)}</h2><p><strong>Attention :</strong> ${e(g.limit)}</p><details class="a3r-term-collection"><summary>Notions à approfondir dans ce chapitre</summary><div class="a3r-term-list">${terms}</div></details></aside>`:'';
     const courses=guide.routes.filter(r=>r.stops.some(s=>s.path===chapterPath(id))).map(r=>btn(parcoursPath(r.id),r.title)).join('');
     const criticalBlock=k?`<aside class="a3r-critical"><div class="a3r-eyebrow">ÉPROUVER LA QUESTION</div><h2>${e(k.title)}</h2><p class="a3r-critical-intro">Une seconde situation permet de distinguer ce que l’on observe, ce que l’on interprète et les conséquences que l’on en tire.</p>${k.paragraphs.map(p=>`<p>${e(p)}</p>`).join('')}<p class="a3r-critical-limit"><strong>À distinguer :</strong> ${e(k.limit)}</p><button type="button" class="a3r-link" onclick="Atlas3Reader.jumpToSection('${e(k.source)}')">Revenir au passage source</button></aside>`:'';
     const relatedCourses=courses?`<aside class="a3r-course-rel"><div class="a3r-eyebrow">CHEMINS DE LECTURE · FACULTATIFS</div><p>Cette question traverse également un parcours de situations. Vous pouvez y entrer ou poursuivre ce chapitre seul.</p><div class="a3r-mini-links">${courses}</div></aside>`:'';
