@@ -210,7 +210,7 @@
       (terms&&!window.ATLAS3_FONDATIONS?.docs?.[id]?'<h3>Notions à déplier</h3><div class="a3r-v15-term-list">'+terms+'</div>':'')+
       '<div class="a3r-v15-sources"><h3>Sources et statuts</h3><p>'+e(x.source)+'</p><ul>'+sources+'</ul></div></details></article>'+
       editorialExpansion(id)+
-      '<section class="a3r-v15-related"><h2>Revenir à des situations, pas à des étiquettes</h2><div class="a3r-mini-links">'+passages+scenes+(['gendlin','winnicott','ansa'].includes(id)?btn('atlas3/enquete/e01','Enquête E01 · Sentir, jouer, créer'):'')+'</div></section>'+
+      '<section class="a3r-v15-related"><h2>Revenir à des situations, pas à des étiquettes</h2><div class="a3r-mini-links">'+passages+scenes+(['gendlin','winnicott','ansa','feldenkrais'].includes(id)?btn('atlas3/enquete/e01','Enquête E01 · Sentir, jouer, créer'):'')+'</div></section>'+
       btn('atlas3','Revenir au Théâtre du sentir')+'</div>';
     return shell(content,{title:'Atlas 3 · '+x.title,sub:'Dossier critique'});
   }
