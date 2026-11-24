@@ -38,3 +38,10 @@ Le chapitre 03 réutilise la scène existante de la marque au sol : les contribu
 - Audit final de la densité et du confort de lecture sur appareil réel ; décision de clôture du territoire avant ouverture du suivant.
 
 Aucune modification des Atlas 1 et 2. Ne pas recommencer les recherches décrites ici.
+
+## Suite — V10.56 : des lectures à la pratique
+- Vérification ciblée du texte anglais de Feldenkrais (leçons 2, 6, 8), du texte OCR de Laban (p. 78–81) et des sections 2.6/3 de la version française de l'article de Petitmengin. Les deux tentatives de contrôle visuel PDF ont échoué ; aucune lecture intégrale revendiquée.
+- Contributions nouvelles : dissociation et recombinaison des composantes du geste ; transformation des huit actions d'effort par substitution d'un facteur ; distinction entre observation, reconstruction et interprétation dans un retour d'expérience. Les termes français de Laban sont des équivalents de travail, non une collation de l'édition traduite.
+- Trois approfondissements dans c02-s07, c02-s11, c03-s09 ; trois repères bibliographiques visibles ; deux pratiques quotidiennes enrichies ; partitions 1 et 3 du Salon 01 reprises et retour descriptif facultatif du Salon 07 précisé. Les 21 partitions et leurs sept scènes sont maintenues. Les 17 dossiers longs sont intacts.
+- Le compteur historique de la pédagogie est actualisé à partir du corpus.
+- Ne pas répéter ces lectures. Pour clore le territoire : contrôler les sources philosophiques encore ouvertes (Varela, Merleau-Ponty), préciser le statut des pratiques originales et auditer l'expérience de lecture. Les ouvrages ne sont pas intégralement collationnés ; aucune validation expérimentale ni vérification sur appareil réel.

@@ -52,16 +52,16 @@
     "transposer": "Utile lorsque vous prenez rapidement un endroit, une ambiance ou une personne pour « accueillant » ou « hostile ». Il ne s'agit pas de mépriser une intuition, mais d'en distinguer les indices."
   },
   "chapitre-02": {
-    "title": "Écouter au lieu de vérifier sa propre présence",
-    "essai": "Dans une conversation sans enjeu particulier, essayez pendant un échange de porter l'attention sur la dernière phrase de votre interlocuteur plutôt que sur votre posture, votre répartie ou l'image que vous donnez. Répondez à ce que vous avez entendu, sans chercher une réponse parfaite.",
-    "observer": "Quelle information nouvelle avez-vous réellement reçue ? Qu'est-ce qui vous a échappé lorsque vous contrôliez votre manière d'être ?",
-    "transposer": "À explorer dans une discussion ordinaire, une répétition ou un travail collectif. Être attentif n'oblige ni à fixer l'autre ni à être disponible à tout moment."
+    "title": "Varier un geste, puis revenir à l'action",
+    "essai": "Choisissez un geste ordinaire sans enjeu de sécurité, par exemple déplacer un livre léger sur une table. Faites-le comme d'habitude. Essayez ensuite un petit changement : regarder l'objet avant ou après le début du mouvement, ou introduire une pause. Revenez à votre manière habituelle. Arrêtez si cela devient inconfortable. Dans un échange ordinaire, laissez ensuite l'attention revenir aux paroles de l'autre, sans surveiller votre corps.",
+    "observer": "Avez-vous découvert une autre manière de faire ? Le geste habituel vous paraît-il différent ? Rien n'a besoin de changer. Dans la conversation, qu'est-ce que votre interlocuteur vous a réellement appris ?",
+    "transposer": "Préparer et varier un geste n'est pas la même chose que l'accomplir lorsqu'une situation le demande. Cette exploration originale permet de distinguer les deux."
   },
   "chapitre-03": {
-    "title": "Laisser une expérience rester ordinaire",
-    "essai": "Pendant une minute, remarquez un détail banal : un reflet sur une table, une variation de température, un bruit au loin. N'essayez ni de prolonger l'impression ni d'en tirer une révélation. Reprenez ensuite votre activité.",
-    "observer": "Quelque chose a-t-il simplement été remarqué ? Ou rien de notable n'est-il arrivé ? Les deux réponses sont possibles.",
-    "transposer": "Cette expérience aide à sortir de l'idée qu'un moment de présence doit nécessairement être intense, apaisant ou transformateur."
+    "title": "Recevoir une impression, puis choisir d'en parler ou non",
+    "essai": "Écoutez un court passage musical ou remarquez un détail de votre environnement, sans rechercher une expérience particulière. Reprenez votre activité. Si vous souhaitez y revenir, situez un instant précis et notez ce que vous aviez remarqué. Une seconde écoute est une nouvelle expérience, pas une preuve de la première.",
+    "observer": "Qu'est-ce qui appartient à votre observation, à votre souvenir et à votre interprétation actuelle ? Une seule phrase peut suffire ; vous pouvez aussi ne rien écrire.",
+    "transposer": "Pour un carnet de lecture, une répétition ou une conversation : une description située est différente d'un jugement général. Il ne s'agit pas d'un entretien d'explicitation professionnel."
   },
   "chapitre-04": {
     "title": "Observer ses rôles sans chercher un « vrai moi »",
