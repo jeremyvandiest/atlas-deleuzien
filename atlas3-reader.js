@@ -234,11 +234,30 @@
   function editorialExpansion(id){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
     const terms=(d.terms||[]).map((t,i)=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>').join('');
-    return '<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur intégral')+'</summary>'+
+    return '<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur')+'</summary>'+
       '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html,id)+'</div></details>'+
       '<div class="a3r-editorial-terms"><h2>Notions à explorer</h2><div class="a3r-mini-links">'+terms+'</div></div>'+
       '<p class="a3r-quiet">'+e(d.edition)+' · '+e(d.source)+'</p>'+
       '<div id="a3r-notion-modal" class="a3r-modal" hidden onclick="if(event.target===this)Atlas3Reader.closeNotion()"></div></section>';
+  }
+  function editorialSegments(raw,terms,counts){
+    const lower=raw.toLocaleLowerCase('fr'),out=[];let cursor=0;
+    const wordChar=c=>!!c&&/[\p{L}\p{N}]/u.test(c);
+    while(cursor<raw.length){
+      let best=null;
+      for(const t of terms){
+        if((counts[t.i]||0)>=2||!t.word)continue;
+        let at=lower.indexOf(t.word,cursor);
+        while(at>=0&&(wordChar(raw[at-1])||wordChar(raw[at+t.word.length])))at=lower.indexOf(t.word,at+1);
+        if(at>=0&&(!best||at<best.at||(at===best.at&&t.word.length>best.t.word.length)))best={t,at};
+      }
+      if(!best){out.push({text:raw.slice(cursor)});break;}
+      if(best.at>cursor)out.push({text:raw.slice(cursor,best.at)});
+      const stop=best.at+best.t.word.length;
+      out.push({text:raw.slice(best.at,stop),i:best.t.i});
+      counts[best.t.i]=(counts[best.t.i]||0)+1;cursor=stop;
+    }
+    return out;
   }
   function editorialNotions(html,id){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id],doc=typeof document==='object'?document:null;
@@ -251,23 +270,18 @@
       if(parent&&node.nodeValue.trim()&&!parent.closest('button,a,h1,h2,h3,h4,summary,code,pre,script,style,table'))nodes.push(node);
     }
     for(const node of nodes){
-      const raw=node.nodeValue,lower=raw.toLocaleLowerCase('fr');
-      let best=null;
-      for(const t of terms){
-        if((counts[t.i]||0)>=2)continue;
-        const at=lower.indexOf(t.word);if(at<0)continue;
-        const before=at?raw[at-1]:'',after=raw[at+t.word.length]||'';
-        if((before&&/[\p{L}\p{N}]/u.test(before))||(after&&/[\p{L}\p{N}]/u.test(after)))continue;
-        if(!best||at<best.at)best={t,at};
+      const parts=editorialSegments(node.nodeValue,terms,counts);
+      if(!parts.some(p=>p.i!==undefined))continue;
+      const f=doc.createDocumentFragment();
+      for(const p of parts){
+        if(p.i===undefined){f.appendChild(doc.createTextNode(p.text));continue;}
+        const btn=doc.createElement('button');btn.type='button';btn.className='a3r-inline-notion';
+        btn.textContent=p.text;
+        btn.setAttribute('onclick',"Atlas3Reader.openEditorialTerm('"+id+"',"+p.i+")");
+        btn.setAttribute('aria-label','Comprendre : '+d.terms[p.i].term);
+        f.appendChild(btn);
       }
-      if(!best)continue;
-      const f=doc.createDocumentFragment();f.appendChild(doc.createTextNode(raw.slice(0,best.at)));
-      const btn=doc.createElement('button');btn.type='button';btn.className='a3r-inline-notion';
-      btn.textContent=raw.slice(best.at,best.at+best.t.word.length);
-      btn.setAttribute('onclick',"Atlas3Reader.openEditorialTerm('"+id+"',"+best.t.i+")");
-      btn.setAttribute('aria-label','Comprendre : '+d.terms[best.t.i].term);
-      f.appendChild(btn);f.appendChild(doc.createTextNode(raw.slice(best.at+best.t.word.length)));
-      node.replaceWith(f);counts[best.t.i]=(counts[best.t.i]||0)+1;
+      node.replaceWith(f);
     }
     return tpl.innerHTML;
   }
