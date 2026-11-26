@@ -376,3 +376,24 @@ Source primaire : Jung, A Study in the Process of Individuation, CW 9i §§ 525�
 Les 24 planches sont localisées dans cette édition (bloc après p. 22) ; leurs descriptions textuelles sont accessibles (lignes 418–520). Les tentatives de capture directe échouent car le fichier dépasse 20 Mo. Aucune planche n'est donc déclarée visuellement vérifiée. Les commentaires des peintures 3–24 et la conclusion restent à lire séquentiellement. Pré-repérage de La fonction transcendante (CW 8 §§ 131–193, https://studylib.net/doc/28515316/c.-g.-jung-collected-works-volume-8--the-structure-and-dy...) effectué par fenêtres discontinues, non compté comme lecture complète.
 ### État
 601 paragraphes consignés au premier passage : 521 du CW 7, 60 du premier texte du recueil et 20 du deuxième. Le texte II reste en cours ; reprise au § 545. Notes et édition française à collationner. Aucun changement du lecteur ni des autres Atlas.
+
+
+## L'Âme et le Soi — texte II : peintures 3–7
+
+Source primaire consultée : transcription de CW 9i, traduction Hull, https://studylib.net/doc/27752709/c.-g.-jung-collected-works-volume-9i--the-archetypes-of-t... , lignes 10000–10856, fenêtres recouvrantes. §§ 545–587. Le PDF de Mandala Symbolism reste inaccessible directement (20 358 460 octets). Les peintures n'ont pas été contrôlées visuellement ; la transcription omet certains signes graphiques, notamment § 575. Ne pas assimiler cette étape à une étude iconographique complète.
+
+### Index de couverture
+- Peinture 3, §§ 545–555 : rêves associés, sphère, Mercurius, microcosme, nombres et complexio oppositorum.
+- Peinture 4, §§ 556–563 : évolution formelle, contexte dialogique, ambivalence, alternance entre relâchement du contrôle et réaffirmation du moi.
+- Peinture 5, §§ 564–568 : quaternité, pluralité interprétative, limite d'information, problème de l'ombre.
+- Peinture 6, §§ 569–573 : relations de couleurs, rêve de l'arbre, protection et analogies religieuses.
+- Peinture 7, §§ 574–587 : enveloppes, différenciation, fonction inférieure, affect et relation analytique.
+
+### Reconstruction originale Atlas, à éprouver
+A. Prévoir une partition théâtrale alternant deux consignes : accueillir une variation imprévue dans une improvisation fictive, puis choisir délibérément une forme et une fin. Comparer les effets sur le rythme et la relation aux partenaires. Les §§ 562–563 motivent la question de l'alternance, pas une technique de dissolution du moi.
+B. Pour la lecture d'image, proposer plusieurs hypothèses et demander quel détail observable permet de les départager. Laisser explicitement une hypothèse indéterminée lorsqu'aucun indice ne permet de choisir. Repère § 565. Ne pas transformer les couleurs, nombres ou orientations en dictionnaire de diagnostic.
+C. Inscrire les interventions de Jung dans le contexte du cas, notamment § 559 où il montre une image à la patiente. Distinguer ce qui précède l'intervention, ce qu'elle apporte et la réaction rapportée. Cette relation empêche de traiter les ressemblances formelles comme preuve indépendante de l'origine archétypale des images.
+D. Pour la carte de la fonction inférieure, conserver § 582 comme renvoi à vérifier avec Types psychologiques et La Fonction transcendante. L'analogie physique du § 555 ne démontre aucune équivalence entre matière et psyché ; les interprétations sexuées, culturelles et religieuses ne sont pas des faits universels. L'expérience d'affects douloureux (§ 587) ne constitue pas une prescription de reviviscence traumatique.
+
+### État
+644 paragraphes consignés au premier passage (521 + 60 + 63). Texte II : §§ 525–587, peintures 1–7 commentées ; reprise au § 588, peinture 8. Planches, notes, signes graphiques et collation française restent à contrôler. Aucun changement au lecteur ou aux autres Atlas.
