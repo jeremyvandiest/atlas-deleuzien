@@ -354,3 +354,25 @@ Index : §§ 199–205 (cinq acceptions de renaissance) ; §§ 206–211 (statut
 
 ### État
 Volume 7 : texte principal et appendices au premier passage, 521 paragraphes. L'Âme et le Soi : texte I au premier passage, 60 paragraphes dans la numérotation CW 9i ; II–V non lus à ce stade. Rechercher une édition complète du texte II avec planches, puis poursuivre dans l'ordre du recueil. Aucun changement à l'interface, aux cartes publiées ni aux autres Atlas.
+
+
+## L'Âme et le Soi — texte II : ouverture
+
+Source primaire : Jung, A Study in the Process of Individuation, CW 9i §§ 525–626, repris dans Mandala Symbolism, Princeton, trad. Hull. https://s3.us-west-1.wasabisys.com/luminist/EB/I-J-K/Jung%20-%20Mandala%20Symbolism.pdf . Correspondance vérifiée : https://ofj.org/library/the-integration-of-the-personality-2/ . Texte de l'introduction et des deux premières peintures, §§ 525–544, pages imprimées 6–21, consulté par fenêtres recouvrantes de texte extrait (lignes 195–396). La transcription PDF contient des erreurs (par exemple § 538 rendu 598) ; recollation à faire. Première reconnaissance du début de la troisième peinture (§§ 545–551), non comptée comme couverture complète.
+
+### Index analytique
+- § 525 : situation initiale et apparition de la peinture.
+- §§ 526–530 : difficultés de représentation, dépendance envers une figure d'aide, singularité du processus.
+- §§ 531–538 : passage à une composition impersonnelle ; symboles circulaires, Böhme et rapprochements alchimiques.
+- §§ 539–544 : conflit entre intention et perception, fonction inférieure, hypothèse du Soi, interprétation rétrospective.
+
+### Pistes originales Atlas
+1. Atelier de composition : donner à un personnage fictif un objectif de représentation (dessiner un lieu, construire un geste). Introduire une contrainte matérielle, puis observer les inventions rendues possibles par cette contrainte. Il s'agit d'une exploration artistique, non d'une technique de traitement ou de dévoilement de l'inconscient.
+2. Concevoir une carte à trois couches : ce qui est visible, les associations rapportées par l'auteur d'une image, et les hypothèses de l'interprète. Ne pas fusionner ces niveaux. Pour les futures passerelles Atlas 4, séparer les références historiques de Böhme et de l'alchimie de leur réemploi jungien.
+3. Question critique : même lorsque Jung affirme ne pas avoir communiqué certains motifs à la patiente, cela ne démontre pas l'origine héréditaire des formes ; prendre en compte le contexte intellectuel et relationnel. Les catégories sexuées de son analyse restent historiquement situées.
+4. Les §§ 528–530 motivent une pédagogie ouverte aux solutions singulières ; ne pas convertir les symboles en code à appliquer ni prescrire un itinéraire d'individuation.
+
+### Planches et limites
+Les 24 planches sont localisées dans cette édition (bloc après p. 22) ; leurs descriptions textuelles sont accessibles (lignes 418–520). Les tentatives de capture directe échouent car le fichier dépasse 20 Mo. Aucune planche n'est donc déclarée visuellement vérifiée. Les commentaires des peintures 3–24 et la conclusion restent à lire séquentiellement. Pré-repérage de La fonction transcendante (CW 8 §§ 131–193, https://studylib.net/doc/28515316/c.-g.-jung-collected-works-volume-8--the-structure-and-dy...) effectué par fenêtres discontinues, non compté comme lecture complète.
+### État
+601 paragraphes consignés au premier passage : 521 du CW 7, 60 du premier texte du recueil et 20 du deuxième. Le texte II reste en cours ; reprise au § 545. Notes et édition française à collationner. Aucun changement du lecteur ni des autres Atlas.
