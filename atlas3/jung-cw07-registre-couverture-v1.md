@@ -19,7 +19,7 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - Partie 1 : inconscients personnel et collectif (E, §§ 202–220) ; assimilation de l'inconscient (E, §§ 221–242) ; persona et psyché collective (E, §§ 243–253) ; tentatives négatives de différenciation, retour à la persona et identification collective (E, §§ 254–265).
 - Partie 2 : fonction de l'inconscient (E, §§ 266–295) ; anima et animus (E, §§ 296–340, PDF p. 195–221) ; différenciation du moi et des figures inconscientes (E, §§ 341–373) ; personnalité mana (E, §§ 374–406).
 - Appendice I, texte de 1912 : E (texte principal §§ 407–441, p. 254–278 ; notes p. 492–493 examinées).
-- Appendice II, texte de 1916 : sections 1–2 E (§§ 442–463) ; sections 3–6, addendum et deux versions du résumé R.
+- Appendice II, texte de 1916 : E (§§ 442–521, sections 1–6, addendum et deux versions du résumé ; notes à collationner).
 - Bibliographie et index : R (outils de contrôle et de repérage, non substituts à la lecture).
 
 ## Première extraction : genèse et position du problème
@@ -306,3 +306,27 @@ L'utilisateur rappelle que le troisième ouvrage retenu est L'Âme et le Soi : r
 
 ### État
 §§ 1–463 consignés au premier passage, deux essais et premier appendice, plus deux premières sections du second appendice. Reprise au § 464. Notes restantes, collation des variantes et audit transversal ouverts. Aucun changement au lecteur ni aux autres Atlas.
+
+
+## Appendice II — achèvement du texte principal (1916)
+
+Source : CW 7, Hull 1966, https://www.ronliskey.com/docs/collected-Works-07-Analytical-Psychology-by-C-G-Jung.pdf . §§ 464–521, PDF p. 289–315 (index zéro), texte extrait consulté par fenêtres recouvrantes, lignes 8115–8882. Notes de l'appendice non collationnées.
+
+### Repères de couverture
+- §§ 464–470 : persona et dissolution, risques de confusion.
+- §§ 471–479 : restauration régressive et identification collective, lectures de Faust et du héros.
+- §§ 480–489 : pluralité des principes, individuation, articulation du collectif et du singulier.
+- §§ 490–502 : imagination, signe et symbole, herméneutique, orientation provisoire de la vie.
+- §§ 503–510 : addendum, corps, individualité, attitude, double médiation et projection.
+- §§ 511–515 : première version du résumé.
+- §§ 516–521 : deuxième version du résumé, distinctions remaniées et anima.
+
+### Questions originales Atlas
+- Le § 492 rend nécessaire une carte distinguant un code à déchiffrer d'une forme qui permet d'inventer. Pour le théâtre, faire varier un même objet scénique sans lui attribuer une signification psychologique obligatoire.
+- Les §§ 500–501 imposent une vigilance contre les itinéraires de développement rigides. Une route pédagogique Atlas doit proposer des orientations révisables et non une succession nécessaire d'étapes personnelles.
+- Le § 504 introduit le corps dans la réflexion sur l'individualité. À rapprocher, après lecture de leurs textes, d'Ansa et de Gendlin ; ne pas postuler une identité de doctrines. Distinguer le travail corporel de l'acteur de l'évaluation de sa santé.
+- Les §§ 512 et 517 illustrent une modification terminologique : la première version limite le Soi à certains contenus inconscients personnels, ce qui ne correspond pas à la définition de totalité dans le texte remanié (§§ 398–405). Ne pas fusionner ces définitions. Les §§ 507, 510 et 521 permettent d'examiner la persona et l'anima comme relations médiatrices, avec contextualisation des catégories historiques sexuées.
+- Les affirmations du texte sur la guérison et la moralité (§§ 497–499) ne sont pas des preuves cliniques ; ne jamais rendre une personne responsable de sa maladie au motif d'un défaut moral. Distinguer la valeur imaginative d'une hypothèse de sa validité factuelle.
+
+### Statut et limites
+Premier passage textuel des §§ 1–521 du volume 7 consigné dans le registre, sur la base des relevés successifs. Les deux essais et les deux appendices sont couverts au premier passage ; notes restantes, vérification des relevés antérieurs, index de concepts et comparaison au dossier public restent ouverts. La lecture de L'Âme et le Soi est la priorité suivante ; Aïon est complémentaire. Aucune modification du lecteur, du lexique ni des autres Atlas.
