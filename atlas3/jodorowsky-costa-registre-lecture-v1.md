@@ -73,3 +73,62 @@ Texte anglais rouvert sur la reproduction indiquée en tête du registre, 194 pa
 
 ## Reprise
 8/17 chapitres parcourus selon le registre cumulé ; première partie (Farcet) terminée au niveau du premier passage textuel, pas au niveau de l'audit final. Partie II : introduction d'Esteban lignes 3773–3823 et suivantes. Les sources originales des témoignages n'ont pas été vérifiées ; notes et traduction française restent à collationner. Le dossier éditorial de 22 notices reste inchangé jusqu'à la reconstruction après extraction. 
+
+
+## Quatrième passage : entretien Javier Esteban, chapitres IX–XIV
+Même édition anglaise, PDF en ligne. Introduction 3773–3843, puis six chapitres parcourus en fenêtres textuelles recouvrantes. Les lignes 3823–3838, 4145–4150, 4453 et 5335–5338 ont été rouvertes pour combler les interruptions d'affichage. Premier passage, pas de collation mot à mot.
+
+| Unité | Plage | Index de recherche |
+|---|---|---|
+| Introduction Esteban | 3773–3843, P113–115 | Relation d'entretien, mode de témoignage, place de l'interlocuteur. |
+| IX — Keys to the Soul | 3844–4317, P116–130 | 3845–3902 rêve ; 3903–3967 art ; 3968–4038 langage ; 4039–4155 substances ; 4156–4196 tarot ; 4197–4277 magie ; 4278–4317 humour. |
+| X — Trail of Life | 4318–4533, P131–137 | 4320–4374 héritage ; 4375–4419 niveaux ; 4420–4488 identification et famille ; 4489–4533 transmission et relations. |
+| XI — The Invisible Bridge | 4534–4852, P138–147 | 4563–4569 quatre centres ; 4574–4589 possibles ; 4641–4664 contemplation et maître ; 4693–4708 ego ; 4771–4801 imagination, attention, acteur/spectateur. |
+| XII — Visions | 4853–5140, P148–156 | 4853–4962 croyances et spiritualité ; 4963–5019 politique et art ; 5020–5140 avenir, sciences et prospective. |
+| XIII — The Art of Healing | 5141–5333, P157–162 | 5142–5190 pathologie et identité ; 5191–5211 emprunts rituels ; 5212–5253 acte et position du thérapeute ; 5254–5279 théâtre ; 5280–5300 corps imaginaire ; 5301–5333 peur et médecine. |
+| XIV — Understanding Life | 5334–5461, P163–166 | 5335–5372 perception et orientation ; 5373–5390 peur et jugement ; 5391–5426 transmission, demande et réception ; 5427–5461 imagination. |
+
+### Questions de reconstruction pour Atlas 3 (analyse originale)
+- Le paradoxe de l'imagination : la disponibilité aux images ne se confond pas avec leur production volontaire (IX, 3852–3863). Comparer deux improvisations : dans la première, un acteur détermine toutes les actions avant le jeu ; dans l'autre, il reçoit la proposition du partenaire. Ce test artistique n'établit aucune capacité de contrôle des rêves.
+- Langage et assignation (IX, section III) : transformer une affirmation sur l'identité d'un personnage en observation située. Une indication de jeu peut rendre perceptible un geste sans prétendre dire ce qu'est essentiellement l'acteur. Rapprochement à tester avec Gendlin : formulation au contact de l'expérience, non simple remplacement d'une croyance.
+- L'art n'est pas obligé de guérir (IX, section II). La tragédie, l'ambiguïté et le malaise sont des possibilités esthétiques légitimes. Conserver cette objection comme une limite interne du projet, non comme une accusation générale.
+- Hériter et recomposer (X, 4320–4374, 4457–4488). Imaginer un personnage dont une règle familiale change de fonction au cours de la scène. Dissocier compréhension, pardon, réconciliation et sécurité : aucun de ces processus n'est obligatoire. Les explications karmiques, la responsabilité globale imputée à la famille et les hiérarchies de conscience ne sont pas des faits établis.
+- Les quatre centres (XI, 4563–4569) ne correspondent pas aux quatre fonctions jungiennes. Repère à préserver sans assimilation : vérifier les filiations dans les autres ouvrages, y compris Gurdjieff. Ne pas transformer le modèle en test de personnalité.
+- Attention dans l'action (XI, 4641–4646, 4776–4801). Comparer la disponibilité de l'acteur à la méditation assise et à la contemplation dans le quotidien, puis à Ansa. La présence n'implique pas d'éliminer les pensées ou l'ego. L'existence d'un cadre et la réversibilité des rôles restent essentielles.
+- Imagination prospective (XII). Distinguer création d'un monde fictionnel, prévision empirique et spéculation métaphysique. Les affirmations sur l'avenir scientifique, les religions, la médecine et la hiérarchie des personnes ne sont pas des résultats établis. La référence aux OVNI de Jung mérite un contrôle dans CW18 §§1431–1451, et non une assimilation entre auteurs.
+- Corps perçu et corps matériel (XIII, 5280–5300). Une image corporelle peut modifier la qualité d'un geste théâtral, sans attester l'existence d'un organe ou d'une énergie invisible. Le travail de Chekhov sur le corps imaginaire est une piste à confronter, non une identité de doctrine.
+- Le problème de l'autorité (XIII, 5212–5253). L'intention bienveillante du praticien ne suffit pas à garantir l'autonomie du destinataire. Critiquer les imputations causales de maladies à la résistance, à l'inconscient ou à la famille. Ne pas reprendre les hypothèses de Hamer, ni des interventions de santé, dans les partitions Atlas.
+- Relation de création (XIV, 5405–5417). Intégrer la possibilité de recevoir, de demander et de refuser, et pas seulement celle de donner. Le partenaire est un co-auteur de la situation, non un matériau disponible à volonté.
+
+## Cinquième passage : cours de créativité, chapitres XV–XVII
+Introduction 5462–5659, P168–172 : histoire spéculative de l'imaginaire, cadre à quatre centres, contraintes héritées, rapport à la morale et au langage. Ne pas convertir ce récit en histoire scientifique des cultures. Les passages 5622–5626 et 5898–5915 ont été rouverts.
+
+| Unité | Plage | Index de recherche |
+|---|---|---|
+| XV — Exercises for the Imagination | 5660–6054, P173–183 | 5664–5713 espace et image de soi ; 5714–5782 expansion, lumière, poids ; 5783–5847 temps, force, bénédiction ; 5848–5882 transformations du moi et mime ; 5883–5902 point ; 5903–5983 arts imaginaires et pouvoir ; 5984–6039 territoire et maison ; 6040–6054 langage. |
+| XVI — Techniques for the Imagination | 6055–6144, P184–186 | 6056–6125 opérations de variation ; 6126–6144 temps imaginaire et limites. |
+| XVII — Therapeutic Applications | 6145–6219, P187–188 | 6146–6193 exemples de transformation d'images éprouvées ; 6194–6219 conclusions sur action et amour. |
+| Notes et données éditoriales | 6220–6271, P189–193 | Quatre notes affichées, copyright espagnol 2004, traduction Rachael LeValley 2010 ; ISBN électronique 9781594779565. |
+
+### Extraction préparatoire : opérations artistiques, non protocole clinique
+- XV, 5708–5713 : variation de la perception de soi. Pour un personnage fictif, modifier uniquement sa manière de percevoir l'espace, puis observer la modification du jeu. Ne pas imposer un idéal corporel ou une identité.
+- XV, 5848–5882 : mobilité des identifications, neutralité du mime, tension entre imagination et suspension des images. Comparer à Lecoq et Chekhov. Distinguer l'incarnation d'une figure et l'affirmation de connaître la personne réelle qu'on représente.
+- XV, 5883–5902 : attention focalisée et geste. Notre transposition peut prendre la forme d'une ligne tracée à différentes vitesses ou d'un mouvement vers un objet ; conserver le lien à la situation plutôt qu'une promesse de pouvoir absolu.
+- XV, 5903–5983 : représentation mentale et arts. Vérifier la distinction entre imaginer une activité, acquérir sa technique et produire une œuvre. Le fait de mimer une pratique ne confère pas sa maîtrise ; le talent ne repose pas sur le contrôle d'autrui. Refuser les exercices de domination. 
+- XV, 6040–6054 : le langage peut se dégager des formulations usuelles. Partition originale : donner à deux personnages des mots fictifs, puis rendre le rapport perceptible par rythme, geste et distance. Comparer au théâtre du son et au grammelot sans postuler une filiation.
+- XVI, 6056–6125 : cinq opérations repérées, dont quatre analogies arithmétiques et combinaison. Pour Atlas, elles peuvent former une grammaire de variations d'un accessoire et de ses relations. Exemple original : une lampe, sa taille, son absence partielle, sa duplication, sa combinaison avec une horloge. La création est plus que ces opérations ; elles ne sont pas exhaustives.
+- XVI, 6126–6144 : le temps comme variable de fiction. Comparer à Atlas 2 ; ne pas transposer les exercices de disparition ou de mort. La limite est explicitement présente dans le texte.
+- XVII, 6149–6164 : fonction possible de la protection et variation symbolique. Une divergence majeure à préserver face aux passages précédents consacrés à la destruction des gardiens : la protection peut être aménagée plutôt que supprimée. Pour le théâtre, traiter cette tension dans une scène dont l'espace comprend une séparation avec un passage accessible. Ne pas traiter une sensation physique comme diagnostic, ni prescrire une signification à la personne.
+- XVII, 6194–6219 : passage de l'attente à l'action. Distinguer initiative et responsabilité pour les réactions d'autrui ; le refus ou le manque d'amour ne prouvent pas une incapacité de la personne à aimer.
+
+## Bilan de couverture de Psychomagic
+17/17 chapitres parcourus dans le premier passage textuel cumulé de l'édition anglaise, ainsi que les deux introductions, le prologue, le portrait, les notes finales et les mentions éditoriales. Repérage de la fin du livre confirmé. Couverture documentaire au niveau du chapitre et des fenêtres textuelles, non audit exhaustif phrase par phrase, collation française, vérification des anecdotes ou validation clinique. Téléchargement local impossible dans cette session ; iconographie non auditée. Les transpositions Atlas proposées sont originales et provisoires. Aucun changement des 22 notices et 29 sections existantes avant l'extraction de Métagénéalogie et de La Voie du tarot.
+
+### Points majeurs à hiérarchiser à la fin du corpus
+1. Acte créateur, événement, matériau, transformation symbolique.
+2. Imagination sensorielle et langagière, jeu des formes, grammaire des variations.
+3. Direction et accueil, attention, disponibilité et position de témoin.
+4. Répétition familiale, héritage et recomposition (à préciser avec Costa).
+5. Corps imaginaire, identification, rôle, neutralité et relation.
+6. Liberté du destinataire, responsabilité du cadre, pouvoir de prescription.
+7. Soin revendiqué et limites de la preuve, contradictions et contre-exemples.
