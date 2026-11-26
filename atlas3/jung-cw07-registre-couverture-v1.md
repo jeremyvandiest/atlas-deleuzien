@@ -17,7 +17,7 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - Conclusion : E (§ 201, p. 123).
 - Deuxième essai, Dialectique du moi et de l'inconscient, deux préfaces : E.
 - Partie 1 : inconscients personnel et collectif (E, §§ 202–220) ; assimilation de l'inconscient (E, §§ 221–242) ; persona et psyché collective (E, §§ 243–253) ; tentatives négatives de différenciation, retour à la persona et identification collective (E, §§ 254–265).
-- Partie 2 : fonction de l'inconscient (E, §§ 266–295) ; anima et animus (P) ; différenciation du moi et des figures inconscientes (P) ; personnalité mana (P).
+- Partie 2 : fonction de l'inconscient (E, §§ 266–295) ; anima et animus (E, §§ 296–340, PDF p. 195–221) ; différenciation du moi et des figures inconscientes (P) ; personnalité mana (P).
 - Appendice I, texte de 1912 : R.
 - Appendice II, texte de 1916 : six sections, addendum et deux versions du résumé : R.
 - Bibliographie et index : R (outils de contrôle et de repérage, non substituts à la lecture).
@@ -213,3 +213,27 @@ F. Conserver une vigilance sur la hiérarchie culturelle et les stéréotypes de
 
 ### Statut
 Premier essai : 8/8 chapitres + conclusion. Second essai : 5/8 chapitres (partie I complète et partie II chapitre I). §§ 1–295 consignés dans les registres, dont §§ 243–295 dans cette étape. Reprise au § 296 : anima et animus. L'extraction est un index analytique et non une preuve d'exhaustivité conceptuelle : contrôle des notes, confrontation avec le dossier actuel et second audit à faire. Aucun changement aux écrans ni aux Atlas 1, 2 et 4.
+
+
+## Deuxième essai — unité 6 : anima et animus
+
+Source identique, CW 7, §§ 296–340. Pages PDF 195–221 (index zéro) consultées visuellement en séquence. Chapitre III à reprendre après cette borne. Notes à collationner.
+
+### Index de couverture
+- §§ 296–301 : imagos, aptitudes, hypothèse héréditaire et réserve sur la mémoire.
+- §§ 302–304 : autonomie relative, distinction psychologique/métaphysique, compensation.
+- §§ 305–311 : fonction sociale de la persona, identification, tension interne/externe.
+- §§ 312–317 : personnification, projection, différenciation.
+- §§ 318–323 : adaptation, objectivation, technique dialectique et affect.
+- §§ 324–327 : limites d'indication, appuis, religion, médiation.
+- §§ 328–335 : animus, différenciation, opinions et projections.
+- §§ 336–340 : fonction de relation, créativité, dépersonnification, expérience et théorie.
+
+### Décisions de reconstruction (provisoires)
+1. La carte persona doit intégrer une dimension fonctionnelle. La distinction ne porte pas sur le vrai et le faux de façon binaire, mais sur l'usage d'un rôle et la capacité à prendre du recul vis-à-vis de lui. Le § 305 doit être lu avec les §§ 245–247, 318–319.
+2. Pour les futures cartes anima/animus : distinguer explicitement la définition historique sexuée de Jung et les interprétations contemporaines, lesquelles nécessiteront des sources propres. Ne pas présenter les stéréotypes sur les femmes et les hommes comme des faits psychologiques établis. Les §§ 328–338 rendent particulièrement nécessaire cette séparation.
+3. Repère pédagogique : au § 339, la différence entre personnification et fonction suggère une carte dynamique plutôt qu'un catalogue iconographique. Proposition originale de théâtre : un personnage fictif entend une injonction conventionnelle, écrite par l'auteur ; un second interprète la porte comme voix scénique, puis le premier reformule plusieurs réponses. Comparer l'effet des formes d'adresse. Aucun dialogue avec des entités supposées réelles ni induction d'états dissociatifs.
+4. Les §§ 302 et 340 sont des limites d'interprétation à conserver, et le § 324 limite expressément l'indication de la technique. L'atelier n'est ni une analyse jungienne ni une thérapie. Le § 300 signale une absence de preuve décisive pour la transmission d'images mnésiques ; ne pas confondre cette réserve avec une confirmation des archétypes.
+
+### État
+Deuxième essai : 6/8 chapitres ; texte principal des §§ 1–340 des deux essais consigné. Reprise : partie II, chapitre III, technique de différenciation. Les notes, la confrontation au lexique existant et l'audit d'ensemble restent ouverts. Pas de modification de l'interface ou des autres Atlas.
