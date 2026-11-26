@@ -1,5 +1,5 @@
 {
-  "status": "Candidat pédagogique non intégré ; cartes structurées, non rendues dans le lecteur ; partitions non testées en atelier",
+  "status": "Candidat pédagogique audité : 3 partitions principales et 2 variations reliées au répertoire existant ; 8 cartes non rendues dans le lecteur ; essais en atelier non réalisés.",
   "id": "ansa",
   "sources": "Dossier fondateur V2 rédaction, lexique unifié V2 (N01–N44), cahiers 1–3, registres H/E. E = Eymeri, PDF 406 pages ; H = Ansa 1984, lignes OCR, repères du registre. Cartes ANM et partitions ANP originales Atlas, non reproductions des exercices d'Ansa.",
   "maps": [
@@ -512,7 +512,12 @@
         "L'intention initiale s'est-elle précisée, déplacée ou affaiblie ?"
       ],
       "boundary": "Aucune consigne de captation spirituelle, d'attention corporelle ou de sensation ambulatoire. Ne pas filmer des personnes sans accord ; choisir un espace sûr.",
-      "refs": "E 135–142, 163–178, 392–393 ; rapprochement artistique original"
+      "refs": "E 135–142, 163–178, 392–393 ; rapprochement artistique original",
+      "role": "partition principale",
+      "relatedPractice": [
+        "salon-05 / Composer — un montage visible",
+        "salon-07 / Agir — écouter pour trouver"
+      ]
     },
     {
       "id": "ANP02",
@@ -536,10 +541,10 @@
       "goal": "Explorer la relation entre l'achèvement d'une proposition, la réponse du partenaire et la durée d'un silence.",
       "problem": "L'interprète prépare sa réponse si tôt qu'elle ne prend plus en compte ce que fait l'autre.",
       "steps": [
-        "Convenir d'une fiction : A demande à B si une décision est prise ; B répond qu'il doit encore réfléchir. Jouer trois fois le même échange bref sans imposer de qualité émotionnelle.",
+        "Convenir d'une fiction : A demande à B si une décision est prise ; B répond qu'il doit encore réfléchir. Jouer une version de référence sans imposer de qualité émotionnelle.",
         "Dans une version, B attend un événement extérieur précis et visible du jeu de A avant de répondre (par exemple la fin du geste de poser un dossier). Ne pas imposer une durée fixe.",
         "Dans une autre version, B répond immédiatement, parce que la situation fictive rend la décision urgente. Garder les mêmes paroles.",
-        "Observer les deux versions : moment où la réponse commence, continuité ou rupture de l'action, possibilités laissées à A.",
+        "Comparer la version de référence et les deux variantes : moment où la réponse commence, continuité ou rupture de l'action, possibilités laissées à A.",
         "Choisir la version la plus pertinente pour cette scène, puis tenter une dernière version où les deux interprètes règlent ensemble le tempo."
       ],
       "variants": [
@@ -554,7 +559,13 @@
         "Qu'est-ce que le spectateur a réellement perçu ?"
       ],
       "boundary": "Aucune demande de silence méditatif, rappel sensitif ni révélation personnelle. Le témoin décrit le jeu, pas l'état de conscience.",
-      "refs": "E 118–125, 197–205, 237–240 ; H occasion (registre)"
+      "refs": "E 118–125, 197–205, 237–240 ; H occasion (registre)",
+      "role": "variation liée aux salons",
+      "relatedPractice": [
+        "salon-02 / Composer — syntaxe et souffle",
+        "salon-04 / Composer — reprise et arrêt",
+        "salon-07 / Composer — le silence gardé"
+      ]
     },
     {
       "id": "ANP03",
@@ -585,7 +596,7 @@
         "Composer une version finale où l'intervalle joue une fonction choisie (attente, circulation, obstacle, ouverture), sans attribuer automatiquement une émotion à une distance."
       ],
       "variants": [
-        "Deux objets et un vide à cadrer en photographie ; pas de personne nécessaire.",
+        "Pour cette variation, privilégier deux objets et un vide à cadrer ; les personnes ne sont pas nécessaires.",
         "Modifier uniquement le bord du cadre plutôt que la place des chaises.",
         "Laisser un passage libre ou barré par un élément du décor."
       ],
@@ -596,7 +607,11 @@
         "Peut-on produire une autre signification avec la même distance ?"
       ],
       "boundary": "Pas d'approche physique imposée, de toucher ni de révélation biographique. Ne pas reproduire la sensation de l'espace d'Ansa ; le matériau est le dispositif scénique.",
-      "refs": "E 378–379, 392–393 ; lecture artistique des intervalles"
+      "refs": "E 378–379, 392–393 ; lecture artistique des intervalles",
+      "role": "variation spatiale liée à JCP02",
+      "relatedPractice": [
+        "JCP02 — Une image, plusieurs relations"
+      ]
     },
     {
       "id": "ANP04",
@@ -638,7 +653,12 @@
         "Qu'est-ce que l'interprète a découvert que la direction n'avait pas prévu ?"
       ],
       "boundary": "Retour descriptif sur le travail, jamais jugement de personnalité. L'encadrant reste responsable d'interrompre une situation dangereuse ; aucun exercice initiatique.",
-      "refs": "H l.171–174, 199–219 (registre) ; E 336–342, 385–386"
+      "refs": "H l.171–174, 199–219 (registre) ; E 336–342, 385–386",
+      "role": "partition principale",
+      "relatedPractice": [
+        "JCP03 — La partition qui accueille l'imprévu",
+        "salon-01 / Composer — varier une qualité"
+      ]
     },
     {
       "id": "ANP05",
@@ -680,14 +700,20 @@
         "L'écriture a-t-elle prolongé l'impression ou l'a-t-elle remplacée ?"
       ],
       "boundary": "Pas d'exploration de souvenirs traumatiques, de réminiscences ou de pratiques de rappel d'impressions. Utiliser des œuvres ou situations fictives.",
-      "refs": "E 138–142, 172–178, 255–264, 302–304, 363–366, 392–393"
+      "refs": "E 138–142, 172–178, 255–264, 302–304, 363–366, 392–393",
+      "role": "partition principale",
+      "relatedPractice": [
+        "JCP02 — Une image, plusieurs relations",
+        "salon-05 / Composer — un montage visible",
+        "salon-07 / Composer — le silence gardé"
+      ]
     }
   ],
   "pending": [
     "Vérifier visuellement chaque carte en mobile et créer une version HTML lisible sans graphique.",
-    "Auditer les partitions face aux 21 partitions de salons et aux 4 JCP : titres et objectifs comparés ici ; comparaison intégrale des consignes à faire avant intégration.",
     "Tester les partitions en atelier avec consentement ; aucun effet garanti et aucune validation empirique revendiquée.",
     "Recollation ciblée H/E et audit du dossier V1/V2 ; obtenir les deux ouvrages complémentaires si possible.",
-    "Aucune modification de main ni des données applicatives."
+    "Aucune modification de main ni des données applicatives.",
+    "Respecter les rôles principale/variation lors de l'intégration ; ne pas recompter ANP02 et ANP03 comme de nouvelles partitions autonomes dans le répertoire général."
   ]
 }
