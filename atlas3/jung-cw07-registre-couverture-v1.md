@@ -8,7 +8,7 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - Premier essai, Psychologie de l'inconscient, cinq préfaces : E.
 - I. Psychanalyse : E (texte principal §§ 1–15, PDF p. 19–28 ; notes et recollation à contrôler).
 - II. Théorie de l'éros : E (texte principal §§ 16–34, PDF p. 29–37, contrôlé visuellement ; notes à collationner).
-- III. Volonté de puissance : R.
+- III. Volonté de puissance : E (texte principal §§ 35–55, PDF p. 38–46, contrôle visuel ; notes à collationner).
 - IV. Problème des types d'attitude : P.
 - V. Inconscient personnel et collectif : P.
 - VI. Méthode synthétique ou constructive : P.
@@ -75,3 +75,25 @@ Exemple original Atlas : dans une pièce, un personnage refuse systématiquement
 
 ### Audit de statut
 Les §§ 1–34 des deux premiers chapitres sont désormais consignés dans le registre (chapitre I selon relevé antérieur, chapitre II contrôlé dans cette étape). La cohérence de la transition et les références de notes seront recollationnées à la fin de l'essai. Pas de synthèse finale, pas de modification du lexique ni du lecteur. Reprise au § 35, chapitre III : volonté de puissance.
+
+
+## Lecture séquentielle — unité 3 : l'autre point de vue, la volonté de puissance
+
+CW 7, §§ 35–55. Les neuf pages PDF p. 38–46 (index zéro) ont été contrôlées visuellement. La borne du chapitre suivant (§ 56) est confirmée dans le texte extrait. Source : https://www.ronliskey.com/docs/collected-Works-07-Analytical-Psychology-by-C-G-Jung.pdf . Notes 1 et 2 à collationner ; pas de lecture nouvelle de Nietzsche ou d'Adler dans cette étape.
+
+### Repères de couverture
+- §§ 35–38 : ombre, phénomènes collectifs, instinct, critique biographique de Nietzsche.
+- §§ 39–41 : unilatéralité, identification à l'ombre, autocritique, nature et culture.
+- §§ 42–43 : irréductibilité réciproque de l'éros et du pouvoir ; références à Faust et Wagner.
+- §§ 44–49 : lecture causale freudienne d'un cas clinique.
+- §§ 50–53 : relecture adlérienne orientée vers la finalité, distinction entre motif inconscient et intention consciente.
+- §§ 54–55 : incompatibilité des deux explications lorsqu'elles prétendent à l'exclusivité.
+
+### Reconstruction à éprouver
+La contradiction prépare le problème du point de vue au chapitre IV. Ne pas assimiler la volonté de puissance de Nietzsche à la reconstruction psychologique de Jung ; les jugements biographiques de Jung ne constituent pas des diagnostics fiables. De même, le cas clinique ne valide ni la causalité alléguée ni une théorie de la manipulation par la maladie.
+
+### Transposition originale Atlas
+Écrire une scène où une personne souhaite retenir un partenaire. En composer deux versions, l'une où la relation importe principalement, l'autre où l'enjeu réside dans la maîtrise de la situation. Comparer les actions et les réactions observables. La scène permet de tester des choix dramaturgiques sans trancher les motivations réelles d'autrui.
+
+### Statut
+Trois chapitres, §§ 1–55, consignés dans le registre. Reprise au § 56. Relecture des notes, audit transversal et hiérarchie définitive restent ouverts. Aucun changement au lecteur ou aux autres Atlas.
