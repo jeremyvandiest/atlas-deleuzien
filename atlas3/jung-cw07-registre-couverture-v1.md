@@ -501,3 +501,41 @@ Le premier passage est achevé selon les relevés existants : 16 chapitres, la c
 - Seulement ensuite, proposer la compression et les cartes à intégrer dans Atlas 3. Aucun changement au lecteur, ni aux Atlas 1, 2 et 4.
 
 Limites : les notes encore non collationnées, les 24 planches non vérifiées, les différences de traduction et le contrôle des relevés antérieurs restent explicitement ouverts. Le premier passage n'est pas l'achèvement de l'audit.
+
+
+## Contrôle iconographique — CW 9/I, 24 planches, 26 novembre 2026
+
+Source rouverte : https://www.crisrieder.org/thejourney/storage/2025/09/The-Archetypes-and-the-Collective-Unconscious-Carl-Jung.pdf ; édition anglaise Hull, deuxième édition, PDF de 681 pages. Les 24 reproductions ont été effectivement affichées et observées, pages 308–331 (index zéro), soit pages 309–332 du lecteur PDF. La notice éditoriale aux pages 8–9 précise que sept images ont été ajoutées. Le commentaire principal se trouve aux §§ 525–626, et le § 616 limite explicitement l'interprétation des images tardives.
+
+### Repères visuels indépendants du commentaire
+| Planche | Page PDF (lecteur, base 1) | Observation de composition |
+|---|---:|---|
+| 1 | 309 | Silhouette humaine, côte rocheuse et eau. |
+| 2 | 310 | Éclair et sphère, disparition de la figure humaine. |
+| 3 | 311 | Sphère, bande ondulée, serpent séparé. |
+| 4 | 312 | Disque jaune, noyau rouge et bleu, motif serpentin. |
+| 5 | 313 | Quatre spirales bleues, serpent hors du disque. |
+| 6 | 314 | Quatre motifs courbes verts et rouges, centre circulaire. |
+| 7 | 315 | Fond noir, organisation concentrique, étoile jaune. |
+| 8 | 316 | Anneaux extérieurs, quatre centres sombres, motifs ailés. |
+| 9 | 317 | Arcs multicolores, signes linéaires, serpent. |
+| 10 | 318 | Rayons extérieurs, croissants, motif floral central. |
+| 11 | 319 | Soleil et lune dans le paysage, quatre motifs internes. |
+| 12 | 320 | Paysage jour/nuit, motifs célestes et terrestres. |
+| 13 | 321 | Formes serpentines, arcs colorés, disque sur fond noir. |
+| 14 | 322 | Composition circulaire devant une ville nocturne. |
+| 15 | 323 | Rosace irrégulière, mer et immeubles. |
+| 16 | 324 | Huit lobes et centre spiralé sur fond rayonnant. |
+| 17 | 325 | Volutes rouges et bleues entre deux arbres. |
+| 18 | 326 | Spirales bleues, noyau rouge, arc coloré et pluie. |
+| 19 | 327 | Carré sombre dans un disque, quatre scènes périphériques. |
+| 20 | 328 | Centre étoilé blanc, motifs végétaux rayonnants. |
+| 21 | 329 | Six motifs disposés autour d'une étoile. |
+| 22 | 330 | Composition apparentée, mais asymétrique ; sphère en saillie. |
+| 23 | 331 | Disque multicolore, réseau de motifs végétaux. |
+| 24 | 332 | Fleur blanche, feuilles vertes et étoile sur fond sombre. |
+
+Cette observation concerne les reproductions, non l'examen matériel des originaux. Ne pas en tirer de diagnostic ni attribuer un sens à chaque détail. Pour le lecteur Atlas : comparer la variation des formes 1–2, la construction de la symétrie 4–8, l'inscription dans un environnement 11–17, et la variation 21–22. Le § 616 interdit de traiter les dernières images comme un récit psychique entièrement déchiffrable. La présence de formes à quatre, six ou huit parties ne constitue pas une échelle de progrès. Aucun droit de reproduction des peintures n'est présumé ; fournir des repères de consultation plutôt que les copier dans l'application.
+
+### Correspondance française partiellement vérifiée
+Bibliothèque nationale de France : https://catalogue.bnf.fr/ark:/12148/cb46860411p — Albin Michel, 2021, trad. Claude Maillard, Christine Pflieger-Maillard et Roland Bourneuf. Les correspondances de paragraphes de l'édition 1990 sont documentées par la SFPA : https://cgjungfrance.com/2006/04/les-archetypes-de-l-inconscient/ ; par exemple CW 9/I §§ 240–258 = éd. 1990 §§ 42–60, et CW 9/I §§ 564–568 = §§ 100–104. Ce repérage ne constitue ni lecture de l'édition française ni collation de sa traduction. Les notes restantes et la concordance complète des éditions demeurent ouvertes.
