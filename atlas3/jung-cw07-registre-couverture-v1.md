@@ -438,3 +438,23 @@ La distinction des finalités (§ 539) est décisive pour un projet réunissant 
 
 ### État
 760 paragraphes consignés (521 + 60 + 102 + 63 + 14). L'Âme et le Soi : 4/5 ensembles textuels au premier passage. Reste l'ensemble Sur les phénomènes occultes, dont les cinq contributions et les bornes de l'édition française doivent être contrôlées. Notes, planches, traduction et audit d'ensemble restent ouverts. Aucun changement aux dossiers publics ni aux autres Atlas.
+
+
+## L'Âme et le Soi — texte V : ouverture
+
+Source primaire : CW 18, section IV, https://dokumen.pub/collected-works-of-cg-jung-volume-18-collected-works-of-c-g-jung-volume-18-the-symbolic-life-miscellaneous-writings-course-booknbsped-9781400851010.html . Texte des §§ 697–763, lignes 3029–3276, consulté en fenêtres recouvrantes. OCR dégradé (espacement, numéros déplacés), collation avec l'imprimé et les notes nécessaire. Correspondance bibliographique française : https://cgjungfrance.com/2006/05/la-vie-symbolique/ ; abstracts IAAP https://iaap.org/resources/academic-resources/collected-works-abstracts/volume-18-symbolic-life/ . Le sommaire anglais précise les dates de rédaction 1938 (publication française 1939) et 1957 (publication ultérieure de Jaffé). 
+
+### Index de couverture
+- §§ 697–740 : conférence de 1905. Repères 697–706 (croyance et hypothèse, contexte historique, suggestion) ; 707–721 (récits rapportés, visions, Crookes) ; 722–726 (limites des témoignages, enquête personnelle) ; 727–735 (mouvements automatiques, indices sensoriels, attentes) ; 736–740 (critique des observations, nécessité de vérification).
+- §§ 741–745 : préface aux Phénomènes occultes. Immortalité, statut psychologique des idées, valeur affective et fonctionnelle.
+- §§ 746–756 : Psychologie et spiritisme. Personnification, statut du témoignage, hypothèses parapsychologiques, critique des projections et des analogies énergétiques.
+- §§ 757–763 : préface à Fanny Moser. Collecte et critique des récits, synchronicité, limites de preuve. Le récit personnel joint commence au § 764 et n'est pas encore couvert.
+
+### Reconstruction originale Atlas
+- Repère §§ 727–735 : distinguer intention formulée, mouvement et perception de l'action. Pour une partition de fiction, faire observer les variations de posture et de tempo lorsqu'un acteur change son intention scénique, puis comparer ce que l'acteur rapporte et ce que les partenaires observent. Rapprochement à éprouver avec Chekhov, non équivalence théorique. Ne pas reproduire séances, hypnose ou automatismes induits.
+- Repères §§ 742–745, 748 et 761 : distinguer intensité du vécu, interprétation et preuve. Les notions de réalité psychique et de personnification ne confèrent pas une existence externe aux figures. Ne pas imposer une croyance spirituelle à l'apprenant.
+- Comparer l'attitude de Jung en 1905 (§§ 724, 735–740) à ses affirmations de 1948 et 1950 (§§ 747, 750, 761). Sa propre conviction et les résultats historiques invoqués ne prouvent ni télépathie ni relativité spatio-temporelle de la psyché. La synchronicité devra être lue dans son texte propre si elle est retenue comme notion. Contextualiser les catégories psychiatriques, raciales et sexuées anciennes ; ne pas les convertir en normes de santé.
+- Distinguer le témoignage sincère et la fiabilité factuelle, et ne pas confondre l'absence de réfutation avec une confirmation. Cette règle s'applique aussi à notre lecture du corpus.
+
+### État
+827 paragraphes consignés au premier passage (760 + 67). L'Âme et le Soi : quatre ensembles entièrement relevés, cinquième en cours. Restent §§ 764–789 (contribution personnelle à Moser et préface à Jaffé). Notes, collation française, planches et audit transversal encore ouverts. Aucun changement au lecteur ou aux autres Atlas.
