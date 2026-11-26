@@ -325,13 +325,18 @@
     if(!paths.length&&!cards.length)return '';
     return (paths.length?'<h3>Replacer dans la pensée de Jung</h3><div class="a3r-mini-links">'+paths.map(m=>jungJumpButton('a3jung-module-'+m.id,m.title)).join('')+'</div>':'')+(cards.length?'<h3>Voir les relations en images</h3><div class="a3r-mini-links">'+cards.map(c=>jungJumpButton('a3jung-card-'+c.n,c.title)).join('')+'</div>':'');
   }
+  function jungCaseStudy(c){
+    if(!c)return '';
+    const steps=c.steps.map(v=>'<section><h4>'+e(v.title)+'</h4><p>'+e(v.text)+'</p>'+(/^https:\/\//.test(v.url)?'<p><a class="a3r-link" href="'+e(v.url)+'" target="_blank" rel="noopener noreferrer">Consulter les planches (PDF)</a></p>':'')+'</section>').join('');
+    return '<details class="a3r-v15-depth"><summary>'+e(c.title)+'</summary><p>'+e(c.intro)+'</p>'+steps+'<p>'+e(c.end)+'</p><p class="a3r-quiet">'+e(c.source)+'</p></details>';
+  }
   function jungReadingPath(d){
     const x=edition15()?.approaches?.find(a=>a.id==='jung'), modules=x?.modules||[], terms=d.terms||[];
     if(!modules.length)return '';
     const content=modules.map((m,i)=>{
       const termLinks=list=>list.map(t=>{const n=terms.findIndex(v=>v.term===t);return n<0?'':'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\'jung\','+n+')">'+e(t)+'</button>';}).join('');
       const links=termLinks(m.terms), extra=termLinks(m.extraTerms||[]);
-      return '<details id="a3jung-module-'+e(m.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+String(i+1).padStart(2,'0')+' · '+e(m.title)+'</summary><h3>'+e(m.question)+'</h3><p>'+e(m.argument)+'</p><h4>Une situation concrète</h4><p>'+e(m.example)+'</p><p><strong>Distinction :</strong> '+e(m.distinction)+'</p><h4>Application artistique proposée</h4><p>'+e(m.practice)+'</p><h4>Notions associées</h4><div class="a3r-mini-links">'+links+'</div>'+(extra?'<h4>Notions complémentaires</h4><p>Approfondissements issus des lectures ciblées et des repérages du dossier long ; leur audit primaire reste ouvert.</p><div class="a3r-mini-links">'+extra+'</div>':'')+'<p class="a3r-quiet">Repères de lecture : '+e(m.refs.join(' ; '))+'</p>'+jungModuleLinks(m)+'</details>';
+      return '<details id="a3jung-module-'+e(m.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+String(i+1).padStart(2,'0')+' · '+e(m.title)+'</summary><h3>'+e(m.question)+'</h3><p>'+e(m.argument)+'</p><h4>Une situation concrète</h4><p>'+e(m.example)+'</p><p><strong>Distinction :</strong> '+e(m.distinction)+'</p><h4>Application artistique proposée</h4><p>'+e(m.practice)+'</p>'+jungCaseStudy(m.caseStudy)+'<h4>Notions associées</h4><div class="a3r-mini-links">'+links+'</div>'+(extra?'<h4>Notions complémentaires</h4><p>Approfondissements issus de lectures ciblées ; consulte les références de chaque notice. La lecture intégrale des ouvrages complémentaires reste ouverte.</p><div class="a3r-mini-links">'+extra+'</div>':'')+'<p class="a3r-quiet">Repères de lecture : '+e(m.refs.join(' ; '))+'</p>'+jungModuleLinks(m)+'</details>';
     }).join('');
     return '<section class="a3r-editorial-terms" aria-label="Parcours de compréhension de Jung"><h2>Comprendre Jung · huit problèmes</h2><p>Un parcours de lecture avant le dossier intégral. Les situations et applications de fiction sont des propositions originales Atlas, non des exercices cliniques de Jung.</p>'+content+'</section>';
   }
