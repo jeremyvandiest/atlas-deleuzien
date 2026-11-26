@@ -11,10 +11,10 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - III. Volonté de puissance : E (texte principal §§ 35–55, PDF p. 38–46, contrôle visuel ; notes à collationner).
 - IV. Problème des types d'attitude : E (texte principal §§ 56–96, PDF p. 47–65 ; notes à contrôler).
 - V. Inconscient personnel et collectif : E (texte principal §§ 97–120, PDF p. 66–81 ; contrôle des notes et des pages à faire).
-- VI. Méthode synthétique ou constructive : P.
-- VII. Archétypes : P.
-- VIII. Approche thérapeutique : R.
-- Conclusion : R.
+- VI. Méthode synthétique ou constructive : E (§§ 121–140, p. 82–91 ; notes à contrôler).
+- VII. Archétypes : E (§§ 141–191, p. 92–116 ; notes à contrôler).
+- VIII. Approche thérapeutique : E (§§ 192–200, p. 117–122 ; notes à contrôler).
+- Conclusion : E (§ 201, p. 123).
 - Deuxième essai, Dialectique du moi et de l'inconscient, deux préfaces : R.
 - Partie 1 : inconscients personnel et collectif (P) ; assimilation de l'inconscient (P) ; persona et psyché collective (P) ; tentatives négatives de différenciation, retour à la persona et identification collective (P).
 - Partie 2 : fonction de l'inconscient (P) ; anima et animus (P) ; différenciation du moi et des figures inconscientes (P) ; personnalité mana (P).
@@ -138,3 +138,29 @@ Exemple original pour le Théâtre du sentir : une interprète joue successiveme
 
 ### Statut
 Cinq chapitres, §§ 1–120, consignés. Reprise au § 121 : méthode synthétique ou constructive. Contrôle des notes et audit transversal ouverts ; aucun changement au lexique, au lecteur ou aux autres Atlas.
+
+
+## Lecture séquentielle — unités 6 à 9 : fin du premier essai
+
+Source : CW 7, édition Hull 1966, PDF p. 82–123 (index zéro), lignes 2157–3377 du texte extrait. Plages contiguës consultées par ouvertures successives. Notes de fin et vérification visuelle non effectuées dans cette étape ; téléchargement direct du PDF non abouti.
+
+### Index de couverture
+- VI, §§ 121–140 (p. 82–91) : fonction transcendante et amplification (121–122) ; rêve et associations (123–127) ; réduction et niveaux objectif/subjectif (128–132) ; identification, fascination, libido (133–140).
+- VII, §§ 141–191 (p. 92–116) : transfert et différenciation (141–150) ; projection et réalité psychique (151–158) ; transition d'attitude, mythes et prudence interprétative (159–166) ; rêves, initiation et compensation (167–183) ; individuation, totalité, critères de correction (184–191).
+- VIII, §§ 192–200 (p. 117–122) : risques de l'analyse (192–194) ; potentialités prospectives (195–197) ; limites et individualisation de la démarche, autocritique (198–200).
+- Conclusion, § 201 (p. 123) : expérience singulière, sentiment, philosophie.
+
+### Reconstruction provisoire de l'ensemble (analyse Atlas, à éprouver)
+L'architecture n'est pas celle d'un dictionnaire des figures. Elle nous invite à construire une série de problèmes : pourquoi une explication peut être insuffisante ; comment distinguer les plans d'interprétation ; comment donner forme à une contradiction sans fixer une identité ; comment examiner les effets d'une hypothèse et l'abandonner si elle appauvrit l'expérience. Relier ces problèmes plutôt que multiplier les fiches redondantes. Conserver les passages et leur ordre dans le registre ; éviter de faire passer cette reconstruction éditoriale pour la table des matières de Jung.
+
+### Prototypes à tester ultérieurement (propositions originales Atlas)
+1. Carte à deux axes : à quoi une image renvoie-t-elle, et que permet-elle de composer ? Exemple de fiction : une porte fermée peut représenter un obstacle dans l'espace du récit, mais aussi devenir un motif chorégraphique de retrait. Il ne s'agit pas d'une interprétation psychologique de l'acteur.
+2. Carte de la fonction transcendante : deux attitudes scéniques incompatibles, mise en forme par un objet ou un geste, apparition d'une troisième composition. Ne pas présenter cette analogie comme un traitement ou comme une recette de résolution garantie.
+3. Carte projection/personne : faire jouer deux variations d'une même rencontre avec les mêmes actes observables, puis distinguer ce qui est joué, imaginé et vérifié.
+4. Carte de vigilance : image féconde si elle enrichit les possibilités de jeu ; interrompre une pratique si elle devient envahissante ou désorganisante. Aucun exercice visant à provoquer des symptômes ni à remplacer un suivi clinique.
+
+### Contrôle critique et limites
+Les exemples des chapitres VI et VII comportent des présupposés historiques pathologisant l'homosexualité et des classifications raciales et culturelles aujourd'hui injustifiables. Les conserver comme objets de critique historique, non comme critères de santé ou de développement. Les récits de traitement ne constituent pas une validation empirique. Ne pas donner à un symbole une signification universelle fixe ni au rêve une autorité de diagnostic.
+
+### Audit provisoire
+Le texte principal du premier essai est couvert dans le registre (§§ 1–201, huit chapitres et conclusion), d'après les extractions successives ; la présente étape a directement consulté les §§ 121–201. Les notes restent à collationner, les relevés antérieurs à recroiser, les concepts du lecteur existant à comparer et le second essai à lire. La hiérarchie d'auteur demeure provisoire. Reprise : préfaces puis § 202 de Dialectique du moi et de l'inconscient (borne à confirmer). Aucun changement aux écrans ou aux Atlas 1, 2 et 4.
