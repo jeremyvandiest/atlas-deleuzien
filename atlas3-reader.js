@@ -246,10 +246,13 @@
   // Dossiers longs et notions cliquables : greffe documentaire sans nouveau menu.
   function editorialExpansion(id){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
-    const terms=(d.terms||[]).map((t,i)=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>').join('');
+    const entries=(d.terms||[]).map((t,i)=>({t,i}));
+    const termButton=({t,i})=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>';
+    const categories=[...new Set(entries.map(({t})=>t.category).filter(Boolean))];
+    const terms=categories.length?categories.map(category=>'<section><h3>'+e(category)+'</h3><div class="a3r-mini-links">'+entries.filter(({t})=>t.category===category).map(termButton).join('')+'</div></section>').join('')+(entries.some(({t})=>!t.category)?'<div class="a3r-mini-links">'+entries.filter(({t})=>!t.category).map(termButton).join('')+'</div>':''):entries.map(termButton).join('');
     return '<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur')+'</summary>'+
       '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html,id)+'</div></details>'+
-      '<div class="a3r-editorial-terms"><h2>Notions à explorer</h2><div class="a3r-mini-links">'+terms+'</div></div>'+
+      '<div class="a3r-editorial-terms"><h2>Notions à explorer'+(categories.length?' · '+entries.length+' concepts':'')+'</h2>'+(categories.length?terms:'<div class="a3r-mini-links">'+terms+'</div>')+'</div>'+
       '<p class="a3r-quiet">'+e(d.edition)+' · '+e(d.source)+'</p>'+
       '<div id="a3r-notion-modal" class="a3r-modal" hidden onclick="if(event.target===this)Atlas3Reader.closeNotion()"></div></section>';
   }
@@ -492,7 +495,7 @@
     modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
       '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
       '<div class="a3r-eyebrow">NOTION SITUÉE</div><h2 id="a3r-notion-title">'+e(t.term)+'</h2><p>'+e(t.definition)+'</p>'+
-      '<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
+      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
     modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();
   }
 
