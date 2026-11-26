@@ -148,12 +148,12 @@
   }
 
 
-  // V10.61 : pratique située, limitée aux trois chapitres du territoire IV.
+  // V10.62 : pratique située dans les territoires IV et V.
   function practiceCompass(id){
     const x=edition15()?.chapters?.[id]?.practice;
     if(!x)return '';
     const rows=x.rows.map(([problem,resource,sectionId,formId])=>
-      '<li><p><strong>'+e(problem)+'</strong><br>'+e(resource)+'</p><div class="a3r-mini-links"><button type="button" class="a3r-link" onclick="Atlas3Reader.jumpToSection(\''+e(sectionId)+'\')">Essayer cette piste</button>'+btn('atlas3/forme/'+formId,'Approfondir')+'</div></li>'
+      '<li><p><strong>'+e(problem)+'</strong><br>'+e(resource)+'</p><div class="a3r-mini-links"><button type="button" class="a3r-link" onclick="Atlas3Reader.jumpToSection(\''+e(sectionId)+'\')">Essayer cette piste</button>'+(formId?btn(formId.startsWith('approche/')?'atlas3/'+formId:'atlas3/forme/'+formId,'Approfondir'):'')+'</div></li>'
     ).join('');
     return '<section class="a3r-v15-field" aria-label="Atelier pratique"><div class="a3r-eyebrow">PASSER À LA PRATIQUE</div><h2>'+e(x.title)+'</h2><p><strong>'+e(x.scene)+'</strong> · '+e(x.duration)+' · seul par écrit ou à plusieurs</p>'+
       '<button type="button" class="a3r-link a3r-action" onclick="Atlas3Reader.jumpToSection(\''+e(x.section)+'\')">Ouvrir la scène</button><ol>'+x.steps.map(step=>'<li>'+e(step)+'</li>').join('')+'</ol>'+
