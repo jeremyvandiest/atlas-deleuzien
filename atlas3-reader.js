@@ -208,7 +208,9 @@
   }
   function approachPage(id){
     const ed=edition15(),x=ed?.approaches?.find(z=>z.id===id);if(!x)return missing();
-    const terms=(x.terms||[]).map(t=>'<details class="a3r-v15-term"><summary>'+e(t.term)+'</summary><p>'+e(t.definition)+'</p></details>').join('');
+    const termCard=t=>'<details class="a3r-v15-term"><summary>'+e(t.term)+'</summary><p>'+e(t.definition)+'</p></details>';
+    const categories=[...new Set((x.terms||[]).map(t=>t.category).filter(Boolean))];
+    const terms=categories.length?categories.map(category=>'<section><h4>'+e(category)+'</h4>'+(x.terms||[]).filter(t=>t.category===category).map(termCard).join('')+'</section>').join('')+(x.terms||[]).filter(t=>!t.category).map(termCard).join(''):(x.terms||[]).map(termCard).join('');
     const sources=(x.links||[]).map(t=>'<li><a href="'+e(t.url)+'" target="_blank" rel="noopener noreferrer">'+e(t.label)+'</a><small>'+e(t.kind)+'</small></li>').join('');
     const passages=(x.related||[]).map(id=>ed.chapters[id]?
       btn('atlas3/'+id,'Chapitre '+id.slice(-2)+' · '+ed.chapters[id].title):'').join('');
