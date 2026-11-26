@@ -16,8 +16,8 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - VIII. Approche thérapeutique : E (§§ 192–200, p. 117–122 ; notes à contrôler).
 - Conclusion : E (§ 201, p. 123).
 - Deuxième essai, Dialectique du moi et de l'inconscient, deux préfaces : E.
-- Partie 1 : inconscients personnel et collectif (E, §§ 202–220) ; assimilation de l'inconscient (E, §§ 221–242) ; persona et psyché collective (P) ; tentatives négatives de différenciation, retour à la persona et identification collective (P).
-- Partie 2 : fonction de l'inconscient (P) ; anima et animus (P) ; différenciation du moi et des figures inconscientes (P) ; personnalité mana (P).
+- Partie 1 : inconscients personnel et collectif (E, §§ 202–220) ; assimilation de l'inconscient (E, §§ 221–242) ; persona et psyché collective (E, §§ 243–253) ; tentatives négatives de différenciation, retour à la persona et identification collective (E, §§ 254–265).
+- Partie 2 : fonction de l'inconscient (E, §§ 266–295) ; anima et animus (P) ; différenciation du moi et des figures inconscientes (P) ; personnalité mana (P).
 - Appendice I, texte de 1912 : R.
 - Appendice II, texte de 1916 : six sections, addendum et deux versions du résumé : R.
 - Bibliographie et index : R (outils de contrôle et de repérage, non substituts à la lecture).
@@ -183,3 +183,33 @@ Dialectique du moi et de l'inconscient. Source identique, préfaces p. 125–128
 
 ### État
 Premier essai : 8 chapitres + conclusion, §§ 1–201 consignés. Deuxième essai : deux préfaces et 2/8 chapitres, §§ 202–242 consignés. Reprise au § 243, persona. Audit des notes, confrontation avec le dossier existant et hiérarchisation finale toujours ouverts. Aucun changement à l'application ni aux autres Atlas.
+
+
+## Deuxième essai — unités 3–5
+
+Source : CW 7, traduction Hull, https://www.ronliskey.com/docs/collected-Works-07-Analytical-Psychology-by-C-G-Jung.pdf . Chapitres III et IV de la partie I : texte extrait, fenêtres recouvrantes lignes 4354–4832 (p. 161–177, index zéro). Partie II, chapitre I : pages 179–194 contrôlées visuellement en séquence, borne suivante p. 195, § 296. Les notes et les sources citées restent à collationner.
+
+### Index de couverture (repères, non résumé exhaustif)
+- §§ 243–246 : persona, sélection, compromis social.
+- §§ 247–249 : singularité du rôle et cas clinique.
+- §§ 250–253 : dissolution, imagination involontaire, adaptation.
+- §§ 254–259 : restauration régressive, transfert, autorégulation.
+- §§ 260–265 : identification collective, prophète et disciple.
+- §§ 266–269 : individuation, individualisme, double différenciation.
+- §§ 270–273 : genèse, limites de l'observation indirecte.
+- §§ 274–275 : complémentarité, Soi, autorégulation.
+- §§ 276–284 : compensation personnelle et collective, relations, exemples.
+- §§ 285–289 : images, conflit moral, critique de la fuite.
+- §§ 290–292 : spontanéité, finalité sans plan préétabli.
+- §§ 293–295 : objectivité psychique, imago, autonomie relative.
+
+### Reconstruction critique et cartes candidates (analyse originale Atlas)
+A. La persona n'est pas à traiter comme un mensonge à arracher : construire un diagramme reliant situation sociale, exigences du rôle, choix du sujet et marges d'action. Dans un exercice de fiction, un capitaine conserve son autorité mais varie sa façon de demander de l'aide. Comparer les actions et le rythme, sans évaluer l'authenticité personnelle de l'interprète. Repères §§ 245–247 et 269 ; vérifier aussi la définition fonctionnelle dans le chapitre suivant et les appendices.
+B. Une carte à trois issues d'une remise en question : rétrécir le champ des possibles, déplacer la rigidité vers un idéal absolu, ou élaborer une relation plus souple avec le rôle et l'imaginaire. Repères §§ 254–269. Dans un atelier, une proposition du metteur en scène peut devenir une règle rigide ou une ressource transformable ; le critère pédagogique est la capacité d'en faire des variations, non l'intensité de la conviction. Ne pas médicaliser les choix de jeu.
+C. Carte de la compensation : prévoir le cas où un contrepoint complète une proposition sans l'annuler. Exemple : un personnage austère devient capable de recevoir une marque d'affection tout en restant austère dans son travail. Repère § 274. Faire figurer explicitement la limite de connaissance du Soi, et distinguer un modèle de totalisation d'un objectif de transparence psychique.
+D. Séparer interprétation prospective et prédestination : une scène peut s'ouvrir à plusieurs suites à partir d'un motif imprévu ; le motif n'est pas une instruction cachée imposant une seule issue. Repères §§ 272, 291–292. Ne jamais présenter l'inconscient comme oracle, ni le symptôme comme passage nécessaire.
+E. Imago : un portrait scénique peut être construit à partir d'une rencontre et des attentes du personnage ; tester comment le portrait modifie la relation sans prétendre qu'il dévoile la vraie personne. Repères §§ 293–295. Distinguer ce modèle de la responsabilité réelle des proches et des faits de maltraitance éventuels.
+F. Conserver une vigilance sur la hiérarchie culturelle et les stéréotypes de genre dans les exemples (§§ 247, 293–295 notamment), les inférences cliniques et la généralisation à partir de cas. Les propos historiques sur les troubles psychiques ne sont pas des connaissances médicales contemporaines ni des consignes pratiques. Les cartes ne devront pas reconduire ces présupposés. Pas de travail sur un vécu déstabilisant en atelier.
+
+### Statut
+Premier essai : 8/8 chapitres + conclusion. Second essai : 5/8 chapitres (partie I complète et partie II chapitre I). §§ 1–295 consignés dans les registres, dont §§ 243–295 dans cette étape. Reprise au § 296 : anima et animus. L'extraction est un index analytique et non une preuve d'exhaustivité conceptuelle : contrôle des notes, confrontation avec le dossier actuel et second audit à faire. Aucun changement aux écrans ni aux Atlas 1, 2 et 4.
