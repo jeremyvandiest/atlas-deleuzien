@@ -1,0 +1,1956 @@
+{
+  "status": "Candidat technique non intégré ; corpus accessible synthétisé, deux acquisitions et audits documentaires ouverts",
+  "id": "jodorowsky",
+  "baseline": {
+    "fondationsSha": "d1815167e0626a4d2b72c2dc9e78ce6028941cbb",
+    "approachSha": "469bb295095964b5f96a34efc8cbd504cdfb24ed",
+    "oldSections": 29,
+    "oldTerms": 22
+  },
+  "provenance": {
+    "redactionSha": "f3ef79d3d35f28670b681064039302ca43abf214",
+    "lexiqueSha": "2f1156420e7ed15b047787b27abc46ff77a9ad95",
+    "cartesPartitionsSha": "464a93b66a02717bc26e6d484d91c8af9d0fed31"
+  },
+  "title": "Alejandro Jodorowsky et Marianne Costa — acte poétique, imagination et héritage",
+  "domain": "Théâtre, création symbolique et spiritualité",
+  "source": "Psychomagic : premier passage textuel consigné ; La Voie du tarot : transcription parcourue, planches et édition imprimée à collationner ; Métagénéalogie et La Voie de l'imagination : accès partiel.",
+  "intro": "Une clé peut ouvrir une porte, retenir un personnage ou devenir un objet transmis. Un geste change la portée de l'objet et de la situation.",
+  "question": "Comment l'invention d'un acte ou d'une forme peut-elle déplacer notre rapport à l'héritage, à l'imaginaire et à la création ?",
+  "principle": "Acte, imagination, héritage et présence, traversés par le problème de l'autonomie créatrice.",
+  "example": "Dans une courte scène, trois personnes donnent successivement un sens différent à un objet par leurs gestes et leurs positions. La composition transforme ce qui est perceptible.",
+  "counter": "La création d'une forme symbolique n'établit ni la vérité d'une interprétation ni l'efficacité d'une prescription thérapeutique. L'invention peut se heurter à l'autorité du prescripteur.",
+  "boundary": "Les partitions sont des pratiques artistiques originales, librement modifiables, non des prescriptions psychomagiques ou des inductions de transe.",
+  "related": [
+    "chapitre-04",
+    "chapitre-05",
+    "chapitre-08",
+    "chapitre-09",
+    "chapitre-10",
+    "chapitre-12",
+    "chapitre-15"
+  ],
+  "scenes": [],
+  "links": [
+    {
+      "label": "Psychomagic — sommaire et présentation de l'édition",
+      "url": "https://www.innertraditions.com/books/psychomagic",
+      "kind": "Éditeur ; sommaire vérifié"
+    },
+    {
+      "label": "Métagénéalogie — Jodorowsky et Costa, chapitre II",
+      "url": "https://www.simonandschuster.com/books/Metagenealogy/Alejandro-Jodorowsky/9781620551639",
+      "kind": "Extrait primaire éditorial"
+    },
+    {
+      "label": "La voie de l'imagination — entretien de 2024",
+      "url": "https://actualitte.com/article/118917/interviews/alejandro-jodorowsky-la-psychomagie-c-est-une-liberation",
+      "kind": "Entretien de l'auteur"
+    },
+    {
+      "label": "La voie de l'imagination — édition anglaise",
+      "url": "https://www.innertraditions.com/books/the-way-of-imagination",
+      "kind": "Notice éditoriale ; ouvrage non intégralement lu"
+    },
+    {
+      "label": "La Voie du tarot — transcription consultée",
+      "url": "https://pdfcoffee.com/la-voie-du-tarot-french-edition-by-jodorowsky-alexandro-pdf-free.html",
+      "kind": "Texte de travail ; planches non collationnées"
+    },
+    {
+      "label": "La Voie de l'imagination — extrait espagnol",
+      "url": "https://www.penguinlibros.com/uy/tematicas/315553-ebook-de-la-psicomagia-al-psicotrance-9789562586177/fragmento",
+      "kind": "Extrait seulement"
+    },
+    {
+      "label": "Élisabeth Pouilly — Le théâtre de la guérison",
+      "url": "https://journals.openedition.org/marges/1260",
+      "kind": "Étude secondaire, 2017"
+    }
+  ],
+  "terms": [
+    {
+      "id": 1,
+      "term": "Acte poétique",
+      "category": "Acte et création",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P I",
+      "definition": "Modifier une convention par une invention agie plutôt que seulement la représenter.",
+      "example": "Une chaise d'attente devient un lieu d'accueil par un changement de geste.",
+      "distinction": "La transgression seule ne constitue pas une création.",
+      "relatedIds": [
+        2,
+        9
+      ],
+      "chapters": [
+        1
+      ]
+    },
+    {
+      "id": 2,
+      "term": "Acte théâtral",
+      "category": "Acte et création",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P II",
+      "definition": "Organiser une situation vécue où espace, durée et participants constituent l'événement.",
+      "example": "Une entrée de personnage change de durée selon la réponse du partenaire.",
+      "distinction": "La représentation répétée peut aussi être vivante.",
+      "relatedIds": [
+        3,
+        23
+      ],
+      "chapters": [
+        2
+      ]
+    },
+    {
+      "id": 3,
+      "term": "Éphémère Panique",
+      "category": "Acte et création",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P II, 778–818",
+      "definition": "Programme historique privilégiant la singularité de l'événement et déplaçant le rôle du public.",
+      "example": "Un tableau vivant accueille une variation consentie du spectateur.",
+      "distinction": "Les performances dommageables ne sont pas des modèles.",
+      "relatedIds": [
+        2,
+        24
+      ],
+      "chapters": [
+        2
+      ]
+    },
+    {
+      "id": 4,
+      "term": "Acte onirique",
+      "category": "Rêve et présence",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P III",
+      "definition": "Explorer la plasticité de l'expérience rêvée et le rapport conscient à celle-ci.",
+      "example": "Écrire une scène où un personnage découvre qu'il rêve.",
+      "distinction": "Ne pas assimiler le rêve au monde extérieur ni induire d'état altéré.",
+      "relatedIds": [
+        5,
+        25
+      ],
+      "chapters": [
+        4
+      ]
+    },
+    {
+      "id": 5,
+      "term": "Rêve lucide",
+      "category": "Rêve et présence",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P III, 1618–1634",
+      "definition": "Reconnaître que l'on rêve pendant l'expérience du rêve.",
+      "example": "Dans une fiction, faire varier les décisions après cette découverte.",
+      "distinction": "Différent de l'imagination active et du jeu éveillé.",
+      "relatedIds": [
+        4,
+        25
+      ],
+      "chapters": [
+        4
+      ]
+    },
+    {
+      "id": 6,
+      "term": "Acte magique",
+      "category": "Acte et création",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P IV ; prologue",
+      "definition": "Acte rituel auquel l'auteur attribue une efficacité dépendant du contexte et de la croyance.",
+      "example": "Analyser le rôle des accessoires dans un rituel fictif.",
+      "distinction": "Aucune causalité surnaturelle ou médicale établie.",
+      "relatedIds": [
+        28,
+        27
+      ],
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "id": 7,
+      "term": "Acte psychomagique",
+      "category": "Acte et création",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P V–VI",
+      "definition": "Action métaphorique singulière prescrite à une personne pour une transformation revendiquée.",
+      "example": "Étudier la différence entre une indication de jeu et une prescription personnelle.",
+      "distinction": "Ne pas reproduire de prescriptions invasives ou dangereuses.",
+      "relatedIds": [
+        8,
+        10
+      ],
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "id": 8,
+      "term": "Psychomagie",
+      "category": "Acte et création",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P prologue, V–VIII",
+      "definition": "Démarche artistique et thérapeutique revendiquée articulant demande, invention, acte et récit.",
+      "example": "Comparer les fonctions de ces moments dans une création fictionnelle.",
+      "distinction": "Les témoignages ne démontrent pas une efficacité clinique.",
+      "relatedIds": [
+        7,
+        11
+      ],
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "id": 9,
+      "term": "Langage symbolique",
+      "category": "Image et interprétation",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P prologue, V ; T II",
+      "definition": "Thèse selon laquelle gestes, objets et images peuvent exprimer et transformer une signification.",
+      "example": "Une clé sert à ouvrir, puis à refuser une transmission.",
+      "distinction": "Une métaphore ne dévoile pas nécessairement une cause cachée.",
+      "relatedIds": [
+        29,
+        36
+      ],
+      "chapters": [
+        1
+      ]
+    },
+    {
+      "id": 10,
+      "term": "Prescription singulière",
+      "category": "Autorité et transmission",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P V, 2816–2842",
+      "definition": "Action inventée par le prescripteur et adaptée selon lui à une demande particulière.",
+      "example": "Comparer une indication fixe à une proposition modifiable par l'interprète.",
+      "distinction": "Le refus n'est pas une résistance à pathologiser.",
+      "relatedIds": [
+        7,
+        27
+      ],
+      "chapters": [
+        5,
+        10
+      ]
+    },
+    {
+      "id": 11,
+      "term": "Retour écrit",
+      "category": "Autorité et transmission",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P V et VII",
+      "definition": "Récit rétrospectif de l'exécution et des effets rapportés.",
+      "example": "Noter séparément geste, effet observable, ressenti et hypothèse.",
+      "distinction": "Un récit positif ou négatif ne suffit pas à établir une causalité.",
+      "relatedIds": [
+        10,
+        30
+      ],
+      "chapters": [
+        5,
+        10
+      ]
+    },
+    {
+      "id": 12,
+      "term": "Métagénéalogie",
+      "category": "Héritage et devenir",
+      "status": "P",
+      "change": "notice initiale conservée",
+      "source": "M introduction, extraits I–IV",
+      "definition": "Lecture symbolique et spirituelle de l'héritage familial, conçue conjointement par les deux auteurs.",
+      "example": "Construire une généalogie fictive à partir des seuls faits écrits dans une pièce.",
+      "distinction": "Corpus partiel ; aucune inférence sur maladie, abus ou identité réelle.",
+      "relatedIds": [
+        15,
+        13,
+        14
+      ],
+      "chapters": [
+        8
+      ]
+    },
+    {
+      "id": 13,
+      "term": "Force imitatrice",
+      "category": "Héritage et devenir",
+      "status": "P",
+      "change": "notice initiale conservée",
+      "source": "M II",
+      "definition": "Dans leur modèle, tendance à reproduire les formes transmises.",
+      "example": "Un personnage reproduit une règle familiale dans un autre contexte.",
+      "distinction": "La répétition peut aussi être une ressource.",
+      "relatedIds": [
+        14,
+        39
+      ],
+      "chapters": [
+        8
+      ]
+    },
+    {
+      "id": 14,
+      "term": "Force créatrice",
+      "category": "Héritage et devenir",
+      "status": "P",
+      "change": "notice initiale conservée",
+      "source": "M II",
+      "definition": "Puissance d'invention rattachée par les auteurs à un horizon de conscience universelle.",
+      "example": "Un personnage transforme l'usage d'une tradition.",
+      "distinction": "La nouveauté ne garantit pas l'autonomie et ne nécessite pas la rupture.",
+      "relatedIds": [
+        13,
+        17
+      ],
+      "chapters": [
+        8
+      ]
+    },
+    {
+      "id": 15,
+      "term": "Arbre familial",
+      "category": "Héritage et devenir",
+      "status": "P",
+      "change": "notice initiale conservée",
+      "source": "M II, extraits",
+      "definition": "Représentation de la parenté mobilisée dans le modèle métagénéalogique.",
+      "example": "Séparer les faits du récit d'un personnage et les hypothèses de mise en scène.",
+      "distinction": "Une association de dates ou de prénoms ne prouve pas une causalité.",
+      "relatedIds": [
+        12,
+        38
+      ],
+      "chapters": [
+        8
+      ]
+    },
+    {
+      "id": 16,
+      "term": "Obstacle",
+      "category": "Héritage et devenir",
+      "status": "P",
+      "change": "notice initiale conservée",
+      "source": "M II–III ; T V, 2138–2143",
+      "definition": "Résistance que les auteurs invitent à considérer dans un projet de transformation.",
+      "example": "Un personnage adapte son action face à un bruit, ou fait cesser celui-ci.",
+      "distinction": "La souffrance réelle n'a pas nécessairement de fonction initiatique.",
+      "relatedIds": [
+        38,
+        14
+      ],
+      "chapters": [
+        8
+      ]
+    },
+    {
+      "id": 17,
+      "term": "Conscience universelle",
+      "category": "Conscience et spiritualité",
+      "status": "P",
+      "change": "notice initiale conservée",
+      "source": "M II",
+      "definition": "Horizon métaphysique dans lequel les auteurs inscrivent la créativité individuelle.",
+      "example": "Comparer les conséquences dramaturgiques d'un personnage croyant ou non à cet horizon.",
+      "distinction": "Ni résultat empirique ni équivalent du Soi jungien.",
+      "relatedIds": [
+        14,
+        35
+      ],
+      "chapters": [
+        9
+      ]
+    },
+    {
+      "id": 18,
+      "term": "Imagination créatrice",
+      "category": "Imagination et composition",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "P III, XV–XVII ; I extrait",
+      "definition": "Faculté d'inventer ou de recevoir une forme imaginaire, puis de lui donner une expression.",
+      "example": "Imaginer deux usages d'un même accessoire et laisser le partenaire en proposer un troisième.",
+      "distinction": "L'intensité de l'image ne garantit pas sa vérité.",
+      "relatedIds": [
+        32,
+        33
+      ],
+      "chapters": [
+        6
+      ]
+    },
+    {
+      "id": 19,
+      "term": "Psychotranse",
+      "category": "Conscience et spiritualité",
+      "status": "P",
+      "change": "notice initiale conservée",
+      "source": "I sommaire et entretiens 2020/2024 ; T V, à distinguer",
+      "definition": "Notion tardive associée à l'expérience imaginative et au travail du prescripteur, dont la définition complète reste à vérifier.",
+      "example": "Étudier la différence entre absorption scénique et perte de réflexivité, sans induire de transe.",
+      "distinction": "Chapitre intégral inaccessible ; ne pas compléter par conjecture.",
+      "relatedIds": [
+        31,
+        25
+      ],
+      "chapters": [
+        9
+      ]
+    },
+    {
+      "id": 20,
+      "term": "Lecture symbolique du tarot",
+      "category": "Image et interprétation",
+      "status": "A",
+      "change": "notice initiale conservée",
+      "source": "T I–V",
+      "definition": "Lecture de formes et de leurs relations à travers le système symbolique des auteurs.",
+      "example": "Comparer trois orientations d'un tableau vivant non divinatoire.",
+      "distinction": "L'interprétation n'est ni prédiction ni diagnostic.",
+      "relatedIds": [
+        37,
+        30
+      ],
+      "chapters": [
+        7
+      ]
+    },
+    {
+      "id": 21,
+      "term": "Écart entre rôle et conduite",
+      "category": "Rôle et liberté",
+      "status": "X",
+      "change": "notice initiale conservée",
+      "source": "P II ; M extraits ; T V",
+      "definition": "Outil Atlas distinguant attente, action effective et autres conduites possibles.",
+      "example": "Un personnage assume une fonction sans suivre toutes les conventions associées.",
+      "distinction": "Ne pas présupposer une identité véritable cachée derrière le rôle.",
+      "relatedIds": [
+        23,
+        26
+      ],
+      "chapters": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": 22,
+      "term": "Pluralité des interprétations",
+      "category": "Image et interprétation",
+      "status": "X",
+      "change": "notice initiale conservée",
+      "source": "T II, IV–V",
+      "definition": "Outil Atlas permettant de confronter plusieurs hypothèses au même matériau.",
+      "example": "Deux observateurs proposent des lectures différentes et les éprouvent en jeu.",
+      "distinction": "Une divergence peut être conservée ; toutes les lectures ne sont pas également étayées.",
+      "relatedIds": [
+        30,
+        29
+      ],
+      "chapters": [
+        7
+      ]
+    },
+    {
+      "id": 23,
+      "term": "Ex-acteur",
+      "category": "Rôle et liberté",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "P II, 790–812",
+      "definition": "Figure du manifeste qui cherche à desserrer les personnages de l'existence quotidienne.",
+      "example": "Faire varier la conduite attendue d'un personnage professionnel.",
+      "distinction": "Construire un rôle fictif peut aussi ouvrir des possibilités.",
+      "relatedIds": [
+        2,
+        21
+      ],
+      "chapters": [
+        3
+      ]
+    },
+    {
+      "id": 24,
+      "term": "Autonomie du matériau",
+      "category": "Imagination et composition",
+      "status": "X",
+      "change": "nouvelle entrée",
+      "source": "P II, page PDF 27",
+      "definition": "Réponse du créateur aux possibilités et résistances de la matière.",
+      "example": "Une étoffe souple et un carton rigide infléchissent différemment un même geste.",
+      "distinction": "Le matériau n'est pas une entité consciente.",
+      "relatedIds": [
+        18,
+        37
+      ],
+      "chapters": [
+        2
+      ]
+    },
+    {
+      "id": 25,
+      "term": "Position de témoin",
+      "category": "Rêve et présence",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "P III, XI ; T V, 2087–2093",
+      "definition": "Modalité de conscience permettant de ne pas se confondre avec l'expérience, valorisée ou contestée selon les passages.",
+      "example": "Jouer une action tout en restant disponible à un signal d'arrêt.",
+      "distinction": "Le jugement permanent peut entraver le jeu ; la perte de réflexivité n'est pas nécessaire.",
+      "relatedIds": [
+        5,
+        31
+      ],
+      "chapters": [
+        4,
+        10
+      ]
+    },
+    {
+      "id": 26,
+      "term": "Désidentification",
+      "category": "Rôle et liberté",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "P III, 1638–1657 ; V, 2849–2856",
+      "definition": "Souplesse du rapport au rôle, mais aussi retrait du moi invoqué par le prescripteur.",
+      "example": "Faire interpréter une même fonction à deux acteurs différents.",
+      "distinction": "Le second usage ne justifie aucune infaillibilité.",
+      "relatedIds": [
+        23,
+        25
+      ],
+      "chapters": [
+        3,
+        10
+      ]
+    },
+    {
+      "id": 27,
+      "term": "Transfert",
+      "category": "Autorité et transmission",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "P V, 2694–2701",
+      "definition": "Pouvoir que le consultant attribue au maître dans le récit de l'auteur.",
+      "example": "Discuter de l'effet du statut de celui qui donne une indication de jeu.",
+      "distinction": "Ne pas assimiler automatiquement à la théorie psychanalytique ; ne pas manipuler la confiance.",
+      "relatedIds": [
+        28,
+        10
+      ],
+      "chapters": [
+        5,
+        10
+      ]
+    },
+    {
+      "id": 28,
+      "term": "Piège sacré",
+      "category": "Autorité et transmission",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "P prologue, 85–97, 118–125",
+      "definition": "Dispositif de ruse et de croyance que l'auteur distingue de son idéal d'une psychomagie comprise par le destinataire.",
+      "example": "Comparer deux dispositifs fictifs, avec une règle annoncée ou inconnue du personnage ; les acteurs connaissent les deux.",
+      "distinction": "La tromperie dans une fiction consentie ne justifie pas une manipulation de participants réels.",
+      "relatedIds": [
+        6,
+        27
+      ],
+      "chapters": [
+        5
+      ]
+    },
+    {
+      "id": 29,
+      "term": "Symbole arrêté et symbole fluide",
+      "category": "Image et interprétation",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "T II, 617–625",
+      "definition": "Distinction entre une interprétation fixée et une signification susceptible de varier avec le contexte.",
+      "example": "Une lampe devient signe de veille, de travail ou d'absence selon l'action.",
+      "distinction": "La pluralité n'autorise pas n'importe quelle inférence.",
+      "relatedIds": [
+        9,
+        22
+      ],
+      "chapters": [
+        7
+      ]
+    },
+    {
+      "id": 30,
+      "term": "Lecture projective",
+      "category": "Image et interprétation",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "T V, 2370–2374",
+      "definition": "Reconnaître l'intervention des associations de celui qui interprète.",
+      "example": "Deux observateurs distinguent ce qu'ils voient de ce qu'ils supposent.",
+      "distinction": "Différente du mécanisme psychique jungien ; aucune neutralité garantie.",
+      "relatedIds": [
+        22,
+        11
+      ],
+      "chapters": [
+        7,
+        10
+      ]
+    },
+    {
+      "id": 31,
+      "term": "Transe du lecteur",
+      "category": "Conscience et spiritualité",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "T V, 2087–2093 ; P V, 2849–2856",
+      "definition": "État de concentration et d'effacement du témoin valorisé dans certains passages.",
+      "example": "Analyser une scène où l'attention de l'interprète est mobilisée sans perdre la possibilité de s'arrêter.",
+      "distinction": "L'absorption ne garantit pas une interprétation vraie ; aucune induction.",
+      "relatedIds": [
+        19,
+        25
+      ],
+      "chapters": [
+        9
+      ]
+    },
+    {
+      "id": 32,
+      "term": "Techniques de l'imagination",
+      "category": "Imagination et composition",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "P XVI, PDF 184–185",
+      "definition": "Quatre opérations arithmétiques et leur mélange : augmenter, réduire, diviser, multiplier, combiner.",
+      "example": "Faire cinq variations d'une attente à partir d'une seule règle de composition.",
+      "distinction": "L'étrangeté n'est pas une mesure de qualité.",
+      "relatedIds": [
+        18,
+        34
+      ],
+      "chapters": [
+        6
+      ]
+    },
+    {
+      "id": 33,
+      "term": "Spatialisation imaginaire",
+      "category": "Imagination et composition",
+      "status": "X",
+      "change": "nouvelle entrée",
+      "source": "P XV, PDF 173",
+      "definition": "Organiser le jeu selon des distances et lieux imaginés, en distinguant le lieu matériel.",
+      "example": "Un tabouret devient le repère de trois lieux fictifs.",
+      "distinction": "Ne pas confondre espace représenté et espace physique.",
+      "relatedIds": [
+        18,
+        37
+      ],
+      "chapters": [
+        6
+      ]
+    },
+    {
+      "id": 34,
+      "term": "Invention verbale",
+      "category": "Imagination et composition",
+      "status": "X",
+      "change": "nouvelle entrée",
+      "source": "P XV, PDF 182",
+      "definition": "Faire varier les formes du langage pour découvrir d'autres rapports expressifs.",
+      "example": "Jouer une demande à l'aide de syllabes fictives puis d'une phrase précise.",
+      "distinction": "Le langage explicite permet aussi de négocier et de vérifier.",
+      "relatedIds": [
+        32,
+        9
+      ],
+      "chapters": [
+        6
+      ]
+    },
+    {
+      "id": 35,
+      "term": "Quatre centres",
+      "category": "Conscience et spiritualité",
+      "status": "A",
+      "change": "nouvelle entrée",
+      "source": "P XI, 4563–4564 ; PDF 171 ; T I, 312–332",
+      "definition": "Modèle symbolique intellectuel, émotionnel, sexuel/créatif et matériel.",
+      "example": "Distinguer pensée, sentiment, désir et besoin dans un personnage.",
+      "distinction": "Les catégories d'atelier sont une adaptation, pas une anatomie ni les fonctions jungiennes.",
+      "relatedIds": [
+        17,
+        18
+      ],
+      "chapters": [
+        6
+      ]
+    },
+    {
+      "id": 36,
+      "term": "Transformation imagée du ressenti",
+      "category": "Imagination et composition",
+      "status": "X",
+      "change": "nouvelle entrée",
+      "source": "P XVII, PDF 187–188",
+      "definition": "Faire varier la forme métaphorique associée à une expérience ; reconstruction opérationnelle Atlas.",
+      "example": "Modifier la scénographie d'un couloir fictif évoquant l'attente.",
+      "distinction": "Ne pas imposer une image, interpréter un symptôme physique ou promettre un effet thérapeutique.",
+      "relatedIds": [
+        9,
+        18
+      ],
+      "chapters": [
+        6
+      ]
+    },
+    {
+      "id": 37,
+      "term": "Composition relationnelle",
+      "category": "Image et interprétation",
+      "status": "X",
+      "change": "nouvelle entrée",
+      "source": "T I, IV, 1996–2005",
+      "definition": "Modifier le sens possible d'une forme par orientation, proximité, succession et regroupement.",
+      "example": "Trois actions indépendantes deviennent un ensemble par changement de leur simultanéité.",
+      "distinction": "Une relation ne garantit ni harmonie ni vérité cachée.",
+      "relatedIds": [
+        20,
+        33
+      ],
+      "chapters": [
+        7
+      ]
+    },
+    {
+      "id": 38,
+      "term": "Projet",
+      "category": "Héritage et devenir",
+      "status": "P",
+      "change": "nouvelle entrée",
+      "source": "M III extraits ; T V, 2412–2418",
+      "definition": "Orientation future qui organise la sélection des éléments examinés et les possibilités d'action.",
+      "example": "Un personnage distingue souhait, action réalisable et réponse indépendante du partenaire.",
+      "distinction": "Pouvoir d'agir ne veut pas dire pouvoir sur les résultats.",
+      "relatedIds": [
+        16,
+        14
+      ],
+      "chapters": [
+        8,
+        10
+      ]
+    },
+    {
+      "id": 39,
+      "term": "Identité acquise et essentielle",
+      "category": "Héritage et devenir",
+      "status": "P",
+      "change": "nouvelle entrée",
+      "source": "M I–II extraits ; P X ; I ouverture",
+      "definition": "Distinction doctrinale entre formes identitaires reçues et être essentiel invoqué par les auteurs.",
+      "example": "Étudier trois variations d'un rôle sans déclarer l'une plus authentique.",
+      "distinction": "Ni équivalent du Soi ni présupposé du Théâtre du sentir ; M incomplet.",
+      "relatedIds": [
+        13,
+        26
+      ],
+      "chapters": [
+        8
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "jc-1",
+      "title": "La poésie vécue : inventer un autre usage du quotidien",
+      "question": "Qu'est-ce qu'un geste poétique change dans une situation ?",
+      "example": "Une personne entre dans une salle d'attente et déplace une chaise pour accueillir quelqu'un. Le meuble n'a pas changé, mais l'espace n'est plus organisé de la même manière : un geste ordinaire a acquis une fonction nouvelle. C'est à cette échelle que l'on peut commencer à comprendre l'acte poétique.",
+      "argument": "Dans le récit de ses premières expériences, Jodorowsky étend la poésie au-delà de l'écriture. La conduite elle-même devient un matériau artistique. Le geste ne se contente pas de transmettre une idée sur le monde : il introduit une différence dans la situation. Ses réflexions rétrospectives sur les provocations de jeunesse distinguent la puissance d'inventer de la simple destruction d'une convention. Il ne suffit pas de surprendre pour créer.\n\nLe langage symbolique prend ici une dimension matérielle. Un objet, un mouvement ou une place laissée vide peut exprimer une situation sans en énoncer le sens. Mais cette expression n'est jamais automatiquement transparente. La chaise peut être une invitation pour un personnage et une menace pour un autre. L'expérience de l'acte et sa lecture doivent rester distinctes.\n\nPour le Théâtre du sentir, il s'agit moins de transgresser les habitudes que de rendre perceptibles leurs alternatives. Dans une scène, conserver les circonstances et changer un seul geste ; regarder ce que ce déplacement fait à la relation. La poésie vécue devient ainsi un problème d'invention située, et non une obligation d'être original.\n\nLe récit autobiographique situe ses essais poétiques dans le contexte chilien, notamment avec Enrique Lihn. Cette genèse éclaire la distinction entre provocation et invention constructive, sans ériger le choc en principe de création. (Psychomagic I ; ancien dossier §12.)",
+      "refs": [
+        "P I, 365–721, notamment 679–715 ; P prologue"
+      ],
+      "terms": [
+        "Acte poétique",
+        "Langage symbolique"
+      ],
+      "termIds": [
+        1,
+        9
+      ],
+      "mapIds": [
+        "JCM01"
+      ],
+      "partitionIds": [
+        "JCP01"
+      ]
+    },
+    {
+      "id": "jc-2",
+      "title": "Le théâtre Panique : la forme et l'événement",
+      "question": "Comment une forme préparée devient-elle un événement ?",
+      "example": "Deux acteurs répètent une scène de rencontre. La structure reste la même, mais la réaction du partenaire oblige l'un d'eux à attendre. La représentation devient un événement : quelque chose se produit dans les circonstances du jeu qui ne se réduit pas à l'exécution d'un texte.",
+      "argument": "Dans sa trajectoire artistique, Jodorowsky conteste la séparation trop étanche entre l'œuvre, l'interprète et le public. Le théâtre Panique privilégie des événements singuliers dont le lieu, la durée et les participants ne sont pas de simples supports d'un monde représenté. Les éphémères constituent une expérience historique de cette recherche. Les spectacles documentés comprennent également des situations dommageables : leur étude n'autorise pas à les prendre pour modèles.\n\nL'expérience de la marionnette met en évidence un autre aspect. Celui qui anime une forme découvre des possibilités auxquelles il n'avait pas pensé avant de la manipuler. La rigidité du carton, la souplesse du tissu ou la longueur d'un fil orientent le geste. Nous appelons autonomie du matériau cette capacité de la matière à contraindre et à relancer l'invention, sans lui attribuer une conscience propre.\n\nIl existe une tension entre la singularité radicale revendiquée par Panique et la répétition propre aux écoles de jeu. Atlas ne choisit pas entre un théâtre vivant et un théâtre répété : une forme maîtrisée peut être la condition d'une réponse nouvelle. L'enjeu est de construire une partition assez déterminée pour être partageable, assez ouverte pour recevoir ce qui arrive. Le spectateur peut participer à cette invention, mais son consentement et sa liberté de rester observateur font partie du cadre.\n\nDu mime et de la marionnette au happening, le parcours artistique éclaire ce déplacement. Le collectif Panique, constitué en 1962 avec Fernando Arrabal et Roland Topor, fournit son contexte historique. Élisabeth Pouilly examine le caractère événementiel de cette recherche (Marges 24, 2017, pp. 47–49). Ces repères n'épuisent pas son histoire.",
+      "refs": [
+        "P II, 722–1283 ; Pouilly, Marges 24, 2017, et Entrelacs 16, 2019"
+      ],
+      "terms": [
+        "Acte théâtral",
+        "Éphémère Panique",
+        "Autonomie du matériau"
+      ],
+      "termIds": [
+        2,
+        3,
+        24
+      ],
+      "mapIds": [
+        "JCM01",
+        "JCM02"
+      ],
+      "partitionIds": [
+        "JCP03"
+      ]
+    },
+    {
+      "id": "jc-3",
+      "title": "L'ex-acteur : être autre chose que le rôle attendu",
+      "question": "Peut-on jouer un rôle sans s'y réduire ?",
+      "example": "Une personne reçoit un visiteur dans un bureau. Elle connaît les gestes et les phrases attendus de sa fonction. L'exercice consiste à conserver la situation et la tâche, tout en inventant une autre manière de l'accomplir. La fonction demeure ; elle n'épuise plus les possibilités de conduite.",
+      "argument": "La figure de l'ex-acteur inverse le problème traditionnel de la construction du personnage. Jodorowsky veut desserrer les personnages que l'on assume déjà dans l'existence. Il associe ce mouvement à une recherche de liberté et, ailleurs, à une conception de l'être essentiel. Cette dernière appartient à sa pensée ; elle ne constitue pas une vérité préalable de notre projet.\n\nDésidentification ne signifie donc pas, pour Atlas, suppression de toute identité ni découverte d'un moi pur. L'écart entre rôle et conduite désigne une distinction pratique : une attente sociale, ce qu'une personne fait effectivement dans une circonstance et les autres possibilités que cette circonstance offre. La liberté peut aussi consister à conserver un rôle et à le transformer.\n\nLa construction d'un personnage chez Stanislavski ou Chekhov suit une autre orientation et peut pourtant produire une liberté comparable dans le jeu. Jung différencie le moi de la persona et des figures intérieures selon sa propre théorie. Ces rapprochements sont des questions de comparaison, non des équivalences. Le Théâtre du sentir ne demande pas aux interprètes de dévoiler leur identité véritable ni de raconter leur vie privée.",
+      "refs": [
+        "P II, 790–812 et 1225–1283 ; P III, 1638–1657 ; P V, 2849–2856"
+      ],
+      "terms": [
+        "Ex-acteur",
+        "Écart entre rôle et conduite",
+        "Désidentification"
+      ],
+      "termIds": [
+        23,
+        21,
+        26
+      ],
+      "mapIds": [
+        "JCM02"
+      ],
+      "partitionIds": [
+        "JCP03",
+        "JCP04"
+      ]
+    },
+    {
+      "id": "jc-4",
+      "title": "Le rêve et la lucidité : participer sans se confondre",
+      "question": "Comment participer à l'imaginaire avec discernement ?",
+      "example": "Un personnage rêve qu'il traverse un lieu inconnu et comprend soudain qu'il est en train de rêver. L'expérience n'est pas interrompue par cette compréhension : son rapport à ce qu'il éprouve change.",
+      "argument": "Dans l'acte onirique, Jodorowsky raconte une exploration des rêves lucides. Il distingue plusieurs orientations de l'activité rêvée, entre invention, réception et visée de transformation personnelle. Il transpose ensuite le rapport du rêveur à son expérience à une réflexion plus générale sur la conscience. Cette extension est une proposition philosophique de l'auteur, non un argument pour traiter le monde extérieur comme un rêve.\n\nLa position de témoin fait apparaître une question subtile. On peut être engagé dans une expérience sans adhérer à toutes les significations qu'elle semble proposer. Le jugement permanent de sa propre performance peut cependant nuire à la disponibilité. Il faut donc distinguer la surveillance évaluative, la capacité de discerner la fiction et l'attention au partenaire.\n\nCette distinction devient particulièrement importante parce que Jodorowsky valorise ailleurs l'effacement du témoin pendant la transe du lecteur de tarot. Il ne faut pas inventer une synthèse qui abolirait cette contradiction. Pour Atlas, on peut travailler une scène avec une forte implication tout en conservant le droit de l'interrompre et de revenir au cadre commun. Le rêve lucide, l'imagination active de Jung et l'interprétation théâtrale éveillée demeurent trois pratiques distinctes.",
+      "refs": [
+        "P III, 1284–1906, notamment 1618–1634 ; P IX et XI ; T V, 2087–2093"
+      ],
+      "terms": [
+        "Acte onirique",
+        "Rêve lucide",
+        "Position de témoin"
+      ],
+      "termIds": [
+        4,
+        5,
+        25
+      ],
+      "mapIds": [
+        "JCM01",
+        "JCM03"
+      ],
+      "partitionIds": [
+        "JCP03"
+      ]
+    },
+    {
+      "id": "jc-5",
+      "title": "De la magie à la psychomagie : le dispositif et la prescription",
+      "question": "Qu'est-ce qui distingue acte rituel et prescription ?",
+      "example": "Une même boîte peut être un accessoire ordinaire, le centre d'une cérémonie fictive ou un objet qu'un personnage investit d'une grande importance. Sa matière n'explique pas à elle seule cette différence. Le lieu, la parole, l'attente et l'autorité attribuée à celui qui présente l'objet participent à la situation.",
+      "argument": "Les récits de Jodorowsky sur les guérisseurs mexicains l'amènent à considérer la croyance et la mise en scène dans l'acte magique. Le piège sacré désigne chez lui le recours à un dispositif de ruse pour obtenir une adhésion. Il veut distinguer la psychomagie de cette pratique en faisant comprendre au destinataire la signification du geste. Le transfert, dans son usage, éclaire le pouvoir que celui-ci attribue au maître. Ce vocabulaire n'est pas à confondre sans examen avec celui de la psychanalyse, et les traditions culturelles évoquées ne sont pas interchangeables.\n\nLa psychomagie est la démarche générale ; l'acte psychomagique en est la réalisation singulière. Dans les chapitres V à VIII, une demande donne lieu à une interprétation, à une invention métaphorique, à une prescription d'exécution et à un récit ultérieur. Jodorowsky attribue à l'acte un pouvoir sur l'inconscient et une visée thérapeutique. Ces affirmations ne deviennent pas des faits établis par les récits de réussite. Le retour écrit rapporte une expérience ; il ne permet pas à lui seul de connaître sa cause.\n\nIl est nécessaire de comprendre la proposition avant de la discuter : une forme symbolique agie n'a pas le même statut qu'une représentation seulement racontée. En revanche, cette différence ne démontre ni une guérison ni la nécessité d'une obéissance littérale. Le droit de modifier ou de refuser une proposition n'est pas un défaut de la personne. Dans Atlas, les prescriptions invasives, les actes dangereux et les inférences médicales ne deviennent pas des exercices. Nous distinguons l'indication artistique, négociable et limitée à une œuvre, d'une prétention à diriger la vie d'autrui.\n\nDans ses récits sur Pachita, Jodorowsky oppose les mécanismes de croyance à son idéal d'un geste compris. Son opposition entre acte et discours ne décrit pas suffisamment la diversité des psychothérapies verbales. Un témoignage ne permet pas de déterminer ce qui se serait produit sans l'acte. L'histoire des rituels relève d'Atlas 4.",
+      "refs": [
+        "P prologue 85–125 ; IV–VIII, notamment V 2694–2701 et 2816–2856"
+      ],
+      "terms": [
+        "Acte magique",
+        "Acte psychomagique",
+        "Psychomagie",
+        "Prescription singulière",
+        "Retour écrit",
+        "Transfert",
+        "Piège sacré"
+      ],
+      "termIds": [
+        6,
+        7,
+        8,
+        10,
+        11,
+        27,
+        28
+      ],
+      "mapIds": [
+        "JCM01",
+        "JCM04"
+      ],
+      "partitionIds": [
+        "JCP01"
+      ]
+    },
+    {
+      "id": "jc-6",
+      "title": "Les techniques de l'imagination : produire et recevoir des formes",
+      "question": "Comment exercer l'imagination ?",
+      "example": "Un personnage attend une réponse. On peut amplifier le temps de cette attente, retirer une réplique, dissocier le geste de la parole, multiplier les visiteurs ou mélanger la scène à une répétition musicale. Chaque opération fait surgir un problème différent, sans changer nécessairement le point de départ.",
+      "argument": "Dans Psychomagic, Jodorowsky propose des techniques qui déplacent les formes imaginées. Les quatre opérations arithmétiques et leur mélange sont des ressources simples de variation : addition, soustraction, division, multiplication et combinaison hétérogène. Elles ne constituent pas une théorie complète de la création. Leur intérêt se juge à la qualité de la transformation obtenue, pas à son extravagance.\n\nL'imagination n'est pas seulement production volontaire : une image peut s'infléchir à mesure qu'elle est explorée. La spatialisation imaginaire organise une action à partir d'un lieu fictif ; l'invention verbale fait varier les formes sonores et les associations ; la transformation imagée du ressenti change la configuration d'une métaphore. Ces trois expressions désignent ici des opérations Atlas, pas nécessairement des termes techniques de Jodorowsky.\n\nLe modèle des quatre centres associe intellect, émotion, sexualité/création et matérialité corporelle à un horizon de conscience. Pour la composition d'un personnage, Atlas en tire une distinction modeste entre ce qu'il pense, éprouve, désire et ce dont il a matériellement besoin. Il s'agit d'une adaptation dramaturgique, non d'un modèle clinique ni d'une équivalence avec les fonctions jungiennes.\n\nUne dernière distinction prépare la comparaison avec Gendlin et Ansa. Accueillir une sensation, trouver une expression qui lui correspond et transformer volontairement cette expression ne sont pas la même opération. La troisième ne doit pas empêcher les deux premières. Une proposition scénique peut rester inchangée si l'interprète n'en souhaite pas d'autre. Le passage de l'image au corps ne permet pas de conclure à une origine psychique d'une douleur réelle.\n\nL'entretien de 2024 rapproche l'invention sensorielle de la poésie et du surréalisme. Une représentation imaginée peut s'accompagner de sensations réelles et trouver une expression dans le geste ou la voix, sans devenir pour autant un événement physique correspondant à son contenu. Une fiction n'exige pas de souvenir intime.",
+      "refs": [
+        "P XI, 4563–4564 ; XV–XVII, PDF index 171–188 ; I extrait primaire ; T I, 312–332"
+      ],
+      "terms": [
+        "Imagination créatrice",
+        "Techniques de l'imagination",
+        "Spatialisation imaginaire",
+        "Invention verbale",
+        "Quatre centres",
+        "Transformation imagée du ressenti"
+      ],
+      "termIds": [
+        18,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "mapIds": [
+        "JCM05",
+        "JCM08"
+      ],
+      "partitionIds": [
+        "JCP01",
+        "JCP02"
+      ]
+    },
+    {
+      "id": "jc-7",
+      "title": "L'image et ses relations : une grammaire de la composition",
+      "question": "Pourquoi le sens change-t-il avec les relations ?",
+      "example": "Une femme tient une lettre devant une porte. Si un partenaire attend derrière elle, le geste peut annoncer une remise ; s'il s'éloigne, le même geste peut évoquer une occasion perdue. L'image ne se transforme pas seulement par ce qu'elle contient, mais par les rapports que ses éléments entretiennent.",
+      "argument": "La Voie du tarot est une œuvre commune de Jodorowsky et Marianne Costa. Sa progression conduit de l'organisation générale des figures à leurs combinaisons et à la pratique de l'interprétation. Pour Atlas 3, l'intérêt porte sur les opérations de lecture et de composition, non sur l'établissement d'un dictionnaire divinatoire. L'iconographie, les séries et les significations particulières des cartes relèvent d'Atlas 4.\n\nLes auteurs opposent une signification arrêtée à une signification fluide. Le contexte fait varier la lecture, mais la forme elle-même continue d'offrir des contraintes. L'ordre des motifs, l'orientation, la proximité et la répétition deviennent ainsi des variables. Nous désignons par composition relationnelle leur traduction dans la mise en scène. Un rapport spatial n'a toutefois pas de signification psychologique universelle.\n\nLa lecture projective introduit le rôle actif de l'observateur. Une lecture est une proposition que celui-ci élabore aussi à partir de ses associations. La pluralité des interprétations demande donc un retour aux indices accessibles : ce que l'on a vu, ce que l'on a éprouvé et ce que l'on suppose ne sont pas identiques. Le livre reste traversé par la tension entre cette subjectivité reconnue et l'idéal d'un support infaillible. Atlas conserve le droit de réviser, de contredire ou de suspendre une lecture. Cette grammaire ouvre une passerelle vers le montage et les motifs d'Atlas 2, sans importer les correspondances numérologiques.\n\nL'exemple de L'Amoureux dans l'ancien dossier portait sur l'ambiguïté des gestes, des regards et de l'appartenance d'un bras : un détail peut recevoir des lectures relationnelles divergentes. Il constitue ici un repère de méthode, non une restitution de la carte. Jodorowsky oppose en entretien (2020) la prédiction à sa lecture symbolique de l'inconscient : le refus de la prédiction ne suffit pas à établir une connaissance de l'intériorité. Les hypothèses historiques sur les cartes restent à contrôler dans Atlas 4.",
+      "refs": [
+        "T I–V, 252–282, 586–625, 1206–1208, 1607–1645, 1996–2005, 2370–2374"
+      ],
+      "terms": [
+        "Lecture symbolique du tarot",
+        "Pluralité des interprétations",
+        "Symbole arrêté et symbole fluide",
+        "Lecture projective",
+        "Composition relationnelle"
+      ],
+      "termIds": [
+        20,
+        22,
+        29,
+        30,
+        37
+      ],
+      "mapIds": [
+        "JCM06"
+      ],
+      "partitionIds": [
+        "JCP02"
+      ]
+    },
+    {
+      "id": "jc-8",
+      "title": "Métagénéalogie : l'héritage comme matériau de devenir",
+      "question": "Comment créer à partir de formes reçues ?",
+      "example": "Un personnage reçoit une boutique familiale. Il peut continuer l'activité, en modifier l'usage ou y renoncer. Les trois conduites dépendent de ses ressources, de ses liens et de son projet ; aucune ne définit à elle seule la liberté.",
+      "argument": "Dans Métagénéalogie, Jodorowsky et Costa inscrivent les héritages familiaux dans une pensée spirituelle de la création. Les formes transmises, dont les rôles et les récits, participent à l'identité acquise. La force imitatrice et la force créatrice représentent deux orientations de leur modèle. Le devenir ne se réduit pas à la rupture : une forme reçue peut être retravaillée, prolongée ou devenir une ressource. L'être essentiel que les auteurs invoquent est une thèse doctrinale, distincte du Soi jungien.\n\nL'arbre familial met en relation des informations documentaires et des interprétations symboliques. Il faut conserver trois plans : les liens et événements établis, les récits transmis, les hypothèses que l'on formule. Une coïncidence de noms ou de dates ne démontre pas une cause familiale. Un projet peut servir de principe de sélection pour l'examen d'une histoire ; il ne garantit pas que tous les obstacles se trouvent dans cette histoire. Des contraintes économiques ou relationnelles ne sont pas réductibles à la psychologie.\n\nLe Théâtre du sentir transpose cette question à la construction fictive d'un personnage. Il explore la différence entre une règle reçue et les possibilités qu'une situation présente rend accessibles, sans solliciter les secrets familiaux des interprètes. Les développements sur les nœuds, les noyaux, les identités et les dernières parties du livre restent à compléter après acquisition. Cette section est une lecture provisoire des extraits obtenus, non une présentation exhaustive de Métagénéalogie.\n\nLe chapitre II accessible ne limite pas l'imitation à la famille : il situe l'individu dans des cercles emboîtés, famille, société et culture, puis horizon de Conscience universelle. Cette cosmologie ne constitue pas une explication familiale de toute difficulté. Un arbre peut contenir des données contradictoires ou inconnues ; aucune association symbolique ne doit combler artificiellement une lacune.",
+      "refs": [
+        "M introduction, extraits I–IV, fragment V ; M OCR III 4718–4730 ; T V 2412–2418"
+      ],
+      "terms": [
+        "Métagénéalogie",
+        "Force imitatrice",
+        "Force créatrice",
+        "Arbre familial",
+        "Obstacle",
+        "Projet",
+        "Identité acquise et essentielle"
+      ],
+      "termIds": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        38,
+        39
+      ],
+      "mapIds": [
+        "JCM07",
+        "JCM09",
+        "JCM10"
+      ],
+      "partitionIds": [
+        "JCP04"
+      ]
+    },
+    {
+      "id": "jc-9",
+      "title": "Conscience et spiritualité : l'horizon du projet",
+      "question": "Quel horizon spirituel donne sens à cette pensée ?",
+      "example": "Un artiste commence avec une idée précise, puis découvre que son matériau exige autre chose. Il renonce à une partie de son projet initial sans renoncer à sa responsabilité. Cette expérience permet de comprendre une dimension artistique de l'effacement du moi, sans présupposer sa signification métaphysique.",
+      "argument": "Jodorowsky et Costa situent leur conception de la force créatrice dans un horizon de Conscience universelle. Cette proposition spirituelle oriente leur rapport au devenir, à la transformation et à l'art. Elle n'est pas identique à l'inconscient collectif de Jung ni à un fait empirique. Pour Atlas, la question de l'attention au matériau reste intelligible indépendamment de cette croyance.\n\nLa transe du lecteur, décrite dans le Tarot, associe une concentration intense à l'effacement de la position de témoin. Jodorowsky évoque aussi une transe du prescripteur dans Psychomagic. La psychotranse, notion plus tardive, est associée dans les extraits et présentations accessibles à l'imagination corporelle et à l'invention des prescriptions. Nous ne pouvons pas encore établir précisément le rapport entre ces usages ni les développements sur l'intra-instant, la folie sacrée et l'énergie primordiale.\n\nLa différence entre concentration, diminution du jugement de soi, disponibilité sensorielle et perte de réflexivité doit rester explicite. La création peut être exigeante et immersive sans perte de contrôle, sans hallucination et sans prétention à l'infaillibilité. Le chapitre sur la psychotranse de La Voie de l'imagination reste à obtenir ; cette section ne lui tient pas lieu de lecture.\n\nL'entretien de 2020 situe la psychotranse dans la continuité de la création et de l'imagination, sans recours aux drogues ; l'absence de substances ne garantit pas l'innocuité d'une pratique. L'édition française paraît en 2024. Le rapprochement avec Gurdjieff à propos de l'identification reste une question à vérifier, non une filiation établie.",
+      "refs": [
+        "M II ; P III, XI–XVII ; T V 2087–2093 ; I sommaire, extraits et entretiens 2020/2024"
+      ],
+      "terms": [
+        "Conscience universelle",
+        "Psychotranse",
+        "Transe du lecteur"
+      ],
+      "termIds": [
+        17,
+        19,
+        31
+      ],
+      "mapIds": [
+        "JCM03",
+        "JCM08",
+        "JCM09"
+      ],
+      "partitionIds": []
+    },
+    {
+      "id": "jc-10",
+      "title": "Le paradoxe de l'autonomie : transmettre sans se substituer",
+      "question": "Comment transmettre sans décider à la place d'autrui ?",
+      "example": "Un metteur en scène propose une indication à un acteur. Ce dernier la joue, en invente une variante et constate qu'elle répond mieux au problème de la scène. La transmission lui a donné une capacité nouvelle ; elle ne lui a pas imposé une conduite définitive.",
+      "argument": "Le paradoxe majeur du dossier se situe dans le rapport entre une liberté annoncée et une prescription parfois exigeante. Jodorowsky entend libérer le destinataire et lui demande pourtant, dans certaines descriptions, d'exécuter exactement le geste. Le Tarot valorise des lectures révisables, mais affirme par endroits l'infaillibilité du support. L'idéal d'un maître qui s'efface coexiste avec une autorité spirituelle que l'auteur peut invoquer pour légitimer son jugement.\n\nCette contradiction ne doit pas être effacée, ni transformée en jugement global sur l'ensemble de l'œuvre. Elle permet de poser des questions propres à l'art : qui invente la forme, qui la réalise, qui l'observe, qui la modifie, qui peut la refuser ? Les responsabilités ne sont pas équivalentes, mais les contributions peuvent circuler. Un cadre artistique reste nécessaire ; la liberté ne signifie pas que chaque indication est arbitraire.\n\nLe Théâtre du sentir choisit de construire des expériences dont le cadre est intelligible et les possibilités de participation négociables. Le retour à une scène et aux éléments effectivement perçus permet de discuter les propositions. L'intensité d'une expérience n'est pas une preuve de vérité. La transmission réussie se mesure notamment à la capacité d'invention acquise, sans présupposer que le participant doive se passer de toute aide.\n\nLa singularité de Jodorowsky tient à la puissance qu'il prête à l'invention d'une forme agie ; Costa est coauteure à part entière des deux ouvrages qui développent la lecture des images et l'héritage familial. L'apport de leur rencontre à Atlas se définit par les problèmes qu'elle rend travaillables, non par l'adoption de toutes leurs thèses.\n\nLes comparaisons orientent la suite : Jung, relation différenciée aux figures imaginaires ; Chekhov, image et geste au service du rôle ; Winnicott, conditions du jeu ; Gendlin, formulation ajustée au sens corporel implicite ; Ansa, accueil du sentir. Ces démarches ne partent pas nécessairement d'une image, notamment le felt sense de Gendlin. Il s'agit de questions comparatives, non d'une généalogie ni d'une méthode commune.",
+      "refs": [
+        "P V 2735–2856 ; T IV 1794–1797, 1933–1935 ; T V 2053–2058, 2120–2123, 2370–2374 ; I extrait Penguin 430–437"
+      ],
+      "terms": [
+        "Prescription singulière",
+        "Retour écrit",
+        "Écart entre rôle et conduite",
+        "Position de témoin",
+        "Désidentification",
+        "Transfert",
+        "Lecture projective",
+        "Projet"
+      ],
+      "termIds": [
+        10,
+        11,
+        21,
+        25,
+        26,
+        27,
+        30,
+        38
+      ],
+      "mapIds": [
+        "JCM02",
+        "JCM04",
+        "JCM06"
+      ],
+      "partitionIds": [
+        "JCP03",
+        "JCP04"
+      ]
+    }
+  ],
+  "foundation": {
+    "title": "Alejandro Jodorowsky et Marianne Costa — acte poétique, imagination et héritage",
+    "edition": "Dossier fondateur V2 — candidat du corpus accessible",
+    "source": "Voir registre de lecture. Deux ouvrages à compléter.",
+    "html": "<p>Comment une invention imaginaire peut-elle transformer notre rapport à une situation vécue ? Ce parcours distingue les propositions des auteurs des pratiques artistiques originales d&#39;Atlas. Les deux derniers ouvrages restent partiellement accessibles.</p><section id=\"a3jc-text-1\"><h3>La poésie vécue : inventer un autre usage du quotidien</h3><p>Une personne entre dans une salle d&#39;attente et déplace une chaise pour accueillir quelqu&#39;un. Le meuble n&#39;a pas changé, mais l&#39;espace n&#39;est plus organisé de la même manière : un geste ordinaire a acquis une fonction nouvelle. C&#39;est à cette échelle que l&#39;on peut commencer à comprendre l&#39;acte poétique.</p><p>Dans le récit de ses premières expériences, Jodorowsky étend la poésie au-delà de l&#39;écriture. La conduite elle-même devient un matériau artistique. Le geste ne se contente pas de transmettre une idée sur le monde : il introduit une différence dans la situation. Ses réflexions rétrospectives sur les provocations de jeunesse distinguent la puissance d&#39;inventer de la simple destruction d&#39;une convention. Il ne suffit pas de surprendre pour créer.</p><p>Le langage symbolique prend ici une dimension matérielle. Un objet, un mouvement ou une place laissée vide peut exprimer une situation sans en énoncer le sens. Mais cette expression n&#39;est jamais automatiquement transparente. La chaise peut être une invitation pour un personnage et une menace pour un autre. L&#39;expérience de l&#39;acte et sa lecture doivent rester distinctes.</p><p>Pour le Théâtre du sentir, il s&#39;agit moins de transgresser les habitudes que de rendre perceptibles leurs alternatives. Dans une scène, conserver les circonstances et changer un seul geste ; regarder ce que ce déplacement fait à la relation. La poésie vécue devient ainsi un problème d&#39;invention située, et non une obligation d&#39;être original.</p><p>Le récit autobiographique situe ses essais poétiques dans le contexte chilien, notamment avec Enrique Lihn. Cette genèse éclaire la distinction entre provocation et invention constructive, sans ériger le choc en principe de création. (Psychomagic I ; ancien dossier §12.)</p><p class=\"a3r-quiet\">P I, 365–721, notamment 679–715 ; P prologue</p></section><section id=\"a3jc-text-2\"><h3>Le théâtre Panique : la forme et l&#39;événement</h3><p>Deux acteurs répètent une scène de rencontre. La structure reste la même, mais la réaction du partenaire oblige l&#39;un d&#39;eux à attendre. La représentation devient un événement : quelque chose se produit dans les circonstances du jeu qui ne se réduit pas à l&#39;exécution d&#39;un texte.</p><p>Dans sa trajectoire artistique, Jodorowsky conteste la séparation trop étanche entre l&#39;œuvre, l&#39;interprète et le public. Le théâtre Panique privilégie des événements singuliers dont le lieu, la durée et les participants ne sont pas de simples supports d&#39;un monde représenté. Les éphémères constituent une expérience historique de cette recherche. Les spectacles documentés comprennent également des situations dommageables : leur étude n&#39;autorise pas à les prendre pour modèles.</p><p>L&#39;expérience de la marionnette met en évidence un autre aspect. Celui qui anime une forme découvre des possibilités auxquelles il n&#39;avait pas pensé avant de la manipuler. La rigidité du carton, la souplesse du tissu ou la longueur d&#39;un fil orientent le geste. Nous appelons autonomie du matériau cette capacité de la matière à contraindre et à relancer l&#39;invention, sans lui attribuer une conscience propre.</p><p>Il existe une tension entre la singularité radicale revendiquée par Panique et la répétition propre aux écoles de jeu. Atlas ne choisit pas entre un théâtre vivant et un théâtre répété : une forme maîtrisée peut être la condition d&#39;une réponse nouvelle. L&#39;enjeu est de construire une partition assez déterminée pour être partageable, assez ouverte pour recevoir ce qui arrive. Le spectateur peut participer à cette invention, mais son consentement et sa liberté de rester observateur font partie du cadre.</p><p>Du mime et de la marionnette au happening, le parcours artistique éclaire ce déplacement. Le collectif Panique, constitué en 1962 avec Fernando Arrabal et Roland Topor, fournit son contexte historique. Élisabeth Pouilly examine le caractère événementiel de cette recherche (Marges 24, 2017, pp. 47–49). Ces repères n&#39;épuisent pas son histoire.</p><p class=\"a3r-quiet\">P II, 722–1283 ; Pouilly, Marges 24, 2017, et Entrelacs 16, 2019</p></section><section id=\"a3jc-text-3\"><h3>L&#39;ex-acteur : être autre chose que le rôle attendu</h3><p>Une personne reçoit un visiteur dans un bureau. Elle connaît les gestes et les phrases attendus de sa fonction. L&#39;exercice consiste à conserver la situation et la tâche, tout en inventant une autre manière de l&#39;accomplir. La fonction demeure ; elle n&#39;épuise plus les possibilités de conduite.</p><p>La figure de l&#39;ex-acteur inverse le problème traditionnel de la construction du personnage. Jodorowsky veut desserrer les personnages que l&#39;on assume déjà dans l&#39;existence. Il associe ce mouvement à une recherche de liberté et, ailleurs, à une conception de l&#39;être essentiel. Cette dernière appartient à sa pensée ; elle ne constitue pas une vérité préalable de notre projet.</p><p>Désidentification ne signifie donc pas, pour Atlas, suppression de toute identité ni découverte d&#39;un moi pur. L&#39;écart entre rôle et conduite désigne une distinction pratique : une attente sociale, ce qu&#39;une personne fait effectivement dans une circonstance et les autres possibilités que cette circonstance offre. La liberté peut aussi consister à conserver un rôle et à le transformer.</p><p>La construction d&#39;un personnage chez Stanislavski ou Chekhov suit une autre orientation et peut pourtant produire une liberté comparable dans le jeu. Jung différencie le moi de la persona et des figures intérieures selon sa propre théorie. Ces rapprochements sont des questions de comparaison, non des équivalences. Le Théâtre du sentir ne demande pas aux interprètes de dévoiler leur identité véritable ni de raconter leur vie privée.</p><p class=\"a3r-quiet\">P II, 790–812 et 1225–1283 ; P III, 1638–1657 ; P V, 2849–2856</p></section><section id=\"a3jc-text-4\"><h3>Le rêve et la lucidité : participer sans se confondre</h3><p>Un personnage rêve qu&#39;il traverse un lieu inconnu et comprend soudain qu&#39;il est en train de rêver. L&#39;expérience n&#39;est pas interrompue par cette compréhension : son rapport à ce qu&#39;il éprouve change.</p><p>Dans l&#39;acte onirique, Jodorowsky raconte une exploration des rêves lucides. Il distingue plusieurs orientations de l&#39;activité rêvée, entre invention, réception et visée de transformation personnelle. Il transpose ensuite le rapport du rêveur à son expérience à une réflexion plus générale sur la conscience. Cette extension est une proposition philosophique de l&#39;auteur, non un argument pour traiter le monde extérieur comme un rêve.</p><p>La position de témoin fait apparaître une question subtile. On peut être engagé dans une expérience sans adhérer à toutes les significations qu&#39;elle semble proposer. Le jugement permanent de sa propre performance peut cependant nuire à la disponibilité. Il faut donc distinguer la surveillance évaluative, la capacité de discerner la fiction et l&#39;attention au partenaire.</p><p>Cette distinction devient particulièrement importante parce que Jodorowsky valorise ailleurs l&#39;effacement du témoin pendant la transe du lecteur de tarot. Il ne faut pas inventer une synthèse qui abolirait cette contradiction. Pour Atlas, on peut travailler une scène avec une forte implication tout en conservant le droit de l&#39;interrompre et de revenir au cadre commun. Le rêve lucide, l&#39;imagination active de Jung et l&#39;interprétation théâtrale éveillée demeurent trois pratiques distinctes.</p><p class=\"a3r-quiet\">P III, 1284–1906, notamment 1618–1634 ; P IX et XI ; T V, 2087–2093</p></section><section id=\"a3jc-text-5\"><h3>De la magie à la psychomagie : le dispositif et la prescription</h3><p>Une même boîte peut être un accessoire ordinaire, le centre d&#39;une cérémonie fictive ou un objet qu&#39;un personnage investit d&#39;une grande importance. Sa matière n&#39;explique pas à elle seule cette différence. Le lieu, la parole, l&#39;attente et l&#39;autorité attribuée à celui qui présente l&#39;objet participent à la situation.</p><p>Les récits de Jodorowsky sur les guérisseurs mexicains l&#39;amènent à considérer la croyance et la mise en scène dans l&#39;acte magique. Le piège sacré désigne chez lui le recours à un dispositif de ruse pour obtenir une adhésion. Il veut distinguer la psychomagie de cette pratique en faisant comprendre au destinataire la signification du geste. Le transfert, dans son usage, éclaire le pouvoir que celui-ci attribue au maître. Ce vocabulaire n&#39;est pas à confondre sans examen avec celui de la psychanalyse, et les traditions culturelles évoquées ne sont pas interchangeables.</p><p>La psychomagie est la démarche générale ; l&#39;acte psychomagique en est la réalisation singulière. Dans les chapitres V à VIII, une demande donne lieu à une interprétation, à une invention métaphorique, à une prescription d&#39;exécution et à un récit ultérieur. Jodorowsky attribue à l&#39;acte un pouvoir sur l&#39;inconscient et une visée thérapeutique. Ces affirmations ne deviennent pas des faits établis par les récits de réussite. Le retour écrit rapporte une expérience ; il ne permet pas à lui seul de connaître sa cause.</p><p>Il est nécessaire de comprendre la proposition avant de la discuter : une forme symbolique agie n&#39;a pas le même statut qu&#39;une représentation seulement racontée. En revanche, cette différence ne démontre ni une guérison ni la nécessité d&#39;une obéissance littérale. Le droit de modifier ou de refuser une proposition n&#39;est pas un défaut de la personne. Dans Atlas, les prescriptions invasives, les actes dangereux et les inférences médicales ne deviennent pas des exercices. Nous distinguons l&#39;indication artistique, négociable et limitée à une œuvre, d&#39;une prétention à diriger la vie d&#39;autrui.</p><p>Dans ses récits sur Pachita, Jodorowsky oppose les mécanismes de croyance à son idéal d&#39;un geste compris. Son opposition entre acte et discours ne décrit pas suffisamment la diversité des psychothérapies verbales. Un témoignage ne permet pas de déterminer ce qui se serait produit sans l&#39;acte. L&#39;histoire des rituels relève d&#39;Atlas 4.</p><p class=\"a3r-quiet\">P prologue 85–125 ; IV–VIII, notamment V 2694–2701 et 2816–2856</p></section><section id=\"a3jc-text-6\"><h3>Les techniques de l&#39;imagination : produire et recevoir des formes</h3><p>Un personnage attend une réponse. On peut amplifier le temps de cette attente, retirer une réplique, dissocier le geste de la parole, multiplier les visiteurs ou mélanger la scène à une répétition musicale. Chaque opération fait surgir un problème différent, sans changer nécessairement le point de départ.</p><p>Dans Psychomagic, Jodorowsky propose des techniques qui déplacent les formes imaginées. Les quatre opérations arithmétiques et leur mélange sont des ressources simples de variation : addition, soustraction, division, multiplication et combinaison hétérogène. Elles ne constituent pas une théorie complète de la création. Leur intérêt se juge à la qualité de la transformation obtenue, pas à son extravagance.</p><p>L&#39;imagination n&#39;est pas seulement production volontaire : une image peut s&#39;infléchir à mesure qu&#39;elle est explorée. La spatialisation imaginaire organise une action à partir d&#39;un lieu fictif ; l&#39;invention verbale fait varier les formes sonores et les associations ; la transformation imagée du ressenti change la configuration d&#39;une métaphore. Ces trois expressions désignent ici des opérations Atlas, pas nécessairement des termes techniques de Jodorowsky.</p><p>Le modèle des quatre centres associe intellect, émotion, sexualité/création et matérialité corporelle à un horizon de conscience. Pour la composition d&#39;un personnage, Atlas en tire une distinction modeste entre ce qu&#39;il pense, éprouve, désire et ce dont il a matériellement besoin. Il s&#39;agit d&#39;une adaptation dramaturgique, non d&#39;un modèle clinique ni d&#39;une équivalence avec les fonctions jungiennes.</p><p>Une dernière distinction prépare la comparaison avec Gendlin et Ansa. Accueillir une sensation, trouver une expression qui lui correspond et transformer volontairement cette expression ne sont pas la même opération. La troisième ne doit pas empêcher les deux premières. Une proposition scénique peut rester inchangée si l&#39;interprète n&#39;en souhaite pas d&#39;autre. Le passage de l&#39;image au corps ne permet pas de conclure à une origine psychique d&#39;une douleur réelle.</p><p>L&#39;entretien de 2024 rapproche l&#39;invention sensorielle de la poésie et du surréalisme. Une représentation imaginée peut s&#39;accompagner de sensations réelles et trouver une expression dans le geste ou la voix, sans devenir pour autant un événement physique correspondant à son contenu. Une fiction n&#39;exige pas de souvenir intime.</p><p class=\"a3r-quiet\">P XI, 4563–4564 ; XV–XVII, PDF index 171–188 ; I extrait primaire ; T I, 312–332</p></section><section id=\"a3jc-text-7\"><h3>L&#39;image et ses relations : une grammaire de la composition</h3><p>Une femme tient une lettre devant une porte. Si un partenaire attend derrière elle, le geste peut annoncer une remise ; s&#39;il s&#39;éloigne, le même geste peut évoquer une occasion perdue. L&#39;image ne se transforme pas seulement par ce qu&#39;elle contient, mais par les rapports que ses éléments entretiennent.</p><p>La Voie du tarot est une œuvre commune de Jodorowsky et Marianne Costa. Sa progression conduit de l&#39;organisation générale des figures à leurs combinaisons et à la pratique de l&#39;interprétation. Pour Atlas 3, l&#39;intérêt porte sur les opérations de lecture et de composition, non sur l&#39;établissement d&#39;un dictionnaire divinatoire. L&#39;iconographie, les séries et les significations particulières des cartes relèvent d&#39;Atlas 4.</p><p>Les auteurs opposent une signification arrêtée à une signification fluide. Le contexte fait varier la lecture, mais la forme elle-même continue d&#39;offrir des contraintes. L&#39;ordre des motifs, l&#39;orientation, la proximité et la répétition deviennent ainsi des variables. Nous désignons par composition relationnelle leur traduction dans la mise en scène. Un rapport spatial n&#39;a toutefois pas de signification psychologique universelle.</p><p>La lecture projective introduit le rôle actif de l&#39;observateur. Une lecture est une proposition que celui-ci élabore aussi à partir de ses associations. La pluralité des interprétations demande donc un retour aux indices accessibles : ce que l&#39;on a vu, ce que l&#39;on a éprouvé et ce que l&#39;on suppose ne sont pas identiques. Le livre reste traversé par la tension entre cette subjectivité reconnue et l&#39;idéal d&#39;un support infaillible. Atlas conserve le droit de réviser, de contredire ou de suspendre une lecture. Cette grammaire ouvre une passerelle vers le montage et les motifs d&#39;Atlas 2, sans importer les correspondances numérologiques.</p><p>L&#39;exemple de L&#39;Amoureux dans l&#39;ancien dossier portait sur l&#39;ambiguïté des gestes, des regards et de l&#39;appartenance d&#39;un bras : un détail peut recevoir des lectures relationnelles divergentes. Il constitue ici un repère de méthode, non une restitution de la carte. Jodorowsky oppose en entretien (2020) la prédiction à sa lecture symbolique de l&#39;inconscient : le refus de la prédiction ne suffit pas à établir une connaissance de l&#39;intériorité. Les hypothèses historiques sur les cartes restent à contrôler dans Atlas 4.</p><p class=\"a3r-quiet\">T I–V, 252–282, 586–625, 1206–1208, 1607–1645, 1996–2005, 2370–2374</p></section><section id=\"a3jc-text-8\"><h3>Métagénéalogie : l&#39;héritage comme matériau de devenir</h3><p>Un personnage reçoit une boutique familiale. Il peut continuer l&#39;activité, en modifier l&#39;usage ou y renoncer. Les trois conduites dépendent de ses ressources, de ses liens et de son projet ; aucune ne définit à elle seule la liberté.</p><p>Dans Métagénéalogie, Jodorowsky et Costa inscrivent les héritages familiaux dans une pensée spirituelle de la création. Les formes transmises, dont les rôles et les récits, participent à l&#39;identité acquise. La force imitatrice et la force créatrice représentent deux orientations de leur modèle. Le devenir ne se réduit pas à la rupture : une forme reçue peut être retravaillée, prolongée ou devenir une ressource. L&#39;être essentiel que les auteurs invoquent est une thèse doctrinale, distincte du Soi jungien.</p><p>L&#39;arbre familial met en relation des informations documentaires et des interprétations symboliques. Il faut conserver trois plans : les liens et événements établis, les récits transmis, les hypothèses que l&#39;on formule. Une coïncidence de noms ou de dates ne démontre pas une cause familiale. Un projet peut servir de principe de sélection pour l&#39;examen d&#39;une histoire ; il ne garantit pas que tous les obstacles se trouvent dans cette histoire. Des contraintes économiques ou relationnelles ne sont pas réductibles à la psychologie.</p><p>Le Théâtre du sentir transpose cette question à la construction fictive d&#39;un personnage. Il explore la différence entre une règle reçue et les possibilités qu&#39;une situation présente rend accessibles, sans solliciter les secrets familiaux des interprètes. Les développements sur les nœuds, les noyaux, les identités et les dernières parties du livre restent à compléter après acquisition. Cette section est une lecture provisoire des extraits obtenus, non une présentation exhaustive de Métagénéalogie.</p><p>Le chapitre II accessible ne limite pas l&#39;imitation à la famille : il situe l&#39;individu dans des cercles emboîtés, famille, société et culture, puis horizon de Conscience universelle. Cette cosmologie ne constitue pas une explication familiale de toute difficulté. Un arbre peut contenir des données contradictoires ou inconnues ; aucune association symbolique ne doit combler artificiellement une lacune.</p><p class=\"a3r-quiet\">M introduction, extraits I–IV, fragment V ; M OCR III 4718–4730 ; T V 2412–2418</p></section><section id=\"a3jc-text-9\"><h3>Conscience et spiritualité : l&#39;horizon du projet</h3><p>Un artiste commence avec une idée précise, puis découvre que son matériau exige autre chose. Il renonce à une partie de son projet initial sans renoncer à sa responsabilité. Cette expérience permet de comprendre une dimension artistique de l&#39;effacement du moi, sans présupposer sa signification métaphysique.</p><p>Jodorowsky et Costa situent leur conception de la force créatrice dans un horizon de Conscience universelle. Cette proposition spirituelle oriente leur rapport au devenir, à la transformation et à l&#39;art. Elle n&#39;est pas identique à l&#39;inconscient collectif de Jung ni à un fait empirique. Pour Atlas, la question de l&#39;attention au matériau reste intelligible indépendamment de cette croyance.</p><p>La transe du lecteur, décrite dans le Tarot, associe une concentration intense à l&#39;effacement de la position de témoin. Jodorowsky évoque aussi une transe du prescripteur dans Psychomagic. La psychotranse, notion plus tardive, est associée dans les extraits et présentations accessibles à l&#39;imagination corporelle et à l&#39;invention des prescriptions. Nous ne pouvons pas encore établir précisément le rapport entre ces usages ni les développements sur l&#39;intra-instant, la folie sacrée et l&#39;énergie primordiale.</p><p>La différence entre concentration, diminution du jugement de soi, disponibilité sensorielle et perte de réflexivité doit rester explicite. La création peut être exigeante et immersive sans perte de contrôle, sans hallucination et sans prétention à l&#39;infaillibilité. Le chapitre sur la psychotranse de La Voie de l&#39;imagination reste à obtenir ; cette section ne lui tient pas lieu de lecture.</p><p>L&#39;entretien de 2020 situe la psychotranse dans la continuité de la création et de l&#39;imagination, sans recours aux drogues ; l&#39;absence de substances ne garantit pas l&#39;innocuité d&#39;une pratique. L&#39;édition française paraît en 2024. Le rapprochement avec Gurdjieff à propos de l&#39;identification reste une question à vérifier, non une filiation établie.</p><p class=\"a3r-quiet\">M II ; P III, XI–XVII ; T V 2087–2093 ; I sommaire, extraits et entretiens 2020/2024</p></section><section id=\"a3jc-text-10\"><h3>Le paradoxe de l&#39;autonomie : transmettre sans se substituer</h3><p>Un metteur en scène propose une indication à un acteur. Ce dernier la joue, en invente une variante et constate qu&#39;elle répond mieux au problème de la scène. La transmission lui a donné une capacité nouvelle ; elle ne lui a pas imposé une conduite définitive.</p><p>Le paradoxe majeur du dossier se situe dans le rapport entre une liberté annoncée et une prescription parfois exigeante. Jodorowsky entend libérer le destinataire et lui demande pourtant, dans certaines descriptions, d&#39;exécuter exactement le geste. Le Tarot valorise des lectures révisables, mais affirme par endroits l&#39;infaillibilité du support. L&#39;idéal d&#39;un maître qui s&#39;efface coexiste avec une autorité spirituelle que l&#39;auteur peut invoquer pour légitimer son jugement.</p><p>Cette contradiction ne doit pas être effacée, ni transformée en jugement global sur l&#39;ensemble de l&#39;œuvre. Elle permet de poser des questions propres à l&#39;art : qui invente la forme, qui la réalise, qui l&#39;observe, qui la modifie, qui peut la refuser ? Les responsabilités ne sont pas équivalentes, mais les contributions peuvent circuler. Un cadre artistique reste nécessaire ; la liberté ne signifie pas que chaque indication est arbitraire.</p><p>Le Théâtre du sentir choisit de construire des expériences dont le cadre est intelligible et les possibilités de participation négociables. Le retour à une scène et aux éléments effectivement perçus permet de discuter les propositions. L&#39;intensité d&#39;une expérience n&#39;est pas une preuve de vérité. La transmission réussie se mesure notamment à la capacité d&#39;invention acquise, sans présupposer que le participant doive se passer de toute aide.</p><p>La singularité de Jodorowsky tient à la puissance qu&#39;il prête à l&#39;invention d&#39;une forme agie ; Costa est coauteure à part entière des deux ouvrages qui développent la lecture des images et l&#39;héritage familial. L&#39;apport de leur rencontre à Atlas se définit par les problèmes qu&#39;elle rend travaillables, non par l&#39;adoption de toutes leurs thèses.</p><p>Les comparaisons orientent la suite : Jung, relation différenciée aux figures imaginaires ; Chekhov, image et geste au service du rôle ; Winnicott, conditions du jeu ; Gendlin, formulation ajustée au sens corporel implicite ; Ansa, accueil du sentir. Ces démarches ne partent pas nécessairement d&#39;une image, notamment le felt sense de Gendlin. Il s&#39;agit de questions comparatives, non d&#39;une généalogie ni d&#39;une méthode commune.</p><p class=\"a3r-quiet\">P V 2735–2856 ; T IV 1794–1797, 1933–1935 ; T V 2053–2058, 2120–2123, 2370–2374 ; I extrait Penguin 430–437</p></section>"
+  },
+  "maps": [
+    {
+      "id": "JCM01",
+      "title": "Les cinq actes : une généalogie, non un parcours obligatoire",
+      "chapter": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "nodes": [
+        "Acte poétique",
+        "Acte théâtral",
+        "Acte onirique",
+        "Acte magique",
+        "Acte psychomagique"
+      ],
+      "relations": [
+        [
+          "Acte poétique",
+          "Acte psychomagique",
+          "invention du geste"
+        ],
+        [
+          "Acte théâtral",
+          "Acte psychomagique",
+          "mise en situation"
+        ],
+        [
+          "Acte onirique",
+          "Acte psychomagique",
+          "plasticité imaginaire"
+        ],
+        [
+          "Acte magique",
+          "Acte psychomagique",
+          "dispositif et croyance"
+        ]
+      ],
+      "layout": "quatre branches vers une cinquième ; aucune flèche entre les quatre premières",
+      "note": "Les quatre actes ont aussi leur valeur artistique propre ; la psychomagie n'est pas leur aboutissement nécessaire.",
+      "refs": "P I–V ; registre de lecture",
+      "terms": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "JCM02",
+      "title": "L'œuvre en train de se faire",
+      "chapter": [
+        2,
+        3,
+        10
+      ],
+      "nodes": [
+        "Intention du créateur",
+        "Matériau et contraintes",
+        "Geste réalisé",
+        "Réponse du partenaire",
+        "Variation choisie"
+      ],
+      "relations": [
+        [
+          "Intention du créateur",
+          "Geste réalisé",
+          "oriente"
+        ],
+        [
+          "Matériau et contraintes",
+          "Geste réalisé",
+          "rend possible ou limite"
+        ],
+        [
+          "Geste réalisé",
+          "Réponse du partenaire",
+          "sollicite"
+        ],
+        [
+          "Réponse du partenaire",
+          "Variation choisie",
+          "peut susciter"
+        ],
+        [
+          "Variation choisie",
+          "Geste réalisé",
+          "nouvel essai"
+        ]
+      ],
+      "layout": "deux apports convergent vers le geste ; boucle geste/réponse/variation",
+      "note": "Le matériau et le partenaire contribuent à la création sans devenir des agents qui abolissent la responsabilité de l'interprète.",
+      "refs": "P II, PDF 27 ; P II 778–818 ; E Pouilly 2019",
+      "terms": [
+        2,
+        3,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "JCM03",
+      "title": "Rêve, témoin et transe : des rapports distincts",
+      "chapter": [
+        4,
+        9
+      ],
+      "nodes": [
+        "Rêve lucide",
+        "Témoin maintenu",
+        "Transe du lecteur",
+        "Témoin effacé (idéal de l'auteur)",
+        "Jeu théâtral éveillé"
+      ],
+      "relations": [
+        [
+          "Rêve lucide",
+          "Témoin maintenu",
+          "lucidité valorisée"
+        ],
+        [
+          "Transe du lecteur",
+          "Témoin effacé (idéal de l'auteur)",
+          "effacement revendiqué"
+        ],
+        [
+          "Jeu théâtral éveillé",
+          "Témoin maintenu",
+          "discernement et arrêt possibles"
+        ]
+      ],
+      "layout": "trois lignes indépendantes ; pas d'échelle de profondeur ni de flèche de progression",
+      "note": "L'engagement dans une fiction n'exige ni l'amnésie ni la perte du discernement ; la psychotranse tardive reste à documenter.",
+      "refs": "P III 1618–1634 ; T V 2087–2093 ; I extraits",
+      "terms": [
+        4,
+        5,
+        19,
+        25,
+        31
+      ]
+    },
+    {
+      "id": "JCM04",
+      "title": "Prescription et retour : distinguer l'acte et ses effets",
+      "chapter": [
+        5,
+        10
+      ],
+      "nodes": [
+        "Demande",
+        "Interprétation du prescripteur",
+        "Prescription singulière",
+        "Exécution éventuelle",
+        "Retour écrit",
+        "Causalité démontrée"
+      ],
+      "relations": [
+        [
+          "Demande",
+          "Interprétation du prescripteur",
+          "donne lieu à"
+        ],
+        [
+          "Interprétation du prescripteur",
+          "Prescription singulière",
+          "oriente"
+        ],
+        [
+          "Prescription singulière",
+          "Exécution éventuelle",
+          "proposée dans le dispositif"
+        ],
+        [
+          "Exécution éventuelle",
+          "Retour écrit",
+          "expérience rapportée"
+        ],
+        [
+          "Retour écrit",
+          "Causalité démontrée",
+          "ne suffit pas à établir"
+        ]
+      ],
+      "layout": "chaîne verticale ; dernier lien discontinu, explicitement négatif ; refus et modification discutés hors chaîne",
+      "note": "Carte descriptive du dispositif rapporté, pas un protocole de soin. L'exécution n'est pas obligatoire pour Atlas.",
+      "refs": "P V–VIII, 2816–2842 ; I Penguin 430–437",
+      "terms": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "JCM05",
+      "title": "Cinq opérations imaginatives à partir d'une seule forme",
+      "chapter": [
+        6
+      ],
+      "nodes": [
+        "Forme de départ",
+        "Addition",
+        "Soustraction",
+        "Division",
+        "Multiplication",
+        "Mélange"
+      ],
+      "relations": [
+        [
+          "Forme de départ",
+          "Addition",
+          "amplifier ou ajouter"
+        ],
+        [
+          "Forme de départ",
+          "Soustraction",
+          "réduire ou retirer"
+        ],
+        [
+          "Forme de départ",
+          "Division",
+          "dissocier"
+        ],
+        [
+          "Forme de départ",
+          "Multiplication",
+          "faire proliférer"
+        ],
+        [
+          "Forme de départ",
+          "Mélange",
+          "associer des éléments hétérogènes"
+        ]
+      ],
+      "layout": "éventail vertical ; chaque exemple utilise la même scène de départ ; aucun classement",
+      "note": "Il s'agit de cinq ressources formelles, non d'une méthode exhaustive ni de cinq étapes.",
+      "refs": "P XVI, PDF 184–185",
+      "terms": [
+        18,
+        32,
+        33,
+        34,
+        36
+      ]
+    },
+    {
+      "id": "JCM06",
+      "title": "De la perception à une lecture révisable",
+      "chapter": [
+        7,
+        10
+      ],
+      "nodes": [
+        "Détail observé",
+        "Configuration et contexte",
+        "Hypothèse de sens",
+        "Autre hypothèse",
+        "Retour aux indices"
+      ],
+      "relations": [
+        [
+          "Détail observé",
+          "Hypothèse de sens",
+          "contribue"
+        ],
+        [
+          "Configuration et contexte",
+          "Hypothèse de sens",
+          "modifie"
+        ],
+        [
+          "Détail observé",
+          "Autre hypothèse",
+          "peut aussi soutenir"
+        ],
+        [
+          "Hypothèse de sens",
+          "Retour aux indices",
+          "à confronter"
+        ],
+        [
+          "Autre hypothèse",
+          "Retour aux indices",
+          "à confronter"
+        ],
+        [
+          "Retour aux indices",
+          "Hypothèse de sens",
+          "peut réviser"
+        ]
+      ],
+      "layout": "bifurcation puis retour ; pas de case vérité cachée",
+      "note": "La composition contraint la lecture ; la lecture reste une hypothèse et peut demeurer plurielle.",
+      "refs": "T II 586–625 ; IV 1996–2005 ; V 2370–2374",
+      "terms": [
+        20,
+        22,
+        29,
+        30,
+        37
+      ]
+    },
+    {
+      "id": "JCM07",
+      "title": "Héritage : trois réponses possibles à une forme reçue",
+      "chapter": [
+        8
+      ],
+      "nodes": [
+        "Forme transmise",
+        "Situation et ressources",
+        "Conserver",
+        "Transformer",
+        "Abandonner"
+      ],
+      "relations": [
+        [
+          "Forme transmise",
+          "Conserver",
+          "option"
+        ],
+        [
+          "Forme transmise",
+          "Transformer",
+          "option"
+        ],
+        [
+          "Forme transmise",
+          "Abandonner",
+          "option"
+        ],
+        [
+          "Situation et ressources",
+          "Conserver",
+          "conditionne"
+        ],
+        [
+          "Situation et ressources",
+          "Transformer",
+          "conditionne"
+        ],
+        [
+          "Situation et ressources",
+          "Abandonner",
+          "conditionne"
+        ]
+      ],
+      "layout": "trois branches au même niveau ; pas de progression morale",
+      "note": "Outil dramaturgique Atlas à partir d'extraits de Métagénéalogie. L'héritage peut être une ressource ou une contrainte ; aucune lecture de la famille réelle.",
+      "refs": "M II–III extraits ; M OCR 4718–4730 ; registre",
+      "terms": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        38,
+        39
+      ]
+    },
+    {
+      "id": "JCM08",
+      "title": "Quatre registres d'un personnage",
+      "chapter": [
+        6,
+        9
+      ],
+      "nodes": [
+        "Pensée",
+        "Émotion",
+        "Désir",
+        "Besoin matériel",
+        "Action dans la situation"
+      ],
+      "relations": [
+        [
+          "Pensée",
+          "Action dans la situation",
+          "peut orienter"
+        ],
+        [
+          "Émotion",
+          "Action dans la situation",
+          "peut infléchir"
+        ],
+        [
+          "Désir",
+          "Action dans la situation",
+          "peut orienter"
+        ],
+        [
+          "Besoin matériel",
+          "Action dans la situation",
+          "peut contraindre"
+        ]
+      ],
+      "layout": "quatre sources vers une action ; pas de représentation anatomique",
+      "note": "Adaptation dramaturgique des quatre centres, non reproduction du système métaphysique des auteurs ; aucun diagnostic de centre.",
+      "refs": "P XI 4563–4564 ; PDF 171 ; T I 312–332",
+      "terms": [
+        35,
+        17
+      ]
+    },
+    {
+      "id": "JCM09",
+      "title": "Les cercles de la conscience",
+      "chapter": [
+        8,
+        9
+      ],
+      "nodes": [
+        "Individu",
+        "Famille",
+        "Société et culture",
+        "Conscience universelle (horizon spirituel)"
+      ],
+      "relations": [
+        [
+          "Individu",
+          "Famille",
+          "situé dans"
+        ],
+        [
+          "Famille",
+          "Société et culture",
+          "située dans"
+        ],
+        [
+          "Société et culture",
+          "Conscience universelle (horizon spirituel)",
+          "inscrite dans le modèle"
+        ]
+      ],
+      "layout": "quatre anneaux emboîtés ; pas d'échelle de valeur",
+      "note": "Restitution pédagogique du modèle métaphysique décrit dans les extraits du chapitre II, non observation d'une structure de la psyché. Corpus incomplet.",
+      "refs": "M II, extrait éditorial et ancien dossier §21",
+      "terms": [
+        12,
+        13,
+        14,
+        17
+      ]
+    },
+    {
+      "id": "JCM10",
+      "title": "L'arbre : document, récit, interprétation",
+      "chapter": [
+        8
+      ],
+      "nodes": [
+        "Faits et liens documentés",
+        "Récits transmis",
+        "Hypothèses",
+        "Associations symboliques",
+        "Inconnues"
+      ],
+      "relations": [
+        [
+          "Faits et liens documentés",
+          "Récits transmis",
+          "à distinguer de"
+        ],
+        [
+          "Récits transmis",
+          "Hypothèses",
+          "peuvent susciter"
+        ],
+        [
+          "Récits transmis",
+          "Associations symboliques",
+          "peuvent susciter"
+        ],
+        [
+          "Associations symboliques",
+          "Faits et liens documentés",
+          "ne prouvent pas"
+        ],
+        [
+          "Inconnues",
+          "Hypothèses",
+          "à signaler"
+        ]
+      ],
+      "layout": "branches parallèles ; relation de non-preuve explicite",
+      "note": "Outil éditorial Atlas, non protocole canonique de métagénéalogie.",
+      "refs": "M II, OCR 3375–3462 ; ancien dossier §23",
+      "terms": [
+        12,
+        15,
+        30,
+        39
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "id": "JCP01",
+      "title": "L'objet change de fonction",
+      "chapters": [
+        1,
+        5,
+        6
+      ],
+      "terms": [
+        1,
+        9,
+        18,
+        24,
+        29,
+        32,
+        36
+      ],
+      "duration": "15–20 min",
+      "participants": "2 interprètes et 1 témoin facultatif",
+      "material": "Une chaise et une clé ou un autre accessoire banal",
+      "goal": "Découvrir comment un usage, une relation et une circonstance modifient la charge expressive d'un objet.",
+      "steps": [
+        "Convenir d'une fiction simple : un personnage attend, un autre arrive ; jouer 45 secondes sans intention symbolique ajoutée.",
+        "Reprendre avec la chaise réservée à un absent. Ne pas ajouter de dialogue explicatif ; observer comment le partenaire répond.",
+        "Reprendre avec la chaise offerte au visiteur, puis avec un objet proposé par le partenaire. Une seule modification à la fois.",
+        "L'interprète invente une quatrième version et choisit de conserver ou non les indications reçues.",
+        "Comparer les changements observables : distance, tempo, orientation, transfert de l'objet ; distinguer ce que le témoin voit et ce qu'il suppose."
+      ],
+      "variants": [
+        "Clé : ouvrir, retenir, transmettre.",
+        "Foulard : signe de rivalité puis outil d'une tâche commune.",
+        "Éprouver les cinq opérations imaginatives à partir du même événement ; jouer une seule variante choisie."
+      ],
+      "failure": "Si toutes les versions produisent le même effet, ne pas surjouer : préciser l'action du personnage ou modifier une circonstance.",
+      "debrief": [
+        "Quel changement a réellement modifié la relation ?",
+        "L'objet a-t-il proposé une possibilité que l'acteur n'avait pas prévue ?",
+        "Quelle variante sert le mieux la scène, et pourquoi ?"
+      ],
+      "boundary": "Fiction explicite, pas d'objet personnel chargé imposé ni d'acte psychomagique. Arrêt et refus possibles.",
+      "refs": "P I–II, XVI ; T II 617–625 ; ancien dossier partitions chaise et clé"
+    },
+    {
+      "id": "JCP02",
+      "title": "Une image, plusieurs relations",
+      "chapters": [
+        6,
+        7
+      ],
+      "terms": [
+        20,
+        22,
+        29,
+        30,
+        33,
+        37
+      ],
+      "duration": "20 min",
+      "participants": "2–3 interprètes et 1–2 observateurs",
+      "material": "Une lettre fictive, un espace délimité",
+      "goal": "Distinguer la composition visible, le ressenti et l'hypothèse interprétative.",
+      "steps": [
+        "Composer un tableau vivant : un personnage tient la lettre, un autre se tient à proximité. Les observateurs décrivent les positions et gestes sans interpréter.",
+        "Changer seulement la direction du regard, puis seulement la distance. Photographier mentalement ou dessiner les configurations ; aucune captation nécessaire.",
+        "Chaque observateur formule une hypothèse et cite un indice visible. L'acteur propose sa propre lecture, sans obligation de s'y reconnaître.",
+        "Jouer deux hypothèses comme circonstances fictives ; conserver les gestes principaux et comparer les conséquences.",
+        "Déplacer le tableau du début à la fin d'une scène et examiner ce que l'ordre change. Conserver une lecture divergente si elle reste plausible."
+      ],
+      "variants": [
+        "Introduire un troisième personnage qui ne parle pas.",
+        "Modifier l'ordre de trois tableaux.",
+        "Faire varier un motif de lumière ou de couleur sans dictionnaire symbolique."
+      ],
+      "failure": "Si la discussion devient un jugement sur les interprètes, revenir à la forme et au texte ; abandonner la lecture intime.",
+      "debrief": [
+        "Qu'a-t-on vu, ressenti, supposé ?",
+        "Qu'est-ce que le contexte a changé sans changer le geste ?",
+        "Quelle lecture reste incertaine après l'essai ?"
+      ],
+      "boundary": "Pas de divination, de diagnostic, de lecture de la famille ou de l'inconscient réel.",
+      "refs": "T I–V ; ancien dossier troisième partition"
+    },
+    {
+      "id": "JCP03",
+      "title": "La partition qui accueille l'imprévu",
+      "chapters": [
+        2,
+        3,
+        4,
+        10
+      ],
+      "terms": [
+        2,
+        3,
+        21,
+        23,
+        24,
+        25,
+        26,
+        10,
+        11
+      ],
+      "duration": "20–25 min",
+      "participants": "3 personnes, rotation auteur/interprète/témoin ; partenaire possible",
+      "material": "Une table, une tasse et une porte réelle ou fictive",
+      "goal": "Comparer précision, disponibilité et autonomie de décision sans opposer forme et spontanéité.",
+      "steps": [
+        "Établir trois repères consentis : poser la tasse, poser une question, ouvrir la porte. Convenir d'un signe d'arrêt.",
+        "Répéter la structure deux fois ; noter ce qui devient plus précis ou plus mécanique.",
+        "Le partenaire propose une variation simple de rythme ou de réplique ; l'interprète conserve les trois repères mais peut ajuster le trajet.",
+        "L'interprète invente sa propre variante, puis les fonctions tournent. Le témoin offre une indication révisable et peut aussi apprendre de la réponse.",
+        "Faire un bref retour écrit en quatre lignes : consigne, acte réalisé, différence observée, question encore ouverte."
+      ],
+      "variants": [
+        "Version entièrement libre puis version très fixée, sans juger l'une supérieure par principe.",
+        "Pause volontaire face à une impasse de composition, puis reprise.",
+        "Comparer avec et sans observateur annoncé ; si captation demandée, consentement distinct."
+      ],
+      "failure": "Si l'inattendu désorganise tout, rétablir un repère ou réduire le nombre de variables ; si la structure rigidifie, autoriser une modification.",
+      "debrief": [
+        "Qu'a rendu possible la préparation ?",
+        "Quelles initiatives n'auraient pas existé sans partenaire ?",
+        "Qui a pu décider de modifier la forme ?"
+      ],
+      "boundary": "Aucune transe induite, perte de contrôle recherchée, captation secrète, ni obligation de se conformer à une prescription personnelle.",
+      "refs": "P II–III, V–VII ; T IV–V ; E Pouilly"
+    },
+    {
+      "id": "JCP04",
+      "title": "Ce que l'on reçoit, ce que l'on invente",
+      "chapters": [
+        3,
+        8,
+        10
+      ],
+      "terms": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        21,
+        26,
+        38,
+        39
+      ],
+      "duration": "25 min",
+      "participants": "2 interprètes et 1 observateur facultatif",
+      "material": "Fiche d'un personnage fictif et trois faits d'histoire inventés",
+      "goal": "Explorer plusieurs rapports possibles à une règle héritée en distinguant le projet, les ressources et les contraintes.",
+      "steps": [
+        "Inventer une tradition familiale fictive : le personnage a appris à tenir une boutique. Noter trois faits établis par le récit et deux inconnues.",
+        "Donner un objectif présent (annoncer une décision à un proche). Choisir un élément hérité pertinent pour cette scène, sans inventer de cause cachée.",
+        "Jouer une version où il conserve la règle, une où il en modifie l'usage et une où il décide de s'en écarter.",
+        "Introduire une contrainte extérieure concrète, par exemple un délai ou une ressource indisponible ; observer les trois versions.",
+        "Revenir aux faits fictifs : choisir la version qui enrichit l'œuvre, en gardant les deux autres comme possibilités légitimes."
+      ],
+      "variants": [
+        "Hériter d'un geste professionnel, d'une recette ou d'une manière de parler.",
+        "Inventer une règle qui protège plutôt qu'elle n'entrave.",
+        "Un partenaire ne partage pas le projet et le personnage peut arrêter de le poursuivre."
+      ],
+      "failure": "Si la règle est traitée comme forcément nuisible, construire un contre-exemple où elle soutient l'action ; ne pas moraliser les trois choix.",
+      "debrief": [
+        "Quelle contrainte était extérieure ?",
+        "La continuité a-t-elle pu être créatrice ?",
+        "Qu'est-ce que le projet a permis de sélectionner dans l'histoire ?"
+      ],
+      "boundary": "Aucune généalogie réelle exigée, aucune confession, interprétation clinique ou réconciliation imposée. Corpus Métagénéalogie partiel.",
+      "refs": "M I–IV extraits ; T V 2412–2418 ; candidat V2"
+    }
+  ],
+  "audit": [
+    {
+      "oldSection": 1,
+      "title": "Le problème propre de Jodorowsky",
+      "destination": "Introduction, 1",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 2,
+      "title": "Une genèse artistique : du mime au happening",
+      "destination": "2 (historique réintroduit)",
+      "decision": "précision ou schéma réintroduit"
+    },
+    {
+      "oldSection": 3,
+      "title": "Acte poétique, théâtre éphémère et acte psychomagique",
+      "destination": "1, 2, 5",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 4,
+      "title": "Le langage métaphorique et ses limites",
+      "destination": "1, 5, 7",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 5,
+      "title": "Le paradoxe de la liberté : inventer ou obéir",
+      "destination": "5, 10",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 6,
+      "title": "Métagénéalogie : répétition et invention",
+      "destination": "8, 9, JCM09",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 7,
+      "title": "Première partition originale Atlas : trois usages d'un objet",
+      "destination": "JCP01",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 8,
+      "title": "Correspondances à développer, sans assimilation",
+      "destination": "3, 4, 6, 10",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 9,
+      "title": "Premier schéma de lecture",
+      "destination": "JCM04, chap. 1 et 5",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 10,
+      "title": "Répartition Atlas 3 / Atlas 4",
+      "destination": "5, 7 ; limites Atlas 4",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 11,
+      "title": "Une architecture issue des entretiens",
+      "destination": "JCM01, chap. 1–5",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 12,
+      "title": "L'acte poétique : faire surgir une autre possibilité",
+      "destination": "1 (Lihn réintroduit)",
+      "decision": "précision ou schéma réintroduit"
+    },
+    {
+      "oldSection": 13,
+      "title": "L'acte théâtral : un événement plutôt qu'une représentation répétée",
+      "destination": "2, JCP03",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 14,
+      "title": "L'acte onirique : une conscience à l'intérieur de l'imaginaire",
+      "destination": "4, JCM03",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 15,
+      "title": "L'acte magique : le dispositif et le statut de la croyance",
+      "destination": "5 (Pachita réintroduite)",
+      "decision": "précision ou schéma réintroduit"
+    },
+    {
+      "oldSection": 16,
+      "title": "L'acte psychomagique : la prescription et la contradiction interne",
+      "destination": "5, 10, JCM04",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 17,
+      "title": "Une carte des cinq actes",
+      "destination": "JCM01, JCM04",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 18,
+      "title": "Deuxième partition originale : trois rapports au même objet",
+      "destination": "JCP01, variante clé",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 19,
+      "title": "Métagénéalogie : une œuvre à deux voix",
+      "destination": "8 et attribution Costa",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 20,
+      "title": "La force imitatrice et la force créatrice",
+      "destination": "8, 9, JCP04",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 21,
+      "title": "Les cercles de la conscience",
+      "destination": "8–9, JCM09",
+      "decision": "précision ou schéma réintroduit"
+    },
+    {
+      "oldSection": 22,
+      "title": "Rôle familial, obstacle et nouvelle action",
+      "destination": "3, 8, JCP04",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 23,
+      "title": "L'arbre : distinguer document, récit et interprétation",
+      "destination": "8, JCM10",
+      "decision": "précision ou schéma réintroduit"
+    },
+    {
+      "oldSection": 24,
+      "title": "L'imagination comme expérience incarnée",
+      "destination": "6 (surréalisme et sensation réintroduits)",
+      "decision": "précision ou schéma réintroduit"
+    },
+    {
+      "oldSection": 25,
+      "title": "La psychotranse : continuité et déplacement",
+      "destination": "9 (statut provisoire explicite)",
+      "decision": "précision ou schéma réintroduit"
+    },
+    {
+      "oldSection": 26,
+      "title": "Spiritualité : l'art comme déplacement du rapport à soi",
+      "destination": "9, 10 (Gurdjieff à vérifier)",
+      "decision": "précision ou schéma réintroduit"
+    },
+    {
+      "oldSection": 27,
+      "title": "Le tarot comme image à lire, non comme verdict",
+      "destination": "7 (exemple L'Amoureux réintroduit)",
+      "decision": "précision ou schéma réintroduit"
+    },
+    {
+      "oldSection": 28,
+      "title": "Troisième partition : une image, plusieurs relations",
+      "destination": "JCP02 (variante à trois)",
+      "decision": "réorganisé"
+    },
+    {
+      "oldSection": 29,
+      "title": "Carte comparative des opérations",
+      "destination": "10 (comparaisons)",
+      "decision": "précision ou schéma réintroduit"
+    }
+  ],
+  "pending": [
+    "Acquisition de Métagénéalogie et La Voie de l'imagination par l'utilisateur.",
+    "Collation iconographique et française des textes.",
+    "Adapter atlas3-reader.js : le modal actuel n'affiche que définition/source pour Jodorowsky ; navigation chapitres/cartes/renvois/exemples à ajouter.",
+    "Les cartes Jung sont spécifiques à son id ; adapter le rendu et vérifier mobile, focus, navigation, régressions.",
+    "Partitions non expérimentées ; comparaisons inter-auteurs à contrôler."
+  ]
+}
