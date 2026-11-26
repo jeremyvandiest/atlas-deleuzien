@@ -10,7 +10,7 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - II. Théorie de l'éros : E (texte principal §§ 16–34, PDF p. 29–37, contrôlé visuellement ; notes à collationner).
 - III. Volonté de puissance : E (texte principal §§ 35–55, PDF p. 38–46, contrôle visuel ; notes à collationner).
 - IV. Problème des types d'attitude : E (texte principal §§ 56–96, PDF p. 47–65 ; notes à contrôler).
-- V. Inconscient personnel et collectif : P.
+- V. Inconscient personnel et collectif : E (texte principal §§ 97–120, PDF p. 66–81 ; contrôle des notes et des pages à faire).
 - VI. Méthode synthétique ou constructive : P.
 - VII. Archétypes : P.
 - VIII. Approche thérapeutique : R.
@@ -117,3 +117,24 @@ Distinguer l'explication du passé de la construction d'un devenir ; cartographi
 
 ### Statut
 Texte principal des quatre premiers chapitres consigné ; contrôle des notes, audit de couverture et classement final à faire. Reprise au § 97. Aucun changement au lecteur ni aux autres Atlas.
+
+
+## Lecture séquentielle — unité 5 : inconscient personnel et collectif
+
+CW 7, §§ 97–120, PDF p. 66–81 (index zéro). Texte principal consulté dans son intégralité par plages de texte extrait, lignes 1682–2155. Borne suivante : § 121, p. 82. Source : https://www.ronliskey.com/docs/collected-Works-07-Analytical-Psychology-by-C-G-Jung.pdf . Notes et contrôle visuel à faire.
+
+### Registre de couverture
+- §§ 97–100 : transfert personnel et images mythologiques ; double filiation.
+- §§ 101–105 : hypothèse de dispositions héritées, non de représentations déjà constituées ; inconscient personnel, collectif, ombre et autonomie relative.
+- §§ 106–109 : exemple de Mayer, analogies religieuses, origine hypothétique des archétypes, effet numineux.
+- §§ 110–113 : projection, introjection, inflation, fonction psychologique du religieux, énantiodromie, distinction moi/non-moi.
+- §§ 114–116 : étapes de vie, réévaluation, maintien des contraires plutôt que renversement.
+- §§ 117–120 : régression, distinction image vécue et forme archétypale, critique des substituts doctrinaux, nécessité d'une médiation.
+
+### Questions et décisions provisoires
+Vérifier la relation entre archétype, image et affect dans les autres textes de Jung. Cartographier les issues du conflit : rigidification, inversion ou élaboration d'une autre réponse. Les analogies ethnographiques et la transmission héréditaire postulée ne constituent pas des preuves contemporaines. Distinguer expérience symbolique et affirmation métaphysique. Pour l'Atlas 3, privilégier le processus psychique ; pour l'Atlas 4, réserver l'iconographie mythologique, sans modifier celui-ci. 
+
+Exemple original pour le Théâtre du sentir : une interprète joue successivement une figure de protectrice et une figure d'autorité. Elle observe comment chacune transforme ses gestes et ses relations scéniques, puis quitte explicitement le rôle. Le travail porte sur la composition et la différenciation, non sur l'induction d'une expérience clinique. Hypothèse de carte : distinguer figure, effet vécu et personne.
+
+### Statut
+Cinq chapitres, §§ 1–120, consignés. Reprise au § 121 : méthode synthétique ou constructive. Contrôle des notes et audit transversal ouverts ; aucun changement au lexique, au lecteur ou aux autres Atlas.
