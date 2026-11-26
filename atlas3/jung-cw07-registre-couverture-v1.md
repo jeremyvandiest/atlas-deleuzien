@@ -7,7 +7,7 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - Notes éditoriales des deux éditions : E.
 - Premier essai, Psychologie de l'inconscient, cinq préfaces : E.
 - I. Psychanalyse : E (texte principal §§ 1–15, PDF p. 19–28 ; notes et recollation à contrôler).
-- II. Théorie de l'éros : R.
+- II. Théorie de l'éros : E (texte principal §§ 16–34, PDF p. 29–37, contrôlé visuellement ; notes à collationner).
 - III. Volonté de puissance : R.
 - IV. Problème des types d'attitude : P.
 - V. Inconscient personnel et collectif : P.
@@ -53,3 +53,25 @@ Source : CW 7, §§ 1–15, PDF p. 19–28 (index zéro). Texte principal lu san
 Une lecture exhaustive concerne d'abord les œuvres de référence retenues. La reconstruction de toute l'évolution d'un auteur n'est requise que lorsqu'elle apporte une compréhension décisive. Pour Luis Ansa, La Voie du sentir constitue le livre de référence choisi par l'utilisateur ; priorité à sa lecture complète, pas à une biographie intellectuelle systématique. Pour Jung, les différences entre textes et éditions restent pertinentes. Pour tous, justifier le corpus, conserver les lacunes et reporter la hiérarchisation définitive après audit.
 
 Prochain point de reprise : chapitre II, § 16. Le chapitre I a été lu dans son texte principal ; contrôle des notes à faire. Aucun changement au lecteur, au lexique ni aux autres Atlas.
+
+
+## Lecture séquentielle — unité 2 : Théorie de l'éros
+
+CW 7, §§ 16–34, traduction Hull, deuxième édition. Les neuf pages PDF p. 29–37 (index zéro) ont été lues visuellement. Source : https://www.ronliskey.com/docs/collected-Works-07-Analytical-Psychology-by-C-G-Jung.pdf . Chapitre III confirmé à § 35. Les appels de notes sont repérés, leur contenu et les sources freudiennes citées restent à collationner.
+
+### Inventaire de lecture
+- §§ 16–18 : division intérieure ; articulation des conflits personnels et des tensions culturelles ; refoulement possible des exigences morales elles-mêmes.
+- §§ 19–20 : problème de méthode ; hypnose, associations expérimentales, complexes affectifs et rêves.
+- §§ 21–23 : contenu manifeste et désir inconscient dans l'exposé freudien ; objection de Jung à la primauté universelle de l'inceste ; problème actuel évité.
+- §§ 24–26 : enquête sur le rêve, résistance à l'interprétation, analogie avec la démarche socratique.
+- §§ 27–28 : symptôme, autonomie des complexes et reconnaissance des impulsions sans libération indiscriminée.
+- §§ 29–31 : critique de l'explication unilatérale par répression des instincts ; distinction entre dispositions morales et conventions collectives.
+- §§ 32–34 : éros, instinct et esprit ; reconnaissance de l'apport freudien mais refus de son exclusivité ; tension des opposés comme passage vers une théorie énergétique.
+
+### Questions pour la reconstruction (non conclusions définitives)
+La structure du chapitre conduit du conflit à la critique de la grille d'interprétation elle-même. Vérifier au chapitre III comment Jung introduit une seconde explication du même matériau, puis au chapitre IV comment il fait de la position de l'observateur un problème. Pour le lexique, réexaminer la place de l'éros, de la division intérieure, de la résistance, du refoulement et des opposés. Comparer avec le CW 7 § 78 et la typologie avant de déterminer leur rang.
+
+Exemple original Atlas : dans une pièce, un personnage refuse systématiquement toute aide. Une autre scène peut montrer qu'il tient à une forme de réciprocité qu'il n'arrive pas à exprimer. La composition rend perceptible un écart entre conduite et valeur, sans établir un diagnostic ni une cause inconsciente. Ce contre-exemple empêche de réduire l'ombre à la seule transgression morale.
+
+### Audit de statut
+Les §§ 1–34 des deux premiers chapitres sont désormais consignés dans le registre (chapitre I selon relevé antérieur, chapitre II contrôlé dans cette étape). La cohérence de la transition et les références de notes seront recollationnées à la fin de l'essai. Pas de synthèse finale, pas de modification du lexique ni du lecteur. Reprise au § 35, chapitre III : volonté de puissance.
