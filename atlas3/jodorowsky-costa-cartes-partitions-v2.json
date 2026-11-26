@@ -1,0 +1,597 @@
+{
+  "status": "Candidat pédagogique non intégré ; schémas structurés, pas rendus dans le lecteur ; partitions non testées",
+  "id": "jodorowsky",
+  "sources": "Dossier fondateur V2 rédaction, lexique unifié V2, registre et cahiers 01–02. Repères P/T/M/I/E du registre.",
+  "maps": [
+    {
+      "id": "JCM01",
+      "title": "Les cinq actes : une généalogie, non un parcours obligatoire",
+      "chapter": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "nodes": [
+        "Acte poétique",
+        "Acte théâtral",
+        "Acte onirique",
+        "Acte magique",
+        "Acte psychomagique"
+      ],
+      "relations": [
+        [
+          "Acte poétique",
+          "Acte psychomagique",
+          "invention du geste"
+        ],
+        [
+          "Acte théâtral",
+          "Acte psychomagique",
+          "mise en situation"
+        ],
+        [
+          "Acte onirique",
+          "Acte psychomagique",
+          "plasticité imaginaire"
+        ],
+        [
+          "Acte magique",
+          "Acte psychomagique",
+          "dispositif et croyance"
+        ]
+      ],
+      "layout": "quatre branches vers une cinquième ; aucune flèche entre les quatre premières",
+      "note": "Les quatre actes ont aussi leur valeur artistique propre ; la psychomagie n'est pas leur aboutissement nécessaire.",
+      "refs": "P I–V ; registre de lecture",
+      "terms": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "JCM02",
+      "title": "L'œuvre en train de se faire",
+      "chapter": [
+        2,
+        3,
+        10
+      ],
+      "nodes": [
+        "Intention du créateur",
+        "Matériau et contraintes",
+        "Geste réalisé",
+        "Réponse du partenaire",
+        "Variation choisie"
+      ],
+      "relations": [
+        [
+          "Intention du créateur",
+          "Geste réalisé",
+          "oriente"
+        ],
+        [
+          "Matériau et contraintes",
+          "Geste réalisé",
+          "rend possible ou limite"
+        ],
+        [
+          "Geste réalisé",
+          "Réponse du partenaire",
+          "sollicite"
+        ],
+        [
+          "Réponse du partenaire",
+          "Variation choisie",
+          "peut susciter"
+        ],
+        [
+          "Variation choisie",
+          "Geste réalisé",
+          "nouvel essai"
+        ]
+      ],
+      "layout": "deux apports convergent vers le geste ; boucle geste/réponse/variation",
+      "note": "Le matériau et le partenaire contribuent à la création sans devenir des agents qui abolissent la responsabilité de l'interprète.",
+      "refs": "P II, PDF 27 ; P II 778–818 ; E Pouilly 2019",
+      "terms": [
+        2,
+        3,
+        23,
+        24
+      ]
+    },
+    {
+      "id": "JCM03",
+      "title": "Rêve, témoin et transe : des rapports distincts",
+      "chapter": [
+        4,
+        9
+      ],
+      "nodes": [
+        "Rêve lucide",
+        "Témoin maintenu",
+        "Transe du lecteur",
+        "Témoin effacé (idéal de l'auteur)",
+        "Jeu théâtral éveillé"
+      ],
+      "relations": [
+        [
+          "Rêve lucide",
+          "Témoin maintenu",
+          "lucidité valorisée"
+        ],
+        [
+          "Transe du lecteur",
+          "Témoin effacé (idéal de l'auteur)",
+          "effacement revendiqué"
+        ],
+        [
+          "Jeu théâtral éveillé",
+          "Témoin maintenu",
+          "discernement et arrêt possibles"
+        ]
+      ],
+      "layout": "trois lignes indépendantes ; pas d'échelle de profondeur ni de flèche de progression",
+      "note": "L'engagement dans une fiction n'exige ni l'amnésie ni la perte du discernement ; la psychotranse tardive reste à documenter.",
+      "refs": "P III 1618–1634 ; T V 2087–2093 ; I extraits",
+      "terms": [
+        4,
+        5,
+        19,
+        25,
+        31
+      ]
+    },
+    {
+      "id": "JCM04",
+      "title": "Prescription et retour : distinguer l'acte et ses effets",
+      "chapter": [
+        5,
+        10
+      ],
+      "nodes": [
+        "Demande",
+        "Interprétation du prescripteur",
+        "Prescription singulière",
+        "Exécution éventuelle",
+        "Retour écrit",
+        "Causalité démontrée"
+      ],
+      "relations": [
+        [
+          "Demande",
+          "Interprétation du prescripteur",
+          "donne lieu à"
+        ],
+        [
+          "Interprétation du prescripteur",
+          "Prescription singulière",
+          "oriente"
+        ],
+        [
+          "Prescription singulière",
+          "Exécution éventuelle",
+          "proposée dans le dispositif"
+        ],
+        [
+          "Exécution éventuelle",
+          "Retour écrit",
+          "expérience rapportée"
+        ],
+        [
+          "Retour écrit",
+          "Causalité démontrée",
+          "ne suffit pas à établir"
+        ]
+      ],
+      "layout": "chaîne verticale ; dernier lien discontinu, explicitement négatif ; refus et modification discutés hors chaîne",
+      "note": "Carte descriptive du dispositif rapporté, pas un protocole de soin. L'exécution n'est pas obligatoire pour Atlas.",
+      "refs": "P V–VIII, 2816–2842 ; I Penguin 430–437",
+      "terms": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "JCM05",
+      "title": "Cinq opérations imaginatives à partir d'une seule forme",
+      "chapter": [
+        6
+      ],
+      "nodes": [
+        "Forme de départ",
+        "Addition",
+        "Soustraction",
+        "Division",
+        "Multiplication",
+        "Mélange"
+      ],
+      "relations": [
+        [
+          "Forme de départ",
+          "Addition",
+          "amplifier ou ajouter"
+        ],
+        [
+          "Forme de départ",
+          "Soustraction",
+          "réduire ou retirer"
+        ],
+        [
+          "Forme de départ",
+          "Division",
+          "dissocier"
+        ],
+        [
+          "Forme de départ",
+          "Multiplication",
+          "faire proliférer"
+        ],
+        [
+          "Forme de départ",
+          "Mélange",
+          "associer des éléments hétérogènes"
+        ]
+      ],
+      "layout": "éventail vertical ; chaque exemple utilise la même scène de départ ; aucun classement",
+      "note": "Il s'agit de cinq ressources formelles, non d'une méthode exhaustive ni de cinq étapes.",
+      "refs": "P XVI, PDF 184–185",
+      "terms": [
+        18,
+        32,
+        33,
+        34,
+        36
+      ]
+    },
+    {
+      "id": "JCM06",
+      "title": "De la perception à une lecture révisable",
+      "chapter": [
+        7,
+        10
+      ],
+      "nodes": [
+        "Détail observé",
+        "Configuration et contexte",
+        "Hypothèse de sens",
+        "Autre hypothèse",
+        "Retour aux indices"
+      ],
+      "relations": [
+        [
+          "Détail observé",
+          "Hypothèse de sens",
+          "contribue"
+        ],
+        [
+          "Configuration et contexte",
+          "Hypothèse de sens",
+          "modifie"
+        ],
+        [
+          "Détail observé",
+          "Autre hypothèse",
+          "peut aussi soutenir"
+        ],
+        [
+          "Hypothèse de sens",
+          "Retour aux indices",
+          "à confronter"
+        ],
+        [
+          "Autre hypothèse",
+          "Retour aux indices",
+          "à confronter"
+        ],
+        [
+          "Retour aux indices",
+          "Hypothèse de sens",
+          "peut réviser"
+        ]
+      ],
+      "layout": "bifurcation puis retour ; pas de case vérité cachée",
+      "note": "La composition contraint la lecture ; la lecture reste une hypothèse et peut demeurer plurielle.",
+      "refs": "T II 586–625 ; IV 1996–2005 ; V 2370–2374",
+      "terms": [
+        20,
+        22,
+        29,
+        30,
+        37
+      ]
+    },
+    {
+      "id": "JCM07",
+      "title": "Héritage : trois réponses possibles à une forme reçue",
+      "chapter": [
+        8
+      ],
+      "nodes": [
+        "Forme transmise",
+        "Situation et ressources",
+        "Conserver",
+        "Transformer",
+        "Abandonner"
+      ],
+      "relations": [
+        [
+          "Forme transmise",
+          "Conserver",
+          "option"
+        ],
+        [
+          "Forme transmise",
+          "Transformer",
+          "option"
+        ],
+        [
+          "Forme transmise",
+          "Abandonner",
+          "option"
+        ],
+        [
+          "Situation et ressources",
+          "Conserver",
+          "conditionne"
+        ],
+        [
+          "Situation et ressources",
+          "Transformer",
+          "conditionne"
+        ],
+        [
+          "Situation et ressources",
+          "Abandonner",
+          "conditionne"
+        ]
+      ],
+      "layout": "trois branches au même niveau ; pas de progression morale",
+      "note": "Outil dramaturgique Atlas à partir d'extraits de Métagénéalogie. L'héritage peut être une ressource ou une contrainte ; aucune lecture de la famille réelle.",
+      "refs": "M II–III extraits ; M OCR 4718–4730 ; registre",
+      "terms": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        38,
+        39
+      ]
+    },
+    {
+      "id": "JCM08",
+      "title": "Quatre registres d'un personnage",
+      "chapter": [
+        6,
+        9
+      ],
+      "nodes": [
+        "Pensée",
+        "Émotion",
+        "Désir",
+        "Besoin matériel",
+        "Action dans la situation"
+      ],
+      "relations": [
+        [
+          "Pensée",
+          "Action dans la situation",
+          "peut orienter"
+        ],
+        [
+          "Émotion",
+          "Action dans la situation",
+          "peut infléchir"
+        ],
+        [
+          "Désir",
+          "Action dans la situation",
+          "peut orienter"
+        ],
+        [
+          "Besoin matériel",
+          "Action dans la situation",
+          "peut contraindre"
+        ]
+      ],
+      "layout": "quatre sources vers une action ; pas de représentation anatomique",
+      "note": "Adaptation dramaturgique des quatre centres, non reproduction du système métaphysique des auteurs ; aucun diagnostic de centre.",
+      "refs": "P XI 4563–4564 ; PDF 171 ; T I 312–332",
+      "terms": [
+        35,
+        17
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "id": "JCP01",
+      "title": "L'objet change de fonction",
+      "chapters": [
+        1,
+        5,
+        6
+      ],
+      "terms": [
+        1,
+        9,
+        18,
+        24,
+        29,
+        32,
+        36
+      ],
+      "duration": "15–20 min",
+      "participants": "2 interprètes et 1 témoin facultatif",
+      "material": "Une chaise et une clé ou un autre accessoire banal",
+      "goal": "Découvrir comment un usage, une relation et une circonstance modifient la charge expressive d'un objet.",
+      "steps": [
+        "Convenir d'une fiction simple : un personnage attend, un autre arrive ; jouer 45 secondes sans intention symbolique ajoutée.",
+        "Reprendre avec la chaise réservée à un absent. Ne pas ajouter de dialogue explicatif ; observer comment le partenaire répond.",
+        "Reprendre avec la chaise offerte au visiteur, puis avec un objet proposé par le partenaire. Une seule modification à la fois.",
+        "L'interprète invente une quatrième version et choisit de conserver ou non les indications reçues.",
+        "Comparer les changements observables : distance, tempo, orientation, transfert de l'objet ; distinguer ce que le témoin voit et ce qu'il suppose."
+      ],
+      "variants": [
+        "Clé : ouvrir, retenir, transmettre.",
+        "Foulard : signe de rivalité puis outil d'une tâche commune.",
+        "Éprouver les cinq opérations imaginatives à partir du même événement ; jouer une seule variante choisie."
+      ],
+      "failure": "Si toutes les versions produisent le même effet, ne pas surjouer : préciser l'action du personnage ou modifier une circonstance.",
+      "debrief": [
+        "Quel changement a réellement modifié la relation ?",
+        "L'objet a-t-il proposé une possibilité que l'acteur n'avait pas prévue ?",
+        "Quelle variante sert le mieux la scène, et pourquoi ?"
+      ],
+      "boundary": "Fiction explicite, pas d'objet personnel chargé imposé ni d'acte psychomagique. Arrêt et refus possibles.",
+      "refs": "P I–II, XVI ; T II 617–625 ; ancien dossier partitions chaise et clé"
+    },
+    {
+      "id": "JCP02",
+      "title": "Une image, plusieurs relations",
+      "chapters": [
+        6,
+        7
+      ],
+      "terms": [
+        20,
+        22,
+        29,
+        30,
+        33,
+        37
+      ],
+      "duration": "20 min",
+      "participants": "2–3 interprètes et 1–2 observateurs",
+      "material": "Une lettre fictive, un espace délimité",
+      "goal": "Distinguer la composition visible, le ressenti et l'hypothèse interprétative.",
+      "steps": [
+        "Composer un tableau vivant : un personnage tient la lettre, un autre se tient à proximité. Les observateurs décrivent les positions et gestes sans interpréter.",
+        "Changer seulement la direction du regard, puis seulement la distance. Photographier mentalement ou dessiner les configurations ; aucune captation nécessaire.",
+        "Chaque observateur formule une hypothèse et cite un indice visible. L'acteur propose sa propre lecture, sans obligation de s'y reconnaître.",
+        "Jouer deux hypothèses comme circonstances fictives ; conserver les gestes principaux et comparer les conséquences.",
+        "Déplacer le tableau du début à la fin d'une scène et examiner ce que l'ordre change. Conserver une lecture divergente si elle reste plausible."
+      ],
+      "variants": [
+        "Introduire un troisième personnage qui ne parle pas.",
+        "Modifier l'ordre de trois tableaux.",
+        "Faire varier un motif de lumière ou de couleur sans dictionnaire symbolique."
+      ],
+      "failure": "Si la discussion devient un jugement sur les interprètes, revenir à la forme et au texte ; abandonner la lecture intime.",
+      "debrief": [
+        "Qu'a-t-on vu, ressenti, supposé ?",
+        "Qu'est-ce que le contexte a changé sans changer le geste ?",
+        "Quelle lecture reste incertaine après l'essai ?"
+      ],
+      "boundary": "Pas de divination, de diagnostic, de lecture de la famille ou de l'inconscient réel.",
+      "refs": "T I–V ; ancien dossier troisième partition"
+    },
+    {
+      "id": "JCP03",
+      "title": "La partition qui accueille l'imprévu",
+      "chapters": [
+        2,
+        3,
+        4,
+        10
+      ],
+      "terms": [
+        2,
+        3,
+        21,
+        23,
+        24,
+        25,
+        26,
+        10,
+        11
+      ],
+      "duration": "20–25 min",
+      "participants": "3 personnes, rotation auteur/interprète/témoin ; partenaire possible",
+      "material": "Une table, une tasse et une porte réelle ou fictive",
+      "goal": "Comparer précision, disponibilité et autonomie de décision sans opposer forme et spontanéité.",
+      "steps": [
+        "Établir trois repères consentis : poser la tasse, poser une question, ouvrir la porte. Convenir d'un signe d'arrêt.",
+        "Répéter la structure deux fois ; noter ce qui devient plus précis ou plus mécanique.",
+        "Le partenaire propose une variation simple de rythme ou de réplique ; l'interprète conserve les trois repères mais peut ajuster le trajet.",
+        "L'interprète invente sa propre variante, puis les fonctions tournent. Le témoin offre une indication révisable et peut aussi apprendre de la réponse.",
+        "Faire un bref retour écrit en quatre lignes : consigne, acte réalisé, différence observée, question encore ouverte."
+      ],
+      "variants": [
+        "Version entièrement libre puis version très fixée, sans juger l'une supérieure par principe.",
+        "Pause volontaire face à une impasse de composition, puis reprise.",
+        "Comparer avec et sans observateur annoncé ; si captation demandée, consentement distinct."
+      ],
+      "failure": "Si l'inattendu désorganise tout, rétablir un repère ou réduire le nombre de variables ; si la structure rigidifie, autoriser une modification.",
+      "debrief": [
+        "Qu'a rendu possible la préparation ?",
+        "Quelles initiatives n'auraient pas existé sans partenaire ?",
+        "Qui a pu décider de modifier la forme ?"
+      ],
+      "boundary": "Aucune transe induite, perte de contrôle recherchée, captation secrète, ni obligation de se conformer à une prescription personnelle.",
+      "refs": "P II–III, V–VII ; T IV–V ; E Pouilly"
+    },
+    {
+      "id": "JCP04",
+      "title": "Ce que l'on reçoit, ce que l'on invente",
+      "chapters": [
+        3,
+        8,
+        10
+      ],
+      "terms": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        21,
+        26,
+        38,
+        39
+      ],
+      "duration": "25 min",
+      "participants": "2 interprètes et 1 observateur facultatif",
+      "material": "Fiche d'un personnage fictif et trois faits d'histoire inventés",
+      "goal": "Explorer plusieurs rapports possibles à une règle héritée en distinguant le projet, les ressources et les contraintes.",
+      "steps": [
+        "Inventer une tradition familiale fictive : le personnage a appris à tenir une boutique. Noter trois faits établis par le récit et deux inconnues.",
+        "Donner un objectif présent (annoncer une décision à un proche). Choisir un élément hérité pertinent pour cette scène, sans inventer de cause cachée.",
+        "Jouer une version où il conserve la règle, une où il en modifie l'usage et une où il décide de s'en écarter.",
+        "Introduire une contrainte extérieure concrète, par exemple un délai ou une ressource indisponible ; observer les trois versions.",
+        "Revenir aux faits fictifs : choisir la version qui enrichit l'œuvre, en gardant les deux autres comme possibilités légitimes."
+      ],
+      "variants": [
+        "Hériter d'un geste professionnel, d'une recette ou d'une manière de parler.",
+        "Inventer une règle qui protège plutôt qu'elle n'entrave.",
+        "Un partenaire ne partage pas le projet et le personnage peut arrêter de le poursuivre."
+      ],
+      "failure": "Si la règle est traitée comme forcément nuisible, construire un contre-exemple où elle soutient l'action ; ne pas moraliser les trois choix.",
+      "debrief": [
+        "Quelle contrainte était extérieure ?",
+        "La continuité a-t-elle pu être créatrice ?",
+        "Qu'est-ce que le projet a permis de sélectionner dans l'histoire ?"
+      ],
+      "boundary": "Aucune généalogie réelle exigée, aucune confession, interprétation clinique ou réconciliation imposée. Corpus Métagénéalogie partiel.",
+      "refs": "M I–IV extraits ; T V 2412–2418 ; candidat V2"
+    }
+  ],
+  "pending": [
+    "Adapter et tester le rendu des schémas dans le lecteur, y compris mobile.",
+    "Audit détaillé des 29 anciennes sections et des liens des 39 notices.",
+    "Acquisition de La Voie de l'imagination et Métagénéalogie ; collation iconographique du Tarot.",
+    "Les schémas sont des reconstructions pédagogiques et les partitions ne sont pas les actes prescrits des auteurs."
+  ]
+}
