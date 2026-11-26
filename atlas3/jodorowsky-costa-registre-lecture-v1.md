@@ -132,3 +132,47 @@ Introduction 5462–5659, P168–172 : histoire spéculative de l'imaginaire, ca
 5. Corps imaginaire, identification, rôle, neutralité et relation.
 6. Liberté du destinataire, responsabilité du cadre, pouvoir de prescription.
 7. Soin revendiqué et limites de la preuve, contradictions et contre-exemples.
+
+
+## Métagénéalogie — repérage et lecture de l'ouverture
+Le texte intégral n'a pas été accessible. Ne pas marquer cet ouvrage comme lu intégralement. Le sommaire a été vérifié dans la visionneuse espagnole ; les liens vers les parties ultérieures ne donnent pas accès au corps du texte. L'aperçu anglais s'interrompt pendant le chapitre II. L'extrait de l'éditeur permet de prolonger le passage consacré aux obstacles et donne un fragment du chapitre V. L'ordre de travail reste celui du livre, avec les lacunes explicitement consignées.
+
+### Sources et couverture
+- Siruela, extrait officiel espagnol : https://www.siruela.com/archivos/fragmentos/Metagenealogi769aFrg.pdf — introduction de Costa et récit inaugural (pp. 9–11, 21–35).
+- Sommaire espagnol : https://reader.digitalbooks.pro/book/preview/45354/id_Del_arte_a_la_terapia_Alejandro_Jodorowsky_0004_0001 — dix parties, épilogue et notes.
+- Aperçu anglais : https://www.everand.com/book/351487697/Metagenealogy-Self-Discovery-through-Psychomagic-and-the-Family-Tree — introduction, chapitre I, passages substantiels du chapitre II, jusqu'à la coupure ligne 1494. Couverture des extraits seulement.
+- Extrait de l'éditeur : https://www.simonandschuster.net/books/Metagenealogy/Alejandro-Jodorowsky/9781620551035 — chapitre II, section sur les obstacles, et fragment du chapitre V. Les autres chapitres n'ont pas été ouverts.
+- Glossaire espagnol pp. 13–16 : aperçu OCR partiel, à collationner dans une édition fiable.
+- Bibliographie française : https://www.albin-michel.fr/metagenealogie-9782226221612 ; ne pas transposer la pagination entre français, espagnol et anglais. Divergences à vérifier dans l'autobiographie : San Carlos 1962/1963 ; formulation des réactions parentales. Ne pas résoudre ces différences par conjecture.
+
+### Architecture des dix parties — index de couverture, non résumé des chapitres non lus
+| Partie | Domaine | Statut |
+|---|---|---|
+| I | Art, identité, orientation théorique | Introduction et chap. I–II accessibles en extraits |
+| II | Construction de l'arbre familial | Sommaire uniquement |
+| III | Projet futur | Sommaire, fragment du chap. V |
+| IV | Couple et origine | Sommaire uniquement |
+| V | Naissance | Sommaire uniquement |
+| VI | Triades et fratrie | Sommaire uniquement |
+| VII | Liens, nœuds et noyaux | Sommaire et définitions du glossaire seulement |
+| VIII | Abus et identité acquise | Sommaire uniquement |
+| IX | Corps familial et essentiel | Sommaire uniquement |
+| X | Imagination créatrice et transformation de l'héritage | Sommaire uniquement |
+
+### Index conceptuel de l'ouverture (provisoire)
+Introduction de Marianne Costa : démarche initiatique commune, alternance d'un récit autobiographique et d'une partie théorique. Ne pas réduire la coautrice à une simple intermédiaire.
+I : marionnette, mime, langage du corps, rencontre de l'art et de la thérapie. Distinguer la genèse racontée de la preuve clinique. L'hypothèse de mémoires prénatales récupérables n'est pas démontrée.
+II (l. 1285–1304) : temps, répétition et création, intention et attention. Repérer la métaphore alchimique de la transformation ; ne pas la confondre avec les mécanismes biologiques.
+II (l. 1311–1460) : structure numérologique, quatre centres, empiétements et alliances. Distinguer ce système des fonctions jungiennes ; aucune classification validée de personnalité.
+II (l. 1466–1492, extrait éditeur l. 117–140) : cercles de l'héritage, rôle familial, obstacle et projet. Le cadre cosmologique relève de la pensée des auteurs. Ne pas faire de la maladie ou de l'abus une mission spirituelle ni rendre une personne responsable de son malheur.
+Glossaire : métagénéalogie, noyau, nœud, introjection, projection, identités essentielle et acquise, supraconscient. Les définitions sont provisoires tant que les développements correspondants n'ont pas été lus.
+
+### Reconstruction originale pour le Théâtre du sentir (hypothèses de travail, distinctes de la doctrine)
+1. L'intention ne doit pas absorber l'attention. Donner à un personnage un but clair, puis faire varier la situation et les propositions des partenaires. Observer si le but rend le jeu plus disponible ou plus rigide. Le partenaire conserve sa liberté.
+2. Distinguer quatre registres dramaturgiques : ce qu'un personnage pense, éprouve, désire et ce dont il a matériellement besoin. Travailler leur désaccord et leur coopération par actions concrètes. Ne pas attribuer au participant des centres déficients ni des blocages.
+3. Héritage comme matériau : inventer une tradition de famille entièrement fictive, puis écrire trois manières de la prolonger. L'une conserve la règle, l'autre en modifie l'usage, la troisième refuse la règle. Comparer les conséquences sur les autres personnages. Ne pas présupposer que la rupture vaut mieux que la continuité.
+4. Faire de l'obstacle une résistance dramaturgique n'implique pas que la souffrance soit nécessaire dans la vie. La personne réelle peut refuser, quitter, demander de l'aide. Ne pas imposer de réconciliation ni d'exposition intime.
+5. Problème transversal : l'opposition identité essentielle/identité acquise est une thèse à interroger, non une vérité de départ. Comparer ultérieurement à Winnicott, Jung et Deleuze, sans effacer leurs différences. Les affirmations pathologisant l'orientation sexuelle sont à contextualiser et à critiquer, pas à reproduire comme catégories cliniques.
+
+### Reprise
+Lire la fin du chapitre II, puis le chapitre III et les suivants dès qu'une édition intégrale est disponible. Le sommaire ne remplace pas les développements. Une édition fournie par l'utilisateur permettrait de lever la restriction d'accès. Les sections iconographiques détaillées du tarot relèvent d'Atlas 4 ; pour Atlas 3, privilégier composition, attention et relation interprétative.
