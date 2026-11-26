@@ -19,7 +19,7 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - Partie 1 : inconscients personnel et collectif (E, §§ 202–220) ; assimilation de l'inconscient (E, §§ 221–242) ; persona et psyché collective (E, §§ 243–253) ; tentatives négatives de différenciation, retour à la persona et identification collective (E, §§ 254–265).
 - Partie 2 : fonction de l'inconscient (E, §§ 266–295) ; anima et animus (E, §§ 296–340, PDF p. 195–221) ; différenciation du moi et des figures inconscientes (E, §§ 341–373) ; personnalité mana (E, §§ 374–406).
 - Appendice I, texte de 1912 : E (texte principal §§ 407–441, p. 254–278 ; notes p. 492–493 examinées).
-- Appendice II, texte de 1916 : six sections, addendum et deux versions du résumé : R.
+- Appendice II, texte de 1916 : sections 1–2 E (§§ 442–463) ; sections 3–6, addendum et deux versions du résumé R.
 - Bibliographie et index : R (outils de contrôle et de repérage, non substituts à la lecture).
 
 ## Première extraction : genèse et position du problème
@@ -285,3 +285,24 @@ PDF p. 490–491 : deux notes du chapitre III et sept notes du chapitre IV consu
 
 ### État au terme de cette étape
 Les deux essais principaux, §§ 1–406, et l'appendice I, §§ 407–441, ont un premier relevé continu. Reprise au § 442, appendice II, p. 279. Les rapprochements précis des versions et la vérification des anciens relevés restent nécessaires. Les notes 1–13 de l'appendice I et les notes des deux derniers chapitres du deuxième essai ont été consultées. Les autres notes restent à contrôler. Aucun changement au lecteur ni aux autres Atlas.
+
+
+## Appendice II — ouverture : structure de l'inconscient (1916)
+
+Source : CW 7, Hull 1966, https://www.ronliskey.com/docs/collected-Works-07-Analytical-Psychology-by-C-G-Jung.pdf , §§ 442–463, texte principal consulté par plages contiguës, lignes 7788–8114 (pages PDF 279–289, index zéro). Section 3 commence au § 464. Notes non collationnées. Les numéros entre crochets peuvent désigner les passages correspondants du texte remanié ; ne pas les confondre avec la numérotation de l'appendice.
+
+### Index analytique
+- §§ 442–446 : rupture explicative, seuil de conscience, activité de la psyché non réductible au refoulement.
+- §§ 447–450 : distinction entre matériau personnel et impersonnel ; transformation d'une image en pensée articulée ; problème du conflit de valeurs.
+- §§ 451–454 : réactions opposées à la découverte de l'inconscient ; statut métaphorique de la ressemblance divine.
+- §§ 455–458 : conception historique du collectif, appropriation de qualités impersonnelles, polarisation de l'estime de soi.
+- §§ 459–463 : rapport entre singularité et collectif, respect de l'altérité, imitation et différenciation.
+
+### Pistes originales Atlas
+Dans un atelier, distinguer l'usage d'une forme héritée et la création d'une variation personnelle ; ne pas faire de l'imitation un échec en soi. Comparer les formulations de 1916 (§§ 447–448, 454, 461) avec la version de 1928 avant de stabiliser les cartes. Les rapprochements entre expérience clinique et philosophie, ainsi que les postulats héréditaires et les hiérarchies raciales ou culturelles du texte, doivent être contextualisés ; ils ne constituent pas des preuves scientifiques actuelles. Ne pas transposer les jugements cliniques en critères de jeu.
+
+### Rectification du corpus prioritaire, 26 novembre 2026
+L'utilisateur rappelle que le troisième ouvrage retenu est L'Âme et le Soi : renaissance et individuation, non Aïon. Priorité : Psychologie de l'inconscient ; Dialectique du moi et de l'inconscient ; L'Âme et le Soi. Aïon reste un complément possible, avec des liens potentiels vers Atlas 4, sans modification de cet Atlas. Le sommaire français repéré (édition Albin Michel 2021, ISBN 9782226469670) comporte cinq textes : À propos de la renaissance ; Une expérience du processus d'individuation ; La fonction transcendante ; Psychanalyse et cure d'âme ; Sur les phénomènes occultes. Source du sommaire : https://www.chasse-aux-livres.fr/prix/2226469672/l-ame-et-le-soi-espaces-libres-psychologie-carl-gustav-jung-9782226469670 ; présentation de l'éditeur : https://www.albin-michel.fr/lame-et-le-soi-9782226469670 . Vérifier les intitulés contre l'édition elle-même et identifier les textes correspondants des Collected Works avant de déclarer une lecture. Aucune lecture intégrale de ce recueil revendiquée à cette étape.
+
+### État
+§§ 1–463 consignés au premier passage, deux essais et premier appendice, plus deux premières sections du second appendice. Reprise au § 464. Notes restantes, collation des variantes et audit transversal ouverts. Aucun changement au lecteur ni aux autres Atlas.
