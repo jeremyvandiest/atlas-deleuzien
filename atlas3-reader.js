@@ -309,6 +309,10 @@
   function jungTextAnchors(html){
     let n=0;return html.replace(/<h4>/g,()=>'<h4 id="a3jung-text-'+(++n)+'" style="scroll-margin-top:5rem">');
   }
+  function jungContents(html){
+    const heads=Array.from(html.matchAll(/<h4>(.*?)<\/h4>/g),m=>m[1].replace(/&#39;/g,"'").replace(/&amp;/g,"&"));
+    return '<details class="a3r-v15-depth"><summary>Sommaire du dossier intégral · '+heads.length+' sections</summary><ol>'+heads.map((title,i)=>'<li>'+jungJumpButton('a3jung-text-'+(i+1),title)+'</li>').join('')+'</ol></details>';
+  }
   function jungModuleLinks(m){
     const p=JUNG_READING_LINKS[m.id];if(!p)return '';
     const cards=p.cards.map(n=>JUNG_VISUAL_CARDS.find(c=>c.n===n)).filter(Boolean);
@@ -337,7 +341,7 @@
     const termButton=({t,i})=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>';
     const categories=[...new Set(entries.map(({t})=>t.category).filter(Boolean))];
     const terms=categories.length?categories.map(category=>'<section><h3>'+e(category)+'</h3><div class="a3r-mini-links">'+entries.filter(({t})=>t.category===category).map(termButton).join('')+'</div></section>').join('')+(entries.some(({t})=>!t.category)?'<div class="a3r-mini-links">'+entries.filter(({t})=>!t.category).map(termButton).join('')+'</div>':''):entries.map(termButton).join('');
-    return (id==='jung'?jungReadingPath(d):'')+'<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur')+'</summary>'+
+    return (id==='jung'?jungReadingPath(d)+jungContents(d.html):'')+'<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur')+'</summary>'+
       '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(id==='jung'?jungTextAnchors(d.html):d.html,id)+'</div></details>'+
       (id==='jung'?jungVisualCards(d):'')+
       '<div class="a3r-editorial-terms"><h2>Notions à explorer'+(categories.length?' · '+entries.length+' concepts':'')+'</h2>'+(categories.length?terms:'<div class="a3r-mini-links">'+terms+'</div>')+'</div>'+
@@ -583,7 +587,7 @@
     modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
       '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
       '<div class="a3r-eyebrow">NOTION SITUÉE</div><h2 id="a3r-notion-title">'+e(t.term)+'</h2><p>'+e(t.definition)+'</p>'+
-      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+(id==='jung'?jungTermLinks(t.term):'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
+      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+(id==='jung'&&t.sourceUrl&&/^https:\/\//.test(t.sourceUrl)?'<p><a class="a3r-link" href="'+e(t.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Consulter le texte de Jung</a></p><p class="a3r-quiet">'+e(t.sourceStatus||'')+'</p>':'')+(id==='jung'?jungTermLinks(t.term):'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
     modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();
   }
 
