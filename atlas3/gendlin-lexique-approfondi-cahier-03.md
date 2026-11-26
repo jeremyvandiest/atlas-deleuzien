@@ -1,0 +1,78 @@
+# Atlas 3 — Gendlin V5, cahier 03 : corps, espace, geste et langage
+27 novembre 2026. Candidat documentaire, non intégré. Suite des unités G01–G16, notamment cahier 02 (blob 095114176625d36ddc050aeccf672c70703ca381). Objectif : préciser comment Gendlin dérive des formes au sein des processus, et non ajouter un vocabulaire de psychologie générale. Les exemples, contre-épreuves et implications artistiques ci-dessous sont des constructions Atlas. Les textes étudiés sont des articles primaires et des extraits, pas le texte intégral d'A Process Model.
+
+## G17 — Quatre sens d'environnement, non quatre couches
+Sources primaires : A New Way of Thinking (2014), p.314–315, appendice « Help with Chapter I » (pages contrôlées sur le PDF) ; Implicit Precision, §9, p.11–12.
+- En#1 : milieu défini depuis la position de l'observateur.
+- En#2 : événement vivant dont corps et environnement constituent les aspects inséparables.
+- En#3 : milieu que l'organisme renouvelle en vivant, avec les structures issues de son passé.
+- En#0 : environnement dont la rencontre effective excède ce qui est déjà impliqué ou prévu.
+Le texte de 2014 mentionne #0 sans le développer ; le §9 d'Implicit Precision donne la clarification primaire nécessaire.
+Exemple Atlas : une comédienne joue une scène dans une cuisine. L'équipe peut mesurer la position de la table, ses dimensions, le niveau sonore et les trajectoires (analogie du regard observateur). Lorsqu'elle déplace un plat, sa prise et la résistance du plat font partie d'un même événement. Les usages et dispositions acquis dans cette cuisine conditionnent aussi la scène. Une circonstance nouvelle, indépendante de ce que la comédienne attendait, peut modifier le travail. Les quatre regards ne sont pas quatre pièces du décor. L'exemple transpose les différences de fonction sans prétendre que la cuisine épuiserait en#3 ni qu'un imprévu de plateau serait en#0 au sens exact d'APM.
+Contre-épreuve : les mesures de la cuisine sont indispensables pour un raccord ou la sécurité du déplacement. Privilégier la relation vivante n'autorise pas à négliger l'observation et les contraintes physiques. La nouveauté n'est pas forcément une amélioration. Ce groupe de quatre termes doit rester ensemble dans l'approfondissement.
+
+## G18 — Trois processus qui se constituent ensemble
+Sources : Implicit Precision, §8, p.10–11 ; The Derivation of Space, §6, p.9–10.
+Gendlin distingue constitution corporelle, comportement et processus des formes symboliques. Ils ne sont pas indépendants dans la vie humaine.
+Exemple Atlas : un interprète prononce une annonce publique. Articulation et souffle, orientation vers ses interlocuteurs et signification de ses paroles peuvent être examinés séparément ; dans la scène, la manière de s'adresser à quelqu'un transforme ces opérations. Une réplique qui devient une invitation plutôt qu'un ordre peut modifier la voix et la distance sans instruction physiologique préalable.
+Contre-épreuve : on peut aussi travailler la diction isolément, sans devoir produire une nouvelle relation à chaque syllabe. Une technique de voix peut être nécessaire et légitime. L'analyse par niveaux n'interdit pas une préparation séparée. Il ne s'agit ni de trois centres spirituels (Ansa) ni de trois étages anatomiques. Pas de validation neuroscientifique déduite de la philosophie.
+Lien : distinguer le niveau de la vie organique, le développement des actions et celui des formes transmissibles, plutôt que leur attribuer une chronologie dans chaque expérience.
+
+## G19 — Le sens ne commence pas par cinq données séparées
+Sources : Meaning prior to the separation of the five senses (1992), §15–16, p.48–51 ; A New Way of Thinking (2014), p.312 ; Implicit Precision, §11, p.13–14.
+Dans son modèle, Gendlin fait précéder l'analyse des modalités sensorielles par la perception située d'un milieu d'action. Il ne nie pas la différenciation des organes sensoriels.
+Exemple Atlas : une scène se déroule dans les coulisses. Une actrice entend une voix derrière une porte et suspend son entrée. Il ne suffit pas de décrire le timbre sonore et la direction du bruit pour comprendre son geste : il faut connaître les circonstances de la scène. À l'inverse, lors de la conception sonore, isoler la voix de la réverbération peut être exactement le travail nécessaire.
+Contre-épreuve : la voix peut être mal identifiée ; les interprètes peuvent aussi ne pas percevoir les mêmes indices. Les affirmations fortes de Gendlin sur les capacités animales ne sont pas reprises comme résultats établis d'éthologie. Ne pas transformer le concept en doctrine selon laquelle les sens devraient être fusionnés par un entraînement.
+Pont proposé avec Atlas 2 : distinguer la matière sensorielle d'une œuvre de la manière dont ses éléments entrent dans une situation. Un son hors champ peut agir comme information, obstacle, rythme ou ouverture de possibles.
+
+## G20 — Espace de comportement et espace des formes mobiles
+Sources : The Derivation of Space, §3, p.5–6 et §7, p.11–12 ; Meaning prior to the separation of the five senses, §15, p.48–50.
+Gendlin oppose l'espace des actions interdépendantes à la géométrie de positions et formes reproductibles, dont il propose une genèse symbolique.
+Exemple Atlas : sur un plateau, une porte est à deux mètres d'un personnage. Cette mesure est stable. Mais elle devient une issue s'il peut l'ouvrir, un obstacle si elle est verrouillée, une limite à respecter si l'autre refuse qu'il entre. Une petite modification de la situation peut transformer tout le champ des actions, sans modifier la géométrie. Ce n'est pas une propriété unique de la porte que l'acteur aurait à reconnaître.
+Contre-épreuve : l'espace géométrique n'est pas illusoire ; le régisseur doit connaître les dimensions exactes, le montage doit respecter les raccords, le spectateur peut percevoir un rapport de composition sans s'identifier à l'action du personnage. La genèse philosophique proposée par Gendlin n'est pas une preuve historique de l'origine des mathématiques.
+Pont : Lecoq, espace du jeu ; Ansa, espace entre les formes ; Atlas 2, distribution des corps et objets. Trois problèmes distincts : possibilités de conduite, qualité de réception, composition perceptible. Ne pas fusionner les dossiers.
+
+## G21 — Pattern, geste et versioning
+Sources : Implicit Precision, passages p.8–10 sur les interactions gestuelles et le versioning ; The Derivation of Space, §7 ; A phenomenology of emotions: Anger (1973), p.374–377.
+Un geste symbolique peut transformer une relation en l'absence de l'action matérielle correspondante ; les formes répétables participent à une succession de changements vécus (versioning).
+Exemple Atlas : deux actrices représentent une signature de contrat sans document réel. L'une tend une main vide, l'autre signe dans l'air et la première retire sa main. Dans un premier cadre fictif, c'est l'acceptation d'une transaction ; dans un deuxième, elles répètent ensemble une cérémonie et rien n'est encore accepté. Même forme visible, fonctions différentes. Une troisième version peut faire du geste une plaisanterie destinée à un personnage absent. Examiner les réponses qui deviennent possibles, pas seulement le dessin des bras.
+Contre-épreuve : un geste fictif ne signe pas un véritable contrat. Un geste peut aussi constituer une action réelle dans l'atelier. Il faut distinguer convention fictionnelle, effet sur le partenaire et effet juridique ou matériel. Une partition précise n'est pas moins artistique qu'une variation improvisée.
+Limite philologique : la dérivation complète des patterns et du double of dans APM VII reste à collationner. Ne pas faire du versioning un simple synonyme de montage ou de multiplicité des interprétations. Ne pas reprendre les spéculations zoologiques ou les affirmations sur l'imitation néonatale comme des résultats scientifiques actuels.
+
+## G22 — Situation absente, espace symbolique et image
+Sources : Gendlin, Doralee Grindler et Mary McGuire, Imagery, Body, and Space in Focusing (1984), p.261–266, sections Symbolic Space, Inner Objects, Two Kinds of Wild Imagery.
+Les formes symboliques permettent de vivre des situations matériellement absentes. Les auteurs distinguent images d'aspects particuliers et images liées au sens global d'une situation ; ce dernier peut devenir un objet spécifique dans le Focusing.
+Exemple Atlas : une salle vide peut devenir dans une fiction un tribunal, une gare ou une chambre d'enfance. Une image proposée par la direction modifie les conduites possibles : attendre une autorisation n'est pas attendre un train. La même image peut ne pas convenir à un autre acteur. Il n'est pas nécessaire de faire émerger un souvenir personnel ni de rechercher une image « profonde ». L'enjeu est de savoir ce que l'image rend possible dans l'œuvre.
+Contre-épreuve : une scène peut être composée par des tâches et rapports matériels sans passer par une image préalable. Une image personnelle intense ne garantit pas sa lisibilité artistique. Les hypothèses historiques de l'article sur les origines de la culture, l'archéologie, les états modifiés de conscience et la comparaison avec Jung sont situées, non adoptées comme preuves. Le texte de 1984 ne justifie ni induction d'états modifiés ni interprétation des images d'une autre personne.
+Pont à vérifier : Gendlin, Chekhov, Jung, Jodorowsky. Question commune : comment une image peut-elle agir ? Mais les objets, fonctions et critères diffèrent.
+
+## G23 — Crossing, multiplicité pré-séparée et focaling
+Source : Thinking Beyond Patterns (1991), partie A-5, sections 9–10, l.865–907 de la page HTML.
+Les possibilités d'une situation ne sont pas un stock d'options indépendantes : chacune engage des modifications des autres (crossing). Le focaling désigne la formation d'une prochaine continuation à partir de cette intrication, distincte d'un choix dans une liste.
+Exemple Atlas : dans une improvisation, le personnage pourrait garder une lettre, la transmettre ou en discuter. Au moment où le destinataire tend une enveloppe différente, un quatrième geste peut apparaître : proposer un échange. Il ne s'agissait pas d'une variante déjà formulée. Le geste rend maintenant certaines possibilités inutiles et en ouvre d'autres. Une autre prise peut ne produire aucune solution convaincante. L'exemple porte sur l'élaboration d'un jeu, pas sur la mesure d'un processus cérébral.
+Contre-épreuve : les choix conscients, la préparation d'alternatives et la décision délibérée sont indispensables à certaines tâches. La conception du focaling ne commande pas d'attendre indéfiniment l'apparition d'une solution. Ne pas traiter la multiplicité implicite comme une liste exhaustive, ni en faire immédiatement le virtuel deleuzien. Une comparaison avec Deleuze devra respecter le statut propre de l'actualisation.
+Lien éditorial : le crossing appliqué aux notions (ancienne notice) et le crossing des possibilités (présent développement) doivent être rapprochés sans perdre leur différence de contexte. Le focaling n'est pas une technique de focalisation de l'attention ; préserver le terme anglais dans le lexique.
+
+## G24 — About-to-say : la parole qui n'est pas encore faite de mots
+Sources : Thinking Beyond Patterns, A-5, §§11–12, l.922–958 ; Implicit Precision, p.9–10.
+Le sens de ce qu'on s'apprête à dire implique déjà une langue et une situation, sans que la phrase soit formée. L'apparition des mots précise et transforme la continuation.
+Exemple Atlas : deux personnages tentent de formuler un désaccord. L'une commence une phrase, s'interrompt et remplace son premier mot par un autre parce que la réponse de son interlocuteur a modifié la situation. Le scénariste peut conserver l'interruption dans le dialogue ou la retirer selon sa fonction. Le metteur en scène peut chercher plusieurs façons de faire entendre la même hésitation sans demander une expérience intime à l'interprète.
+Contre-épreuve : un texte écrit et mémorisé peut produire un jeu très vivant. Une réplique improvisée peut être confuse ou conventionnelle. La capacité de faire émerger une expression n'est pas l'opposé de la composition. Le texte de Gendlin n'autorise pas l'idée d'un sens entièrement prélinguistique chez l'adulte : les usages passés de la langue contribuent à ce qui prend forme.
+Pont avec Ansa : la réception sensible n'est pas réductible au commentaire, mais une parole peut poursuivre une expérience au lieu de la refermer. À développer par une comparaison des deux corpus, non par une attribution d'identité doctrinale.
+
+## 9. Décisions de consolidation
+G17–G24 complètent les seize unités précédentes. Vingt-quatre unités de travail ne signifient pas vingt-quatre nouvelles notices : G20 prolonge G05, G23 approfondit l'ancienne notice Crossing, G24 reprend G02 et l'ancien chapitre langage. G17, G18, G21 et G22 introduisent des distinctions à stabiliser. Les huit unités sont documentées par articles et extraits primaires ; la systématicité des dérivations d'APM n'est pas encore collationnée.
+Orientation de lecture : partir d'un lieu théâtral et de ce qui peut s'y faire ; découvrir ensuite comment une forme symbolique modifie les possibilités ; enfin examiner comment une phrase nouvelle émerge. Le modèle des quatre environnements et les termes techniques restent facultatifs. Ne pas multiplier les partitions existantes (Ansa sur le lieu, l'intervalle et la formulation ; Jodorowsky sur la charge d'un objet ; salons sur le silence et les actions). La singularité de Gendlin doit être l'engendrement de nouvelles possibilités par un processus, et non la reprise d'une simple variation de distance ou d'objet.
+
+## Sources directement rouvertes
+- https://hrcak.srce.hr/file/210173 — Gendlin, A New Way of Thinking – About Anything – and How to Write From It (2014), p.312–315 et 318–319 ; p.314–315 inspectées en images. En#0 mentionné mais non défini dans cet appendice.
+- https://focusing.org/gendlin/docs/gol_2240.html — Implicit Precision, p.8–14, notamment §§8–11 ; le §9 définit explicitement les quatre environnements et §10 précise reiterative implying et resuming. Certains mots sont tronqués dans le HTML ; les formulations retenues sont lisibles et recoupées avec l'appendice 2014.
+- https://focusing.org/gendlin/docs/gol_2237.html — The Derivation of Space, §§3, 6, 7, p.5–6, 9–12.
+- https://focusing.org/gendlin/docs/gol_2111.html — Meaning prior to the separation of the five senses, §§15–16, p.48–51.
+- https://focusing.org/gendlin/docs/gol_2095.html — A phenomenology of emotions: Anger, p.373–379 et 384 ; une source utile à approfondir séparément pour la différence entre émotion, sens global, expression et action.
+- https://focusing.org/gendlin/docs/gol_2226.html — Imagery, Body, and Space in Focusing, p.261–267 ; coautrices Grindler et McGuire.
+- https://focusing.org/gendlin/docs/gol_2159.html — Thinking Beyond Patterns, A-5 §§9–12.
+- https://nupress.northwestern.edu/9780810136212/a-process-model/ — sommaire de l'éditeur, non collation du livre.
+
+## Suite et réserves
+Ne pas prétendre avoir dérivé la conscience, le langage et les formes symboliques dans tout APM : les articles en donnent des éléments. La définition du double of, le détail du cycle fonctionnel, eveving, sbs et les distinctions de temps restent à vérifier dans leurs textes. Aucun achat, aucune modification de l'application. Prochain cahier : émotion et felt sense, expression, spontanéité et action délibérée ; réponse relationnelle, image, Focusing et TAE ; compléter l'étude de la précision et du statut des concepts. Puis regrouper les notices anciennes et nouvelles dans une architecture hiérarchisée, avec références et contre-épreuves.
