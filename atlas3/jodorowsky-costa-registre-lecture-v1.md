@@ -319,3 +319,25 @@ L. 134–138 : exercice de prolongement de l'image au-delà du cadre. L. 586–5
 
 ### Suite
 Le repérage des 22 majeurs a été effectué ; reprendre les intervalles manquants dans la partie II avant de la clôturer. Les illustrations restent à examiner. L'étude détaillée de l'iconographie et des cartes demeure réservée à Atlas 4. Aucun changement du dossier existant (22 notices, 29 sections), ni d'Atlas 1, 2 ou 4. Métagénéalogie demeure partiellement accessible.
+
+
+## La Voie du tarot — clôture du premier passage textuel de II et ouverture de III
+Source : https://pdfcoffee.com/la-voie-du-tarot-french-edition-by-jodorowsky-alexandro-pdf-free.html . Fenêtres effectivement contrôlées dans cette étape : 557–577, 563–638, 632–661, 642–728, 721–801, 802–884, 884–971, 972–1053, 1053–1134, 1132–1224, 1224–1306. Toutes les lignes 557–1218 sont donc couvertes, y compris les monologues et les notes visibles ; partie III commencée, 1219–1306. Les illustrations, la mise en page originale et les sources historiques des auteurs ne sont pas collationnées. La transcription ne vaut pas vérification de l'édition imprimée.
+### Ancrages supplémentaires (index, non restitution des notices)
+- 561–571 : dessin, cadre, superposition ; 586–592 et 618–622 : subjectivité.
+- 633–637 : quatre modes de présentation ; 685–690 : possibles et choix.
+- 735–740 : imagination et action distinctes ; 745, 773–778 : stabilité et autorité.
+- 796–802 : ambiguïté du geste ; 843–846 : dissymétrie ; 856–857 : jugement.
+- 865–871, 887–903 : transition et rôle du contexte.
+- 920–927 : relation et conflit ; 943, 952–956 : perspective et suspension.
+- 982–984, 1012 : transformation, coupure ou ajout ; 1028–1029 : registre comique.
+- 1059–1076 : variation interprétative ; 1142–1146 et 1163 : coopération et rapport à autrui ; 1206–1208 : ordre de la composition.
+- 1233–1248 : éducation du regard ; 1252–1258 : figures et circulation ; 1271–1277 : deux parcours de lecture ; 1283–1306 : début des As.
+### Synthèse de travail originale : trois articulations prioritaires
+1. Du possible à l'acte : ne pas confondre abondance imaginaire et indécision. Dans un atelier, donner un objectif commun à deux acteurs (mettre une table avant une arrivée). Imaginer trois actions possibles, en choisir une, observer son effet réel sur le partenaire, puis refaire la scène avec une autre option. Distinguer exploration, décision, exécution, révision. Aucune nécessité de choisir dans sa vie privée.
+2. La technique de l'écart minimal : faire jouer six fois un échange d'objet, avec un changement discret à chaque reprise (distance, tempo, pause, orientation, prise, retrait). Les observateurs notent d'abord les différences constatées, puis les effets dramaturgiques ; ils révisent leurs hypothèses au vu du jeu. Ce dispositif original n'est pas une reproduction des exercices du Tarot. Confronter aux répétitions de Meisner et au montage d'Atlas 2.
+3. Contradiction productive : pour une situation fictive (un rendez-vous manqué), composer une version où un personnage persiste dans son action et une autre où il attend un indice du partenaire avant de décider. Ne pas consacrer l'action, l'arrêt ou l'abandon comme valeur supérieure. Faire varier le degré d'engagement tout en conservant la possibilité de suspendre le jeu. Mettre en relation les tensions internes de l'ouvrage : 667–669 / 892 / 956 (témoin), 843–846 / 861 (perfection), 972–974 / 1012 (suppression ou ajout). Les affirmations sur guérison, incarnation divine, mémoires prénatales et causalité des maladies ne sont pas établies par ces textes.
+### Décision méthodologique
+L'éducation perceptive est prioritaire pour Atlas 3. Les 22 notices majeures et l'organisation numérologique restent matière à Atlas 4, non à multiplier dans le dossier Théâtre du sentir. Le rapprochement avec les écoles de jeu est une hypothèse à éprouver, pas une filiation. Réserver la reconstruction définitive à la fin du corpus accessible.
+### Reprise
+2/5 parties au niveau du premier passage textuel de la transcription, et introduction déjà consignée ; reprendre III à la ligne 1307, puis IV et V. Métagénéalogie demeure partielle. Aucun changement du dossier existant ni déploiement.
