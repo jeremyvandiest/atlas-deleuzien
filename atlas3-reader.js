@@ -286,19 +286,47 @@
         return index<0?'':'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\'jung\','+index+')">'+e(term)+'</button>';
       }).join('');
       const links=card.edges.map(edge=>'<li><strong>'+e(card.nodes[edge.a])+'</strong> '+(edge.kind==='both'?'↔':edge.kind==='arrow'?'→':'—')+' '+e(card.nodes[edge.b])+(edge.label?' : '+e(edge.label):'')+'</li>').join('');
-      return '<details class="a3r-v15-depth" style="margin:.65rem 0"><summary>'+String(card.n).padStart(2,'0')+' · '+e(card.title)+'</summary><div style="--a3jung-node:#253342;--a3jung-border:#91a5ba;--a3jung-text:#f5f7fa;--a3jung-arrow:#9eafc2;background:#17232f;border-radius:12px;padding:.5rem;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain" role="region" tabindex="0" aria-label="Schéma défilable horizontalement">'+jungVisualSvg(card)+'</div><p><strong>À retenir :</strong> '+e(card.note)+'</p><details'+(card.edges.some(edge=>edge.label)?' open':'')+'><summary>Lecture détaillée des liens</summary><ul>'+links+'</ul><p>Trait discontinu : relation théorique, hypothèse ou réserve selon le libellé.</p></details><h4>Notions à explorer</h4><div class="a3r-mini-links">'+buttons+'</div><p class="a3r-quiet">'+e(card.source)+'</p></details>';
+      return '<details id="a3jung-card-'+card.n+'" class="a3r-v15-depth" style="margin:.65rem 0;scroll-margin-top:5rem"><summary>'+String(card.n).padStart(2,'0')+' · '+e(card.title)+'</summary><div style="--a3jung-node:#253342;--a3jung-border:#91a5ba;--a3jung-text:#f5f7fa;--a3jung-arrow:#9eafc2;background:#17232f;border-radius:12px;padding:.5rem;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain" role="region" tabindex="0" aria-label="Schéma défilable horizontalement">'+jungVisualSvg(card)+'</div><p><strong>À retenir :</strong> '+e(card.note)+'</p><details'+(card.edges.some(edge=>edge.label)?' open':'')+'><summary>Lecture détaillée des liens</summary><ul>'+links+'</ul><p>Trait discontinu : relation théorique, hypothèse ou réserve selon le libellé.</p></details><h4>Notions à explorer</h4><div class="a3r-mini-links">'+buttons+'</div><p class="a3r-quiet">'+e(card.source)+'</p></details>';
     }
     return '<section class="a3r-editorial-terms" aria-label="Cartes conceptuelles de Jung"><h2>Comprendre Jung en images · '+JUNG_VISUAL_CARDS.length+' schémas</h2><p>Des cartes de lecture complémentaires au dossier intégral. Ouvre un schéma puis explore les notions associées. Sur un écran étroit, fais défiler le dessin horizontalement si nécessaire.</p>'+groups.map(g=>'<section><h3>'+e(g[0])+'</h3>'+g.slice(1).map(n=>cardHtml(byId.get(n))).join('')+'</section>').join('')+'</section>';
   }
 
   // Dossiers longs et notions cliquables : greffe documentaire sans nouveau menu.
   // Parcours de compréhension : la lecture courte précède le dossier long, sans le remplacer.
+  const JUNG_READING_LINKS={"genese":{"cards":[15,3],"sections":[{"n":2,"title":"Psychologie de l'inconscient : pourquoi Jung cherche une méthode constructive"},{"n":12,"title":"Pourquoi une théorie des types ? La psychologie de celui qui observe"}]},"architecture":{"cards":[1,6],"sections":[{"n":3,"title":"Moi, conscience, inconscient personnel, inconscient collectif et Soi"},{"n":4,"title":"Complexe, constellation et autonomie relative"},{"n":35,"title":"Le centre n'est pas le moi"}]},"attitudes":{"cards":[3,11],"sections":[{"n":13,"title":"Deux attitudes et quatre fonctions : deux axes, pas deux catégories de personnes"},{"n":15,"title":"Fonction dominante, auxiliaire, inférieure : le coût de la spécialisation"},{"n":18,"title":"Rêve, contexte et compensation : trois erreurs à éviter"}]},"relations":{"cards":[2,7,8],"sections":[{"n":5,"title":"Persona — Une fonction sociale et une tentation d'identité"},{"n":6,"title":"Ombre et projection — Reconnaître une possibilité sans la transformer en verdict"},{"n":8,"title":"Anima, animus et syzygie — La relation à l'inconscient n'est pas une typologie des sexes"},{"n":10,"title":"La personnalité mana — La découverte qui devient prétention à un pouvoir"}]},"symboles":{"cards":[4,9,10,12,13],"sections":[{"n":7,"title":"Archétype et image archétypique : pourquoi il n'existe pas de catalogue universel de personnages"},{"n":17,"title":"Le symbole vivant : pourquoi l'image n'est pas une énigme dont on possède déjà la solution"},{"n":19,"title":"Association et amplification : rester près de l'image avant d'élargir son horizon"},{"n":34,"title":"Mandala et quaternité : un centre peut organiser une diversité"},{"n":36,"title":"Alchimie : une opération matérielle et une lecture symbolique"}]},"transformation":{"cards":[5,11],"sections":[{"n":11,"title":"Fonction transcendante — L'expression et la compréhension ont besoin l'une de l'autre"},{"n":21,"title":"La position active et la prise en compte de l'inattendu"},{"n":24,"title":"Le corps et la forme : ce que l'imagination peut devenir"},{"n":25,"title":"Une troisième possibilité n'est pas une synthèse obligatoire"}]},"individuation":{"cards":[2,12],"sections":[{"n":9,"title":"Individuation — Ni retrait social ni possession de l'inconscient"},{"n":10,"title":"La personnalité mana — La découverte qui devient prétention à un pouvoir"},{"n":32,"title":"Renaissance et transformation"},{"n":35,"title":"Le centre n'est pas le moi"}]},"limites":{"cards":[14,16,17],"sections":[{"n":22,"title":"La réalité psychique : une image agit sans être un fait"},{"n":28,"title":"Limite structurante : le retour à la vie concrète"},{"n":38,"title":"Synchronicité : trois niveaux à distinguer"},{"n":39,"title":"Numineux : l'intensité d'une expérience ne garantit pas sa vérité"},{"n":42,"title":"L'unité et les limites de l'héritage"}]}};
+  function jungJumpButton(id,label){
+    return '<button type="button" class="a3r-link" onclick="Atlas3Reader.jungJump(\''+e(id)+'\')">'+e(label)+'</button>';
+  }
+  function jungJump(id){
+    if(!/^a3jung-(?:module-[a-z]+|card-\d+|text-\d+)$/.test(id))return;
+    const target=document.getElementById(id);if(!target)return;
+    if(!document.getElementById('a3r-notion-modal')?.hidden)closeNotion();
+    for(let el=target;el;el=el.parentElement)if(el.tagName==='DETAILS')el.open=true;
+    const focus=target.tagName==='DETAILS'?target.querySelector('summary'):target;
+    if(focus){if(focus.tagName!=='SUMMARY')focus.setAttribute('tabindex','-1');focus.focus({preventScroll:true});}
+    target.scrollIntoView({block:'start',behavior:'auto'});
+  }
+  function jungTextAnchors(html){
+    let n=0;return html.replace(/<h4>/g,()=>'<h4 id="a3jung-text-'+(++n)+'" style="scroll-margin-top:5rem">');
+  }
+  function jungModuleLinks(m){
+    const p=JUNG_READING_LINKS[m.id];if(!p)return '';
+    const cards=p.cards.map(n=>JUNG_VISUAL_CARDS.find(c=>c.n===n)).filter(Boolean);
+    return '<h4>Voir les schémas associés</h4><div class="a3r-mini-links">'+cards.map(c=>jungJumpButton('a3jung-card-'+c.n,c.title)).join('')+'</div><h4>Approfondir dans le dossier intégral</h4><div class="a3r-mini-links">'+p.sections.map(v=>jungJumpButton('a3jung-text-'+v.n,v.title)).join('')+'</div>';
+  }
+  function jungTermLinks(term){
+    const modules=edition15()?.approaches?.find(a=>a.id==='jung')?.modules||[];
+    const paths=modules.filter(m=>m.terms.includes(term));
+    const cards=JUNG_VISUAL_CARDS.filter(c=>c.terms.includes(term));
+    if(!paths.length&&!cards.length)return '';
+    return (paths.length?'<h3>Replacer dans la pensée de Jung</h3><div class="a3r-mini-links">'+paths.map(m=>jungJumpButton('a3jung-module-'+m.id,m.title)).join('')+'</div>':'')+(cards.length?'<h3>Voir les relations en images</h3><div class="a3r-mini-links">'+cards.map(c=>jungJumpButton('a3jung-card-'+c.n,c.title)).join('')+'</div>':'');
+  }
   function jungReadingPath(d){
     const x=edition15()?.approaches?.find(a=>a.id==='jung'), modules=x?.modules||[], terms=d.terms||[];
     if(!modules.length)return '';
     const content=modules.map((m,i)=>{
       const links=m.terms.map(t=>{const n=terms.findIndex(v=>v.term===t);return n<0?'':'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\'jung\','+n+')">'+e(t)+'</button>';}).join('');
-      return '<details class="a3r-v15-depth"><summary>'+String(i+1).padStart(2,'0')+' · '+e(m.title)+'</summary><h3>'+e(m.question)+'</h3><p>'+e(m.argument)+'</p><h4>Une situation concrète</h4><p>'+e(m.example)+'</p><p><strong>Distinction :</strong> '+e(m.distinction)+'</p><h4>Application artistique proposée</h4><p>'+e(m.practice)+'</p><h4>Notions associées</h4><div class="a3r-mini-links">'+links+'</div><p class="a3r-quiet">Repères de lecture : '+e(m.refs.join(' ; '))+'</p></details>';
+      return '<details id="a3jung-module-'+e(m.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+String(i+1).padStart(2,'0')+' · '+e(m.title)+'</summary><h3>'+e(m.question)+'</h3><p>'+e(m.argument)+'</p><h4>Une situation concrète</h4><p>'+e(m.example)+'</p><p><strong>Distinction :</strong> '+e(m.distinction)+'</p><h4>Application artistique proposée</h4><p>'+e(m.practice)+'</p><h4>Notions associées</h4><div class="a3r-mini-links">'+links+'</div><p class="a3r-quiet">Repères de lecture : '+e(m.refs.join(' ; '))+'</p>'+jungModuleLinks(m)+'</details>';
     }).join('');
     return '<section class="a3r-editorial-terms" aria-label="Parcours de compréhension de Jung"><h2>Comprendre Jung · huit problèmes</h2><p>Un parcours de lecture avant le dossier intégral. Les situations et applications de fiction sont des propositions originales Atlas, non des exercices cliniques de Jung.</p>'+content+'</section>';
   }
@@ -309,7 +337,7 @@
     const categories=[...new Set(entries.map(({t})=>t.category).filter(Boolean))];
     const terms=categories.length?categories.map(category=>'<section><h3>'+e(category)+'</h3><div class="a3r-mini-links">'+entries.filter(({t})=>t.category===category).map(termButton).join('')+'</div></section>').join('')+(entries.some(({t})=>!t.category)?'<div class="a3r-mini-links">'+entries.filter(({t})=>!t.category).map(termButton).join('')+'</div>':''):entries.map(termButton).join('');
     return (id==='jung'?jungReadingPath(d):'')+'<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur')+'</summary>'+
-      '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html,id)+'</div></details>'+
+      '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(id==='jung'?jungTextAnchors(d.html):d.html,id)+'</div></details>'+
       (id==='jung'?jungVisualCards(d):'')+
       '<div class="a3r-editorial-terms"><h2>Notions à explorer'+(categories.length?' · '+entries.length+' concepts':'')+'</h2>'+(categories.length?terms:'<div class="a3r-mini-links">'+terms+'</div>')+'</div>'+
       '<p class="a3r-quiet">'+e(d.edition)+' · '+e(d.source)+'</p>'+
@@ -554,7 +582,7 @@
     modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
       '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
       '<div class="a3r-eyebrow">NOTION SITUÉE</div><h2 id="a3r-notion-title">'+e(t.term)+'</h2><p>'+e(t.definition)+'</p>'+
-      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
+      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+(id==='jung'?jungTermLinks(t.term):'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
     modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();
   }
 
@@ -590,7 +618,7 @@
     x.open=true;x.scrollIntoView({behavior:'smooth',block:'start'});x.querySelector('summary')?.focus();
   }
   window.Atlas3Reader={
-    closeNotion,openNotion,openEditorialTerm,goToNotionSource,jumpToSection,
+    closeNotion,openNotion,openEditorialTerm,goToNotionSource,jumpToSection,jungJump,
     toggleSections(open){
       if(!document || !document.querySelectorAll)return;
       document.querySelectorAll('.a3r-sections .a3r-section').forEach(x => {x.open=!!open;});
