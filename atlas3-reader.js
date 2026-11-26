@@ -400,8 +400,71 @@
     return '<section class="a3r-editorial-terms"><h2>Mettre en pratique · '+a.partitions.length+' partitions</h2><p>Propositions artistiques originales, à expérimenter en atelier ; aucune prescription psychomagique.</p>'+a.partitions.map(p=>'<details id="a3jc-part-'+e(p.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+e(p.title)+' · '+e(p.duration)+'</summary><p>'+e(p.goal)+'</p><p><strong>Participants :</strong> '+e(p.participants)+' · <strong>Matériel :</strong> '+e(p.material)+'</p><h3>Déroulement</h3>'+list(p.steps,'ol')+'<h3>Variantes</h3>'+list(p.variants,'ul')+'<h3>Si le jeu se bloque</h3><p>'+e(p.failure)+'</p><h3>Retour d’expérience</h3>'+list(p.debrief,'ul')+'<p>'+e(p.boundary)+'</p><div class="a3r-mini-links">'+jcTermButtons(p.terms)+'</div><p class="a3r-quiet">'+e(p.refs)+'</p></details>').join('')+'</section>';
   }
 
+
+  // Ansa V2 : parcours situé, lexique à trois niveaux et pratiques artistiques.
+  function ansaApproach(){return edition15()?.approaches?.find(a=>a.id==='ansa');}
+  function ansaOpenTerm(index){
+    const modal=document.getElementById('a3r-notion-modal'),origin=termFocus,already=modal&&!modal.hidden;
+    openEditorialTerm('ansa',index);
+    if(already&&origin?.isConnected)termFocus=origin;
+  }
+  function ansaTermButtons(ids){
+    const terms=ansaApproach()?.terms||[];
+    return ids.map(id=>{const i=terms.findIndex(t=>t.id===id);return i<0?'':'<button type="button" class="a3r-link" onclick="Atlas3Reader.ansaOpenTerm('+i+')">'+e(terms[i].term)+'</button>';}).join('');
+  }
+  function ansaJump(id){
+    if(!/^a3ansa-(?:text-[1-9]|map-ANM0[1-8]|part-ANP0[1-5])$/.test(id))return;
+    const target=document.getElementById(id);if(!target)return;
+    if(!document.getElementById('a3r-notion-modal')?.hidden)closeNotion();
+    for(let el=target;el;el=el.parentElement)if(el.tagName==='DETAILS')el.open=true;
+    const focus=target.tagName==='DETAILS'?target.querySelector('summary'):target;
+    if(focus){if(focus.tagName!=='SUMMARY')focus.setAttribute('tabindex','-1');focus.focus({preventScroll:true});}
+    target.scrollIntoView({block:'start',behavior:'auto'});
+  }
+  function ansaJumpButton(id,label){return '<button type="button" class="a3r-link" onclick="Atlas3Reader.ansaJump(\''+e(id)+'\')">'+e(label)+'</button>';}
+  function ansaTermLinks(t){
+    const a=ansaApproach();if(!a)return '';
+    const group=(title,html)=>html?'<h3>'+e(title)+'</h3><div class="a3r-mini-links">'+html+'</div>':'';
+    const chapters=(t.chapters||[]).map(n=>a.modules[n-1]?ansaJumpButton('a3ansa-text-'+n,a.modules[n-1].title):'').join('');
+    const maps=a.maps.filter(m=>m.terms.includes(t.id)).map(m=>ansaJumpButton('a3ansa-map-'+m.id,m.title)).join('');
+    const parts=a.partitions.filter(p=>p.terms.includes(t.id)).map(p=>ansaJumpButton('a3ansa-part-'+p.id,p.title)).join('');
+    return '<h3>Exemple Atlas</h3><p>'+e(t.example)+'</p><h3>Distinction</h3><p>'+e(t.distinction)+'</p>'+group('Notions associées',ansaTermButtons(t.relatedIds||[]))+group('Dans le dossier',chapters)+group('Schémas',maps)+group('Partitions et variations',parts);
+  }
+  const ANSA_LEVELS={ANM01:[[0],[1],[2,3],[4]],ANM02:[[0,1,2],[3],[4],[5]],ANM03:[[0],[1],[2,5],[3],[4]],ANM04:[[0,1],[2],[3,4],[5]],ANM05:[[0],[1],[2,3,4]],ANM06:[[0],[1,2],[3],[4],[5]],ANM07:[[0,1,2],[4],[3]],ANM08:[[0,5],[1],[2,3],[4]]};
+  function ansaVisual(m){
+    const levels=ANSA_LEVELS[m.id];if(!levels)return '';
+    const nodes=Object.fromEntries(m.nodes.map((n,i)=>['n'+i,n]));
+    const edges=m.relations.map(([a,b,label])=>({a:'n'+m.nodes.indexOf(a),b:'n'+m.nodes.indexOf(b),label,kind:'arrow',dash:false}));
+    return jungVisualSvg({n:'ansa-'+m.id,title:m.title,nodes,edges,levels:levels.map(row=>row.map(i=>'n'+i))});
+  }
+  function ansaCards(a){
+    return '<section class="a3r-editorial-terms"><h2>Comprendre en images · '+a.maps.length+' cartes</h2><p>Des cartes de lecture : les relations sont également explicitées en texte. Le dessin peut défiler sur un écran étroit.</p>'+a.maps.map(m=>'<details id="a3ansa-map-'+e(m.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+e(m.title)+'</summary><div role="region" tabindex="0" aria-label="Schéma défilable horizontalement" style="--a3jung-node:#253342;--a3jung-border:#91a5ba;--a3jung-text:#f5f7fa;--a3jung-arrow:#9eafc2;background:#17232f;border-radius:12px;padding:.5rem;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain">'+ansaVisual(m)+'</div><p>'+e(m.note)+'</p><details><summary>Lire les relations</summary><ul>'+m.relations.map(([x,y,l])=>'<li>'+e(x)+' — '+e(l)+' — '+e(y)+'</li>').join('')+'</ul></details><div class="a3r-mini-links">'+ansaTermButtons(m.terms)+'</div><p class="a3r-quiet">'+e(m.refs)+'</p></details>').join('')+'</section>';
+  }
+  function ansaPartitions(a){
+    const list=(xs,tag)=>'<'+tag+'>'+xs.map(x=>'<li>'+e(x)+'</li>').join('')+'</'+tag+'>';
+    const main=a.partitions.filter(p=>p.role==='partition principale'),variations=a.partitions.filter(p=>p.role!=='partition principale');
+    const practiceLinks=p=>(p.relatedPractice||[]).map(label=>{
+      const salon=label.match(/^(salon-\d+) \/ /);
+      if(salon)return btn('atlas3/salon/'+salon[1],label);
+      if(/^JCP\d+/.test(label))return btn('atlas3/approche/jodorowsky',label);
+      return '<p>'+e(label)+'</p>';
+    }).join('');
+    const card=p=>'<details id="a3ansa-part-'+e(p.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+e(p.title)+' · '+e(p.duration)+'</summary><p>'+e(p.goal)+'</p><p><strong>Participants :</strong> '+e(p.participants)+' · <strong>Matériel :</strong> '+e(p.material)+'</p><h3>Déroulement</h3>'+list(p.steps,'ol')+'<h3>Variantes</h3>'+list(p.variants,'ul')+'<h3>Si le jeu se bloque</h3><p>'+e(p.failure)+'</p><h3>Retour d’expérience</h3>'+list(p.debrief,'ul')+'<p>'+e(p.boundary)+'</p><div class="a3r-mini-links">'+ansaTermButtons(p.terms)+'</div><h3>Situations déjà présentes dans Atlas</h3><div class="a3r-mini-links">'+practiceLinks(p)+'</div><p class="a3r-quiet">'+e(p.refs)+'</p></details>';
+    return '<section class="a3r-editorial-terms"><h2>Mettre en pratique · '+main.length+' partitions</h2><p>Propositions de création propres à Atlas, à expérimenter en atelier ; elles ne reproduisent pas les pratiques personnelles de la Voie du sentir.</p>'+main.map(card).join('')+'<details class="a3r-v15-depth"><summary>'+variations.length+' variations complémentaires</summary>'+variations.map(card).join('')+'</details></section>';
+  }
+  function ansaExpansion(d,a){
+    const groups=[['E','L’essentiel'],['A','Approfondissement'],['L','Exploration libre']];
+    const group=([level,title],i)=>{
+      const ids=a.terms.filter(t=>t.level===level).map(t=>t.id);
+      const body='<div class="a3r-mini-links">'+ansaTermButtons(ids)+'</div>';
+      return i===0?'<h3>'+e(title)+' · '+ids.length+'</h3>'+body:'<details class="a3r-v15-depth"><summary>'+e(title)+' · '+ids.length+'</summary>'+body+'</details>';
+    };
+    return '<section class="a3r-editorial-full" aria-label="Dossier fondateur Ansa"><h2>Parcours de compréhension</h2><p>Huit chapitres pour comprendre l’apport d’Ansa ; un neuvième pour explorer librement la doctrine. Les notions s’ouvrent dans le texte.</p><ol>'+a.modules.map((m,i)=>'<li>'+ansaJumpButton('a3ansa-text-'+(i+1),m.title+(m.optional?' — facultatif':''))+'</li>').join('')+'</ol><div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html.replace('id="a3ansa-text-1"','id="a3ansa-text-1" open'), 'ansa')+'</div><div class="a3r-editorial-terms"><h2>Notions à explorer · '+a.terms.length+'</h2>'+groups.map(group).join('')+'</div>'+ansaCards(a)+ansaPartitions(a)+'<details class="a3r-v15-depth"><summary>Sources et état du dossier</summary><p>'+e(d.edition)+' · '+e(d.source)+'</p><p>Les cartes sont des reconstructions de lecture ; les partitions n’ont pas été testées en atelier. Les deux corpus complémentaires restent à étudier.</p></details><div id="a3r-notion-modal" class="a3r-modal" hidden onclick="if(event.target===this)Atlas3Reader.closeNotion()"></div></section>';
+  }
+
   function editorialExpansion(id){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
+    if(id==='ansa'&&ansaApproach()?.modules?.length)return ansaExpansion(d,ansaApproach());
     const entries=(d.terms||[]).map((t,i)=>({t,i}));
     const termButton=({t,i})=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>';
     const categories=[...new Set(entries.map(({t})=>t.category).filter(Boolean))];
@@ -652,7 +715,7 @@
     modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
       '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
       '<div class="a3r-eyebrow">NOTION SITUÉE</div><h2 id="a3r-notion-title">'+e(t.term)+'</h2><p>'+e(t.definition)+'</p>'+
-      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+(id==='jung'&&t.sourceUrl&&/^https:\/\//.test(t.sourceUrl)?'<p><a class="a3r-link" href="'+e(t.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Consulter le texte de Jung</a></p><p class="a3r-quiet">'+e(t.sourceStatus||'')+'</p>':'')+(id==='jung'?jungTermLinks(t.term):id==='jodorowsky'?jcTermLinks(t):'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
+      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+(id==='jung'&&t.sourceUrl&&/^https:\/\//.test(t.sourceUrl)?'<p><a class="a3r-link" href="'+e(t.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Consulter le texte de Jung</a></p><p class="a3r-quiet">'+e(t.sourceStatus||'')+'</p>':'')+(id==='jung'?jungTermLinks(t.term):id==='jodorowsky'?jcTermLinks(t):id==='ansa'&&ansaApproach()?.modules?.length?ansaTermLinks(t):'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
     modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();
   }
 
@@ -688,7 +751,7 @@
     x.open=true;x.scrollIntoView({behavior:'smooth',block:'start'});x.querySelector('summary')?.focus();
   }
   window.Atlas3Reader={
-    closeNotion,openNotion,openEditorialTerm,goToNotionSource,jumpToSection,jungJump,jcJump,jcOpenTerm,
+    closeNotion,openNotion,openEditorialTerm,goToNotionSource,jumpToSection,jungJump,jcJump,jcOpenTerm,ansaJump,ansaOpenTerm,
     toggleSections(open){
       if(!document || !document.querySelectorAll)return;
       document.querySelectorAll('.a3r-sections .a3r-section').forEach(x => {x.open=!!open;});
