@@ -23,7 +23,7 @@ La sensation corporelle constitue le point de départ de la voie : elle déplace
 ### 2 — Sentir et ressentir
 **Niveau :** E · **Matrice V2 :** 4 · **Sources :** E 138–142, 388–394.
 
-Dans le vocabulaire d'Ansa, le sentir est une expérience non appropriée, accueillie plutôt que déterminée par l'image de soi. Le ressentir désigne l'expérience reprise ou conditionnée par l'interprétation mentale.
+Dans le vocabulaire d'Ansa, le sentir est une expérience non appropriée. Il le définit également comme une émotion du corps biologique et lui attribue une pensée créative propre, qu'il explique par le déplacement du point d'assemblage. Ces propositions appartiennent à sa doctrine ; elles excèdent la seule absence de commentaire. Le ressentir désigne l'expérience reprise ou conditionnée par l'interprétation mentale.
 
 **Exemple Atlas :** Une présence sonore est d'abord éprouvée, puis décrite ou intégrée à une fiction : ces opérations diffèrent.
 
@@ -67,7 +67,7 @@ Répartition volontaire de l'attention entre un rapport sensitif à soi et une a
 ### 6 — Rappel sensitif et rappel de soi sensitif
 **Niveau :** A · **Matrice V2 :** 9, 12 · **Sources :** E 237–240.
 
-Le rappel sensitif se rapporte à un ancrage dans l'activité ; le rappel de soi sensitif est orienté vers l'être et le sentiment dans la voie. La vision de l'Aigle désigne la conscience de soi, de la situation et de ces deux dimensions.
+Le rappel sensitif se rapporte à un ancrage dans l'activité ; le rappel de soi sensitif est orienté vers l'être et le sentiment dans la voie. Ansa le décrit comme un moment distinct, incompatible avec la parole et la pensée (p.239), et non comme un ancrage simultané à une conversation. La vision de l'Aigle désigne la conscience de soi, de la situation et de ces deux dimensions.
 
 **Exemple Atlas :** Examiner si une indication libère l'écoute du partenaire ou rend l'acteur trop préoccupé de lui-même.
 
@@ -100,7 +100,7 @@ Les impressions, intérieures ou extérieures, sont ce qui se donne à recevoir.
 ### 9 — Concavité et convexité
 **Niveau :** E · **Matrice V2 :** 14 · **Sources :** E 163–168, 281–284, 287–306.
 
-La concavité désigne la réception, la résonance et l'accueil ; la convexité, l'expansion, l'initiative et l'exécution. Ansa critique la prédominance de cette dernière, tout en la jugeant nécessaire à la vie matérielle.
+La concavité désigne la réception, la résonance et l'accueil ; dans sa dimension spirituelle, elle est l'espace où l'âme reçoit les impressions ; la convexité, l'expansion, l'initiative et l'exécution. Ansa critique la prédominance de cette dernière, tout en la jugeant nécessaire à la vie matérielle.
 
 **Exemple Atlas :** Un décorateur construit une forme ; la lumière réelle l'amène à modifier sa conception.
 
@@ -483,7 +483,7 @@ Le secret concerne la discrétion, la prière continue une disposition spirituel
 **Renvois :** 6 — Rappel sensitif et rappel de soi sensitif; 15 — Gratitude; 16 — Amour et service; 33 — Mémoire profonde, âme et Principe premier; 42 — Tradition, maître-ami, forme et contenu.
 
 ### 44 — Quatre stratégies d'attention
-**Niveau :** L · **Matrice V2 :** 50 · **Sources :** E 126–133 (registre, à recollationner).
+**Niveau :** L · **Matrice V2 :** 50 · **Sources :** E 126–133 (extraits contrôlés ; p.131–132 relues intégralement).
 
 Ansa décrit quatre figures de captation de l'attention : auto-apitoiement, culpabilisateur, inquisiteur, esthète. Elles appartiennent à son modèle énergétique des échanges.
 
@@ -506,3 +506,6 @@ Ansa décrit quatre figures de captation de l'attention : auto-apitoiement, culp
 8. Mémoire et amour : pourquoi le sentir ? — mémoire, amour, horizon spirituel. 16,32,33,34,35.
 9. Explorer la doctrine dans son contexte — centres, genre, maître intérieur, Alliés, tradition, prière. 37,38,39,40,41,42,43,44.
 Les notices 23,33–35,37–41,43–44 peuvent rester en annexe d'exploration ; le chapitre 9 n'est pas un préalable à la pratique. L'ordre est un choix pédagogique Atlas, pas celui des deux ouvrages. Hadot, Roger-Pol Droit, Osho, Bardo Thödol et les autres pistes déjà proposées restent en réserve ; pas d'ouverture d'un autre territoire. Les deux acquisitions restent ouvertes. Aucun changement de l'application ni de main.
+
+## Révision après audit comparatif
+Retour direct E p.119–120, 140–142, 230–233, 237–240 : le sentir est défini comme émotion du corps biologique et pensée corporelle selon Ansa ; deux rappels distincts ; cinq esclavages confirmés p.233 ; note p.240 sur le Soi non duel. Contrôle ciblé, non validation des thèses doctrinales. Les 44 identifiants et les huit titres historiques sont inchangés.
