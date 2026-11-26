@@ -330,3 +330,27 @@ Source : CW 7, Hull 1966, https://www.ronliskey.com/docs/collected-Works-07-Anal
 
 ### Statut et limites
 Premier passage textuel des §§ 1–521 du volume 7 consigné dans le registre, sur la base des relevés successifs. Les deux essais et les deux appendices sont couverts au premier passage ; notes restantes, vérification des relevés antérieurs, index de concepts et comparaison au dossier public restent ouverts. La lecture de L'Âme et le Soi est la priorité suivante ; Aïon est complémentaire. Aucune modification du lecteur, du lexique ni des autres Atlas.
+
+
+## L'Âme et le Soi — ouverture du corpus et texte I
+
+Le recueil français est un assemblage de textes distincts. La correspondance bibliographique a été contrôlée auprès de la Société Française de Psychologie Analytique (https://cgjungfrance.com/abstract-collected-works/ et https://cgjungfrance.com/2006/04/les-archetypes-de-l-inconscient/). Ne pas compter les résumés de cette société comme lecture des originaux.
+- I. À propos de la renaissance : CW 9i, §§ 199–258.
+- II. Une expérience du processus d'individuation : CW 9i, jusqu'au § 626 ; contrôler le début et les 24 planches.
+- III. La fonction transcendante : CW 8, §§ 131–193 ; vérifier les différences de numérotation avec la traduction française.
+- IV. Psychanalyse et cure d'âme : CW 11, §§ 539–552.
+- V. Sur les phénomènes occultes : CW 18, §§ 697–789, cinq contributions (1905, 1939, 1948, 1950, 1958). Ne pas réduire cette partie à un texte unique.
+
+### I. À propos de la renaissance : premier passage
+Source primaire : https://www.crisrieder.org/thejourney/storage/2025/09/The-Archetypes-and-the-Collective-Unconscious-Carl-Jung.pdf , version anglaise Hull du texte remanié de 1950, lignes 1011–1280 examinées par fenêtres recouvrantes ; §§ 199–258. Le document indexé s'interrompt plus loin dans le volume, et ne suffit pas pour le texte II. La collation avec le français et les notes reste à faire.
+
+Index : §§ 199–205 (cinq acceptions de renaissance) ; §§ 206–211 (statut psychique, expérience rituelle et immédiate) ; §§ 212–224 (diminution, élargissement, changement de structure) ; §§ 225–230 (groupe, héros cultuel) ; §§ 231–239 (procédés magiques, techniques, transformation spontanée) ; §§ 240–258 (lecture de la sourate XVIII, Khidr, Soi et inflation).
+
+### Pistes originales de reconstruction
+1. L'atelier peut distinguer trois plans : une scène bien exécutée, une émotion éprouvée, un changement durable de disponibilité dans le jeu. Aucun des trois ne suffit à établir les deux autres. Le § 211 constitue le point d'appui de cette question, et le § 228 nuance la critique des expériences collectives. Ne pas transformer la cohésion du groupe en preuve de transformation individuelle.
+2. Dans une pédagogie de création, faire inventer plusieurs variantes d'un geste avant d'en proposer une forme modèle. L'imitation d'un résultat peut être utile pour apprendre une technique, mais n'est pas équivalente à la genèse de ce résultat. Comparer avec le récit du § 233 et les §§ 232–234. C'est une hypothèse Atlas à éprouver avec les écoles théâtrales, pas une promesse de transformation psychique.
+3. Le schéma moi/Soi doit comporter une légende explicite distinguant totalité et centre ; repère § 248, à rapprocher de CW 7 §§ 398–405. La lecture de Khidr est celle de Jung : une future illustration d'Atlas 4 ne doit pas la présenter comme le sens unique ou la doctrine de la sourate.
+4. Contextualiser les hiérarchies raciales et culturelles, les stéréotypes de genre, les extrapolations politiques et les affirmations sur la télépathie (§ 249) ; ne pas traiter les analogies et témoignages comme preuves empiriques ni comme garanties thérapeutiques. Conserver la distinction posée aux §§ 206–207 entre investigation psychique et affirmation métaphysique, tout en signalant les passages où Jung lui-même la met en tension.
+
+### État
+Volume 7 : texte principal et appendices au premier passage, 521 paragraphes. L'Âme et le Soi : texte I au premier passage, 60 paragraphes dans la numérotation CW 9i ; II–V non lus à ce stade. Rechercher une édition complète du texte II avec planches, puis poursuivre dans l'ordre du recueil. Aucun changement à l'interface, aux cartes publiées ni aux autres Atlas.
