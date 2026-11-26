@@ -9,7 +9,7 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - I. Psychanalyse : E (texte principal §§ 1–15, PDF p. 19–28 ; notes et recollation à contrôler).
 - II. Théorie de l'éros : E (texte principal §§ 16–34, PDF p. 29–37, contrôlé visuellement ; notes à collationner).
 - III. Volonté de puissance : E (texte principal §§ 35–55, PDF p. 38–46, contrôle visuel ; notes à collationner).
-- IV. Problème des types d'attitude : P.
+- IV. Problème des types d'attitude : E (texte principal §§ 56–96, PDF p. 47–65 ; notes à contrôler).
 - V. Inconscient personnel et collectif : P.
 - VI. Méthode synthétique ou constructive : P.
 - VII. Archétypes : P.
@@ -97,3 +97,23 @@ La contradiction prépare le problème du point de vue au chapitre IV. Ne pas as
 
 ### Statut
 Trois chapitres, §§ 1–55, consignés dans le registre. Reprise au § 56. Relecture des notes, audit transversal et hiérarchie définitive restent ouverts. Aucun changement au lecteur ou aux autres Atlas.
+
+
+## Lecture séquentielle — unité 4 : problème des types d'attitude
+
+CW 7, §§ 56–96, PDF p. 47–65 (index zéro), toutes les pages du chapitre examinées visuellement ; début du chapitre V au § 97, p. 66, contrôlé. Source : https://www.ronliskey.com/docs/collected-Works-07-Analytical-Psychology-by-C-G-Jung.pdf . Notes 1–13 à vérifier séparément.
+
+### Repères
+- §§ 56–64 : perspectivisme clinique, sujet/objet, alliance thérapeutique, attitudes et variations.
+- §§ 65–70 : limites de la réduction ; dimension prospective de la psyché.
+- §§ 71–77 : forme, valeur, énergie, gradient ; limites de la volonté et de la sublimation.
+- §§ 78–80 : compensation, ombre, opposition psychologique et logique ; rapprochements historiques.
+- §§ 81–87 : exemple du château ; coexistence et inversion des attitudes, autonomie du pôle inférieur, alternance.
+- §§ 88–92 : problèmes de maturité, imago, réinvestissement, autorégulation.
+- §§ 93–96 : reprise du cas clinique, transfert, projection et dissolution du transfert.
+
+### Hypothèses Atlas
+Distinguer l'explication du passé de la construction d'un devenir ; cartographier la différence entre l'attitude habituelle et son envers. Ne pas transformer les types en identités fixes. Exemple original : en improvisation, une même personne peut changer de manière de répondre lorsque l'objet scénique devient significatif. Observer les conditions du changement sans inférer de diagnostic. La théorie énergétique jungienne est un cadre historique, non une mesure physique ni une validation clinique contemporaine.
+
+### Statut
+Texte principal des quatre premiers chapitres consigné ; contrôle des notes, audit de couverture et classement final à faire. Reprise au § 97. Aucun changement au lecteur ni aux autres Atlas.
