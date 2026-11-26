@@ -15,8 +15,8 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - VII. Archétypes : E (§§ 141–191, p. 92–116 ; notes à contrôler).
 - VIII. Approche thérapeutique : E (§§ 192–200, p. 117–122 ; notes à contrôler).
 - Conclusion : E (§ 201, p. 123).
-- Deuxième essai, Dialectique du moi et de l'inconscient, deux préfaces : R.
-- Partie 1 : inconscients personnel et collectif (P) ; assimilation de l'inconscient (P) ; persona et psyché collective (P) ; tentatives négatives de différenciation, retour à la persona et identification collective (P).
+- Deuxième essai, Dialectique du moi et de l'inconscient, deux préfaces : E.
+- Partie 1 : inconscients personnel et collectif (E, §§ 202–220) ; assimilation de l'inconscient (E, §§ 221–242) ; persona et psyché collective (P) ; tentatives négatives de différenciation, retour à la persona et identification collective (P).
 - Partie 2 : fonction de l'inconscient (P) ; anima et animus (P) ; différenciation du moi et des figures inconscientes (P) ; personnalité mana (P).
 - Appendice I, texte de 1912 : R.
 - Appendice II, texte de 1916 : six sections, addendum et deux versions du résumé : R.
@@ -164,3 +164,22 @@ Les exemples des chapitres VI et VII comportent des présupposés historiques pa
 
 ### Audit provisoire
 Le texte principal du premier essai est couvert dans le registre (§§ 1–201, huit chapitres et conclusion), d'après les extractions successives ; la présente étape a directement consulté les §§ 121–201. Les notes restent à collationner, les relevés antérieurs à recroiser, les concepts du lecteur existant à comparer et le second essai à lire. La hiérarchie d'auteur demeure provisoire. Reprise : préfaces puis § 202 de Dialectique du moi et de l'inconscient (borne à confirmer). Aucun changement aux écrans ou aux Atlas 1, 2 et 4.
+
+
+## Deuxième essai — ouverture et unités 1–2
+
+Dialectique du moi et de l'inconscient. Source identique, préfaces p. 125–128 puis §§ 202–242, p. 130–160 (index zéro), lignes 3380–4356, texte extrait consulté par plages contiguës. Borne suivante § 243, p. 161. Notes à collationner.
+
+### Index de couverture
+- Préfaces : genèse, autonomie, individuation, renvoi au commentaire du Secret de la fleur d'or.
+- I, §§ 202–220 : seuil de conscience (202–205), transfert (206–209), rêves et hypothèse transpersonnelle (210–217), assimilation personnelle, cryptomnésie et hypothèse collective (218–220).
+- II, §§ 221–242 : inflation (221–230), identification et différenciation (231–236), prestige et collectif (237–241), imitation (242).
+
+### Questions originales pour le dossier
+- Comparer la connaissance d'un mécanisme et la capacité à modifier une conduite. Dans une improvisation, l'interprète peut expliquer pourquoi un personnage tient à son statut, tout en répétant une seule manière de jouer. Faire varier les réponses possibles avant de commenter le personnage.
+- Concevoir une carte qui distingue le rôle institutionnel, la personne qui l'occupe et les attentes de son entourage. Cette carte pourrait servir de lien entre inflation, persona et reconnaissance collective.
+- Ne pas transformer les récits cliniques en diagnostics de spectateurs ou de participants. Distinguer l'hypothèse de Jung, les faits narrés et notre proposition scénique.
+- Revoir après lecture des chapitres suivants le statut de l'imitation : en apprentissage théâtral, reproduire un geste peut être un moyen de découverte, pas nécessairement une fixation. Ce contre-exemple est une question Atlas, non une correction du texte par attribution à Jung.
+
+### État
+Premier essai : 8 chapitres + conclusion, §§ 1–201 consignés. Deuxième essai : deux préfaces et 2/8 chapitres, §§ 202–242 consignés. Reprise au § 243, persona. Audit des notes, confrontation avec le dossier existant et hiérarchisation finale toujours ouverts. Aucun changement à l'application ni aux autres Atlas.
