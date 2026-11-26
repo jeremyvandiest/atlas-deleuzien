@@ -340,15 +340,75 @@
     }).join('');
     return '<section class="a3r-editorial-terms" aria-label="Parcours de compréhension de Jung"><h2>Comprendre Jung · huit problèmes</h2><p>Un parcours de lecture avant le dossier intégral. Les situations et applications de fiction sont des propositions originales Atlas, non des exercices cliniques de Jung.</p>'+content+'</section>';
   }
+
+  // Parcours Jodorowsky/Costa, indépendant des cartes et du parcours de Jung.
+  function jcApproach(){return edition15()?.approaches?.find(a=>a.id==='jodorowsky');}
+  function jcTermButtons(ids){
+    const terms=jcApproach()?.terms||[];
+    return ids.map(id=>{const i=terms.findIndex(t=>t.id===id);return i<0?'':'<button type="button" class="a3r-link" onclick="Atlas3Reader.jcOpenTerm('+i+')">'+e(terms[i].term)+'</button>';}).join('');
+  }
+  function jcOpenTerm(index){
+    const modal=document.getElementById('a3r-notion-modal');
+    const origin=termFocus;
+    const already=modal&&!modal.hidden;
+    openEditorialTerm('jodorowsky',index);
+    if(already&&origin?.isConnected)termFocus=origin;
+  }
+  function jcJump(id){
+    if(!/^a3jc-(?:text-(?:[1-9]|10)|map-JCM(?:0[1-9]|10)|part-JCP0[1-4])$/.test(id))return;
+    const target=document.getElementById(id);if(!target)return;
+    if(!document.getElementById('a3r-notion-modal')?.hidden)closeNotion();
+    for(let el=target;el;el=el.parentElement)if(el.tagName==='DETAILS')el.open=true;
+    const focus=target.tagName==='DETAILS'?target.querySelector('summary'):target;
+    if(focus){if(focus.tagName!=='SUMMARY')focus.setAttribute('tabindex','-1');focus.focus({preventScroll:true});}
+    target.scrollIntoView({block:'start',behavior:'auto'});
+  }
+  function jcJumpButton(id,label){return '<button type="button" class="a3r-link" onclick="Atlas3Reader.jcJump(\''+e(id)+'\')">'+e(label)+'</button>';}
+  function jcContents(){
+    const a=jcApproach();if(!a?.modules?.length)return '';
+    return '<section class="a3r-editorial-terms"><h2>Parcours de compréhension · '+a.modules.length+' chapitres</h2><p>Chaque chapitre développe un problème et ses notions. Les exemples et les partitions sont des créations d’Atlas.</p><ol>'+a.modules.map((m,i)=>'<li>'+jcJumpButton('a3jc-text-'+(i+1),m.title)+'</li>').join('')+'</ol></section>';
+  }
+  function jcTermLinks(t){
+    const a=jcApproach();if(!a)return '';
+    const chapters=(t.chapters||[]).map(n=>a.modules[n-1]?jcJumpButton('a3jc-text-'+n,a.modules[n-1].title):'').join('');
+    const maps=(a.maps||[]).filter(m=>m.terms.includes(t.id)).map(m=>jcJumpButton('a3jc-map-'+m.id,m.title)).join('');
+    const parts=(a.partitions||[]).filter(p=>p.terms.includes(t.id)).map(p=>jcJumpButton('a3jc-part-'+p.id,p.title)).join('');
+    const rel=jcTermButtons(t.relatedIds||[]);
+    const group=(title,html)=>html?'<h3>'+e(title)+'</h3><div class="a3r-mini-links">'+html+'</div>':'';
+    return (t.example?'<h3>Exemple concret</h3><p>'+e(t.example)+'</p>':'')+(t.distinction?'<h3>Distinction</h3><p>'+e(t.distinction)+'</p>':'')+(t.status==='P'?'<p>Définition provisoire : corpus à compléter.</p>':t.status==='X'?'<p>Outil de lecture ou de pratique propre à Atlas.</p>':'')+group('Notions associées',rel)+group('Dans le dossier',chapters)+group('Schémas',maps)+group('Partitions',parts);
+  }
+  const JC_LEVELS={JCM01:[[0,1],[2,3],[4]],JCM02:[[0,1],[2],[3],[4]],JCM03:[[0,2,4],[1,3]],JCM04:[[0],[1],[2],[3],[4],[5]],JCM05:[[0],[1,2],[3,4,5]],JCM06:[[0,1],[2,3],[4]],JCM07:[[0,1],[2,3,4]],JCM08:[[0,1],[2,3],[4]],JCM10:[[0,1],[2,3],[4]]};
+  function jcVisualSvg(m){
+    if(m.id==='JCM09'){
+      const colors=['#8496ad','#9da981','#bfa36d','#ae8aa4'];
+      const radii=[143,111,79,42], ys=[24,59,94,156];
+      const labels=[m.nodes[3],m.nodes[2],m.nodes[1],m.nodes[0]];
+      return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 312" role="img" aria-label="'+e(m.title)+'" style="display:block;width:100%;max-width:440px;margin:auto;height:auto">'+radii.map((r,i)=>'<circle cx="160" cy="156" r="'+r+'" fill="'+colors[i]+'" fill-opacity=".13" stroke="'+colors[i]+'" stroke-width="1.4"/>').join('')+labels.map((label,i)=>'<text x="160" y="'+ys[i]+'" font-size="'+(i===0?10:12)+'" fill="#f3f5f7" text-anchor="middle">'+e(i===0?'Conscience universelle':label)+'</text>').join('')+'</svg>';
+    }
+    const levels=JC_LEVELS[m.id];if(!levels)return '';
+    const nodes=Object.fromEntries(m.nodes.map((n,i)=>['n'+i,n]));
+    const edges=m.relations.map(([a,b,label])=>({a:'n'+m.nodes.indexOf(a),b:'n'+m.nodes.indexOf(b),label,kind:'arrow',dash:/ne (?:suffit|prouvent)/.test(label)}));
+    return jungVisualSvg({n:'jc-'+m.id,title:m.title,nodes,edges,levels:levels.map(row=>row.map(i=>'n'+i))});
+  }
+  function jcCards(){
+    const a=jcApproach();if(!a?.maps?.length)return '';
+    return '<section class="a3r-editorial-terms"><h2>Comprendre en images · '+a.maps.length+' schémas</h2><p>Sur un écran étroit, le dessin est défilable horizontalement. Les relations détaillées restent lisibles sous chaque carte.</p>'+a.maps.map(m=>'<details id="a3jc-map-'+e(m.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+e(m.title)+'</summary><div role="region" tabindex="0" aria-label="Schéma défilable horizontalement" style="--a3jung-node:#253342;--a3jung-border:#91a5ba;--a3jung-text:#f5f7fa;--a3jung-arrow:#9eafc2;background:#17232f;border-radius:12px;padding:.5rem;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain">'+jcVisualSvg(m)+'</div><p>'+e(m.note)+'</p><details><summary>Lire les relations</summary><ul>'+m.relations.map(([a,b,l])=>'<li>'+e(a)+' — '+e(l)+' — '+e(b)+'</li>').join('')+'</ul></details><div class="a3r-mini-links">'+jcTermButtons(m.terms)+'</div><p class="a3r-quiet">'+e(m.refs)+'</p></details>').join('')+'</section>';
+  }
+  function jcPartitions(){
+    const a=jcApproach();if(!a?.partitions?.length)return '';
+    const list=(xs,tag)=>'<'+tag+'>'+xs.map(x=>'<li>'+e(x)+'</li>').join('')+'</'+tag+'>';
+    return '<section class="a3r-editorial-terms"><h2>Mettre en pratique · '+a.partitions.length+' partitions</h2><p>Propositions artistiques originales, à expérimenter en atelier ; aucune prescription psychomagique.</p>'+a.partitions.map(p=>'<details id="a3jc-part-'+e(p.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+e(p.title)+' · '+e(p.duration)+'</summary><p>'+e(p.goal)+'</p><p><strong>Participants :</strong> '+e(p.participants)+' · <strong>Matériel :</strong> '+e(p.material)+'</p><h3>Déroulement</h3>'+list(p.steps,'ol')+'<h3>Variantes</h3>'+list(p.variants,'ul')+'<h3>Si le jeu se bloque</h3><p>'+e(p.failure)+'</p><h3>Retour d’expérience</h3>'+list(p.debrief,'ul')+'<p>'+e(p.boundary)+'</p><div class="a3r-mini-links">'+jcTermButtons(p.terms)+'</div><p class="a3r-quiet">'+e(p.refs)+'</p></details>').join('')+'</section>';
+  }
+
   function editorialExpansion(id){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
     const entries=(d.terms||[]).map((t,i)=>({t,i}));
     const termButton=({t,i})=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>';
     const categories=[...new Set(entries.map(({t})=>t.category).filter(Boolean))];
     const terms=categories.length?categories.map(category=>'<section><h3>'+e(category)+'</h3><div class="a3r-mini-links">'+entries.filter(({t})=>t.category===category).map(termButton).join('')+'</div></section>').join('')+(entries.some(({t})=>!t.category)?'<div class="a3r-mini-links">'+entries.filter(({t})=>!t.category).map(termButton).join('')+'</div>':''):entries.map(termButton).join('');
-    return (id==='jung'?jungReadingPath(d)+jungContents(d.html):'')+'<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur')+'</summary>'+
+    return (id==='jung'?jungReadingPath(d)+jungContents(d.html):id==='jodorowsky'?jcContents():'')+'<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur')+'</summary>'+
       '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(id==='jung'?jungTextAnchors(d.html):d.html,id)+'</div></details>'+
-      (id==='jung'?jungVisualCards(d):'')+
+      (id==='jung'?jungVisualCards(d):id==='jodorowsky'?jcCards()+jcPartitions():'')+
       '<div class="a3r-editorial-terms"><h2>Notions à explorer'+(categories.length?' · '+entries.length+' concepts':'')+'</h2>'+(categories.length?terms:'<div class="a3r-mini-links">'+terms+'</div>')+'</div>'+
       '<p class="a3r-quiet">'+e(d.edition)+' · '+e(d.source)+'</p>'+
       '<div id="a3r-notion-modal" class="a3r-modal" hidden onclick="if(event.target===this)Atlas3Reader.closeNotion()"></div></section>';
@@ -592,7 +652,7 @@
     modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
       '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
       '<div class="a3r-eyebrow">NOTION SITUÉE</div><h2 id="a3r-notion-title">'+e(t.term)+'</h2><p>'+e(t.definition)+'</p>'+
-      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+(id==='jung'&&t.sourceUrl&&/^https:\/\//.test(t.sourceUrl)?'<p><a class="a3r-link" href="'+e(t.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Consulter le texte de Jung</a></p><p class="a3r-quiet">'+e(t.sourceStatus||'')+'</p>':'')+(id==='jung'?jungTermLinks(t.term):'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
+      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+(id==='jung'&&t.sourceUrl&&/^https:\/\//.test(t.sourceUrl)?'<p><a class="a3r-link" href="'+e(t.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Consulter le texte de Jung</a></p><p class="a3r-quiet">'+e(t.sourceStatus||'')+'</p>':'')+(id==='jung'?jungTermLinks(t.term):id==='jodorowsky'?jcTermLinks(t):'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
     modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();
   }
 
@@ -628,7 +688,7 @@
     x.open=true;x.scrollIntoView({behavior:'smooth',block:'start'});x.querySelector('summary')?.focus();
   }
   window.Atlas3Reader={
-    closeNotion,openNotion,openEditorialTerm,goToNotionSource,jumpToSection,jungJump,
+    closeNotion,openNotion,openEditorialTerm,goToNotionSource,jumpToSection,jungJump,jcJump,jcOpenTerm,
     toggleSections(open){
       if(!document || !document.querySelectorAll)return;
       document.querySelectorAll('.a3r-sections .a3r-section').forEach(x => {x.open=!!open;});
