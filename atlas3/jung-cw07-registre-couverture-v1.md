@@ -17,7 +17,7 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - Conclusion : E (§ 201, p. 123).
 - Deuxième essai, Dialectique du moi et de l'inconscient, deux préfaces : E.
 - Partie 1 : inconscients personnel et collectif (E, §§ 202–220) ; assimilation de l'inconscient (E, §§ 221–242) ; persona et psyché collective (E, §§ 243–253) ; tentatives négatives de différenciation, retour à la persona et identification collective (E, §§ 254–265).
-- Partie 2 : fonction de l'inconscient (E, §§ 266–295) ; anima et animus (E, §§ 296–340, PDF p. 195–221) ; différenciation du moi et des figures inconscientes (P) ; personnalité mana (P).
+- Partie 2 : fonction de l'inconscient (E, §§ 266–295) ; anima et animus (E, §§ 296–340, PDF p. 195–221) ; différenciation du moi et des figures inconscientes (E, §§ 341–373) ; personnalité mana (E, §§ 374–406).
 - Appendice I, texte de 1912 : R.
 - Appendice II, texte de 1916 : six sections, addendum et deux versions du résumé : R.
 - Bibliographie et index : R (outils de contrôle et de repérage, non substituts à la lecture).
@@ -237,3 +237,28 @@ Source identique, CW 7, §§ 296–340. Pages PDF 195–221 (index zéro) consul
 
 ### État
 Deuxième essai : 6/8 chapitres ; texte principal des §§ 1–340 des deux essais consigné. Reprise : partie II, chapitre III, technique de différenciation. Les notes, la confrontation au lexique existant et l'audit d'ensemble restent ouverts. Pas de modification de l'interface ou des autres Atlas.
+
+
+## Deuxième essai — unités 7–8 : différenciation et personnalité mana
+
+Source : CW 7, Hull, 1966, https://www.ronliskey.com/docs/collected-Works-07-Analytical-Psychology-by-C-G-Jung.pdf ; §§ 341–406, pages PDF 222–252 (index zéro), examinés par fenêtres de texte recouvrantes complétées par contrôle visuel des pages 240–242, 244–245, 248–250. Notes de fin non collationnées. Appendice I commence au § 407, p. 254 ; appendice II au § 442, p. 279.
+
+### Index de couverture et renvois
+- §§ 341–350 : transformation, expérience et interprétation, affect, participation.
+- §§ 351–359 : réalité psychique, concrétisation, attitude.
+- §§ 360–365 : fonction transcendante, alchimie, singularité, décentrement.
+- §§ 366–373 : exemple symbolique, limites d'indication, relation et responsabilité.
+- §§ 374–382 : personnalité mana, inflation, fausse victoire du moi.
+- §§ 383–390 : initiation, finalité, autorité, maître et disciple.
+- §§ 391–397 : différenciation, personnification, exigences de la vie.
+- §§ 398–406 : Soi, ombre, image divine, limites de connaissance.
+
+### Reconstruction et propositions éditoriales originales Atlas
+A. Construire une carte de l'imagination en trois registres : ce que le personnage éprouve, ce qu'il fait sur scène, ce que le spectateur peut vérifier. Exemple : une actrice joue une personne convaincue qu'une invitation est une menace. Tester une réponse corporelle, puis une réponse verbale, puis une demande de clarification. Ce travail de fiction ne consiste pas à traiter un état clinique ; une image saisissante ne constitue pas une preuve sur le monde. Repères §§ 342, 348, 350–355, 369.
+B. Faire de la différence entre maîtrise et relation un axe de la route « individuation ». Une scène où un guide reçoit l'admiration d'un groupe peut être composée de trois manières : autorité partagée, appropriation de la reconnaissance, dépendance au guide. Observer comment l'organisation du groupe contribue à chacune. Relier mana, inflation, transfert et persona, sans assigner à la carte une valeur diagnostique. Repères §§ 377–382, 389–392.
+C. Pour le schéma du Soi, représenter graphiquement le moi comme centre de conscience et le Soi comme hypothèse de totalité non réductible à un deuxième personnage intérieur. Distinguer la métaphore du centre virtuel (§ 365, 399) de la totalité et de la relation moi/Soi (§§ 400, 404–405). Ne pas transformer ces images en anatomie psychique ni en promesse de perfection.
+D. Laisser une voie d'accès aux résonances spirituelles, mais distinguer les analogies religieuses, la description psychologique et les affirmations métaphysiques. Pour Atlas 4, renvoyer aux symboles sans y dupliquer le dossier ; aucun travail d'iconographie entrepris ici.
+E. Les réserves de Jung sur l'interprétation (§§ 362–363), le caractère non universel de la démarche (§ 369) et la démonstration scientifique du Soi (§ 405) doivent rester visibles. Ne pas présenter l'imagination active comme exercice de santé universel, ni la généralisation de cas historiques comme efficacité démontrée. Les stéréotypes sexués et hiérarchies culturelles sont à contextualiser.
+
+### Audit provisoire
+Les deux essais principaux ont désormais leurs 16 chapitres (et la conclusion du premier) consignés jusqu'au § 406. Il s'agit d'un premier passage analytique, pas de l'achèvement de l'audit d'auteur. Les notes, variantes de 1912 et 1916, vérification des anciennes extractions et confrontation au dossier actuel restent à faire. Prochaine unité : appendice I, §§ 407–441. Le téléchargement direct n'a pas abouti (résolution DNS) ; consultation de l'édition en ligne possible. Aucun changement au lexique, au lecteur ou aux autres Atlas.
