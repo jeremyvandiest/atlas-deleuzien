@@ -397,3 +397,31 @@ D. Pour la carte de la fonction inférieure, conserver § 582 comme renvoi à v�
 
 ### État
 644 paragraphes consignés au premier passage (521 + 60 + 63). Texte II : §§ 525–587, peintures 1–7 commentées ; reprise au § 588, peinture 8. Planches, notes, signes graphiques et collation française restent à contrôler. Aucun changement au lecteur ou aux autres Atlas.
+
+
+## L'Âme et le Soi — texte II : achèvement
+
+Source primaire, CW 9i, trad. Hull, https://studylib.net/doc/27752709/c.-g.-jung-collected-works-volume-9i--the-archetypes-of-t... , lignes 10857–11479, §§ 588–626, consultation par fenêtres recouvrantes. Commentaires 8–24 et conclusion. Quelques signes et références de notes nécessitent recollation. Planches non vérifiées visuellement.
+
+Index de couverture : §§ 588–595 (peinture 8 : ombre, différenciation, défense) ; 596–603 (9 : contexte religieux et Yi Jing) ; 604–608 (10 : dualités, astrologie et hypothèse de synchronicité) ; 609 (11 : extérieur/intérieur) ; 610–616 (12–24 : variations et limites d'interprétation) ; 617–621 (conclusion : temporalité, autonomie et risques) ; 622–626 (imagination active, comparaisons historiques et hypothèse archétypale).
+
+### Conséquences originales Atlas
+- Construire un exercice de lecture d'image à trois niveaux : motif visible, contexte donné par l'artiste, hypothèse interprétative. Le § 616 impose une option « données insuffisantes », et interdit d'inventer une progression complète à partir de la série. Le § 602 atteste explicitement l'introduction intentionnelle de motifs culturels. La thèse archétypale demeure une hypothèse, non une preuve tirée de la ressemblance.
+- Distinguer la cohérence formelle, la qualité artistique et les effets personnels d'une création. Les trois critères ne sont pas interchangeables. Le § 614 reconnaît le jeu artistique avec les formes ; le § 617 motive une réflexion sur la temporalité de l'apprentissage. Exemple : conserver un journal de variantes scéniques sans en faire une échelle de maturité psychique.
+- Au § 621, Jung formule des réserves cliniques explicites sur la méthode : ne pas transposer celle-ci en atelier non clinique. Le § 608 associe rétrospectivement des motifs à une maladie survenue bien plus tard ; cette association n'est pas prédictive ni probante et ne doit jamais être utilisée pour un diagnostic. Les analogies religieuses doivent être contextualisées et non universalisées.
+- Le § 622 suggère une question artistique indépendante : comment un travail matériel peut-il modifier un projet initial ? Comparer aux pratiques de composition des écoles de théâtre, sans identifier le processus de création à une intervention thérapeutique.
+
+## L'Âme et le Soi — texte III : La Fonction transcendante
+
+Source : CW 8, traduction Hull, https://www.academia.edu/42287539/C_G_Jung_Collected_Works_Volume_8_The_Structure_and_Dynamics_of_the_Psyche , lignes 348–488, préface et §§ 131–193 consultés par fenêtres recouvrantes. Borne suivante § 194. Manuscrit de 1916 remanié pour publication en 1958 ; préface datée 1958/1959. Notes éditoriales et traduction française à recoller.
+
+Index de couverture : §§ 131–139 (direction consciente et complémentarité) ; 140–146 (réadaptation, transfert, autonomie) ; 147–151 (méthode constructive, signe/symbole, cas comparatif) ; 152–155 (matériaux et limites) ; 156–165 (autorégulation et objections) ; 166–171 (affect, formes d'expression) ; 172–180 (formulation et compréhension) ; 181–189 (rapport aux positions contraires, émergence d'une nouvelle attitude) ; 190–193 (limites d'exposition, autonomie).
+
+### Reconstruction originale Atlas
+A. Carte candidate : représenter un processus et non une échelle de développement. Un personnage veut quitter un lieu, mais tient à un objet qui l'y rattache. Faire jouer séparément les deux orientations, puis chercher une nouvelle action qui modifie la situation. Le résultat peut rester ouvert. Cette analogie dramaturgique n'est pas la fonction transcendante clinique au sens strict.
+B. Distinguer trois opérations dans l'atelier : donner forme, examiner ce que la forme fait, choisir ce que l'on en fait. Aux §§ 177–181, rapprocher les deux premières sans les confondre, puis revenir à l'action. Ne pas réduire la création à une illustration de concepts, ni faire de l'effet esthétique un indice de transformation psychique.
+C. Relier la différence entre symbole et signe (§ 148) à la question des lectures d'œuvres ; ne pas modifier Atlas 2. Pour un objet fictif, comparer une fonction narrative définie et plusieurs résonances possibles sans assigner une signification cachée universelle. L'autonomie de l'apprenant doit rester un critère du dispositif, pas sa dépendance à l'interprète.
+D. Conserver les avertissements de la préface et du § 183 dans le dossier scientifique. L'imagination active de Jung est une méthode clinique distincte des exercices artistiques de fiction proposés ici. Aucune induction d'état altéré, aucun travail de reviviscence ni recommandation de pratiquer seul un procédé clinique. Les jugements sur les cultures, les troubles et la valeur sociale des personnes, ainsi que les interprétations rétrospectives de rêves, ne constituent pas des connaissances validées aujourd'hui.
+
+### État
+746 paragraphes au premier passage : 521 CW 7 + 60 renaissance + 102 étude d'individuation + 63 fonction transcendante. L'Âme et le Soi : 3/5 ensembles textuels. Reste Psychanalyse et cure d'âme (CW 11) puis Sur les phénomènes occultes (CW 18, ensemble de contributions). Notes, planches, collation française et audit transversal non terminés. Aucun changement au lecteur ni aux autres Atlas.
