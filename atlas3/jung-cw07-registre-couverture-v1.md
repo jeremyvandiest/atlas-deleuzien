@@ -18,7 +18,7 @@ Statuts : E = extrait dans cette étape (relecture de contrôle à faire), P = p
 - Deuxième essai, Dialectique du moi et de l'inconscient, deux préfaces : E.
 - Partie 1 : inconscients personnel et collectif (E, §§ 202–220) ; assimilation de l'inconscient (E, §§ 221–242) ; persona et psyché collective (E, §§ 243–253) ; tentatives négatives de différenciation, retour à la persona et identification collective (E, §§ 254–265).
 - Partie 2 : fonction de l'inconscient (E, §§ 266–295) ; anima et animus (E, §§ 296–340, PDF p. 195–221) ; différenciation du moi et des figures inconscientes (E, §§ 341–373) ; personnalité mana (E, §§ 374–406).
-- Appendice I, texte de 1912 : R.
+- Appendice I, texte de 1912 : E (texte principal §§ 407–441, p. 254–278 ; notes p. 492–493 examinées).
 - Appendice II, texte de 1916 : six sections, addendum et deux versions du résumé : R.
 - Bibliographie et index : R (outils de contrôle et de repérage, non substituts à la lecture).
 
@@ -262,3 +262,26 @@ E. Les réserves de Jung sur l'interprétation (§§ 362–363), le caractère n
 
 ### Audit provisoire
 Les deux essais principaux ont désormais leurs 16 chapitres (et la conclusion du premier) consignés jusqu'au § 406. Il s'agit d'un premier passage analytique, pas de l'achèvement de l'audit d'auteur. Les notes, variantes de 1912 et 1916, vérification des anciennes extractions et confrontation au dossier actuel restent à faire. Prochaine unité : appendice I, §§ 407–441. Le téléchargement direct n'a pas abouti (résolution DNS) ; consultation de l'édition en ligne possible. Aucun changement au lexique, au lecteur ou aux autres Atlas.
+
+
+## Appendice I — New Paths in Psychology (1912)
+
+Source : CW 7, Hull, 1966, §§ 407–441, PDF p. 254–278 (index zéro). Pages consultées visuellement, sauf p. 265 dont la capture a échoué à deux reprises ; texte complet de cette page lu via lignes 7372–7403. Notes 1–13, p. 492–493, examinées. La note éditoriale précise que les crochets signalent les passages restaurés qui avaient été supprimés ou modifiés ; ne pas attribuer indistinctement ces variantes au texte définitif de 1943.
+
+### Index
+- §§ 407–412 : psychologie expérimentale, pratique, réception de Freud.
+- §§ 413–419 : psychogenèse, catharsis, prédisposition.
+- §§ 420–426 : cas et conflit érotique, généralisation.
+- §§ 427–431 : culture, industrialisation, morale, division.
+- §§ 432–437 : associations, rêve, résistance, catharsis.
+- §§ 438–441 : société, sublimation, philosophie de vie.
+
+### Écart de lecture et questions originales
+Comparer les §§ 423–424, 435 (dont les variantes supprimées) avec les chapitres III–VI de l'essai remanié. Une carte du rêve ne doit pas juxtaposer la façade du contenu latent et l'approche constructive comme si elles étaient deux affirmations compatibles de même rang. Faire apparaître le changement de question, de l'explication d'un contenu à la relation entre plusieurs perspectives. Conserver l'historicité de la thèse étiologique sur le trauma ; ne pas la transformer en une négation contemporaine des effets traumatiques. L'ancrage social du conflit (§§ 428, 438) mérite un renvoi critique vers les conditions de vie plutôt qu'une psychologisation de toute difficulté sociale. La résistance institutionnelle à une théorie n'est pas une preuve de sa validité.
+
+## Notes vérifiées des chapitres finaux du deuxième essai
+
+PDF p. 490–491 : deux notes du chapitre III et sept notes du chapitre IV consultées. Les éditeurs renvoient pour l'imagination active à The Transcendent Function (§§ 166 et suivants, CW 8) et à Mysterium Coniunctionis (§§ 706 et 749 et suivants). L'autre référence du chapitre III est Symbols of Transformation. Pour mana, noter la source de Lehmann (1922), les analogies de Goethe et les références à Webster, sans faire de l'usage jungien du terme une définition anthropologique universelle. La note 6 au § 394 précise la portée du débat sur l'absolu. Ces références ont été repérées, pas étudiées dans leurs ouvrages d'origine. Correction de statut : les notes des seuls chapitres III–IV de la partie II et celles de l'appendice I sont maintenant examinées ; les notes antérieures restent ouvertes.
+
+### État au terme de cette étape
+Les deux essais principaux, §§ 1–406, et l'appendice I, §§ 407–441, ont un premier relevé continu. Reprise au § 442, appendice II, p. 279. Les rapprochements précis des versions et la vérification des anciens relevés restent nécessaires. Les notes 1–13 de l'appendice I et les notes des deux derniers chapitres du deuxième essai ont été consultées. Les autres notes restent à contrôler. Aucun changement au lecteur ni aux autres Atlas.
