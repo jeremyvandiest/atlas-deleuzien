@@ -458,3 +458,46 @@ Source primaire : CW 18, section IV, https://dokumen.pub/collected-works-of-cg-j
 
 ### État
 827 paragraphes consignés au premier passage (760 + 67). L'Âme et le Soi : quatre ensembles entièrement relevés, cinquième en cours. Restent §§ 764–789 (contribution personnelle à Moser et préface à Jaffé). Notes, collation française, planches et audit transversal encore ouverts. Aucun changement au lecteur ou aux autres Atlas.
+
+
+## L'Âme et le Soi — texte V : achèvement et clôture du premier passage
+
+Source : CW 18, section IV, même édition en ligne que ci-dessus, lignes 3277–3415, §§ 764–789 lus par fenêtres recouvrantes. Borne suivante : section V, § 790, hors du recueil retenu. OCR encore irrégulier ; aucune collation française revendiquée.
+
+### Index de couverture
+- §§ 764–771 : récit personnel de 1920, conditions de perception et incertitudes.
+- §§ 772–777 : contexte, témoignage indirect, absence de rapport original conservé.
+- §§ 778–781 : examen rétrospectif, explications ordinaires et hypothèse spéculative de perception subliminale.
+- §§ 782–784 : genèse de l'enquête de Jaffé, collecte et circulation des récits.
+- §§ 785–789 : distinction entre investigation symbolique et établissement des faits, numinosité, imagination.
+
+### Conséquences originales Atlas
+1. La carte de la réalité psychique doit distinguer quatre niveaux : vécu, récit, interprétation, vérification. Dans un exercice de fiction, une même situation peut être jouée selon deux points de vue incompatibles sans que l'atelier tranche une croyance personnelle. Préserver la puissance dramatique du récit tout en maintenant la possibilité d'une explication ordinaire.
+2. Le § 778 fournit une occasion de confronter les hypothèses de l'auteur à ses propres réserves ; les §§ 779–781 ne démontrent ni transmission d'une situation psychique par l'odorat ni perception extrasensorielle. Le § 777 signale explicitement la perte du document original. Au § 788, la distinction proposée par Jung entre authenticité vécue et vérité parapsychologique ne dispense pas de contrôler la mémoire, la suggestion, les erreurs et la dépendance des témoignages. Ne pas reprendre sa réduction du doute au mensonge délibéré.
+3. La numinosité mérite une carte de description de l'expérience, sans glorification de la suspension du jugement ou de la volonté. Exemple artistique : une mise en scène peut susciter une impression de mystère par le rythme, le silence et l'espace, sans nécessiter une croyance ni un état altéré chez les participants. Les rapprochements avec Chekhov, Ansa et le domaine symbolique de l'Atlas 4 restent des hypothèses éditoriales, non des identités doctrinales.
+
+## Clôture du premier passage du corpus prioritaire
+
+Inventaire cumulatif selon les relevés de lecture du registre (non réaudit indépendant des étapes antérieures) :
+| Unité | Bornes CW | Nombre de paragraphes |
+|---|---|---:|
+| Psychologie de l'inconscient | CW 7 §§ 1–201 | 201 |
+| Dialectique du moi et de l'inconscient | CW 7 §§ 202–406 | 205 |
+| Appendices historiques | CW 7 §§ 407–521 | 115 |
+| À propos de la renaissance | CW 9i §§ 199–258 | 60 |
+| Une expérience du processus d'individuation | CW 9i §§ 525–626 | 102 |
+| La Fonction transcendante | CW 8 §§ 131–193 | 63 |
+| Psychanalyse et cure d'âme | CW 11 §§ 539–552 | 14 |
+| Sur les phénomènes occultes | CW 18 §§ 697–789 | 93 |
+| Total des paragraphes numérotés | | 853 |
+
+Le premier passage est achevé selon les relevés existants : 16 chapitres, la conclusion du premier essai, deux appendices et les cinq ensembles du recueil français repérés dans les CW anglais. Les 853 paragraphes sont un décompte des plages et non une mesure de la qualité de lecture. Aïon reste complémentaire, hors de ce bilan. Le dossier Jung ne peut pas encore être déclaré exhaustif ni validé.
+
+### Passage suivant : audit puis reconstruction
+- Vérifier la correspondance exacte des éditions françaises, les variantes et les références de notes ; résoudre les lacunes OCR et l'accès aux 24 planches avant de valider l'analyse iconographique.
+- Relire les passages charnières et confronter le registre aux fiches existantes. Distinguer absence de notion, traitement insuffisant et simple doublon.
+- Reconstruire une architecture provisoire autour des problèmes de différenciation, compensation, symbolisation et individuation ; établir pour chaque relation conceptuelle des ancrages précis, ses limites et ses variations historiques. Ne pas transformer cette proposition en hiérarchie définitive avant audit.
+- Séparer la pensée de Jung, sa réception critique et les transpositions pédagogiques originales. Ne pas réduire l'auteur à son utilité théâtrale ; conserver les concepts essentiels, y compris ceux qui ne donnent pas immédiatement un exercice.
+- Seulement ensuite, proposer la compression et les cartes à intégrer dans Atlas 3. Aucun changement au lecteur, ni aux Atlas 1, 2 et 4.
+
+Limites : les notes encore non collationnées, les 24 planches non vérifiées, les différences de traduction et le contrôle des relevés antérieurs restent explicitement ouverts. Le premier passage n'est pas l'achèvement de l'audit.
