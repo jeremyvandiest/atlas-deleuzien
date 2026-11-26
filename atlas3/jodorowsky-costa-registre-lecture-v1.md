@@ -237,3 +237,38 @@ C. Réception et initiative. Dans une improvisation à deux, répartir des fonct
 La recherche française et anglaise a confirmé les notices Albin Michel, Google Books et Apple Books, sans texte intégral accessible. Le PDF https://escuelainfinita.com/wp-content/uploads/2020/10/METAGENEALOGIA-JODOROWSKY.pdf a été ouvert : 243 lignes, document secondaire de Maite Sarrió Catalá, et non l'ouvrage des deux auteurs. Ne pas l'intégrer comme source primaire ni utiliser ses affirmations diagnostiques. Aucune nouvelle partie complète de Métagénéalogie validée.
 ### Reprise
 Poursuivre les fenêtres manquantes de l'introduction et de la première partie, puis avancer dans le livre selon son organisation. Examen des planches à mener séparément. Le dossier de 22 notions et 29 sections reste intact dans l'application.
+
+
+## La Voie du tarot — premier passage textuel de la partie I
+Source rouverte : https://pdfcoffee.com/la-voie-du-tarot-french-edition-by-jodorowsky-alexandro-pdf-free.html . Fenêtres affichées dans cette session couvrant les lignes 191–556, jointes par recouvrement. La partie I est désormais parcourue dans la transcription. L'introduction générale (70–190) n'est pas intégralement contrôlée ; la présente étape a repris 167–190. Les planches, les tableaux dont les colonnes ont été désorganisées par l'extraction (notamment 502–541), et l'exactitude de la transcription par rapport à l'imprimé demeurent à vérifier. Aucune validation des correspondances historiques ou métaphysiques n'est revendiquée.
+### Index de reprise (lignes de la transcription)
+| Plage | Entrée |
+|---|---|
+| 191–232 | Ouverture : totalité, asymétrie, numérologie |
+| 233–249 | Composition et identification |
+| 250–296 | Majeurs et orientation |
+| 297–343 | Mineurs, Couleurs et Figures |
+| 344–403 | Numérologie et dynamique |
+| 404–463 | Séries décimales, mutation, récapitulatif |
+| 464–486 | Mandala |
+| 487–556 | Onze couleurs et pluralité des classements |
+| 557–598 | Ouverture de la partie II : extraits 559–564, 568–581, 586–598, non clôturée |
+
+### Ancrages à conserver
+- 207–208, 344–346 : ordre d'ensemble, comparaison sans concordance forcée.
+- 214–217 : asymétrie et détails.
+- 229–230, 357–358 : réception et action, tension entre distinction fonctionnelle et analogie sexuée.
+- 252–266, 278–282 : première impression, orientation, relations.
+- 317–318, 332–338 : inspiration et travail ; spatialisation des Figures.
+- 372–395 : variations de relation entre degrés.
+- 487–489, 549–556 : ambivalence des couleurs et multiplicité des classements.
+- 561–564, 568–572, 586–592 : étude par le dessin, paroles imaginées, superposition et retour critique sur la projection ; début de la partie II, encore en cours.
+### Reconstruction originale : six problèmes et tests pour Atlas 3
+1. **La différence au sein de la répétition.** Construire une courte partition de quatre gestes analogues, puis faire varier un seul paramètre dans le dernier : durée, direction ou distance. Faire décrire les écarts effectivement perçus. Rejouer en changeant un autre paramètre. Ne pas convertir la formule arithmétique des auteurs en loi universelle de la composition. Passerelle possible vers Deleuze, à développer sans modifier Atlas 1.
+2. **Le détail et l'ensemble.** Une personne tient une lettre dans un tableau vivant. En gardant exactement le même geste, modifier le placement des deux partenaires. Dans la première configuration, l'action semble une remise ; dans la seconde, une rétention ; dans la troisième, une hésitation. Vérifier auprès des observateurs si les lectures divergent et ce qui fonde chaque lecture. La signification appartient aussi aux relations, non au seul geste.
+3. **Réception et action.** Deux acteurs préparent une scène avec un objectif partagé ; chaque partenaire peut déplacer, suspendre ou transformer une proposition. Décrire la réception comme une activité perceptive, pas comme une inertie ni comme un trait de genre. Relier à Meisner et Chekhov après étude de leurs termes exacts.
+4. **La clôture et l'invention.** Reprendre une partition maîtrisée jusqu'à ce que l'interprète puisse la jouer avec précision. Introduire une contrainte nouvelle choisie par les participants. Comparer une variation qui enrichit le jeu et une variation qui détruit inutilement sa cohérence. La perfection et la crise n'ont pas à être des étapes imposées ; une stabilité peut être une ressource.
+5. **La couleur comme opération de composition.** Une même écharpe rouge, éclairée et située de trois façons dans une scène fictive, peut attirer l'attention, rappeler un personnage absent ou souligner une rupture. Demander de justifier la lecture à partir du jeu, du contexte et de la lumière. Aucune correspondance psychologique universelle ni diagnostic à partir d'une couleur. Les analogies physiologiques de l'ouvrage ne constituent pas des explications médicales.
+6. **Une image parle-t-elle, ou lui prêtons-nous une voix ?** À partir d'une image originale non divinatoire, deux interprètes écrivent chacun un bref monologue pour le même objet. Ils confrontent ensuite leurs choix au cadre visible. Garder plusieurs lectures, y compris une lecture qui dément la première impression. Le monologue est une invention de l'auteur, pas une voix extérieure ni une connaissance cachée. Rapprocher du travail jungien sur l'image et de l'incorporation chez Chekhov sans assimilation. Aucun état altéré ni induction de transe.
+### Décisions
+La structure du Tarot et les significations individuelles des Arcanes relèvent du futur travail d'Atlas 4. Pour Atlas 3, retenir les opérations artistiques, les tensions entre choix et disponibilité, et les limites de l'interprétation. Les analogies historiques, religieuses et biologiques des auteurs doivent être examinées comme telles. Aucun changement du dossier dans l'application. Prochaine reprise : introduction générale manquante (70–166), puis compléter l'ouverture de la partie II et avancer dans les notices par ordre. Ne pas déclarer Métagénéalogie intégralement lue.
