@@ -539,3 +539,32 @@ Cette observation concerne les reproductions, non l'examen matériel des origina
 
 ### Correspondance française partiellement vérifiée
 Bibliothèque nationale de France : https://catalogue.bnf.fr/ark:/12148/cb46860411p — Albin Michel, 2021, trad. Claude Maillard, Christine Pflieger-Maillard et Roland Bourneuf. Les correspondances de paragraphes de l'édition 1990 sont documentées par la SFPA : https://cgjungfrance.com/2006/04/les-archetypes-de-l-inconscient/ ; par exemple CW 9/I §§ 240–258 = éd. 1990 §§ 42–60, et CW 9/I §§ 564–568 = §§ 100–104. Ce repérage ne constitue ni lecture de l'édition française ni collation de sa traduction. Les notes restantes et la concordance complète des éditions demeurent ouvertes.
+
+
+## Correction de périmètre : trois textes supplémentaires du recueil français
+
+La concordance SFPA du CW 18 (https://cgjungfrance.com/2006/05/la-vie-symbolique/, entrées 000693–000695) atteste dans L'Âme et le Soi, éd. Albin Michel 1990, les trois unités suivantes : CW 18 §§ 1431–1444 = français §§ 331–344, p. 249–257 ; §§ 1445–1446 = français §§ 345–346, p. 258–259 ; §§ 1447–1451 = français §§ 347–351, p. 260–262. Elles avaient été omises du relevé initial limité à la section IV du CW 18. Le statut de clôture antérieur doit être compris comme celui du périmètre alors identifié, non du recueil complet.
+
+Source primaire rouverte : https://dokumen.pub/collected-works-of-cg-jung-volume-18-collected-works-of-c-g-jung-volume-18-the-symbolic-life-miscellaneous-writings-course-booknbsped-9781400851010.html ; lignes 5280–5388 affichées par fenêtres recouvrantes. Texte et notes éditoriales incluses dans ces fenêtres, OCR dégradé ; pas de collation mot à mot.
+
+- §§ 1431–1436 : échange de 1954, statut des témoignages et limites de l'enquête.
+- §§ 1437–1440 : questions supplémentaires, hypothèses physiques et politiques, réaction collective envisagée.
+- §§ 1441–1444 : comparaison historique, contexte des tensions politiques et suspension du jugement.
+- §§ 1445–1446 : déclaration publique de 1958, rectification d'une attribution de croyance.
+- §§ 1447–1451 : lettre à Keyhoe, distinction entre événement et représentation, rôle des rumeurs.
+
+Conséquence Atlas : faire jouer à trois personnages une même observation ambiguë avec des récits divergents ; demander ensuite quel élément permettrait de vérifier leurs interprétations. La fiction peut garder l'incertitude sans transformer une hypothèse parapsychologique en preuve. Contextualiser les analogies coloniales et les affirmations historiques de Jung ; ne pas reprendre ses jugements sur les peuples ou ses conjectures institutionnelles comme des faits.
+
+Bilan révisé des plages numérotées consignées : 853 + 21 = 874. Ce décompte ne vaut toujours pas relecture indépendante de tous les relevés. Concordance de l'édition 1990 étendue ; contenu exact de l'édition 2021 et notes à collationner. Aucune lecture intégrale d'Aïon revendiquée.
+
+### Tableau de concordance de travail
+| Unité | CW | Édition française 1990 (SFPA) |
+|---|---|---|
+| Renaissance | 9/I §§ 199–258 | §§ 1–60, p. 17–60 |
+| Étude d'individuation | 9/I §§ 525–626 | §§ 61–162, p. 63–129 |
+| Fonction transcendante | 8 §§ 131–193 | §§ 163–224, p. 151–178 (préface avant p. 151 ; écart de numérotation à contrôler) |
+| Psychanalyse et cure d'âme | 11 §§ 539–552 | §§ 226–239, p. 181–189 |
+| Phénomènes occultes, cinq contributions | 18 §§ 697–789 | §§ 240–330 |
+| Trois textes sur les soucoupes volantes | 18 §§ 1431–1451 | §§ 331–351, p. 249–262 |
+
+Sources secondaires de concordance : https://cgjungfrance.com/2006/04/les-archetypes-de-l-inconscient/ ; https://cgjungfrance.com/2006/04/structure-et-dynamiques-de-la/ ; https://cgjungfrance.com/2006/05/psychologie-et-religion-ouest-et/ ; https://cgjungfrance.com/2006/05/la-vie-symbolique/. La pagination SFPA du premier texte de 1905 comporte une coquille apparente (293–214) ; elle n'est pas reproduite comme repère fiable. Édition française elle-même non accessible dans cette session.
