@@ -262,9 +262,10 @@
     const arrow='a3jung-arrow-'+card.n;
     const edges=card.edges.map((edge,i)=>{
       const a=pos[edge.a],b=pos[edge.b];let x1,y1,x2,y2,path;
-      if(b.r>a.r){x1=a.x+nw/2;y1=a.y+nh;x2=b.x+nw/2;y2=b.y;const mid=(y1+y2)/2;path='M'+x1+' '+y1+' C'+x1+' '+mid+' '+x2+' '+mid+' '+x2+' '+y2;}
-      else if(b.r===a.r){const right=b.x>a.x;x1=a.x+(right?nw:0);x2=b.x+(right?0:nw);y1=a.y+nh/2;y2=b.y+nh/2;path='M'+x1+' '+y1+' L'+x2+' '+y2;}
-      else{const lane=12+(i%3)*5;x1=a.x;y1=a.y+nh/2;x2=b.x;y2=b.y+nh/2;path='M'+x1+' '+y1+' H'+lane+' V'+y2+' H'+x2;}
+      if(b.r===a.r+1){x1=a.x+nw/2;y1=a.y+nh;x2=b.x+nw/2;y2=b.y;const mid=(y1+y2)/2;path='M'+x1+' '+y1+' C'+x1+' '+mid+' '+x2+' '+mid+' '+x2+' '+y2;}
+      else if(b.r===a.r && Math.abs(a.x-b.x)<=nw+gap+1){const right=b.x>a.x;x1=a.x+(right?nw:0);x2=b.x+(right?0:nw);y1=a.y+nh/2;y2=b.y+nh/2;path='M'+x1+' '+y1+' L'+x2+' '+y2;}
+      else if(b.r===a.r){x1=a.x+nw/2;x2=b.x+nw/2;y1=a.y+nh;y2=b.y+nh;const lane=y1+13+(i%3)*5;path='M'+x1+' '+y1+' V'+lane+' H'+x2+' V'+y2;}
+      else{const down=b.r>a.r;const side=(a.x+b.x+nw)>width;const lane=side?width-10-(i%3)*5:10+(i%3)*5;x1=a.x+nw/2;x2=b.x+nw/2;y1=a.y+(down?nh:0);y2=b.y+(down?0:nh);const l1=y1+(down?15:-15),l2=y2+(down?-15:15);path='M'+x1+' '+y1+' V'+l1+' H'+lane+' V'+l2+' H'+x2+' V'+y2;}
       const dash=edge.dash?' stroke-dasharray="6 5"':'';
       return '<path d="'+path+'" fill="none" stroke="currentColor" stroke-opacity=".65" stroke-width="1.6"'+dash+(edge.kind!=='line'?' marker-end="url(#'+arrow+')"':'')+(edge.kind==='both'?' marker-start="url(#'+arrow+')"':'')+'/>';
     }).join('');
@@ -285,7 +286,7 @@
         return index<0?'':'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\'jung\','+index+')">'+e(term)+'</button>';
       }).join('');
       const links=card.edges.map(edge=>'<li><strong>'+e(card.nodes[edge.a])+'</strong> '+(edge.kind==='both'?'↔':edge.kind==='arrow'?'→':'—')+' '+e(card.nodes[edge.b])+(edge.label?' : '+e(edge.label):'')+'</li>').join('');
-      return '<details class="a3r-v15-depth" style="margin:.65rem 0"><summary>'+String(card.n).padStart(2,'0')+' · '+e(card.title)+'</summary><div style="--a3jung-node:#253342;--a3jung-border:#91a5ba;--a3jung-text:#f5f7fa;--a3jung-arrow:#9eafc2;background:#17232f;border-radius:12px;padding:.5rem;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain" role="region" tabindex="0" aria-label="Schéma défilable horizontalement">'+jungVisualSvg(card)+'</div><p><strong>À retenir :</strong> '+e(card.note)+'</p><details><summary>Lecture détaillée des liens</summary><ul>'+links+'</ul><p>Trait discontinu : relation théorique, hypothèse ou réserve selon le libellé.</p></details><h4>Notions à explorer</h4><div class="a3r-mini-links">'+buttons+'</div><p class="a3r-quiet">'+e(card.source)+'</p></details>';
+      return '<details class="a3r-v15-depth" style="margin:.65rem 0"><summary>'+String(card.n).padStart(2,'0')+' · '+e(card.title)+'</summary><div style="--a3jung-node:#253342;--a3jung-border:#91a5ba;--a3jung-text:#f5f7fa;--a3jung-arrow:#9eafc2;background:#17232f;border-radius:12px;padding:.5rem;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain" role="region" tabindex="0" aria-label="Schéma défilable horizontalement">'+jungVisualSvg(card)+'</div><p><strong>À retenir :</strong> '+e(card.note)+'</p><details'+(card.edges.some(edge=>edge.label)?' open':'')+'><summary>Lecture détaillée des liens</summary><ul>'+links+'</ul><p>Trait discontinu : relation théorique, hypothèse ou réserve selon le libellé.</p></details><h4>Notions à explorer</h4><div class="a3r-mini-links">'+buttons+'</div><p class="a3r-quiet">'+e(card.source)+'</p></details>';
     }
     return '<section class="a3r-editorial-terms" aria-label="Cartes conceptuelles de Jung"><h2>Comprendre Jung en images · 14 schémas</h2><p>Des cartes de lecture complémentaires au dossier intégral. Ouvre un schéma puis explore les notions associées. Sur un écran étroit, fais défiler le dessin horizontalement si nécessaire.</p>'+groups.map(g=>'<section><h3>'+e(g[0])+'</h3>'+g.slice(1).map(n=>cardHtml(byId.get(n))).join('')+'</section>').join('')+'</section>';
   }
