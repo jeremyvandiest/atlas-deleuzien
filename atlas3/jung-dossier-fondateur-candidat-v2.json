@@ -1,0 +1,1068 @@
+{
+  "status": "Candidat éditorial non publié, audit primaire partiel",
+  "baseline": {
+    "path": "atlas3-v15.js",
+    "ref": "main",
+    "sha": "562e3946b5c2a3a40b2a95015f926d13d474ea59",
+    "version": "V1.6.21",
+    "terms": 41
+  },
+  "register": {
+    "path": "atlas3/jung-cw07-registre-couverture-v1.md",
+    "sha": "f9d74423b828729ef1e1ba235d4fae7bd40f4dd5",
+    "numberedParagraphs": 853,
+    "status": "relevés cumulatifs, pas une relecture indépendante de chaque paragraphe"
+  },
+  "id": "jung",
+  "title": "Carl Gustav Jung — différenciation, symbolisation et individuation",
+  "domain": "Psychologie analytique et imagination",
+  "source": "Premier relevé de trois ouvrages dans les CW anglais, 853 paragraphes, avec appendices. Recontrôle ciblé du CW 7 §§ 114–116, 266–269, 274–275, 291, 388–398, 400 et CW 8 § 177. Notes, planches et correspondance française à terminer. Les notions de CW 6, CW 8 (complexes, synchronicité), CW 9ii et alchimie gardent leur statut de lectures ciblées ou secondaires.",
+  "intro": "Pourquoi certaines attitudes, images et relations nous échappent-elles, et comment deviennent-elles des occasions de différenciation ? Jung part des limites des explications psychologiques exclusives pour élaborer une théorie des relations entre le moi, l'inconscient et la totalité psychique.",
+  "question": "Comment se différencier de ses rôles et des images auxquelles on s'identifie, sans condamner la pluralité de la vie psychique ?",
+  "principle": "Lire Jung comme une pensée en mouvement : conflit et pluralité des lectures ; architecture de la psyché ; compensation ; différenciation des rôles et figures ; symbolisation ; fonction transcendante ; individuation ; portée et limites de l'expérience. Ce parcours ne confond pas sa théorie historique avec les exercices de théâtre qui en sont inspirés.",
+  "example": "Dans une scène, une lampe s'allume avant l'entrée de quelqu'un. Plusieurs histoires pourraient s'inventer autour de ce détail, mais le texte peut aussi garder son énigme ouverte.",
+  "counter": "Une figure récurrente n'est pas, à elle seule, la preuve d'un archétype universel ; l'image peut fonctionner dans l'œuvre sans renvoyer à la vie privée du spectateur.",
+  "boundary": "Aucune interprétation de rêve, aucune induction clinique, aucune symbolique universelle imposée aux scènes.",
+  "related": [
+    "chapitre-04",
+    "chapitre-05",
+    "chapitre-06",
+    "chapitre-07",
+    "chapitre-08",
+    "chapitre-09"
+  ],
+  "scenes": [
+    "salon-07"
+  ],
+  "links": [
+    {
+      "label": "Lexique jungien — imagination active",
+      "url": "https://www.jungpage.com/learn/jung-lexicon",
+      "kind": "Présentation de notions ; non collation de Jung"
+    },
+    {
+      "label": "Jung — Les Relations entre le moi et l'inconscient",
+      "url": "https://www.ronliskey.com/docs/collected-Works-07-Analytical-Psychology-by-C-G-Jung.pdf",
+      "kind": "Texte anglais extrait directement consulté ; contrôle visuel du PDF échoué. Pas de collation de l'édition française."
+    },
+    {
+      "label": "Jung — A Review of the Complex Theory (1934)",
+      "url": "https://www.assisiinstitute.com/uploads/1/2/8/4/128471677/jung-_a_review_of_the_complex_theory.pdf",
+      "kind": "Texte extrait consulté ; fac-similé p. 96–97 contrôlé visuellement (PDF p. 3). Texte historique, pas validation clinique contemporaine."
+    },
+    {
+      "label": "Jung — Aion, chapitre II : L'ombre",
+      "url": "https://www.abebooks.com/9780691018263/Aion-Researches-Phenomenology-Collected-Works-069101826X/plp",
+      "kind": "Extrait primaire anglais reproduit dans la présentation commerciale de l'édition Princeton, confronté à une transcription du texte. Ouvrage non intégralement lu."
+    },
+    {
+      "label": "Jung — la fonction transcendante",
+      "url": "https://iaap.org/jung-analytical-psychology/short-articles-on-analytical-psychology/the-transcendent-function/",
+      "kind": "Présentation institutionnelle secondaire."
+    },
+    {
+      "label": "IAAP — CW 6, Types psychologiques",
+      "url": "https://iaap.org/resources/academic-resources/collected-works-abstracts/volume-6-psychological-types/",
+      "kind": "Résumés savants, source secondaire"
+    },
+    {
+      "label": "IAAP — CW 7, Deux essais de psychologie analytique",
+      "url": "https://iaap.org/resources/academic-resources/collected-works-abstracts/volume-7-two-essays-analytical-psychology/",
+      "kind": "Résumés savants, source secondaire"
+    },
+    {
+      "label": "IAAP — CW 8, Structure et dynamique de la psyché",
+      "url": "https://iaap.org/resources/academic-resources/collected-works-abstracts/volume-8-structure-dynamics-psyche/",
+      "kind": "Résumés savants, source secondaire"
+    },
+    {
+      "label": "IAAP — CW 9/I, Archétypes et inconscient collectif",
+      "url": "https://iaap.org/resources/academic-resources/collected-works-abstracts/volume-9-1-archetypes-collective-unconscious/",
+      "kind": "Résumés savants, source secondaire"
+    },
+    {
+      "label": "IAAP — CW 9/II, Aion",
+      "url": "https://iaap.org/resources/academic-resources/collected-works-abstracts/volume-9-2-aion-researches-phenomenology-self/",
+      "kind": "Résumés savants, source secondaire"
+    },
+    {
+      "label": "Daryl Sharp — Jung Lexicon",
+      "url": "https://www.jungpage.org/learn/jung-lexicon",
+      "kind": "Lexique secondaire avec références aux œuvres"
+    },
+    {
+      "label": "C.G. Jung Institute of Los Angeles — Glossary",
+      "url": "https://www.junginla.org/glossary/",
+      "kind": "Glossaire institutionnel contemporain"
+    },
+    {
+      "label": "CW 8 — La Fonction transcendante",
+      "url": "https://www.academia.edu/42287539/C_G_Jung_Collected_Works_Volume_8_The_Structure_and_Dynamics_of_the_Psyche",
+      "kind": "Texte anglais ; passage ciblé recontrôlé"
+    },
+    {
+      "label": "SFPA — CW 9i",
+      "url": "https://cgjungfrance.com/2006/04/les-archetypes-de-l-inconscient/",
+      "kind": "Correspondance bibliographique et résumés, pas texte primaire"
+    }
+  ],
+  "terms": [
+    {
+      "term": "Psyché",
+      "definition": "Ensemble des processus conscients et inconscients dans la psychologie analytique. Elle ne se confond pas avec le moi.",
+      "category": "Architecture de la psyché",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Conscience",
+      "definition": "Rapport des contenus psychiques au moi ; un contenu peut agir sans être pleinement conscient.",
+      "category": "Architecture de la psyché",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Moi",
+      "definition": "Centre du champ conscient et de l’expérience de continuité du sujet. Le moi n’est pas la totalité psychique.",
+      "category": "Architecture de la psyché",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Inconscient personnel",
+      "definition": "Ensemble des contenus inconscients liés notamment à l’histoire singulière, aux oublis, aux refoulements et aux expériences insuffisamment reconnues.",
+      "category": "Architecture de la psyché",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Inconscient collectif",
+      "definition": "Hypothèse jungienne d’une dimension psychique universelle, non acquise seulement par l’histoire personnelle, dont les archétypes sont les structures. Son universalité et son mode de transmission ne sont pas des faits établis.",
+      "category": "Architecture de la psyché",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Soi",
+      "definition": "Totalité hypothétique de la psyché consciente et inconsciente, excédant le moi ; Jung la figure également comme centre de totalité. Le moi ne peut en acquérir une connaissance complète. La définition de 1916 diffère de celle du texte remanié.",
+      "category": "Architecture de la psyché",
+      "references": "CW 7 §§ 274, 398–405, 511–521",
+      "change": "approfondissement"
+    },
+    {
+      "term": "Persona",
+      "definition": "Formation de compromis et fonction d'adaptation entre sujet et attentes collectives. Le problème n'est pas l'existence du rôle mais l'identification qui le fait passer pour toute la personnalité.",
+      "category": "Forces, rôles et relations",
+      "references": "CW 7 §§ 243–247, 269, 305–311",
+      "change": "approfondissement"
+    },
+    {
+      "term": "Complexe",
+      "definition": "Organisation affectivement chargée qui peut acquérir une autonomie relative et intervenir dans une réaction ; notion de la psychologie analytique.",
+      "category": "Forces, rôles et relations",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Constellation",
+      "definition": "Mobilisation d’un complexe ou d’une configuration affective à l’occasion d’une situation. Le terme ne permet pas de déduire un complexe précis d’un geste isolé.",
+      "category": "Forces, rôles et relations",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Libido",
+      "definition": "Chez Jung, notion élargie d’énergie psychique, non limitée à la sexualité. Il s’agit d’un modèle théorique, pas d’une énergie physique mesurable.",
+      "category": "Forces, rôles et relations",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Compensation",
+      "definition": "Relation postulée entre les processus inconscients et l'attitude consciente ; elle peut la compléter, la nuancer ou la contrebalancer, sans être nécessairement son contraire.",
+      "category": "Forces, rôles et relations",
+      "references": "CW 7 §§ 274–275, 114–116",
+      "change": "approfondissement"
+    },
+    {
+      "term": "Projection",
+      "definition": "Attribution à un objet ou à autrui de contenus subjectifs dont on ne reconnaît pas la provenance. Une appréciation exacte ou une critique légitime n’est pas nécessairement une projection.",
+      "category": "Forces, rôles et relations",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Identification",
+      "definition": "Confusion relative entre le moi et un rôle, une figure, un contenu psychique ou une valeur. Chez Jung, elle peut empêcher une différenciation ; elle ne se confond pas avec toute empathie ou tout jeu de rôle.",
+      "category": "Forces, rôles et relations",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Inflation",
+      "definition": "Extension excessive du sentiment de soi par appropriation de contenus ou de prestige dépassant le moi ; peut aussi se jouer dans une relation d'autorité. La personnalité mana est un développement spécifique de cette question.",
+      "category": "Forces, rôles et relations",
+      "references": "CW 7 §§ 221–242, 374–398",
+      "change": "approfondissement"
+    },
+    {
+      "term": "Ombre",
+      "definition": "Dans la psychologie analytique, aspects psychiques peu reconnus ou écartés par le moi. Leur reconnaissance ne prouve pas que toute critique d'autrui soit une projection.",
+      "category": "Figures et formes de l’imaginaire",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Archétype",
+      "definition": "Hypothèse de disposition formelle transpersonnelle, distincte des images particulières produites et élaborées dans un contexte. Les analogies entre motifs ne démontrent pas une transmission héréditaire.",
+      "category": "Figures et formes de l’imaginaire",
+      "references": "CW 7 §§ 101–109 ; CW 9i §§ 525–626",
+      "change": "approfondissement"
+    },
+    {
+      "term": "Image archétypique",
+      "definition": "Représentation particulière, historiquement et culturellement située, que la théorie jungienne rapporte à un archétype. La ressemblance entre deux images ne suffit pas à démontrer une origine universelle.",
+      "category": "Figures et formes de l’imaginaire",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Anima",
+      "definition": "Chez Jung, figure de l’inconscient traditionnellement décrite comme féminine chez l’homme, liée aux projections et à la relation entre conscience et inconscient. Cette formulation historique, genrée, ne constitue pas une loi sur les hommes ou les femmes.",
+      "category": "Figures et formes de l’imaginaire",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Animus",
+      "definition": "Chez Jung, figure de l’inconscient traditionnellement décrite comme masculine chez la femme, liée notamment aux projections. Les relectures contemporaines peuvent penser ces figures au-delà de la binarité et des stéréotypes de Jung.",
+      "category": "Figures et formes de l’imaginaire",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Syzygie",
+      "definition": "Couple de figures complémentaires ou opposées ; dans Aion, Jung examine notamment l’anima et l’animus sous ce nom. Il ne s’agit pas d’un modèle obligatoire du couple amoureux.",
+      "category": "Figures et formes de l’imaginaire",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Individuation",
+      "definition": "Processus de différenciation et de transformation du rapport entre moi, inconscient et monde collectif ; ne se confond ni avec individualisme ni avec une maîtrise totale de la psyché.",
+      "category": "Transformation psychique",
+      "references": "CW 7 §§ 266–269, 274, 398–406",
+      "change": "approfondissement"
+    },
+    {
+      "term": "Opposés psychiques",
+      "definition": "Tendances, valeurs ou orientations qui se contrarient dans la vie psychique. Leur confrontation peut conduire à une transformation ; il ne s’agit pas de rechercher un compromis à tout prix.",
+      "category": "Transformation psychique",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Fonction transcendante",
+      "definition": "Processus de relation entre positions consciente et inconsciente pouvant faire émerger une attitude nouvelle ; la formulation créatrice et la compréhension se complètent, puis le moi prend position. Ni compromis mécanique ni promesse de résolution.",
+      "category": "Transformation psychique",
+      "references": "CW 8 §§ 131–193, surtout 177–193",
+      "change": "approfondissement"
+    },
+    {
+      "term": "Intégration",
+      "definition": "Processus par lequel des contenus jusque-là écartés deviennent davantage reconnus et mis en relation avec la vie consciente. Reconnaître une impulsion ne signifie ni s’y identifier ni la réaliser.",
+      "category": "Transformation psychique",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Symbole vivant",
+      "definition": "Forme exprimant ce qui reste insuffisamment compris ; ne se réduit pas à un signe de sens fixé.",
+      "category": "Symboles, rêves et création",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Signe",
+      "definition": "Expression renvoyant à une signification déjà déterminée. Jung distingue le signe du symbole, qui ouvre sur un sens encore insuffisamment connu.",
+      "category": "Symboles, rêves et création",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Rêve",
+      "definition": "Dans la théorie jungienne, production spontanée de la vie psychique qui peut mettre en image un rapport à la situation consciente. Une interprétation reste située et hypothétique ; il n’existe pas de dictionnaire universel des rêves.",
+      "category": "Symboles, rêves et création",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Imagination active",
+      "definition": "Méthode jungienne de confrontation consciente à des images ou affects spontanés, avec mise en forme, compréhension et réponse du moi ; distincte de la rêverie et de la création artistique. Étudiée ici comme méthode historique, non protocole autonome.",
+      "category": "Symboles, rêves et création",
+      "references": "CW 8 §§ 166–193 ; CW 9i §§ 617–626",
+      "change": "approfondissement"
+    },
+    {
+      "term": "Amplification",
+      "definition": "Élargissement de l’examen d’une image par des parallèles personnels, mythologiques, religieux ou culturels. La comparaison enrichit des hypothèses de lecture, sans imposer un sens préétabli.",
+      "category": "Symboles, rêves et création",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Mandala",
+      "definition": "Figure organisée autour d’un centre, souvent circulaire ou quadripartite, que Jung étudie comme une forme possible de symbolisation de la totalité psychique. Toute figure circulaire n’a pas nécessairement cette fonction.",
+      "category": "Symboles, rêves et création",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Introversion",
+      "definition": "Orientation privilégiant le rapport du sujet à son expérience intérieure. Dans la typologie de Jung, elle ne se réduit pas à la timidité ni au besoin de solitude.",
+      "category": "Orientations et fonctions de la conscience",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Extraversion",
+      "definition": "Orientation privilégiant le rapport à l’objet et au monde extérieur. Elle ne se confond pas avec la sociabilité ou l’exubérance.",
+      "category": "Orientations et fonctions de la conscience",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Pensée",
+      "definition": "Fonction par laquelle Jung décrit une organisation des contenus selon des rapports conceptuels ou logiques. Elle n’est pas synonyme d’intelligence générale.",
+      "category": "Orientations et fonctions de la conscience",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Sentiment",
+      "definition": "Fonction d’évaluation ou de jugement de valeur dans les Types psychologiques ; distincte de la seule intensité émotionnelle.",
+      "category": "Orientations et fonctions de la conscience",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Sensation",
+      "definition": "Fonction de perception de ce qui se présente par les sens et de ses qualités concrètes. À distinguer de la sensation telle que travaillée dans la voie spirituelle d’Ansa.",
+      "category": "Orientations et fonctions de la conscience",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Intuition",
+      "definition": "Fonction de perception de possibilités ou de rapports qui ne sont pas entièrement explicités. Elle ne garantit ni la connaissance du futur ni la justesse d’une impression.",
+      "category": "Orientations et fonctions de la conscience",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Fonction inférieure",
+      "definition": "Fonction moins différenciée dans la typologie jungienne, susceptible de compenser une orientation dominante. Ce modèle n’est ni un test validé pour classer les lecteurs ni une hiérarchie de valeur des personnes.",
+      "category": "Orientations et fonctions de la conscience",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Synchronicité",
+      "definition": "Hypothèse tardive de Jung concernant des coïncidences porteuses de sens qu’il envisage sans lien causal ordinaire. Elle ne constitue pas une preuve de destin, de télépathie ou de causalité invisible.",
+      "category": "Horizon tardif : mythes, alchimie et totalité",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Alchimie psychologique",
+      "definition": "Lecture jungienne des images et opérations de l’alchimie comme matériau de symbolisation des transformations psychiques. À distinguer de l’histoire de la chimie et des intentions propres aux alchimistes.",
+      "category": "Horizon tardif : mythes, alchimie et totalité",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Conjonction des opposés (coniunctio)",
+      "definition": "Motif alchimique que Jung interprète comme une mise en relation des oppositions psychiques. La totalité symbolisée n’est pas l’abolition de toute différence.",
+      "category": "Horizon tardif : mythes, alchimie et totalité",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Numineux",
+      "definition": "Qualité d’une expérience ressentie comme saisissante et dépassant la maîtrise ordinaire du moi ; Jung emprunte le terme à Rudolf Otto. L’intensité ressentie ne prouve pas la réalité surnaturelle de son objet.",
+      "category": "Horizon tardif : mythes, alchimie et totalité",
+      "change": "conservé",
+      "references": "Voir références de l'ancien dossier ; ancrage individualisé à contrôler"
+    },
+    {
+      "term": "Éros",
+      "definition": "Orientation vers le lien et le désir, dont Jung discute la primauté dans la lecture freudienne ; ne pas en faire une explication unique.",
+      "category": "Genèse et méthodes",
+      "references": "CW 7 §§ 16–34, 42–55",
+      "change": "ajout"
+    },
+    {
+      "term": "Volonté de puissance",
+      "definition": "Dans la confrontation avec Adler, orientation vers la maîtrise ou la sécurité du moi ; distincte de l'ensemble de la philosophie de Nietzsche.",
+      "category": "Genèse et méthodes",
+      "references": "CW 7 §§ 35–55",
+      "change": "ajout"
+    },
+    {
+      "term": "Méthode réductive",
+      "definition": "Remonter d'une formation psychique à ses conditions et à son histoire ; utile sans épuiser sa portée.",
+      "category": "Genèse et méthodes",
+      "references": "CW 7 §§ 65–70, 121–132",
+      "change": "ajout"
+    },
+    {
+      "term": "Méthode constructive",
+      "definition": "Examiner ce que les formations psychiques rendent possible au-delà d'une explication par leurs antécédents.",
+      "category": "Genèse et méthodes",
+      "references": "CW 7 §§ 121–140 ; CW 8 §§ 147–151",
+      "change": "ajout"
+    },
+    {
+      "term": "Finalité psychique",
+      "definition": "Orientation prospective postulée de certains processus, sans plan conscient ou destin prédéterminé.",
+      "category": "Genèse et méthodes",
+      "references": "CW 7 §§ 65–70, 290–292",
+      "change": "ajout"
+    },
+    {
+      "term": "Affect",
+      "definition": "Dimension éprouvée et chargée d'une situation ou d'un contenu ; à distinguer de la fonction de sentiment comme jugement de valeur.",
+      "category": "Forces, rôles et relations",
+      "references": "CW 7 §§ 19–28 ; CW 8 §§ 166–171",
+      "change": "ajout"
+    },
+    {
+      "term": "Autorégulation",
+      "definition": "Modèle de relations compensatoires entre processus psychiques, dont Jung suppose qu'ils participent à l'ajustement de la totalité.",
+      "category": "Transformation psychique",
+      "references": "CW 7 §§ 274–275",
+      "change": "ajout"
+    },
+    {
+      "term": "Unilatéralité",
+      "definition": "Prédominance d'une orientation au détriment d'autres possibilités, sans que toute spécialisation soit pathologique.",
+      "category": "Transformation psychique",
+      "references": "CW 7 §§ 78–96, 114–116",
+      "change": "ajout"
+    },
+    {
+      "term": "Énantiodromie",
+      "definition": "Renversement d'une orientation vers son contraire lorsqu'elle devient excessivement dominante ; ne pas confondre avec toute compensation.",
+      "category": "Transformation psychique",
+      "references": "CW 7 §§ 110–116",
+      "change": "ajout"
+    },
+    {
+      "term": "Imago",
+      "definition": "Configuration subjective d'une personne ou relation, façonnée par l'expérience et les attentes ; distincte de cette personne réelle.",
+      "category": "Forces, rôles et relations",
+      "references": "CW 7 §§ 293–301",
+      "change": "ajout"
+    },
+    {
+      "term": "Transfert",
+      "definition": "Déplacement et actualisation de contenus relationnels dans une relation présente, notamment analytique ; ne pas réduire toute relation à un transfert.",
+      "category": "Forces, rôles et relations",
+      "references": "CW 7 §§ 93–100, 206–209",
+      "change": "ajout"
+    },
+    {
+      "term": "Personnalité mana",
+      "definition": "Figure de puissance et de savoir exceptionnel à laquelle le moi peut s'identifier ; cas particulier d'inflation, avec une dimension collective et relationnelle.",
+      "category": "Figures et formes de l’imaginaire",
+      "references": "CW 7 §§ 374–398, en particulier 388–393",
+      "change": "ajout"
+    },
+    {
+      "term": "Personnification",
+      "definition": "Présentation d'un contenu ou d'une fonction psychique sous une figure personnelle ; ne démontre pas qu'une entité extérieure existe.",
+      "category": "Figures et formes de l’imaginaire",
+      "references": "CW 7 §§ 312–317, 336–340, 392",
+      "change": "ajout"
+    },
+    {
+      "term": "Différenciation",
+      "definition": "Reconnaître la différence entre le moi et une fonction, un rôle, un contenu ou une autre personne, tout en maintenant la possibilité d'une relation.",
+      "category": "Transformation psychique",
+      "references": "CW 7 §§ 266–269, 341–373",
+      "change": "ajout"
+    },
+    {
+      "term": "Niveau objectif et niveau subjectif",
+      "definition": "Deux angles d'interprétation : rapport de l'image à un objet ou une personne extérieure, et rapport aux dimensions psychiques du sujet. Aucun niveau ne permet d'inférer à lui seul des faits.",
+      "category": "Symboles, rêves et création",
+      "references": "CW 7 §§ 128–132",
+      "change": "ajout"
+    },
+    {
+      "term": "Réalité psychique",
+      "definition": "Statut de l'expérience psychique en tant qu'elle est vécue et agit ; distinct de l'établissement de la réalité extérieure de son objet.",
+      "category": "Architecture de la psyché",
+      "references": "CW 7 §§ 151–158, 351–359 ; CW 18 §§ 785–789",
+      "change": "ajout"
+    },
+    {
+      "term": "Individualisme",
+      "definition": "Mise en avant de la singularité au détriment des obligations collectives, dont Jung distingue explicitement l'individuation.",
+      "category": "Transformation psychique",
+      "references": "CW 7 §§ 266–269",
+      "change": "ajout"
+    },
+    {
+      "term": "Adaptation",
+      "definition": "Ajustement aux conditions de la vie extérieure et intérieure ; une adaptation réussie dans un seul domaine peut laisser d'autres exigences sans réponse.",
+      "category": "Forces, rôles et relations",
+      "references": "CW 7 §§ 250–259, 318–323",
+      "change": "ajout"
+    },
+    {
+      "term": "Renaissance",
+      "definition": "Famille d'expériences et d'idées de renouvellement, de transformation ou de participation rituelle que Jung distingue selon leur nature.",
+      "category": "Horizon tardif : mythes, alchimie et totalité",
+      "references": "CW 9i §§ 199–258",
+      "change": "ajout"
+    },
+    {
+      "term": "Transformation psychique",
+      "definition": "Modification du rapport aux contenus, attitudes et possibilités d'action ; distincte d'une émotion intense ou de la répétition d'une forme rituelle.",
+      "category": "Transformation psychique",
+      "references": "CW 9i §§ 206–239 ; CW 8 §§ 172–193",
+      "change": "ajout"
+    },
+    {
+      "term": "Suggestion",
+      "definition": "Influence des attentes et des indications sur la perception, le récit ou l'action, à considérer dans l'examen des expériences rapportées.",
+      "category": "Genèse et méthodes",
+      "references": "CW 18 §§ 697–706, 727–740",
+      "change": "ajout"
+    }
+  ],
+  "modules": [
+    {
+      "id": "genese",
+      "title": "Pourquoi une psychologie analytique ?",
+      "question": "Pourquoi des explications psychologiques opposées peuvent-elles rendre compte de la même situation ?",
+      "example": "Une personne décline une invitation. Elle peut craindre de perdre une relation ou refuser une dépendance. La même conduite ne tranche pas les deux lectures.",
+      "argument": "Le premier essai passe de la causalité et du conflit érotique à la lecture adlérienne par le pouvoir. Cette divergence oblige Jung à interroger les présupposés de celui qui interprète. La typologie puis l'approche constructive déplacent la question : une conduite a une histoire, mais ses possibilités futures ne sont pas épuisées par cette histoire.",
+      "distinction": "Cause et fonction prospective ne sont ni des ennemies ni des preuves interchangeables.",
+      "refs": [
+        "CW 7 §§ 1–15, 16–34, 35–55, 56–70, 121–132"
+      ],
+      "terms": [
+        "Éros",
+        "Volonté de puissance",
+        "Méthode réductive",
+        "Méthode constructive",
+        "Finalité psychique"
+      ],
+      "practice": "Composer deux versions d'un refus avec deux intentions différentes ; comparer les actes visibles."
+    },
+    {
+      "id": "architecture",
+      "title": "Le moi n'est pas toute la psyché",
+      "question": "Comment des réactions ou des images excèdent-elles ce que le sujet sait de lui ?",
+      "example": "Un mot banal provoque une réaction disproportionnée. Le sujet reconnaît la réaction sans savoir immédiatement ce qui l'organise.",
+      "argument": "Distinguer champ conscient, moi, processus inconscients et totalité hypothétique. Les complexes décrivent une organisation affective ; l'inconscient personnel renvoie à l'histoire singulière. Le collectif élargit cette théorie à des dispositions supposées transpersonnelles. Le Soi n'est pas un second moi qui commanderait le premier. Les formulations de 1916 ne doivent pas être confondues avec celles du texte remanié.",
+      "distinction": "Une régularité observée et l'hypothèse d'une structure héritée ont des statuts différents.",
+      "refs": [
+        "CW 7 §§ 19–28, 97–105, 202–220, 274–275, 398–406, 511–521",
+        "CW 8 §§ 194–205 (lecture ciblée antérieure)"
+      ],
+      "terms": [
+        "Psyché",
+        "Conscience",
+        "Moi",
+        "Inconscient personnel",
+        "Inconscient collectif",
+        "Soi",
+        "Complexe",
+        "Constellation",
+        "Affect"
+      ],
+      "practice": "Décrire les réactions d'un personnage à une même phrase dans trois situations ; ne pas lui attribuer une cause unique."
+    },
+    {
+      "id": "attitudes",
+      "title": "Orientation, unilatéralité et compensation",
+      "question": "Que devient une capacité négligée lorsqu'une orientation domine durablement ?",
+      "example": "Un personnage répond toujours par une analyse ; recevoir une émotion sans la commenter pourrait compléter sa réponse sans abolir son intelligence.",
+      "argument": "L'introversion et l'extraversion désignent des orientations, non des identités fixes. La théorie distingue aussi les fonctions psychologiques. La compensation peut compléter plutôt qu'inverser l'attitude consciente ; une inversion radicale risque de recréer l'unilatéralité. L'autorégulation est un modèle jungien, non une garantie automatique d'équilibre.",
+      "distinction": "Complément, opposition, renversement et intégration sont quatre opérations différentes.",
+      "refs": [
+        "CW 7 §§ 56–96, 110–120, 274–275, 290–292",
+        "CW 6 à relire pour les définitions spécialisées"
+      ],
+      "terms": [
+        "Introversion",
+        "Extraversion",
+        "Pensée",
+        "Sentiment",
+        "Sensation",
+        "Intuition",
+        "Fonction inférieure",
+        "Compensation",
+        "Autorégulation",
+        "Unilatéralité",
+        "Énantiodromie",
+        "Libido"
+      ],
+      "practice": "Conserver la tâche d'une scène mais varier l'attention portée au partenaire, à l'objet ou aux impressions."
+    },
+    {
+      "id": "relations",
+      "title": "Habiter un rôle sans s'y confondre",
+      "question": "Comment se différencier des attentes sociales et des images intérieures sans abolir la relation aux autres ?",
+      "example": "Une responsable peut rester responsable tout en renonçant à devoir tout savoir. Le rôle demeure ; son rapport au rôle change.",
+      "argument": "La persona rend possible une adaptation sociale, mais l'identification exclusive réduit les possibilités. L'ombre nomme des aspects non reconnus, sans les rendre nécessairement mauvais. Projection, imago, transfert et personnification expliquent dans ce modèle comment des contenus subjectifs modifient l'expérience d'une relation. L'anima et l'animus sont formulés dans des catégories sexuées historiques ; distinguer ces formulations de leurs réinterprétations. La personnalité mana radicalise le risque d'approprier un prestige collectif comme une puissance du moi.",
+      "distinction": "Se différencier ne signifie ni supprimer le rôle ni s'identifier à son envers.",
+      "refs": [
+        "CW 7 §§ 93–100, 221–269, 293–340, 374–398",
+        "CW 9ii §§ 13–19 (extrait antérieur)"
+      ],
+      "terms": [
+        "Persona",
+        "Ombre",
+        "Projection",
+        "Imago",
+        "Transfert",
+        "Identification",
+        "Inflation",
+        "Personnalité mana",
+        "Anima",
+        "Animus",
+        "Syzygie",
+        "Personnification",
+        "Différenciation"
+      ],
+      "practice": "Jouer une scène de direction avec autorité partagée, autorité rigide et dépendance à l'approbation."
+    },
+    {
+      "id": "symboles",
+      "title": "L'image n'est pas un code",
+      "question": "Qu'est-ce qu'une image permet de découvrir qu'une explication ne permet pas encore de formuler ?",
+      "example": "Une porte peut être un obstacle narratif, un motif de séparation ou une forme dont le sens demeure ouvert.",
+      "argument": "La lecture constructive ne remplace pas l'enquête historique. Elle considère aussi ce qu'une image rend possible. Distinguer signe et symbole ; archétype hypothétique et image effective ; association personnelle et parallèle culturel. L'étude des peintures d'individuation exige de distinguer forme visible, propos de l'auteure, intervention du praticien et hypothèse. L'analogie mythologique peut ouvrir une interprétation mais ne suffit pas à établir une origine universelle.",
+      "distinction": "La pluralité des lectures n'autorise pas n'importe quelle interprétation.",
+      "refs": [
+        "CW 7 §§ 101–109, 121–140, 490–502",
+        "CW 9i §§ 525–626, spécialement 565 et 616",
+        "CW 8 § 148"
+      ],
+      "terms": [
+        "Archétype",
+        "Image archétypique",
+        "Symbole vivant",
+        "Signe",
+        "Rêve",
+        "Amplification",
+        "Mandala",
+        "Niveau objectif et niveau subjectif",
+        "Réalité psychique",
+        "Alchimie psychologique"
+      ],
+      "practice": "Sur une image de fiction, relever trois éléments observables puis proposer deux lectures et indiquer ce qui reste indécidable."
+    },
+    {
+      "id": "transformation",
+      "title": "Mettre en forme, comprendre, prendre position",
+      "question": "Comment une contradiction peut-elle devenir une possibilité nouvelle sans être simplement résolue par la volonté ?",
+      "example": "Un personnage veut partir mais tient à un objet qui le rattache à un lieu. Les deux orientations peuvent produire une action inédite sans qu'une des deux disparaisse.",
+      "argument": "La fonction transcendante désigne un processus de relation entre conscient et inconscient. Dans le texte de 1916 remanié en 1958, Jung distingue notamment formulation créatrice et compréhension ; elles se complètent. Le moi doit ensuite prendre position, ce qui empêche de faire de l'imaginaire une autorité souveraine. L'imagination active est une méthode historique spécifique, distincte de l'improvisation artistique. La transformation ne se réduit ni à une prise de conscience intellectuelle ni à un effet esthétique.",
+      "distinction": "Exprimer, comprendre et agir sont des opérations liées mais non identiques ; aucun résultat n'est garanti.",
+      "refs": [
+        "CW 7 §§ 116–122, 341–373",
+        "CW 8 §§ 131–193, spécialement 172–193",
+        "CW 9i §§ 562–563"
+      ],
+      "terms": [
+        "Opposés psychiques",
+        "Fonction transcendante",
+        "Imagination active",
+        "Intégration",
+        "Conjonction des opposés (coniunctio)"
+      ],
+      "practice": "Écrire les deux orientations d'un personnage fictif ; les jouer ; chercher une autre action, puis examiner ses effets observables."
+    },
+    {
+      "id": "individuation",
+      "title": "Devenir singulier sans sortir du monde",
+      "question": "Pourquoi la différenciation n'est-elle pas l'individualisme ?",
+      "example": "Un interprète cesse de copier son modèle et trouve une variation personnelle, tout en répondant mieux aux partenaires.",
+      "argument": "L'individuation concerne la différenciation et la relation entre les dimensions psychiques, mais aussi l'inscription collective. Elle n'est ni une succession obligatoire d'étapes ni une maîtrise totale. Jung décrit les impasses d'une restauration rigide et d'une identification à une grandeur collective. L'étude de la renaissance distingue des transformations de nature différente ; une émotion ou un rite ne prouve pas une mutation durable. Le Soi excède toute connaissance complète.",
+      "distinction": "Singularisation, autonomie, appartenance et totalité ne sont pas synonymes.",
+      "refs": [
+        "CW 7 §§ 254–269, 274, 291–292, 398–406",
+        "CW 9i §§ 199–258, 617–626"
+      ],
+      "terms": [
+        "Individuation",
+        "Individualisme",
+        "Adaptation",
+        "Renaissance",
+        "Transformation psychique",
+        "Soi"
+      ],
+      "practice": "Rejouer une partition après avoir changé une seule contrainte ; distinguer variation immédiate et acquisition durable."
+    },
+    {
+      "id": "limites",
+      "title": "Expérience, croyance et réalité",
+      "question": "Comment reconnaître l'intensité d'une expérience sans en déduire une vérité extérieure ?",
+      "example": "Un même silence peut provoquer une impression de mystère chez plusieurs spectateurs sans qu'ils y attribuent la même signification.",
+      "argument": "Le recueil français rapproche la renaissance, la pratique analytique, le soin pastoral et des textes sur le spiritisme. La portée psychologique d'une croyance n'établit pas son objet. Les textes de 1905 et les écrits tardifs manifestent des changements de position. La synchronicité demeure une hypothèse à examiner dans son texte propre. La distinction des cadres permet de préserver leur spécificité sans réduire le spirituel au clinique ni le théâtre à une cure.",
+      "distinction": "Vécu, récit, interprétation et vérification sont distincts ; création artistique, soin et accompagnement spirituel ont des finalités différentes.",
+      "refs": [
+        "CW 9i §§ 206–211, 225–239",
+        "CW 11 §§ 539–552",
+        "CW 18 §§ 697–789"
+      ],
+      "terms": [
+        "Numineux",
+        "Synchronicité",
+        "Réalité psychique",
+        "Suggestion",
+        "Personnification"
+      ],
+      "practice": "Composer une scène ambiguë avec deux lectures possibles ; ne pas décider laquelle correspond à la vie intérieure des spectateurs."
+    }
+  ],
+  "maps": [
+    {
+      "id": "M1",
+      "title": "Architecture de la psyché",
+      "nodes": [
+        "Moi",
+        "Champ conscient",
+        "Inconscient personnel",
+        "Inconscient collectif (hypothèse)",
+        "Soi : totalité"
+      ],
+      "relations": [
+        [
+          "Moi",
+          "Champ conscient",
+          "centre de"
+        ],
+        [
+          "Champ conscient",
+          "Soi : totalité",
+          "partie de"
+        ],
+        [
+          "Inconscient personnel",
+          "Soi : totalité",
+          "partie de"
+        ],
+        [
+          "Inconscient collectif (hypothèse)",
+          "Soi : totalité",
+          "dimension postulée"
+        ]
+      ],
+      "layout": "ensembles non étanches ; aucune frontière anatomique",
+      "refs": "CW 7 § 274, §§ 398–405"
+    },
+    {
+      "id": "M2",
+      "title": "Deux lectures d'une même conduite",
+      "nodes": [
+        "Situation",
+        "Passé / causalité",
+        "Orientation / finalité",
+        "Interprétation révisable"
+      ],
+      "relations": [
+        [
+          "Situation",
+          "Passé / causalité",
+          "question"
+        ],
+        [
+          "Situation",
+          "Orientation / finalité",
+          "question"
+        ],
+        [
+          "Passé / causalité",
+          "Interprétation révisable",
+          "contribue"
+        ],
+        [
+          "Orientation / finalité",
+          "Interprétation révisable",
+          "contribue"
+        ]
+      ],
+      "layout": "bifurcation puis convergence, pas de causalité démontrée",
+      "refs": "CW 7 §§ 44–70, 121–132"
+    },
+    {
+      "id": "M3",
+      "title": "Compensation sans inversion obligatoire",
+      "nodes": [
+        "Attitude dominante",
+        "Contrepoint",
+        "Complément",
+        "Opposition",
+        "Renversement",
+        "Nouvelle orientation"
+      ],
+      "relations": [
+        [
+          "Attitude dominante",
+          "Contrepoint",
+          "peut susciter"
+        ],
+        [
+          "Contrepoint",
+          "Complément",
+          "possibilité"
+        ],
+        [
+          "Contrepoint",
+          "Opposition",
+          "possibilité"
+        ],
+        [
+          "Opposition",
+          "Renversement",
+          "risque"
+        ],
+        [
+          "Complément",
+          "Nouvelle orientation",
+          "peut contribuer"
+        ]
+      ],
+      "layout": "branches alternatives, retour possible",
+      "refs": "CW 7 §§ 114–116, 274–275"
+    },
+    {
+      "id": "M4",
+      "title": "Rôle, moi et relation",
+      "nodes": [
+        "Attentes collectives",
+        "Persona",
+        "Moi",
+        "Identification",
+        "Différenciation"
+      ],
+      "relations": [
+        [
+          "Attentes collectives",
+          "Persona",
+          "façonnent"
+        ],
+        [
+          "Moi",
+          "Persona",
+          "investit"
+        ],
+        [
+          "Persona",
+          "Identification",
+          "risque si exclusive"
+        ],
+        [
+          "Moi",
+          "Différenciation",
+          "peut opérer"
+        ]
+      ],
+      "layout": "situation interactive : varier un rôle sans le supprimer",
+      "refs": "CW 7 §§ 243–269, 305–311"
+    },
+    {
+      "id": "M5",
+      "title": "Image, symbole et interprétation",
+      "nodes": [
+        "Forme visible",
+        "Associations de l'auteur",
+        "Parallèles culturels",
+        "Hypothèses",
+        "Données insuffisantes"
+      ],
+      "relations": [
+        [
+          "Forme visible",
+          "Hypothèses",
+          "informe"
+        ],
+        [
+          "Associations de l'auteur",
+          "Hypothèses",
+          "informe"
+        ],
+        [
+          "Parallèles culturels",
+          "Hypothèses",
+          "élargit"
+        ],
+        [
+          "Hypothèses",
+          "Données insuffisantes",
+          "peut aboutir à"
+        ]
+      ],
+      "layout": "couches, comparer les hypothèses",
+      "refs": "CW 7 §§ 121–140 ; CW 9i §§ 565, 616"
+    },
+    {
+      "id": "M6",
+      "title": "Fonction transcendante",
+      "nodes": [
+        "Position consciente",
+        "Contenu inconscient",
+        "Mise en forme",
+        "Compréhension",
+        "Prise de position",
+        "Attitude nouvelle possible"
+      ],
+      "relations": [
+        [
+          "Position consciente",
+          "Mise en forme",
+          "participe"
+        ],
+        [
+          "Contenu inconscient",
+          "Mise en forme",
+          "participe"
+        ],
+        [
+          "Mise en forme",
+          "Compréhension",
+          "se complètent"
+        ],
+        [
+          "Compréhension",
+          "Mise en forme",
+          "se complètent"
+        ],
+        [
+          "Compréhension",
+          "Prise de position",
+          "prépare"
+        ],
+        [
+          "Prise de position",
+          "Attitude nouvelle possible",
+          "ouvre"
+        ]
+      ],
+      "layout": "processus révisable, pas d'étapes garanties",
+      "refs": "CW 8 §§ 172–193"
+    },
+    {
+      "id": "M7",
+      "title": "Individuation et inflation",
+      "nodes": [
+        "Remise en question",
+        "Rigidification",
+        "Identification collective",
+        "Différenciation",
+        "Relation au monde"
+      ],
+      "relations": [
+        [
+          "Remise en question",
+          "Rigidification",
+          "issue possible"
+        ],
+        [
+          "Remise en question",
+          "Identification collective",
+          "issue possible"
+        ],
+        [
+          "Remise en question",
+          "Différenciation",
+          "issue possible"
+        ],
+        [
+          "Différenciation",
+          "Relation au monde",
+          "transforme"
+        ]
+      ],
+      "layout": "bifurcations non linéaires",
+      "refs": "CW 7 §§ 254–269, 374–398"
+    },
+    {
+      "id": "M8",
+      "title": "Du vécu à la vérification",
+      "nodes": [
+        "Vécu",
+        "Récit",
+        "Interprétation",
+        "Vérification"
+      ],
+      "relations": [
+        [
+          "Vécu",
+          "Récit",
+          "mise en mots"
+        ],
+        [
+          "Récit",
+          "Interprétation",
+          "hypothèse"
+        ],
+        [
+          "Interprétation",
+          "Vérification",
+          "question factuelle distincte"
+        ]
+      ],
+      "layout": "quatre niveaux, possibilité de suspendre le jugement",
+      "refs": "CW 18 §§ 697–789"
+    },
+    {
+      "id": "M9",
+      "title": "Trois cadres, trois finalités",
+      "nodes": [
+        "Création artistique",
+        "Soin clinique",
+        "Accompagnement spirituel"
+      ],
+      "relations": [],
+      "layout": "colonnes indépendantes ; une forme commune ne signifie pas une finalité commune",
+      "refs": "CW 11 §§ 539–552 ; transposition Atlas"
+    }
+  ],
+  "priority": {
+    "foundations": [
+      "Moi",
+      "Soi",
+      "Inconscient personnel",
+      "Inconscient collectif",
+      "Complexe",
+      "Persona",
+      "Ombre",
+      "Archétype",
+      "Compensation",
+      "Projection",
+      "Différenciation",
+      "Symbole vivant",
+      "Fonction transcendante",
+      "Individuation",
+      "Imagination active",
+      "Inflation",
+      "Personnalité mana"
+    ],
+    "note": "Hiérarchie éditoriale provisoire et non classement ontologique. Les autres notions sont accessibles par les modules et le lexique."
+  },
+  "pending": [
+    "Audit des notes restantes et collation française",
+    "24 peintures non examinées visuellement",
+    "Relecture indépendante exhaustive des relevés antérieurs",
+    "CW 6 : typologie spécialisée ; CW 8 : complexes et synchronicité ; Aïon : ombre, syzygie et Soi ; textes alchimiques",
+    "Vérification des sources de chaque ancienne notice conservée",
+    "Intégration visuelle et tests du lecteur"
+  ]
+}
