@@ -425,3 +425,16 @@ D. Conserver les avertissements de la préface et du § 183 dans le dossier scie
 
 ### État
 746 paragraphes au premier passage : 521 CW 7 + 60 renaissance + 102 étude d'individuation + 63 fonction transcendante. L'Âme et le Soi : 3/5 ensembles textuels. Reste Psychanalyse et cure d'âme (CW 11) puis Sur les phénomènes occultes (CW 18, ensemble de contributions). Notes, planches, collation française et audit transversal non terminés. Aucun changement au lecteur ni aux autres Atlas.
+
+
+## L'Âme et le Soi — texte IV : Psychanalyse et cure d'âme
+
+Source primaire : CW 11, traduction Hull, https://dokumen.pub/collected-works-of-cg-jung-volume-11-collected-works-of-c-g-jung-volume-11-psychology-and-religion-west-and-east-course-booknbsped-9781400850983.html , lignes 1675–1722, §§ 539–552 consultés en trois fenêtres recouvrantes ; note éditoriale de première publication (1928) incluse. Correspondance française confirmée par la SFPA : https://cgjungfrance.com/2006/05/psychologie-et-religion-ouest-et/ (édition 1990, §§ 226–239, p. 181–189). Collation de la traduction à faire.
+
+Index : §§ 539–541 (différences de finalités entre soin pastoral, Freud, Adler, Jung) ; §§ 542–544 (symboles et rites, confession, contexte catholique et protestant) ; §§ 545–546 (responsabilité et compétence) ; §§ 547–550 (relation, limites, transfert, coopération) ; §§ 551–552 (conclusion sur les rôles).
+
+### Conséquences originales Atlas
+La distinction des finalités (§ 539) est décisive pour un projet réunissant spiritualité, théâtre et psychologie. Une même pratique de parole, de geste ou de symbolisation n'a pas la même fonction selon son cadre. Concevoir une carte comparative des trois cadres : création artistique, accompagnement spirituel et soin clinique, avec leurs objectifs, responsabilités et limites propres. Exemple : un monologue de confession sur scène appartient d'abord à la fiction ; son efficacité dramatique ne suppose pas une confession personnelle. Les §§ 545–546 renforcent l'exigence de compétence et la possibilité de ne pas répondre aux questions qui dépassent son rôle. Les jugements confessionnels de Jung sur les traditions chrétiennes ne doivent pas être universalisés ; distinguer sa comparaison historique d'une évaluation actuelle de leurs pratiques. Le professeur de théâtre n'est ni analyste ni directeur de conscience. Ne pas transformer les risques et les sacrifices évoqués en critères de valeur de l'accompagnement.
+
+### État
+760 paragraphes consignés (521 + 60 + 102 + 63 + 14). L'Âme et le Soi : 4/5 ensembles textuels au premier passage. Reste l'ensemble Sur les phénomènes occultes, dont les cinq contributions et les bornes de l'édition française doivent être contrôlées. Notes, planches, traduction et audit d'ensemble restent ouverts. Aucun changement aux dossiers publics ni aux autres Atlas.
