@@ -272,3 +272,50 @@ Source rouverte : https://pdfcoffee.com/la-voie-du-tarot-french-edition-by-jodor
 6. **Une image parle-t-elle, ou lui prêtons-nous une voix ?** À partir d'une image originale non divinatoire, deux interprètes écrivent chacun un bref monologue pour le même objet. Ils confrontent ensuite leurs choix au cadre visible. Garder plusieurs lectures, y compris une lecture qui dément la première impression. Le monologue est une invention de l'auteur, pas une voix extérieure ni une connaissance cachée. Rapprocher du travail jungien sur l'image et de l'incorporation chez Chekhov sans assimilation. Aucun état altéré ni induction de transe.
 ### Décisions
 La structure du Tarot et les significations individuelles des Arcanes relèvent du futur travail d'Atlas 4. Pour Atlas 3, retenir les opérations artistiques, les tensions entre choix et disponibilité, et les limites de l'interprétation. Les analogies historiques, religieuses et biologiques des auteurs doivent être examinées comme telles. Aucun changement du dossier dans l'application. Prochaine reprise : introduction générale manquante (70–166), puis compléter l'ouverture de la partie II et avancer dans les notices par ordre. Ne pas déclarer Métagénéalogie intégralement lue.
+
+
+## La Voie du tarot — introduction générale et premier repérage de tous les majeurs
+Source rouverte : https://pdfcoffee.com/la-voie-du-tarot-french-edition-by-jodorowsky-alexandro-pdf-free.html . Transcription française 2593 lignes ; repères stables dans cette transcription seulement. L'introduction générale a été complétée au niveau du premier passage textuel (nouvelles fenêtres 83–152 et 152–166, en continuité avec les plages précédemment consignées). La partie II va jusqu'à la ligne 1218 ; la partie III débute à 1219. Les 22 notices majeures ont fait l'objet d'un repérage ciblé, non d'une lecture continue : les fenêtres ci-dessous ne couvrent pas tous leurs paragraphes ni toutes les voix imaginées. Ne pas déclarer la partie II achevée. Les planches ne sont pas vérifiées.
+
+### Relevé des passages contrôlés
+| Unité | Fenêtre rouverte | Problème repéré |
+|---|---|---|
+| Introduction | 83–166 | Genèse artistique ; tension observation/interprétation ; restauration revendiquée |
+| Ouverture II | 579–631, 633–649 | Voix imaginées, projection, symboles fluides, présentation quadruple |
+| Le Mat | 650–652, 654–671 | Action et témoin |
+| I | 675–684, 689–696 | Choix |
+| II | 698, 700–708, 714–718 | Attente |
+| III | 720–722, 731–738 | Création |
+| IIII | 753–760 | Autorité |
+| V | 777–784 | Transmission |
+| VI | 801–809, 816–817 | Relation |
+| VII | 819–834 | Orientation |
+| VIII | 844–863 | Excellence |
+| VIIII | 875–885 | Passage |
+| X | 887–893, 900–910 | Cycle |
+| XI | 912–921, 928–935 | Expression |
+| XII | 937–942, 951–961 | Non-faire |
+| XIII | 963–968, 976–989 | Transformation |
+| XIIII | 1005–1020 | Modulation |
+| XV | 1033–1047 | Ambivalence |
+| XVI | 1060–1071 | Relecture |
+| XVII | 1086–1098, 1110–1111 | Situation |
+| XVIII | 1113–1122 | Réception |
+| XVIIII | 1140–1152 | Entraide |
+| XX | 1167–1180 | Appel |
+| XXI | 1197–1209 | Position dans la séquence |
+
+### Distinctions textuelles vérifiées (relevé bref)
+L. 134–138 : exercice de prolongement de l'image au-delà du cadre. L. 586–592 : Jodorowsky reconnaît le caractère possiblement subjectif des paroles imaginées. L. 607–620 : symboles arrêtés et fluides, pluralité conditionnée par la forme. L. 633–637 : quatre niveaux de présentation (mots-clés, commentaire, significations usuelles, voix fictive). L. 667–669 et 892 : tension entre disparition du témoin et réunion acteur/témoin. L. 845–846 : excellence perfectible contre perfection figée. L. 1012 : ajout plutôt que coupure. L. 1206–1208 : effet de la position dans la séquence.
+
+### Reconstruction originale Atlas : développer les problèmes plutôt que multiplier les significations
+1. **Hors-cadre et imagination située.** Un acteur ouvre une porte fictive, regarde dehors, puis revient à sa tâche. Chaque version modifie uniquement ce qu'il suppose avoir vu. Le spectateur ne connaît pas ces hypothèses. Examiner ce qui change dans la durée, le rythme et la relation au partenaire, puis vérifier si l'intention choisie est perceptible. Le contenu imaginé ne devient pas une information factuelle sur l'espace ni sur l'acteur. Correspondance à approfondir avec les circonstances proposées de Stanislavski et les images de Chekhov.
+2. **Voix, matérialité et auteur.** Prendre un accessoire ordinaire. Produire deux textes de six lignes depuis son point de vue fictif, l'un humoristique, l'autre inquiet. Les interpréter à partir de son poids et de sa forme, puis revenir à la description de l'objet. On explore la composition de voix, non une possession ni une communication avec une entité. Demander : qu'est-ce qui vient du texte, du jeu, de l'observation et de l'invention ? Ce retour évite de prendre une réaction spontanée pour une connaissance de soi.
+3. **Engagement et réversibilité.** Deux acteurs jouent une courte scène au rythme soutenu. Un signe de la main, décidé ensemble, permet d'interrompre le jeu. Recommencer en laissant une proposition inattendue modifier l'action, sans perdre le droit de s'arrêter. Le problème théâtral n'est pas de supprimer le témoin mais de comprendre quelle attention rend l'engagement possible. Préserver la contradiction interne entre les passages du Mat, de la Roue et de l'entretien Esteban dans Psychomagic. Ne pas induire de transe, d'amnésie ni de perte de contrôle.
+4. **Excellence et possibilité d'erreur.** Une partition est reprise avec une contrainte de précision. Introduire ensuite une variation choisie, puis un accident fictif (un accessoire manque). Comparer la souplesse, la lisibilité et la qualité de la réponse. L'erreur n'est pas une faute morale ; une règle stable peut rendre l'invention possible. Ne pas exiger une présence infaillible ni assimiler une difficulté à un défaut spirituel.
+5. **Moduler au lieu de supprimer.** Un personnage refuse une proposition de son partenaire. Conserver le refus, mais jouer successivement avec un geste d'ouverture, une distance différente ou une pause. Observer comment une seule qualité ajoutée modifie l'ensemble. Comparer à Chekhov, sans confondre modulation esthétique et guérison. Ne pas imposer le compromis à quelqu'un dont la sécurité exige une limite ferme.
+6. **Une même forme, deux fonctions dramaturgiques.** Montrer exactement le même tableau de deux acteurs au début puis à la fin d'une scène. Une valise fermée peut créer une attente, puis devenir la trace de ce qui vient de se passer. Changer la place du tableau, pas sa composition. Observer comment le contexte temporel transforme le sens ; ne pas importer un code prédictif.
+7. **La responsabilité du regard.** Un observateur propose une interprétation de la conduite d'un personnage, l'acteur propose une autre lecture, puis tous deux reviennent aux indices du texte et du jeu. Cette distinction entre hypothèse et observation n'exige pas de confidence sur la famille ou la santé. Les correspondances numérologiques, les prétentions de restauration historique, les causalités prénatales, les promesses de santé et les assignations genrées doivent conserver leur statut de thèses historiques ou symboliques contestables.
+
+### Suite
+Le repérage des 22 majeurs a été effectué ; reprendre les intervalles manquants dans la partie II avant de la clôturer. Les illustrations restent à examiner. L'étude détaillée de l'iconographie et des cartes demeure réservée à Atlas 4. Aucun changement du dossier existant (22 notices, 29 sections), ni d'Atlas 1, 2 ou 4. Métagénéalogie demeure partiellement accessible.
