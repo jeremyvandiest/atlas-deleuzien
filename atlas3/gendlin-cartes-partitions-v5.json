@@ -1,8 +1,8 @@
 {
   "status": "candidat non intégré ; cartes de lecture et prolongement artistique non testé",
   "sources": {
-    "lexicon": "1d356f7ef22799de0f731349a891dab7111a6c6b",
-    "dossier": "bcb21e40ab153223e76d4d1ab81582c162d53bb9",
+    "lexicon": "cc11787e2469e165d334bc3b2a5c87940d18915c",
+    "dossier": "d286e2a49a40507a931452d8cc0ca02b81294d77",
     "pilot": "1a97f4e2616633e47f6628f57285c7bf8debf8e9",
     "edition": "V1.6.27-ansa-travail"
   },
@@ -286,7 +286,7 @@
           5
         ]
       ],
-      "note": "L'exemple de la clé traduit le problème dans une fiction, pas la dérivation organismique de Gendlin. La reprise peut demeurer impossible ou ne pas être souhaitable.",
+      "note": "L'exemple de la clé traduit le problème dans une fiction, pas la dérivation organismique de Gendlin. La reprise peut demeurer impossible ou ne pas être souhaitable. La continuation ultérieure peut préciser rétrospectivement le passé, sans changer les faits enregistrés.",
       "refs": "A New Way of Thinking p.316–317 ; APM IV-A(d-2) ; A Theory of Personality Change §§15–21",
       "terms": [
         5,
@@ -342,6 +342,11 @@
           "Action fictive",
           "Composition perceptible",
           "contribue aux rapports de la scène"
+        ],
+        [
+          "Circonstances de jeu",
+          "Expression",
+          "peut être composée directement"
         ]
       ],
       "layout": "branches non obligatoires, pas de chaîne causale imposée",
@@ -360,7 +365,7 @@
           4
         ]
       ],
-      "note": "Une expression peut être composée sans émotion correspondante ; une action fictive et un acte réel ont des critères distincts. La carte rapproche Gendlin et une question artistique Atlas.",
+      "note": "Une expression peut être composée sans émotion correspondante ; une action fictive et un acte réel ont des critères distincts. La carte rapproche Gendlin et une question artistique Atlas. La liaison directe permet de lire explicitement une expression sans émotion correspondante.",
       "refs": "Anger p.374–379,391–398 ; cahier G25–G30 ; pilote",
       "terms": [
         35,
@@ -520,7 +525,8 @@
         15,
         16,
         25,
-        26
+        26,
+        45
       ]
     },
     {
@@ -575,6 +581,11 @@
           "Composition artistique",
           "Rapports d'action",
           "peut transformer la situation"
+        ],
+        [
+          "Expérience vécue",
+          "Composition artistique",
+          "peut contribuer sans la garantir"
         ]
       ],
       "layout": "trois registres en réseau, pas trois étapes ni trois conditions nécessaires",
@@ -588,7 +599,7 @@
           3
         ]
       ],
-      "note": "Proposition originale Atlas, non ontologie attribuée à Gendlin ou Deleuze. Une œuvre peut avoir une consistance sans déplacement éprouvé rapporté par l'artiste ; une expérience peut compter sans produire une œuvre.",
+      "note": "Proposition originale Atlas, non ontologie attribuée à Gendlin ou Deleuze. Une œuvre peut avoir une consistance sans déplacement éprouvé rapporté par l'artiste ; une expérience peut compter sans produire une œuvre. Les relations sont conditionnelles et non exhaustives.",
       "refs": "Pilote Carrying forward V5 ; The New Phenomenology p.133–137 ; Qu'est-ce que la philosophie ?, chapitre 7",
       "terms": [
         5,
@@ -659,7 +670,6 @@
     }
   ],
   "pending": [
-    "audit comparatif V4/V5",
     "vérification visuelle des schémas lors de l'intégration",
     "collation des ouvrages principaux et trois notices provisoires",
     "essai réel du prolongement en atelier"
