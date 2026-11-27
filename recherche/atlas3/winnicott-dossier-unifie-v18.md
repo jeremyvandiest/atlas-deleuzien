@@ -664,6 +664,12 @@ Exercices artistiques originaux non testés, consentement et arrêt possibles.
 
 ### 1. La continuité d'un geste
 Objectif : expérimenter l'articulation entre continuité et variation.
+Deux personnes, 8–10 minutes, un objet ordinaire. Consentement, possibilité de faire une pause ; aucun contact imposé.
+1. A explore librement les possibilités matérielles d'un objet ; B est présent sans commenter (90 s).
+2. B introduit une variation convenue dans l'espace ou son propre rythme, sans toucher A (90 s). A choisit de poursuivre, modifier ou interrompre son geste.
+3. Reprendre la même situation avec une consigne artistique partagée avant de commencer (90 s).
+4. Inverser les rôles puis noter : qu'est-ce qui a ouvert un choix ? Qu'est-ce qui a interrompu le fil ? Qu'est-ce qui a enrichi l'action ?
+Évaluation artistique : variation, écoute, choix, composition. Aucun état intérieur n'est obligatoire. Ne pas utiliser comme test diagnostique ni reproduire des carences ou une régression.
 
 ### 2. Deux intentions, une scène
 Deux acteurs, une lettre fictive posée sur une table, 10 minutes. A veut que la lettre reste ; B veut la déplacer. Aucun contact imposé, pas d'intimidation ; droit de refuser et de s'arrêter. 1) Essai libre, 90 s. 2) Reprise : chacun ajoute un deuxième objectif compatible avec la relation, même opposé à son premier désir. 3) Reprise : B propose une issue inattendue ; A reste libre de la refuser. 4) Débrief : qu'est-ce qui a changé la partition, permis une initiative, enrichi la scène ? Ne pas déduire de style d'attachement ou de structure psychique. Ni conflit réel provoqué, ni exercice thérapeutique.
