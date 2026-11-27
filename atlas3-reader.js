@@ -180,7 +180,7 @@
     ).join('');
     return '<section class="a3r-v15-field a3r-v15-salon" aria-label="Partitions facultatives"><div class="a3r-eyebrow">TROIS VARIATIONS DE JEU</div>'+
       '<h2>Agir, réagir, composer</h2><p class="a3r-v15-lead">'+e(x.question)+'</p>'+acts+
-      '<p class="a3r-v15-guard"><strong>Limite :</strong> '+e(x.guard)+'</p><p class="a3r-v15-lead">Ces trois partitions sont des créations pédagogiques d’Atlas 3. Elles offrent plusieurs façons de lire, d’observer ou de jouer cette scène.</p></section>';
+      '<p class="a3r-v15-guard"><strong>Limite :</strong> '+e(x.guard)+'</p><p class="a3r-v15-lead">Ces trois partitions sont des créations pédagogiques d’Atlas 3. Elles offrent plusieurs façons de lire, d’observer ou de jouer cette scène.</p>'+(id==='salon-01'&&gendlinApproach()?.partitions?.length?'<div class="a3r-mini-links">'+btn('atlas3/approche/gendlin','Prolongement · La lettre et les trois genèses')+'</div>':'')+'</section>';
   }
   function enquiriesIndex(){
     const ed=edition15();if(!ed)return '';
@@ -462,9 +462,71 @@
     return '<section class="a3r-editorial-full" aria-label="Dossier fondateur Ansa"><h2>Parcours de compréhension</h2><p>Huit chapitres pour comprendre l’apport d’Ansa ; un neuvième pour explorer librement la doctrine. Les notions s’ouvrent dans le texte.</p><ol>'+a.modules.map((m,i)=>'<li>'+ansaJumpButton('a3ansa-text-'+(i+1),m.title+(m.optional?' — facultatif':''))+'</li>').join('')+'</ol><div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html.replace('id="a3ansa-text-1"','id="a3ansa-text-1" open'), 'ansa')+'</div><div class="a3r-editorial-terms"><h2>Notions à explorer · '+a.terms.length+'</h2>'+groups.map(group).join('')+'</div>'+ansaCards(a)+ansaPartitions(a)+'<details class="a3r-v15-depth"><summary>Sources et état du dossier</summary><p>'+e(d.edition)+' · '+e(d.source)+'</p><p>Les cartes sont des reconstructions de lecture ; les partitions n’ont pas été testées en atelier. Les deux corpus complémentaires restent à étudier.</p></details><div id="a3r-notion-modal" class="a3r-modal" hidden onclick="if(event.target===this)Atlas3Reader.closeNotion()"></div></section>';
   }
 
+  // Gendlin V2 : parcours situé, lexique à trois niveaux et pratiques artistiques.
+  function gendlinApproach(){return edition15()?.approaches?.find(a=>a.id==='gendlin');}
+  function gendlinOpenTerm(index){
+    const modal=document.getElementById('a3r-notion-modal'),origin=termFocus,already=modal&&!modal.hidden;
+    openEditorialTerm('gendlin',index);
+    if(already&&origin?.isConnected)termFocus=origin;
+  }
+  function gendlinTermButtons(ids){
+    const terms=gendlinApproach()?.terms||[];
+    return ids.map(id=>{const i=terms.findIndex(t=>t.id===id);return i<0?'':'<button type="button" class="a3r-link" onclick="Atlas3Reader.gendlinOpenTerm('+i+')">'+e(terms[i].term)+'</button>';}).join('');
+  }
+  function gendlinJump(id){
+    if(!/^a3gendlin-(?:text-[1-8]|map-GDM0[1-8]|part-GDP01)$/.test(id))return;
+    const target=document.getElementById(id);if(!target)return;
+    if(!document.getElementById('a3r-notion-modal')?.hidden)closeNotion();
+    for(let el=target;el;el=el.parentElement)if(el.tagName==='DETAILS')el.open=true;
+    const focus=target.tagName==='DETAILS'?target.querySelector('summary'):target;
+    if(focus){if(focus.tagName!=='SUMMARY')focus.setAttribute('tabindex','-1');focus.focus({preventScroll:true});}
+    target.scrollIntoView({block:'start',behavior:'auto'});
+  }
+  function gendlinJumpButton(id,label){return '<button type="button" class="a3r-link" onclick="Atlas3Reader.gendlinJump(\''+e(id)+'\')">'+e(label)+'</button>';}
+  function gendlinTermLinks(t){
+    const a=gendlinApproach();if(!a)return '';
+    const group=(title,html)=>html?'<h3>'+e(title)+'</h3><div class="a3r-mini-links">'+html+'</div>':'';
+    const chapters=(t.chapters||[]).map(n=>a.modules[n-1]?gendlinJumpButton('a3gendlin-text-'+n,a.modules[n-1].title):'').join('');
+    const maps=a.maps.filter(m=>m.terms.includes(t.id)).map(m=>gendlinJumpButton('a3gendlin-map-'+m.id,m.title)).join('');
+    const parts=a.partitions.filter(p=>p.terms.includes(t.id)).map(p=>gendlinJumpButton('a3gendlin-part-'+p.id,p.title)).join('');
+    return (t.status==='P'?'<p><strong>Notice provisoire :</strong> la section originale complète reste à étudier.</p>':'')+'<h3>Exemple Atlas</h3><p>'+e(t.example)+'</p><h3>Distinction</h3><p>'+e(t.distinction)+'</p>'+group('Notions associées',gendlinTermButtons(t.relatedIds||[]))+group('Dans le dossier',chapters)+group('Schémas',maps)+group('Partitions et variations',parts);
+  }
+  function gendlinVisual(m){
+    const levels=m.levels;if(!levels)return '';
+    const nodes=Object.fromEntries(m.nodes.map((n,i)=>['n'+i,n]));
+    const edges=m.relations.map(([a,b,label])=>({a:'n'+m.nodes.indexOf(a),b:'n'+m.nodes.indexOf(b),label,kind:'arrow',dash:false}));
+    return jungVisualSvg({n:'gendlin-'+m.id,title:m.title,nodes,edges,levels:levels.map(row=>row.map(i=>'n'+i))});
+  }
+  function gendlinCards(a){
+    return '<section class="a3r-editorial-terms"><h2>Comprendre en images · '+a.maps.length+' cartes</h2><p>Des cartes de lecture : les relations sont également explicitées en texte. Le dessin peut défiler sur un écran étroit.</p>'+a.maps.map(m=>'<details id="a3gendlin-map-'+e(m.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+e(m.title)+'</summary><div role="region" tabindex="0" aria-label="Schéma défilable horizontalement" style="--a3jung-node:#253342;--a3jung-border:#91a5ba;--a3jung-text:#f5f7fa;--a3jung-arrow:#9eafc2;background:#17232f;border-radius:12px;padding:.5rem;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain">'+gendlinVisual(m)+'</div><p>'+e(m.note)+'</p><details><summary>Lire les relations</summary><ul>'+m.relations.map(([x,y,l])=>'<li>'+e(x)+' — '+e(l)+' — '+e(y)+'</li>').join('')+'</ul></details><div class="a3r-mini-links">'+gendlinTermButtons(m.terms)+'</div><p class="a3r-quiet">'+e(m.refs)+'</p></details>').join('')+'</section>';
+  }
+  function gendlinPartitions(a){
+    const list=(xs,tag)=>'<'+tag+'>'+xs.map(x=>'<li>'+e(x)+'</li>').join('')+'</'+tag+'>';
+    
+    const practiceLinks=p=>(p.relatedPractice||[]).map(label=>{
+      const salon=label.match(/^(salon-\d+) \/ /);
+      if(salon)return btn('atlas3/salon/'+salon[1],label);
+      if(/^JCP\d+/.test(label))return btn('atlas3/approche/jodorowsky',label);
+      if(/^ANP\d+/.test(label))return btn('atlas3/approche/ansa',label);
+      return '<p>'+e(label)+'</p>';
+    }).join('');
+    const card=p=>'<details id="a3gendlin-part-'+e(p.id)+'" class="a3r-v15-depth" style="scroll-margin-top:5rem"><summary>'+e(p.title)+' · '+e(p.duration)+'</summary><p>'+e(p.goal)+'</p><p><strong>Participants :</strong> '+e(p.participants)+' · <strong>Matériel :</strong> '+e(p.material)+'</p><h3>Déroulement</h3>'+list(p.steps,'ol')+'<h3>Variantes</h3>'+list(p.variants,'ul')+'<h3>Si le jeu se bloque</h3><p>'+e(p.failure)+'</p><h3>Retour d’expérience</h3>'+list(p.debrief,'ul')+'<p>'+e(p.boundary)+'</p><div class="a3r-mini-links">'+gendlinTermButtons(p.terms)+'</div><h3>Situations déjà présentes dans Atlas</h3><div class="a3r-mini-links">'+practiceLinks(p)+'</div><p class="a3r-quiet">'+e(p.refs)+'</p></details>';
+    return '<section class="a3r-editorial-terms"><h2>Mettre en pratique · prolongement du Salon 01</h2><p>La lettre reprend le problème de l’objet refusé pour distinguer trois genèses : expérience, relation et composition. Proposition à expérimenter, non séance de Focusing.</p>'+a.partitions.map(card).join('')+'</section>';
+  }
+  function gendlinExpansion(d,a){
+    const groups=[['E','L’essentiel'],['A','Approfondissement'],['L','Exploration libre']];
+    const group=([level,title],i)=>{
+      const ids=a.terms.filter(t=>t.level===level).map(t=>t.id);
+      const body='<div class="a3r-mini-links">'+gendlinTermButtons(ids)+'</div>';
+      return i===0?'<h3>'+e(title)+' · '+ids.length+'</h3>'+body:'<details class="a3r-v15-depth"><summary>'+e(title)+' · '+ids.length+'</summary>'+body+'</details>';
+    };
+    return '<section class="a3r-editorial-full" aria-label="Dossier fondateur Gendlin"><h2>Parcours de compréhension</h2><p>Huit chapitres pour comprendre comment une expérience engendre de nouvelles déterminations. Le dernier confronte cette recherche à la genèse artistique des formes. Les notions s’ouvrent dans le texte.</p><ol>'+a.modules.map((m,i)=>'<li>'+gendlinJumpButton('a3gendlin-text-'+(i+1),m.title+(m.optional?' — facultatif':''))+'</li>').join('')+'</ol><div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html.replace('id="a3gendlin-text-1"','id="a3gendlin-text-1" open'), 'gendlin')+'</div><div class="a3r-editorial-terms"><h2>Notions à explorer · '+a.terms.length+'</h2>'+groups.map(group).join('')+'</div>'+gendlinCards(a)+gendlinPartitions(a)+'<details class="a3r-v15-depth"><summary>Sources et état du dossier</summary><p>'+e(d.edition)+' · '+e(d.source)+'</p><p>Les trois notices provisoires sont signalées dans l’exploration libre. Les livres principaux restent à collationner intégralement ; le prolongement du Salon n’a pas été testé en atelier.</p></details><div id="a3r-notion-modal" class="a3r-modal" hidden onclick="if(event.target===this)Atlas3Reader.closeNotion()"></div></section>';
+  }
+
   function editorialExpansion(id){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
     if(id==='ansa'&&ansaApproach()?.modules?.length)return ansaExpansion(d,ansaApproach());
+    if(id==='gendlin'&&gendlinApproach()?.modules?.length)return gendlinExpansion(d,gendlinApproach());
     const entries=(d.terms||[]).map((t,i)=>({t,i}));
     const termButton=({t,i})=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>';
     const categories=[...new Set(entries.map(({t})=>t.category).filter(Boolean))];
@@ -499,7 +561,7 @@
     const d=window.ATLAS3_FONDATIONS?.docs?.[id],doc=typeof document==='object'?document:null;
     if(!doc?.createTreeWalker||!d?.terms?.length||typeof NodeFilter==='undefined')return html;
     const tpl=doc.createElement('template');tpl.innerHTML=String(html||'');
-    const terms=d.terms.map((t,i)=>({i,word:t.term.toLocaleLowerCase('fr')})).sort((a,b)=>b.word.length-a.word.length);
+    const terms=d.terms.flatMap((t,i)=>[t.term,...(id==='gendlin'?(t.aliases||[]):[])].map(word=>({i,word:word.toLocaleLowerCase('fr')}))).sort((a,b)=>b.word.length-a.word.length);
     const counts={},nodes=[],walk=doc.createTreeWalker(tpl.content,NodeFilter.SHOW_TEXT);
     while(walk.nextNode()){
       const node=walk.currentNode,parent=node.parentElement;
@@ -715,7 +777,7 @@
     modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
       '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
       '<div class="a3r-eyebrow">NOTION SITUÉE</div><h2 id="a3r-notion-title">'+e(t.term)+'</h2><p>'+e(t.definition)+'</p>'+
-      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+(id==='jung'&&t.sourceUrl&&/^https:\/\//.test(t.sourceUrl)?'<p><a class="a3r-link" href="'+e(t.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Consulter le texte de Jung</a></p><p class="a3r-quiet">'+e(t.sourceStatus||'')+'</p>':'')+(id==='jung'?jungTermLinks(t.term):id==='jodorowsky'?jcTermLinks(t):id==='ansa'&&ansaApproach()?.modules?.length?ansaTermLinks(t):'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
+      (t.source?'<p class="a3r-quiet">'+e(t.source)+'</p>':'')+(id==='jung'&&t.sourceUrl&&/^https:\/\//.test(t.sourceUrl)?'<p><a class="a3r-link" href="'+e(t.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Consulter le texte de Jung</a></p><p class="a3r-quiet">'+e(t.sourceStatus||'')+'</p>':'')+(id==='jung'?jungTermLinks(t.term):id==='jodorowsky'?jcTermLinks(t):id==='ansa'&&ansaApproach()?.modules?.length?ansaTermLinks(t):id==='gendlin'&&gendlinApproach()?.modules?.length?gendlinTermLinks(t):'')+'<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
     modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();
   }
 
@@ -751,7 +813,7 @@
     x.open=true;x.scrollIntoView({behavior:'smooth',block:'start'});x.querySelector('summary')?.focus();
   }
   window.Atlas3Reader={
-    closeNotion,openNotion,openEditorialTerm,goToNotionSource,jumpToSection,jungJump,jcJump,jcOpenTerm,ansaJump,ansaOpenTerm,
+    closeNotion,openNotion,openEditorialTerm,goToNotionSource,jumpToSection,jungJump,jcJump,jcOpenTerm,ansaJump,ansaOpenTerm,gendlinJump,gendlinOpenTerm,
     toggleSections(open){
       if(!document || !document.querySelectorAll)return;
       document.querySelectorAll('.a3r-sections .a3r-section').forEach(x => {x.open=!!open;});
