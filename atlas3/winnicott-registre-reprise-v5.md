@@ -1,0 +1,68 @@
+# Atlas 3 — Winnicott V5 : registre de reprise et premier cahier
+27 novembre 2026. Recherche documentaire et propositions originales Atlas, non intégrées. Une seule priorité : Winnicott. Ne pas réécrire les acquis V4.
+
+## 1. État vérifié du dossier
+atlas3-fondations.js, blob 1b16f6dc482fc5e6309aafb7523624e9e4b0a465 : dossier de lecture V4 du 24 novembre ; onze chapitres de Playing and Reality abordés, sept avec passages ciblés (1,2,4,5,6,7,9 selon le registre V4), autres avec repères éditoriaux et recherches antérieures. Ne pas transformer cette couverture en lecture intégrale. Le dossier aborde les phénomènes transitionnels, le trouvé-créé, l'espace potentiel, la différence entre imagination et fantasying, l'activité de jouer, les temps sans résultat, la créativité opposée à la compliance, l'usage de l'objet, le miroir, l'expérience culturelle, les identifications croisées et l'immaturité. Une épreuve de la boîte sans histoire existe déjà, ainsi que des rapprochements avec Chekhov et Buber.
+Quinze notices historiques à préserver : Objet transitionnel ; Phénomènes transitionnels ; Espace potentiel ; Playing ; Self ; Créativité ; Usage de l'objet ; Expérience culturelle ; Compliance ; Miroir ; Identifications croisées ; Immaturité ; Trouvé-créé ; Composition ; Fantasying. Le supplément atlas3-v15.js, blob 489458324e4be9571e9aa1b4dfdb8c7e69c0cc0a, V1.6.28-gendlin-travail, possède aussi la notice courte Capacité de jouer à préserver. Liens actuels : chapitres 03,04,09,12,13 ; salons 04,07 ; E01.
+Lacune principale : l'architecture développementale de Winnicott reste insuffisamment développée. Le dossier évoque le faux self et reconnaît explicitement que ses autres textes doivent être étudiés. Ne pas repartir de l'espace potentiel en ignorant les textes antérieurs sur la dépendance, l'intégration et la continuité d'être.
+
+## 2. Corpus prioritaire et état de lecture dans cette séance
+A. Ego Distortion in Terms of True and False Self (1960), dans The Maturational Processes and the Facilitating Environment, 1965, p.140–152. Reproduction universitaire : https://web.english.upenn.edu/~cavitch/pdf-library/Winnicott_EgoDistortion.pdf . Passages p.142–149, fin du passage sur l'équivalent normal p.149–150 ; images PDF 2,3,5 (pages imprimées 142–145,148–149). Notice Oxford : https://academic.oup.com/book/1192/chapter-abstract/140028848 .
+B. The Capacity to Be Alone (1958), IJP 39 p.416–420 ; recueil 1965 p.29–36. https://psptraining.com/wp-content/uploads/Winnicott-D.W.-1965.-The-maturational-processes-and-the-facilitating-environment.pdf . Texte p.29–35 (fenêtres l.255–341), images des pages imprimées 30,34,35 (indices PDF 24,28,29).
+C. The Theory of the Parent-Infant Relationship (1960), IJP 41 p.585–595 ; recueil 1965 p.37–55, même PDF. Fenêtres p.39–52 (l.393–564), images p.38,43,48 (indices PDF 32,37,42). Notice Oxford : https://academic.oup.com/book/1192/chapter-abstract/140028276 .
+D. Communicating and Not Communicating Leading to a Study of Certain Opposites (1963), recueil 1965 p.179–192 ; Collected Works (2016) vol.6 p.433–446. https://web.english.upenn.edu/~cavitch/pdf-library/Winnicott_Communicating_and_Not_Communicating.pdf . Passages l.23–80,109–169 de l'extrait HTML ; images PDF 7,8 (p.442–444 de CW). DOI 10.1093/med:psych/9780190271381.003.0073. Les versions préparatoires 1962/1963 signalées par Oxford n'ont pas pu être rouvertes intégralement (erreur d'accès) ; ne pas leur substituer le texte publié.
+Les quatre sources sont des textes psychanalytiques historiques ; ne pas traiter leurs généralisations cliniques, notamment sur les psychoses et les rôles parentaux, comme connaissances médicales actuelles ou causes démontrées. Les lectures de cette séance sont ciblées, non exhaustives. Aucun achat.
+
+## 3. Huit unités de travail (W01–W08)
+Les phrases sur les concepts condensent les passages cités. Les exemples, hypothèses et conséquences pour le théâtre constituent le travail original d'Atlas, et ne sont pas des exercices de Winnicott.
+
+### W01 — Dépendance et constitution de l'individu
+C, p.39–43,46. La dépendance initiale est constitutive ; Winnicott distingue le potentiel hérité et les conditions qui permettent son développement.
+Exemple Atlas : un atelier annonce une consigne libre, mais le lieu est constamment réquisitionné, les règles changent et nul ne sait qui prend les décisions. Examiner ce que l'organisation rend possible avant d'attribuer une difficulté aux dispositions des participants. Dans une autre séance, les mêmes acteurs peuvent préférer un cadre très précis. La capacité de créer ne se déduit ni du règlement ni du talent présumé.
+Distinction philosophique : la priorité de l'unité nourrisson-soins ne signifie pas que tout potentiel est produit par le milieu. L'hypothèse d'un potentiel hérité interdit de présenter Winnicott comme un simple relationniste. L'agencement deleuzien ne sera pas une traduction du couple nourrisson-soins.
+
+### W02 — Holding : continuité et fiabilité
+C, p.43–44,47–49,52. Le holding concerne l'ensemble des soins précoces ; il soutient la continuité d'être face aux empiètements imposant une réaction.
+Exemple Atlas : établir l'heure de fin, les règles de manipulation du matériel et la possibilité de demander une modification. Observer si le groupe peut consacrer son attention au jeu plutôt qu'au fonctionnement du lieu. Une lumière qui change intentionnellement dans la scène est une contrainte artistique ; une sortie de secours inaccessible est un défaut du dispositif. Une équipe peut choisir des règles strictes qui rendent possible l'invention.
+Distinction : holding n'est pas synonyme de confort, de cadre théâtral ni d'accueil de toutes les propositions. Ne pas appeler impingement tout imprévu artistique. Les exigences de sécurité réelles ne sont pas des variables à supprimer pour expérimenter.
+
+### W03 — Geste spontané et vrai self
+A, p.145–146,148–149. Le vrai self désigne d'abord une position théorique liée à la vitalité sensori-motrice et au geste spontané ; sa vie effective requiert une réponse environnementale.
+Exemple Atlas : une actrice propose d'interrompre un mouvement avant sa destination. La direction peut recevoir la proposition, la développer, la discuter ou l'écarter pour une raison de composition. Ce qui importe pour l'atelier est la possibilité de faire une proposition qui ne soit pas seulement la reproduction de ce que l'on attend d'elle. La proposition n'est pas nécessairement artistiquement bonne. Inversement, une consigne suivie avec précision peut produire une création.
+Question : comment penser la singularité d'un geste sans supposer un auteur psychologique entièrement constitué avant lui ? C'est une construction Atlas à confronter aux textes de Deleuze ; le geste spontané n'est pas un diagnostic du vrai self ni une actualisation du virtuel par définition.
+
+### W04 — Faux self : fonction protectrice et adaptation
+A, p.142–145,147,149–150. Le faux self peut protéger ce qui ne peut s'exposer ; ses formes vont de l'organisation défensive à l'adaptation sociale ordinaire.
+Exemple Atlas : une interprète ne souhaite pas parler de la source personnelle de son geste. Elle peut pourtant en discuter la forme, le rythme et le rapport au partenaire. L'atelier n'a aucun titre pour lui demander d'abandonner cette réserve. Un jeu formel, une convention de politesse, une discipline professionnelle ne doivent pas être jugés moins vrais qu'une confidence.
+Distinction : ne jamais assimiler rôle théâtral, persona jungienne, masque et faux self clinique. Ne pas faire de la spontanéité une nouvelle norme de conformité ; ne pas utiliser la théorie pour diagnostiquer autrui. Le continuum de Winnicott n'est pas une échelle d'évaluation de nos participants.
+
+### W05 — Capacité d'être seul et ego-relatedness
+B, p.30–34. La solitude psychiquement disponible n'est pas l'isolement matériel ; elle s'appuie, dans le modèle de Winnicott, sur une présence fiable qui n'exige pas constamment de réponse.
+Exemple Atlas : deux personnes travaillent sur la même table, chacune avec son texte. Elles ne sont pas obligées de se regarder ou de commenter le travail de l'autre ; elles peuvent demander un échange quand il leur est utile. La tâche partagée n'a pas à produire une conversation. Dans une improvisation dialoguée, cette même absence de réponse peut avoir une toute autre fonction.
+Distinction : l'ego-relatedness désigne une forme relationnelle spécifique chez Winnicott, pas le simple travail silencieux. Le silence n'est pas une preuve de maturité. L'atelier n'a pas à reproduire la dépendance infantile. Comparer ultérieurement avec la présence relationnelle de Buber et avec l'attention d'Ansa.
+
+### W06 — Intégration et possibilité de ne pas être organisé en permanence
+C, p.44–45 ; B, p.34. Winnicott distingue la non-intégration d'une désintégration menaçante ; la première peut être éprouvée de nouveau lorsque le milieu est fiable.
+Exemple Atlas : un groupe dispose de quelques minutes de recherche sans devoir présenter un résultat. Puis il choisit un matériau et compose. Un acteur peut préférer commencer par la seconde tâche ; un autre peut découvrir dans la première un rapport d'objets. Aucun comportement ne constitue en lui-même un signe clinique.
+Distinction : cette analogie porte sur la suspension de l'obligation de résultat, déjà travaillée dans V4 ; ne pas ajouter une partition redondante ni induire une régression. La non-intégration winnicottienne n'est pas le corps sans organes. Le lien futur devra distinguer soigneusement organisation psychique, organisation artistique et expérimentation des rapports.
+
+### W07 — Noyau non communicant et droit de ne pas communiquer
+D, CW p.437–443, particulièrement p.440–443. Winnicott affirme un centre individuel soustrait à l'influence du monde des objets perçus ; il distingue non-communication simple et non-communication active ou réactive.
+Exemple Atlas : après une improvisation, une personne veut conserver pour elle une association suscitée par le jeu. Elle peut continuer à participer au travail de composition. Le groupe ne demande pas d'interpréter ce refus ; le metteur en scène peut néanmoins discuter la lisibilité de la scène. Un silence peut être un acte fictif, une absence de demande ou une réserve réelle. Il n'a pas de sens psychologique automatique.
+Tension ontologique décisive : ne pas dissoudre ce noyau dans les relations sans reconnaître le désaccord. Une lecture Atlas peut retenir la non-appropriabilité de l'autre, sans postuler un centre personnel intrinsèquement hors du devenir. Il faudra vérifier ce que les textes de Deleuze autorisent réellement et si une telle recomposition conserve assez de Winnicott. Le terme « noyau » ne signifie pas ici une âme spirituelle. Ne pas convertir cette tension en identité avec le Soi jungien ou Ansa.
+
+### W08 — Art, communication indirecte et opacité
+D, CW p.438–442. La culture et les formes intermédiaires permettent une communication qui ne requiert pas l'exposition du noyau personnel.
+Exemple Atlas : une scène exprime un conflit à travers le placement des objets et la durée d'un regard. Le spectateur peut en éprouver la force sans connaître l'histoire de l'actrice. Elle peut refuser de raconter cette histoire sans que l'oeuvre soit diminuée. La scène peut même produire un sens qui excède ce qu'elle voulait communiquer.
+Lien au pilote Gendlin : la genèse vécue, la relation et la forme doivent rester distinguées. Ici la singularité de Winnicott est le droit de participer au jeu sans devoir devenir transparent. L'autonomie des percepts et affects chez Deleuze et Guattari et le droit de non-communication chez Winnicott ne reposent pas sur la même argumentation. Il faudra revenir aux textes de Deleuze avant toute comparaison définitive.
+
+## 4. Architecture de recherche (non plan final)
+A. Devenir capable d'exister : dépendance, holding, intégration, personnalisation, continuité d'être, psyché-soma.
+B. Geste spontané, vrai/faux self, compliance, créativité primaire, illusion et désillusion.
+C. Être seul et être avec : ego-relatedness, noyau non communicant, communication indirecte, environnement-mère/objet-mère.
+D. Trouvé-créé, espace potentiel, jeu et culture : approfondir sans reproduire V4.
+E. Altérité de l'objet : object-relating/use, survie de l'objet, destructivité et sollicitude (concern), distinguer de la violence réelle.
+F. Théâtre et genèse des formes : cadre fiable sans contrôle des résultats, jeu et composition, opacité et partage ; pilote seulement après audit des partitions existantes.
+Lacunes à traiter : Primitive Emotional Development (1945), Mind and its Relation to the Psyche-Soma (1949), Primary Maternal Preoccupation (1956), From Dependence Towards Independence (1963), The Development of the Capacity for Concern (1963), The Use of an Object (1969), textes sur créativité et jeu ; Human Nature en repère complémentaire. Rechercher accès exact et distinguer notices, extraits et livres. Les autres écrits ne sont pas déclarés lus.
+## 5. Décision éditoriale
+W01–W08 sont huit unités d'étude, non huit notices définitives. Ne pas imposer le nombre de notions de Gendlin à Winnicott. Le dossier V4 est maintenu ; les 15 notions et Capacité de jouer restent présentes. La confrontation au socle deleuzien est une question ouverte, particulièrement sur le potentiel hérité, le noyau non communicant et les finalités normatives du développement. Le futur pilote devra examiner si un jeu peut être rendu possible sans injonction à l'authenticité ni obligation de produire une oeuvre. Aucun changement de l'application, de main ou d'un autre territoire.
