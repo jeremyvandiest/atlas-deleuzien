@@ -1,4 +1,4 @@
-const CACHE_NAME='atlas-v10-64-v1-6-27-ansa-travail-20261127';
+const CACHE_NAME='atlas-v10-64-v1-6-28-gendlin-travail-20261127';
 const CORE=['./','./index.html','./manifest.webmanifest','./atlas-bull.svg','./atlas-icon.svg','./icon-180.png','./icon-192.png','./icon-512.png','./atelier.css','./atlas1-operative.js','./atlas1-pedagogie-data.js','./atlas1-pedagogie.js','./atlas1-pedagogie.css','./atelier.js','./oeuvre.js','./atlas2.css','./atlas2-data.js','./atlas2-content.js','./atlas2-audit.js','./atlas2-relations.js','./atlas2.js','./atlas2-v43-data.js','./atlas-hub.js','./atlas-hub.css','./atlas3.css','./atlas3-content.js','./atlas3-v15.js','./atlas3-reader.js','./atlas3-fondations.js'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
