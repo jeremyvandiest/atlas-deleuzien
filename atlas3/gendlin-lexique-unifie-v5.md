@@ -1,7 +1,7 @@
 # Atlas 3 — Eugene Gendlin : lexique unifié V5
 27 novembre 2026. Candidat éditorial consolidé, non intégré. Les cinq cahiers G01–G40, le dossier de lecture V4 et la fiche pilote Carrying forward constituent le corpus de consolidation. Il ne s'agit pas d'une collation nouvelle de toutes leurs sources. Les références indiquent les textes ou extraits étudiés ; pour les lacunes et fenêtres exactes, consulter les registres. ECM = Experiencing and the Creation of Meaning ; APM = A Process Model ; Anger = A Phenomenology of Emotions: Anger ; Six Steps = An Introduction to Focusing: Six Steps. Les exemples sont des constructions artistiques originales d'Atlas, pas des cas de Gendlin. Les 16 titres historiques et l'alias Prise ou handle sont préservés.
 ## Hiérarchie de lecture
-E = essentiel (15) ; A = approfondissement (20) ; L = exploration libre (9). Cette hiérarchie désigne une priorité pédagogique, pas une hiérarchie de vérité. Le lecteur part d'un problème, pas d'un glossaire. Les relations fonctionnelles d'ECM III demeurent distinctes : les trois notices Explication, Pertinence et Circonlocution sont provisoires, car le texte intégral de leurs sections manque. Compréhension a été contrôlée directement dans l'article de 1973. Ne pas confondre la distinction technique avec la compréhension ordinaire. Les termes techniques d'APM restent localement bornés à ce que les articles et extraits soutiennent. Les notices 26, 23, 32, 35 et 37 ne constituent pas une dérivation intégrale de la pensée tardive.
+E = essentiel (15) ; A = approfondissement (21) ; L = exploration libre (9). Cette hiérarchie désigne une priorité pédagogique, pas une hiérarchie de vérité. Le lecteur part d'un problème, pas d'un glossaire. Les relations fonctionnelles d'ECM III demeurent distinctes : les trois notices Explicitation, Pertinence et Circonlocution sont provisoires, car le texte intégral de leurs sections manque. Compréhension a été contrôlée directement dans l'article de 1973. Ne pas confondre la distinction technique avec la compréhension ordinaire. Les termes techniques d'APM restent localement bornés à ce que les articles et extraits soutiennent. Les notices 26, 23, 32, 35 et 37 ne constituent pas une dérivation intégrale de la pensée tardive.
 ## Notices
 ### 1 — Experiencing
 **Niveau :** E · **Unités :** G02, G14 · **Sources :** ECM préface 1997, xi–xiii ; A Theory of Personality Change §§16–17.
@@ -144,7 +144,7 @@ Fonction d'une forme familière qui rend un sens reconnaissable dans l'expérien
 
 **Distinction :** Cette opération ne se confond pas avec la critique deleuzienne de la récognition comme modèle de la pensée.
 
-**Renvois :** 12 — Référence directe; 14 — Métaphore; 17 — Explication; 18 — Compréhension.
+**Renvois :** 12 — Référence directe; 14 — Métaphore; 17 — Explicitation; 18 — Compréhension.
 
 ### 14 — Métaphore
 **Niveau :** A · **Unités :** G03 · **Sources :** ECM III, section p.113 ; Experiential Phenomenology p.294–297.
@@ -179,10 +179,10 @@ Retour au sens implicite d'une situation pour permettre une formulation ou une p
 
 **Renvois :** 2 — Felt sense; 10 — Thinking at the Edge; 11 — Crossing; 25 — Précision implicite et zigzag.
 
-### 17 — Explication
+### 17 — Explicitation
 **Niveau :** L · **Unités :** G03 · **Sources :** ECM III, section p.106 (sommaire ; Purton, guide secondaire).
 
-Dans la typologie de travail du premier livre, rendre explicite un sens au moyen de formes déjà disponibles.
+Explication au sens d'explication causale est à éviter ici : le terme original est explication en anglais, explicitation en français. ECM III la classe parmi les relations parallèles. Sa définition détaillée reste à établir sur le texte de la section.
 
 **Exemple Atlas :** Une difficulté de dialogue peut recevoir une formulation connue, comme la rétention d'une information.
 
@@ -191,7 +191,7 @@ Dans la typologie de travail du premier livre, rendre explicite un sens au moyen
 **Renvois :** 13 — Reconnaissance; 18 — Compréhension; 19 — Pertinence; 20 — Circonlocution.
 
 ### 18 — Compréhension
-**Niveau :** A · **Unités :** G03 · **Sources :** ECM III, section p.117 ; Experiential Phenology p.296–297 (contrôle direct).
+**Niveau :** A · **Unités :** G03 · **Sources :** ECM III, section p.117 ; Experiential Phenomenology p.296–297 (contrôle direct).
 
 Au sens technique de comprehension, former une expression nouvelle qui s'ajuste à un éprouvé que les mots habituels ne suffisaient pas à exprimer.
 
@@ -199,7 +199,7 @@ Au sens technique de comprehension, former une expression nouvelle qui s'ajuste 
 
 **Distinction :** Cette opération combine référence directe, reconnaissance et métaphore ; elle n'est pas la compréhension au sens courant.
 
-**Renvois :** 12 — Référence directe; 13 — Reconnaissance; 14 — Métaphore; 17 — Explication.
+**Renvois :** 12 — Référence directe; 13 — Reconnaissance; 14 — Métaphore; 17 — Explicitation.
 
 ### 19 — Pertinence
 **Niveau :** L · **Unités :** G03 · **Sources :** ECM III, section p.127 (sommaire ; Purton, guide secondaire).
@@ -210,7 +210,7 @@ Relation par laquelle d'autres significations deviennent opérantes dans la pré
 
 **Distinction :** Notice provisoire : ne pas en faire un critère général de qualité artistique sans la section originale.
 
-**Renvois :** 17 — Explication; 18 — Compréhension; 20 — Circonlocution; 25 — Précision implicite et zigzag.
+**Renvois :** 17 — Explicitation; 18 — Compréhension; 20 — Circonlocution; 25 — Précision implicite et zigzag.
 
 ### 20 — Circonlocution
 **Niveau :** L · **Unités :** G03 · **Sources :** ECM III, section p.134 (sommaire ; Purton, guide secondaire).
@@ -257,11 +257,11 @@ Effectuation dans le milieu : le processus implique des événements environneme
 **Renvois :** 7 — Corps-environnement; 8 — Implying; 9 — Occurring; 32 — Quatre environnements.
 
 ### 24 — Passé fonctionnant au présent
-**Niveau :** A · **Unités :** G07, G11 · **Sources :** APM IV-A(d-2), extrait ; A New Way of Thinking (2014) p.317.
+**Niveau :** A · **Unités :** G07, G11 · **Sources :** APM IV-A(d-2), extrait ; A New Way of Thinking (2014) p.317 ; The New Phenomenology (2004), p.137 (temps non laplacien).
 
-Le passé contribue au processus présent selon les rapports qui se constituent maintenant ; les faits passés ne sont pas changés.
+Le passé contribue au processus présent selon les rapports qui se constituent maintenant ; les faits passés ne sont pas changés. Gendlin distingue aussi en 2004 le passé enregistré et la détermination rétrospective de ce que la continuation passée implique depuis le nouvel événement.
 
-**Exemple Atlas :** Une technique de projection vocale devient une ressource de précision dans un jeu de cinéma chuchoté.
+**Exemple Atlas :** Une technique de projection vocale devient une ressource de précision dans un jeu de cinéma chuchoté. Un dernier plan peut également faire relire un premier geste comme un adieu plutôt qu'un accueil ; analogie de composition, distincte de la temporalité organismique.
 
 **Distinction :** La réorganisation présente n'est pas une récupération de souvenirs cachés.
 
@@ -270,7 +270,7 @@ Le passé contribue au processus présent selon les rapports qui se constituent 
 ### 25 — Précision implicite et zigzag
 **Niveau :** E · **Unités :** G08, G33, G34 · **Sources :** A Changed Ground, I-1 et I-5–7 ; préface ECM ; The New Phenomenology p.135–138.
 
-L'expérience peut contraindre une formulation sans la prédéterminer ; le zigzag alterne développement conceptuel et retour à ce qui excède ce développement.
+L'expérience peut contraindre une formulation sans la prédéterminer ; le zigzag alterne développement conceptuel et retour à ce qui excède ce développement. Distinguer cette alternance méthodologique du zigzag temporel entre implying et occurring que Gendlin décrit en 2004.
 
 **Exemple Atlas :** Vérifier une règle de raccord, puis examiner le problème esthétique qui rend cette règle pertinente ou non.
 
@@ -487,6 +487,17 @@ Pratique d'attention et de formulation du felt sense, dont les six mouvements se
 
 **Renvois :** 2 — Felt sense; 3 — Prise; 4 — Résonance; 5 — Felt shift; 16 — Dipping; 31 — Réponse relationnelle; 40 — Must come.
 
+### 45 — Expérience non numérique, multischématique et interschématisable
+**Niveau :** A · **Unités :** complément d'audit G08, G16, G33, G37 · **Sources :** Experiential Phenomenology (1973), p.297–298 ; ECM IV-B, sommaire p.151,153,164–167 (texte intégral non obtenu).
+
+Gendlin étudie trois propriétés distinctes : les unités de l'expérience ne sont pas fixées d'avance ; différents schèmes peuvent la différencier de manière déterminée ; une expérience peut servir à configurer un aspect d'une autre. Il ne s'agit donc ni d'une quantité de données cachées ni d'une liberté sans contrainte.
+
+**Exemple Atlas :** une scène d'attente est examinée selon ses rythmes, puis selon la circulation de ses objets. L'un des rapports découverts peut donner une idée nouvelle pour une autre scène, sans que les deux scènes deviennent identiques.
+
+**Distinction :** la multiplicité des schématisations ne rend pas tous leurs résultats équivalents. La confrontation avec la multiplicité deleuzienne est un problème de recherche, non une assimilation. ECM IV contient neuf développements : seuls les trois repris dans l'article de 1973 sont ici contrôlés directement.
+
+**Renvois :** 1 — Experiencing; 11 — Crossing; 12 — Référence directe; 14 — Métaphore; 25 — Précision implicite et zigzag; 26 — IOFI et self-instancing.
+
 ## Parcours candidat (ordre pédagogique, non ordre des ouvrages)
 1. Une expérience qui ne se laisse pas épuiser par les mots — N01, N02, N03, N04, N12, N13, N39.
 2. Une forme nouvelle transforme le sens — N06, N08, N09, N14, N17, N18, N19, N20, N30, N38.
@@ -494,10 +505,12 @@ Pratique d'attention et de formulation du felt sense, dont les six mouvements se
 4. L'interruption et la reprise — N05, N24, N27, N28, N29, N43.
 5. Émotion, geste, action et jeu — N35, N36, N37, N39, N40, N41, N42.
 6. Les pratiques de précision : Focusing et TAE — N02, N03, N04, N05, N10, N11, N16, N31, N44.
-7. Penser avec le singulier et vérifier — N10, N11, N15, N25, N26.
+7. Penser avec le singulier et vérifier — N10, N11, N15, N25, N26, N45.
 8. La création à l'épreuve du sensible et de la forme — N06, N21, N22, N35, N36, N41, N42, N43.
 Le dernier chapitre travaille le pilote des trois genèses (expérientielle, relationnelle, artistique). Les notions L ne sont pas des prérequis, y compris lorsqu'elles sont associées à un chapitre. La confrontation Gendlin–Deleuze doit se trouver dans une exploration philosophique située, pas imposée à chaque notice. La singularité de Gendlin demeure l'articulation du sens éprouvé et de sa continuation transformatrice. Le théâtre teste les opérations dans la matière, le geste, l'espace, le langage et la composition, sans promettre une transformation intime.
 ## Contrôle de consolidation
-44 notices ; niveaux {"E":15,"A":20,"L":9} ; couverture G01–G40 : 40/40 ; titres historiques 16/16 ; renvois valides 208 ; couverture des chapitres 44/44. L'ordre historique des 16 notices est conservé afin de faciliter l'intégration. Les regroupements (reprise et reconstituting, IOFI et self-instancing, stopped process et objet absent) préservent explicitement les différences de statut. Les développements longs demeurent accessibles dans les cahiers. Les renvois à des unités ne signifient pas que toute leur argumentation a été résumée dans une notice.
+45 notices ; niveaux {"E":15,"A":21,"L":9} ; couverture G01–G40 : 40/40 ; titres historiques 16/16 ; renvois valides 214 ; couverture des chapitres 45/45. L'ordre historique des 16 notices est conservé afin de faciliter l'intégration. Les regroupements (reprise et reconstituting, IOFI et self-instancing, stopped process et objet absent) préservent explicitement les différences de statut. Les développements longs demeurent accessibles dans les cahiers. Les renvois à des unités ne signifient pas que toute leur argumentation a été résumée dans une notice.
 ## Audit et lacunes
 Retour direct lors de la consolidation : ECM III p.90–92 (https://focusing.org/gendlin/docs/gol_2167.html), préface 1997 xi–xii (https://focusing.org/gendlin/docs/gol_2152.html), Experiential Phenomenology p.296–297 (https://focusing.org/gendlin/docs/gol_2101.html), Crossing and Dipping l.55–93 (https://focusing.org/gendlin/docs/gol_2166.html), The Responsive Order résumé (https://focusing.org/gendlin/docs/gol_2157.html), The New Phenomenology of Carrying Forward introduction (https://focusing.org/gendlin/docs/gol_2228.html). Guide Purton rouvert, mais trois sections originales restent absentes. Les autres références sont reprises des cahiers, non contrôlées exhaustivement dans cette séance. Les livres ECM, APM et Focusing restent à collationner. Le pilote n'a pas été essayé en atelier. Aucun changement de l'application ni d'autres dossiers. Prochain travail : rédaction du parcours fondateur et cartes, puis audit V4/V5 avant intégration.
+
+Audit du 27 novembre : les sept intitulés et pages de début du chapitre III (91,100,106,113,117,127,134) sont confirmés par le sommaire ISBN 9780810114272 ; texte primaire p.90–92 et article de 1973 p.295–298 rouverts. Explication renommée Explicitation (anglais explication), sans définition technique affirmée au-delà du texte disponible. N24 et N25 précisés par le texte de 2004 p.136–137. Ajout N45 à partir de l'article de 1973, pas d'une lecture complète d'ECM IV. Les trois entrées provisoires doivent être visibles comme telles en exploration libre. Ne pas intégrer leurs hypothèses comme définitions définitives.
