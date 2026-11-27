@@ -1,0 +1,667 @@
+{
+  "status": "candidat non intégré ; cartes de lecture et prolongement artistique non testé",
+  "sources": {
+    "lexicon": "1d356f7ef22799de0f731349a891dab7111a6c6b",
+    "dossier": "bcb21e40ab153223e76d4d1ab81582c162d53bb9",
+    "pilot": "1a97f4e2616633e47f6628f57285c7bf8debf8e9",
+    "edition": "V1.6.27-ansa-travail"
+  },
+  "maps": [
+    {
+      "id": "GDM01",
+      "title": "Sensation, émotion, sens global et formulation",
+      "chapter": [
+        1,
+        5
+      ],
+      "nodes": [
+        "Situation vécue",
+        "Sensation locale",
+        "Émotion identifiable",
+        "Sens global éprouvé",
+        "Formulation"
+      ],
+      "relations": [
+        [
+          "Situation vécue",
+          "Sensation locale",
+          "peut être décrite sous cet aspect"
+        ],
+        [
+          "Situation vécue",
+          "Émotion identifiable",
+          "peut être éprouvée ainsi"
+        ],
+        [
+          "Situation vécue",
+          "Sens global éprouvé",
+          "peut prendre une précision corporelle"
+        ],
+        [
+          "Sens global éprouvé",
+          "Formulation",
+          "peut trouver une expression"
+        ],
+        [
+          "Formulation",
+          "Sens global éprouvé",
+          "peut modifier la précision"
+        ]
+      ],
+      "layout": "trois branches, sensation et émotion non préalables au felt sense ; retour de la formulation",
+      "levels": [
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "note": "Ces aspects peuvent coexister, sans former une échelle de profondeur. Le felt sense n'est pas nécessairement donné ni requis. Carte de lecture Atlas.",
+      "refs": "The Client's Client I ; Experiential Phenomenology p.294–297 ; cahiers G01, G25–26, G31",
+      "terms": [
+        1,
+        2,
+        3,
+        4,
+        12,
+        39
+      ]
+    },
+    {
+      "id": "GDM02",
+      "title": "Une continuation transforme ce qui est impliqué",
+      "chapter": [
+        2,
+        4,
+        8
+      ],
+      "nodes": [
+        "Processus en cours",
+        "Implying",
+        "Occurring",
+        "Continuation transformatrice",
+        "Nouvel implying"
+      ],
+      "relations": [
+        [
+          "Processus en cours",
+          "Implying",
+          "orientation non préformée"
+        ],
+        [
+          "Implying",
+          "Occurring",
+          "l'événement peut répondre à ce qui est impliqué"
+        ],
+        [
+          "Occurring",
+          "Continuation transformatrice",
+          "si l'événement poursuit le processus"
+        ],
+        [
+          "Continuation transformatrice",
+          "Nouvel implying",
+          "modifie la continuation"
+        ],
+        [
+          "Nouvel implying",
+          "Processus en cours",
+          "le processus est désormais différent"
+        ]
+      ],
+      "layout": "boucle ; le lien conditionnel interdit de présenter tout occurring comme carrying forward",
+      "levels": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "note": "Découpage pédagogique des fonctions solidaires du modèle ; l'implying n'est pas une représentation mentale du futur. Une occurrence peut aussi interrompre. La flèche de retour n'indique pas le retour au même état.",
+      "refs": "The New Phenomenology p.133–137 ; A Changed Ground I-5–7 ; pilote Carrying forward",
+      "terms": [
+        1,
+        6,
+        8,
+        9,
+        23,
+        37
+      ]
+    },
+    {
+      "id": "GDM03",
+      "title": "Un même milieu, des questions distinctes",
+      "chapter": [
+        3,
+        5
+      ],
+      "nodes": [
+        "Milieu et interaction",
+        "Dimensions mesurables",
+        "Possibilités d'action",
+        "Formes symboliques",
+        "Action située"
+      ],
+      "relations": [
+        [
+          "Milieu et interaction",
+          "Dimensions mesurables",
+          "description de l'observateur"
+        ],
+        [
+          "Milieu et interaction",
+          "Possibilités d'action",
+          "espace de comportement"
+        ],
+        [
+          "Milieu et interaction",
+          "Formes symboliques",
+          "situations évoquées"
+        ],
+        [
+          "Dimensions mesurables",
+          "Action située",
+          "contraintes matérielles"
+        ],
+        [
+          "Possibilités d'action",
+          "Action située",
+          "rapports de conduite"
+        ],
+        [
+          "Formes symboliques",
+          "Action située",
+          "fonction de la fiction"
+        ],
+        [
+          "Action située",
+          "Milieu et interaction",
+          "peut transformer le milieu"
+        ]
+      ],
+      "layout": "trois perspectives convergentes ; retour sur le milieu",
+      "levels": [
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "note": "L'espace géométrique, le comportement et la symbolisation ne sont pas trois étages. Cette carte n'est pas le diagramme des quatre environnements techniques d'APM.",
+      "refs": "The Derivation of Space §§3,6–7 ; What First and Third Person Processes Really Are p.342–345 ; Imagery, Body, and Space p.261–266",
+      "terms": [
+        7,
+        21,
+        22,
+        32,
+        33,
+        34,
+        36
+      ]
+    },
+    {
+      "id": "GDM04",
+      "title": "Interruption : ce qui continue et ce qui peut reprendre",
+      "chapter": [
+        4
+      ],
+      "nodes": [
+        "Processus engagé",
+        "Interruption",
+        "Continuation impliquée",
+        "Autres processus",
+        "Nouvelle circonstance",
+        "Reprise ou abandon"
+      ],
+      "relations": [
+        [
+          "Processus engagé",
+          "Interruption",
+          "une continuation est empêchée"
+        ],
+        [
+          "Interruption",
+          "Continuation impliquée",
+          "peut subsister"
+        ],
+        [
+          "Interruption",
+          "Autres processus",
+          "la vie continue sous d'autres rapports"
+        ],
+        [
+          "Autres processus",
+          "Nouvelle circonstance",
+          "peuvent modifier les conditions"
+        ],
+        [
+          "Continuation impliquée",
+          "Reprise ou abandon",
+          "ce qui reste engagé"
+        ],
+        [
+          "Nouvelle circonstance",
+          "Reprise ou abandon",
+          "ce qui devient possible"
+        ]
+      ],
+      "layout": "bifurcation avec retour éventuel ; la sortie abandon est un choix Atlas, pas un concept technique",
+      "levels": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "note": "L'exemple de la clé traduit le problème dans une fiction, pas la dérivation organismique de Gendlin. La reprise peut demeurer impossible ou ne pas être souhaitable.",
+      "refs": "A New Way of Thinking p.316–317 ; APM IV-A(d-2) ; A Theory of Personality Change §§15–21",
+      "terms": [
+        5,
+        6,
+        24,
+        27,
+        28,
+        29,
+        43
+      ]
+    },
+    {
+      "id": "GDM05",
+      "title": "Éprouver, exprimer et agir ne se confondent pas",
+      "chapter": [
+        5,
+        8
+      ],
+      "nodes": [
+        "Circonstances de jeu",
+        "Émotion éventuelle",
+        "Expression",
+        "Action fictive",
+        "Composition perceptible"
+      ],
+      "relations": [
+        [
+          "Circonstances de jeu",
+          "Émotion éventuelle",
+          "peuvent favoriser, sans commander"
+        ],
+        [
+          "Circonstances de jeu",
+          "Action fictive",
+          "organisent les possibilités"
+        ],
+        [
+          "Émotion éventuelle",
+          "Expression",
+          "peut contribuer"
+        ],
+        [
+          "Expression",
+          "Action fictive",
+          "peut ou non agir dans la fiction"
+        ],
+        [
+          "Expression",
+          "Composition perceptible",
+          "contribue à la forme"
+        ],
+        [
+          "Action fictive",
+          "Composition perceptible",
+          "contribue aux rapports de la scène"
+        ]
+      ],
+      "layout": "branches non obligatoires, pas de chaîne causale imposée",
+      "levels": [
+        [
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ]
+      ],
+      "note": "Une expression peut être composée sans émotion correspondante ; une action fictive et un acte réel ont des critères distincts. La carte rapproche Gendlin et une question artistique Atlas.",
+      "refs": "Anger p.374–379,391–398 ; cahier G25–G30 ; pilote",
+      "terms": [
+        35,
+        36,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "GDM06",
+      "title": "Focusing et TAE : deux pratiques distinctes",
+      "chapter": [
+        6,
+        7
+      ],
+      "nodes": [
+        "Difficulté de formulation",
+        "Focusing",
+        "Thinking at the Edge",
+        "Précision vécue éventuelle",
+        "Distinctions partageables",
+        "Vérification"
+      ],
+      "relations": [
+        [
+          "Difficulté de formulation",
+          "Focusing",
+          "peut appeler une attention au felt sense"
+        ],
+        [
+          "Difficulté de formulation",
+          "Thinking at the Edge",
+          "peut appeler une recherche dans un domaine connu"
+        ],
+        [
+          "Focusing",
+          "Précision vécue éventuelle",
+          "prise, ajustement, accueil"
+        ],
+        [
+          "Thinking at the Edge",
+          "Distinctions partageables",
+          "articulation et construction"
+        ],
+        [
+          "Distinctions partageables",
+          "Vérification",
+          "cas, logique et objections"
+        ],
+        [
+          "Précision vécue éventuelle",
+          "Distinctions partageables",
+          "peut contribuer, sans les garantir"
+        ]
+      ],
+      "layout": "deux voies ; aucune succession obligatoire",
+      "levels": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "note": "Comparaison fonctionnelle, pas protocole des six ou quatorze mouvements. Une création peut aussi se développer sans passer par ces pratiques.",
+      "refs": "Six Steps ; Introduction to TAE p.1–6 ; We Can Think with the Implicit",
+      "terms": [
+        2,
+        3,
+        4,
+        5,
+        10,
+        11,
+        16,
+        25,
+        31,
+        44
+      ]
+    },
+    {
+      "id": "GDM07",
+      "title": "Faire travailler les concepts avec les cas",
+      "chapter": [
+        7
+      ],
+      "nodes": [
+        "Problème situé",
+        "Formulation",
+        "Cas contrastés",
+        "Relations logiques",
+        "Révision du problème"
+      ],
+      "relations": [
+        [
+          "Problème situé",
+          "Formulation",
+          "proposition de distinction"
+        ],
+        [
+          "Formulation",
+          "Relations logiques",
+          "examiner les conséquences"
+        ],
+        [
+          "Formulation",
+          "Cas contrastés",
+          "mettre la distinction à l'épreuve"
+        ],
+        [
+          "Cas contrastés",
+          "Révision du problème",
+          "peuvent produire une différence nouvelle"
+        ],
+        [
+          "Relations logiques",
+          "Révision du problème",
+          "peuvent révéler une contradiction"
+        ],
+        [
+          "Révision du problème",
+          "Formulation",
+          "nouvel essai"
+        ]
+      ],
+      "layout": "boucle avec deux épreuves distinctes",
+      "levels": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "note": "Reconstruction méthodologique d'Atlas à partir du zigzag et du crossing ; elle ne définit pas l'IOFI en totalité. Les faits et les arguments peuvent contredire une impression.",
+      "refs": "A Changed Ground I-1 ; Crossing and Dipping ; The Responsive Order ; cahiers G33–G39",
+      "terms": [
+        10,
+        11,
+        15,
+        16,
+        25,
+        26
+      ]
+    },
+    {
+      "id": "GDM08",
+      "title": "Trois genèses dans le Théâtre du sentir",
+      "chapter": [
+        8
+      ],
+      "nodes": [
+        "Situation de création",
+        "Expérience vécue",
+        "Rapports d'action",
+        "Composition artistique"
+      ],
+      "relations": [
+        [
+          "Situation de création",
+          "Expérience vécue",
+          "peut préciser l'éprouvé"
+        ],
+        [
+          "Situation de création",
+          "Rapports d'action",
+          "peut modifier les possibilités"
+        ],
+        [
+          "Situation de création",
+          "Composition artistique",
+          "peut devenir une forme"
+        ],
+        [
+          "Expérience vécue",
+          "Rapports d'action",
+          "peut contribuer"
+        ],
+        [
+          "Rapports d'action",
+          "Expérience vécue",
+          "peuvent transformer l'éprouvé"
+        ],
+        [
+          "Rapports d'action",
+          "Composition artistique",
+          "peuvent contribuer à la forme"
+        ],
+        [
+          "Composition artistique",
+          "Expérience vécue",
+          "peut produire une autre expérience"
+        ],
+        [
+          "Composition artistique",
+          "Rapports d'action",
+          "peut transformer la situation"
+        ]
+      ],
+      "layout": "trois registres en réseau, pas trois étapes ni trois conditions nécessaires",
+      "levels": [
+        [
+          0
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "note": "Proposition originale Atlas, non ontologie attribuée à Gendlin ou Deleuze. Une œuvre peut avoir une consistance sans déplacement éprouvé rapporté par l'artiste ; une expérience peut compter sans produire une œuvre.",
+      "refs": "Pilote Carrying forward V5 ; The New Phenomenology p.133–137 ; Qu'est-ce que la philosophie ?, chapitre 7",
+      "terms": [
+        5,
+        6,
+        21,
+        22,
+        25,
+        36,
+        41,
+        42,
+        43
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "id": "GDP01",
+      "title": "La lettre : conserver une prise, déplacer le problème",
+      "chapters": [
+        2,
+        4,
+        8
+      ],
+      "terms": [
+        2,
+        5,
+        6,
+        8,
+        9,
+        21,
+        22,
+        25,
+        27,
+        28,
+        41,
+        43
+      ],
+      "duration": "20–25 min",
+      "participants": "Deux interprètes, un témoin facultatif",
+      "material": "Une enveloppe fictive et une surface stable",
+      "goal": "Distinguer une précision vécue, une modification des possibilités d'action et une composition rejouable.",
+      "problem": "Le refus de l'objet modifie-t-il la situation, l'expérience ou la forme ? Ces transformations peuvent-elles être indépendantes ?",
+      "steps": [
+        "Reprendre le principe du salon : A propose de transmettre une enveloppe, B ne la prend pas. Déterminer un enjeu fictif partageable et jouer un échange de moins d'une minute. Ne pas exiger de dépasser le refus.",
+        "Après l'essai, A et B peuvent chacun désigner un moment qui leur pose question (un détail visible, une formulation, une impression encore imprécise), sans devoir divulguer leur vécu. Le témoin relève les actes et les changements de situation, sans les interpréter à leur place. Si aucun problème ne se présente, passer directement à la composition ou arrêter.",
+        "Reprendre la scène avec une seule proposition nouvelle choisie en fonction du problème repéré : un geste, une réplique, un emplacement. Décrire ce qu'elle permet et interdit désormais. Elle peut ne rien résoudre. Noter si la proposition vient de la continuité du travail de l'acteur, d'une indication ou d'une autre source ; ne pas présumer que ces causes sont isolables.",
+        "Conserver les actes et les mots de cette version. Composer deux traitements formels : terminer au refus, ou maintenir un temps après le dernier geste (sans contraindre les acteurs à éprouver quoi que ce soit). Comparer l'effet sur la scène entière. Si cela ne change rien, essayer une autre frontière de la séquence ; ne pas accumuler les effets.",
+        "Rejouer la version retenue à partir de ses repères formels, sans demander de retrouver une émotion antérieure. Examiner ce qui demeure perceptible, ce qui varie avec la nouvelle occurrence et ce qui se perd. La première version peut rester la meilleure ; une impasse peut rester ouverte."
+      ],
+      "variants": [
+        "Conserver le premier échange et modifier seulement sa frontière (fin au refus ou après le dernier geste).",
+        "Si aucun changement n'est préférable, garder la version initiale ou laisser l'impasse ouverte."
+      ],
+      "failure": "Si le jeu devient une recherche d'émotion ou de révélation personnelle, revenir à une contrainte de composition ou arrêter. Si les variantes ne changent rien, ne pas accumuler les effets.",
+      "debrief": [
+        "Vécu : qu'est-ce qui s'est précisé, si les interprètes souhaitent en parler ?",
+        "Relation : quelle action devient possible ou impossible ?",
+        "Forme : qu'est-ce que le témoin peut décrire de la composition, indépendamment des états vécus ?"
+      ],
+      "boundary": "Fiction explicite, aucune lettre personnelle ni émotion exigée. Un refus réel prévaut sur les règles du jeu. Les acteurs peuvent arrêter. Ce prolongement n'est pas une séance Focusing.",
+      "refs": "Pilote Carrying forward V5 ; The New Phenomenology p.133–137 ; Salon 01",
+      "role": "prolongement du Salon 01",
+      "relatedPractice": [
+        "salon-01 / Réagir — l'objet refusé",
+        "JCP03 — La partition qui accueille l'imprévu",
+        "ANP04 — La même indication, deux fonctions"
+      ]
+    }
+  ],
+  "pending": [
+    "audit comparatif V4/V5",
+    "vérification visuelle des schémas lors de l'intégration",
+    "collation des ouvrages principaux et trois notices provisoires",
+    "essai réel du prolongement en atelier"
+  ]
+}
