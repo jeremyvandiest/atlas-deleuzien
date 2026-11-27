@@ -246,7 +246,7 @@
   // Dossiers longs et notions cliquables : greffe documentaire sans nouveau menu.
   function editorialExpansion(id){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
-    const terms=(d.terms||[]).map((t,i)=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>').join('');
+    const terms=(d.terms||[]).map((t,i)=>id==='winnicott'&&t.alias?'':'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>').join('');
     return '<section class="a3r-editorial-full" aria-label="Dossier complet"><details class="a3r-section a3r-editorial-details"><summary>'+(d.edition.startsWith('Dossier de lecture')||id==='ansa'?'Lire le dossier de lecture approfondi':'Lire le dossier fondateur')+'</summary>'+
       '<div class="a3r-prose a3r-editorial-prose">'+editorialNotions(d.html,id)+'</div></details>'+
       '<div class="a3r-editorial-terms"><h2>Notions à explorer</h2><div class="a3r-mini-links">'+terms+'</div></div>'+
@@ -488,6 +488,22 @@
   function openEditorialTerm(id,index){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id],t=d?.terms?.[index],modal=document.getElementById('a3r-notion-modal');
     if(!modal||!t)return;
+    if(id==='winnicott'&&t.id){
+      if(t.alias){openEditorialTerm(id,36);return;}
+      termSource=null;
+      if(modal.hidden||!modal.contains(document.activeElement))termFocus=document.activeElement;
+      const related=(t.related||[]).filter(i=>Number.isInteger(i)&&d.terms[i]&&!d.terms[i].alias).map(i=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\'winnicott\','+i+')">'+e(d.terms[i].term)+'</button>').join('');
+      const section=(label,value)=>value?'<h3>'+e(label)+'</h3><p>'+e(value)+'</p>':'';
+      modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
+        '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
+        '<div class="a3r-eyebrow">WINNICOTT · NOTION '+e(t.id.toUpperCase())+'</div><h2 id="a3r-notion-title">'+e(t.term)+'</h2>'+
+        section('Le problème',t.problem)+section('Comprendre',t.definition)+section('Éprouver / transposer',t.example)+
+        (t.depth?'<details><summary>Approfondir</summary><p>'+e(t.depth)+'</p></details>':'')+
+        (related?'<h3>Notions liées</h3><div class="a3r-mini-links">'+related+'</div>':'')+
+        (t.source?'<p class="a3r-quiet">Références du dossier : '+e(t.source)+'</p>':'')+
+        '<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
+      modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();return;
+    }
     termSource=null;termFocus=document.activeElement;
     modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
       '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
