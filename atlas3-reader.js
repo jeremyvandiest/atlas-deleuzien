@@ -527,7 +527,7 @@
     const d=window.ATLAS3_FONDATIONS?.docs?.[id];if(!d)return '';
     if(id==='ansa'&&ansaApproach()?.modules?.length)return ansaExpansion(d,ansaApproach());
     if(id==='gendlin'&&gendlinApproach()?.modules?.length)return gendlinExpansion(d,gendlinApproach());
-    const entries=(d.terms||[]).map((t,i)=>({t,i}));
+    const entries=(d.terms||[]).map((t,i)=>({t,i})).filter(({t})=>id!=='winnicott'||!t.alias);
     const termButton=({t,i})=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\''+id+'\','+i+')">'+e(t.term)+'</button>';
     const categories=[...new Set(entries.map(({t})=>t.category).filter(Boolean))];
     const terms=categories.length?categories.map(category=>'<section><h3>'+e(category)+'</h3><div class="a3r-mini-links">'+entries.filter(({t})=>t.category===category).map(termButton).join('')+'</div></section>').join('')+(entries.some(({t})=>!t.category)?'<div class="a3r-mini-links">'+entries.filter(({t})=>!t.category).map(termButton).join('')+'</div>':''):entries.map(termButton).join('');
@@ -764,15 +764,37 @@
     return missing();
   }
   let termSource=null,termFocus=null;
+  let winnicottTrail=[];
   function closeNotion(){
     const modal=document.getElementById('a3r-notion-modal');if(!modal)return;
-    modal.hidden=true;modal.innerHTML='';
+    modal.hidden=true;modal.innerHTML='';winnicottTrail=[];
     if(termFocus?.isConnected)termFocus.focus();
   }
 
-  function openEditorialTerm(id,index){
+  function openEditorialTerm(id,index,back=false){
     const d=window.ATLAS3_FONDATIONS?.docs?.[id],t=d?.terms?.[index],modal=document.getElementById('a3r-notion-modal');
     if(!modal||!t)return;
+    if(id==='winnicott'&&t.id){
+      if(t.alias){const canonical=d.terms.findIndex(x=>x.id===t.id&&!x.alias);if(canonical>=0)openEditorialTerm(id,canonical,back);return;}
+      termSource=null;
+      if(modal.hidden||!modal.contains(document.activeElement)){termFocus=document.activeElement;winnicottTrail=[];}
+      if(!back&&winnicottTrail.at(-1)!==index)winnicottTrail.push(index);
+      const previous=winnicottTrail.length>1?winnicottTrail[winnicottTrail.length-2]:null;
+      const returnLink=previous===null?'':'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\'winnicott\','+previous+',true)">← '+e(d.terms[previous].term)+'</button>';
+      if(back&&winnicottTrail.at(-1)!==index)winnicottTrail.pop();
+      const showBack=back?(winnicottTrail.length>1?'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\'winnicott\','+winnicottTrail[winnicottTrail.length-2]+',true)">← '+e(d.terms[winnicottTrail[winnicottTrail.length-2]].term)+'</button>':''):returnLink;
+      const related=(t.related||[]).filter(i=>Number.isInteger(i)&&d.terms[i]&&!d.terms[i].alias).map(i=>'<button type="button" class="a3r-link" onclick="Atlas3Reader.openEditorialTerm(\'winnicott\','+i+')">'+e(d.terms[i].term)+'</button>').join('');
+      const section=(label,value)=>value?'<h3>'+e(label)+'</h3><p>'+e(value)+'</p>':'';
+      modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
+        '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
+        '<div class="a3r-eyebrow">WINNICOTT · NOTION '+e(t.id.toUpperCase())+'</div><h2 id="a3r-notion-title">'+e(t.term)+'</h2>'+
+        showBack+section('Le problème',t.problem)+section('Comprendre',t.definition)+section('Éprouver / transposer',t.example)+
+        (t.depth?'<details><summary>Approfondir</summary><p>'+e(t.depth)+'</p></details>':'')+
+        (related?'<h3>Notions liées</h3><div class="a3r-mini-links">'+related+'</div>':'')+
+        (t.source?'<p class="a3r-quiet">Références du dossier : '+e(t.source)+'</p>':'')+
+        '<button class="a3r-link" type="button" onclick="Atlas3Reader.closeNotion()">Revenir à la lecture</button></div>';
+      modal.hidden=false;modal.querySelector('.a3r-notion-close')?.focus();return;
+    }
     termSource=null;termFocus=document.activeElement;
     modal.innerHTML='<div class="a3r-notion-dialog" role="dialog" aria-modal="true" aria-labelledby="a3r-notion-title">'+
       '<button class="a3r-notion-close" type="button" onclick="Atlas3Reader.closeNotion()" aria-label="Fermer la notion">✕</button>'+
