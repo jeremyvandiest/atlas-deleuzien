@@ -1,0 +1,61 @@
+# Eidogonie V3 — Félix Guattari : composer les conditions du devenir
+28 novembre 2026. Cahier transversal candidat. Suite de eidogonie-image-oeuvre-v2.md (69c3e62) et eidogonie-simondon-cahier-v1.md. Aucun changement du lecteur, des lexiques fondateurs, ni de main.
+
+## 1. Problème : qui ou quoi participe au sentir ?
+Dans une répétition, une actrice se tait dès que le metteur en scène intervient. On peut interpréter son silence comme une propriété personnelle, ou examiner le dispositif : droit de parole, nature du retour, emplacement des autres, temps disponible. Ces deux questions n'excluent pas le travail d'interprétation. Mais aucune attribution de cause psychologique ne découle de la seule observation.
+Guattari étudie la subjectivité comme produite à travers des composantes hétérogènes et non comme donnée naturelle. Les pratiques institutionnelles, techniques, sémiotiques et affectives peuvent participer à cette production. Dans Chaosmose, ch.1, son exemple de La Borde fait intervenir architecture, organisation des responsabilités et relations économiques. Sa clinique est historiquement située ; nous ne transposons pas ses hypothèses diagnostiques ni son traitement de la psychose à un atelier. [G1, G3]
+L'énonciation ne se limite pas à la phrase proférée : les dispositifs qui distribuent les positions et possibilités d'expression font partie du problème. Un microphone peut rendre une voix audible, mais aussi déplacer l'autorité dans une réunion. Cette proposition Atlas distingue un effet matériel observable et une hypothèse sur la subjectivation.
+
+## 2. Ritournelle : trois aspects, non trois stades
+Deleuze et Guattari, Mille plateaux, plateau 11, pp.382–384 : leur ritournelle peut orienter au milieu de l'indéterminé, constituer un territoire, ou l'ouvrir vers d'autres rapports. Ces aspects peuvent coexister. Le territoire n'est pas synonyme de surface géographique ; il se produit notamment par l'expressivité de composantes de milieu. Le rythme n'est pas assimilé à la mesure périodique. Voir pp.385–388 et 397. [DG1]
+Exemple Atlas : avant chaque répétition, des interprètes posent ensemble leurs accessoires, échangent une phrase, puis entrent dans l'espace de jeu. Cette répétition peut devenir une marque expressive qui institue un chez-soi provisoire. Elle peut aussi devenir rigide si la formule devient obligatoire ou exclut ceux qui ne s'y retrouvent pas. Modifier un élément peut ouvrir un autre rapport ; conserver une pratique utile est également possible.
+Dans Chaosmose, ch.1, le cas du téléspectateur (pp.16–18 de la traduction) met en jeu une multiplicité de composantes simultanées, agencées autour d'un motif existentiel. Ne pas confondre la ritournelle complexe de Guattari avec le seul motif sonore, ni avec une répétition comportementale quelconque. [G1]
+Le motif existentiel se distingue du leitmotiv dramaturgique : une répétition musicale dans un film peut structurer le récit sans organiser l'existence de l'interprète. Une même matière d'expression peut remplir les deux fonctions, mais elles doivent être examinées séparément.
+
+## 3. Le paradigme éthico-esthétique
+Guattari, Chaosmose ch.6, pp.105–108 trad. anglaise : l'art exemplifie une créativité capable de produire d'autres coordonnées d'existence ; cette puissance ne lui appartient pas en exclusivité. La dimension éthique concerne la responsabilité de la création vis-à-vis de ce qu'elle fait exister et de l'altérité. Il ne s'agit pas d'une licence donnée au créateur de modeler autrui, ni d'une réduction du social à la beauté. [G1, G2]
+Dans l'entretien Combattre le chaos (mars 1992), il rapporte cette question à l'énonciation créatrice au-delà des styles et institutions de l'art. [G2]
+Différence avec Qu'est-ce que la philosophie ? (1991), ch.7 : l'autonomie des percepts et affects de l'œuvre ne se confond pas avec l'ouverture de possibilités d'existence. Une transformation de l'organisation d'un atelier peut être féconde sans produire d'œuvre ; un film peut avoir une force formelle tout en ayant été réalisé dans des conditions de travail mauvaises. Ces deux évaluations doivent rester indépendantes.
+L'extension écosophique articule trois registres : environnement, relations sociales, subjectivité. Dans Les Trois écologies (1989) et l'entretien de décembre 1991, cette articulation a une portée éthico-politique qui dépasse le théâtre. Atlas peut en tirer des questions de travail, pas prétendre épuiser cette philosophie. [G4]
+
+## 4. Huit repères candidats — namespace GUA
+GUA01 Production de subjectivité : constitution plurielle des modes d'expérience et d'existence. Ne pas assimiler à fabrication contrôlable d'une personnalité.
+GUA02 Agencement de subjectivation : composition située de rapports matériels, sociaux, sémiotiques et existentiels. La liste des objets de la scène ne suffit pas : examiner leurs rapports et fonctions.
+GUA03 Énonciation collective : pluralité des instances et dispositifs qui participent à l'expression ; ne signifie ni unanimité ni suppression de la responsabilité individuelle.
+GUA04 Ritournelle : ensemble expressif qui peut orienter, territorialiser ou ouvrir un territoire. Ne pas confondre avec répétition pure ou musique nécessairement.
+GUA05 Territoire existentiel : mode de consistance et de repérage vécu ; ne pas confondre avec décor, identité fixe ou territoire physique.
+GUA06 Singularisation : production de modes d'existence qui ne se réduisent pas à la reproduction des modèles disponibles. Ne pas transformer en obligation d'originalité.
+GUA07 Transversalité : dans le cadre institutionnel guattarien, ouverture des relations et des échanges au-delà des segmentations habituelles. L'exemple de la cuisine de La Borde (Chaosmose ch.3) permet d'en examiner une fonction contextuelle ; ce n'est ni absence de cadre ni simple horizontalité. [G1]
+GUA08 Paradigme éthico-esthétique : pensée de la créativité et de la responsabilité au-delà du seul champ artistique ; distincte d'un programme de bien-être.
+Ces huit notices sont des repères pédagogiques provisoires, pas un lexique exhaustif de Guattari. Les quatre foncteurs Flux, Phylums, Territoires et Univers ainsi que la métamodélisation demandent un retour à Cartographies schizoanalytiques (1989). Pas d'ajout aux 252 concepts fondateurs.
+
+## 5. Confrontation aux acquis
+- Ansa V2, ch.1 et 4 : disponibilité, relation ; Guattari élargit l'enquête aux conditions collectives et techniques. L'horizon spirituel d'Ansa n'est pas la subjectivation machinique.
+- Gendlin V5, ch.3 : interaction corps-environnement ; Guattari prend aussi en compte des composantes institutionnelles et sémiotiques hétérogènes. Ne pas identifier une interaction processuelle au concept d'agencement.
+- Winnicott V18, W04, W21, W40, W42 : milieu facilitateur et aire de jeu ; Guattari permet de questionner aussi la distribution institutionnelle de la parole. Holding et ritournelle n'ont pas le même statut théorique.
+- Jung V2, étape 3 : élaboration symbolique ; Guattari refuse d'épuiser le problème de subjectivation par une lecture symbolique des contenus. Un signal peut agir sur le rythme ou l'accès à l'action sans exiger une interprétation psychique. Ne pas rabattre Jung sur le seul déchiffrement.
+- Jodorowsky/Costa V2 ch.1, 7, 10 : invention de gestes et question de l'autorité. Une transformation collective des règles n'est pas une prescription psychomagique ; aucune efficacité thérapeutique n'en découle.
+- Simondon, cahier V1 : l'invention réorganise les relations entre éléments d'un système ; Guattari distingue aussi des modes de consistance existentielle. Ne pas assimiler changement technique et transformation subjective.
+- Chekhov : atmosphère comme moyen de jeu ; Guattari envisage une ambiance institutionnelle qui ne relève pas d'une seule fiction artistique. L'atmosphère du personnage n'est pas le climat de travail de l'équipe.
+
+## 6. Partition originale : un espace qui change de fonction
+Situation : deux personnages doivent attendre quelqu'un ; trois chaises, une phrase, un son bref (facultatif). Les règles et l'objectif dramaturgique sont convenus avant l'essai. Aucune révélation personnelle demandée.
+A. Première version : les interprètes décident d'un signal d'entrée. Jouer deux fois. Repérer ce qui distribue l'attention et le droit d'agir.
+B. Constituer une variation : changer une relation entre éléments (position des chaises, ordre de la parole, absence du signal sonore) sans rechercher une émotion déterminée. Les acteurs peuvent garder le premier dispositif ou refuser le changement.
+C. Ouvrir : une personne propose une variation à laquelle l'autre peut répondre, et non obéir. Ne pas imposer l'improvisation. Répéter ensuite la version choisie.
+D. Composer : comparer deux formes scéniques et ce que chacune fait au problème dramatique. Un observateur décrit un changement concret sans interpréter la personnalité des acteurs.
+E. Bilan : distinguer organisation collective, expérience librement rapportée, consistance de la scène. Si l'atelier devient plus agréable mais que le problème dramatique persiste, le travail artistique continue ; si une forme fonctionne mais qu'une règle est vécue comme préjudiciable, modifier les conditions de production.
+Variante cinéma : même plan, trois rapports entre le son répété et l'espace visible ; examiner comment la répétition organise ou transforme le lieu fictif. Ne pas déduire la production de subjectivité du spectateur sans enquête.
+L'atelier est une proposition originale Atlas, non un exercice de Guattari, non une intervention de psychothérapie institutionnelle. Aucun résultat empirique annoncé.
+
+## 7. Sources primaires et couverture
+G1 — Félix Guattari, Chaosmose, Galilée 1992. Traduction Paul Bains et Julian Pefanis, Chaosmosis: An Ethico-Aesthetic Paradigm, 1995. https://postcolonial.net/wp-content/uploads/2019/05/Guattari_Felix_Chaosmosis_An_Ethico-Aesthetic_Paradigm.pdf . Passages ciblés ch.1 (composantes, La Borde, pp.16–20), ch.3 (cuisine et ouverture institutionnelle), ch.6 (pp.105–110). Fac-similés contrôlés p.17, 20, 106, 110 (indices PDF 22, 25, 111, 115). Pas de lecture intégrale des chapitres ni de collation française. La terminologie française doit être confirmée dans l'original.
+G2 — Guattari, Combattre le chaos, entretien Marco Senaldi mars 1992, Chimères 38, 2000, traduction Anik Kouba, passage d'ouverture sur le paradigme esthétique : https://www.persee.fr/doc/chime_0986-6035_2000_num_38_1_2297 . Lecture ciblée HTML.
+G3 — Guattari, De la production de subjectivité, Chimères 4, 1987, passage sur machines informationnelles et énonciation : https://www.persee.fr/doc/chime_0986-6035_1987_num_4_1_1048?pageId=T3_2 . OCR partiel.
+G4 — Les Trois écologies, Galilée 1989 : notice de réédition https://www.editions-lignes.com/LES-TROIS-ECOLOGIES.html ; entretien Videcoq et SpareI, décembre 1991, Chimères 28, 1996, ouverture : https://www.persee.fr/doc/chime_0986-6035_1996_num_28_1_2073 . Le livre n'a pas été lu intégralement à cette étape.
+DG1 — Deleuze et Guattari, Mille plateaux, Minuit 1980, plateau 11, passages pp.382–388, 397 : https://web.english.upenn.edu/~cavitch/pdf-library/Deleuze_and_Guattari_Mille_Plateaux.pdf ; fac-similé p.388 (index PDF 381), lecture ciblée OCR des autres passages. Ne pas attribuer ce plateau à Guattari seul.
+À poursuivre : texte français de Chaosmose ch.1 et 6, Cartographies schizoanalytiques, texte complet Les Trois écologies ; Bachelard, Dialectique de la durée pp.128–129 citée par DG1 p.385, puis distinction imagination matérielle / poétique de l'image. Les dettes de lecture des cinq dossiers et de Simondon demeurent.
+
+## 8. Décision d'architecture candidate
+L'eidogonie ne devient pas un sixième dossier fondateur ni un parcours obligatoire. Elle relie trois problèmes : genèse des formes (Simondon), production de subjectivité (Guattari), composition et autonomie esthétique (Deleuze-Guattari), avec les ressources pratiques de Chekhov et des cinq fondations. La prochaine confrontation à Bachelard doit mettre à l'épreuve la réduction éventuelle de l'image à sa genèse et de l'art à la seule fonction.
+État : recherche sauvegardée uniquement. Tests du lecteur consolidé et collation des sources toujours nécessaires.
